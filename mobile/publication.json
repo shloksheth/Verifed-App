@@ -1,12 +1,12 @@
 {
-  "version": 13,
-  "name": "Verifed V13",
-  "id": "6H8E4vroCCEHVNVVkeeVS",
-  "url": "exp://u.expo.dev/933fd9c0-1666-11e7-afca-d980795c5824?runtime-version=exposdk%3A54.0.0&channel-name=production&snack=6H8E4vroCCEHVNVVkeeVS",
-  "hashId": "6H8E4vroCCEHVNVVkeeVS",
-  "snackId": "d6b6ad73-db7a-4f50-8fe4-c8c92512e5b3",
-  "editorUrl": "https://snack.expo.dev/6H8E4vroCCEHVNVVkeeVS",
-  "publishedAt": "2026-10-22T14:52:21.248Z",
+  "version": 13.1,
+  "name": "Verifed V13.1",
+  "id": "ngsN3j83Tl1_g4z5yQ1xh",
+  "url": "exp://u.expo.dev/933fd9c0-1666-11e7-afca-d980795c5824?runtime-version=exposdk%3A54.0.0&channel-name=production&snack=ngsN3j83Tl1_g4z5yQ1xh",
+  "hashId": "ngsN3j83Tl1_g4z5yQ1xh",
+  "snackId": "f85afca2-878f-4698-a741-8a5c9d818b8d",
+  "editorUrl": "https://snack.expo.dev/ngsN3j83Tl1_g4z5yQ1xh",
+  "publishedAt": "2026-10-22T23:20:56.723Z",
   "sdkVersion": "54.0.0",
   "files": [
     "App.js",
@@ -39,5 +39,5 @@
     "src/write-sync.js",
     "assets/verifed-mark.png"
   ],
-  "sourceHash": "983ada7a259ad8c41823d3eda0814b54757acf1bde1072c86a707623daf8b0af"
+  "sourceHash": "b101a592512e9a24f30e200bee26e9c9c24ad71220546f4b5b59161b8ebc6cfb"
 }
