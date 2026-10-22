@@ -1,16 +1,16 @@
 {
-  "version": 12,
-  "snapshot": "fgWhETxEw4X_VllwdjmuP",
-  "sourceHash": "f37a7699616d87e549deabc0a0cc01884b3e2b059e876d56b0c1ceeae021366b",
-  "tests": 91,
+  "version": 13,
+  "snapshot": "6H8E4vroCCEHVNVVkeeVS",
+  "sourceHash": "983ada7a259ad8c41823d3eda0814b54757acf1bde1072c86a707623daf8b0af",
+  "tests": 92,
   "platformExports": [
     "web",
     "android",
     "ios"
   ],
-  "locations": 26,
-  "places": 24,
-  "sourceRecords": 1652,
+  "locations": 25,
+  "places": 23,
+  "sourceRecords": 1630,
   "browserViewport": {
     "width": 390,
     "height": 844
@@ -25,7 +25,8 @@
     "strict all-nine empty-result explanation",
     "Honey and new restrictions save/reload",
     "dish detail: renders, save toggle, journal sheet, return to restaurant",
-    "V12 signup and login fields render at 390x844; empty forms show validation"
+    "V12 signup and login fields render at 390x844; empty forms show validation",
+    "Food Chains collection shows Taco Bell and Chipotle; Taco Bell three-branch picker and brand header"
   ],
   "publicRestCatalogMatched": true,
   "currentNativeSimulatorTested": false,
@@ -34,5 +35,6 @@
   "nativeGoogleOAuthTested": false,
   "googleNativeRequirement": "Development build; Expo Go cannot receive registered app callback.",
   "historicalNativeEvidence": "V9 native screenshots are historical; user supplied an iPhone screenshot of the original onPress crash.",
-  "accountAuthStatus": "Live signup test pending approval to disable email confirmation"
+  "accountAuthStatus": "Live signup test pending approval to disable email confirmation",
+  "checkpointStatus": "Partial: stopped at user usage threshold; four new chain menu imports unfinished"
 }

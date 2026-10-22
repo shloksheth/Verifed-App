@@ -19,6 +19,8 @@ with zipfile.ZipFile(out / 'Verifed_Source.zip', 'w', zipfile.ZIP_DEFLATED) as a
         archive.write(path, path.relative_to(root))
     for path in sorted((root / 'research/menu-sources').glob('*')):
         if path.is_file(): archive.write(path, path.relative_to(root))
+    path = root / 'research/FOOD_CHAINS_RESEARCH.md'
+    if path.is_file(): archive.write(path, path.relative_to(root))
     for path in sorted((root / 'research/district-evidence').glob('*.json')):
         archive.write(path, path.relative_to(root))
     for name in ['package.json', 'package-lock.json', 'publish.mjs']:
@@ -32,9 +34,9 @@ GitHub source and version history: https://github.com/shloksheth/Verifed-App/rel
 
 ## What changed
 
-V12 adds username/email and password login, private username lookup, database uniqueness and duplicate-account errors. Live signup is pending the requested approval to disable email confirmation. V11 previously added Honey, Vegetarian (no eggs), and No garlic or onion. It fixes the undefined onPress crash on dish details, removes repeated disclaimer paragraphs and collapses source notes. Compact ingredient-status labels remain. Profile persistence, dish rendering, save/journal actions and the restaurant return button were exercised in the browser.
+V13 is a partial chain checkpoint: Tako Cheena removed, named exceptions retained, collection tabs and chain header themes added. McDonald’s, Pizza Hut, Domino’s and Wendy’s imports remain unfinished. 92 tests and all exports pass; usage stop rule reached. V12 added username/email and password login, private username lookup, database uniqueness and duplicate-account errors. Live signup is pending the requested approval to disable email confirmation. V11 previously added Honey, Vegetarian (no eggs), and No garlic or onion. It fixes the undefined onPress crash on dish details, removes repeated disclaimer paragraphs and collapses source notes. Compact ingredient-status labels remain. Profile persistence, dish rendering, save/journal actions and the restaurant return button were exercised in the browser.
 
-26 Orlando-area locations and 1,652 published food/component records. Added Woodlands, Bombay Street Kitchen, Yellow Dog Eats Gotha and three Taco Bell branches with a location picker. Each restaurant retains Full menu and For my diet views.
+25 active Orlando-area locations and 1,630 published food/component records. Added Woodlands, Bombay Street Kitchen, Yellow Dog Eats Gotha and three Taco Bell branches with a location picker. Each restaurant retains Full menu and For my diet views.
 
 Explore combines a real map, city/ZIP/neighborhood and U.S. street-address entry, radius, cuisine and dietary-evidence filters. Recommendations use dietary fit, preferences and rated meal history; strict allergen filters require source absence claims for items and do not certify kitchens.
 
@@ -42,7 +44,7 @@ Home has an information button. Guests see Create an account, Log in and Explore
 
 ## Verification and limits
 
-91 mobile tests and web/Android/iOS exports pass. Public Supabase reads matched all 1,652 records, UUID relationships, coordinates, images and provenance across 26 locations. Browser checks cover address lookup, map tiles/pin navigation, account entry, Home info, cuisine and dietary filtering, and the Taco Bell picker.
+92 mobile tests and web/Android/iOS exports pass. Public Supabase reads matched all 1,652 records, UUID relationships, coordinates, images and provenance across 26 locations. Browser checks cover address lookup, map tiles/pin navigation, account entry, Home info, cuisine and dietary filtering, and the Taco Bell picker.
 
 The V10 Snack editor hung before the native simulator became available. Prior native screenshots belong to V9, and do not verify V10. Native gestures/keyboard/address interaction and physical-iPhone behavior remain to be tested. The matching Expo SDK 54 runtime is required.
 

@@ -6,7 +6,11 @@ import { catalogLocations } from "./restaurant-locations.js";
 // Location facts and menu facts have separate sources. Join them by stable slug,
 // then let database UUIDs replace the offline IDs when a live copy is available.
 const reviewedAt = "2026-10-21";
-export const localRestaurants = catalogLocations.map((restaurant) => {
+// Keep old source records for provenance and meal history, but retire this venue
+// from every current browsing path, including copies returned by the database.
+const retiredSlugs = new Set(["tako-cheena-mills"]);
+const activeMenus = publishedMenus.filter((menu) => !retiredSlugs.has(menu.key));
+export const localRestaurants = catalogLocations.filter((restaurant) => !retiredSlugs.has(restaurant.slug)).map((restaurant) => {
   const menu = publishedMenus.find((item) => item.key === restaurant.slug);
   return {
     ...restaurant,
@@ -20,7 +24,7 @@ export const localRestaurants = catalogLocations.map((restaurant) => {
 });
 
 // Convert reviewed source records into the app's shared dish contract.
-export const localDishes = publishedMenus.flatMap((menu) =>
+export const localDishes = activeMenus.flatMap((menu) =>
   menu.items.map((item) => ({
     id: menu.key + "-" + item.key,
     catalogKey: menu.key + "-" + item.key,
@@ -71,10 +75,11 @@ export function mergeLocalCatalog(
   dishes = [],
   { preferBundled = false } = {},
 ) {
+  const retiredIds = new Set(restaurants.filter((row) => retiredSlugs.has(row.slug || row.details?.slug)).map((row) => row.id));
   const flat = restaurants.map(({ details, ...row }) => ({
     ...details,
     ...row,
-  }));
+  })).filter((row) => !retiredSlugs.has(row.slug));
   const mergedRestaurants = localRestaurants.map((local) => {
     const live = flat.find((row) => row.slug === local.slug);
     if (live && preferBundled) return { ...local, id: live.id };
@@ -108,6 +113,8 @@ export function mergeLocalCatalog(
   mergedDishes.push(
     ...dishes.filter(
       (dish) =>
+        !retiredIds.has(dish.restaurantId) &&
+        ![...retiredSlugs].some((slug) => dish.catalogKey?.startsWith(slug + "-")) &&
         !localDishes.some((local) => local.catalogKey === dish.catalogKey),
     ),
   );

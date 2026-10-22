@@ -2,6 +2,7 @@ import React, { useEffect, useMemo, useRef, useState } from "react";
 import { Linking, Pressable, Text, View } from "react-native";
 import { colors, s } from "../styles";
 import { discoverRestaurants } from "../src/discovery";
+import { chainBrand } from "../src/chain-brand";
 import { ORLANDO_CENTER, searchPlaces } from "../src/location-search";
 import { RestaurantRow } from "./Dining";
 import RestaurantMap from "./RestaurantMap";
@@ -43,6 +44,7 @@ let remembered = {
   sort: "recommended",
   query: "",
   view: "list",
+  collection: "all",
 };
 
 function distance(result) {
@@ -95,7 +97,7 @@ export default function Explore({
   const results = useMemo(
     () =>
       discoverRestaurants({
-        restaurants: state.restaurants,
+        restaurants: state.restaurants.filter((restaurant) => filters.collection === "chains" ? !!chainBrand(restaurant) : filters.collection === "restaurants" ? !chainBrand(restaurant) : true),
         dishes: state.dishes,
         profile: state.profile,
         meals: state.meals,
@@ -256,6 +258,11 @@ export default function Explore({
           </Button>
         </View>
       )}
+      <Tabs
+        options={[{ value: "all", label: "All places" }, { value: "restaurants", label: "Restaurants" }, { value: "chains", label: "Food Chains" }]}
+        value={filters.collection}
+        onChange={(collection) => update({ collection, cuisine: "All" })}
+      />
       <Field
         label="Search restaurants & menus"
         value={filters.query}

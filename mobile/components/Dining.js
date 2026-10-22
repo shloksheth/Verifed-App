@@ -9,6 +9,7 @@ import {
 } from "react-native";
 import { api } from "../src/api";
 import { assessDish } from "../src/domain";
+import { chainBrand } from "../src/chain-brand";
 import { dietaryMenuStatus, groupMenu } from "../src/menu-filter";
 import { colors, s } from "../styles";
 import AllergenIcons, {
@@ -601,6 +602,8 @@ export function DemoButton({ navigate }) {
 }
 
 function restaurantTheme(restaurant) {
+  const brand = chainBrand(restaurant);
+  if (brand) return brand;
   const slug = restaurant.slug || restaurant.id;
   if (slug.startsWith("hawkers"))
     return {
@@ -749,10 +752,10 @@ export function Restaurant({ id, state, navigate }) {
   return (
     <View style={s.restaurantMenu}>
       <RestaurantPhoto restaurant={restaurant} style={s.menuHeroPhoto} credit />
-      <View style={[s.editorialMenuHeader, { borderTopColor: theme.accent }]}>
+      <View style={[s.editorialMenuHeader, { borderTopColor: theme.accent, backgroundColor: theme.background || "transparent", padding: theme.background ? 18 : undefined, borderRadius: theme.background ? 18 : 0 }]}>
         <View style={s.between}>
           <Text style={[s.menuOverline, { color: theme.accent }]}>
-            {isLocal(restaurant)
+            {chainBrand(restaurant) ? "FOOD CHAINS / U.S. MENU" : isLocal(restaurant)
               ? "ORLANDO / RESTAURANT MENU"
               : "FICTIONAL SAMPLE MENU"}
           </Text>

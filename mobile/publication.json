@@ -1,12 +1,12 @@
 {
-  "version": 12,
-  "name": "Verifed V12",
-  "id": "fgWhETxEw4X_VllwdjmuP",
-  "url": "exp://u.expo.dev/933fd9c0-1666-11e7-afca-d980795c5824?runtime-version=exposdk%3A54.0.0&channel-name=production&snack=fgWhETxEw4X_VllwdjmuP",
-  "hashId": "fgWhETxEw4X_VllwdjmuP",
-  "snackId": "676596b1-9cae-4585-9ef5-e7199240bceb",
-  "editorUrl": "https://snack.expo.dev/fgWhETxEw4X_VllwdjmuP",
-  "publishedAt": "2026-10-22T14:42:40.652Z",
+  "version": 13,
+  "name": "Verifed V13",
+  "id": "6H8E4vroCCEHVNVVkeeVS",
+  "url": "exp://u.expo.dev/933fd9c0-1666-11e7-afca-d980795c5824?runtime-version=exposdk%3A54.0.0&channel-name=production&snack=6H8E4vroCCEHVNVVkeeVS",
+  "hashId": "6H8E4vroCCEHVNVVkeeVS",
+  "snackId": "d6b6ad73-db7a-4f50-8fe4-c8c92512e5b3",
+  "editorUrl": "https://snack.expo.dev/6H8E4vroCCEHVNVVkeeVS",
+  "publishedAt": "2026-10-22T14:52:21.248Z",
   "sdkVersion": "54.0.0",
   "files": [
     "App.js",
@@ -21,6 +21,7 @@
     "components/Welcome.js",
     "src/account-auth.js",
     "src/api.js",
+    "src/chain-brand.js",
     "src/config.js",
     "src/data.js",
     "src/discovery.js",
@@ -38,5 +39,5 @@
     "src/write-sync.js",
     "assets/verifed-mark.png"
   ],
-  "sourceHash": "f37a7699616d87e549deabc0a0cc01884b3e2b059e876d56b0c1ceeae021366b"
+  "sourceHash": "983ada7a259ad8c41823d3eda0814b54757acf1bde1072c86a707623daf8b0af"
 }

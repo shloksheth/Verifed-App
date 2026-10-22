@@ -29,7 +29,7 @@ RESEARCH_FILES = (
     'seed-orlando.mjs', 'package-source.py', 'publish-github.py',
     'full-menu-data.json', 'full-menu-evidence.md', 'expanded-menu-data.json',
     'expanded-restaurants.json', 'requested-menu-data.json', 'requested-restaurants.json',
-    'REQUESTED_MENU_SOURCES.md', 'TWENTY_RESTAURANTS_SOURCES.md', 'IMAGE_SOURCES.md',
+    'REQUESTED_MENU_SOURCES.md', 'TWENTY_RESTAURANTS_SOURCES.md', 'IMAGE_SOURCES.md', 'FOOD_CHAINS_RESEARCH.md',
     'restaurant-images.json', 'restaurant-locations.json', 'orlando-menu-notes.md',
     'fresh-kitchen-2609.pdf', 'fresh-kitchen-2609-contact.jpg', 'VERSION_RECOVERY.md',
     'native-tools/publish.mjs', 'native-tools/package.json', 'native-tools/package-lock.json',

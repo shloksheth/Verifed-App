@@ -111,8 +111,8 @@ test("opening a saved demo refreshes old allergen facts without losing stable ID
   assert.equal(merged.dishes[0].cloudBacked, false);
 });
 
-test("the CAC catalog has twenty-six real locations with traceable, clean food records", () => {
-  assert.equal(localRestaurants.length, 26);
+test("the active CAC catalog has twenty-five real locations with traceable, clean food records", () => {
+  assert.equal(localRestaurants.length, 25);
   assert.equal(
     new Set(localDishes.map((dish) => dish.catalogKey)).size,
     localDishes.length,
@@ -132,4 +132,12 @@ test("the CAC catalog has twenty-six real locations with traceable, clean food r
     assert.ok(dish.provenance.evidenceNote);
     assert.equal(dish.informationComplete, false);
   }
+});
+
+test("retired Tako Cheena stays out of browsing when old cloud records arrive", () => {
+  const merged = mergeLocalCatalog([{ id: "retired-server-id", slug: "tako-cheena-mills", name: "Tako Cheena" }], [{ id: "old-dish", restaurantId: "retired-server-id", catalogKey: "tako-cheena-mills-test" }]);
+  assert.ok(!merged.restaurants.some((row) => row.slug === "tako-cheena-mills"));
+  assert.ok(!merged.dishes.some((row) => row.id === "old-dish"));
+  for (const slug of ["hawkers-orlando", "chipotle-south-orange", "pizza-bruno-curry"])
+    assert.ok(merged.restaurants.some((row) => row.slug === slug));
 });

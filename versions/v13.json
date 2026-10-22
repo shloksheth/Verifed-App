@@ -1,0 +1,16 @@
+{
+  "number": 13,
+  "name": "Verifed V13",
+  "description": "Partial food-chain checkpoint saved at the user usage limit. Removed Tako Cheena from bundled and cloud browsing; retained Hawkers, Chipotle and Pizza Bruno as requested. Added All places/Restaurants/Food Chains filters and brand-inspired menu header support; Taco Bell and Chipotle menus use it. McDonald\u2019s, Pizza Hut, Domino\u2019s and Wendy\u2019s menu imports remain unfinished.",
+  "verification": [
+    "92 automated tests pass, including retirement against old cloud records.",
+    "Web, Android and iOS exports pass.",
+    "Browser: 25 active locations; retained venues visible, Food Chains shows Taco Bell and Chipotle, branch picker and purple Taco Bell header render.",
+    "No new native-device test. Four requested chain menus still need U.S. source import. Prior email-confirmation approval remains pending."
+  ],
+  "sourceDigest": "5ae03a39f50523856cd5b58fb4511becb830abf142a22599bad7059263491a03",
+  "snack": "https://snack.expo.dev/6H8E4vroCCEHVNVVkeeVS",
+  "snackId": "6H8E4vroCCEHVNVVkeeVS",
+  "snackPublishedAt": "2026-10-22T14:52:21.248Z",
+  "verifiedSnackFiles": 29
+}
