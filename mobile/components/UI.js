@@ -144,6 +144,7 @@ export function Chips({ options, value = [], onChange, label }) {
               key={item}
               accessibilityRole="checkbox"
               accessibilityState={{ checked: selected }}
+              aria-checked={selected}
               accessibilityLabel={item}
               onPress={() =>
                 onChange(

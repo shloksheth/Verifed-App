@@ -2,7 +2,12 @@ import React, { useState } from "react";
 import { Linking, Pressable, Text, View } from "react-native";
 import { api } from "../src/api";
 import { assessDish, rankDishes } from "../src/domain";
+import { dietaryMenuStatus, groupMenu } from "../src/menu-filter";
 import { colors, s } from "../styles";
+import AllergenIcons, {
+  AllergenLegend,
+  hasUnknownAllergenCoverage,
+} from "./AllergenIcons";
 import {
   Button,
   Empty,
@@ -38,42 +43,68 @@ function SourceLink({
   icon = "open-outline",
   style,
   compact = false,
+  inline = false,
+  accent = colors.orangeDark,
 }) {
   const task = useTask();
   if (!url) return null;
   return (
     <View style={style}>
-      <Button
-        variant="secondary"
-        icon={icon}
-        busy={task.busy}
-        style={compact && { paddingHorizontal: 10 }}
-        onPress={() => task.run(() => Linking.openURL(url))}
-      >
-        {children}
-      </Button>
+      {inline ? (
+        <Pressable
+          accessibilityRole="button"
+          disabled={task.busy}
+          onPress={() => task.run(() => Linking.openURL(url))}
+          style={s.menuInlineLink}
+        >
+          <Icon name={icon} size={15} color={accent} />
+          <Text style={[s.menuInlineLinkText, { color: accent }]}>
+            {children}
+          </Text>
+        </Pressable>
+      ) : (
+        <Button
+          variant="secondary"
+          icon={icon}
+          busy={task.busy}
+          style={compact && { paddingHorizontal: 10 }}
+          onPress={() => task.run(() => Linking.openURL(url))}
+        >
+          {children}
+        </Button>
+      )}
       <ErrorText error={task.error} />
     </View>
   );
 }
 
-function RestaurantSources({ restaurant }) {
+function RestaurantSources({
+  restaurant,
+  editorial = false,
+  accent = colors.orangeDark,
+}) {
   const [expanded, setExpanded] = useState(false);
   if (!isLocal(restaurant))
     return (
       <Notice>Fictional sample kitchen. Requests here are for practice.</Notice>
     );
   return (
-    <View style={s.card}>
-      <Text selectable style={s.body}>
+    <View style={editorial ? s.menuSource : s.card}>
+      <Text selectable style={editorial ? s.menuCaption : s.body}>
         {restaurant.address || restaurant.location}
       </Text>
-      <Text style={s.small}>
+      <Text style={editorial ? s.menuCaption : s.small}>
         {scopeLabel(restaurant.source?.scope)} · Reviewed{" "}
         {restaurant.source?.reviewedAt || "date not supplied"}
       </Text>
       <View style={s.row}>
-        <SourceLink url={restaurant.menuUrl} style={s.flex} compact>
+        <SourceLink
+          url={restaurant.menuUrl}
+          style={!editorial && s.flex}
+          compact
+          inline={editorial}
+          accent={accent}
+        >
           Official menu
         </SourceLink>
         <SourceLink
@@ -83,21 +114,45 @@ function RestaurantSources({ restaurant }) {
               : null
           }
           icon="call-outline"
-          style={s.flex}
+          style={!editorial && s.flex}
           compact
+          inline={editorial}
+          accent={accent}
         >
           Call
         </SourceLink>
+        {editorial && (
+          <Pressable
+            accessibilityRole="button"
+            accessibilityLabel="Sources and location"
+            accessibilityState={{ expanded }}
+            aria-expanded={expanded}
+            onPress={() => setExpanded(!expanded)}
+            style={s.menuInlineLink}
+          >
+            <Text style={[s.menuInlineLinkText, { color: accent }]}>
+              Sources
+            </Text>
+            <Icon
+              name={expanded ? "chevron-up" : "chevron-down"}
+              size={15}
+              color={accent}
+            />
+          </Pressable>
+        )}
       </View>
-      <Pressable
-        accessibilityRole="button"
-        accessibilityState={{ expanded }}
-        onPress={() => setExpanded(!expanded)}
-        style={[s.between, { minHeight: 44 }]}
-      >
-        <Text style={s.link}>Sources and location</Text>
-        <Icon name={expanded ? "chevron-up" : "chevron-down"} size={18} />
-      </Pressable>
+      {!editorial && (
+        <Pressable
+          accessibilityRole="button"
+          accessibilityState={{ expanded }}
+          aria-expanded={expanded}
+          onPress={() => setExpanded(!expanded)}
+          style={[s.between, { minHeight: 44 }]}
+        >
+          <Text style={s.link}>Sources and location</Text>
+          <Icon name={expanded ? "chevron-up" : "chevron-down"} size={18} />
+        </Pressable>
+      )}
       {expanded && (
         <View style={s.stack}>
           {!!restaurant.source?.note && (
@@ -230,6 +285,7 @@ export function DishCard({ dish, state, navigate }) {
         <Text style={s.menuPrice}>{money(dish.price)}</Text>
       </View>
       <Assessment dish={dish} state={state} />
+      <AllergenIcons dish={dish} />
       {saveUnavailable && (
         <Text style={s.small}>Refresh the catalog to save this item.</Text>
       )}
@@ -576,8 +632,100 @@ export function Explore({ state, navigate }) {
   );
 }
 
+function restaurantTheme(restaurant) {
+  const slug = restaurant.slug || restaurant.id;
+  if (slug.startsWith("hawkers"))
+    return {
+      accent: "#8C352C",
+      tint: "#F2E5DA",
+      wordmark: "Hawkers",
+      edition: "01",
+    };
+  if (slug.startsWith("fresh-kitchen"))
+    return {
+      accent: "#285D47",
+      tint: "#E8EEE3",
+      wordmark: "Fresh Kitchen",
+      edition: "02",
+    };
+  if (slug.startsWith("chipotle"))
+    return {
+      accent: "#722C35",
+      tint: "#F1E6E0",
+      wordmark: "Chipotle",
+      edition: "03",
+    };
+  return {
+    accent: colors.orangeDark,
+    tint: colors.peach,
+    wordmark: restaurant.name,
+    edition: "MENU",
+  };
+}
+
+function MenuSections({
+  dishes,
+  accent,
+  navigate,
+  profile,
+  showMissing = false,
+}) {
+  return groupMenu(dishes).map((group) => (
+    <View key={group.category} style={s.editorialMenuSection}>
+      <View style={[s.editorialCategoryHeading, { borderBottomColor: accent }]}>
+        <Text
+          accessibilityRole="header"
+          style={[s.editorialCategoryTitle, { color: accent }]}
+        >
+          {group.category}
+        </Text>
+        <Text style={s.menuCategoryCount}>
+          {String(group.dishes.length).padStart(2, "0")}
+        </Text>
+      </View>
+      {group.dishes.map((dish) => {
+        const missing = showMissing
+          ? dietaryMenuStatus(dish, profile).missing
+          : [];
+        return (
+          <Pressable
+            key={dish.id}
+            accessibilityRole="button"
+            accessibilityLabel={`View ${dish.name}. Declared allergens: ${[...(dish.allergens || []), ...(dish.otherDeclaredAllergens || [])].join(", ") || "none declared; check details"}.${hasUnknownAllergenCoverage(dish) ? " Allergen coverage is incomplete." : ""}`}
+            onPress={() => navigate(`dish/${dish.id}`)}
+            style={s.editorialMenuRow}
+          >
+            <View style={[s.between, { alignItems: "flex-start" }]}>
+              <Text style={s.editorialItemName}>{dish.name}</Text>
+              <Text style={s.editorialItemPrice}>{money(dish.price)}</Text>
+            </View>
+            {(!!dish.description || dish.provenance?.kind === "component") && (
+              <Text style={s.editorialItemDescription} numberOfLines={2}>
+                {dish.provenance?.kind === "component" ? "Component · " : ""}
+                {dish.description || "Choose this as part of an order."}
+              </Text>
+            )}
+            <AllergenIcons dish={dish} />
+            {!!missing.length && (
+              <Text style={s.menuConfirmationText}>
+                Confirm: {missing.join(", ")}
+              </Text>
+            )}
+          </Pressable>
+        );
+      })}
+    </View>
+  ));
+}
+
 export function Restaurant({ id, state, navigate }) {
-  const [category, setCategory] = useState("All");
+  const needs = [
+    ...(state.profile.allergies || []),
+    ...(state.profile.restrictions || []),
+  ];
+  const [mode, setMode] = useState(() => (needs.length ? "diet" : "full"));
+  const [showUnknown, setShowUnknown] = useState(false);
+  const [showCoverage, setShowCoverage] = useState(false);
   const restaurant = state.restaurants.find((item) => item.id === id);
   if (!restaurant)
     return (
@@ -588,38 +736,238 @@ export function Restaurant({ id, state, navigate }) {
       />
     );
   const dishes = state.dishes.filter((item) => item.restaurantId === id);
-  const categories = ["All", ...new Set(dishes.map((item) => item.category))];
-  const filtered = rankDishes(
-    dishes.filter((dish) => category === "All" || category === dish.category),
-    state.profile,
-    state.meals,
+  const theme = restaurantTheme(restaurant);
+  const assessed = dishes.map((dish) => ({
+    dish,
+    status: dietaryMenuStatus(dish, state.profile),
+  }));
+  const matches = assessed
+    .filter(({ status }) => status.level === "match")
+    .map(({ dish }) => dish);
+  const unknown = assessed
+    .filter(({ status }) => status.level === "unknown")
+    .map(({ dish }) => dish);
+  const conflicts = assessed.filter(
+    ({ status }) => status.level === "conflict",
   );
+  const editNeeds = () =>
+    navigate(`edit-profile?returnTo=${encodeURIComponent(`restaurant/${id}`)}`);
   return (
-    <>
-      <Title
-        eyebrow={
-          isLocal(restaurant)
-            ? "Orlando restaurant · public menu"
-            : "Fictional sample kitchen"
-        }
-        title={restaurant.name}
-      >
-        {restaurant.description}
-      </Title>
-      <RestaurantSources restaurant={restaurant} />
-      {isLocal(restaurant) && (
-        <Notice>
-          This restaurant has no connected kitchen workspace. Confirm dietary
-          questions directly by phone.
-        </Notice>
-      )}
-      <Tabs options={categories} value={category} onChange={setCategory} />
-      <Section title={`${filtered.length} menu entries`}>
-        {filtered.map((dish) => (
-          <DishCard key={dish.id} {...{ dish, state, navigate }} />
+    <View style={s.restaurantMenu}>
+      <View style={[s.editorialMenuHeader, { borderTopColor: theme.accent }]}>
+        <View style={s.between}>
+          <Text style={[s.menuOverline, { color: theme.accent }]}>
+            {isLocal(restaurant)
+              ? "ORLANDO / RESTAURANT MENU"
+              : "FICTIONAL SAMPLE MENU"}
+          </Text>
+          <Text style={[s.menuEdition, { color: theme.accent }]}>
+            {theme.edition}
+          </Text>
+        </View>
+        <Text
+          accessibilityRole="header"
+          accessibilityLabel={restaurant.name}
+          style={[s.menuWordmark, { color: theme.accent }]}
+        >
+          {theme.wordmark}
+        </Text>
+        <Text style={s.menuLocation}>{restaurant.location}</Text>
+      </View>
+      <RestaurantSources
+        restaurant={restaurant}
+        editorial
+        accent={theme.accent}
+      />
+      <View style={[s.menuDietSummary, { backgroundColor: theme.tint }]}>
+        <View style={s.flex}>
+          <Text style={[s.menuOverline, { color: theme.accent }]}>
+            YOUR DIETARY NEEDS
+          </Text>
+          <Text style={s.menuNeedsText}>
+            {needs.length
+              ? needs.join(" · ")
+              : "Choose allergies or dietary restrictions"}
+          </Text>
+        </View>
+        <Pressable
+          accessibilityRole="button"
+          onPress={editNeeds}
+          style={s.menuEditNeeds}
+        >
+          <Text style={[s.menuInlineLinkText, { color: theme.accent }]}>
+            {needs.length ? "Edit" : "Choose"}
+          </Text>
+          <Icon name="chevron-forward" size={14} color={theme.accent} />
+        </Pressable>
+      </View>
+      <View style={s.menuModeSwitch} accessibilityRole="tablist">
+        {[
+          { value: "diet", label: "For my diet" },
+          { value: "full", label: "Full menu" },
+        ].map((item) => (
+          <Pressable
+            key={item.value}
+            accessibilityRole="tab"
+            accessibilityState={{ selected: mode === item.value }}
+            aria-selected={mode === item.value}
+            onPress={() => setMode(item.value)}
+            style={[
+              s.menuMode,
+              mode === item.value && { backgroundColor: theme.accent },
+            ]}
+          >
+            <Text
+              style={[
+                s.menuModeText,
+                mode === item.value && { color: "#FFFFFF" },
+              ]}
+            >
+              {item.label}
+            </Text>
+          </Pressable>
         ))}
-      </Section>
-    </>
+      </View>
+      <Text style={s.menuCaption}>
+        Restaurant-reported information, not certification. Confirm
+        cross-contact and local availability with staff.
+      </Text>
+      <AllergenLegend accent={theme.accent} />
+      {mode === "full" ? (
+        <>
+          <View style={s.menuListIntro}>
+            <View style={s.between}>
+              <Text style={[s.menuListTitle, { color: theme.accent }]}>
+                The menu
+              </Text>
+              <Pressable
+                accessibilityRole="button"
+                accessibilityState={{ expanded: showCoverage }}
+                aria-expanded={showCoverage}
+                onPress={() => setShowCoverage(!showCoverage)}
+                style={s.menuInlineLink}
+              >
+                <Text style={[s.menuInlineLinkText, { color: theme.accent }]}>
+                  What this menu covers
+                </Text>
+                <Icon
+                  name={showCoverage ? "chevron-up" : "chevron-down"}
+                  size={13}
+                  color={theme.accent}
+                />
+              </Pressable>
+            </View>
+            <Text style={s.menuCaption}>
+              {dishes.length} cataloged food items · branch availability may
+              vary
+            </Text>
+            {showCoverage && (
+              <Text style={s.menuCaption}>
+                {restaurant.menuCoverage ||
+                  "Food items currently cataloged from the linked public sources. This is not a verified inventory for this branch."}
+              </Text>
+            )}
+          </View>
+          <View style={s.menuPaper}>
+            <MenuSections {...{ dishes, navigate }} accent={theme.accent} />
+          </View>
+        </>
+      ) : !needs.length ? (
+        <View style={s.menuEmptyState}>
+          <Text style={s.menuListTitle}>Make this menu yours</Text>
+          <Text style={s.body}>
+            Choose your allergies and dietary restrictions to see items with
+            explicit restaurant support for your needs.
+          </Text>
+          <Button variant="secondary" onPress={editNeeds}>
+            Choose dietary needs
+          </Button>
+        </View>
+      ) : (
+        <>
+          <View style={s.menuListIntro}>
+            <Text style={[s.menuListTitle, { color: theme.accent }]}>
+              Restaurant-reported matches
+            </Text>
+            <Text style={s.menuCaption}>
+              {matches.length} {matches.length === 1 ? "item" : "items"}{" "}
+              explicitly support every selected need.
+            </Text>
+          </View>
+          {matches.length ? (
+            <View style={s.menuPaper}>
+              <MenuSections
+                dishes={matches}
+                navigate={navigate}
+                accent={theme.accent}
+              />
+            </View>
+          ) : (
+            <View style={s.menuEmptyState}>
+              <Text style={s.h3}>No supported matches yet</Text>
+              <Text style={s.body}>
+                {unknown.length
+                  ? "The available sources do not explicitly support all your selected needs. Open the items needing confirmation below."
+                  : conflicts.length
+                    ? "The cataloged items have known conflicts with your needs. Open the full menu to review their declarations."
+                    : "No food items are available in this catalog yet."}
+              </Text>
+            </View>
+          )}
+          {!!unknown.length && (
+            <View style={s.menuUnknownSection}>
+              <Pressable
+                accessibilityRole="button"
+                accessibilityState={{ expanded: showUnknown }}
+                aria-expanded={showUnknown}
+                onPress={() => setShowUnknown(!showUnknown)}
+                style={s.menuUnknownToggle}
+              >
+                <View style={s.flex}>
+                  <Text style={s.h3}>
+                    Needs confirmation ({unknown.length})
+                  </Text>
+                  <Text style={s.menuCaption}>
+                    Missing explicit support for one or more needs
+                  </Text>
+                </View>
+                <Icon
+                  name={showUnknown ? "remove" : "add"}
+                  color={theme.accent}
+                />
+              </Pressable>
+              {showUnknown && (
+                <View style={s.menuPaper}>
+                  <MenuSections
+                    dishes={unknown}
+                    navigate={navigate}
+                    accent={theme.accent}
+                    showMissing
+                    profile={state.profile}
+                  />
+                </View>
+              )}
+            </View>
+          )}
+          {!!conflicts.length && (
+            <Text style={s.menuCaption}>
+              {conflicts.length} items with known conflicts are excluded from
+              this view.
+            </Text>
+          )}
+          <Pressable
+            accessibilityRole="button"
+            onPress={() => setMode("full")}
+            style={s.menuInlineLink}
+          >
+            <Text style={[s.menuInlineLinkText, { color: theme.accent }]}>
+              Browse the full menu
+            </Text>
+            <Icon name="arrow-forward" size={16} color={theme.accent} />
+          </Pressable>
+        </>
+      )}
+    </View>
   );
 }
 
@@ -672,6 +1020,12 @@ export function DishDetail({ id, state, navigate, openSheet }) {
             values={dish.allergens}
             fallback="None declared in this record; absence is unconfirmed."
           />
+          {!!dish.otherDeclaredAllergens?.length && (
+            <>
+              <Text style={s.h3}>Other declared allergens</Text>
+              <Tags values={dish.otherDeclaredAllergens} />
+            </>
+          )}
           <Text style={s.h3}>Preparation and cross-contact</Text>
           <Text style={s.body}>
             {dish.preparation ||

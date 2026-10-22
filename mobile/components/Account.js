@@ -172,7 +172,7 @@ export function Auth({ state, navigate, recovery = false }) {
   );
 }
 
-export function ProfileEditor({ state, navigate }) {
+export function ProfileEditor({ state, navigate, returnTo }) {
   const [draft, setDraft] = useState({ ...state.profile });
   const task = useTask();
   const update = (key, value) =>
@@ -247,7 +247,7 @@ export function ProfileEditor({ state, navigate }) {
               state.mode === "guest"
                 ? api.previewProfile(draft)
                 : api.saveProfile(draft),
-            () => navigate("profile"),
+            () => navigate(/^restaurant\/[a-zA-Z0-9-]+$/.test(returnTo || "") ? returnTo : "profile"),
           )
         }
       >

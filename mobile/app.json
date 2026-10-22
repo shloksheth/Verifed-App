@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "verifed-—-know-your-meal",
-    "slug": "snack-b33def78-9a87-4c92-ab69-16ffd8701376",
+    "slug": "snack-b58314da-efe4-4c44-8af4-cdb88de2cd40",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -25,6 +25,6 @@
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "description": "Explore 24 sourced selections at three real Orlando FL-10 locations, compare published allergen declarations, and keep a meal journal. Real menus are not certified allergen-free. Separate fictional sample kitchens demonstrate ingredient conversations and revisions. Google OAuth requires a development build; it is not available in Expo Go."
+    "description": "Explore 110 published food selections across three Orlando FL-10 locations. Switch between an editorial Full menu with allergen icons and For my diet, matched to your selected needs using explicit restaurant claims. Branch availability and cross-contact need confirmation. Separate fictional sample kitchens demonstrate requests. Google OAuth requires a development build."
   }
 }

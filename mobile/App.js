@@ -198,7 +198,7 @@ function AppContent() {
         screen = <Profile {...shared} />;
         break;
       case "edit-profile":
-        screen = <ProfileEditor {...shared} />;
+        screen = <ProfileEditor {...shared} returnTo={route.params.get("returnTo")} />;
         break;
       case "settings":
         screen = <Settings {...shared} />;

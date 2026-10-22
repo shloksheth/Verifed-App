@@ -12,6 +12,7 @@ The import commits were created when the history was recovered. Original saved d
 | [Verifed V4](https://github.com/shloksheth/Verifed-App/releases/tag/v4) | Documentation-only checkpoint recording verified browser Google sign-in and native authentication limits; app behavior matches V3. | Browser application |
 | [Verifed V5](https://github.com/shloksheth/Verifed-App/releases/tag/v5) | Public Orlando restaurant catalog, guest dietary preferences and journal integration in the companion browser app. | Browser application |
 | [Verifed V6](https://github.com/shloksheth/Verifed-App/releases/tag/v6) | First recovered native Orlando version: three locations, 24 compact food records and the scan/request/workspace demonstration. | [Verifed V6](https://snack.expo.dev/E4i_8YfuODHbAhEpNVhF-) |
+| [Verifed V7](https://github.com/shloksheth/Verifed-App/releases/tag/v7) | Three-location catalog expanded to 110 food entries with full-menu and personalized-menu tabs, dietary evidence and allergen icons. | [Verifed V7](https://snack.expo.dev/36-7tJZ_5Jo7qZ_DErC1x) |
 
 Application directories appear as they are introduced: `prototype/` (original JavaScript web prototype), `web/` (React companion), and `mobile/` (React Native/Expo). Every release preserves the other applications already introduced.
 

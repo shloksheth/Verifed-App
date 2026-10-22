@@ -1,3 +1,5 @@
+import { publishedMenus } from "./restaurant-menus.js";
+
 // A small, reviewed catalog, not a live ordering feed. Every entry keeps its source.
 // Stable text keys also let offline copies merge with database-generated UUIDs.
 const reviewedAt = "2026-10-21";
@@ -44,102 +46,42 @@ export const localRestaurants = [
     district: district("2211 S Orange Ave Orlando FL 32806"),
     source: { reviewedAt, scope: "chain", note: "US chain matrix; components touch during preparation. Limited-time foods may contain allergens outside the chart." },
   },
-];
-
-function selection(restaurantId, key, name, allergens, description, options = {}) {
-  const restaurant = localRestaurants.find((item) => item.id === restaurantId);
-  return {
-    id: `${restaurantId}-${key}`, catalogKey: `${restaurantId}-${key}`, restaurantId,
-    name, description, price: null, emoji: "", category: options.kind === "dish" ? "Street food" : "Components",
-    ingredients: options.ingredients || [], allergens, tags: options.tags || [], modifications: [], revision: 1,
-    informationComplete: false,
-    preparation: options.preparation || "Cross-contact and branch preparation are unconfirmed. Discuss your needs with restaurant staff.",
-    provenance: {
-      menuUrl: restaurant.menuUrl, allergenUrl: restaurant.allergenUrl, reviewedAt,
-      scope: "chain", kind: options.kind || "component",
-      // Coverage describes the source's categories, never proof that a blank cell is safe.
-      coverage: options.coverage || [], freeFromClaims: options.freeFromClaims || [],
-      evidenceNote: options.evidenceNote || "Positive declarations transcribed from the restaurant's published guide. Other ingredients and allergens may be unreported.",
-    },
+].map((restaurant) => {
+  const menu = publishedMenus.find((item) => item.key === restaurant.slug);
+  return { ...restaurant,
+    description: 'Explore the published food menu and its reported dietary information.',
+    menuCoverage: menu.menuCoverage, availabilityVerified: false,
+    source: { ...restaurant.source, note: menu.sourceCaveats },
   };
-}
-
-const hawkersCoverage = ["Soy", "Shellfish", "Fish", "Milk", "Egg", "Peanuts", "Sesame"];
-// Ingredients copied as public factual lists from the linked September document.
-// Prepared blends remain the restaurant's descriptions, with no invented recipe.
-const freshIngredients = {
-  "almond-chicken": ["Marinated chicken tenders", "Olive oil", "Salt & pepper", "Yellow mustard", "Pure olive oil", "Fresh garlic", "Blackening spice", "Fresh basil", "Dried thyme", "Dried sage", "Dried rosemary", "Eggs", "Cornstarch", "Gluten-free breadcrumbs", "Toasted almonds"],
-  "sweet-potato-noodles": ["Sweet potato noodles", "Cilantro", "Salt & pepper", "Pure olive oil", "Apple cider vinegar", "Sriracha", "Tamari (GF soy sauce)", "Agave", "Ginger", "Cayenne pepper", "Toasted white sesame seeds"],
-  "kale-caesar": ["Chopped kale", "Almonds", "Mustard", "Fresh garlic", "Lemon juice", "Nutritional yeast", "Granulated onion", "Kosher salt", "Pure olive oil"],
-  "green-beans": ["Green beans", "Sriracha", "Salt & pepper", "Pure olive oil", "Ginger", "Garlic", "Tamari (GF soy sauce)"],
-  "white-ginger": ["Garbanzo aquafaba", "Lemon juice", "Kosher salt", "Yellow mustard", "Pomace/EVOO blend", "Tamari", "Agave", "Fresh ginger"],
-  "coconut-sriracha": ["Yellow Bird sriracha", "Tamari (GF soy sauce)", "Fresh ginger", "Mustard", "Coconut milk", "Pomace/EVOO blend", "Cayenne pepper", "Agave", "Water", "Xanthan gum", "Apple cider vinegar"],
-  "brown-rice": ["Brown rice", "Onion", "Pure olive oil", "Salt & pepper"],
-  "coconut-ginger-rice": ["White rice", "Ginger", "Lime juice", "Coconut milk", "Coconut oil", "Orange juice", "Pure olive oil", "Salt & pepper"],
-  "lemon-broccoli": ["Broccoli", "Pure olive oil", "Lemon juice", "Blackened seasoning", "Fresh garlic", "Salt & pepper"],
-  "golden-chickpeas": ["Garbanzo beans", "Pure olive oil", "White onions", "Minced garlic", "Minced ginger", "Cumin", "Turmeric", "Tomato paste", "Salt & pepper", "Light chili powder", "Cayenne pepper", "Cilantro", "Paprika", "Red peppers", "Green peppers"],
-  "basil-mushrooms": ["Mushrooms", "Salt & pepper", "Granulated garlic", "Basil", "Balsamic vinegar", "Pure olive oil", "Fresh garlic"],
-  "rosemary-chicken": ["Marinated chicken", "Fresh rosemary", "Italian parsley", "Orange juice", "Lemon juice", "Fresh garlic", "Yellow mustard", "Salt", "Pepper", "Paprika", "Pure olive oil"],
-};
-const hawkers = (key, name, allergens, description) => selection("hawkers-orlando", key, name, allergens, description, {
-  kind: "dish", coverage: hawkersCoverage,
-  preparation: "The guide says cooking oil may contain trace soy protein. Wheat and tree nuts are not covered. Ask this location about ingredients and cross-contact.",
-});
-const fresh = (key, name, allergens, description, options) => selection("fresh-kitchen-waterford", key, name, allergens, description, {
-  coverage: [...new Set(["Milk", "Soy", ...allergens])], ingredients: freshIngredients[key], ...options,
-});
-const chipotle = (key, name, allergens, description, options) => selection("chipotle-south-orange", key, name, allergens, description, {
-  coverage: ["Milk", "Soy", "Wheat"], ...options,
 });
 
-export const localDishes = [
-  hawkers("chili-crisp-wontons", "Chili Crisp Wontons", ["Soy", "Shellfish", "Egg", "Peanuts", "Sesame"], "Wontons with chicken, shrimp and mushrooms."),
-  hawkers("bbq-pork-bao", "Bao - Chinese BBQ Pork", ["Soy", "Milk", "Sesame"], "Bao with roasted pork and hoisin."),
-  hawkers("pork-belly-bao", "Bao - Pork Belly", ["Soy", "Fish", "Milk", "Peanuts"], "Pork belly bao with greens and peanuts."),
-  hawkers("seoul-chicken-bao", "Bao - Seoul Hot Chicken", ["Soy", "Milk"], "Fried chicken bao with garlic gochujang."),
-  hawkers("bulgogi-steak", "Bulgogi Steak", ["Soy", "Egg", "Sesame"], "Korean BBQ steak with onions."),
-  hawkers("twice-fried-wings", "Korean Twice Fried Wings", ["Soy", "Peanuts", "Sesame"], "Wings with garlic gochujang and peanuts."),
-  fresh("almond-chicken", "Almond Baked Chicken", ["Tree nuts", "Egg"], "Chicken component with almonds; not a complete bowl.", {
-    evidenceNote: "Menu declares nuts. The PDF's corresponding Baked Almond Chicken also lists almonds and eggs among its ingredients. Neither name nor top-level label alone is a complete allergen record.",
-  }),
-  fresh("sweet-potato-noodles", "Sweet Potato Noodles", ["Soy", "Sesame"], "Noodle base component; other bowl choices need separate review.", {
-    evidenceNote: "The September PDF names this component Chilled Sweet Potato Noodles, declares soy, and lists toasted white sesame seeds. Sesame comes from ingredient evidence, even though its short label only highlights soy.",
-  }),
-  fresh("kale-caesar", "Crunchy Kale Caesar", ["Tree nuts"], "Salad base component. The ingredient document identifies almonds."),
-  fresh("green-beans", "Blistered Green Beans", ["Soy"], "Vegetable component from the chain menu."),
-  fresh("white-ginger", "Creamy White Ginger", ["Soy"], "Sauce component from the chain menu."),
-  fresh("coconut-sriracha", "Coconut Sriracha", ["Soy"], "Sauce component from the chain menu."),
-  fresh("brown-rice", "Brown Rice", [], "Rice base component; no selected major allergens declared in its published row.", {
-    evidenceNote: "The component row is marked dairy-free, nut-free and soy-free in the ingredient PDF. Blank categories do not establish absence; review the full bowl and shared preparation with staff.",
-    freeFromClaims: ["Restaurant labels dairy-free", "Restaurant labels nut-free", "Restaurant labels soy-free"],
-  }),
-  fresh("coconut-ginger-rice", "Coconut Ginger Rice", [], "Rice base made with coconut ingredients; not a complete bowl.", {
-    evidenceNote: "PDF row lists coconut milk/oil and is marked dairy-free, nut-free and soy-free. Coconut is recorded here explicitly; no personal tolerance or allergen absence is inferred.",
-    freeFromClaims: ["Restaurant labels dairy-free", "Restaurant labels nut-free", "Restaurant labels soy-free"],
-  }),
-  fresh("lemon-broccoli", "Lemon Garlic Broccoli", [], "Vegetable component from the chain menu.", {
-    evidenceNote: "PDF row is marked dairy-free, nut-free and soy-free. Other categories, recipe substitutions and cross-contact still need staff review.",
-    freeFromClaims: ["Restaurant labels dairy-free", "Restaurant labels nut-free", "Restaurant labels soy-free"],
-  }),
-  fresh("golden-chickpeas", "Golden Spice Chickpeas", [], "Chickpea component from the chain menu.", {
-    evidenceNote: "PDF row is marked dairy-free, nut-free and soy-free; this is a restaurant claim for one component, not assurance about the complete order.",
-    freeFromClaims: ["Restaurant labels dairy-free", "Restaurant labels nut-free", "Restaurant labels soy-free"],
-  }),
-  fresh("basil-mushrooms", "Basil Mushrooms", [], "Vegetable component from the chain menu.", {
-    evidenceNote: "PDF row is marked dairy-free, nut-free and soy-free. Shared preparation and branch availability remain unconfirmed.",
-    freeFromClaims: ["Restaurant labels dairy-free", "Restaurant labels nut-free", "Restaurant labels soy-free"],
-  }),
-  fresh("rosemary-chicken", "Grilled Rosemary Chicken", [], "Chicken protein component; the ingredient document also lists yellow mustard.", {
-    evidenceNote: "Corresponding Rosemary Chicken PDF row is marked dairy-free, nut-free and soy-free and lists yellow mustard. Mustard is not one of the app's nine tracked categories; consult the source for other needs.",
-    freeFromClaims: ["Restaurant labels dairy-free", "Restaurant labels nut-free", "Restaurant labels soy-free"],
-  }),
-  chipotle("burrito-tortilla", "Flour Tortilla (Burrito)", ["Wheat"], "Tortilla component; fillings need their own review.", { evidenceNote: "The US matrix marks wheat/gluten and sulphites. Its sulphites note concerns naturally occurring sulphites in vinegar below 10 ppm." }),
-  chipotle("taco-tortilla", "Flour Tortilla (Taco)", ["Wheat"], "Tortilla component, without fillings.", { evidenceNote: "The US matrix marks wheat/gluten and sulphites. Its sulphites note concerns naturally occurring sulphites in vinegar below 10 ppm." }),
-  chipotle("sofritas", "Sofritas", ["Soy"], "Tofu protein component; not a complete entrée.", { evidenceNote: "US matrix marks soy and sulphites; the vinegar sulphites note is below 10 ppm. Review the complete order with staff." }),
-  chipotle("cheese", "Monterey Jack Cheese", ["Milk"], "Cheese topping component."),
-  chipotle("queso", "Queso Blanco", ["Milk"], "Queso component."),
-  chipotle("sour-cream", "Sour Cream", ["Milk"], "Dairy topping component."),
-];
+// Convert reviewed source records into the app's shared dish contract.
+export const localDishes = publishedMenus.flatMap((menu) => menu.items.map((item) => ({
+  id: menu.key + '-' + item.key,
+  catalogKey: menu.key + '-' + item.key,
+  restaurantId: menu.key,
+  name: item.name,
+  category: item.category,
+  description: item.kind === 'component' ? 'One component; review the complete order.' : '',
+  price: null, emoji: '', revision: 1,
+  ingredients: item.ingredients || [],
+  allergens: item.allergens || [],
+  otherDeclaredAllergens: item.otherDeclaredAllergens || [],
+  tags: item.tags || [], modifications: [], informationComplete: false,
+  preparation: menu.sourceCaveats + ' Confirm this location’s preparation and cross-contact with staff.',
+  provenance: {
+    menuUrl: item.menuUrl || menu.menuUrl,
+    allergenUrl: item.allergenUrl || menu.allergenUrl,
+    reviewedAt: item.reviewedAt || reviewedAt,
+    scope: 'chain', kind: item.kind,
+    coverage: item.coverage || menu.allergenCoverage || [],
+    freeFromAllergens: item.freeFromAllergens || [],
+    freeFromClaims: item.freeFromClaims || [],
+    evidenceNote: item.evidenceNote,
+    guideRow: item.guideRow || item.pdfName || null,
+    pdfPage: item.pdfPage || null,
+  },
+})));
 
 export function mergeLocalCatalog(restaurants = [], dishes = [], { preferBundled = false } = {}) {
   const flat = restaurants.map(({ details, ...row }) => ({ ...details, ...row }));
