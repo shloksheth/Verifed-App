@@ -26,7 +26,7 @@ The API exposes profile save, request creation/actions, meal create/edit, favori
 
 AsyncStorage persists local demo data and Supabase sessions. Supabase uses `processLock` and disables automatic URL-session detection. `src/native-globals.js` installs URL and URLSearchParams before Supabase loads. Version 4 of the maintained polyfill avoids an older punycode dependency that crashed in Snack's Android runtime. Browser previews retain the browser URL implementation. Startup validates that native URL parsing works before creating the client and reports the actual cause if it fails.
 
-Expo Crypto supplies UUIDs. Expo WebBrowser opens the Google system-browser session in a development build; AuthSession builds the app callback. Google is explicitly rejected in Expo Go and the Snack web iframe. A successful native callback is checked for errors and session tokens, handed to Supabase, then followed by an authorized refresh. Credentials belong to Supabase's provider configuration; no Google client secret is shipped in this app. `src/config.js` contains only the public API URL, publishable key, companion URL and feature flag. Database policies enforce access.
+Expo Crypto supplies UUIDs. The mobile app authenticates with username/email and password through Supabase and its restricted username lookup function; Google sign-in, its callback flow, and development-build warnings have been removed from the mobile user interface and API. Previously authenticated user sessions still use standard Supabase session refresh handling. `src/config.js` contains the public API URL, publishable key and a website URL still required by the map origin filter. Database policies enforce account access.
 
 ## Build, assets and publication
 

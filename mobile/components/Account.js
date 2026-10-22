@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import { Linking, Platform, Pressable, Share, Text, View } from "react-native";
-import Constants from "expo-constants";
+import { Pressable, Share, Text, View } from "react-native";
 import { api } from "../src/api";
 import { validateLogin, validateSignup } from "../src/account-auth";
 import {
@@ -9,7 +8,6 @@ import {
   TASTE_TAGS,
   defaultProfile,
 } from "../src/data";
-import { googleAuthEnabled, websiteUrl } from "../src/config";
 import { colors, s } from "../styles";
 import {
   Button,
@@ -39,10 +37,6 @@ export function Auth({
   const [password, setPassword] = useState("");
   const [notice, setNotice] = useState("");
   const task = useTask();
-  const nativeGoogleAvailable =
-    googleAuthEnabled &&
-    Platform.OS !== "web" &&
-    Constants.executionEnvironment !== "storeClient";
   function changeMode(next) {
     if (task.busy) return;
     if (next === "reset" && identifier.includes("@")) setEmail(identifier);
@@ -189,42 +183,6 @@ export function Auth({
           </Button>
         )}
       </View>
-      {["signin", "signup"].includes(mode) && googleAuthEnabled && (
-        <>
-          {nativeGoogleAvailable ? (
-            <Button
-              icon="logo-google"
-              variant="secondary"
-              busy={task.busy}
-              onPress={() =>
-                task.run(
-                  () => api.signInWithGoogle(),
-                  () => navigate("home"),
-                )
-              }
-            >
-              Continue with Google
-            </Button>
-          ) : (
-            <>
-              <Text style={s.small}>
-                Prefer Google? Use the companion website. Its sign-in stays on
-                that website; use the form above to sign in here.
-              </Text>
-              <Button
-                variant="quiet"
-                icon="open-outline"
-                busy={task.busy}
-                onPress={() =>
-                  task.run(() => Linking.openURL(`${websiteUrl}/#/auth`))
-                }
-              >
-                Google on companion website
-              </Button>
-            </>
-          )}
-        </>
-      )}
       {mode !== "recover" && (
         <>
           <Button variant="quiet" onPress={() => navigate("home")}>

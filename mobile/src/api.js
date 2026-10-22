@@ -1,10 +1,7 @@
 import "./native-globals.js";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { AppState, Platform } from "react-native";
-import Constants from "expo-constants";
 import * as Crypto from "expo-crypto";
-import * as WebBrowser from "expo-web-browser";
-import { makeRedirectUri } from "expo-auth-session";
 import { configureIdFactory, newId, copy } from "./model-utils.js";
 import { createSerialQueue } from "./storage-queue.js";
 import { createClient, processLock } from "@supabase/supabase-js";
@@ -23,7 +20,6 @@ import { mergeLocalCatalog } from "./local-catalog.js";
 import { passwordSignIn, passwordSignUp } from "./account-auth.js";
 
 configureIdFactory(Crypto.randomUUID);
-WebBrowser.maybeCompleteAuthSession();
 const DEMO_KEY = "verifed-demo-v1";
 const MODE_KEY = "verifed-mode";
 const PREVIEW_KEY = "verifed-preview-profile-v1";
@@ -417,44 +413,6 @@ export const api = {
   },
   async signIn(identifier, password) {
     await passwordSignIn(requireCloud(), identifier, password);
-    generation++;
-    await enqueueDemo(() => AsyncStorage.removeItem(MODE_KEY));
-    publish({ ...empty(), ready: true });
-    await refresh();
-  },
-  async signInWithGoogle() {
-    if (
-      Platform.OS === "web" ||
-      Constants.executionEnvironment === "storeClient"
-    )
-      throw new Error(
-        "Google sign-in needs a Verifed development build. You can save dishes and journal on this device without signing in, or use the companion website for an account.",
-      );
-    const redirectTo = makeRedirectUri({
-      scheme: "verifed",
-      path: "auth/callback",
-    });
-    const { url } = result(
-      await requireCloud().auth.signInWithOAuth({
-        provider: "google",
-        options: {
-          redirectTo,
-          skipBrowserRedirect: true,
-          queryParams: { prompt: "select_account" },
-        },
-      }),
-    );
-    const response = await WebBrowser.openAuthSessionAsync(url, redirectTo);
-    if (response.type !== "success") throw new Error("Sign-in was cancelled.");
-    const callback = new URL(response.url);
-    const params = new URLSearchParams(callback.hash.slice(1));
-    if (params.get("error"))
-      throw new Error("Google sign-in was not completed. Please try again.");
-    const access_token = params.get("access_token");
-    const refresh_token = params.get("refresh_token");
-    if (!access_token || !refresh_token)
-      throw new Error("Sign-in returned without a session. Please try again.");
-    result(await client.auth.setSession({ access_token, refresh_token }));
     generation++;
     await enqueueDemo(() => AsyncStorage.removeItem(MODE_KEY));
     publish({ ...empty(), ready: true });
