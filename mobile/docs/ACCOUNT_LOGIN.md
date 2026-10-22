@@ -12,7 +12,7 @@ The reset form still requires an email address. If the sign-in field contains an
 
 `useTask` prevents duplicate submissions and displays API or validation failures through `ErrorText`. Credential fields stop being editable while a submission is pending. Username and email fields disable capitalization and autocorrection; the password field uses secure text entry and the correct current/new-password autofill hint. Pressing the keyboard's submit control on the password field follows the same validation path as the button.
 
-Password forms are the primary route in Snack, Expo Go and web. Google is secondary: development builds get the native button; previews link to the companion website and explain that its session stays there.
+The Verifed mobile app offers username/email and password sign-in, password recovery, account creation and guest browsing. Google sign-in, external companion-website authentication links and development-build prompts are intentionally absent from the mobile login interface. Existing Supabase sessions continue through normal session handling.
 
 ## Welcome: `components/Welcome.js`
 
