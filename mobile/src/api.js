@@ -20,6 +20,7 @@ import { makeDemoState, makeRequest, transitionRequest } from "./domain.js";
 import { supabaseUrl, supabasePublishableKey } from "./config.js";
 import { finishCommittedWrite } from "./write-sync.js";
 import { mergeLocalCatalog } from "./local-catalog.js";
+import { passwordSignIn, passwordSignUp } from "./account-auth.js";
 
 configureIdFactory(Crypto.randomUUID);
 WebBrowser.maybeCompleteAuthSession();
@@ -414,13 +415,8 @@ export const api = {
   async resetDemo() {
     return openDemo(true);
   },
-  async signIn(email, password) {
-    result(
-      await requireCloud().auth.signInWithPassword({
-        email: email.trim(),
-        password,
-      }),
-    );
+  async signIn(identifier, password) {
+    await passwordSignIn(requireCloud(), identifier, password);
     generation++;
     await enqueueDemo(() => AsyncStorage.removeItem(MODE_KEY));
     publish({ ...empty(), ready: true });
@@ -464,20 +460,8 @@ export const api = {
     publish({ ...empty(), ready: true });
     await refresh();
   },
-  async signUp(email, password, name) {
-    if (password.length < 8)
-      throw new Error("Use at least 8 characters for your password.");
-    const data = result(
-      await requireCloud().auth.signUp({
-        email: email.trim(),
-        password,
-        options: {
-          data: { name: String(name || "").trim() },
-          emailRedirectTo:
-            "https://verifed-dining-studio.jackbruns247.chatgpt.site",
-        },
-      }),
-    );
+  async signUp(email, password, username) {
+    const data = await passwordSignUp(requireCloud(), { email, password, username });
     if (data.session) {
       generation++;
       await enqueueDemo(() => AsyncStorage.removeItem(MODE_KEY));

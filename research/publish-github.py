@@ -61,6 +61,14 @@ def selected_files():
             raise ValueError(f'Symlinks cannot be published: mobile/{relative.as_posix()}')
         if source.is_file():
             files['mobile/' + relative.as_posix()] = source
+    backend = ROOT / 'verifed-app' / 'supabase'
+    for directory in ('migrations', 'functions'):
+        for source in sorted((backend / directory).rglob('*')):
+            relative = source.relative_to(backend)
+            if source.is_symlink():
+                raise ValueError('Symlink in backend source')
+            if source.is_file() and not is_excluded(relative):
+                files['web/supabase/' + relative.as_posix()] = source
     for name in RESEARCH_FILES:
         source = ROOT / 'research' / name
         if source.is_file():

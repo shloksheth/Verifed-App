@@ -32,17 +32,17 @@ GitHub source and version history: https://github.com/shloksheth/Verifed-App/rel
 
 ## What changed
 
-V11 adds Honey, Vegetarian (no eggs), and No garlic or onion. It fixes the undefined onPress crash on dish details, removes repeated disclaimer paragraphs and collapses source notes. Compact ingredient-status labels remain. Profile persistence, dish rendering, save/journal actions and the restaurant return button were exercised in the browser.
+V12 adds username/email and password login, private username lookup, database uniqueness and duplicate-account errors. Live signup is pending the requested approval to disable email confirmation. V11 previously added Honey, Vegetarian (no eggs), and No garlic or onion. It fixes the undefined onPress crash on dish details, removes repeated disclaimer paragraphs and collapses source notes. Compact ingredient-status labels remain. Profile persistence, dish rendering, save/journal actions and the restaurant return button were exercised in the browser.
 
 26 Orlando-area locations and 1,652 published food/component records. Added Woodlands, Bombay Street Kitchen, Yellow Dog Eats Gotha and three Taco Bell branches with a location picker. Each restaurant retains Full menu and For my diet views.
 
 Explore combines a real map, city/ZIP/neighborhood and U.S. street-address entry, radius, cuisine and dietary-evidence filters. Recommendations use dietary fit, preferences and rated meal history; strict allergen filters require source absence claims for items and do not certify kitchens.
 
-Home has an information button. Guests see Create an account, Log in and Explore without an account when opening the app. New accounts use Google; native OAuth requires a development build. No working Expo Go Google callback is claimed.
+Home has an information button. Guests see Create an account, Log in and Explore without an account when opening the app. New accounts use the username/email/password form; immediate signup requires the pending email-confirmation setting change. Google is secondary; native OAuth requires a development build. No working Expo Go Google callback is claimed.
 
 ## Verification and limits
 
-83 mobile tests and web/Android/iOS exports pass. Public Supabase reads matched all 1,652 records, UUID relationships, coordinates, images and provenance across 26 locations. Browser checks cover address lookup, map tiles/pin navigation, account entry, Home info, cuisine and dietary filtering, and the Taco Bell picker.
+91 mobile tests and web/Android/iOS exports pass. Public Supabase reads matched all 1,652 records, UUID relationships, coordinates, images and provenance across 26 locations. Browser checks cover address lookup, map tiles/pin navigation, account entry, Home info, cuisine and dietary filtering, and the Taco Bell picker.
 
 The V10 Snack editor hung before the native simulator became available. Prior native screenshots belong to V9, and do not verify V10. Native gestures/keyboard/address interaction and physical-iPhone behavior remain to be tested. The matching Expo SDK 54 runtime is required.
 

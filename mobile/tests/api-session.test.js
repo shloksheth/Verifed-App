@@ -23,6 +23,7 @@ import {
   transitionRequest,
 } from "../src/domain.js";
 import { finishCommittedWrite } from "../src/write-sync.js";
+import { passwordSignIn, passwordSignUp } from "../src/account-auth.js";
 
 const source = (
   await readFile(new URL("../src/api.js", import.meta.url), "utf8")
@@ -126,6 +127,8 @@ function harness({ onStore, onQuery, onRpc } = {}) {
     supabaseUrl: "test",
     supabasePublishableKey: "test",
     finishCommittedWrite,
+    passwordSignIn,
+    passwordSignUp,
   };
   const api = new Function(...Object.keys(adapters), `${source}\nreturn api;`)(
     ...Object.values(adapters),

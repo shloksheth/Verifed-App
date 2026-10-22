@@ -1,12 +1,12 @@
 {
-  "version": 11,
-  "name": "Verifed V11",
-  "id": "msDt7qbzQwjSPeyM3zH3O",
-  "url": "exp://u.expo.dev/933fd9c0-1666-11e7-afca-d980795c5824?runtime-version=exposdk%3A54.0.0&channel-name=production&snack=msDt7qbzQwjSPeyM3zH3O",
-  "hashId": "msDt7qbzQwjSPeyM3zH3O",
-  "snackId": "8d9cdc34-7a47-427c-a779-4e77b4a9a43e",
-  "editorUrl": "https://snack.expo.dev/msDt7qbzQwjSPeyM3zH3O",
-  "publishedAt": "2026-10-22T11:40:53.698Z",
+  "version": 12,
+  "name": "Verifed V12",
+  "id": "fgWhETxEw4X_VllwdjmuP",
+  "url": "exp://u.expo.dev/933fd9c0-1666-11e7-afca-d980795c5824?runtime-version=exposdk%3A54.0.0&channel-name=production&snack=fgWhETxEw4X_VllwdjmuP",
+  "hashId": "fgWhETxEw4X_VllwdjmuP",
+  "snackId": "676596b1-9cae-4585-9ef5-e7199240bceb",
+  "editorUrl": "https://snack.expo.dev/fgWhETxEw4X_VllwdjmuP",
+  "publishedAt": "2026-10-22T14:42:40.652Z",
   "sdkVersion": "54.0.0",
   "files": [
     "App.js",
@@ -19,6 +19,7 @@
     "components/RestaurantMap.js",
     "components/UI.js",
     "components/Welcome.js",
+    "src/account-auth.js",
     "src/api.js",
     "src/config.js",
     "src/data.js",
@@ -37,5 +38,5 @@
     "src/write-sync.js",
     "assets/verifed-mark.png"
   ],
-  "sourceHash": "56db082e21a94bcc100fb8b343fd62e87b0b4712335111b6dc3885acf050b775"
+  "sourceHash": "f37a7699616d87e549deabc0a0cc01884b3e2b059e876d56b0c1ceeae021366b"
 }

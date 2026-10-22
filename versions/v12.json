@@ -1,0 +1,16 @@
+{
+  "number": 12,
+  "name": "Verifed V12",
+  "description": "Added username/email and password accounts using the existing free Supabase backend. Sign-up requires a unique username, email and password; login accepts username or email. Includes case-insensitive username uniqueness, duplicate-account errors, private server-side lookup and rate limiting. Passwords remain in Supabase Auth. Google is a secondary companion/development-build option.",
+  "verification": [
+    "91 tests pass, including auth validation, duplicate-account handling, username session installation and module binding checks.",
+    "Final web, Android and iOS Metro exports pass.",
+    "Browser: signup renders and empty submission shows validation. See account-auth-verification.json for the live backend test result.",
+    "No current physical-iPhone or native simulator interaction test is claimed. Public password-reset email delivery remains unverified."
+  ],
+  "sourceDigest": "dbc4c95dcfdfca01b4b5cc9dface9c929017d1dd916b02f61998a1e93bed8f12",
+  "snack": "https://snack.expo.dev/fgWhETxEw4X_VllwdjmuP",
+  "snackId": "fgWhETxEw4X_VllwdjmuP",
+  "snackPublishedAt": "2026-10-22T14:42:40.652Z",
+  "verifiedSnackFiles": 28
+}

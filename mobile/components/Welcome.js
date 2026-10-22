@@ -34,8 +34,8 @@ export default function Welcome({ onSignIn, onCreateAccount, onContinue }) {
         </Button>
       </View>
       <Text style={[s.small, { textAlign: "center" }]}>
-        Use Google for a new account. Guest preferences, saved dishes, and
-        journal entries stay on this device.
+        Create an account with a username, email, and password. Guest
+        preferences, saved dishes, and journal entries stay on this device.
       </Text>
     </View>
   );

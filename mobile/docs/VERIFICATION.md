@@ -1,3 +1,9 @@
+# V12 account checkpoint
+
+91 mobile tests and web/Android/iOS exports pass. At 390x844, the new signup and username-or-email login forms render and block empty submission. The deployed Edge Function returns username availability; server SQL grants only id/email columns to its trusted service role. Private tables deny client access by design (the RLS-no-policy advisor notices are expected). The existing leaked-password-protection warning remains; see https://supabase.com/docs/guides/auth/password-security#password-strength-and-leaked-password-protection.
+
+Live signup and round-trip login tests are pending approval to turn off Supabase Confirm email. The test script is prepared; no signup success, public reset delivery or current native-device interaction is claimed. The account implementation is documented in ACCOUNT_LOGIN.md. Earlier verification follows as historical evidence.
+
 # Verifed V11 verification
 
 Current Snack: https://snack.expo.dev/msDt7qbzQwjSPeyM3zH3O. Source hash: 56db082e21a94bcc100fb8b343fd62e87b0b4712335111b6dc3885acf050b775.

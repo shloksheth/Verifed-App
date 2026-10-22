@@ -1,3 +1,5 @@
+V12 account update: username/email password accounts replace the earlier Google-only signup described below. See ACCOUNT_LOGIN.md for the current implementation and verification.
+
 # Welcome, accounts and Home info
 
 `components/Welcome.js` contains the opening welcome screen and the Home information sheet. App.js checks the initialized session before presenting welcome: a signed-in user goes straight to the app; a guest gets Create an account, Log in and Explore without an account. A session-local boolean dismisses welcome, so it does not interrupt ordinary navigation. A new launch/reload prompts a guest again. No session or password is invented by the welcome UI. Password-recovery links retain priority.

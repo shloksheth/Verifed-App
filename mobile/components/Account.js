@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Linking, Platform, Pressable, Share, Text, View } from "react-native";
+import Constants from "expo-constants";
 import { api } from "../src/api";
+import { validateLogin, validateSignup } from "../src/account-auth";
 import {
   ALLERGENS,
   RESTRICTIONS,
@@ -32,32 +34,45 @@ export function Auth({
 }) {
   const [mode, setMode] = useState(recovery ? "recover" : initialMode);
   const [email, setEmail] = useState("");
+  const [username, setUsername] = useState("");
+  const [identifier, setIdentifier] = useState("");
   const [password, setPassword] = useState("");
   const [notice, setNotice] = useState("");
   const task = useTask();
+  const nativeGoogleAvailable =
+    googleAuthEnabled &&
+    Platform.OS !== "web" &&
+    Constants.executionEnvironment !== "storeClient";
   function changeMode(next) {
+    if (task.busy) return;
+    if (next === "reset" && identifier.includes("@")) setEmail(identifier);
     setMode(next);
+    setPassword("");
     setNotice("");
     task.setError("");
   }
   async function submit() {
-    if (mode !== "recover" && !email.trim())
-      return task.setError("Enter your email address.");
-    if (!["reset", "signin"].includes(mode) && password.length < 8)
-      return task.setError("Use at least eight characters for your password.");
-    if (mode === "signin" && !password)
-      return task.setError("Enter your password.");
     task.run(async () => {
+      setNotice("");
       if (mode === "reset") {
+        if (!email.trim()) throw new Error("Enter your email address.");
         await api.resetPassword(email.trim());
         setNotice(
           "If this address has an account, a reset link will arrive by email.",
         );
       } else if (mode === "recover") {
+        if (password.length < 8)
+          throw new Error("Use at least eight characters for your password.");
         await api.updatePassword(password);
         navigate("home");
+      } else if (mode === "signup") {
+        // Validate the complete form before creating an account or changing screens.
+        const account = validateSignup({ username, email, password });
+        await api.signUp(account.email, account.password, account.username);
+        navigate("home");
       } else {
-        await api.signIn(email.trim(), password);
+        const login = validateLogin(identifier, password);
+        await api.signIn(login, password);
         navigate("home");
       }
     });
@@ -83,109 +98,133 @@ export function Auth({
           onChange={changeMode}
         />
       )}
-      {["signin", "signup"].includes(mode) && (
-        <>
-          <Button
-            icon="logo-google"
-            variant="secondary"
-            busy={task.busy}
-            disabled={!googleAuthEnabled}
-            onPress={() =>
-              task.run(
-                () => api.signInWithGoogle(),
-                () => navigate("home"),
-              )
+      <View style={s.card}>
+        {mode === "signup" && (
+          <>
+            <Text style={s.small}>
+              Choose a username and add your email for password recovery. You
+              can start using your account right away.
+            </Text>
+            <Field
+              label="Username"
+              value={username}
+              onChangeText={setUsername}
+              autoCapitalize="none"
+              autoCorrect={false}
+              autoComplete="username-new"
+              placeholder="Your username"
+              hint="3–24 letters, numbers, or underscores. Not case-sensitive."
+              maxLength={24}
+              editable={!task.busy}
+            />
+          </>
+        )}
+        {mode === "signin" && (
+          <Field
+            label="Username or email"
+            value={identifier}
+            onChangeText={setIdentifier}
+            autoCapitalize="none"
+            autoCorrect={false}
+            autoComplete="username"
+            placeholder="Your username or email address"
+            editable={!task.busy}
+          />
+        )}
+        {["signup", "reset"].includes(mode) && (
+          <Field
+            label="Email address"
+            value={email}
+            onChangeText={setEmail}
+            keyboardType="email-address"
+            autoCapitalize="none"
+            autoComplete="email"
+            autoCorrect={false}
+            placeholder="you@example.com"
+            editable={!task.busy}
+          />
+        )}
+        {mode !== "reset" && (
+          <Field
+            label="Password"
+            value={password}
+            onChangeText={setPassword}
+            secureTextEntry
+            autoCapitalize="none"
+            autoCorrect={false}
+            autoComplete={
+              mode === "signin" ? "current-password" : "new-password"
             }
+            placeholder={
+              mode === "signin" ? "Your password" : "At least 8 characters"
+            }
+            editable={!task.busy}
+            onSubmitEditing={submit}
+          />
+        )}
+        {mode === "signin" && (
+          <Pressable
+            accessibilityRole="button"
+            onPress={() => changeMode("reset")}
+            disabled={task.busy}
           >
-            {mode === "signup"
-              ? "Create account with Google"
-              : "Continue with Google"}
+            <Text style={s.link}>Forgot password?</Text>
+          </Pressable>
+        )}
+        <ErrorText error={task.error} />
+        {!!notice && <Notice>{notice}</Notice>}
+        <Button busy={task.busy} onPress={submit}>
+          {
+            {
+              signin: "Sign in",
+              signup: "Create account",
+              reset: "Send reset link",
+              recover: "Update password",
+            }[mode]
+          }
+        </Button>
+        {mode === "reset" && (
+          <Button variant="quiet" onPress={() => changeMode("signin")}>
+            Back to sign in
           </Button>
-          <Text style={s.small}>
-            {googleAuthEnabled
-              ? Platform.OS === "web"
-                ? "Continue with your Google account. Your first sign-in creates an account; later sign-ins return to it."
-                : "Google sign-in requires a Verifed development build. In Snack or Expo Go, browse without an account or use the companion website."
-              : "Google sign-in setup is pending. You can still browse every public menu."}
-          </Text>
-          {googleAuthEnabled && (
+        )}
+      </View>
+      {["signin", "signup"].includes(mode) && googleAuthEnabled && (
+        <>
+          {nativeGoogleAvailable ? (
             <Button
-              variant="quiet"
-              icon="open-outline"
+              icon="logo-google"
+              variant="secondary"
               busy={task.busy}
               onPress={() =>
-                task.run(() => Linking.openURL(`${websiteUrl}/#/auth`))
+                task.run(
+                  () => api.signInWithGoogle(),
+                  () => navigate("home"),
+                )
               }
             >
-              Open companion sign-in
+              Continue with Google
             </Button>
+          ) : (
+            <>
+              <Text style={s.small}>
+                Prefer Google? Use the companion website. Its sign-in stays on
+                that website; use the form above to sign in here.
+              </Text>
+              <Button
+                variant="quiet"
+                icon="open-outline"
+                busy={task.busy}
+                onPress={() =>
+                  task.run(() => Linking.openURL(`${websiteUrl}/#/auth`))
+                }
+              >
+                Google on companion website
+              </Button>
+            </>
           )}
-          {mode === "signup" && (
-            <Text style={s.small}>
-              Your first Google sign-in creates your Verifed account. We use
-              basic identity only: your name, email and profile photo.
-            </Text>
-          )}
-          {mode === "signin" && <View style={s.divider} />}
         </>
       )}
-      {mode !== "signup" && (
-        <View style={s.card}>
-          <Text style={s.small}>
-            For an existing email account. New accounts use Google on the
-            companion website or a Verifed development build.
-          </Text>
-          {mode !== "recover" && (
-            <Field
-              label="Email address"
-              value={email}
-              onChangeText={setEmail}
-              keyboardType="email-address"
-              autoCapitalize="none"
-              autoComplete="email"
-              placeholder="you@example.com"
-            />
-          )}
-          {mode !== "reset" && (
-            <Field
-              label="Password"
-              value={password}
-              onChangeText={setPassword}
-              secureTextEntry
-              autoCapitalize="none"
-              autoComplete={
-                mode === "signin" ? "current-password" : "new-password"
-              }
-              placeholder="At least 8 characters"
-            />
-          )}
-          {mode === "signin" && (
-            <Pressable
-              accessibilityRole="button"
-              onPress={() => changeMode("reset")}
-            >
-              <Text style={s.link}>Forgot password?</Text>
-            </Pressable>
-          )}
-          <ErrorText error={task.error} />
-          {!!notice && <Notice>{notice}</Notice>}
-          <Button busy={task.busy} onPress={submit}>
-            {
-              {
-                signin: "Sign in",
-                reset: "Send reset link",
-                recover: "Update password",
-              }[mode]
-            }
-          </Button>
-          {mode === "reset" && (
-            <Button variant="quiet" onPress={() => changeMode("signin")}>
-              Back to sign in
-            </Button>
-          )}
-        </View>
-      )}
-      {mode === "signup" && <ErrorText error={task.error} />}
       {mode !== "recover" && (
         <>
           <Button variant="quiet" onPress={() => navigate("home")}>
