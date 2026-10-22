@@ -23,11 +23,11 @@ Expo prints a local QR code. The phone and computer must be able to reach each o
 
 The official Snack SDK publisher lives in `../research/native-tools`. Install its pinned dependencies once with `npm ci` in that directory. Then run `npm run publish:snack` here. It uploads only the application code and carrot asset, resolves peers, saves a public anonymous Snack and records the actual returned IDs in `publication.json`. Anonymous snapshots get a new link when source changes. No Expo password or persistent credential is embedded.
 
-## Google sign-in
+## Mobile accounts
 
-Google is connected to Supabase with basic identity scopes. The companion website has been tested with the intended Google account. Google OAuth requires a development build with the `verifed` scheme on native devices; Expo Go's shared container cannot receive this app's OAuth callback. The app explains this and lets you open the companion website. Google sign-in inside the Snack web iframe is deliberately unavailable because that iframe is not the configured companion origin.
+The app supports username/email and password sign-in, account creation, password recovery and guest browsing. Google sign-in and companion-website login buttons have been removed from the mobile app to keep the sign-in experience consistent across Snack, Expo Go, and native builds. Existing authenticated sessions are not deleted. The separate web app may retain its own provider configuration.
 
-The exact native redirect `verifed://auth/callback` is allowlisted in Supabase. The code implements the development-build callback, but no signed development binary or device OAuth test is claimed. Google is currently in Testing and the owner's requested account is added as a tester. Public email signup requires an email delivery provider; the existing email-account path is secondary.
+Email-password sign-up still requires appropriate Supabase email-confirmation settings. Password reset requires working email delivery, and its current recovery redirect should be reviewed before claiming end-to-end account recovery works.
 
 ## Read the code
 
