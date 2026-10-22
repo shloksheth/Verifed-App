@@ -1,0 +1,10 @@
+{
+  "number": 2,
+  "kind": "web",
+  "originalCommit": "77baf4750636a3ee5f10c81d4d1684ccef788511",
+  "originalDate": "2026-10-19T19:56:57-04:00",
+  "summary": "Full React/Vite companion app with responsive screens, Supabase data, local demo, tests and code documentation.",
+  "name": "Verifed V2",
+  "importedAt": "2026-10-22T11:14:30.214989+00:00",
+  "historicalDateRewritten": false
+}

@@ -7,6 +7,7 @@ The import commits were created when the history was recovered. Original saved d
 | Version | Change | Expo Snack |
 | --- | --- | --- |
 | [Verifed V1](https://github.com/shloksheth/Verifed-App/releases/tag/v1) | Initial browser prototype with dietary menu assessment and a local diner/kitchen demonstration. | Browser application |
+| [Verifed V2](https://github.com/shloksheth/Verifed-App/releases/tag/v2) | Full React/Vite companion app with responsive screens, Supabase data, local demo, tests and code documentation. | Browser application |
 
 Application directories appear as they are introduced: `prototype/` (original JavaScript web prototype), `web/` (React companion), and `mobile/` (React Native/Expo). Every release preserves the other applications already introduced.
 

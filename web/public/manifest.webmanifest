@@ -1,0 +1,17 @@
+{
+  "name": "Verifed",
+  "short_name": "Verifed",
+  "description": "Your taste. Your terms.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#faf9f6",
+  "theme_color": "#faf9f6",
+  "icons": [
+    {
+      "src": "/assets/verifed-mark.png",
+      "sizes": "1254x1254",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
