@@ -1,0 +1,10 @@
+{
+  "number": 4,
+  "kind": "web",
+  "originalCommit": "424db28c63673ae293ce347798e4be36007ec394",
+  "originalDate": "2026-10-19T20:33:09-04:00",
+  "summary": "Documentation-only checkpoint recording verified browser Google sign-in and native authentication limits; app behavior matches V3.",
+  "name": "Verifed V4",
+  "importedAt": "2026-10-22T11:14:32.109524+00:00",
+  "historicalDateRewritten": false
+}

@@ -19,7 +19,7 @@ The backend agent reported all four migrations applied, the rolled-back live SQL
 - Menu price 16.50, category Lunch bowls and an added Extra greens modification roundtripped through save/reopen. Display formatting was corrected to retain cents.
 - Share menu generated a QR PNG and correct local restaurant link. This does not establish physical-camera decoding.
 - Export my data downloaded a JSON file. The shared dialog trapped Shift-Tab within its last button, closed on Escape and restored focus to Log a meal.
-- Guest/public catalog and account-protected backend behavior were exercised by the backend HTTP suite. Public Google OAuth remains a separate configuration/interactive check.
+- Guest/public catalog and account-protected backend behavior were exercised by the backend HTTP suite. Google sign-in was subsequently exercised on localhost and the published site using the requested account.
 
 ## Responsive layout checks
 
@@ -35,4 +35,4 @@ No real diner/staff research participants, restaurant integration, food inspecti
 
 New-dish creation and owned fictional workspace creation passed in the local browser. Profile persistence was confirmed by its rendered Fresh + Citrus + Herby text. The menu QR and Copy menu link control are implemented; the latter displays a clipboard fallback if permission is unavailable. No console errors were recorded during the tested local flows.
 
-Google OAuth: consent configuration is prepared but requires policy approval. No client secret/provider is configured; VITE_GOOGLE_AUTH_ENABLED stays false and the button is disabled honestly. This is unfinished external setup, not a claim of a completed Google sign-in test.
+Google OAuth is configured and enabled after the approved policy/client setup. Root verified an actual Google return and authenticated Connected / Hi, Shlok on localhost and the published site. Google remains in Testing with the requested owner account added; this is not a public Google verification claim. Cancelled sign-in handling also passed. A native React Native/Expo implementation is in the sibling verifed-mobile folder, with its own test report.

@@ -51,4 +51,4 @@ The consolidated code handbook and screen atlas are delivered alongside the desi
 
 ## Authentication status
 
-Google sign-in code is included, but provider setup is pending explicit approval of Google's API Services User Data Policy. The Google button remains disabled to prevent an unsupported redirect. The complete local diner/kitchen demo works without an account; real cloud authorization was verified with disposable password-session test accounts. Those tests do not establish working Google login. See docs/SETUP_AND_ASSETS.md for the exact remaining setup.
+Google sign-in is configured and tested on localhost and the published companion site using the requested owner account. Google remains in Testing. The complete local diner/kitchen demo also works without an account. See docs/SETUP_AND_ASSETS.md for provider details. The React Native mobile application and published Snack instructions are in ../verifed-mobile.
