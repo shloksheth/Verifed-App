@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Linking, Platform, Pressable, Share, Text, View } from "react-native";
+import { Platform, Pressable, Share, Text, View } from "react-native";
 import Constants from "expo-constants";
 import { api } from "../src/api";
 import { validateLogin, validateSignup } from "../src/account-auth";
@@ -9,7 +9,7 @@ import {
   TASTE_TAGS,
   defaultProfile,
 } from "../src/data";
-import { googleAuthEnabled, websiteUrl } from "../src/config";
+import { googleAuthEnabled } from "../src/config";
 import { colors, s } from "../styles";
 import {
   Button,
@@ -206,22 +206,12 @@ export function Auth({
               Continue with Google
             </Button>
           ) : (
-            <>
-              <Text style={s.small}>
-                Prefer Google? Use the companion website. Its sign-in stays on
-                that website; use the form above to sign in here.
-              </Text>
-              <Button
-                variant="quiet"
-                icon="open-outline"
-                busy={task.busy}
-                onPress={() =>
-                  task.run(() => Linking.openURL(`${websiteUrl}/#/auth`))
-                }
-              >
-                Google on companion website
-              </Button>
-            </>
+            <Notice>
+              Google sign-in is available in an installed Verifed development
+              build. Expo Snack and Expo Go cannot receive this app's Google
+              callback. You can sign in with your username or email and
+              password here, or continue without an account.
+            </Notice>
           )}
         </>
       )}
