@@ -6,7 +6,7 @@ import { createHash } from "node:crypto";
 
 const root = path.resolve(
   path.dirname(fileURLToPath(import.meta.url)),
-  "../../verifed-mobile",
+  "../../mobile",
 );
 const manifest = JSON.parse(
   await fs.readFile(path.join(root, "package.json"), "utf8"),
