@@ -1,0 +1,32 @@
+{
+  "id": "E4i_8YfuODHbAhEpNVhF-",
+  "url": "exp://u.expo.dev/933fd9c0-1666-11e7-afca-d980795c5824?runtime-version=exposdk%3A54.0.0&channel-name=production&snack=E4i_8YfuODHbAhEpNVhF-",
+  "hashId": "E4i_8YfuODHbAhEpNVhF-",
+  "snackId": "e5f23380-77a1-438d-af91-587603e97f08",
+  "name": "Verifed V6",
+  "originalId": "AvnMStCTzlt43hff6KgO4",
+  "editorUrl": "https://snack.expo.dev/E4i_8YfuODHbAhEpNVhF-",
+  "republishedAt": "2026-10-22T11:12:27.455Z",
+  "sdkVersion": "54.0.0",
+  "files": [
+    "App.js",
+    "styles.js",
+    "components/Account.js",
+    "components/Dining.js",
+    "components/Journal.js",
+    "components/Requests.js",
+    "components/Scanner.js",
+    "components/UI.js",
+    "components/Workspace.js",
+    "src/api.js",
+    "src/config.js",
+    "src/data.js",
+    "src/domain.js",
+    "src/local-catalog.js",
+    "src/model-utils.js",
+    "src/native-globals.js",
+    "src/storage-queue.js",
+    "src/write-sync.js",
+    "assets/verifed-mark.png"
+  ]
+}

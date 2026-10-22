@@ -1,0 +1,30 @@
+{
+  "expo": {
+    "name": "verifed-—-know-your-meal",
+    "slug": "snack-b33def78-9a87-4c92-ab69-16ffd8701376",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "description": "Explore 24 sourced selections at three real Orlando FL-10 locations, compare published allergen declarations, and keep a meal journal. Real menus are not certified allergen-free. Separate fictional sample kitchens demonstrate ingredient conversations and revisions. Google OAuth requires a development build; it is not available in Expo Go."
+  }
+}
