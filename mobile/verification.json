@@ -1,8 +1,8 @@
 {
-  "version": 10,
-  "snapshot": "qEw0A9vgOiKizDke66XQZ",
-  "sourceHash": "b16c1cc14abff97dc1e7757ff8ccb6a85680441f0ed352395381fd392aa3621b",
-  "tests": 76,
+  "version": 11,
+  "snapshot": "msDt7qbzQwjSPeyM3zH3O",
+  "sourceHash": "56db082e21a94bcc100fb8b343fd62e87b0b4712335111b6dc3885acf050b775",
+  "tests": 83,
   "platformExports": [
     "web",
     "android",
@@ -22,13 +22,15 @@
     "Indian cuisine filter",
     "map tiles and pin-to-menu navigation",
     "three Taco Bell branch choices",
-    "strict all-nine empty-result explanation"
+    "strict all-nine empty-result explanation",
+    "Honey and new restrictions save/reload",
+    "dish detail: renders, save toggle, journal sheet, return to restaurant"
   ],
   "publicRestCatalogMatched": true,
   "currentNativeSimulatorTested": false,
   "physicalIphoneTested": false,
-  "nativeBlocker": "V10 Snack editor hung before simulator controls; DOM and screenshot operations timed out.",
+  "nativeBlocker": "No new native simulator check for V11; previous Snack editor hung.",
   "nativeGoogleOAuthTested": false,
   "googleNativeRequirement": "Development build; Expo Go cannot receive registered app callback.",
-  "historicalNativeEvidence": "v9-release.json and cac-ios-*.png belong to prior V9, not V10."
+  "historicalNativeEvidence": "V9 native screenshots are historical; user supplied an iPhone screenshot of the original onPress crash."
 }

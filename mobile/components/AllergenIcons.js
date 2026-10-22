@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Pressable, Text, View } from "react-native";
 import Svg, { Circle, Ellipse, G, Line, Path, Rect } from "react-native-svg";
-import { ALLERGENS } from "../src/data";
+import { ALLERGENS, MAJOR_ALLERGENS } from "../src/data";
 import { colors, s } from "../styles";
 
 // Small line drawings stay native, and every symbol keeps its written label.
@@ -87,6 +87,14 @@ export function AllergenGlyph({ allergen, size = 18, color = colors.ink }) {
         </>
       );
       break;
+    case "Honey":
+      drawing = (
+        <>
+          <Path d="M7 3h10v4H7zM7 7l-2 4v10h14V11l-2-4M5 12h14M5 18h14" />
+          <Path d="M12 10s-2 3-2 4a2 2 0 0 0 4 0c0-1-2-4-2-4Z" />
+        </>
+      );
+      break;
     case "other":
       drawing = (
         <>
@@ -131,7 +139,7 @@ function AllergenToken({
       accessible
       accessibilityLabel={
         unknown
-          ? "Unknown: incomplete allergen source coverage"
+          ? "Unlisted allergen coverage"
           : `${allergen}: ${ingredient ? "recognizable named ingredient" : "declared allergen"}`
       }
       style={s.allergenToken}
@@ -141,7 +149,7 @@ function AllergenToken({
         color={unknown ? colors.muted : colors.ink}
       />
       <Text style={s.allergenLabel}>
-        {unknown ? "Unknown" : `${allergen}${ingredient ? "†" : ""}`}
+        {unknown ? "Details" : `${allergen}${ingredient ? "†" : ""}`}
       </Text>
     </View>
   );
@@ -150,7 +158,7 @@ function AllergenToken({
 export function hasUnknownAllergenCoverage(dish) {
   if (!dish.provenance) return !dish.informationComplete;
   const coverage = dish.provenance.coverage || [];
-  return ALLERGENS.some(
+  return MAJOR_ALLERGENS.some(
     (allergen) =>
       !coverage.some((item) => item.toLowerCase() === allergen.toLowerCase()),
   );
@@ -200,9 +208,10 @@ export default function AllergenIcons({
         !declared.length &&
         !ingredient.length &&
         !possible.length &&
-        !other.length && (
+        !other.length &&
+        !(showUnknown && unknown) && (
           <Text style={s.allergenLabel}>
-            No allergens declared; check details
+            Not listed
           </Text>
         )}
     </View>
@@ -227,8 +236,7 @@ export function AllergenLegend({ accent = colors.ink }) {
           </Text>
         </Pressable>
         <Text style={[s.menuCaption, s.flex]}>
-          Icons: source declarations or named ingredients (†). ? means
-          incomplete coverage.
+          † Menu ingredient · ? Unlisted details
         </Text>
       </View>
       {expanded && (
@@ -239,12 +247,9 @@ export function AllergenLegend({ accent = colors.ink }) {
           <AllergenToken unknown />
           <AllergenToken allergen="Other source declaration" other />
           <Text style={s.menuCaption}>
-            † marks a recognizable ingredient named in the published menu, not a
-            restaurant allergen declaration. “Check ingredients” flags common
-            recipe possibilities inferred from menu wording; they need
-            confirmation. Additional declarations keep the restaurant's wording,
-            including unspecified nut types. They are not mapped to a different
-            allergen.
+            † Menu ingredient. “Check ingredients” marks recipe-based clues.
+            Other declarations retain the source’s wording. Honey is an
+            additional selectable allergy.
           </Text>
         </View>
       )}

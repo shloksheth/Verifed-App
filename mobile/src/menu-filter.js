@@ -2,9 +2,33 @@ const same = (left, right) =>
   String(left).toLowerCase() === String(right).toLowerCase();
 const includes = (values, value) =>
   (values || []).some((item) => same(item, value));
-const supportsRestriction = (dish, restriction) =>
+export const supportsRestriction = (dish, restriction) =>
   includes(dish.tags, restriction) ||
-  (same(restriction, "Vegetarian") && includes(dish.tags, "Vegan"));
+  (["Vegetarian", "Vegetarian (no eggs)"].some((value) =>
+    same(restriction, value),
+  ) &&
+    includes(dish.tags, "Vegan")) ||
+  (same(restriction, "Vegetarian (no eggs)") &&
+    includes(dish.tags, "Vegetarian") &&
+    includes(dish.provenance?.freeFromAllergens, "Egg"));
+
+export function restrictionHasConflict(dish, restriction) {
+  const hints = dish.ingredientHints || {};
+  if (includes(hints.restrictionConflicts, restriction)) return true;
+  if (same(restriction, "Vegetarian (no eggs)")) {
+    return (
+      includes(hints.restrictionConflicts, "Vegetarian") ||
+      [
+        ...(dish.allergens || []),
+        ...(hints.allergens || []),
+        ...(hints.possibleAllergens || []),
+      ].some((value) =>
+        ["Egg", "Fish", "Shellfish"].some((animal) => same(value, animal)),
+      )
+    );
+  }
+  return false;
+}
 
 // A dietary-menu match means the restaurant explicitly supports each selected
 // requirement. It is separate from the meal assessment and cannot certify food.
@@ -23,7 +47,7 @@ export function dietaryMenuStatus(dish, profile = {}) {
         includes(hints.possibleAllergens, allergen),
     ),
     ...restrictions.filter((restriction) =>
-      includes(hints.restrictionConflicts, restriction),
+      restrictionHasConflict(dish, restriction),
     ),
   ].filter((value, index, values) => values.indexOf(value) === index);
   const claims = dish.provenance?.freeFromAllergens || [];

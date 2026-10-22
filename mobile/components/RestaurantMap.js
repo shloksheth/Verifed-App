@@ -203,8 +203,8 @@ export default function RestaurantMap({ results = [], center, onSelect }) {
         <Text style={[styles.key, { color: colors.muted }]}>● Menu</Text>
       </View>
       <Text style={styles.small}>
-        Pin colors summarize the available menu evidence, not the safety of a
-        prepared meal. Missing coordinates stay in the list.
+        Pin colors reflect menu evidence. Locations without coordinates stay in
+        the list.
       </Text>
     </View>
   );

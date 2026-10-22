@@ -1,4 +1,16 @@
-# Verifed V10 verification
+# Verifed V11 verification
+
+Current Snack: https://snack.expo.dev/msDt7qbzQwjSPeyM3zH3O. Source hash: 56db082e21a94bcc100fb8b343fd62e87b0b4712335111b6dc3885acf050b775.
+
+83 tests pass, including a lexical binding check for all published modules and six new dietary/profile tests. Final web, Android and iOS exports pass. No database schema or menu-fact changes were needed; source-derived ingredient hints are recomputed by the client.
+
+At 390x844, Honey, Vegetarian (no eggs) and No garlic or onion appeared as selectable choices, saved to the device and remained selected after reload. A real Black Rooster Guacamole detail screen rendered, showed its actual onion conflict, toggled Saved off/on, opened and closed the meal composer, and returned to its restaurant through the repaired button. No meal was submitted. Source details are collapsed; generic repeated warnings are absent from the main menu/detail journey. Compact ingredient and missing-data labels remain.
+
+The user's iPhone photo established the original undefined onPress crash. It was traced to DishDetail referring to a callback only defined in RestaurantRow. The fixed button calls navigate directly. The new binding test detects unbound identifiers that Metro exports do not reject. No successful physical-iPhone retest of the repaired version is claimed.
+
+The V10 browser/backend checks below remain historical evidence for unchanged location, map and menu facts. Their screenshots are not a V11 native run. Google OAuth still needs a native development build.
+
+# Prior V10 verification
 
 Reviewed 22 October 2026. Current source publication: https://snack.expo.dev/qEw0A9vgOiKizDke66XQZ, named Verifed V10. Source hash b16c1cc14abff97dc1e7757ff8ccb6a85680441f0ed352395381fd392aa3621b. V1-V9 were recovered and pushed sequentially with exact provenance; browser-only V1-V5 have no invented native Snack.
 

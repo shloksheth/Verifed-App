@@ -19,6 +19,7 @@ const direct = [
   ["Wheat", /\b(?:wheat|seitan|semolina|bulgur|couscous)\b/i],
   ["Soy", /\b(?:soy|soya|soy sauce|soybeans?|edamame|tofu|miso|tempeh)\b/i],
   ["Sesame", /\b(?:sesame|tahini)\b/i],
+  ["Honey", /\bhoney\b/i],
 ];
 const uncertain = [
   [
@@ -47,10 +48,11 @@ export function ingredientHints(item) {
   const cleaned = text
     .replace(/\b(?:king\s+)?oyster mushrooms?\b/gi, "mushrooms")
     .replace(/\bFish[’\']s Gold\b/gi, "house sauce")
+    .replace(/\b(?:no|without)\s+honey\b/gi, "")
     .replace(/\+\s*[^.;·]*?\d+(?:\.\d+)?/gi, "")
     .replace(/\b(?:add|optional)\s+[^.;·]*/gi, "")
     .replace(
-      /(?:vegan|plant.based|non.dairy|dairy.free)\s+(?:cheese|butter|cream|mayo|mayonnaise|aioli|chicken|sausage|bacon|egg)/gi,
+      /(?:vegan|plant.based|non.dairy|dairy.free)\s+(?:cheese|butter|cream|mayo|mayonnaise|aioli|chicken|sausage|bacon|egg|honey)/gi,
       "",
     )
     .replace(
@@ -66,7 +68,7 @@ export function ingredientHints(item) {
       "",
     )
     .replace(
-      /eggplant|egg roll|butter beans|butter lettuce|(?:milk|dairy|egg|soy|wheat|sesame|peanut|nut).free|buckwheat/gi,
+      /eggplant|egg roll|butter beans|butter lettuce|(?:milk|dairy|egg|soy|wheat|sesame|peanut|nut|honey).free|buckwheat/gi,
       "",
     );
   const allergens = [],
@@ -96,6 +98,19 @@ export function ingredientHints(item) {
     }
   }
   const restrictionConflicts = [];
+  const aromatics = cleaned
+    .replace(
+      /\b(?:no|without)\s+(?:garlic(?:\s*(?:and|or|\/|&)\s*onions?)?|onions?(?:\s*(?:and|or|\/|&)\s*garlic)?|honey)\b/gi,
+      "",
+    )
+    .replace(/\b(?:garlic|onion)[-\s]free\b/gi, "");
+  const aromatic = aromatics.match(
+    /\b(?:garlic|onions?|shallots?|scallions?)\b/i,
+  );
+  if (aromatic) {
+    restrictionConflicts.push("No garlic or onion");
+    clues.push(`No garlic or onion: menu names ${aromatic[0]}`);
+  }
   const animalAllergens = [
     ...(item.allergens || []),
     ...allergens,

@@ -64,10 +64,8 @@ export function HomeInfo({ onClose }) {
       </Text>
       <Text style={s.h3}>Know what the labels mean</Text>
       <Text style={s.body}>
-        Menus are published source snapshots. Ingredient clues are labeled
-        separately from restaurant declarations. Confirm current ingredients,
-        preparation and cross-contact with staff; these labels do not certify a
-        prepared meal or kitchen.
+        Restaurant declarations and ingredient clues have separate labels. Open
+        Source details for coverage, review dates and original menus.
       </Text>
       <Text style={s.small}>
         Built as a Congressional App Challenge community project. Restaurant

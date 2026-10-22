@@ -237,12 +237,17 @@ export function ProfileEditor({ state, navigate, returnTo }) {
           value={draft.allergies}
           onChange={(value) => update("allergies", value)}
         />
+        <Text style={s.small}>Nine major allergens, plus Honey.</Text>
         <Chips
           label="Dietary restrictions"
           options={RESTRICTIONS}
           value={draft.restrictions}
           onChange={(value) => update("restrictions", value)}
         />
+        <Text style={s.small}>
+          Vegetarian (no eggs) allows dairy. Garlic/onion avoidance is separate
+          from vegan and vegetarian labels.
+        </Text>
       </View>
       <View style={s.card}>
         <Chips

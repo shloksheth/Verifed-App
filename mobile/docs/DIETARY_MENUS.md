@@ -35,3 +35,6 @@ Stable catalog keys preserve existing database UUIDs, favorites and history. The
 ## Verification
 
 `tests/menu-filter.test.js` covers all-selected-needs matching, contradictory claims, unknown evidence, unset requirements and section ordering. Catalog tests check that source declarations, ingredient evidence and current district records stay intact. Browser checks exercise both menu tabs, preference editing/return, the unknown section, allergen legends and small-screen layout. Native bundle export and a published simulator launch supplement these checks.
+
+
+V11 removes repeated warning paragraphs and per-row missing-needs prose. The compact Details badge and Possible options group remain; source evidence is available through the dish’s collapsed Source details section.

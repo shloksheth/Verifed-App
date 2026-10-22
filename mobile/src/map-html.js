@@ -77,7 +77,7 @@ window.addEventListener('load', function(){
     var marker = L.marker(position,{icon:icon,keyboard:true,title:row.name,alt:row.name}).addTo(map);
     var label = document.createElement('div');
     label.textContent = row.name + (row.supportedCount > 0 ? ' · '+row.supportedCount+' reported matches' :
-      row.possibleCount > 0 ? ' · '+row.possibleCount+' possible options; confirm ingredients' : ' · view menu');
+      row.possibleCount > 0 ? ' · '+row.possibleCount+' possible options' : ' · view menu');
     marker.bindTooltip(label,{direction:'top'});
     marker.on('click',function(){ reportMap('select',row.id); });
     if (marker.getElement()) marker.getElement().setAttribute('aria-label','Open '+row.name+' menu');

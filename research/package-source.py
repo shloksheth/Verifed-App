@@ -25,12 +25,14 @@ with zipfile.ZipFile(out / 'Verifed_Source.zip', 'w', zipfile.ZIP_DEFLATED) as a
         path = root / 'research/native-tools' / name
         archive.write(path, path.relative_to(root))
 
-delivery = f"""# Verifed V10 delivery - 22 October 2026
+delivery = f"""# {publication['name']} delivery - 22 October 2026
 
 Try the numbered React Native app: {publication['editorUrl']}
 GitHub source and version history: https://github.com/shloksheth/Verifed-App/releases
 
 ## What changed
+
+V11 adds Honey, Vegetarian (no eggs), and No garlic or onion. It fixes the undefined onPress crash on dish details, removes repeated disclaimer paragraphs and collapses source notes. Compact ingredient-status labels remain. Profile persistence, dish rendering, save/journal actions and the restaurant return button were exercised in the browser.
 
 26 Orlando-area locations and 1,652 published food/component records. Added Woodlands, Bombay Street Kitchen, Yellow Dog Eats Gotha and three Taco Bell branches with a location picker. Each restaurant retains Full menu and For my diet views.
 
@@ -40,7 +42,7 @@ Home has an information button. Guests see Create an account, Log in and Explore
 
 ## Verification and limits
 
-76 mobile tests and web/Android/iOS exports pass. Public Supabase reads matched all 1,652 records, UUID relationships, coordinates, images and provenance across 26 locations. Browser checks cover address lookup, map tiles/pin navigation, account entry, Home info, cuisine and dietary filtering, and the Taco Bell picker.
+83 mobile tests and web/Android/iOS exports pass. Public Supabase reads matched all 1,652 records, UUID relationships, coordinates, images and provenance across 26 locations. Browser checks cover address lookup, map tiles/pin navigation, account entry, Home info, cuisine and dietary filtering, and the Taco Bell picker.
 
 The V10 Snack editor hung before the native simulator became available. Prior native screenshots belong to V9, and do not verify V10. Native gestures/keyboard/address interaction and physical-iPhone behavior remain to be tested. The matching Expo SDK 54 runtime is required.
 
@@ -50,9 +52,9 @@ The V10 Snack editor hung before the native simulator became available. Prior na
 
 Verifed_Native_Code_Guide.pdf explains related modules, source evidence, navigation, address search, map, recommendation engine, accounts, storage and release tooling. Verifed_Source.zip includes the mobile and companion source, tests, public research and importer/publisher code, excluding environment files, credentials, modules and generated bundles.
 
-V1-V9 recovered checkpoints are uploaded sequentially with source provenance. V6-V9 have new version-named Snack copies; V1-V5 were browser applications. They do not have invented native versions. V10 uses the same number in Snack and GitHub. Future completed updates follow AGENTS.md and docs/GITHUB_RELEASES.md.
+V1-V9 recovered checkpoints are uploaded sequentially with source provenance. V6-V9 have new version-named Snack copies; V1-V5 were browser applications. They do not have invented native versions. Each current release uses the same number in Snack and GitHub. Future completed updates follow AGENTS.md and docs/GITHUB_RELEASES.md.
 
 The companion website remains https://verifed-dining-studio.jackbruns247.chatgpt.site and has its earlier browser interface. AI assistance is disclosed in the guide; learn and explain the implementation accurately. No paid service, restaurant message/order, or store publication occurred.
 """
 (out / 'DELIVERY.md').write_text(delivery, encoding='utf-8')
-print('Packaged Verifed V10:', publication['editorUrl'])
+print('Packaged ' + publication['name'] + ':', publication['editorUrl'])

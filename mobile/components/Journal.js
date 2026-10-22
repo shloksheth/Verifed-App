@@ -139,7 +139,7 @@ export function MealComposer({ dish, entry, state, onClose, navigate }) {
         placeholder="The citrus dressing was the best part…"
       />
       <Text style={s.small}>
-        Ratings describe taste. They do not verify allergy suitability.
+        Your journal helps personalize recommendations.
       </Text>
       <ErrorText error={task.error} />
       <Button busy={task.busy} icon="journal-outline" onPress={submit}>

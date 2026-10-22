@@ -311,6 +311,23 @@ for (const table of ["profiles", "meals", "favorites"]) {
   });
 }
 
+test("additional honey and dietary choices survive profile cleaning and refresh", async () => {
+  const { api, stored } = harness();
+  const profile = {
+    ...defaultProfile,
+    allergies: ["Honey"],
+    restrictions: ["No garlic or onion", "Vegetarian (no eggs)"],
+  };
+  await api.previewProfile(profile);
+  await api.refresh();
+  assert.deepEqual(api.getState().profile.allergies, ["Honey"]);
+  assert.deepEqual(api.getState().profile.restrictions, profile.restrictions);
+  assert.deepEqual(
+    JSON.parse(stored.get("verifed-preview-profile-v1")).restrictions,
+    profile.restrictions,
+  );
+});
+
 test("device favorites and journal persist across refresh without cloud writes", async () => {
   const writes = [];
   const { api, stored } = harness({

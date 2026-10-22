@@ -1,5 +1,5 @@
 // Fictional menus make the demonstration reproducible without suggesting a real partnership.
-export const ALLERGENS = [
+export const MAJOR_ALLERGENS = [
   "Milk",
   "Egg",
   "Fish",
@@ -10,7 +10,15 @@ export const ALLERGENS = [
   "Soy",
   "Sesame",
 ];
-export const RESTRICTIONS = ["Vegetarian", "Vegan", "Gluten-free"];
+// Honey is selectable without redefining the nine-major-allergen filter.
+export const ALLERGENS = [...MAJOR_ALLERGENS, "Honey"];
+export const RESTRICTIONS = [
+  "Vegetarian",
+  "Vegetarian (no eggs)",
+  "Vegan",
+  "Gluten-free",
+  "No garlic or onion",
+];
 export const TASTE_TAGS = [
   "Fresh",
   "Savory",

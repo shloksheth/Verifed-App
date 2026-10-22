@@ -1,4 +1,4 @@
-import { ALLERGENS } from "./data.js";
+import { MAJOR_ALLERGENS } from "./data.js";
 import { dietaryMenuStatus } from "./menu-filter.js";
 
 const list = (value) => (Array.isArray(value) ? value : []);
@@ -131,7 +131,7 @@ function recommendation(result, profile, signals, needsSelected) {
     );
   } else if (needsSelected && result.possibleCount) {
     reasons.push(
-      `${result.possibleCount} possible ${result.possibleCount === 1 ? "option" : "options"}; ingredients need confirmation`,
+      `${result.possibleCount} possible ${result.possibleCount === 1 ? "option" : "options"} · ingredient details needed`,
     );
   } else if (needsSelected && result.conflictCount) {
     reasons.push(
@@ -254,7 +254,11 @@ export function discoverRestaurants({
       explicitAbsence(dish, needs.allergies, needs.restrictions),
     ).length;
     const allNineCount = menu.filter((dish) =>
-      explicitAbsence(dish, ALLERGENS, needs.restrictions),
+      explicitAbsence(
+        dish,
+        [...new Set([...MAJOR_ALLERGENS, ...needs.allergies])],
+        needs.restrictions,
+      ),
     ).length;
     if (dietMode === "options" && !supportedCount && !possibleCount) continue;
     if (dietMode === "reported" && !supportedCount) continue;

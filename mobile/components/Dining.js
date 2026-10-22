@@ -208,21 +208,35 @@ export function Assessment({ dish, state, detailed = false }) {
     result.level === "conflict"
       ? `${inferredFlag ? "Check your dietary flags" : "Known profile conflict"}${detailed ? ": " + result.conflicts.join(", ") : ""}`
       : result.level === "unknown"
-        ? "Unknown — information needs confirmation"
-        : "Review ingredients and preparation";
+        ? "Ingredient details"
+        : "Menu information";
   return (
     <View style={s.stack}>
       <Notice conflict={result.level === "conflict"}>{message}</Notice>
-      {detailed && !!result.reasons?.length && (
+      {detailed && result.level === "conflict" && !!result.reasons?.length && (
         <View style={s.card}>
           <Text style={s.h3}>Why this result</Text>
-          {result.reasons.map((reason) => (
-            <Text key={reason} style={s.body}>
-              {reason}
-            </Text>
-          ))}
+          {result.reasons
+            .filter((reason) =>
+              /^(Listed allergen:|Ingredient clue to check:|Named ingredients may conflict)/.test(
+                reason,
+              ),
+            )
+            .map((reason) => (
+              <Text key={reason} style={s.body}>
+                {reason}
+              </Text>
+            ))}
         </View>
       )}
+      {detailed &&
+        result.level === "unknown" &&
+        !!dietaryMenuStatus(dish, state.profile).missing.length && (
+          <Text style={s.small}>
+            Not listed:{" "}
+            {dietaryMenuStatus(dish, state.profile).missing.join(", ")}
+          </Text>
+        )}
     </View>
   );
 }
@@ -558,8 +572,7 @@ export function Home({ state, navigate }) {
         ))}
       </View>
       <Text style={s.sourceFootnote}>
-        Built for the Orlando community. Menu information comes from published
-        restaurant sources; a match is not an allergen-free guarantee.
+        Explore Orlando-area menus. Save favorites and track meals you enjoy.
       </Text>
     </>
   );
@@ -623,7 +636,6 @@ function MenuSections({
   accent,
   navigate,
   profile,
-  showMissing = false,
   showSupport = false,
 }) {
   return groupMenu(dishes).map((group) => (
@@ -640,9 +652,6 @@ function MenuSections({
         </Text>
       </View>
       {group.dishes.map((dish) => {
-        const missing = showMissing
-          ? dietaryMenuStatus(dish, profile).missing
-          : [];
         const supported =
           showSupport && dietaryMenuStatus(dish, profile).level === "match";
         const supportLine = supported
@@ -696,11 +705,6 @@ function MenuSections({
               showUnknown={!supported}
               showEmpty={!supported}
             />
-            {!!missing.length && (
-              <Text style={s.menuConfirmationText}>
-                Confirm: {missing.join(", ")}
-              </Text>
-            )}
           </Pressable>
         );
       })}
@@ -819,10 +823,6 @@ export function Restaurant({ id, state, navigate }) {
           </Pressable>
         ))}
       </View>
-      <Text style={s.menuCaption}>
-        Restaurant-reported information, not certification. Confirm
-        cross-contact and local availability with staff.
-      </Text>
       <AllergenLegend accent={theme.accent} />
       {mode === "full" ? (
         <>
@@ -848,10 +848,7 @@ export function Restaurant({ id, state, navigate }) {
                 />
               </Pressable>
             </View>
-            <Text style={s.menuCaption}>
-              {dishes.length} cataloged food items · branch availability may
-              vary
-            </Text>
+            <Text style={s.menuCaption}>{dishes.length} food items</Text>
             {showCoverage && (
               <Text style={s.menuCaption}>
                 {restaurant.menuCoverage ||
@@ -885,12 +882,6 @@ export function Restaurant({ id, state, navigate }) {
                 {matches.length} {matches.length === 1 ? "item" : "items"}{" "}
                 explicitly support every selected need.
               </Text>
-              {!!matches.length && (
-                <Text style={s.menuCaption}>
-                  Matches cover your selected needs; other allergens and
-                  preparation may need confirmation.
-                </Text>
-              )}
             </View>
           )}
           {matches.length ? (
@@ -935,17 +926,11 @@ export function Restaurant({ id, state, navigate }) {
               </Pressable>
               {showUnknown && (
                 <View style={s.stack}>
-                  <Text style={s.menuCaption}>
-                    These items list no known conflict with your needs.
-                    Ingredient information may be incomplete; ask the
-                    restaurant.
-                  </Text>
                   <View style={s.menuPaper}>
                     <MenuSections
                       dishes={unknown}
                       navigate={navigate}
                       accent={theme.accent}
-                      showMissing
                       profile={state.profile}
                     />
                   </View>
@@ -977,6 +962,7 @@ export function Restaurant({ id, state, navigate }) {
 
 export function DishDetail({ id, state, navigate, openSheet }) {
   const task = useTask();
+  const [showSource, setShowSource] = useState(false);
   const dish = state.dishes.find((item) => item.id === id);
   if (!dish)
     return (
@@ -1003,12 +989,7 @@ export function DishDetail({ id, state, navigate, openSheet }) {
         <Text style={s.body}>{dish.category}</Text>
         <Text style={s.h3}>{money(dish.price)}</Text>
       </View>
-      {dish.provenance?.kind === "component" && (
-        <Notice>
-          One menu component, not a complete order. Assess every base, protein,
-          topping, sauce and wrap you choose.
-        </Notice>
-      )}
+      {dish.provenance?.kind === "component" && <Notice>Menu component</Notice>}
       <Assessment dish={dish} state={state} detailed />
       {!!dish.ingredientHints?.clues?.length && (
         <Section title="Clues in the published menu">
@@ -1018,15 +999,11 @@ export function DishDetail({ id, state, navigate, openSheet }) {
                 {clue}
               </Text>
             ))}
-            <Text style={s.small}>
-              These clues come from recognizable ingredient words. “Possible”
-              flags use common recipe knowledge and need confirmation; they are
-              not restaurant allergen declarations.
-            </Text>
+            <Text style={s.small}>Ingredient clues use menu wording.</Text>
           </View>
         </Section>
       )}
-      <Section title="Ingredients and preparation">
+      <Section title="Ingredients">
         <View style={s.card}>
           <Text style={s.h3}>Reported ingredients</Text>
           <Tags
@@ -1034,21 +1011,13 @@ export function DishDetail({ id, state, navigate, openSheet }) {
             fallback="Full ingredients not supplied"
           />
           <Text style={s.h3}>Declared allergens</Text>
-          <Tags
-            values={dish.allergens}
-            fallback="None declared in this record; absence is unconfirmed."
-          />
+          <Tags values={dish.allergens} fallback="Not listed" />
           {!!dish.otherDeclaredAllergens?.length && (
             <>
               <Text style={s.h3}>Other declared allergens</Text>
               <Tags values={dish.otherDeclaredAllergens} />
             </>
           )}
-          <Text style={s.h3}>Preparation and cross-contact</Text>
-          <Text style={s.body}>
-            {dish.preparation ||
-              "Preparation information is missing. Ask the restaurant."}
-          </Text>
           {!!dish.modifications?.length && (
             <>
               <Text style={s.h3}>Modifications to ask about</Text>
@@ -1058,40 +1027,43 @@ export function DishDetail({ id, state, navigate, openSheet }) {
         </View>
       </Section>
       {local && (
-        <Section title="Source record">
-          <View style={s.card}>
-            <Text style={s.body}>{scopeLabel(dish.provenance?.scope)}</Text>
-            <Text style={s.small}>
-              Reviewed {dish.provenance?.reviewedAt || "date not supplied"}.
-              Review date is when the source was checked, not a restaurant
-              confirmation.
-            </Text>
-            {!!dish.provenance?.evidenceNote && (
-              <Text style={s.body}>{dish.provenance.evidenceNote}</Text>
-            )}
-            <Text style={s.h3}>Allergens covered by this source</Text>
-            <Tags
-              values={dish.provenance?.coverage || []}
-              fallback="Coverage not established"
-            />
-            <Text style={s.h3}>Source's free-from claims</Text>
-            <Tags
-              values={dish.provenance?.freeFromClaims || []}
-              fallback="No free-from claims recorded"
-            />
-            <Text style={s.small}>
-              Claims describe the source. They do not establish preparation or
-              cross-contact conditions at this location.
-            </Text>
-            <SourceLink url={dish.provenance?.menuUrl || restaurant.menuUrl}>
-              Open menu source
-            </SourceLink>
-            <SourceLink
-              url={dish.provenance?.allergenUrl || restaurant.allergenUrl}
-            >
-              Open allergen source
-            </SourceLink>
-          </View>
+        <Section
+          title="Source details"
+          action={showSource ? "Hide" : "Show"}
+          onPress={() => setShowSource(!showSource)}
+        >
+          {showSource && (
+            <View style={s.card}>
+              <Text style={s.body}>{scopeLabel(dish.provenance?.scope)}</Text>
+              <Text style={s.small}>
+                Reviewed {dish.provenance?.reviewedAt || "date not supplied"}.
+              </Text>
+              {!!dish.provenance?.evidenceNote && (
+                <Text style={s.body}>{dish.provenance.evidenceNote}</Text>
+              )}
+              <Text style={s.h3}>Allergens covered by this source</Text>
+              <Tags
+                values={dish.provenance?.coverage || []}
+                fallback="Coverage not established"
+              />
+              <Text style={s.h3}>Source's free-from claims</Text>
+              <Tags
+                values={dish.provenance?.freeFromClaims || []}
+                fallback="No free-from claims recorded"
+              />
+              {!!dish.preparation && (
+                <Text style={s.small}>{dish.preparation}</Text>
+              )}
+              <SourceLink url={dish.provenance?.menuUrl || restaurant.menuUrl}>
+                Open menu source
+              </SourceLink>
+              <SourceLink
+                url={dish.provenance?.allergenUrl || restaurant.allergenUrl}
+              >
+                Open allergen source
+              </SourceLink>
+            </View>
+          )}
         </Section>
       )}
       {!!dish.tags?.length && (
@@ -1158,7 +1130,7 @@ export function DishDetail({ id, state, navigate, openSheet }) {
       {!!restaurant && (
         <Button
           variant="quiet"
-          onPress={onPress || (() => navigate(`restaurant/${restaurant.id}`))}
+          onPress={() => navigate(`restaurant/${restaurant.id}`)}
         >
           View restaurant and full source links
         </Button>

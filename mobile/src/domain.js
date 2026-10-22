@@ -1,4 +1,5 @@
 import { restaurants, dishes, defaultProfile } from "./data.js";
+import { restrictionHasConflict, supportsRestriction } from "./menu-filter.js";
 
 import { newId as id, copy } from "./model-utils.js";
 const now = () => new Date().toISOString();
@@ -53,10 +54,10 @@ export function assessDish(dish, profile = defaultProfile, meals = []) {
       ) && !conflicts.includes(allergen),
   );
   const dietaryFlags = (profile.restrictions || []).filter((restriction) =>
-    (hints.restrictionConflicts || []).includes(restriction),
+    restrictionHasConflict(dish, restriction),
   );
   const missingRestrictions = (profile.restrictions || []).filter(
-    (tag) => !dish.tags.some((item) => lower(item) === lower(tag)),
+    (tag) => !supportsRestriction(dish, tag),
   );
   const tasteReasons = (profile.likes || []).filter((tag) =>
     dish.tags.some((item) => lower(item) === lower(tag)),

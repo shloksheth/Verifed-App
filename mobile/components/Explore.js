@@ -26,13 +26,12 @@ const modes = [
 const notes = {
   all: "Compare published menus. Open a restaurant to see its full menu or your dietary options.",
   options:
-    "Has menu items with no identified conflict for your selected needs. Unknown ingredients still need confirmation.",
-  reported:
-    "Has menu items explicitly supporting every selected dietary need. Confirm preparation with staff.",
+    "No listed ingredient conflict. Additional ingredient details needed.",
+  reported: "Source labels support every selected dietary need.",
   "selected-free":
-    "Has menu items explicitly declared free of each of your selected allergens, and supporting your other needs. This does not certify the kitchen or cross-contact.",
+    "Source labels exclude each selected allergen and support your dietary needs.",
   "all-nine":
-    "Has menu items explicitly declared free of all nine major allergens, with no ingredient conflicts. This does not certify an allergen-free restaurant.",
+    "Source labels exclude the nine major allergens plus other selected allergies, and support your dietary needs.",
 };
 // Keep choices while opening a menu and returning. No location leaves this screen
 // unless the person explicitly submits a location search.
@@ -370,9 +369,7 @@ export default function Explore({
               </Text>
             ))}
             {!!result.restaurant.chainId && (
-              <Text style={s.small}>
-                Chain menu template · branch availability may vary.
-              </Text>
+              <Text style={s.small}>National chain menu</Text>
             )}
           </View>
         </View>
@@ -449,8 +446,7 @@ export default function Explore({
           onClose={() => setBranches(null)}
         >
           <Text style={s.small}>
-            These locations share the published national menu. Prices,
-            availability and preparation can differ at each branch.
+          Choose a branch to open its menu.
           </Text>
           {branches.map((result) => (
             <Pressable
