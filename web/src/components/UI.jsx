@@ -238,10 +238,12 @@ export function formatDate(date) {
   }).format(new Date(date));
 }
 export function money(value) {
+  if (value == null || value === "" || !Number.isFinite(Number(value)))
+    return "Price not listed";
   return new Intl.NumberFormat("en-US", {
     style: "currency",
     currency: "USD",
     minimumFractionDigits: 2,
     maximumFractionDigits: 2,
-  }).format(value || 0);
+  }).format(value);
 }

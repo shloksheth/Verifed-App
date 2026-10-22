@@ -106,10 +106,10 @@ export default function Shell({ children, page, state, navigate }) {
             <span className="sample-label">
               <i />
               {state.mode === "cloud"
-                ? "Connected · sample menus"
+                ? "Connected · Orlando menus"
                 : state.mode === "demo"
                   ? "Local demo · sample menus"
-                  : "Sample menus"}
+                  : "Orlando menus"}
             </span>
             <button
               className="avatar"
@@ -124,7 +124,7 @@ export default function Shell({ children, page, state, navigate }) {
         </header>
         {state.mode === "guest" && (
           <div className="guest-banner">
-            <p>Explore sample menus, or try the full diner and kitchen demo.</p>
+            <p>Explore Orlando menus, or try the fictional diner and kitchen demo.</p>
             <Button
               variant="small"
               busy={task.busy}

@@ -282,7 +282,7 @@ export function HistoryPage({ state, navigate, onMeal, initialTab }) {
           >
             {query
               ? "Try another dish or restaurant name."
-              : "Keep a little journal of flavors you love. Even meals outside the sample menus belong here."}
+              : "Keep a little journal of flavors you love. Meals outside the directory belong here too."}
           </Empty>
         )
       ) : requests.length ? (

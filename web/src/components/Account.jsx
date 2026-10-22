@@ -238,8 +238,8 @@ export function Auth({ state, navigate, recovery = false, authError = "" }) {
                 Try the local demo <Sparkles size={17} />
               </Button>
               <p className="fine-print">
-                Demo data stays in this browser. All restaurants and dishes
-                shown are fictional.
+                Demo activity stays in this browser. Sample kitchens are
+                fictional; real restaurant listings show their official sources.
               </p>
             </>
           )}
@@ -724,10 +724,10 @@ export function Help({ navigate }) {
         <details>
           <summary>Are these real restaurants?</summary>
           <p>
-            No. All supplied restaurants, dishes, prices, and reviews are
-            fictional demonstration data. Unconfirmed menus support browsing and
-            meal logging. A connected sample workspace lets its owner practice
-            kitchen requests.
+            The directory includes real Orlando locations with linked official
+            menus and allergen sources. These restaurants are not connected to
+            Verifed and receive no in-app requests. Separate fictional sample
+            kitchens let you practice the request workflow.
           </p>
         </details>
         <details>

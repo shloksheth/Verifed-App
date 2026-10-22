@@ -115,7 +115,7 @@ async function refreshCloud() {
       id: user?.id,
       name: user?.user_metadata?.name || "",
     },
-    restaurants: catalog,
+    restaurants: catalog.map((row) => ({ ...row.details, ...row })),
     dishes: menu.map((row) => row.body),
     requests: (requests || [])
       .map((row) => row.body)

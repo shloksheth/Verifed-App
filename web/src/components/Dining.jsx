@@ -30,6 +30,45 @@ import {
   useTask,
 } from "./UI";
 
+function OfficialSources({ restaurant, provenance }) {
+  const sources = [
+    ["Official menu", provenance?.menuUrl || restaurant?.menuUrl],
+    ["Allergen source", provenance?.allergenUrl || restaurant?.allergenUrl],
+    ["Restaurant website", restaurant?.websiteUrl],
+  ].filter(
+    ([, url], index, all) =>
+      /^https?:\/\//i.test(url || "") &&
+      all.findIndex(([, other]) => other === url) === index,
+  );
+  const phone = restaurant?.phone?.replace(/[^\d+]/g, "");
+  return (
+    <div className="info-block">
+      <h3>Official sources & contact</h3>
+      <div className="button-row">
+        {sources.map(([label, url]) => (
+          <a key={url} href={url} target="_blank" rel="noreferrer">
+            {label} <ArrowUpRight size={14} />
+          </a>
+        ))}
+        {phone && <a href={`tel:${phone}`}>Call {restaurant.phone}</a>}
+      </div>
+      {(provenance?.reviewedAt || restaurant?.source?.reviewedAt) && (
+        <p className="fine-print">
+          Sources reviewed{" "}
+          {provenance?.reviewedAt || restaurant.source.reviewedAt}.
+          {provenance?.scope === "chain" ||
+          restaurant?.source?.scope === "chain"
+            ? " Chain information; confirm local availability and preparation."
+            : ""}
+        </p>
+      )}
+      {restaurant?.source?.note && (
+        <p className="fine-print">{restaurant.source.note}</p>
+      )}
+    </div>
+  );
+}
+
 export function Assessment({ dish, profile, compact = false }) {
   const assessment = assessDish(dish, profile);
   const conflict = assessment.level === "conflict";
@@ -98,6 +137,11 @@ export function DishCard({ dish, state, navigate }) {
           {dish.name}
         </button>
         <p>{dish.description}</p>
+        {dish.provenance?.kind === "component" && (
+          <p className="fine-print">
+            Component · Review the complete order separately.
+          </p>
+        )}
         <Assessment dish={dish} profile={state.profile} compact />
         <ErrorMessage error={task.error} />
       </div>
@@ -106,6 +150,9 @@ export function DishCard({ dish, state, navigate }) {
 }
 
 export function Home({ state, navigate }) {
+  const hasRealMenus = state.restaurants.some(
+    (restaurant) => restaurant.fictional === false,
+  );
   const active = state.requests.filter(
     (request) =>
       request.userId === state.user?.id &&
@@ -132,7 +179,7 @@ export function Home({ state, navigate }) {
           <span className="dining-step">AT THE RESTAURANT?</span>
           <h2>Pull up the menu.</h2>
           <p>
-            Scan a Verifed code to check ingredients and talk to the kitchen.
+            Scan a Verifed code to review a menu and its published information.
           </p>
           <Button onClick={() => navigate("scan")}>
             <ScanLine size={20} /> Scan a menu
@@ -145,7 +192,8 @@ export function Home({ state, navigate }) {
       </section>
       <button className="browse-shortcut" onClick={() => navigate("explore")}>
         <span>
-          <CompassIcon /> Browse sample menus
+          <CompassIcon />{" "}
+          {hasRealMenus ? "Browse restaurant menus" : "Browse sample menus"}
         </span>
         <ArrowRight size={20} />
       </button>
@@ -184,8 +232,9 @@ export function Home({ state, navigate }) {
               <div>
                 <h3>No open requests</h3>
                 <p>
-                  Open a dish to send your requirements and preparation
-                  questions.
+                  {hasRealMenus
+                    ? "Open a menu entry to review its sources and contact the restaurant."
+                    : "Open a dish to send your requirements and preparation questions."}
                 </p>
               </div>
             </div>
@@ -228,8 +277,8 @@ export function Home({ state, navigate }) {
           onClick={() => navigate("explore")}
         />
         <p className="section-caption">
-          Suggestions from your preferences and ratings. Check ingredients
-          before requesting.
+          Suggestions from your preferences and ratings. Check ingredients and
+          preparation with the restaurant.
         </p>
         <div className="dish-grid">
           {recommendations.map((dish) => (
@@ -251,6 +300,9 @@ function CompassIcon() {
 }
 
 export function Explore({ state, navigate }) {
+  const hasRealMenus = state.restaurants.some(
+    (restaurant) => restaurant.fictional === false,
+  );
   const [query, setQuery] = useState("");
   const [category, setCategory] = useState("All");
   const [noConflict, setNoConflict] = useState(false);
@@ -285,7 +337,7 @@ export function Explore({ state, navigate }) {
       <PageTitle
         eyebrow="FIND A DISH"
         title="Explore menus"
-        description="Browse ingredients, find flavors you like, and ask the kitchen."
+        description="Review menu information, find flavors you like, and contact the restaurant."
       />
       <div className="search-row">
         <label className="search-field">
@@ -329,7 +381,9 @@ export function Explore({ state, navigate }) {
       </div>
       {!query && category === "All" && (
         <section className="section-space">
-          <SectionTitle title="Sample restaurants" />
+          <SectionTitle
+            title={hasRealMenus ? "Restaurants" : "Sample restaurants"}
+          />
           <div className="restaurant-grid">
             {state.restaurants.map((restaurant, index) => (
               <button
@@ -347,9 +401,11 @@ export function Explore({ state, navigate }) {
                     {restaurant.location}
                   </p>
                   <span className="restaurant-type">
-                    {restaurant.confirmed
-                      ? "Sample kitchen workspace"
-                      : "Unconfirmed sample menu"}
+                    {restaurant.fictional === false
+                      ? "Published sources · Contact restaurant"
+                      : restaurant.confirmed
+                        ? "Sample kitchen workspace"
+                        : "Unconfirmed sample menu"}
                   </span>
                 </div>
                 <ChevronRight size={18} />
@@ -361,7 +417,10 @@ export function Explore({ state, navigate }) {
       <section className="section-space">
         <SectionTitle title={query ? `Results for “${query}”` : "The menu"} />
         <p className="section-caption">
-          {dishes.length} dishes · Prices and restaurants are fictional.
+          {dishes.length} menu entries ·{" "}
+          {hasRealMenus
+            ? "Published source information; prices may be unavailable."
+            : "Prices and restaurants are fictional."}
         </p>
         {dishes.length ? (
           <div className="dish-grid">
@@ -418,7 +477,11 @@ export function Restaurant({ id, state, navigate }) {
     <>
       <PageTitle
         back={() => navigate("explore")}
-        eyebrow="Fictional restaurant · demonstration"
+        eyebrow={
+          restaurant.fictional === false
+            ? "Restaurant · Published sources"
+            : "Fictional restaurant · demonstration"
+        }
         title={restaurant.name}
         description={restaurant.description}
       />
@@ -429,21 +492,30 @@ export function Restaurant({ id, state, navigate }) {
         <div>
           <p>
             <MapPin size={16} />
-            {restaurant.location}
+            {restaurant.address || restaurant.location}
           </p>
           <h3>
-            {restaurant.confirmed
-              ? "A kitchen conversation, built in."
-              : "Explore now. Confirm with the restaurant."}
+            {restaurant.fictional === false
+              ? "Review the sources. Contact the restaurant."
+              : restaurant.confirmed
+                ? "A kitchen conversation, built in."
+                : "Explore now. Confirm with the restaurant."}
           </h3>
           <p>
-            {restaurant.confirmed
-              ? "Practice the request and response flow using this sample kitchen."
-              : "This sample menu is unconfirmed. Save dishes and log meals; ingredient questions need direct restaurant confirmation."}
+            {restaurant.fictional === false
+              ? "Published information does not establish a restaurant partnership or kitchen connection. Confirm your complete order and preparation directly."
+              : restaurant.confirmed
+                ? "Practice the request and response flow using this sample kitchen."
+                : "This sample menu is unconfirmed. Save dishes and log meals; ingredient questions need direct restaurant confirmation."}
           </p>
         </div>
-        <span className="badge">Sample menu</span>
+        <span className="badge">
+          {restaurant.fictional === false ? "Published menu" : "Sample menu"}
+        </span>
       </div>
+      {restaurant.fictional === false && (
+        <OfficialSources restaurant={restaurant} />
+      )}
       <SectionTitle title="The menu" />
       <div className="dish-grid">
         {dishes.map((dish) => (
@@ -493,7 +565,13 @@ export function DishDetail({ id, state, navigate, onRequest, onMeal }) {
           <div className="dish-visual-bottom">
             <span>{dish.category}</span>
             <strong>{money(dish.price)}</strong>
-            <span className="badge">Sample dish</span>
+            <span className="badge">
+              {dish.provenance
+                ? dish.provenance.kind === "component"
+                  ? "Component"
+                  : "Published menu item"
+                : "Sample dish"}
+            </span>
           </div>
           <div className="dish-taste">
             <Sparkles size={20} />
@@ -527,20 +605,61 @@ export function DishDetail({ id, state, navigate, onRequest, onMeal }) {
             <span className="badge">Menu v{dish.revision}</span>
           </div>
           <Assessment dish={dish} profile={state.profile} />
+          {dish.provenance?.kind === "component" && (
+            <p className="inline-notice">
+              This listing describes one component, not a complete meal. Review
+              all fillings, toppings, sauces and preparation for the full order.
+            </p>
+          )}
           <h3>Reported ingredients</h3>
-          <div className="ingredient-tags">
-            {dish.ingredients.map((ingredient) => (
-              <span key={ingredient}>{ingredient}</span>
-            ))}
-          </div>
+          {dish.ingredients.length ? (
+            <div className="ingredient-tags">
+              {dish.ingredients.map((ingredient) => (
+                <span key={ingredient}>{ingredient}</span>
+              ))}
+            </div>
+          ) : (
+            <p>
+              Full ingredients are not available in this listing. Review the
+              official source and ask the restaurant.
+            </p>
+          )}
           <div className="info-block">
             <h3>Declared allergens</h3>
             <p>
               {dish.allergens.length
                 ? dish.allergens.join(", ")
-                : "No allergens declared in this sample listing. This does not establish absence."}
+                : "No allergens declared in this listing. This does not establish absence."}
             </p>
           </div>
+          {dish.provenance && (
+            <>
+              <OfficialSources
+                restaurant={restaurant}
+                provenance={dish.provenance}
+              />
+              {dish.provenance.evidenceNote && (
+                <p>{dish.provenance.evidenceNote}</p>
+              )}
+              {dish.provenance.coverage?.length > 0 && (
+                <p className="fine-print">
+                  Recorded source categories:{" "}
+                  {dish.provenance.coverage.join(", ")}. Unlisted categories
+                  remain unknown.
+                </p>
+              )}
+              {dish.provenance.freeFromClaims?.length > 0 && (
+                <div className="info-block">
+                  <h3>Restaurant labels</h3>
+                  <p>{dish.provenance.freeFromClaims.join(" · ")}</p>
+                  <p className="fine-print">
+                    These published claims do not establish absence or resolve
+                    cross-contact.
+                  </p>
+                </div>
+              )}
+            </>
+          )}
           <div className="info-block">
             <h3>Preparation & cross-contact</h3>
             <p>
@@ -566,7 +685,7 @@ export function DishDetail({ id, state, navigate, onRequest, onMeal }) {
             records communication, not a guarantee about the meal.
           </p>
           <div className="button-stack">
-            {restaurant.confirmed ? (
+            {restaurant.confirmed && restaurant.fictional !== false ? (
               <Button
                 onClick={() =>
                   state.mode === "guest" ? navigate("auth") : onRequest(dish)
@@ -578,7 +697,7 @@ export function DishDetail({ id, state, navigate, onRequest, onMeal }) {
               <div className="inline-notice">
                 <Info size={18} />
                 <p>
-                  This sample restaurant has no kitchen connection. Contact the
+                  This restaurant has no kitchen connection. Contact the
                   restaurant directly.
                 </p>
               </div>
