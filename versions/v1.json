@@ -1,0 +1,10 @@
+{
+  "number": 1,
+  "kind": "prototype",
+  "originalCommit": "d11f09306c24a45743653e06fdb87ec4fe465e69",
+  "originalDate": "2026-10-09T21:27:23-04:00",
+  "summary": "Initial browser prototype with dietary menu assessment and a local diner/kitchen demonstration.",
+  "name": "Verifed V1",
+  "importedAt": "2026-10-22T11:14:29.187108+00:00",
+  "historicalDateRewritten": false
+}

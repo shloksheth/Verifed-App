@@ -1,0 +1,8 @@
+node_modules/
+.env
+.env.*
+.expo/
+__pycache__/
+*.pyc
+web/dist/
+mobile/dist*/

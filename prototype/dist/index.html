@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#17314d">
+  <meta name="description" content="Verifed prototype: keep allergy meal requests connected to the kitchen's latest response.">
+  <title>Verifed · Meal request demo</title>
+  <link rel="icon" href="./icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#workspace">Skip to meal request</a>
+  <header class="topbar">
+    <a href="./" class="brand" aria-label="Verifed home"><span class="brand-mark" aria-hidden="true">v<span>·</span></span>verifed<span class="demo-label">PROTOTYPE</span></a>
+    <div class="top-actions"><button class="button quiet" id="load-example">Load example</button><button class="button quiet" id="reset">Reset demo</button></div>
+  </header>
+  <main>
+    <section class="intro" aria-labelledby="page-title">
+      <div><p class="eyebrow">A CLEARER CONVERSATION AT THE TABLE</p><h1 id="page-title">One meal. Everyone on the same page.</h1><p class="intro-copy">Share your allergy requirements. Hear from the kitchen.<br class="desktop-break"> Keep the response connected when your meal changes.</p></div>
+      <div class="venue"><span class="venue-icon" aria-hidden="true">↳</span><div><strong>The Juniper Table</strong><span>Fictional restaurant · sample menu</span></div></div>
+    </section>
+    <div class="workspace-toolbar"><div class="view-switch" aria-label="Workspace view"><button data-view="both" aria-pressed="true">Both views</button><button data-view="diner" aria-pressed="false">Diner</button><button data-view="kitchen" aria-pressed="false">Kitchen</button></div><p class="storage-note">Demo data stays in this browser</p></div>
+    <div id="notice" role="status" aria-live="polite" class="notice" hidden></div>
+    <div id="workspace" class="workspace" tabindex="-1">
+      <section class="desk diner-desk" aria-labelledby="diner-heading"><div class="desk-heading"><div><p class="eyebrow">01 / DINER</p><h2 id="diner-heading">Your meal request</h2></div><a href="?view=diner" target="_blank" rel="noopener" class="open-view" aria-label="Open diner view in a new tab">Open view ↗</a></div><div id="diner-content"></div></section>
+      <section class="desk kitchen-desk" aria-labelledby="kitchen-heading"><div class="desk-heading"><div><p class="eyebrow">02 / KITCHEN</p><h2 id="kitchen-heading">The kitchen workspace</h2></div><a href="?view=kitchen" target="_blank" rel="noopener" class="open-view" aria-label="Open kitchen view in a new tab">Open view ↗</a></div><div id="kitchen-content"></div></section>
+    </div>
+    <footer><strong>Communication, with a clear record.</strong><p>Verifed records what staff report. It cannot detect allergens in food or guarantee a safe meal. This demo uses fictional meals and restaurant responses.</p></footer>
+  </main>
+</body>
+</html>
