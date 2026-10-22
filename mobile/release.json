@@ -1,11 +1,9 @@
 {
-  "number": 13,
-  "name": "Verifed V13",
-  "description": "Partial food-chain checkpoint saved at the user usage limit. Removed Tako Cheena from bundled and cloud browsing; retained Hawkers, Chipotle and Pizza Bruno as requested. Added All places/Restaurants/Food Chains filters and brand-inspired menu header support; Taco Bell and Chipotle menus use it. McDonald\u2019s, Pizza Hut, Domino\u2019s and Wendy\u2019s menu imports remain unfinished.",
+  "number": 13.1,
+  "name": "Verifed V13.1",
+  "description": "Removed the mobile Google sign-in button, companion website authentication links and development-build notice. Username/email and password sign-in, account creation, recovery and guest browsing remain available. No changes to restaurant menu inventory.",
   "verification": [
-    "92 automated tests pass, including retirement against old cloud records.",
-    "Web, Android and iOS exports pass.",
-    "Browser: 25 active locations; retained venues visible, Food Chains shows Taco Bell and Chipotle, branch picker and purple Taco Bell header render.",
-    "No new native-device test. Four requested chain menus still need U.S. source import. Prior email-confirmation approval remains pending."
+    "Regression checks assert that the mobile authentication screen and API have no Google sign-in entry point.",
+    "Existing username/email, password and guest routes remain present."
   ]
 }
