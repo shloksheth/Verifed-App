@@ -669,6 +669,7 @@ function MenuSections({
   navigate,
   profile,
   showMissing = false,
+  showSupport = false,
 }) {
   return groupMenu(dishes).map((group) => (
     <View key={group.category} style={s.editorialMenuSection}>
@@ -687,11 +688,32 @@ function MenuSections({
         const missing = showMissing
           ? dietaryMenuStatus(dish, profile).missing
           : [];
+        const supported =
+          showSupport && dietaryMenuStatus(dish, profile).level === "match";
+        const supportLine = supported
+          ? "Reported: " +
+            [
+              ...(profile.allergies || []).map(
+                (allergen) =>
+                  `${allergen === "Tree nuts" ? "Tree nut" : allergen === "Peanuts" ? "Peanut" : allergen}-free`,
+              ),
+              ...(profile.restrictions || []),
+            ].join(" · ")
+          : "";
+        const declarations = [
+          ...(dish.allergens || []),
+          ...(dish.otherDeclaredAllergens || []),
+        ];
+        const declarationLabel = declarations.length
+          ? ` Declared allergens: ${declarations.join(", ")}.`
+          : supported
+            ? ""
+            : " No allergens declared; check details.";
         return (
           <Pressable
             key={dish.id}
             accessibilityRole="button"
-            accessibilityLabel={`View ${dish.name}. Declared allergens: ${[...(dish.allergens || []), ...(dish.otherDeclaredAllergens || [])].join(", ") || "none declared; check details"}.${hasUnknownAllergenCoverage(dish) ? " Allergen coverage is incomplete." : ""}`}
+            accessibilityLabel={`View ${dish.name}.${supported ? ` ${supportLine}.` : ""}${declarationLabel}${!supported && hasUnknownAllergenCoverage(dish) ? " Allergen coverage is incomplete." : ""}`}
             onPress={() => navigate(`dish/${dish.id}`)}
             style={s.editorialMenuRow}
           >
@@ -705,7 +727,16 @@ function MenuSections({
                 {dish.description || "Choose this as part of an order."}
               </Text>
             )}
-            <AllergenIcons dish={dish} />
+            {supported && (
+              <Text style={[s.menuCaption, { color: accent }]}>
+                {supportLine}
+              </Text>
+            )}
+            <AllergenIcons
+              dish={dish}
+              showUnknown={!supported}
+              showEmpty={!supported}
+            />
             {!!missing.length && (
               <Text style={s.menuConfirmationText}>
                 Confirm: {missing.join(", ")}
@@ -893,6 +924,12 @@ export function Restaurant({ id, state, navigate }) {
               {matches.length} {matches.length === 1 ? "item" : "items"}{" "}
               explicitly support every selected need.
             </Text>
+            {!!matches.length && (
+              <Text style={s.menuCaption}>
+                Matches cover your selected needs; other allergens and
+                preparation may need confirmation.
+              </Text>
+            )}
           </View>
           {matches.length ? (
             <View style={s.menuPaper}>
@@ -900,6 +937,8 @@ export function Restaurant({ id, state, navigate }) {
                 dishes={matches}
                 navigate={navigate}
                 accent={theme.accent}
+                profile={state.profile}
+                showSupport
               />
             </View>
           ) : (

@@ -149,12 +149,23 @@ export function hasUnknownAllergenCoverage(dish) {
   );
 }
 
-export default function AllergenIcons({ dish }) {
+export default function AllergenIcons({
+  dish,
+  showUnknown = true,
+  showEmpty = true,
+}) {
   const declared = [...new Set(dish.allergens || [])];
   const other = [...new Set(dish.otherDeclaredAllergens || [])].filter(
     (allergen) => !declared.includes(allergen),
   );
   const unknown = hasUnknownAllergenCoverage(dish);
+  if (
+    !declared.length &&
+    !other.length &&
+    !showEmpty &&
+    !(showUnknown && unknown)
+  )
+    return null;
   return (
     <View style={s.allergenRow}>
       {declared.map((allergen) => (
@@ -163,8 +174,8 @@ export default function AllergenIcons({ dish }) {
       {other.map((allergen) => (
         <AllergenToken key={allergen} allergen={allergen} other />
       ))}
-      {unknown && <AllergenToken unknown />}
-      {!declared.length && !other.length && (
+      {showUnknown && unknown && <AllergenToken unknown />}
+      {showEmpty && !declared.length && !other.length && (
         <Text style={s.allergenLabel}>
           No allergens declared; check details
         </Text>

@@ -247,7 +247,7 @@ export function ProfileEditor({ state, navigate, returnTo }) {
               state.mode === "guest"
                 ? api.previewProfile(draft)
                 : api.saveProfile(draft),
-            () => navigate(/^restaurant\/[a-zA-Z0-9-]+$/.test(returnTo || "") ? returnTo : "profile"),
+            () => navigate(/^restaurant\/[a-zA-Z0-9-]+$/.test(returnTo || "") ? returnTo : "profile", { unwind: true }),
           )
         }
       >

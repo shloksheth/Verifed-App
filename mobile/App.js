@@ -100,10 +100,14 @@ function AppContent() {
   const path = stack[stack.length - 1];
   const route = parseRoute(path);
 
-  const navigate = useCallback((next) => {
+  const navigate = useCallback((next, { unwind = false } = {}) => {
     setSheet(null);
     setStack((current) => {
       if (current[current.length - 1] === next) return current;
+      // Finishing an editor should return to its menu, not leave a saved form
+      // in the back stack or duplicate that restaurant screen.
+      const previous = unwind ? current.lastIndexOf(next) : -1;
+      if (previous >= 0) return current.slice(0, previous + 1);
       return primaryRoutes.includes(next) ? [next] : [...current, next];
     });
   }, []);
