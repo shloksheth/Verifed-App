@@ -1,0 +1,151 @@
+Beefy 5-Layer Burrito | Taco Bell® (https://www.tacobell.com/food/burritos/beefy-5-layer-burrito)
+citeturn129view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://www.tacobell.com/food/burritos/beefy-5-layer-burrito","lineno":null}); Total lines: 173
+L0: cite0†Menu cite1†Delivery cite2†Rewards cite3†Gift Cards L1: 
+L2: cite4†Purpose L3: 
+L4: cite5†Find a Nearby Bell L5: 
+L6: cite6†Download Our App†tblinks.tacobell.com L7: 
+L8: cite7†Sign Up cite8†Log in L9: 
+L10: cite9†$0.00 L11: 
+L12: #####
+L13: 
+L14: Subtotal Sales Tax
+L15: 
+L16: $0.00 Calculated At Checkout
+L17: 
+L18: cite9†View Bag & Checkout L19: 
+L20: cite0†Menu cite1†Delivery cite2†Rewards cite3†Gift Cards L21: 
+L22: cite4†Purpose L23: 
+L24: |
+L25: 
+L26: cite9†$0.00 L27: 
+L28: #####
+L29: 
+L30: Subtotal Sales Tax
+L31: 
+L32: $0.00 Calculated At Checkout
+L33: 
+L34: cite9†View Bag & Checkout L35: ### Customer Creations
+L36: 
+L37: Beefy Potato Burrito
+L38: 
+L39: Beefy 5-Layer Burrito with Potatoes, Pico De Gallo, Creamy Jalapeño Sauce, no Reduced-Fat Sour Cream and Beans
+L40: 
+L41: cite10†Explore Steak & Rice Chipotle Sauce Burrito
+L42: 
+L43: Beefy 5-Layer Burrito swapped Seasoned Beef for Steak, with Onions, Seasoned Rice, Chipotle Sauce, no Nacho Cheese Sauce, grilled
+L44: 
+L45: cite11†Explore L46: ### Make It Your Own
+L47: 
+L48: Make it Fresco Adds 0 Cal
+L49: 
+L50: Make it
+L51: 
+L52: Fresco
+L53: 
+L54: Replace dairy and mayo-sauces with pico de gallo
+L55: 
+L56: Make it Grilled Adds 0 Cal
+L57: 
+L58: Make it
+L59: 
+L60: Grilled
+L61: 
+L62: Get it grilled
+L63: 
+L64: ### Popular Upgrades
+L65: 
+L66: Seasoned Rice +$0.60 | Adds 50 Cal
+L67: 
+L68: Onions +$0.50 | Adds 0 Cal
+L69: 
+L70: Red Sauce +$0.45 | Adds 10 Cal
+L71: 
+L72: Creamy Jalapeño Sauce +$0.70 | Adds 60 Cal
+L73: 
+L74: ### What's Included
+L75: 
+L76: Seasoned Beef
+L77: 
+L78: Reduced-Fat Sour Cream
+L79: 
+L80: Cheese
+L81: 
+L82: Beans
+L83: 
+L84: Nacho Cheese Sauce
+L85: ### Add Ons
+L86: 
+L87: Tomatoes +$0.80 | Adds 0 Cal
+L88: 
+L89: Seasoned Rice +$0.60 | Adds 50 Cal
+L90: 
+L91: Lettuce +$0.60 | Adds 0 Cal
+L92: 
+L93: Three-Cheese Blend +$0.75 | Adds 20 Cal
+L94: 
+L95: Jalapeño Peppers +$0.65 | Adds 5 Cal
+L96: 
+L97: Black Beans +$0.45 | Adds 50 Cal
+L98: 
+L99: Onions +$0.50 | Adds 0 Cal
+L100: 
+L101: Pico De Gallo +$0.80 | Adds 0 Cal
+L102: 
+L103: Chicken +$1.50 | Adds 45 Cal
+L104: 
+L105: Steak +$1.70 | Adds 60 Cal
+L106: 
+L107: Seasoned Fries +$0.60 | Adds 120 Cal
+L108: 
+L109: Purple Cabbage +$0.60 | Adds 0 Cal
+L110: 
+L111: Slow-Roasted Chicken +$1.70 | Adds 60 Cal
+L112: 
+L113: Fiesta Strips +$0.50 | Adds 80 Cal
+L114: ### Sauces
+L115: 
+L116: Guacamole +$1.15 | Adds 35 Cal
+L117: 
+L118: Red Sauce +$0.45 | Adds 10 Cal
+L119: 
+L120: Creamy Jalapeño Sauce +$0.70 | Adds 60 Cal
+L121: 
+L122: Chipotle Sauce +$0.65 | Adds 70 Cal
+L123: 
+L124: Mexican Pizza Sauce +$0.30 | Adds 10 Cal
+L125: 
+L126: Avocado Ranch Sauce +$0.65 | Adds 70 Cal
+L127: 
+L128: Spicy Ranch +$0.70 | Adds 70 Cal
+L129: ### You Might Also Like
+L130: 
+L131: cite12†Image: Grilled Cheese Burrito L132: 
+L133: cite13†Grilled Cheese Burrito$5.89 | 690 Cal L134: 
+L135: cite14†Image: Cheesy Double Beef Burrito L136: 
+L137: cite15†Cheesy Double Beef Burrito$2.99 | 560 Cal L138: 
+L139: cite16†Image: Cantina Chicken Burrito L140: 
+L141: cite17†Cantina Chicken Burrito$6.29 | 570 Cal L142: 
+L143: cite18†Image: Cantina Chicken Crispy Taco L144: 
+L145: cite19†Cantina Chicken Crispy Taco$3.29 | 320 Cal L146: ## Beefy 5-layer Burrito
+L147: 
+L148: A warm flour tortilla filled with seasoned beef, refried beans, reduced-fat sour cream, and shredded cheddar cheese with a layer of warm Nacho Cheese sauce wrapped around it.
+L149: 
+L150: ## Redeem exclusive rewards only on the app.
+L151: 
+L152: scan to Download
+L153: taco bell app!
+L154: 
+L155: cite20†Download app L156: 
+L157: ###### About us
+L158: 
+L159: cite21†About Taco Bell cite4†Purpose cite22†Nutrition cite5†Locations cite23†Offers & Deals cite24†Newsroom cite25†Stories cite26†Responsible Disclosure L160: ###### Explore
+L161: 
+L162: cite27†Mobile App cite3†Gift Cards cite2†Rewards cite1†Delivery cite28†Taco Shop†www.tacobelltacoshop.com L163: ###### Contact Us
+L164: 
+L165: cite29†Help & FAQs†help.tacobell.com cite30†Careers†jobs.tacobell.com cite31†Taco Bell Foundation†www.tacobellfoundation.org cite32†Franchise Information L166: 
+L167: At participating U.S. Taco Bell® locations. Contact restaurant for prices, hours & participation, which vary. Tax extra. 2,000 calories a day used for general nutrition advice, but calorie needs vary. Additional nutrition information available upon request.
+L168: cite33†Image: Taco Bell ©2026 Taco Bell IP Holder, LLC. All Rights Reserved. TACO BELL, the Bell logo, and other marks are the property of Taco Bell IP Holder, LLC. All other trademarks are the property of their respective owners.
+L169: 
+L170: * * *
+L171: 
+L172: cite34†Privacy Center cite35†Terms Of Use cite36†Accessibility Statement cite37†Do Not Sell or Share My Personal Information†privacy.tacobell.com 

@@ -1,0 +1,133 @@
+Cheesy Gordita Crunch | Taco Bell® (https://www.tacobell.com/food/specialties/cheesy-gordita-crunch)
+citeturn118view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://www.tacobell.com/food/specialties/cheesy-gordita-crunch","lineno":null}); Total lines: 152
+L0: cite0†Menu cite1†Delivery cite2†Rewards cite3†Gift Cards L1: 
+L2: cite4†Purpose L3: 
+L4: cite5†Find a Nearby Bell L5: 
+L6: cite6†Download Our App†tblinks.tacobell.com L7: 
+L8: cite7†Sign Up cite8†Log in L9: 
+L10: cite9†$0.00 L11: 
+L12: #####
+L13: 
+L14: Subtotal Sales Tax
+L15: 
+L16: $0.00 Calculated At Checkout
+L17: 
+L18: cite9†View Bag & Checkout L19: 
+L20: cite0†Menu cite1†Delivery cite2†Rewards cite3†Gift Cards L21: 
+L22: cite4†Purpose L23: 
+L24: |
+L25: 
+L26: cite9†$0.00 L27: 
+L28: #####
+L29: 
+L30: Subtotal Sales Tax
+L31: 
+L32: $0.00 Calculated At Checkout
+L33: 
+L34: cite9†View Bag & Checkout L35: 
+L36: ### Make It Your Own
+L37: 
+L38: Make it Supreme +$0.90 | Adds 0 Cal
+L39: 
+L40: Make it
+L41: 
+L42: Supreme
+L43: 
+L44: Add sour cream and tomatoes
+L45: ### Popular Upgrades
+L46: 
+L47: Reduced-Fat Sour Cream +$0.90 | Adds 20 Cal
+L48: 
+L49: Guacamole +$1.15 | Adds 35 Cal
+L50: 
+L51: Nacho Cheese Sauce +$1.00 | Adds 30 Cal
+L52: 
+L53: Tomatoes +$0.80 | Adds 0 Cal
+L54: 
+L55: Beans +$0.65 | Adds 60 Cal
+L56: 
+L57: ### What's Included
+L58: 
+L59: Seasoned Beef
+L60: 
+L61: Lettuce
+L62: 
+L63: Cheese
+L64: 
+L65: Spicy Ranch
+L66: ### Add Ons
+L67: 
+L68: Onions +$0.50 | Adds 0 Cal
+L69: 
+L70: Tomatoes +$0.80 | Adds 0 Cal
+L71: 
+L72: Pico De Gallo +$0.80 | Adds 0 Cal
+L73: 
+L74: Jalapeño Peppers +$0.65 | Adds 5 Cal
+L75: 
+L76: Beans +$0.65 | Adds 60 Cal
+L77: 
+L78: Three-Cheese Blend +$0.75 | Adds 90 Cal
+L79: 
+L80: Chicken +$1.50 | Adds 45 Cal
+L81: 
+L82: Steak +$1.70 | Adds 60 Cal
+L83: 
+L84: Seasoned Fries +$0.60 | Adds 120 Cal
+L85: 
+L86: Purple Cabbage +$0.60 | Adds 0 Cal
+L87: 
+L88: Black Beans +$0.45 | Adds 50 Cal
+L89: 
+L90: Seasoned Rice +$0.60 | Adds 50 Cal
+L91: 
+L92: Slow-Roasted Chicken +$1.70 | Adds 60 Cal
+L93: 
+L94: Fiesta Strips +$0.50 | Adds 80 Cal
+L95: ### Sauces
+L96: 
+L97: Reduced-Fat Sour Cream +$0.90 | Adds 20 Cal
+L98: 
+L99: Guacamole +$1.15 | Adds 35 Cal
+L100: 
+L101: Red Sauce +$0.45 | Adds 10 Cal
+L102: 
+L103: Creamy Jalapeño Sauce +$0.70 | Adds 60 Cal
+L104: 
+L105: Nacho Cheese Sauce +$1.00 | Adds 30 Cal
+L106: 
+L107: Chipotle Sauce +$0.65 | Adds 70 Cal
+L108: 
+L109: Mexican Pizza Sauce +$0.30 | Adds 10 Cal
+L110: 
+L111: Avocado Ranch Sauce +$0.65 | Adds 70 Cal
+L112: ### You Might Also Like
+L113: 
+L114: cite10†Image: Doritos® Cheesy Gordita Crunch - Nacho Cheese L115: 
+L116: cite11†Doritos® Cheesy Gordita Crunch - Nacho Cheese$6.19 | 480 Cal L117: 
+L118: cite12†Image: Soft Taco L119: 
+L120: cite13†Soft Taco$1.99 | 180 Cal L121: 
+L122: cite14†Image: Cantina Chicken Crispy Taco L123: 
+L124: cite15†Cantina Chicken Crispy Taco$3.29 | 320 Cal L125: ## Cheesy Gordita Crunch
+L126: 
+L127: A warm, pillowy flatbread filled with a blend of mozzarella, pepperjack, and cheddar cheeses wrapped around a crunchy taco shell with seasoned beef, Spicy Ranch sauce, lettuce, and shredded cheddar cheese.
+L128: 
+L129: ## Redeem exclusive rewards only on the app.
+L130: 
+L131: scan to Download
+L132: taco bell app!
+L133: 
+L134: cite16†Download app L135: 
+L136: ###### About us
+L137: 
+L138: cite17†About Taco Bell cite4†Purpose cite18†Nutrition cite5†Locations cite19†Offers & Deals cite20†Newsroom cite21†Stories cite22†Responsible Disclosure L139: ###### Explore
+L140: 
+L141: cite23†Mobile App cite3†Gift Cards cite2†Rewards cite1†Delivery cite24†Taco Shop†www.tacobelltacoshop.com L142: ###### Contact Us
+L143: 
+L144: cite25†Help & FAQs†help.tacobell.com cite26†Careers†jobs.tacobell.com cite27†Taco Bell Foundation†www.tacobellfoundation.org cite28†Franchise Information L145: 
+L146: At participating U.S. Taco Bell® locations. Contact restaurant for prices, hours & participation, which vary. Tax extra. 2,000 calories a day used for general nutrition advice, but calorie needs vary. Additional nutrition information available upon request.
+L147: cite29†Image: Taco Bell ©2026 Taco Bell IP Holder, LLC. All Rights Reserved. TACO BELL, the Bell logo, and other marks are the property of Taco Bell IP Holder, LLC. All other trademarks are the property of their respective owners.
+L148: 
+L149: * * *
+L150: 
+L151: cite30†Privacy Center cite31†Terms Of Use cite32†Accessibility Statement cite33†Do Not Sell or Share My Personal Information†privacy.tacobell.com 

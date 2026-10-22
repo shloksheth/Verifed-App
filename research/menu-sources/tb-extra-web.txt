@@ -1,0 +1,614 @@
+Taco Bell Featured Menu Items: Order Online for Pickup or Delivery | Taco Bell® (https://www.tacobell.com/food/featured)
+citeturn98view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://www.tacobell.com/food/featured","lineno":null}); Total lines: 288
+L0: cite0†Menu cite1†Delivery cite2†Rewards cite3†Gift Cards L1: 
+L2: cite4†Purpose L3: 
+L4: cite5†Find a Nearby Bell L5: 
+L6: cite6†Download Our App†tblinks.tacobell.com L7: 
+L8: cite7†Sign Up cite8†Log in L9: 
+L10: cite9†$0.00 L11: 
+L12: #####
+L13: 
+L14: Subtotal Sales Tax
+L15: 
+L16: $0.00 Calculated At Checkout
+L17: 
+L18: cite9†View Bag & Checkout L19: 
+L20: cite0†Menu cite1†Delivery cite2†Rewards cite3†Gift Cards L21: 
+L22: cite4†Purpose L23: 
+L24: |
+L25: 
+L26: cite9†$0.00 L27: #####
+L28: 
+L29: Subtotal Sales Tax
+L30: 
+L31: $0.00 Calculated At Checkout
+L32: 
+L33: cite9†View Bag & Checkout L34: 
+L35: cite10†Best Sellers L36: 
+L37: cite11†Featured L38: 
+L39: cite12†Online Exclusives L40: 
+L41: cite13†Luxe Value Menu L42: 
+L43: cite14†Cantina Chicken Menu L44: 
+L45: cite15†Boxes & Combos L46: 
+L47: cite16†Tacos L48: 
+L49: cite17†Burritos L50: 
+L51: cite18†Specialties L52: 
+L53: cite19†Snacks & Sweets L54: 
+L55: cite20†Quesadillas L56: 
+L57: cite21†Drinks L58: 
+L59: cite22†Nachos L60: 
+L61: cite23†Groups L62: 
+L63: cite24†Veggie Cravings L64: 
+L65: cite25†Bowls L66: 
+L67: cite26†Breakfast L68: ## Products
+L69: 
+L70: cite27†Steak Double Dipping Burritos L71: 
+L72: $5.99 | 620 Cal
+L73: 
+L74: [Button: Add to Order]
+L75: 
+L76: cite27†Customize L77: 
+L78: cite28†Slow-Roasted Chicken Double Dipping Burritos L79: 
+L80: $5.99 | 620 Cal
+L81: 
+L82: [Button: Add to Order]
+L83: 
+L84: cite28†Customize L85: 
+L86: cite29†Paris Hilton's Usual L87: 
+L88: $4.00 | 480-770 Cal
+L89: 
+L90: cite29†Customize L91: 
+L92: cite30†Discovery Luxe Box™ L93: 
+L94: $9.00 | 1140-1420 Cal
+L95: 
+L96: cite30†Customize L97: 
+L98: cite31†Sriracha Chicken Crunchadilla L99: 
+L100: $2.00 | 280 Cal
+L101: 
+L102: [Button: Add to Order]
+L103: 
+L104: [Button: Customize]
+L105: 
+L106: cite32†Classic Chicken Crunchadilla L107: 
+L108: $2.00 | 280 Cal
+L109: [Button: Add to Order]
+L110: 
+L111: [Button: Customize]
+L112: 
+L113: cite33†Creamy Sriracha Chicken Nacho Fries L114: 
+L115: $5.49 | 500 Cal
+L116: 
+L117: [Button: Add to Order]
+L118: 
+L119: [Button: Customize]
+L120: 
+L121: cite34†Crispy Chicken Nuggets Deluxe Combo L122: 
+L123: $10.99 | 1160-1580 Cal
+L124: 
+L125: cite34†Customize L126: 
+L127: cite35†10 Piece Crispy Chicken Nuggets Combo L128: 
+L129: $9.99 | 990-1410 Cal
+L130: 
+L131: cite35†Customize L132: 
+L133: cite36†5 Piece Crispy Chicken Nuggets L134: 
+L135: $4.49 | 540 Cal
+L136: 
+L137: cite36†Customize L138: 
+L139: cite37†10 Piece Crispy Chicken Nuggets L140: 
+L141: $7.49 | 850 Cal
+L142: 
+L143: cite37†Customize L144: 
+L145: cite38†Doritos® Locos Taco Party Pack L146: $27.99 | 170 Cal Per Item
+L147: 
+L148: 12
+L149: 
+L150: Nacho Cheese Doritos® Locos Tacos
+L151: 
+L152: cite38†Customize L153: 
+L154: cite39†Supreme Doritos® Locos Taco Party Pack L155: 
+L156: $33.99 | 190 Cal Per Item
+L157: 
+L158: 12
+L159: 
+L160: Nacho Cheese Doritos® Locos Tacos Supreme®
+L161: 
+L162: cite39†Customize L163: 
+L164: cite40†Milk Bar Birthday Cake Empanada L165: 
+L166: $3.49 | 290 Cal
+L167: 
+L168: [Button: Add to Order]
+L169: 
+L170: cite41†Strawberry Dream Refresca L171: 
+L172: $4.19 | 320 Cal
+L173: 
+L174: [Button: Add to Order]
+L175: 
+L176: cite42†Pineapple Dragonfruit Dream Refresca L177: 
+L178: $4.19 | 330 Cal
+L179: 
+L180: [Button: Add to Order]
+L181: 
+L182: cite43†Pineapple Dragonfruit Dream Refresca Freeze L183: $4.49 | 250 Cal
+L184: 
+L185: [Button: Add to Order]
+L186: 
+L187: Size:large
+L188: 
+L189: cite44†Steak Gordita Crunch Duos 2pk L190: 
+L191: $5.49 | 340 Cal
+L192: 
+L193: [Button: Add to Order]
+L194: 
+L195: [Button: Customize]
+L196: 
+L197: cite45†Slow-Roasted Chicken Gordita Crunch Duos 2pk L198: 
+L199: $5.49 | 340 Cal
+L200: 
+L201: [Button: Add to Order]
+L202: 
+L203: [Button: Customize]
+L204: 
+L205: cite46†Creamy Chipotle Crispy Chicken Crunchwrap Slider L206: 
+L207: $2.69 | 320 Cal
+L208: 
+L209: [Button: Add to Order]
+L210: 
+L211: [Button: Customize]
+L212: 
+L213: cite47†Diablo Ranch Crispy Chicken Crunchwrap Slider L214: 
+L215: $2.69 | 320 Cal
+L216: 
+L217: [Button: Add to Order]
+L218: 
+L219: [Button: Customize]
+L220: cite48†Pretty Pink Baja Blast® L221: 
+L222: $3.19 | 470 Cal
+L223: 
+L224: [Button: Add to Order]
+L225: 
+L226: Size:large
+L227: 
+L228: cite49†Three Drink Theory Kit L229: 
+L230: $8.99 | 680 Cal
+L231: 
+L232: cite49†Customize L233: 
+L234: cite50†Pineapple Citrus Energy L235: 
+L236: $4.49 | 50 Cal
+L237: 
+L238: [Button: Add to Order]
+L239: 
+L240: cite51†Strawberry Tropics Energy L241: 
+L242: $4.49 | 50 Cal
+L243: 
+L244: [Button: Add to Order]
+L245: 
+L246: cite52†Pineapple Freeze L247: 
+L248: $4.39 | 190 Cal
+L249: 
+L250: [Button: Add to Order]
+L251: 
+L252: Size:large
+L253: ## What’s new at Taco Bell®?
+L254: ### Try Taco Bell new menu items available near you
+L255: At Taco Bell we know you have your go-to favorite orders, but everyone could use something new every now and again. We are constantly working to improve our menu to bring our fans more flavors, more options, and more fun. With our team of innovative food artists (and they are artists), we are always looking for the next best thing to make your taste buds fall even deeper in love.
+L256: With new cite16†Tacos , cite22†Nachos , cite53†Sides and Sweets , and more great additions, our new items are about to become your fast food favorites and you better get them while they last. So when you’re craving something a little different, check out the Taco Bell's new menu items to find options so delicious, you’ll wonder how you ever lived without them.
+L257: Make sure to check back often as all new menu items are available for a limited time. Order new menu items now and skip our line at your local Taco Bell restaurant.
+L258: cite54†Image: Vegetarian Info Icon American Vegetarian Association certified Vegetarian food items, are lacto-ovo, allowing consumption of dairy and eggs but not animal byproducts. We may use the same frying oil to prepare menu items that could contain meat. Vegetarian and meat ingredients are handled in common, and cross contact may occur, which may not be acceptable to certain types of vegetarian diets.
+L259: Neither Taco Bell®, our employees, nor our franchisees nor the AVA assume any responsibility for such cross contact.
+--------------------------------------------------------------------------------
+Online Exclusives | Taco Bell® (https://www.tacobell.com/food/online-exclusives)
+citeturn98view1 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://www.tacobell.com/food/online-exclusives","lineno":null}); Total lines: 181
+L0: cite0†Menu cite1†Delivery cite2†Rewards cite3†Gift Cards L1: 
+L2: cite4†Purpose L3: 
+L4: cite5†Find a Nearby Bell L5: 
+L6: cite6†Download Our App†tblinks.tacobell.com L7: 
+L8: cite7†Sign Up cite8†Log in L9: 
+L10: cite9†$0.00 L11: 
+L12: #####
+L13: 
+L14: Subtotal Sales Tax
+L15: 
+L16: $0.00 Calculated At Checkout
+L17: 
+L18: cite9†View Bag & Checkout L19: 
+L20: cite0†Menu cite1†Delivery cite2†Rewards cite3†Gift Cards L21: 
+L22: cite4†Purpose L23: 
+L24: |
+L25: 
+L26: cite9†$0.00 L27: #####
+L28: 
+L29: Subtotal Sales Tax
+L30: 
+L31: $0.00 Calculated At Checkout
+L32: 
+L33: cite9†View Bag & Checkout L34: 
+L35: cite10†Best Sellers L36: 
+L37: cite11†Featured L38: 
+L39: cite12†Online Exclusives L40: 
+L41: cite13†Luxe Value Menu L42: 
+L43: cite14†Cantina Chicken Menu L44: 
+L45: cite15†Boxes & Combos L46: 
+L47: cite16†Tacos L48: 
+L49: cite17†Burritos L50: 
+L51: cite18†Specialties L52: 
+L53: cite19†Snacks & Sweets L54: 
+L55: cite20†Quesadillas L56: 
+L57: cite21†Drinks L58: 
+L59: cite22†Nachos L60: 
+L61: cite23†Groups L62: 
+L63: cite24†Veggie Cravings L64: 
+L65: cite25†Bowls L66: 
+L67: cite26†Breakfast L68: ## Products
+L69: 
+L70: cite27†Build Your Own Luxe Cravings Box L71: 
+L72: $7.69 | 670-2050 Cal
+L73: 
+L74: cite27†Build L75: 
+L76: cite28†Meal for 2 L77: 
+L78: $12.99 | 180-530 Cal Per Item
+L79: 
+L80: 2
+L81: 
+L82: Crunchwrap Supreme®
+L83: 
+L84: 2
+L85: 
+L86: Bean Burrito
+L87: 
+L88: 2
+L89: 
+L90: Soft Taco
+L91: 
+L92: 2
+L93: 
+L94: Chips and Nacho Cheese Sauce
+L95: 
+L96: cite28†Customize L97: 
+L98: cite29†Meal for 4 L99: 
+L100: $21.39 | 180-530 Cal Per Item
+L101: 
+L102: 2
+L103: 
+L104: Crunchwrap Supreme®
+L105: 
+L106: 2
+L107: 
+L108: Chicken Quesadilla
+L109: 
+L110: 4
+L111: 
+L112: Soft Taco
+L113: 
+L114: 2
+L115: 
+L116: Chips and Nacho Cheese Sauce
+L117: 
+L118: cite29†Customize L119: 
+L120: cite30†Drinks Party Pack L121: 
+L122: $4.39 | 0-1120 Cal Per Item
+L123: 
+L124: 1
+L125: 
+L126: Fountain Drink - Medium
+L127: 
+L128: 1
+L129: 
+L130: Fountain Drink - Medium
+L131: 
+L132: 1
+L133: Fountain Drink - Medium
+L134: 
+L135: 1
+L136: 
+L137: Fountain Drink - Medium
+L138: 
+L139: cite30†Customize L140: 
+L141: cite31†Three Drink Theory Kit L142: 
+L143: $8.99 | 680 Cal
+L144: 
+L145: cite31†Customize L146: ## Taco Bell® online exclusives
+L147: 
+L148: Taco Bell is now offering menu items only available online or through the app! Those of you in the know, know that ordering ahead online or on the app saves time, but now you can also get access to exclusive menu items. Check back throughout the year to see which menu items get added!
+L149: 
+L150: Order and pay ahead online for pick up in the restaurant or at the drive-thru. Enjoy delicious fast food near you at Taco Bell today!
+L151: cite32†Image: Vegetarian Info Icon American Vegetarian Association certified Vegetarian food items, are lacto-ovo, allowing consumption of dairy and eggs but not animal byproducts. We may use the same frying oil to prepare menu items that could contain meat. Vegetarian and meat ingredients are handled in common, and cross contact may occur, which may not be acceptable to certain types of vegetarian diets.
+L152: Neither Taco Bell®, our employees, nor our franchisees nor the AVA assume any responsibility for such cross contact.
+L153: Warning: cite33†Image: Sodium Warning Icon indicates that the sodium (salt) content of this item is higher than the total daily recommended limit (2,300 mg). High sodium intake can increase blood pressure and risk of heart disease and stroke.
+L154: 
+L155: cite34†Image: Sodium Warning : Sodium content higher than daily recommended limit (2,300 mg). High sodium intake can increase blood pressure and risk of heart disease and stroke.
+L156: We prepare and serve products containing egg, milk, soy, wheat, or other allergens. Our products are prepared on shared equipment and in the same kitchen area and we cannot guarantee that cross contact with allergens will not occur. Ingredient and allergen information for menu items is available at cite35†https://www.tacobell.com/nutrition/allergen-info .
+L157: ## Redeem exclusive rewards only on the app.
+L158: 
+L159: scan to Download
+L160: taco bell app!
+L161: 
+L162: cite36†Download app L163: 
+L164: ###### About us
+L165: 
+L166: cite37†About Taco Bell cite4†Purpose cite38†Nutrition cite5†Locations cite39†Offers & Deals cite40†Newsroom cite41†Stories cite42†Responsible Disclosure L167: 
+L168: ###### Explore
+L169: 
+L170: cite43†Mobile App cite3†Gift Cards cite2†Rewards cite1†Delivery cite44†Taco Shop†www.tacobelltacoshop.com L171: ###### Contact Us
+L172: 
+L173: cite45†Help & FAQs†help.tacobell.com cite46†Careers†jobs.tacobell.com cite47†Taco Bell Foundation†www.tacobellfoundation.org cite48†Franchise Information L174: 
+L175: At participating U.S. Taco Bell® locations. Contact restaurant for prices, hours & participation, which vary. Tax extra. 2,000 calories a day used for general nutrition advice, but calorie needs vary. Additional nutrition information available upon request.
+L176: cite49†Image: Taco Bell ©2026 Taco Bell IP Holder, LLC. All Rights Reserved. TACO BELL, the Bell logo, and other marks are the property of Taco Bell IP Holder, LLC. All other trademarks are the property of their respective owners.
+L177: 
+L178: * * *
+L179: 
+L180: cite50†Privacy Center cite51†Terms Of Use cite52†Accessibility Statement cite53†Do Not Sell or Share My Personal Information†privacy.tacobell.com --------------------------------------------------------------------------------
+Luxe Value Menu | Taco Bell® (https://www.tacobell.com/food/luxe-value-menu)
+citeturn98view2 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://www.tacobell.com/food/luxe-value-menu","lineno":null}); Total lines: 186
+L0: cite0†Menu cite1†Delivery cite2†Rewards cite3†Gift Cards L1: 
+L2: cite4†Purpose L3: 
+L4: cite5†Find a Nearby Bell L5: 
+L6: cite6†Download Our App†tblinks.tacobell.com L7: 
+L8: cite7†Sign Up cite8†Log in L9: 
+L10: cite9†$0.00 L11: 
+L12: #####
+L13: 
+L14: Subtotal Sales Tax
+L15: 
+L16: $0.00 Calculated At Checkout
+L17: 
+L18: cite9†View Bag & Checkout L19: 
+L20: cite0†Menu cite1†Delivery cite2†Rewards cite3†Gift Cards L21: 
+L22: cite4†Purpose L23: 
+L24: |
+L25: 
+L26: cite9†$0.00 L27: #####
+L28: 
+L29: Subtotal Sales Tax
+L30: 
+L31: $0.00 Calculated At Checkout
+L32: 
+L33: cite9†View Bag & Checkout L34: 
+L35: cite10†Best Sellers L36: 
+L37: cite11†Featured L38: 
+L39: cite12†Online Exclusives L40: 
+L41: cite13†Luxe Value Menu L42: 
+L43: cite14†Cantina Chicken Menu L44: 
+L45: cite15†Boxes & Combos L46: 
+L47: cite16†Tacos L48: 
+L49: cite17†Burritos L50: 
+L51: cite18†Specialties L52: 
+L53: cite19†Snacks & Sweets L54: 
+L55: cite20†Quesadillas L56: 
+L57: cite21†Drinks L58: 
+L59: cite22†Nachos L60: 
+L61: cite23†Groups L62: 
+L63: cite24†Veggie Cravings L64: 
+L65: cite25†Bowls L66: 
+L67: cite26†Breakfast L68: ## Products
+L69: 
+L70: cite27†Chili Cheese Burrito L71: 
+L72: $2.99 | 380 Cal
+L73: 
+L74: [Button: Add to Order]
+L75: 
+L76: [Button: Customize]
+L77: 
+L78: cite28†Sriracha Chicken Crunchadilla L79: 
+L80: $2.00 | 280 Cal
+L81: 
+L82: [Button: Add to Order]
+L83: 
+L84: [Button: Customize]
+L85: 
+L86: cite29†Classic Chicken Crunchadilla L87: 
+L88: $2.00 | 280 Cal
+L89: 
+L90: [Button: Add to Order]
+L91: 
+L92: [Button: Customize]
+L93: 
+L94: cite30†Mini Taco Salad L95: 
+L96: $2.49 | 280 Cal
+L97: 
+L98: [Button: Add to Order]
+L99: 
+L100: [Button: Customize]
+L101: 
+L102: cite31†Chips and Nacho Supreme Dip L103: 
+L104: $2.49 | 360 Cal
+L105: 
+L106: [Button: Add to Order]
+L107: 
+L108: cite31†Customize L109: 
+L110: cite32†Avocado Ranch Chicken Stacker L111: $2.99 | 350 Cal
+L112: 
+L113: [Button: Add to Order]
+L114: 
+L115: [Button: Customize]
+L116: 
+L117: cite33†Cheesy Roll Up L118: 
+L119: $1.39 | 170 Cal
+L120: 
+L121: cite34†Image: Vegetarian L122: 
+L123: [Button: Add to Order]
+L124: 
+L125: [Button: Customize]
+L126: 
+L127: cite35†Cheesy Bean and Rice Burrito L128: 
+L129: $1.49 | 400 Cal
+L130: 
+L131: cite34†Image: Vegetarian L132: 
+L133: [Button: Add to Order]
+L134: 
+L135: [Button: Customize]
+L136: 
+L137: cite36†3 Cheese Chicken Flatbread Melt L138: 
+L139: $2.39 | 320 Cal
+L140: 
+L141: [Button: Add to Order]
+L142: 
+L143: [Button: Customize]
+L144: 
+L145: cite37†Cheesy Double Beef Burrito L146: 
+L147: $2.99 | 560 Cal
+L148: 
+L149: [Button: Add to Order]
+L150: 
+L151: [Button: Customize]
+L152: ## Taco Bell® Luxe Value Menu
+L153: ### Order from the Luxe Value Menu online or visit us at the Taco Bell location closest to you
+L154: 
+L155: Taco Bell’s Luxe Value Menu includes a total of 10 different menu items to choose from, each priced for $3 or less. The menu features new items like the cite38†Mini Taco Salad and cite39†Beefy Loaded Potato Griller and classics like the cite40†Spicy Potato Soft Taco and cite35†Cheesy Bean & Rice Burrito . Whatever you’re craving, Taco Bell’s Luxe Value Menu has got you covered with affordable menu options!
+L156: cite34†Image: Vegetarian Info Icon American Vegetarian Association certified Vegetarian food items, are lacto-ovo, allowing consumption of dairy and eggs but not animal byproducts. We may use the same frying oil to prepare menu items that could contain meat. Vegetarian and meat ingredients are handled in common, and cross contact may occur, which may not be acceptable to certain types of vegetarian diets.
+L157: Neither Taco Bell®, our employees, nor our franchisees nor the AVA assume any responsibility for such cross contact.
+L158: Warning: cite41†Image: Sodium Warning Icon indicates that the sodium (salt) content of this item is higher than the total daily recommended limit (2,300 mg). High sodium intake can increase blood pressure and risk of heart disease and stroke.
+L159: 
+L160: cite42†Image: Sodium Warning : Sodium content higher than daily recommended limit (2,300 mg). High sodium intake can increase blood pressure and risk of heart disease and stroke.
+L161: We prepare and serve products containing egg, milk, soy, wheat, or other allergens. Our products are prepared on shared equipment and in the same kitchen area and we cannot guarantee that cross contact with allergens will not occur. Ingredient and allergen information for menu items is available at cite43†https://www.tacobell.com/nutrition/allergen-info .
+L162: ## Redeem exclusive rewards only on the app.
+L163: 
+L164: scan to Download
+L165: taco bell app!
+L166: 
+L167: cite44†Download app L168: 
+L169: ###### About us
+L170: 
+L171: cite45†About Taco Bell cite4†Purpose cite46†Nutrition cite5†Locations cite47†Offers & Deals cite48†Newsroom cite49†Stories cite50†Responsible Disclosure L172: 
+L173: ###### Explore
+L174: 
+L175: cite51†Mobile App cite3†Gift Cards cite2†Rewards cite1†Delivery cite52†Taco Shop†www.tacobelltacoshop.com L176: ###### Contact Us
+L177: 
+L178: cite53†Help & FAQs†help.tacobell.com cite54†Careers†jobs.tacobell.com cite55†Taco Bell Foundation†www.tacobellfoundation.org cite56†Franchise Information L179: 
+L180: At participating U.S. Taco Bell® locations. Contact restaurant for prices, hours & participation, which vary. Tax extra. 2,000 calories a day used for general nutrition advice, but calorie needs vary. Additional nutrition information available upon request.
+L181: cite57†Image: Taco Bell ©2026 Taco Bell IP Holder, LLC. All Rights Reserved. TACO BELL, the Bell logo, and other marks are the property of Taco Bell IP Holder, LLC. All other trademarks are the property of their respective owners.
+L182: 
+L183: * * *
+L184: 
+L185: cite58†Privacy Center cite59†Terms Of Use cite60†Accessibility Statement cite61†Do Not Sell or Share My Personal Information†privacy.tacobell.com --------------------------------------------------------------------------------
+Cantina Chicken Menu - Order Online | Taco Bell® (https://www.tacobell.com/food/cantina-chicken-menu)
+citeturn98view3 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://www.tacobell.com/food/cantina-chicken-menu","lineno":null}); Total lines: 203
+L0: cite0†Menu cite1†Delivery cite2†Rewards cite3†Gift Cards L1: 
+L2: cite4†Purpose L3: 
+L4: cite5†Find a Nearby Bell L5: 
+L6: cite6†Download Our App†tblinks.tacobell.com L7: 
+L8: cite7†Sign Up cite8†Log in L9: 
+L10: cite9†$0.00 L11: 
+L12: #####
+L13: 
+L14: Subtotal Sales Tax
+L15: 
+L16: $0.00 Calculated At Checkout
+L17: 
+L18: cite9†View Bag & Checkout L19: 
+L20: cite0†Menu cite1†Delivery cite2†Rewards cite3†Gift Cards L21: 
+L22: cite4†Purpose L23: 
+L24: |
+L25: 
+L26: cite9†$0.00 L27: #####
+L28: 
+L29: Subtotal Sales Tax
+L30: 
+L31: $0.00 Calculated At Checkout
+L32: 
+L33: cite9†View Bag & Checkout L34: 
+L35: cite10†Best Sellers L36: 
+L37: cite11†Featured L38: 
+L39: cite12†Online Exclusives L40: 
+L41: cite13†Luxe Value Menu L42: 
+L43: cite14†Cantina Chicken Menu L44: 
+L45: cite15†Boxes & Combos L46: 
+L47: cite16†Tacos L48: 
+L49: cite17†Burritos L50: 
+L51: cite18†Specialties L52: 
+L53: cite19†Snacks & Sweets L54: 
+L55: cite20†Quesadillas L56: 
+L57: cite21†Drinks L58: 
+L59: cite22†Nachos L60: 
+L61: cite23†Groups L62: 
+L63: cite24†Veggie Cravings L64: 
+L65: cite25†Bowls L66: 
+L67: cite26†Breakfast L68: ## Products
+L69: 
+L70: cite27†Cantina Chicken Rolled Quesadilla L71: 
+L72: $6.99 | 650 Cal
+L73: 
+L74: [Button: Add to Order]
+L75: 
+L76: cite27†Customize L77: 
+L78: cite28†Cantina Chicken Burrito L79: 
+L80: $6.29 | 570 Cal
+L81: 
+L82: [Button: Add to Order]
+L83: 
+L84: cite28†Customize L85: 
+L86: cite29†Cantina Chicken Soft Taco L87: 
+L88: $3.29 | 260 Cal
+L89: 
+L90: [Button: Add to Order]
+L91: 
+L92: cite29†Customize L93: 
+L94: cite30†Cantina Chicken Crispy Taco L95: 
+L96: $3.29 | 320 Cal
+L97: 
+L98: [Button: Add to Order]
+L99: 
+L100: cite30†Customize L101: 
+L102: cite31†Cantina Chicken Bowl L103: 
+L104: $8.59 | 630 Cal
+L105: 
+L106: [Button: Add to Order]
+L107: 
+L108: cite31†Customize L109: 
+L110: cite32†Cantina Chicken Rolled Quesadilla Combo L111: $10.89 | 820-1240 Cal
+L112: 
+L113: cite32†Customize L114: 
+L115: cite33†Cantina Chicken Crispy Taco Combo L116: 
+L117: $9.89 | 860-1280 Cal
+L118: 
+L119: cite33†Customize L120: 
+L121: cite34†Cantina Chicken Burrito Combo L122: 
+L123: $11.69 | 960-1380 Cal
+L124: 
+L125: cite34†Customize L126: 
+L127: cite35†Avocado Verde Salsa Sauce Packet L128: 
+L129: $0.29 | 50 Cal
+L130: 
+L131: cite36†Image: Vegetarian L132: 
+L133: [Button: Add to Order]
+L134: ## Taco Bell® Cantina Chicken Menu
+L135: ### Order from the Cantina Chicken Menu online or visit us at the Taco Bell location nearest you
+L136: Taco Bell’s Cantina Chicken Menu features ingredients like our slow-roasted chicken, signature pico de gallo, fresh purple cabbage, crispy white corn shell and flavorful avocado verde salsa in your favorite Taco Bell forms. Satisfy your daytime cravings and try the cite30†Cantina Chicken Crispy Taco , the cite29†Cantina Chicken Soft Taco , the cite28†Cantina Chicken Burrito , the cite37†Cantina Chicken Quesadilla , or the cite31†Cantina Chicken Bowl .
+L137: The Cantina Chicken Menu is the cheesy, saucy, spicy, crunchy Taco Bell you love combined with elevated ingredients. Try the Cantina Chicken Menu at Taco Bell today!
+L138: ## Faqs
+L139: 
+L140: #### What is Cantina Chicken?
+L141: 
+L142: Cantina Chicken is Taco Bell’s slow-roasted chicken available as part of the Cantina Chicken Menu.
+L143: 
+L144: * * *
+L145: 
+L146: #### When is the Cantina Chicken Menu available?
+L147: 
+L148: The Cantina Chicken Menu is available starting March 21.
+L149: 
+L150: * * *
+L151: 
+L152: #### How long will the Cantina Chicken Menu be available?
+L153: 
+L154: The Cantina Chicken Menu and our slow-roasted chicken are a permanent addition to Taco Bell’s menu.
+L155: 
+L156: * * *
+L157: #### What items are on the Cantina Chicken Menu?
+L158: 
+L159: The Cantina Chicken Burrito, Cantina Chicken Soft Taco, Cantina Chicken Crispy Taco, Cantina Chicken Quesadilla, and the Cantina Chicken Bowl are the items on the Cantina Chicken Menu. Looking for a meal? The Cantina Chicken Crispy Taco Meal, Cantina Chicken Burrito Meal and the Cantina Chicken Quesadilla Meal are also available. Try any of the Cantina Chicken Menu items with our Avocado Verde Salsa.
+L160: 
+L161: * * *
+L162: 
+L163: #### What is a Cantina Chicken Taco?
+L164: ####
+L165: There are two tacos on the Cantina Chicken Menu: The Cantina Chicken Soft Taco and the Cantina Chicken Crispy Taco. The Cantina Chicken Crispy Taco is a crispy taco shell filled with slow-roasted chicken, creamy jalapeño sauce, and three-cheese blend with grilled cheese on the outside. The Cantina Chicken Soft Taco is a warm flour tortilla filled with slow-roasted chicken, avocado ranch sauce, lettuce, shredded purple cabbage, freshly prepared pico de gallo, and cheddar cheese.
+L166: Both tacos come with our Avocado Verde Salsa.
+L167: * * *
+L168: #### What is in the Cantina Chicken Bowl?
+L169: 
+L170: The Cantina Chicken Bowl is filled with slow-roasted chicken, seasoned rice, black beans, avocado ranch sauce, reduced-fat sour cream, lettuce, shredded purple cabbage, freshly prepared pico de gallo, house-made daily guacamole, and cheddar cheese.
+L171: 
+L172: * * *
+L173: cite36†Image: Vegetarian Info Icon American Vegetarian Association certified Vegetarian food items, are lacto-ovo, allowing consumption of dairy and eggs but not animal byproducts. We may use the same frying oil to prepare menu items that could contain meat. Vegetarian and meat ingredients are handled in common, and cross contact may occur, which may not be acceptable to certain types of vegetarian diets.
+L174: Neither Taco Bell®, our employees, nor our franchisees nor the AVA assume any responsibility for such cross contact.
+

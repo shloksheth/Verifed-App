@@ -29,6 +29,11 @@ export const catalogLocations = [
     "menuCoverage": "Every food entry on the current generic dining page, including explicit protein variants, the Happy Hour-only chicken and fried-egg add-on; excludes duplicate promotional listings and Atlanta-only pork belly. Not independently confirmed as this branch’s complete current menu. Kids and guide-only items are outside this dining-page inventory.",
     "availabilityVerified": false,
     "cuisine": "Asian street food",
+    "coordinates": {
+      "latitude": 28.560473529625,
+      "longitude": -81.364382750045
+    },
+    "coordinatesSource": "https://geocoding.geo.census.gov/geocoder/geographies/onelineaddress?address=1103+N+Mills+Ave+Orlando+FL+32803&benchmark=Public_AR_Current&vintage=ACS2025_Current&format=json",
     "imageUrl": "https://eathawkers.com/wp-content/uploads/2020/06/Mills50_2.jpg",
     "imageCredit": {
       "label": "Hawkers · official website",
@@ -74,6 +79,11 @@ export const catalogLocations = [
     "menuCoverage": "All 30 food components from September ingredient PDF matched to the updated menu block, plus three configurable bowl sizes and two current cookies. Old-only menu block items excluded. Seasonal cauliflower variant correspondence and branch availability remain unconfirmed.",
     "availabilityVerified": false,
     "cuisine": "Bowls",
+    "coordinates": {
+      "latitude": 28.555010114663,
+      "longitude": -81.206547875854
+    },
+    "coordinatesSource": "https://geocoding.geo.census.gov/geocoder/geographies/onelineaddress?address=851+N+Alafaya+Trail+Orlando+FL+32828&benchmark=Public_AR_Current&vintage=ACS2025_Current&format=json",
     "imageUrl": "https://cdn.prod.website-files.com/693842c5467272494a7d47f2/6aa939e6ce8bbb07f0b2e60e_FK%20Desktop%202-p-800.webp",
     "imageCredit": {
       "label": "Fresh Kitchen · official website",
@@ -119,6 +129,11 @@ export const catalogLocations = [
     "menuCoverage": "All 26 components on the official US allergen matrix. This is not a complete list of customized entrÃ©es or current limited-time foods; Pollo Asado and featured complete meals need separate data.",
     "availabilityVerified": false,
     "cuisine": "Mexican",
+    "coordinates": {
+      "latitude": 28.517358474817,
+      "longitude": -81.376297360703
+    },
+    "coordinatesSource": "https://geocoding.geo.census.gov/geocoder/geographies/onelineaddress?address=2211+S+Orange+Ave+Orlando+FL+32806&benchmark=Public_AR_Current&vintage=ACS2025_Current&format=json",
     "imageUrl": "https://dyn.mktgcdn.com/p/AoomnJ8W6lQ_KkLS1lPx82ai0f1og8tW5-ZQle6WYzE/width=960,height=640",
     "imageCredit": {
       "label": "Chipotle · official website",
@@ -162,6 +177,11 @@ export const catalogLocations = [
       "verifiedAt": "2026-10-21",
       "sourceUrl": "https://geocoding.geo.census.gov/geocoder/geographies/onelineaddress?address=1323+N+Mills+Ave%2C+Orlando%2C+FL+32803&benchmark=Public_AR_Current&vintage=ACS2025_Current&format=json"
     },
+    "coordinates": {
+      "latitude": 28.562697308519,
+      "longitude": -81.364383205648
+    },
+    "coordinatesSource": "https://geocoding.geo.census.gov/geocoder/geographies/onelineaddress?address=1323+N+Mills+Ave%2C+Orlando%2C+FL+32803&benchmark=Public_AR_Current&vintage=ACS2025_Current&format=json",
     "emoji": "",
     "imageUrl": "https://www.blackroostertaqueria.com/wp-content/uploads/2021/05/food-1024x682.jpg",
     "imageCredit": {
@@ -206,6 +226,11 @@ export const catalogLocations = [
       "verifiedAt": "2026-10-21",
       "sourceUrl": "https://geocoding.geo.census.gov/geocoder/geographies/onelineaddress?address=1050+N+Mills+Ave%2C+Orlando%2C+FL+32803&benchmark=Public_AR_Current&vintage=ACS2025_Current&format=json"
     },
+    "coordinates": {
+      "latitude": 28.559794537543,
+      "longitude": -81.364512211272
+    },
+    "coordinatesSource": "https://geocoding.geo.census.gov/geocoder/geographies/onelineaddress?address=1050+N+Mills+Ave%2C+Orlando%2C+FL+32803&benchmark=Public_AR_Current&vintage=ACS2025_Current&format=json",
     "emoji": "",
     "imageUrl": "https://s3.amazonaws.com/webflow-prod-assets/61e04feb6d15de516ae40221/6ab6c4950d823bf32f6dd891_Pigzza%20and%20Pig%20Floyds%20Logo%20Mashed.png",
     "imageCredit": {
@@ -250,6 +275,11 @@ export const catalogLocations = [
       "verifiedAt": "2026-10-21",
       "sourceUrl": "https://geocoding.geo.census.gov/geocoder/geographies/onelineaddress?address=948+N+Mills+Ave%2C+Orlando%2C+FL+32803&benchmark=Public_AR_Current&vintage=ACS2025_Current&format=json"
     },
+    "coordinates": {
+      "latitude": 28.557648642955,
+      "longitude": -81.364517234887
+    },
+    "coordinatesSource": "https://geocoding.geo.census.gov/geocoder/geographies/onelineaddress?address=948+N+Mills+Ave%2C+Orlando%2C+FL+32803&benchmark=Public_AR_Current&vintage=ACS2025_Current&format=json",
     "emoji": "",
     "imageUrl": null,
     "imageCredit": {
@@ -287,6 +317,11 @@ export const catalogLocations = [
       "verifiedAt": "2026-10-21",
       "sourceUrl": "https://geocoding.geo.census.gov/geocoder/geographies/onelineaddress?address=2101+E+Colonial+Dr%2C+Orlando%2C+FL+32803&benchmark=Public_AR_Current&vintage=ACS2025_Current&format=json"
     },
+    "coordinates": {
+      "latitude": 28.553208943854,
+      "longitude": -81.354904648362
+    },
+    "coordinatesSource": "https://geocoding.geo.census.gov/geocoder/geographies/onelineaddress?address=2101+E+Colonial+Dr%2C+Orlando%2C+FL+32803&benchmark=Public_AR_Current&vintage=ACS2025_Current&format=json",
     "emoji": "",
     "imageUrl": "https://lovinghut.us/wp-content/uploads/2020/01/Heavenly.jpg",
     "imageCredit": {
@@ -331,6 +366,11 @@ export const catalogLocations = [
       "verifiedAt": "2026-10-21",
       "sourceUrl": "https://geocoding.geo.census.gov/geocoder/geographies/onelineaddress?address=807+N+Mills+Ave%2C+Orlando%2C+FL+32803&benchmark=Public_AR_Current&vintage=ACS2025_Current&format=json"
     },
+    "coordinates": {
+      "latitude": 28.555411768332,
+      "longitude": -81.3643857709
+    },
+    "coordinatesSource": "https://geocoding.geo.census.gov/geocoder/geographies/onelineaddress?address=807+N+Mills+Ave%2C+Orlando%2C+FL+32803&benchmark=Public_AR_Current&vintage=ACS2025_Current&format=json",
     "emoji": "",
     "imageUrl": "https://static.wixstatic.com/media/53512c_b2214b0e767947b4b63be1e1016a9137~mv2.jpeg/v1/crop/x_0,y_17,w_822,h_774/fill/w_760,h_716,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/strand-branzino.jpeg",
     "imageCredit": {
@@ -375,6 +415,11 @@ export const catalogLocations = [
       "verifiedAt": "2026-10-21",
       "sourceUrl": "https://geocoding.geo.census.gov/geocoder/geographies/onelineaddress?address=448+N+Terry+Ave%2C+Orlando%2C+FL+32801&benchmark=Public_AR_Current&vintage=ACS2025_Current&format=json"
     },
+    "coordinates": {
+      "latitude": 28.548594888275,
+      "longitude": -81.387153661189
+    },
+    "coordinatesSource": "https://geocoding.geo.census.gov/geocoder/geographies/onelineaddress?address=448+N+Terry+Ave%2C+Orlando%2C+FL+32801&benchmark=Public_AR_Current&vintage=ACS2025_Current&format=json",
     "emoji": "",
     "imageUrl": "https://static.wixstatic.com/media/8f9fe8_d9a3bcab160f44bbac60c813f7da1f9e~mv2.jpg/v1/fill/w_600,h_750,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Monroe%20Magical%202025-36.jpg",
     "imageCredit": {
@@ -419,6 +464,11 @@ export const catalogLocations = [
       "verifiedAt": "2026-10-21",
       "sourceUrl": "https://geocoding.geo.census.gov/geocoder/geographies/onelineaddress?address=1011+E+Colonial+Dr%2C+Suite+101%2C+Orlando%2C+FL+32803&benchmark=Public_AR_Current&vintage=ACS2025_Current&format=json"
     },
+    "coordinates": {
+      "latitude": 28.553224383837,
+      "longitude": -81.365956455821
+    },
+    "coordinatesSource": "https://geocoding.geo.census.gov/geocoder/geographies/onelineaddress?address=1011+E+Colonial+Dr%2C+Suite+101%2C+Orlando%2C+FL+32803&benchmark=Public_AR_Current&vintage=ACS2025_Current&format=json",
     "emoji": "",
     "imageUrl": "https://cdn.prod.website-files.com/630bc362e064f47bd1baf171/65d7855dda244ed58b6aa17b_IMG_5274-p-800.webp",
     "imageCredit": {
@@ -463,6 +513,11 @@ export const catalogLocations = [
       "verifiedAt": "2026-10-21",
       "sourceUrl": "https://geocoding.geo.census.gov/geocoder/geographies/onelineaddress?address=3201+Corrine+Dr%2C+Orlando%2C+FL+32803&benchmark=Public_AR_Current&vintage=ACS2025_Current&format=json"
     },
+    "coordinates": {
+      "latitude": 28.567913808549,
+      "longitude": -81.344301926369
+    },
+    "coordinatesSource": "https://geocoding.geo.census.gov/geocoder/geographies/onelineaddress?address=3201+Corrine+Dr%2C+Orlando%2C+FL+32803&benchmark=Public_AR_Current&vintage=ACS2025_Current&format=json",
     "emoji": "",
     "imageUrl": "https://images.squarespace-cdn.com/content/v1/5911d92a3a0411f8aed6f89b/57d0c22f-e6b0-45d2-9240-1d5e28909b6e/vegan+biscuit+orlando%2C+fl?format=1000w",
     "imageCredit": {
@@ -507,6 +562,11 @@ export const catalogLocations = [
       "verifiedAt": "2026-10-21",
       "sourceUrl": "https://geocoding.geo.census.gov/geocoder/geographies/onelineaddress?address=821+N+Orange+Ave%2C+Orlando%2C+FL+32804&benchmark=Public_AR_Current&vintage=ACS2025_Current&format=json"
     },
+    "coordinates": {
+      "latitude": 28.555372429033,
+      "longitude": -81.379145972185
+    },
+    "coordinatesSource": "https://geocoding.geo.census.gov/geocoder/geographies/onelineaddress?address=821+N+Orange+Ave%2C+Orlando%2C+FL+32804&benchmark=Public_AR_Current&vintage=ACS2025_Current&format=json",
     "emoji": "",
     "imageUrl": "https://static.wixstatic.com/media/e2d616_3c792a0ecad54f7b81bba0d94459076a~mv2.jpg/v1/fill/w_669,h_446,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Reyes-03717.jpg",
     "imageCredit": {
@@ -551,6 +611,11 @@ export const catalogLocations = [
       "verifiedAt": "2026-10-21",
       "sourceUrl": "https://geocoding.geo.census.gov/geocoder/geographies/onelineaddress?address=4899+New+Broad+St%2C+Orlando%2C+FL+32814&benchmark=Public_AR_Current&vintage=ACS2025_Current&format=json"
     },
+    "coordinates": {
+      "latitude": 28.568090688013,
+      "longitude": -81.32658294441
+    },
+    "coordinatesSource": "https://geocoding.geo.census.gov/geocoder/geographies/onelineaddress?address=4899+New+Broad+St%2C+Orlando%2C+FL+32814&benchmark=Public_AR_Current&vintage=ACS2025_Current&format=json",
     "emoji": "",
     "imageUrl": "https://static.wixstatic.com/media/34ad14_26acfed0ef204326a6d4cb9bd0c3f46e~mv2.jpg",
     "imageCredit": {
@@ -595,6 +660,11 @@ export const catalogLocations = [
       "verifiedAt": "2026-10-21",
       "sourceUrl": "https://geocoding.geo.census.gov/geocoder/geographies/onelineaddress?address=4898+New+Broad+St%2C+Orlando%2C+FL+32814&benchmark=Public_AR_Current&vintage=ACS2025_Current&format=json"
     },
+    "coordinates": {
+      "latitude": 28.568016235671,
+      "longitude": -81.326483759341
+    },
+    "coordinatesSource": "https://geocoding.geo.census.gov/geocoder/geographies/onelineaddress?address=4898+New+Broad+St%2C+Orlando%2C+FL+32814&benchmark=Public_AR_Current&vintage=ACS2025_Current&format=json",
     "emoji": "",
     "imageUrl": "https://static.wixstatic.com/media/34ad14_adac8b474af14b21aca6425889dee08b~mv2.jpg/v1/fill/w_896,h_549,q_90,enc_avif,quality_auto/34ad14_adac8b474af14b21aca6425889dee08b~mv2.jpg",
     "imageCredit": {
@@ -639,6 +709,11 @@ export const catalogLocations = [
       "verifiedAt": "2026-10-21",
       "sourceUrl": "https://geocoding.geo.census.gov/geocoder/geographies/onelineaddress?address=100+S+Eola+Dr%2C+Orlando%2C+FL+32801&benchmark=Public_AR_Current&vintage=ACS2025_Current&format=json"
     },
+    "coordinates": {
+      "latitude": 28.541300827509,
+      "longitude": -81.369956232094
+    },
+    "coordinatesSource": "https://geocoding.geo.census.gov/geocoder/geographies/onelineaddress?address=100+S+Eola+Dr%2C+Orlando%2C+FL+32801&benchmark=Public_AR_Current&vintage=ACS2025_Current&format=json",
     "emoji": "",
     "imageUrl": "https://static.wixstatic.com/media/585d60_38e0e7f9ad594fc587c95313a919ead8~mv2.jpg/v1/fill/w_1218,h_802,q_90,enc_avif,quality_auto/585d60_38e0e7f9ad594fc587c95313a919ead8~mv2.jpg",
     "imageCredit": {
@@ -683,6 +758,11 @@ export const catalogLocations = [
       "verifiedAt": "2026-10-21",
       "sourceUrl": "https://geocoding.geo.census.gov/geocoder/geographies/onelineaddress?address=3990+Curry+Ford+Rd%2C+Orlando%2C+FL+32806&benchmark=Public_AR_Current&vintage=ACS2025_Current&format=json"
     },
+    "coordinates": {
+      "latitude": 28.524164944209,
+      "longitude": -81.33531769027
+    },
+    "coordinatesSource": "https://geocoding.geo.census.gov/geocoder/geographies/onelineaddress?address=3990+Curry+Ford+Rd%2C+Orlando%2C+FL+32806&benchmark=Public_AR_Current&vintage=ACS2025_Current&format=json",
     "emoji": "",
     "imageUrl": "https://d1w7312wesee68.cloudfront.net/lNei2BCDpqgTnUtsP0g4SDV5LpaRIImSMXhRQOYulaw/ext%3Awebp/quality%3A85/plain/s3%3A//toast-sites-resources-prod/restaurantImages/48be630c-57db-4532-86a8-a217d46e14d2/BC_211109_1026_Master.jpg",
     "imageCredit": {
@@ -727,6 +807,11 @@ export const catalogLocations = [
       "verifiedAt": "2026-10-21",
       "sourceUrl": "https://geocoding.geo.census.gov/geocoder/geographies/onelineaddress?address=1231+E+Colonial+Dr%2C+Orlando%2C+FL+32803&benchmark=Public_AR_Current&vintage=ACS2025_Current&format=json"
     },
+    "coordinates": {
+      "latitude": 28.553207136964,
+      "longitude": -81.363879171751
+    },
+    "coordinatesSource": "https://geocoding.geo.census.gov/geocoder/geographies/onelineaddress?address=1231+E+Colonial+Dr%2C+Orlando%2C+FL+32803&benchmark=Public_AR_Current&vintage=ACS2025_Current&format=json",
     "emoji": "",
     "imageUrl": "https://res.cloudinary.com/targetable/image/upload/f_auto,q_auto,w_900/Customers/mamakeats/site/mamak-roti-canai",
     "imageCredit": {
@@ -771,6 +856,11 @@ export const catalogLocations = [
       "verifiedAt": "2026-10-21",
       "sourceUrl": "https://geocoding.geo.census.gov/geocoder/geographies/onelineaddress?address=40+W+Washington+St%2C+Orlando%2C+FL+32801&benchmark=Public_AR_Current&vintage=ACS2025_Current&format=json"
     },
+    "coordinates": {
+      "latitude": 28.543478022774,
+      "longitude": -81.379767285214
+    },
+    "coordinatesSource": "https://geocoding.geo.census.gov/geocoder/geographies/onelineaddress?address=40+W+Washington+St%2C+Orlando%2C+FL+32801&benchmark=Public_AR_Current&vintage=ACS2025_Current&format=json",
     "emoji": "",
     "imageUrl": "https://static.wixstatic.com/media/b00dad_4294a5a1260d42b39fff4679f7935c49~mv2.jpg/v1/crop/x_158,y_0,w_808,h_1069/fill/w_808,h_882,al_c,q_85,enc_avif,quality_auto/IMG_7796.jpg",
     "imageCredit": {
@@ -815,6 +905,11 @@ export const catalogLocations = [
       "verifiedAt": "2026-10-21",
       "sourceUrl": "https://geocoding.geo.census.gov/geocoder/geographies/onelineaddress?address=807+N+Orange+Ave%2C+Orlando%2C+FL+32801&benchmark=Public_AR_Current&vintage=ACS2025_Current&format=json"
     },
+    "coordinates": {
+      "latitude": 28.555134316068,
+      "longitude": -81.37914291547
+    },
+    "coordinatesSource": "https://geocoding.geo.census.gov/geocoder/geographies/onelineaddress?address=807+N+Orange+Ave%2C+Orlando%2C+FL+32801&benchmark=Public_AR_Current&vintage=ACS2025_Current&format=json",
     "emoji": "",
     "imageUrl": "https://static.wixstatic.com/media/34ad14_dc78bab4d5964b73b07e5830934ce01c~mv2.jpg",
     "imageCredit": {
@@ -859,6 +954,11 @@ export const catalogLocations = [
       "verifiedAt": "2026-10-21",
       "sourceUrl": "https://geocoding.geo.census.gov/geocoder/geographies/onelineaddress?address=629+E+Central+Blvd%2C+Orlando%2C+FL+32801&benchmark=Public_AR_Current&vintage=ACS2025_Current&format=json"
     },
+    "coordinates": {
+      "latitude": 28.542373269126,
+      "longitude": -81.369465235258
+    },
+    "coordinatesSource": "https://geocoding.geo.census.gov/geocoder/geographies/onelineaddress?address=629+E+Central+Blvd%2C+Orlando%2C+FL+32801&benchmark=Public_AR_Current&vintage=ACS2025_Current&format=json",
     "emoji": "",
     "imageUrl": "https://static.wixstatic.com/media/34ad14_53af82dc0987485fb8a8fccbb781226c~mv2.jpg",
     "imageCredit": {
@@ -875,5 +975,227 @@ export const catalogLocations = [
       "height": 803,
       "checkedAt": "2026-10-21T18:49:23.825617+00:00"
     }
+  },
+  {
+    "key": "woodlands-orlando",
+    "id": "woodlands-orlando",
+    "slug": "woodlands-orlando",
+    "name": "Woodlands Indian Cuisine",
+    "location": "South Orange Blossom Trail · Orlando",
+    "address": "6040 S Orange Blossom Trail, Orlando, FL 32809",
+    "phone": "407-854-3330",
+    "cuisine": "Indian",
+    "websiteUrl": "https://www.woodlandsusa.com/",
+    "menuUrl": "http://www.woodlandsusa.com/images/Orlando.pdf",
+    "allergenUrl": null,
+    "description": "Indian dining. Published menu information, not live availability.",
+    "fictional": false,
+    "confirmed": false,
+    "source": {
+      "scope": "location",
+      "reviewedAt": "2026-10-21",
+      "note": "Official published food menu; unlisted ingredients, changing recipes and shared preparation need restaurant confirmation. Orlando PDF was read over the official public HTTP URL; the HTTPS endpoint has an expired/untrusted certificate. No certificate validation was disabled."
+    },
+    "imageUrl": "http://www.woodlandsusa.com/images/slider_04.jpg",
+    "imageAlt": "Masala dosai from the official Woodlands USA website",
+    "imageCredit": "Woodlands USA official website",
+    "district": {
+      "state": "FL",
+      "number": "10",
+      "congress": 119,
+      "verifiedAt": "2026-10-21",
+      "sourceUrl": "https://geocoding.geo.census.gov/geocoder/geographies/onelineaddress?address=6040+S+Orange+Blossom+Trail%2C+Orlando%2C+FL+32809&benchmark=Public_AR_Current&vintage=ACS2025_Current&format=json"
+    },
+    "coordinates": {
+      "latitude": 28.468862845999,
+      "longitude": -81.396680472202
+    },
+    "coordinatesSource": "https://geocoding.geo.census.gov/geocoder/geographies/onelineaddress?address=6040+S+Orange+Blossom+Trail%2C+Orlando%2C+FL+32809&benchmark=Public_AR_Current&vintage=ACS2025_Current&format=json",
+    "emoji": ""
+  },
+  {
+    "key": "bombay-street-kitchen",
+    "id": "bombay-street-kitchen",
+    "slug": "bombay-street-kitchen",
+    "name": "Bombay Street Kitchen",
+    "location": "South Orange Blossom Trail · Orlando",
+    "address": "6215 S Orange Blossom Trail, Orlando, FL 32809",
+    "phone": "407-240-5151",
+    "cuisine": "Indian",
+    "websiteUrl": "https://bombaykitchenorlando.com/",
+    "menuUrl": "https://bombaykitchenorlando.com/menu/",
+    "allergenUrl": null,
+    "description": "Indian dining. Published menu information, not live availability.",
+    "fictional": false,
+    "confirmed": false,
+    "source": {
+      "scope": "location",
+      "reviewedAt": "2026-10-21",
+      "note": "Official published food menu; unlisted ingredients, changing recipes and shared preparation need restaurant confirmation."
+    },
+    "coordinates": {
+      "latitude": 28.4668339,
+      "longitude": -81.3962492
+    },
+    "coordinatesSource": "https://bombaykitchenorlando.com/contact/",
+    "imageUrl": "https://bombaykitchenorlando.com/wp-content/uploads/2025/10/RG32209-scaled.jpg",
+    "imageAlt": "Bombay Street Kitchen food photographed by Roberto Gonzalez",
+    "imageCredit": "Bombay Street Kitchen / Roberto Gonzalez",
+    "district": null,
+    "emoji": ""
+  },
+  {
+    "key": "yellow-dog-eats-gotha",
+    "id": "yellow-dog-eats-gotha",
+    "slug": "yellow-dog-eats-gotha",
+    "name": "Yellow Dog Eats · Gotha",
+    "location": "Gotha",
+    "address": "1236 Hempel Avenue, Gotha, FL 34786",
+    "phone": "407-296-0609",
+    "cuisine": "BBQ & Sandwiches",
+    "websiteUrl": "https://yellowdogeats.com/",
+    "menuUrl": "https://yellowdogeats.com/wp-content/uploads/2025/10/YDE_Gotha_Main_Menu_090925.pdf",
+    "allergenUrl": null,
+    "description": "BBQ & Sandwiches dining. Published menu information, not live availability.",
+    "fictional": false,
+    "confirmed": false,
+    "source": {
+      "scope": "location",
+      "reviewedAt": "2026-10-21",
+      "note": "Official published food menu; unlisted ingredients, changing recipes and shared preparation need restaurant confirmation."
+    },
+    "imageUrl": "https://yellowdogeats.com/wp-content/uploads/2026/07/yde-gotha-logo.webp",
+    "imageAlt": "Yellow Dog Eats Gotha official restaurant logo",
+    "imageCredit": "Yellow Dog Eats official website",
+    "district": {
+      "state": "FL",
+      "number": "11",
+      "congress": 119,
+      "verifiedAt": "2026-10-21",
+      "sourceUrl": "https://geocoding.geo.census.gov/geocoder/geographies/onelineaddress?address=1236+Hempel+Avenue%2C+Gotha%2C+FL+34786&benchmark=Public_AR_Current&vintage=ACS2025_Current&format=json"
+    },
+    "coordinates": {
+      "latitude": 28.527629209359,
+      "longitude": -81.522863671004
+    },
+    "coordinatesSource": "https://geocoding.geo.census.gov/geocoder/geographies/onelineaddress?address=1236+Hempel+Avenue%2C+Gotha%2C+FL+34786&benchmark=Public_AR_Current&vintage=ACS2025_Current&format=json",
+    "emoji": ""
+  },
+  {
+    "key": "taco-bell-south-orange",
+    "id": "taco-bell-south-orange",
+    "slug": "taco-bell-south-orange",
+    "name": "Taco Bell · South Orange",
+    "location": "South Orange · Orlando",
+    "address": "2474 S Orange Ave, Orlando, FL 32806",
+    "phone": "407-481-9341",
+    "cuisine": "Mexican",
+    "websiteUrl": "https://locations.tacobell.com/fl/orlando/2474-s-orange-ave-.html",
+    "menuUrl": "https://www.tacobell.com/food",
+    "allergenUrl": "https://www.tacobell.com/nutrition/allergen-info",
+    "description": "Mexican dining. Published menu information, not live availability.",
+    "fictional": false,
+    "confirmed": false,
+    "source": {
+      "scope": "chain",
+      "reviewedAt": "2026-10-21",
+      "note": "Official real Orlando branch address and telephone; food inventory is the national Taco Bell menu template, not live local stock or a branch-confirmed recipe. Breakfast, promotions and participation vary. Shared preparation can cause cross-contact."
+    },
+    "chainId": "taco-bell",
+    "chainName": "Taco Bell",
+    "imageUrl": "https://www.tacobell.com/images/22110_soft_taco_750x340.jpg",
+    "imageAlt": "Taco Bell official Soft Taco product image; national chain photo",
+    "imageCredit": "Taco Bell official menu",
+    "district": {
+      "state": "FL",
+      "number": "10",
+      "congress": 119,
+      "verifiedAt": "2026-10-21",
+      "sourceUrl": "https://geocoding.geo.census.gov/geocoder/geographies/onelineaddress?address=2474+S+Orange+Ave%2C+Orlando%2C+FL+32806&benchmark=Public_AR_Current&vintage=ACS2025_Current&format=json"
+    },
+    "coordinates": {
+      "latitude": 28.514990005849,
+      "longitude": -81.376422404388
+    },
+    "coordinatesSource": "https://geocoding.geo.census.gov/geocoder/geographies/onelineaddress?address=2474+S+Orange+Ave%2C+Orlando%2C+FL+32806&benchmark=Public_AR_Current&vintage=ACS2025_Current&format=json",
+    "emoji": ""
+  },
+  {
+    "key": "taco-bell-east-colonial",
+    "id": "taco-bell-east-colonial",
+    "slug": "taco-bell-east-colonial",
+    "name": "Taco Bell · East Colonial",
+    "location": "East Colonial · Orlando",
+    "address": "4225 E Colonial Drive, Orlando, FL 32803",
+    "phone": "407-487-4197",
+    "cuisine": "Mexican",
+    "websiteUrl": "https://locations.tacobell.com/fl/orlando/4225-e-colonial-drive.html",
+    "menuUrl": "https://www.tacobell.com/food",
+    "allergenUrl": "https://www.tacobell.com/nutrition/allergen-info",
+    "description": "Mexican dining. Published menu information, not live availability.",
+    "fictional": false,
+    "confirmed": false,
+    "source": {
+      "scope": "chain",
+      "reviewedAt": "2026-10-21",
+      "note": "Official real Orlando branch address and telephone; food inventory is the national Taco Bell menu template, not live local stock or a branch-confirmed recipe. Breakfast, promotions and participation vary. Shared preparation can cause cross-contact."
+    },
+    "chainId": "taco-bell",
+    "chainName": "Taco Bell",
+    "imageUrl": "https://www.tacobell.com/images/22110_soft_taco_750x340.jpg",
+    "imageAlt": "Taco Bell official Soft Taco product image; national chain photo",
+    "imageCredit": "Taco Bell official menu",
+    "district": {
+      "state": "FL",
+      "number": "10",
+      "congress": 119,
+      "verifiedAt": "2026-10-21",
+      "sourceUrl": "https://geocoding.geo.census.gov/geocoder/geographies/onelineaddress?address=4225+E+Colonial+Drive%2C+Orlando%2C+FL+32803&benchmark=Public_AR_Current&vintage=ACS2025_Current&format=json"
+    },
+    "coordinates": {
+      "latitude": 28.553571631371,
+      "longitude": -81.3331270073
+    },
+    "coordinatesSource": "https://geocoding.geo.census.gov/geocoder/geographies/onelineaddress?address=4225+E+Colonial+Drive%2C+Orlando%2C+FL+32803&benchmark=Public_AR_Current&vintage=ACS2025_Current&format=json",
+    "emoji": ""
+  },
+  {
+    "key": "taco-bell-orlando-west",
+    "id": "taco-bell-orlando-west",
+    "slug": "taco-bell-orlando-west",
+    "name": "Taco Bell · Orlando West",
+    "location": "Orlando West · Orlando",
+    "address": "2600 Orlando West Dr, Orlando, FL 32808",
+    "phone": "407-292-6072",
+    "cuisine": "Mexican",
+    "websiteUrl": "https://locations.tacobell.com/fl/orlando/2600-orlando-west-dr.html",
+    "menuUrl": "https://www.tacobell.com/food",
+    "allergenUrl": "https://www.tacobell.com/nutrition/allergen-info",
+    "description": "Mexican dining. Published menu information, not live availability.",
+    "fictional": false,
+    "confirmed": false,
+    "source": {
+      "scope": "chain",
+      "reviewedAt": "2026-10-21",
+      "note": "Official real Orlando branch address and telephone; food inventory is the national Taco Bell menu template, not live local stock or a branch-confirmed recipe. Breakfast, promotions and participation vary. Shared preparation can cause cross-contact."
+    },
+    "chainId": "taco-bell",
+    "chainName": "Taco Bell",
+    "imageUrl": "https://www.tacobell.com/images/22110_soft_taco_750x340.jpg",
+    "imageAlt": "Taco Bell official Soft Taco product image; national chain photo",
+    "imageCredit": "Taco Bell official menu",
+    "district": {
+      "state": "FL",
+      "number": "10",
+      "congress": 119,
+      "verifiedAt": "2026-10-21",
+      "sourceUrl": "https://geocoding.geo.census.gov/geocoder/geographies/onelineaddress?address=2600+Orlando+West+Dr%2C+Orlando%2C+FL+32808&benchmark=Public_AR_Current&vintage=ACS2025_Current&format=json"
+    },
+    "coordinates": {
+      "latitude": 28.578333295965,
+      "longitude": -81.440833284063
+    },
+    "coordinatesSource": "https://geocoding.geo.census.gov/geocoder/geographies/onelineaddress?address=2600+Orlando+West+Dr%2C+Orlando%2C+FL+32808&benchmark=Public_AR_Current&vintage=ACS2025_Current&format=json",
+    "emoji": ""
   }
 ];

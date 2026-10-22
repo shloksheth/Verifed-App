@@ -1,10 +1,10 @@
 # The CAC menu catalog
 
-The mobile app now focuses on one community problem: helping diners compare local food menus against dietary needs before ordering. The public app has 20 Orlando locations and 1,063 published food records. It does not require restaurants to purchase software or manage a workspace. Scanner and kitchen-request screens are absent from the route tree.
+The mobile app now focuses on one community problem: helping diners compare local food menus against dietary needs before ordering. The public app has 26 Orlando-area locations and 1,652 published food records. It does not require restaurants to purchase software or manage a workspace. Scanner and kitchen-request screens are absent from the route tree.
 
 ## Data files and build scripts
 
-`research/full-menu-data.json` holds the original three official menu catalogs. `expanded-menu-data.json` holds the 17 additions; `restaurant-locations.json` and `expanded-restaurants.json` hold their actual addresses, contacts, cuisine and source scope. `restaurant-images.json` adds credited official imagery. These are data, not hidden prompts or executable web content.
+`research/full-menu-data.json` holds the original three official menu catalogs. `expanded-menu-data.json` holds the 17 additions; `restaurant-locations.json` and `expanded-restaurants.json` hold their actual addresses, contacts, cuisine and source scope. `requested-menu-data.json` and `requested-restaurants.json` add Woodlands, Bombay Street Kitchen, Yellow Dog Eats Gotha and three Taco Bell branches. `restaurant-images.json` adds credited official imagery. These are data, not hidden prompts or executable web content.
 
 `research/import-expanded-menus.py` parses the saved official source snapshots. It uses source-specific parsers because a Wix menu, a Toast ordering menu and a designed PDF have different structure. It normalizes food names and categories, preserves descriptions, collapses exact promotional duplicates, and distinguishes real dietary badges from ordinary ingredient text. The importer never evaluates page JavaScript: Pig Floyd's data literal is read as JSON after converting its object keys. Manually transcribed designed-menu facts remain visibly grouped in the importer and retain their source URLs.
 
@@ -14,7 +14,7 @@ The mobile app now focuses on one community problem: helping diners compare loca
 
 ## How ingredient reasoning works
 
-`src/ingredient-hints.js` is a small, readable ingredient dictionary. It reads the published name, description and ingredient text. Named cheddar, milk, egg, salmon, shrimp, almonds, peanuts, tofu and sesame produce recognizable ingredient-category clues. Common recipes such as bread, aioli or pesto produce possible flags that still need confirmation. This does not manufacture a restaurant declaration or an absence claim.
+`src/ingredient-hints.js` is a small, readable ingredient dictionary. It reads the published name, description and ingredient text. Named paneer, ghee, curd, cheddar, milk, egg, salmon, shrimp, almonds, peanuts, tofu and sesame produce recognizable ingredient-category clues. Common recipes such as bread, aioli or pesto produce possible flags that still need confirmation. This does not manufacture a restaurant declaration or an absence claim.
 
 The cleaning steps handle plant substitutes, coconut/oat milk, rice flour, eggplant, buckwheat and optional additions so they do not inherit the wrong animal or wheat flag. Explicit vegan labels prevent an imitation chicken or cheese from inheriting an animal ingredient's flag. Positive reported allergens still win if a source is contradictory. The dictionary is deliberately incomplete; unfamiliar recipes stay unknown.
 
@@ -26,6 +26,8 @@ The return object has `allergens`, `possibleAllergens`, `restrictionConflicts` a
 
 ## Backend and evidence
 
-`research/seed-orlando.mjs` writes reviewable SQL in optional per-restaurant batches. Postgres assigns real UUIDs; stable catalog keys let repeat imports update existing records. Real locations remain unconnected and unconfirmed. No schema or access-policy expansion was needed. `research/verify-orlando.mjs` pages through the public REST API and compares all 1,063 source records, UUID relationships, allergen/provenance data, addresses and image metadata. It checks beyond the API's 1,000-row response limit.
+`research/seed-orlando.mjs` writes reviewable SQL in optional per-restaurant batches. Postgres assigns real UUIDs; stable catalog keys let repeat imports update existing records. Real locations remain unconnected and unconfirmed. No schema or access-policy expansion was needed. `research/verify-orlando.mjs` pages through the public REST API and compares all 1,652 source records, UUID relationships, allergen/provenance data, addresses and image metadata. It checks beyond the API's 1,000-row response limit.
 
-The mobile API already reads all catalog pages in stable ID order. Source snapshots, image checks and district responses support the import; none establishes current stock, cross-contact procedures or an actual meal's safety. Full published food coverage is disclosed for each restaurant, including omitted drinks, specials and modifier trees. The source table is in research/TWENTY_RESTAURANTS_SOURCES.md.
+The mobile API already reads all catalog pages in stable ID order. Source snapshots, image checks and district responses support the import; none establishes current stock, cross-contact procedures or an actual meal's safety. Full published food coverage is disclosed for each restaurant, including omitted drinks, specials and modifier trees. The source tables are research/TWENTY_RESTAURANTS_SOURCES.md and REQUESTED_MENU_SOURCES.md. Woodlands has 100 food entries, Bombay 84, Yellow Dog Eats 57, and each Taco Bell branch shares 116 national food/component records. This gives 1,652 location-linked entries; repeated chain templates are not distinct recipes.
+
+Coordinates come from saved Census address matches, except Bombay’s point from its official embedded business map. Census identifies Yellow Dog Eats Gotha as FL-11, 24 other locations as FL-10 for the 119th Congress, and no district match for Bombay; the app leaves its district unknown. Regional discovery does not establish the contestant’s personal district. Woodlands primary menu is its working public HTTP URL because its HTTPS certificate is invalid; no TLS validation was disabled. `--metadata` seeds coordinates without rewriting every existing dish.

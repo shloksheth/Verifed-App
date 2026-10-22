@@ -1,0 +1,118 @@
+Veggie Mexican Pizza | Taco Bell® (https://www.tacobell.com/food/specialties/veggie-mexican-pizza)
+citeturn148view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://www.tacobell.com/food/specialties/veggie-mexican-pizza","lineno":null}); Total lines: 135
+L0: cite0†Menu cite1†Delivery cite2†Rewards cite3†Gift Cards L1: 
+L2: cite4†Purpose L3: 
+L4: cite5†Find a Nearby Bell L5: 
+L6: cite6†Download Our App†tblinks.tacobell.com L7: 
+L8: cite7†Sign Up cite8†Log in L9: 
+L10: cite9†$0.00 L11: 
+L12: #####
+L13: 
+L14: Subtotal Sales Tax
+L15: 
+L16: $0.00 Calculated At Checkout
+L17: 
+L18: cite9†View Bag & Checkout L19: 
+L20: cite0†Menu cite1†Delivery cite2†Rewards cite3†Gift Cards L21: 
+L22: cite4†Purpose L23: 
+L24: |
+L25: 
+L26: cite9†$0.00 L27: 
+L28: #####
+L29: 
+L30: Subtotal Sales Tax
+L31: 
+L32: $0.00 Calculated At Checkout
+L33: 
+L34: cite9†View Bag & Checkout L35: ### Popular Upgrades
+L36: 
+L37: Onions +$0.50 | Adds 0 Cal
+L38: 
+L39: Jalapeño Peppers +$0.65 | Adds 5 Cal
+L40: 
+L41: Guacamole +$1.15 | Adds 35 Cal
+L42: 
+L43: Creamy Jalapeño Sauce +$0.70 | Adds 60 Cal
+L44: 
+L45: ### What's Included
+L46: 
+L47: Beans
+L48: 
+L49: Tomatoes
+L50: 
+L51: Three-Cheese Blend
+L52: 
+L53: Mexican Pizza Sauce
+L54: ### Add Ons
+L55: 
+L56: Onions +$0.50 | Adds 0 Cal
+L57: 
+L58: Lettuce +$0.60 | Adds 0 Cal
+L59: 
+L60: Cheese +$0.75 | Adds 110 Cal
+L61: 
+L62: Pico De Gallo +$0.80 | Adds 0 Cal
+L63: 
+L64: Jalapeño Peppers +$0.65 | Adds 5 Cal
+L65: 
+L66: Chicken +$1.50 | Adds 45 Cal
+L67: 
+L68: Steak +$1.70 | Adds 60 Cal
+L69: 
+L70: Seasoned Fries +$0.60 | Adds 120 Cal
+L71: 
+L72: Purple Cabbage +$0.60 | Adds 0 Cal
+L73: 
+L74: Black Beans +$0.45 | Adds 50 Cal
+L75: 
+L76: Seasoned Rice +$0.60 | Adds 50 Cal
+L77: 
+L78: Slow-Roasted Chicken +$1.70 | Adds 60 Cal
+L79: 
+L80: Fiesta Strips +$0.50 | Adds 80 Cal
+L81: ### Sauces
+L82: 
+L83: Reduced-Fat Sour Cream +$0.90 | Adds 20 Cal
+L84: 
+L85: Guacamole +$1.15 | Adds 35 Cal
+L86: 
+L87: Red Sauce +$0.45 | Adds 10 Cal
+L88: 
+L89: Creamy Jalapeño Sauce +$0.70 | Adds 60 Cal
+L90: 
+L91: Nacho Cheese Sauce +$1.00 | Adds 30 Cal
+L92: 
+L93: Chipotle Sauce +$0.65 | Adds 70 Cal
+L94: 
+L95: Avocado Ranch Sauce +$0.65 | Adds 70 Cal
+L96: 
+L97: Spicy Ranch +$0.70 | Adds 70 Cal
+L98: ### You Might Also Like
+L99: 
+L100: cite10†Image: Black Bean Crunchwrap Supreme® L101: 
+L102: cite11†Black Bean Crunchwrap Supreme®$5.99 | 520 Cal L103: 
+L104: cite12†Image: Cheesy Bean and Rice Burrito L105: 
+L106: cite13†Cheesy Bean and Rice Burrito$1.49 | 400 Cal L107: ## Veggie Mexican Pizza
+L108: 
+L109: Refried Beans layered between two crispy, flour tortilla shells with Mexican Pizza sauce, diced tomatoes, and a blend of mozzarella, pepperjack, and cheddar cheeses on top.
+L110: cite14†Image American Vegetarian Association certified Vegetarian food items, are lacto-ovo, allowing consumption of dairy and eggs but not animal byproducts. We may use the same frying oil to prepare menu items that could contain meat. Vegetarian and meat ingredients are handled in common, and cross contact may occur, which may not be acceptable to certain types of vegetarian diets. Neither Taco Bell®, our employees, nor our franchisees, nor the AVA assume any responsibility for such cross contact.
+L111: ## Redeem exclusive rewards only on the app.
+L112: 
+L113: scan to Download
+L114: taco bell app!
+L115: 
+L116: cite15†Download app L117: 
+L118: ###### About us
+L119: 
+L120: cite16†About Taco Bell cite4†Purpose cite17†Nutrition cite5†Locations cite18†Offers & Deals cite19†Newsroom cite20†Stories cite21†Responsible Disclosure L121: 
+L122: ###### Explore
+L123: 
+L124: cite22†Mobile App cite3†Gift Cards cite2†Rewards cite1†Delivery cite23†Taco Shop†www.tacobelltacoshop.com L125: ###### Contact Us
+L126: 
+L127: cite24†Help & FAQs†help.tacobell.com cite25†Careers†jobs.tacobell.com cite26†Taco Bell Foundation†www.tacobellfoundation.org cite27†Franchise Information L128: 
+L129: At participating U.S. Taco Bell® locations. Contact restaurant for prices, hours & participation, which vary. Tax extra. 2,000 calories a day used for general nutrition advice, but calorie needs vary. Additional nutrition information available upon request.
+L130: cite28†Image: Taco Bell ©2026 Taco Bell IP Holder, LLC. All Rights Reserved. TACO BELL, the Bell logo, and other marks are the property of Taco Bell IP Holder, LLC. All other trademarks are the property of their respective owners.
+L131: 
+L132: * * *
+L133: 
+L134: cite29†Privacy Center cite30†Terms Of Use cite31†Accessibility Statement cite32†Do Not Sell or Share My Personal Information†privacy.tacobell.com 

@@ -1,0 +1,718 @@
+Steak Double Dipping Burritos | Taco Bell® (https://www.tacobell.com/food/deals-and-combos/steak-double-dipping-burritos)
+citeturn103view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://www.tacobell.com/food/deals-and-combos/steak-double-dipping-burritos","lineno":null}); Total lines: 83
+L0: cite0†Menu cite1†Delivery cite2†Rewards cite3†Gift Cards L1: 
+L2: cite4†Purpose L3: 
+L4: cite5†Find a Nearby Bell L5: 
+L6: cite6†Download Our App†tblinks.tacobell.com L7: 
+L8: cite7†Sign Up cite8†Log in L9: 
+L10: cite9†$0.00 L11: 
+L12: #####
+L13: 
+L14: Subtotal Sales Tax
+L15: 
+L16: $0.00 Calculated At Checkout
+L17: 
+L18: cite9†View Bag & Checkout L19: 
+L20: cite0†Menu cite1†Delivery cite2†Rewards cite3†Gift Cards L21: 
+L22: cite4†Purpose L23: 
+L24: |
+L25: 
+L26: cite9†$0.00 L27: 
+L28: #####
+L29: 
+L30: Subtotal Sales Tax
+L31: 
+L32: $0.00 Calculated At Checkout
+L33: 
+L34: cite9†View Bag & Checkout L35: ### You Might Also Like
+L36: 
+L37: cite10†Image: Creamy Sriracha Chicken Nacho Fries L38: 
+L39: cite11†Creamy Sriracha Chicken Nacho Fries$5.49 | 500 Cal L40: 
+L41: cite12†Image: Classic Chicken Crunchadilla L42: 
+L43: cite13†Classic Chicken Crunchadilla$2.00 | 280 Cal L44: 
+L45: cite14†Image: 10 Piece Crispy Chicken Nuggets L46: 
+L47: cite15†10 Piece Crispy Chicken Nuggets$7.49 | 850 Cal L48: 
+L49: cite16†Image: Large Nacho Fries L50: 
+L51: cite17†Large Nacho Fries$3.89 | 500 Cal L52: 
+L53: cite18†Image: Cheesy Double Beef Burrito L54: 
+L55: cite19†Cheesy Double Beef Burrito$2.99 | 560 Cal --------------------------------------------------------------------------------
+Slow-Roasted Chicken Double Dipping Burritos | Taco Bell® (https://www.tacobell.com/food/deals-and-combos/slow-roasted-chicken-double-dipping-burritos)
+citeturn103view1 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://www.tacobell.com/food/deals-and-combos/slow-roasted-chicken-double-dipping-burritos","lineno":null}); Total lines: 83
+L0: cite0†Menu cite1†Delivery cite2†Rewards cite3†Gift Cards L1: 
+L2: cite4†Purpose L3: 
+L4: cite5†Find a Nearby Bell L5: 
+L6: cite6†Download Our App†tblinks.tacobell.com L7: 
+L8: cite7†Sign Up cite8†Log in L9: 
+L10: cite9†$0.00 L11: 
+L12: #####
+L13: 
+L14: Subtotal Sales Tax
+L15: 
+L16: $0.00 Calculated At Checkout
+L17: 
+L18: cite9†View Bag & Checkout L19: 
+L20: cite0†Menu cite1†Delivery cite2†Rewards cite3†Gift Cards L21: 
+L22: cite4†Purpose L23: 
+L24: |
+L25: 
+L26: cite9†$0.00 L27: 
+L28: #####
+L29: 
+L30: Subtotal Sales Tax
+L31: 
+L32: $0.00 Calculated At Checkout
+L33: 
+L34: cite9†View Bag & Checkout L35: ### You Might Also Like
+L36: 
+L37: cite10†Image: Creamy Sriracha Chicken Nacho Fries L38: 
+L39: cite11†Creamy Sriracha Chicken Nacho Fries$5.49 | 500 Cal L40: 
+L41: cite12†Image: Sriracha Chicken Crunchadilla L42: 
+L43: cite13†Sriracha Chicken Crunchadilla$2.00 | 280 Cal L44: 
+L45: cite14†Image: Large Nacho Fries L46: 
+L47: cite15†Large Nacho Fries$3.89 | 500 Cal L48: 
+L49: cite16†Image: 10 Piece Crispy Chicken Nuggets L50: 
+L51: cite17†10 Piece Crispy Chicken Nuggets$7.49 | 850 Cal L52: 
+L53: cite18†Image: Grilled Cheese Burrito L54: 
+L55: cite19†Grilled Cheese Burrito$5.89 | 690 Cal --------------------------------------------------------------------------------
+Chili Cheese Burrito | Taco Bell® (https://www.tacobell.com/food/burritos/chili-cheese-burrito)
+citeturn103view2 [wordlim: 200] Crawled: yesterday; Content type: text/html; Source: open({"ref_id":"https://www.tacobell.com/food/burritos/chili-cheese-burrito","lineno":null}); Total lines: 151
+L0: cite0†Menu cite1†Delivery cite2†Rewards cite3†Gift Cards L1: 
+L2: cite4†Purpose L3: 
+L4: cite5†Find a Nearby Bell L5: 
+L6: cite6†Download Our App†tblinks.tacobell.com L7: 
+L8: cite7†Sign Up cite8†Log in L9: 
+L10: cite9†$0.00 L11: 
+L12: #####
+L13: 
+L14: Subtotal Sales Tax
+L15: 
+L16: $0.00 Calculated At Checkout
+L17: 
+L18: cite9†View Bag & Checkout L19: 
+L20: cite0†Menu cite1†Delivery cite2†Rewards cite3†Gift Cards L21: 
+L22: cite4†Purpose L23: 
+L24: |
+L25: 
+L26: cite9†$0.00 L27: 
+L28: #####
+L29: 
+L30: Subtotal Sales Tax
+L31: 
+L32: $0.00 Calculated At Checkout
+L33: 
+L34: cite9†View Bag & Checkout L35: ### Make It Your Own
+L36: 
+L37: Make it Supreme +$0.90 | Adds 0 Cal
+L38: 
+L39: Make it
+L40: 
+L41: Supreme
+L42: 
+L43: Add sour cream and tomatoes
+L44: 
+L45: Make it Grilled Adds 0 Cal
+L46: 
+L47: Make it
+L48: 
+L49: Grilled
+L50: 
+L51: Get it grilled
+L52: 
+L53: ### Popular Upgrades
+L54: 
+L55: Reduced-Fat Sour Cream +$0.90 | Adds 20 Cal
+L56: 
+L57: Onions +$0.50 | Adds 0 Cal
+L58: 
+L59: Tomatoes +$0.80 | Adds 0 Cal
+L60: 
+L61: Jalapeño Peppers +$0.65 | Adds 5 Cal
+L62: 
+L63: ### What's Included
+L64: 
+L65: Cheese
+--------------------------------------------------------------------------------
+Cantina Chicken Burrito | Taco Bell® (https://www.tacobell.com/food/deals-and-combos/cantina-chicken-burrito)
+citeturn103view3 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://www.tacobell.com/food/deals-and-combos/cantina-chicken-burrito","lineno":null}); Total lines: 75
+L0: cite0†Menu cite1†Delivery cite2†Rewards cite3†Gift Cards L1: 
+L2: cite4†Purpose L3: 
+L4: cite5†Find a Nearby Bell L5: 
+L6: cite6†Download Our App†tblinks.tacobell.com L7: 
+L8: cite7†Sign Up cite8†Log in L9: 
+L10: cite9†$0.00 L11: 
+L12: #####
+L13: 
+L14: Subtotal Sales Tax
+L15: 
+L16: $0.00 Calculated At Checkout
+L17: 
+L18: cite9†View Bag & Checkout L19: 
+L20: cite0†Menu cite1†Delivery cite2†Rewards cite3†Gift Cards L21: 
+L22: cite4†Purpose L23: 
+L24: |
+L25: 
+L26: cite9†$0.00 L27: 
+L28: #####
+L29: 
+L30: Subtotal Sales Tax
+L31: 
+L32: $0.00 Calculated At Checkout
+L33: 
+L34: cite9†View Bag & Checkout L35: ### You Might Also Like
+L36: 
+L37: cite10†Image: Cantina Chicken Crispy Taco L38: 
+L39: cite11†Cantina Chicken Crispy Taco$3.29 | 320 Cal L40: 
+L41: cite12†Image: Cantina Chicken Soft Taco L42: 
+L43: cite13†Cantina Chicken Soft Taco$3.29 | 260 Cal L44: 
+L45: cite14†Image: Medium Strawberry Passionfruit Agua Refresca L46: 
+L47: cite15†Medium Strawberry Passionfruit Agua Refresca$3.89 | 170 Cal L48: ## Cantina Chicken Burrito
+L49: 
+L50: A warm flour tortilla filled with double the savory, slow-roasted chicken*, Avocado Ranch & Creamy Chipotle sauce, lettuce, shredded purple cabbage, freshly prepared pico de gallo, and shredded cheddar cheese. Served with an Avocado Verde Salsa packet. *As compared to the Cantina Chicken Soft Taco
+L51: 
+L52: ## Redeem exclusive rewards only on the app.
+L53: 
+L54: scan to Download
+L55: taco bell app!
+L56: 
+L57: cite16†Download app --------------------------------------------------------------------------------
+Cheesy Double Beef Burrito | Taco Bell® (https://www.tacobell.com/food/burritos/cheesy-double-beef-burrito)
+citeturn103view4 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://www.tacobell.com/food/burritos/cheesy-double-beef-burrito","lineno":null}); Total lines: 171
+L0: cite0†Menu cite1†Delivery cite2†Rewards cite3†Gift Cards L1: 
+L2: cite4†Purpose L3: 
+L4: cite5†Find a Nearby Bell L5: 
+L6: cite6†Download Our App†tblinks.tacobell.com L7: 
+L8: cite7†Sign Up cite8†Log in L9: 
+L10: cite9†$0.00 L11: 
+L12: #####
+L13: 
+L14: Subtotal Sales Tax
+L15: 
+L16: $0.00 Calculated At Checkout
+L17: 
+L18: cite9†View Bag & Checkout L19: 
+L20: cite0†Menu cite1†Delivery cite2†Rewards cite3†Gift Cards L21: 
+L22: cite4†Purpose L23: 
+L24: |
+L25: 
+L26: cite9†$0.00 L27: 
+L28: #####
+L29: 
+L30: Subtotal Sales Tax
+L31: 
+L32: $0.00 Calculated At Checkout
+L33: 
+L34: cite9†View Bag & Checkout L35: ### Customer Creations
+L36: 
+L37: Double Beef and Potato Burrito
+L38: 
+L39: Cheesy Double Beef Burrito with Potatoes and Creamy Jalapeño Sauce
+L40: 
+L41: cite10†Explore Cheesy Steak Burrito
+L42: 
+L43: Cheesy Double Beef Burrito swapped Seasoned Beef for Steak, add Onions, no Reduced-Fat Sour Cream and Fiesta Strips, grilled.
+L44: 
+L45: cite11†Explore L46: ### Make It Your Own
+L47: 
+L48: Make it Supreme +$0.90 | Adds 0 Cal
+L49: 
+L50: Make it
+L51: 
+L52: Supreme
+L53: 
+L54: Add sour cream and tomatoes
+L55: 
+L56: Make it Fresco Adds 0 Cal
+L57: 
+L58: Make it
+L59: 
+L60: Fresco
+L61: 
+L62: Replace dairy and mayo-sauces with pico de gallo
+L63: 
+L64: Make it Grilled Adds 0 Cal
+L65: 
+L66: Make it
+L67: 
+L68: Grilled
+L69: 
+L70: Get it grilled
+L71: 
+L72: ### Popular Upgrades
+L73: 
+L74: Guacamole +$1.15 | Adds 35 Cal
+L75: 
+L76: Creamy Jalapeño Sauce +$0.70 | Adds 60 Cal
+L77: 
+L78: Spicy Ranch +$0.70 | Adds 70 Cal
+--------------------------------------------------------------------------------
+Grilled Cheese Burrito | Taco Bell® (https://www.tacobell.com/food/burritos/grilled-cheese-burrito)
+citeturn103view5 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://www.tacobell.com/food/burritos/grilled-cheese-burrito","lineno":null}); Total lines: 145
+L0: cite0†Menu cite1†Delivery cite2†Rewards cite3†Gift Cards L1: 
+L2: cite4†Purpose L3: 
+L4: cite5†Find a Nearby Bell L5: 
+L6: cite6†Download Our App†tblinks.tacobell.com L7: 
+L8: cite7†Sign Up cite8†Log in L9: 
+L10: cite9†$0.00 L11: 
+L12: #####
+L13: 
+L14: Subtotal Sales Tax
+L15: 
+L16: $0.00 Calculated At Checkout
+L17: 
+L18: cite9†View Bag & Checkout L19: 
+L20: cite0†Menu cite1†Delivery cite2†Rewards cite3†Gift Cards L21: 
+L22: cite4†Purpose L23: 
+L24: |
+L25: 
+L26: cite9†$0.00 L27: 
+L28: #####
+L29: 
+L30: Subtotal Sales Tax
+L31: 
+L32: $0.00 Calculated At Checkout
+L33: 
+L34: cite9†View Bag & Checkout L35: ### Customer Creations
+L36: 
+L37: Spicy Grilled Cheese Chicken Burrito
+L38: 
+L39: Grilled Cheese Burrito Seasoned Beef swapped for Slow-Roasted Chicken, add Onions and Jalapeño Peppers
+L40: 
+L41: cite10†Explore Steak & Fries Grilled Cheese Burrito
+L42: 
+L43: Grilled Cheese Burrito Seasoned Beef swapped for Steak, add Seasoned Fries, Guacamole, Pico De Gallo.
+L44: 
+L45: cite11†Explore L46: 
+L47: ### Popular Upgrades
+L48: 
+L49: Guacamole +$1.15 | Adds 35 Cal
+L50: 
+L51: Tomatoes +$0.80 | Adds 0 Cal
+L52: 
+L53: Jalapeño Peppers +$0.65 | Adds 5 Cal
+--------------------------------------------------------------------------------
+Black Bean Grilled Cheese Burrito - Black Beans | Taco Bell® (https://www.tacobell.com/food/burritos/blackbean-grilled-cheese-burrito)
+citeturn103view6 [wordlim: 200] Crawled: 2 days ago; Content type: text/html; Source: open({"ref_id":"https://www.tacobell.com/food/burritos/blackbean-grilled-cheese-burrito","lineno":null}); Total lines: 139
+L0: cite0†Menu cite1†Delivery cite2†Rewards cite3†Gift Cards L1: 
+L2: cite4†Purpose L3: 
+L4: cite5†Find a Nearby Bell L5: 
+L6: cite6†Download Our App†tblinks.tacobell.com L7: 
+L8: cite7†Sign Up cite8†Log in L9: 
+L10: cite9†$0.00 L11: 
+L12: #####
+L13: 
+L14: Subtotal Sales Tax
+L15: 
+L16: $0.00 Calculated At Checkout
+L17: 
+L18: cite9†View Bag & Checkout L19: 
+L20: cite0†Menu cite1†Delivery cite2†Rewards cite3†Gift Cards L21: 
+L22: cite4†Purpose L23: 
+L24: |
+L25: 
+L26: cite9†$0.00 L27: 
+L28: #####
+L29: 
+L30: Subtotal Sales Tax
+L31: 
+L32: $0.00 Calculated At Checkout
+L33: 
+L34: cite9†View Bag & Checkout L35: ### Popular Upgrades
+L36: 
+L37: Guacamole +$1.15 | Adds 35 Cal
+L38: 
+L39: Tomatoes +$0.80 | Adds 0 Cal
+L40: 
+L41: Jalapeño Peppers +$0.65 | Adds 5 Cal
+L42: 
+L43: ### What's Included
+L44: 
+L45: Black Beans
+L46: 
+L47: Reduced-Fat Sour Cream
+L48: 
+L49: Three-Cheese Blend
+L50: 
+L51: Nacho Cheese Sauce
+L52: 
+L53: Chipotle Sauce
+L54: 
+L55: Seasoned Rice
+L56: 
+L57: Fiesta Strips
+L58: ### Add Ons
+L59: 
+L60: Onions +$0.50 | Adds 0 Cal
+L61: 
+L62: Tomatoes +$0.80 | Adds 0 Cal
+L63: 
+L64: Lettuce +$0.60 | Adds 0 Cal
+L65: 
+L66: Cheese +$0.75 | Adds 60 Cal
+L67: 
+L68: Pico De Gallo +$0.80 | Adds 0 Cal
+L69: 
+L70: Jalapeño Peppers +$0.65 | Adds 5 Cal
+L71: 
+L72: Beans +$0.65 | Adds 60 Cal
+L73: 
+L74: Seasoned Beef +$1.00 | Adds 70 Cal
+L75: 
+L76: Chicken +$1.50 | Adds 45 Cal
+L77: 
+L78: Steak +$1.70 | Adds 60 Cal
+L79: 
+L80: Seasoned Fries +$0.60 | Adds 120 Cal
+L81: 
+L82: Purple Cabbage +$0.60 | Adds 0 Cal
+L83: 
+L84: Slow-Roasted Chicken +$1.70 | Adds 60 Cal
+--------------------------------------------------------------------------------
+Bean Burrito | Taco Bell® (https://www.tacobell.com/food/burritos/bean-burrito)
+citeturn103view7 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://www.tacobell.com/food/burritos/bean-burrito","lineno":null}); Total lines: 172
+L0: cite0†Menu cite1†Delivery cite2†Rewards cite3†Gift Cards L1: 
+L2: cite4†Purpose L3: 
+L4: cite5†Find a Nearby Bell L5: 
+L6: cite6†Download Our App†tblinks.tacobell.com L7: 
+L8: cite7†Sign Up cite8†Log in L9: 
+L10: cite9†$0.00 L11: 
+L12: #####
+L13: 
+L14: Subtotal Sales Tax
+L15: 
+L16: $0.00 Calculated At Checkout
+L17: 
+L18: cite9†View Bag & Checkout L19: 
+L20: cite0†Menu cite1†Delivery cite2†Rewards cite3†Gift Cards L21: 
+L22: cite4†Purpose L23: 
+L24: |
+L25: 
+L26: cite9†$0.00 L27: 
+L28: #####
+L29: 
+L30: Subtotal Sales Tax
+L31: 
+L32: $0.00 Calculated At Checkout
+L33: 
+L34: cite9†View Bag & Checkout L35: ### Make It Your Own
+L36: 
+L37: Make it Supreme +$0.90 | Adds 0 Cal
+L38: 
+L39: Make it
+L40: 
+L41: Supreme
+L42: 
+L43: Add sour cream and tomatoes
+L44: 
+L45: Make it Fresco Adds 0 Cal
+L46: 
+L47: Make it
+L48: 
+L49: Fresco
+L50: 
+L51: Replace dairy and mayo-sauces with pico de gallo
+L52: 
+L53: Make it Grilled Adds 0 Cal
+L54: 
+L55: Make it
+L56: 
+L57: Grilled
+L58: 
+L59: Get it grilled
+L60: 
+L61: ### Popular Upgrades
+L62: 
+L63: Reduced-Fat Sour Cream +$0.90 | Adds 20 Cal
+L64: 
+L65: Guacamole +$1.15 | Adds 35 Cal
+L66: 
+L67: Nacho Cheese Sauce +$1.00 | Adds 30 Cal
+L68: 
+L69: Tomatoes +$0.80 | Adds 0 Cal
+L70: 
+L71: Seasoned Rice +$0.60 | Adds 50 Cal
+--------------------------------------------------------------------------------
+Beefy 5-Layer Burrito | Taco Bell® (https://www.tacobell.com/food/burritos/beefy-5-layer-burrito)
+citeturn103view8 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://www.tacobell.com/food/burritos/beefy-5-layer-burrito","lineno":null}); Total lines: 173
+L0: cite0†Menu cite1†Delivery cite2†Rewards cite3†Gift Cards L1: 
+L2: cite4†Purpose L3: 
+L4: cite5†Find a Nearby Bell L5: 
+L6: cite6†Download Our App†tblinks.tacobell.com L7: 
+L8: cite7†Sign Up cite8†Log in L9: 
+L10: cite9†$0.00 L11: 
+L12: #####
+L13: 
+L14: Subtotal Sales Tax
+L15: 
+L16: $0.00 Calculated At Checkout
+L17: 
+L18: cite9†View Bag & Checkout L19: 
+L20: cite0†Menu cite1†Delivery cite2†Rewards cite3†Gift Cards L21: 
+L22: cite4†Purpose L23: 
+L24: |
+L25: 
+L26: cite9†$0.00 L27: 
+L28: #####
+L29: 
+L30: Subtotal Sales Tax
+L31: 
+L32: $0.00 Calculated At Checkout
+L33: 
+L34: cite9†View Bag & Checkout L35: ### Customer Creations
+L36: 
+L37: Beefy Potato Burrito
+L38: 
+L39: Beefy 5-Layer Burrito with Potatoes, Pico De Gallo, Creamy Jalapeño Sauce, no Reduced-Fat Sour Cream and Beans
+L40: 
+L41: cite10†Explore Steak & Rice Chipotle Sauce Burrito
+L42: 
+L43: Beefy 5-Layer Burrito swapped Seasoned Beef for Steak, with Onions, Seasoned Rice, Chipotle Sauce, no Nacho Cheese Sauce, grilled
+L44: 
+L45: cite11†Explore L46: ### Make It Your Own
+L47: 
+L48: Make it Fresco Adds 0 Cal
+L49: 
+L50: Make it
+L51: 
+L52: Fresco
+L53: 
+L54: Replace dairy and mayo-sauces with pico de gallo
+L55: 
+L56: Make it Grilled Adds 0 Cal
+L57: 
+L58: Make it
+--------------------------------------------------------------------------------
+Burrito Supreme® | Taco Bell® (https://www.tacobell.com/food/burritos/burrito-supreme)
+citeturn103view9 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://www.tacobell.com/food/burritos/burrito-supreme","lineno":null}); Total lines: 158
+L0: cite0†Menu cite1†Delivery cite2†Rewards cite3†Gift Cards L1: 
+L2: cite4†Purpose L3: 
+L4: cite5†Find a Nearby Bell L5: 
+L6: cite6†Download Our App†tblinks.tacobell.com L7: 
+L8: cite7†Sign Up cite8†Log in L9: 
+L10: cite9†$0.00 L11: 
+L12: #####
+L13: 
+L14: Subtotal Sales Tax
+L15: 
+L16: $0.00 Calculated At Checkout
+L17: 
+L18: cite9†View Bag & Checkout L19: 
+L20: cite0†Menu cite1†Delivery cite2†Rewards cite3†Gift Cards L21: 
+L22: cite4†Purpose L23: 
+L24: |
+L25: 
+L26: cite9†$0.00 L27: 
+L28: #####
+L29: 
+L30: Subtotal Sales Tax
+L31: 
+L32: $0.00 Calculated At Checkout
+L33: 
+L34: cite9†View Bag & Checkout L35: ### Make It Your Own
+L36: 
+L37: Make it Fresco Adds 0 Cal
+L38: 
+L39: Make it
+L40: 
+L41: Fresco
+L42: 
+L43: Replace dairy and mayo-sauces with pico de gallo
+L44: 
+L45: Make it Grilled Adds 0 Cal
+L46: 
+L47: Make it
+L48: 
+L49: Grilled
+L50: 
+L51: Get it grilled
+L52: 
+L53: ### Popular Upgrades
+L54: 
+L55: Guacamole +$1.15 | Adds 35 Cal
+L56: 
+L57: Creamy Jalapeño Sauce +$0.70 | Adds 60 Cal
+L58: 
+L59: Nacho Cheese Sauce +$1.00 | Adds 30 Cal
+L60: 
+L61: Spicy Ranch +$0.70 | Adds 70 Cal
+L62: 
+L63: ### What's Included
+L64: 
+L65: Seasoned Beef
+L66: 
+L67: Onions
+L68: 
+L69: Tomatoes
+L70: 
+L71: Lettuce
+L72: 
+L73: Reduced-Fat Sour Cream
+L74: 
+L75: Cheese
+L76: 
+L77: Red Sauce
+L78: 
+L79: Beans
+--------------------------------------------------------------------------------
+Cheesy Bean and Rice Burrito | Taco Bell® (https://www.tacobell.com/food/luxe-value-menu/cheesy-bean-and-rice-burrito)
+citeturn103view10 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://www.tacobell.com/food/luxe-value-menu/cheesy-bean-and-rice-burrito","lineno":null}); Total lines: 174
+L0: cite0†Menu cite1†Delivery cite2†Rewards cite3†Gift Cards L1: 
+L2: cite4†Purpose L3: 
+L4: cite5†Find a Nearby Bell L5: 
+L6: cite6†Download Our App†tblinks.tacobell.com L7: 
+L8: cite7†Sign Up cite8†Log in L9: 
+L10: cite9†$0.00 L11: 
+L12: #####
+L13: 
+L14: Subtotal Sales Tax
+L15: 
+L16: $0.00 Calculated At Checkout
+L17: 
+L18: cite9†View Bag & Checkout L19: 
+L20: cite0†Menu cite1†Delivery cite2†Rewards cite3†Gift Cards L21: 
+L22: cite4†Purpose L23: 
+L24: |
+L25: 
+L26: cite9†$0.00 L27: 
+L28: #####
+L29: 
+L30: Subtotal Sales Tax
+L31: 
+L32: $0.00 Calculated At Checkout
+L33: 
+L34: cite9†View Bag & Checkout L35: ### Customer Creations
+L36: 
+L37: Beefy Cheesy Bean & Rice Burrito
+L38: 
+L39: Cheesy Bean And Rice Burrito with Seasoned Beef
+L40: 
+L41: cite10†Explore Just the Essentials Burrito
+L42: 
+L43: Cheesy Bean And Rice Burrito with Three-Cheese Blend, no Creamy Jalapeño Sauce and Nacho Cheese
+L44: 
+L45: cite11†Explore L46: ### Make It Your Own
+L47: 
+L48: Make it Supreme +$0.90 | Adds 0 Cal
+L49: 
+L50: Make it
+L51: 
+L52: Supreme
+L53: 
+L54: Add sour cream and tomatoes
+L55: 
+L56: Make it Fresco Adds 0 Cal
+L57: 
+L58: Make it
+L59: 
+L60: Fresco
+L61: 
+L62: Replace dairy and mayo-sauces with pico de gallo
+L63: 
+L64: Make it Grilled Adds 0 Cal
+L65: 
+L66: Make it
+L67: 
+L68: Grilled
+L69: 
+L70: Get it grilled
+L71: 
+L72: ### Popular Upgrades
+L73: 
+L74: Onions +$0.50 | Adds 0 Cal
+L75: 
+L76: Black Beans +$0.45 | Adds 50 Cal
+L77: 
+L78: Reduced-Fat Sour Cream +$0.90 | Adds 20 Cal
+L79: 
+L80: Guacamole +$1.15 | Adds 35 Cal
+L81: 
+L82: ### What's Included
+L83: 
+L84: Beans
+L85: 
+L86: Creamy Jalapeño Sauce
+L87: 
+L88: Nacho Cheese Sauce
+L89: 
+L90: Seasoned Rice
+--------------------------------------------------------------------------------
+Sriracha Chicken Crunchadilla | Taco Bell® (https://www.tacobell.com/food/specialties/sriracha-chicken-crunchadilla)
+citeturn103view11 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://www.tacobell.com/food/specialties/sriracha-chicken-crunchadilla","lineno":null}); Total lines: 155
+L0: cite0†Menu cite1†Delivery cite2†Rewards cite3†Gift Cards L1: 
+L2: cite4†Purpose L3: 
+L4: cite5†Find a Nearby Bell L5: 
+L6: cite6†Download Our App†tblinks.tacobell.com L7: 
+L8: cite7†Sign Up cite8†Log in L9: 
+L10: cite9†$0.00 L11: 
+L12: #####
+L13: 
+L14: Subtotal Sales Tax
+L15: 
+L16: $0.00 Calculated At Checkout
+L17: 
+L18: cite9†View Bag & Checkout L19: 
+L20: cite0†Menu cite1†Delivery cite2†Rewards cite3†Gift Cards L21: 
+L22: cite4†Purpose L23: 
+L24: |
+L25: 
+L26: cite9†$0.00 L27: 
+L28: #####
+L29: 
+L30: Subtotal Sales Tax
+L31: 
+L32: $0.00 Calculated At Checkout
+L33: 
+L34: cite9†View Bag & Checkout L35: ### Make It Your Own
+L36: 
+L37: Make it Fresco Adds 0 Cal
+L38: 
+L39: Make it
+L40: 
+L41: Fresco
+L42: 
+L43: Replace dairy and mayo-sauces with pico de gallo
+L44: 
+L45: ### Popular Upgrades
+L46: 
+L47: Guacamole +$1.15 | Adds 35 Cal
+L48: 
+L49: Jalapeño Peppers +$0.65 | Adds 5 Cal
+L50: 
+L51: ### What's Included
+L52: 
+L53: Chicken
+L54: 
+L55: Reduced-Fat Sour Cream
+L56: 
+L57: Three-Cheese Blend
+L58: 
+L59: Creamy Sriracha Sauce
+L60: ### Add Ons
+L61: 
+L62: Onions +$0.50 | Adds 0 Cal
+L63: 
+L64: Tomatoes +$0.80 | Adds 0 Cal
+L65: 
+L66: Lettuce +$0.60 | Adds 0 Cal
+L67: 
+L68: Cheese +$0.75 | Adds 60 Cal
+L69: 
+L70: Pico De Gallo +$0.80 | Adds 0 Cal
+L71: 
+L72: Jalapeño Peppers +$0.65 | Adds 5 Cal
+L73: 
+L74: Beans +$0.65 | Adds 60 Cal
+L75: 
+L76: Seasoned Beef +$1.00 | Adds 70 Cal
+L77: 
+L78: Steak +$1.70 | Adds 60 Cal
+L79: 
+L80: Seasoned Fries +$0.60 | Adds 120 Cal
+L81: 
+L82: Purple Cabbage +$0.60 | Adds 0 Cal
+L83: 
+L84: Black Beans +$0.45 | Adds 50 Cal
+L85: 
+L86: Seasoned Rice +$0.60 | Adds 50 Cal
+L87: 
+L88: Slow-Roasted Chicken +$1.70 | Adds 60 Cal
+

@@ -29,13 +29,9 @@ import {
   ProfileEditor,
   Settings,
 } from "./components/Account";
-import {
-  DishDetail,
-  Explore,
-  Favorites,
-  Home,
-  Restaurant,
-} from "./components/Dining";
+import { DishDetail, Favorites, Home, Restaurant } from "./components/Dining";
+import Explore from "./components/Explore";
+import Welcome, { HomeInfo } from "./components/Welcome";
 import { History, MealComposer, MealDetail } from "./components/Journal";
 import {
   Button,
@@ -90,6 +86,8 @@ function AppContent() {
   const [stack, setStack] = useState(["home"]);
   const [sheet, setSheet] = useState(null);
   const [initError, setInitError] = useState("");
+  const [welcomeDone, setWelcomeDone] = useState(false);
+  const [searchArea, setSearchArea] = useState(null);
   const scroll = useRef(null);
   const path = stack[stack.length - 1];
   const route = parseRoute(path);
@@ -154,13 +152,32 @@ function AppContent() {
   }, [path]);
 
   const shared = { state, navigate, openSheet: setSheet };
+  const showWelcome =
+    state.ready && !state.user && !welcomeDone && !state.passwordRecovery;
   let screen;
-  if (route.page === "auth" || state.passwordRecovery)
+  if (showWelcome)
+    screen = (
+      <Welcome
+        onContinue={() => setWelcomeDone(true)}
+        onSignIn={() => {
+          setWelcomeDone(true);
+          navigate("auth");
+        }}
+        onCreateAccount={() => {
+          setWelcomeDone(true);
+          navigate("auth?mode=signup");
+        }}
+      />
+    );
+  else if (route.page === "auth" || state.passwordRecovery)
     screen = (
       <Auth
         {...shared}
         recovery={!!state.passwordRecovery}
-        key={state.passwordRecovery ? "recovery" : "auth"}
+        initialMode={
+          route.params.get("mode") === "signup" ? "signup" : "signin"
+        }
+        key={state.passwordRecovery ? "recovery" : path}
       />
     );
   else
@@ -169,7 +186,13 @@ function AppContent() {
         screen = <Home {...shared} />;
         break;
       case "explore":
-        screen = <Explore {...shared} />;
+        screen = (
+          <Explore
+            {...shared}
+            openLocation={route.params.get("location") === "1"}
+            onLocationChange={setSearchArea}
+          />
+        );
         break;
       case "restaurant":
         screen = <Restaurant {...shared} id={route.id} />;
@@ -240,7 +263,27 @@ function AppContent() {
           </Text>
         </Pressable>
         <View style={s.headerRight}>
-          <Text style={s.mode}>ORLANDO, FL</Text>
+          {!showWelcome && (
+            <Pressable
+              accessibilityRole="button"
+              accessibilityLabel="Change location"
+              onPress={() => navigate("explore?location=1")}
+            >
+              <Text style={[s.mode, { maxWidth: 80 }]} numberOfLines={1}>
+                {searchArea?.label || "ORLANDO"}
+              </Text>
+            </Pressable>
+          )}
+          {route.page === "home" && !showWelcome && (
+            <Pressable
+              accessibilityRole="button"
+              accessibilityLabel="About Verifed"
+              onPress={() => setSheet({ type: "info" })}
+              style={s.iconButton}
+            >
+              <Icon name="information-circle-outline" />
+            </Pressable>
+          )}
           <Pressable
             accessibilityRole="button"
             accessibilityLabel="Open saved dishes"
@@ -292,41 +335,44 @@ function AppContent() {
           </FormScrollContext.Provider>
         </KeyboardAvoidingView>
       )}
-      <View style={s.nav}>
-        {navigation.map((item) => {
-          const selected = activeTab(route.page) === item.route;
-          return (
-            <Pressable
-              key={item.route}
-              accessibilityRole="tab"
-              accessibilityState={{ selected }}
-              aria-selected={selected}
-              accessibilityLabel={item.label}
-              onPress={() => navigate(item.route)}
-              style={s.navItem}
-            >
-              {item.route === "home" ? (
-                <View style={s.homeNav}>
+      {!showWelcome && (
+        <View style={s.nav}>
+          {navigation.map((item) => {
+            const selected = activeTab(route.page) === item.route;
+            return (
+              <Pressable
+                key={item.route}
+                accessibilityRole="tab"
+                accessibilityState={{ selected }}
+                aria-selected={selected}
+                accessibilityLabel={item.label}
+                onPress={() => navigate(item.route)}
+                style={s.navItem}
+              >
+                {item.route === "home" ? (
+                  <View style={s.homeNav}>
+                    <Icon
+                      name={selected ? "home" : "home-outline"}
+                      color={colors.paper}
+                      size={25}
+                    />
+                  </View>
+                ) : (
                   <Icon
-                    name={selected ? "home" : "home-outline"}
-                    color={colors.paper}
-                    size={25}
+                    name={selected ? item.active : item.icon}
+                    color={selected ? colors.orangeDark : colors.muted}
+                    size={23}
                   />
-                </View>
-              ) : (
-                <Icon
-                  name={selected ? item.active : item.icon}
-                  color={selected ? colors.orangeDark : colors.muted}
-                  size={23}
-                />
-              )}
-              <Text style={[s.navText, selected && s.navTextActive]}>
-                {item.label}
-              </Text>
-            </Pressable>
-          );
-        })}
-      </View>
+                )}
+                <Text style={[s.navText, selected && s.navTextActive]}>
+                  {item.label}
+                </Text>
+              </Pressable>
+            );
+          })}
+        </View>
+      )}
+      {sheet?.type === "info" && <HomeInfo onClose={() => setSheet(null)} />}
       {sheet?.type === "meal" && (
         <MealComposer {...shared} {...sheet} onClose={() => setSheet(null)} />
       )}

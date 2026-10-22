@@ -24,6 +24,8 @@ for (const source of localRestaurants) {
   assert.equal(live.confirmed, false);
   assert.equal(live.details.address, source.address);
   assert.deepEqual(live.details.district, source.district);
+  assert.deepEqual(live.details.coordinates, source.coordinates);
+  assert.equal(live.details.chainId, source.chainId);
   assert.equal(live.details.imageUrl, source.imageUrl);
   for (const entry of localDishes.filter((dish) => dish.restaurantId === source.id)) {
     const row = menu.find((item) => item.body.catalogKey === entry.catalogKey);

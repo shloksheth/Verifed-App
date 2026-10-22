@@ -1,0 +1,53 @@
+Breakfast Salsa | Taco Bell® (https://www.tacobell.com/food/sides/breakfast-salsa)
+citeturn173view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://www.tacobell.com/food/sides/breakfast-salsa","lineno":null}); Total lines: 70
+L0: cite0†Menu cite1†Delivery cite2†Rewards cite3†Gift Cards L1: 
+L2: cite4†Purpose L3: 
+L4: cite5†Find a Nearby Bell L5: 
+L6: cite6†Download Our App†tblinks.tacobell.com L7: 
+L8: cite7†Sign Up cite8†Log in L9: 
+L10: cite9†$0.00 L11: 
+L12: #####
+L13: 
+L14: Subtotal Sales Tax
+L15: 
+L16: $0.00 Calculated At Checkout
+L17: 
+L18: cite9†View Bag & Checkout L19: 
+L20: cite0†Menu cite1†Delivery cite2†Rewards cite3†Gift Cards L21: 
+L22: cite4†Purpose L23: 
+L24: |
+L25: 
+L26: cite9†$0.00 L27: 
+L28: #####
+L29: 
+L30: Subtotal Sales Tax
+L31: 
+L32: $0.00 Calculated At Checkout
+L33: 
+L34: cite9†View Bag & Checkout L35: ### You Might Also Like
+L36: 
+L37: cite10†Image: Cheesy Toasted Breakfast Burrito Potato L38: 
+L39: cite11†Cheesy Toasted Breakfast Burrito Potato$1.99 | 340 Cal L40: 
+L41: cite12†Image: Hash Brown L42: 
+L43: cite13†Hash Brown$1.99 | 170 Cal L44: ## Breakfast Salsa
+L45: cite14†Image American Vegetarian Association certified Vegetarian food items, are lacto-ovo, allowing consumption of dairy and eggs but not animal byproducts. We may use the same frying oil to prepare menu items that could contain meat. Vegetarian and meat ingredients are handled in common, and cross contact may occur, which may not be acceptable to certain types of vegetarian diets. Neither Taco Bell®, our employees, nor our franchisees, nor the AVA assume any responsibility for such cross contact.
+L46: ## Redeem exclusive rewards only on the app.
+L47: 
+L48: scan to Download
+L49: taco bell app!
+L50: 
+L51: cite15†Download app L52: 
+L53: ###### About us
+L54: 
+L55: cite16†About Taco Bell cite4†Purpose cite17†Nutrition cite5†Locations cite18†Offers & Deals cite19†Newsroom cite20†Stories cite21†Responsible Disclosure L56: 
+L57: ###### Explore
+L58: 
+L59: cite22†Mobile App cite3†Gift Cards cite2†Rewards cite1†Delivery cite23†Taco Shop†www.tacobelltacoshop.com L60: ###### Contact Us
+L61: 
+L62: cite24†Help & FAQs†help.tacobell.com cite25†Careers†jobs.tacobell.com cite26†Taco Bell Foundation†www.tacobellfoundation.org cite27†Franchise Information L63: 
+L64: At participating U.S. Taco Bell® locations. Contact restaurant for prices, hours & participation, which vary. Tax extra. 2,000 calories a day used for general nutrition advice, but calorie needs vary. Additional nutrition information available upon request.
+L65: cite28†Image: Taco Bell ©2026 Taco Bell IP Holder, LLC. All Rights Reserved. TACO BELL, the Bell logo, and other marks are the property of Taco Bell IP Holder, LLC. All other trademarks are the property of their respective owners.
+L66: 
+L67: * * *
+L68: 
+L69: cite29†Privacy Center cite30†Terms Of Use cite31†Accessibility Statement cite32†Do Not Sell or Share My Personal Information†privacy.tacobell.com 

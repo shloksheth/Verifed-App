@@ -1,0 +1,672 @@
+Combos & Taco Bell Deals: Order Online for Pick Up or Delivery | Taco Bell® (https://www.tacobell.com/food/boxes-and-combos)
+citeturn101view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://www.tacobell.com/food/boxes-and-combos","lineno":140}); Total lines: 211
+L0: cite0†Menu cite1†Delivery cite2†Rewards cite3†Gift Cards L1: 
+L2: cite4†Purpose L3: 
+L4: cite5†Find a Nearby Bell L5: 
+L6: cite6†Download Our App†tblinks.tacobell.com L7: 
+L8: cite7†Sign Up cite8†Log in L9: 
+L10: cite9†$0.00 L11: 
+L12: #####
+L13: 
+L14: Subtotal Sales Tax
+L15: 
+L16: $0.00 Calculated At Checkout
+L17: 
+L18: cite9†View Bag & Checkout L19: 
+L20: cite0†Menu cite1†Delivery cite2†Rewards cite3†Gift Cards L21: 
+L22: cite4†Purpose L23: 
+L24: |
+L25: 
+L26: cite9†$0.00 L27: #####
+L28: 
+L29: Subtotal Sales Tax
+L30: 
+L31: $0.00 Calculated At Checkout
+L32: 
+L33: cite9†View Bag & Checkout L34: 
+L35: cite10†Best Sellers L36: 
+L37: cite11†Featured L38: 
+L39: cite12†Online Exclusives L40: 
+L41: cite13†Luxe Value Menu L42: 
+L43: cite14†Cantina Chicken Menu L44: 
+L45: cite15†Boxes & Combos L46: 
+L47: cite16†Tacos L48: 
+L49: cite17†Burritos L50: 
+L51: cite18†Specialties L52: 
+L53: cite19†Snacks & Sweets L54: 
+L55: cite20†Quesadillas L56: 
+L57: cite21†Drinks L58: 
+L59: cite22†Nachos L60: 
+L61: cite23†Groups L62: 
+L63: cite24†Veggie Cravings L64: 
+L65: cite25†Bowls L66: 
+L67: cite26†Breakfast L68: ## Products
+L69: 
+L70: cite27†Paris Hilton's Usual L71: 
+L72: $4.00 | 480-770 Cal
+L73: 
+L74: cite27†Customize L75: 
+L76: cite28†Discovery Luxe Box™ L77: 
+L78: $9.00 | 1140-1420 Cal
+L79: 
+L80: cite28†Customize L81: 
+L82: cite29†Crispy Chicken Nuggets Deluxe Combo L83: 
+L84: $10.99 | 1160-1580 Cal
+L85: 
+L86: cite29†Customize L87: 
+L88: cite30†10 Piece Crispy Chicken Nuggets Combo L89: 
+L90: $9.99 | 990-1410 Cal
+L91: 
+L92: cite30†Customize L93: 
+L94: cite31†Build Your Own Luxe Cravings Box L95: 
+L96: $7.69 | 670-2050 Cal
+L97: 
+L98: cite31†Build L99: 
+L100: cite32†Cantina Chicken Crispy Taco Combo L101: 
+L102: $9.89 | 860-1280 Cal
+L103: 
+L104: cite32†Customize L105: 
+L106: cite33†Cantina Chicken Burrito Combo L107: $11.69 | 960-1380 Cal
+L108: 
+L109: cite33†Customize L110: 
+L111: cite34†Cantina Chicken Rolled Quesadilla Combo L112: 
+L113: $10.89 | 820-1240 Cal
+L114: 
+L115: cite34†Customize L116: 
+L117: cite35†Mexican Pizza Combo L118: 
+L119: $11.89 | 900-1320 Cal
+L120: 
+L121: cite35†Customize L122: 
+L123: cite36†Chicken Quesadilla Combo L124: 
+L125: $9.59 | 650-1070 Cal
+L126: 
+L127: cite36†Customize L128: 
+L129: cite37†2 Chicken Chalupas Supreme Combo L130: 
+L131: $11.99 | 830-1250 Cal
+L132: 
+L133: cite37†Customize L134: 
+L135: cite38†Crunchwrap Supreme® Combo L136: 
+L137: $9.49 | 700-1120 Cal
+L138: 
+L139: cite38†Customize L140: 
+L141: cite39†3 Crunchy Tacos Combo L142: 
+L143: $8.99 | 500-920 Cal
+L144: 
+L145: cite39†Customize L146: 
+L147: cite40†3 Crunchy Tacos Supreme® Combo L148: $10.49 | 560-980 Cal
+L149: 
+L150: cite40†Customize L151: 
+L152: cite41†3 Doritos® Locos Tacos Combo L153: 
+L154: $10.89 | 500-920 Cal
+L155: 
+L156: cite41†Customize L157: 
+L158: cite42†3 Doritos® Locos Tacos Supreme Combo L159: 
+L160: $11.99 | 560-980 Cal
+L161: 
+L162: cite42†Customize L163: 
+L164: cite43†Supreme Luxe Box™ L165: 
+L166: $7.00 | 1150-1430 Cal
+L167: 
+L168: cite43†Customize L169: 
+L170: cite44†Classic Luxe Box™ L171: 
+L172: $5.00 | 820-1100 Cal
+L173: 
+L174: cite44†Customize L175: ## Taco Bell® Boxes & Combos
+L176: ### Order your favorite Taco Bell Combos and Boxes online or visit us at the Taco Bell location nearest you
+L177: 
+L178: What could be better than a Chicken Quesadilla? How about a Chicken Quesadilla served with a Crunchy Taco and a fountain drink? At Taco Bell you can find a delicious array of combos to satisfy your Mexican inspired food craving at any time throughout the day.
+L179: From a morning boost to a late-night snack, Taco Bell’s combos and boxes will satisfy your appetite. Choose from Taco Bell combo meal favorites like the Crunchwrap Supreme Combo, or the 2 Chicken Chalupas Supreme Combo. Don’t see a Taco Bell combo that suits your craving? Our boxes and combos are customizable so you can mix and match many of your favorite cite0†Taco Bell foods to make the perfect meal for you.
+L180: Make sure to visit our locations cite5†locator to see the prices for all your favorite Taco Bell Combos at the Taco Bell location closest to you. Order fast food near you online and get a Combo or Taco Bell Box today!
+L181: cite45†Image: Vegetarian Info Icon American Vegetarian Association certified Vegetarian food items, are lacto-ovo, allowing consumption of dairy and eggs but not animal byproducts. We may use the same frying oil to prepare menu items that could contain meat. Vegetarian and meat ingredients are handled in common, and cross contact may occur, which may not be acceptable to certain types of vegetarian diets.
+L182: Neither Taco Bell®, our employees, nor our franchisees nor the AVA assume any responsibility for such cross contact.
+L183: Warning: cite46†Image: Sodium Warning Icon indicates that the sodium (salt) content of this item is higher than the total daily recommended limit (2,300 mg). High sodium intake can increase blood pressure and risk of heart disease and stroke.
+L184: 
+L185: cite47†Image: Sodium Warning : Sodium content higher than daily recommended limit (2,300 mg). High sodium intake can increase blood pressure and risk of heart disease and stroke.
+--------------------------------------------------------------------------------
+Group Meals - Cravings Packs, Party Packs & More | Taco Bell® (https://www.tacobell.com/food/party-packs)
+citeturn101view1 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://www.tacobell.com/food/party-packs","lineno":180}); Total lines: 291
+L68: ## Products
+L69: 
+L70: cite27†Doritos® Locos Taco Party Pack L71: 
+L72: $27.99 | 170 Cal Per Item
+L73: 
+L74: 12
+L75: 
+L76: Nacho Cheese Doritos® Locos Tacos
+L77: 
+L78: cite27†Customize L79: 
+L80: cite28†Supreme Doritos® Locos Taco Party Pack L81: 
+L82: $33.99 | 190 Cal Per Item
+L83: 
+L84: 12
+L85: 
+L86: Nacho Cheese Doritos® Locos Tacos Supreme®
+L87: 
+L88: cite28†Customize L89: 
+L90: cite29†Three Drink Theory Kit L91: 
+L92: $8.99 | 680 Cal
+L93: 
+L94: cite29†Customize L95: 
+L96: cite30†Meal for 2 L97: 
+L98: $12.99 | 180-530 Cal Per Item
+L99: 
+L100: 2
+L101: 
+L102: Crunchwrap Supreme®
+L103: 
+L104: 2
+L105: 
+L106: Bean Burrito
+L107: 
+L108: 2
+L109: 
+L110: Soft Taco
+L111: 
+L112: 2
+L113: 
+L114: Chips and Nacho Cheese Sauce
+L115: 
+L116: cite30†Customize L117: 
+L118: cite31†Meal for 4 L119: $21.39 | 180-530 Cal Per Item
+L120: 
+L121: 2
+L122: 
+L123: Crunchwrap Supreme®
+L124: 
+L125: 2
+L126: 
+L127: Chicken Quesadilla
+L128: 
+L129: 4
+L130: 
+L131: Soft Taco
+L132: 
+L133: 2
+L134: 
+L135: Chips and Nacho Cheese Sauce
+L136: 
+L137: cite31†Customize L138: 
+L139: cite32†Taco & Burrito Cravings Pack L140: 
+L141: $15.99 | 170-490 Cal Per Item
+L142: 
+L143: 4
+L144: 
+L145: Crunchy Taco
+L146: 
+L147: 4
+L148: 
+L149: Beefy 5-Layer Burrito
+L150: 
+L151: cite32†Customize L152: 
+L153: cite33†Taco Party Pack L154: 
+L155: $20.99 | 170 Cal Per Item
+L156: 
+L157: 6
+L158: 
+L159: Crunchy Taco
+L160: 
+L161: 6
+L162: 
+L163: Crunchy Taco
+L164: 
+L165: cite33†Customize L166: 
+L167: cite34†Supreme Taco Party Pack L168: 
+L169: $26.79 | 190 Cal Per Item
+L170: 
+L171: 6
+L172: 
+L173: Crunchy Taco Supreme®
+L174: 
+L175: 6
+L176: 
+L177: Crunchy Taco Supreme®
+L178: 
+L179: cite34†Customize L180: cite35†Soft Taco Party Pack L181: 
+L182: $20.99 | 180 Cal Per Item
+L183: 
+L184: 6
+L185: 
+L186: Soft Taco
+L187: 
+L188: 6
+L189: 
+L190: Soft Taco
+L191: 
+L192: cite35†Customize L193: 
+L194: cite36†Supreme Soft Taco Party Pack L195: 
+L196: $26.79 | 200 Cal Per Item
+L197: 
+L198: 6
+L199: 
+L200: Soft Taco Supreme®
+L201: 
+L202: 6
+L203: 
+L204: Soft Taco Supreme®
+L205: 
+L206: cite36†Customize L207: 
+L208: cite37†Variety Taco Party Pack L209: 
+L210: $23.79 | 170 Cal Per Item
+L211: 
+L212: 6
+L213: 
+L214: Crunchy Taco
+L215: 
+L216: 6
+L217: 
+L218: Nacho Cheese Doritos® Locos Tacos
+L219: 
+L220: cite37†Customize L221: 
+L222: cite38†Supreme Variety Taco Party Pack L223: 
+L224: $28.79 | 190 Cal Per Item
+L225: 
+L226: 6
+L227: 
+L228: Crunchy Taco Supreme®
+L229: 
+L230: 6
+L231: 
+L232: Nacho Cheese Doritos® Locos Tacos Supreme®
+L233: 
+L234: cite38†Customize L235: cite39†Drinks Party Pack L236: 
+L237: $4.39 | 0-1120 Cal Per Item
+L238: 
+L239: 1
+L240: 
+L241: Fountain Drink - Medium
+L242: 
+L243: 1
+L244: 
+L245: Fountain Drink - Medium
+L246: 
+L247: 1
+L248: 
+L249: Fountain Drink - Medium
+L250: 
+L251: 1
+L252: 
+L253: Fountain Drink - Medium
+L254: 
+L255: cite39†Customize L256: ## Taco Bell® group meals
+L257: 
+L258: Taco Bell Group Meals are designed to make ordering for group occasions simple. From our cite33†Taco Party Packs (aka Taco 12-Pack) to our cite32†Cravings Packs featuring 4 Crunchy Tacos and 4 Beefy 5-Layer Burritos, you can choose from a variety of fast food options to feed your crew. Pairs perfectly with all of your Taco Bell favorites.
+L259: 
+L260: Order Taco Bell group meals online or visit the Taco Bell location nearest you.
+L261: cite40†Image: Vegetarian Info Icon American Vegetarian Association certified Vegetarian food items, are lacto-ovo, allowing consumption of dairy and eggs but not animal byproducts. We may use the same frying oil to prepare menu items that could contain meat. Vegetarian and meat ingredients are handled in common, and cross contact may occur, which may not be acceptable to certain types of vegetarian diets.
+L262: Neither Taco Bell®, our employees, nor our franchisees nor the AVA assume any responsibility for such cross contact.
+L263: Warning: cite41†Image: Sodium Warning Icon indicates that the sodium (salt) content of this item is higher than the total daily recommended limit (2,300 mg). High sodium intake can increase blood pressure and risk of heart disease and stroke.
+L264: 
+L265: cite42†Image: Sodium Warning : Sodium content higher than daily recommended limit (2,300 mg). High sodium intake can increase blood pressure and risk of heart disease and stroke.
+L266: We prepare and serve products containing egg, milk, soy, wheat, or other allergens. Our products are prepared on shared equipment and in the same kitchen area and we cannot guarantee that cross contact with allergens will not occur. Ingredient and allergen information for menu items is available at cite43†https://www.tacobell.com/nutrition/allergen-info .
+L267: ## Redeem exclusive rewards only on the app.
+L268: 
+L269: scan to Download
+L270: taco bell app!
+L271: 
+L272: cite44†Download app L273: 
+L274: ###### About us
+L275: 
+L276: cite45†About Taco Bell cite4†Purpose cite46†Nutrition cite5†Locations cite47†Offers & Deals cite48†Newsroom cite49†Stories cite50†Responsible Disclosure L277: 
+L278: ###### Explore
+L279: 
+L280: cite51†Mobile App cite3†Gift Cards cite2†Rewards cite1†Delivery cite52†Taco Shop†www.tacobelltacoshop.com --------------------------------------------------------------------------------
+Breakfast Near Me - Order Online | Taco Bell® (https://www.tacobell.com/food/breakfast)
+citeturn101view2 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://www.tacobell.com/food/breakfast","lineno":140}); Total lines: 229
+L0: cite0†Menu cite1†Delivery cite2†Rewards cite3†Gift Cards L1: 
+L2: cite4†Purpose L3: 
+L4: cite5†Find a Nearby Bell L5: 
+L27: #####
+L28: 
+L29: Subtotal Sales Tax
+L30: 
+L31: $0.00 Calculated At Checkout
+L32: 
+L33: cite9†View Bag & Checkout L34: 
+L35: cite10†Best Sellers L36: 
+L37: cite11†Featured L38: 
+L39: cite12†Online Exclusives L40: 
+L41: cite13†Luxe Value Menu L42: 
+L43: cite14†Cantina Chicken Menu L44: 
+L45: cite15†Boxes & Combos L46: 
+L47: cite16†Tacos L48: 
+L49: cite17†Burritos L50: 
+L51: cite18†Specialties L52: 
+L53: cite19†Snacks & Sweets L54: 
+L55: cite20†Quesadillas L56: 
+L57: cite21†Drinks L58: 
+L59: cite22†Nachos L60: 
+L61: cite23†Groups L62: 
+L63: cite24†Veggie Cravings L64: 
+L65: cite25†Bowls L66: 
+L67: cite26†Breakfast L68: ## Products
+L69: 
+L70: cite27†Cheesy Toasted Breakfast Burrito Bacon L71: 
+L72: $2.19 | 350 Cal
+L73: 
+L74: [Button: Add to Order]
+L75: 
+L76: [Button: Customize]
+L77: 
+L78: cite28†Cheesy Toasted Breakfast Burrito Potato L79: 
+L80: $1.99 | 340 Cal
+L81: 
+L82: cite29†Image: Vegetarian L83: 
+L84: [Button: Add to Order]
+L85: 
+L86: [Button: Customize]
+L87: 
+L88: cite30†Grande Toasted Breakfast Burrito Steak L89: 
+L90: $4.99 | 560 Cal
+L91: 
+L92: [Button: Add to Order]
+L93: 
+L94: [Button: Customize]
+L95: 
+L96: cite31†Grande Toasted Breakfast Burrito Bacon L97: 
+L98: $4.89 | 570 Cal
+L99: 
+L100: [Button: Add to Order]
+L101: 
+L102: [Button: Customize]
+L103: 
+L104: cite32†Breakfast Quesadilla Bacon L105: $4.49 | 500 Cal
+L106: 
+L107: [Button: Add to Order]
+L108: 
+L109: [Button: Customize]
+L110: 
+L111: cite33†Breakfast Quesadilla Steak L112: 
+L113: $4.79 | 500 Cal
+L114: 
+L115: [Button: Add to Order]
+L116: 
+L117: [Button: Customize]
+L118: 
+L119: cite34†Breakfast California Crunchwrap L120: 
+L121: $5.19 | 640 Cal
+L122: 
+L123: [Button: Add to Order]
+L124: 
+L125: [Button: Customize]
+L126: 
+L127: cite35†Breakfast Crunchwrap Bacon L128: 
+L129: $4.99 | 660 Cal
+L130: 
+L131: [Button: Add to Order]
+L132: 
+L133: [Button: Customize]
+L134: 
+L135: cite36†Breakfast Crunchwrap Combo L136: 
+L137: $7.99 | 830-1110 Cal
+L138: 
+L139: cite36†Customize L140: 
+L141: cite37†Hash Brown L142: 
+L143: $1.99 | 170 Cal
+L144: 
+L145: cite29†Image: Vegetarian L146: 
+L147: [Button: Add to Order]
+L148: cite38†Cinnabon Delights® 2 Pack L149: 
+L150: $2.89 | 170 Cal
+L151: 
+L152: cite29†Image: Vegetarian L153: 
+L154: [Button: Add to Order]
+L155: 
+L156: cite39†Cinnabon Delights® 12 Pack L157: 
+L158: $7.59 | 1010 Cal
+L159: 
+L160: cite29†Image: Vegetarian L161: 
+L162: [Button: Add to Order]
+L163: 
+L164: cite40†Premium Hot Coffee L165: 
+L166: $2.39 | 0 Cal
+L167: 
+L168: [Button: Add to Order]
+L169: 
+L170: cite41†Hot Cinnabon Delights® Coffee L171: 
+L172: $2.89 | 160 Cal
+L173: 
+L174: [Button: Add to Order]
+L175: 
+L176: cite42†Regular Iced Coffee L177: 
+L178: $2.19 | 0 Cal
+L179: 
+L180: [Button: Add to Order]
+L181: 
+L182: cite43†Iced Cinnabon Delights® Coffee L183: 
+L184: $2.89 | 160 Cal
+L185: 
+L186: [Button: Add to Order]
+L187: 
+L188: cite44†Breakfast Salsa L189: $0.00 | 0 Cal
+L190: 
+L191: cite29†Image: Vegetarian L192: 
+L193: [Button: Add to Order]
+L194: ## Breakfast near you
+L195: ### Order breakfast online or visit the Taco Bell® location nearest you
+L196: At your nearby Taco Bell location, you can find a great selection of Mexican inspired breakfast menu items. Choose from classic breakfast burritos like the cite45†Cheesy Toasted Breakfast Burrito and the cite30†Grande Toasted Breakfast Burrito , or try newer innovations like the cite35†Breakfast Crunchwrap . We also offer, cite40†premium hot coffee and cite42†regular iced coffee , so make sure to grab a drink to complete your breakfast order.
+L197: Taco Bell has a variety of cite46†breakfast burritos , cite47†breakfast sandwiches and cite48†coffee drinks to choose from.
+L198: At Taco Bell, we have fast food near you for breakfast, lunch, and dinner. Make sure to visit our cite49†breakfast store locator†locations.tacobell.com to find a Taco Bell breakfast location near you. Order ahead online or on the Taco Bell mobile app to start your morning off right! If you're looking for a great breakfast in your area, Taco Bell has got you covered!
+L199: cite29†Image: Vegetarian Info Icon American Vegetarian Association certified Vegetarian food items, are lacto-ovo, allowing consumption of dairy and eggs but not animal byproducts. We may use the same frying oil to prepare menu items that could contain meat. Vegetarian and meat ingredients are handled in common, and cross contact may occur, which may not be acceptable to certain types of vegetarian diets.
+L200: Neither Taco Bell®, our employees, nor our franchisees nor the AVA assume any responsibility for such cross contact.
+L201: Warning: cite50†Image: Sodium Warning Icon indicates that the sodium (salt) content of this item is higher than the total daily recommended limit (2,300 mg). High sodium intake can increase blood pressure and risk of heart disease and stroke.
+L202: 
+L203: cite51†Image: Sodium Warning : Sodium content higher than daily recommended limit (2,300 mg). High sodium intake can increase blood pressure and risk of heart disease and stroke.
+--------------------------------------------------------------------------------
+Snacks & Sweets - Desserts & More | Taco Bell® (https://www.tacobell.com/food/snacks-sweets)
+citeturn101view3 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://www.tacobell.com/food/snacks-sweets","lineno":140}); Total lines: 326
+L0: cite0†Menu cite1†Delivery cite2†Rewards cite3†Gift Cards L1: 
+L2: cite4†Purpose L3: 
+L4: cite5†Find a Nearby Bell L5: 
+L6: cite6†Download Our App†tblinks.tacobell.com L7: 
+L8: cite7†Sign Up cite8†Log in L9: 
+L10: cite9†$0.00 L11: 
+L12: #####
+L13: 
+L14: Subtotal Sales Tax
+L15: 
+L16: $0.00 Calculated At Checkout
+L17: 
+L18: cite9†View Bag & Checkout L19: 
+L20: cite0†Menu cite1†Delivery cite2†Rewards cite3†Gift Cards L21: 
+L22: cite4†Purpose L23: 
+L24: |
+L25: 
+L26: cite9†$0.00 L27: #####
+L28: 
+L29: Subtotal Sales Tax
+L30: 
+L31: $0.00 Calculated At Checkout
+L32: 
+L33: cite9†View Bag & Checkout L34: 
+L35: cite10†Best Sellers L36: 
+L37: cite11†Featured L38: 
+L39: cite12†Online Exclusives L40: 
+L41: cite13†Luxe Value Menu L42: 
+L43: cite14†Cantina Chicken Menu L44: 
+L45: cite15†Boxes & Combos L46: 
+L47: cite16†Tacos L48: 
+L49: cite17†Burritos L50: 
+L51: cite18†Specialties L52: 
+L53: cite19†Snacks & Sweets L54: 
+L55: cite20†Quesadillas L56: 
+L57: cite21†Drinks L58: 
+L59: cite22†Nachos L60: 
+L61: cite23†Groups L62: 
+L63: cite24†Veggie Cravings L64: 
+L65: cite25†Bowls L66: 
+L67: cite26†Breakfast L68: ## Products
+L69: 
+L70: cite27†Large Nacho Fries L71: 
+L72: $3.89 | 500 Cal
+L73: 
+L74: cite28†Image: Vegetarian L75: 
+L76: [Button: Add to Order]
+L77: 
+L78: cite27†Customize L79: 
+L80: cite29†Nacho Fries L81: 
+L82: $2.89 | 350 Cal
+L83: 
+L84: cite28†Image: Vegetarian L85: 
+L86: [Button: Add to Order]
+L87: 
+L88: cite29†Customize L89: 
+L90: cite30†Milk Bar Birthday Cake Empanada L91: 
+L92: $3.49 | 290 Cal
+L93: 
+L94: [Button: Add to Order]
+L95: 
+L96: cite31†Chips and Guacamole L97: 
+L98: $3.79 | 230 Cal
+L99: 
+L100: cite28†Image: Vegetarian L101: 
+L102: [Button: Add to Order]
+L103: 
+L104: cite32†Chips and Nacho Cheese Sauce L105: 
+L106: $2.99 | 220 Cal
+L107: 
+L108: cite28†Image: Vegetarian L109: 
+L110: [Button: Add to Order]
+L111: 
+L112: cite33†Chili L113: $1.00 | 60 Cal
+L114: 
+L115: [Button: Add to Order]
+L116: 
+L117: cite34†Black Beans L118: 
+L119: $2.59 | 50 Cal
+L120: 
+L121: cite28†Image: Vegetarian L122: 
+L123: [Button: Add to Order]
+L124: 
+L125: [Button: Customize]
+L126: 
+L127: cite35†Black Beans and Rice L128: 
+L129: $2.99 | 160 Cal
+L130: 
+L131: cite28†Image: Vegetarian L132: 
+L133: [Button: Add to Order]
+L134: 
+L135: [Button: Customize]
+L136: 
+L137: cite36†Pintos N Cheese L138: 
+L139: $2.99 | 170 Cal
+L140: 
+L141: cite28†Image: Vegetarian L142: 
+L143: [Button: Add to Order]
+L144: 
+L145: [Button: Customize]
+L146: 
+L147: cite37†Cinnamon Twists L148: 
+L149: $1.69 | 170 Cal
+L150: 
+L151: cite28†Image: Vegetarian L152: 
+L153: [Button: Add to Order]
+L154: 
+L155: cite38†Cinnabon Delights® 2 Pack L156: 
+L157: $2.89 | 170 Cal
+L158: cite28†Image: Vegetarian L159: 
+L160: [Button: Add to Order]
+L161: 
+L162: cite39†Cinnabon Delights® 12 Pack L163: 
+L164: $7.59 | 1010 Cal
+L165: 
+L166: cite28†Image: Vegetarian L167: 
+L168: [Button: Add to Order]
+L169: 
+L170: cite40†Avocado Verde Salsa Sauce Packet L171: 
+L172: $0.29 | 50 Cal
+L173: 
+L174: cite28†Image: Vegetarian L175: 
+L176: [Button: Add to Order]
+L177: 
+L178: cite41†Mild Sauce Packet L179: 
+L180: $0.00 | 0 Cal
+L181: 
+L182: cite28†Image: Vegetarian L183: 
+L184: [Button: Add to Order]
+L185: 
+L186: cite42†Hot Sauce Packet L187: 
+L188: $0.00 | 0 Cal
+L189: 
+L190: cite28†Image: Vegetarian L191: 
+L192: [Button: Add to Order]
+L193: 
+L194: cite43†Fire Sauce Packet L195: 
+L196: $0.00 | 0 Cal
+L197: 
+L198: cite28†Image: Vegetarian L199: 
+L200: [Button: Add to Order]
+L201: cite44†Diablo Sauce Packet L202: 
+L203: $0.00 | 0 Cal
+L204: 
+L205: cite28†Image: Vegetarian L206: 
+L207: [Button: Add to Order]
+L208: 
+L209: cite45†Creamy Sriracha Sauce L210: 
+L211: $0.60 | 210 Cal
+L212: 
+L213: [Button: Add to Order]
+L214: 
+L215: cite46†Jalapeño Peppers L216: 
+L217: $0.65 | 0 Cal
+L218: 
+L219: [Button: Add to Order]
+L220: 
+L221: cite47†Nacho Cheese Sauce L222: 
+L223: $1.29 | 60 Cal
+L224: 
+L225: cite28†Image: Vegetarian L226: 
+L227: [Button: Add to Order]
+L228: 
+L229: cite48†Reduced-Fat Sour Cream L230: 
+L231: $0.99 | 35 Cal
+L232: 
+L233: cite28†Image: Vegetarian L234: 
+L235: [Button: Add to Order]
+L236: 
+L237: cite49†Creamy Jalapeño Sauce L238: 
+L239: $0.79 | 180 Cal
+L240: 
+L241: cite28†Image: Vegetarian L242: 
+L243: [Button: Add to Order]
+L244: 
+L245: cite50†Guacamole L246: $1.39 | 70 Cal
+L247: 
+L248: cite28†Image: Vegetarian L249: 
+L250: [Button: Add to Order]
+L251: 
+L252: cite51†Chipotle Sauce L253: 
+L254: $0.79 | 200 Cal
+L255: 
+L256: cite28†Image: Vegetarian L257: 
+L258: [Button: Add to Order]
+L259: 
+L260: cite52†Avocado Ranch Sauce L261: 
+L262: $0.79 | 220 Cal
+L263: 
+L264: cite28†Image: Vegetarian L265: 
+L266: [Button: Add to Order]
+L267: 
+L268: cite53†Spicy Ranch L269: 
+L270: $0.79 | 200 Cal
+L271: 
+L272: cite28†Image: Vegetarian L273: 
+L274: [Button: Add to Order]
+L275: 
+L276: cite54†Red Sauce L277: 
+L278: $0.45 | 15 Cal
+L279: 
+L280: cite28†Image: Vegetarian L281: 
+L282: [Button: Add to Order]
+L283: 
+L284: cite55†Mexican Pizza Sauce L285: 
+L286: $0.30 | 15 Cal
+L287: 
+L288: cite28†Image: Vegetarian L289: 
+L290: [Button: Add to Order]
+L291: ## Taco Bell® snacks and sweets near you
+L292: ### Order your favorite Taco Bell sides and desserts online or visit us at the Taco Bell location nearest you
+L293: 
+L294: Taco Bell has several side menu items that are a great snack or compliment to any meal. Try a side order of cite34†Black Beans next time you're picking up tacos to-go. Got a sweet tooth? Taco Bell's dessert options will satisfy even your sweetest cravings. The cite56†Cinnamon Twists are a Taco Bell classic!
+L295: Order and pay ahead online for pick up in the restaurant or at the drive-thru. Enjoy fast food near you at your local Taco Bell today.
+L296: cite28†Image: Vegetarian Info Icon American Vegetarian Association certified Vegetarian food items, are lacto-ovo, allowing consumption of dairy and eggs but not animal byproducts. We may use the same frying oil to prepare menu items that could contain meat. Vegetarian and meat ingredients are handled in common, and cross contact may occur, which may not be acceptable to certain types of vegetarian diets.
+

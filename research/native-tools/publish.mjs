@@ -11,6 +11,7 @@ const root = path.resolve(
 const manifest = JSON.parse(
   await fs.readFile(path.join(root, "package.json"), "utf8"),
 );
+const release = JSON.parse(await fs.readFile(path.join(root, "release.json"), "utf8"));
 const files = {};
 async function addFile(relative) {
   const bytes = await fs.readFile(path.join(root, relative));
@@ -62,9 +63,8 @@ const dependencies = Object.fromEntries(
     ]),
 );
 const snack = new Snack({
-  name: "Verifed — know your meal",
-  description:
-    "CAC community edition: explore 1,063 published food records at 20 Orlando FL-10 restaurants. Full menus, selected-needs options, explicit allergen declarations and separate ingredient-based clues. Real credited imagery, central Home, Saved and personal Journal. Works on-device without an account. Confirm ingredients and cross-contact with staff. Google OAuth requires a development build.",
+  name: release.name,
+  description: release.description,
   sdkVersion: "54.0.0",
   files,
   dependencies,
@@ -99,6 +99,8 @@ try {
     );
   const saved = await snack.saveAsync({ ignoreUser: true });
   const publication = {
+    version: release.number,
+    name: release.name,
     ...saved,
     editorUrl: `https://snack.expo.dev/${saved.id}`,
     publishedAt: new Date().toISOString(),

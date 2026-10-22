@@ -8,11 +8,14 @@ const readJson = async (name, fallback) => {
 const original = await readJson("./full-menu-data.json");
 const expansion = await readJson("./expanded-menu-data.json", { restaurants: [] });
 const extraLocations = await readJson("./expanded-restaurants.json", []);
+const requestedLocations = await readJson("./requested-restaurants.json", []);
+const requestedMenus = await readJson("./requested-menu-data.json", { restaurants: [] });
 const locations = [
   ...await readJson("./restaurant-locations.json"),
   ...(Array.isArray(extraLocations) ? extraLocations : extraLocations.restaurants),
+  ...(Array.isArray(requestedLocations) ? requestedLocations : requestedLocations.restaurants),
 ];
-const menus = [...original.restaurants, ...(Array.isArray(expansion) ? expansion : expansion.restaurants)];
+const menus = [...original.restaurants, ...(Array.isArray(expansion) ? expansion : expansion.restaurants), ...(Array.isArray(requestedMenus) ? requestedMenus : requestedMenus.restaurants)];
 const photos = await readJson("./restaurant-images.json", {});
 const restaurantKeys = new Set(locations.map((restaurant) => restaurant.slug || restaurant.key));
 if (restaurantKeys.size !== locations.length) throw new Error("Duplicate restaurant location key.");
@@ -41,11 +44,16 @@ const publicLocations = await Promise.all(locations.map(async (restaurant) => {
   const photo = Array.isArray(photos) ? photos.find((item) => item.slug === slug || item.key === slug) : photos[slug];
   const evidence = await readJson(`./district-evidence/${slug}.json`, null);
   const geography = evidence?.response?.result?.addressMatches?.[0]?.geographies?.['119th Congressional Districts']?.[0];
+  const point = evidence?.response?.result?.addressMatches?.[0]?.coordinates;
+  const coordinates = Number.isFinite(point?.y) && Number.isFinite(point?.x)
+    ? { latitude: point.y, longitude: point.x } : restaurant.coordinates || null;
   const district = geography ? {
     state: 'FL', number: geography.BASENAME, congress: Number(geography.CDSESSN),
     verifiedAt: evidence.reviewedAt, sourceUrl: evidence.sourceUrl,
   } : null;
-  return { ...restaurant, id: slug, slug, district, emoji: restaurant.emoji || '', fictional: false, confirmed: false, ...(photo || {}) };
+  return { ...restaurant, id: slug, slug, district, coordinates,
+    coordinatesSource: point ? evidence.sourceUrl : restaurant.coordinatesSource || null,
+    emoji: restaurant.emoji || '', fictional: false, confirmed: false, ...(photo || {}) };
 }));
 // Data is kept separate from behavior. Snack receives the same reviewed facts
 // without relying on a scraping server or pretending the menu is a live feed.

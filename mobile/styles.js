@@ -16,6 +16,47 @@ export const colors = {
 };
 
 export const s = StyleSheet.create({
+  welcome: { alignItems: "center", gap: 16, paddingVertical: 20 },
+  welcomeMark: {
+    width: 140,
+    height: 140,
+    borderRadius: 70,
+    backgroundColor: colors.paleGreen,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  discoveryArea: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 12,
+    borderRadius: 18,
+    padding: 16,
+    backgroundColor: colors.paleGreen,
+  },
+  discoveryAreaLabel: {
+    color: colors.green,
+    fontSize: 10,
+    letterSpacing: 1.2,
+    fontWeight: "800",
+    marginBottom: 4,
+  },
+  discoverySummary: { gap: 6, paddingVertical: 5 },
+  discoveryResult: {
+    borderBottomWidth: 1,
+    borderColor: colors.line,
+    paddingBottom: 16,
+  },
+  discoveryReason: { paddingHorizontal: 8, gap: 5 },
+  discoveryDistance: { fontSize: 13, fontWeight: "800", color: colors.green },
+  discoveryOption: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 12,
+    borderWidth: 1,
+    borderColor: colors.line,
+    padding: 14,
+    borderRadius: 16,
+  },
   flex: { flex: 1 },
   root: { flex: 1, backgroundColor: colors.cream },
   header: {

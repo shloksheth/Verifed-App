@@ -1,0 +1,57 @@
+Hash Brown | Taco Bell® (https://www.tacobell.com/food/breakfast/hash-brown)
+citeturn172view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://www.tacobell.com/food/breakfast/hash-brown","lineno":null}); Total lines: 76
+L0: cite0†Menu cite1†Delivery cite2†Rewards cite3†Gift Cards L1: 
+L2: cite4†Purpose L3: 
+L4: cite5†Find a Nearby Bell L5: 
+L6: cite6†Download Our App†tblinks.tacobell.com L7: 
+L8: cite7†Sign Up cite8†Log in L9: 
+L10: cite9†$0.00 L11: 
+L12: #####
+L13: 
+L14: Subtotal Sales Tax
+L15: 
+L16: $0.00 Calculated At Checkout
+L17: 
+L18: cite9†View Bag & Checkout L19: 
+L20: cite0†Menu cite1†Delivery cite2†Rewards cite3†Gift Cards L21: 
+L22: cite4†Purpose L23: 
+L24: |
+L25: 
+L26: cite9†$0.00 L27: 
+L28: #####
+L29: 
+L30: Subtotal Sales Tax
+L31: 
+L32: $0.00 Calculated At Checkout
+L33: 
+L34: cite9†View Bag & Checkout L35: ### You Might Also Like
+L36: 
+L37: cite10†Image: Breakfast Crunchwrap Bacon L38: 
+L39: cite11†Breakfast Crunchwrap Bacon$4.99 | 660 Cal L40: 
+L41: cite12†Image: Cinnabon Delights® 2 Pack L42: 
+L43: cite13†Cinnabon Delights® 2 Pack$2.89 | 170 Cal L44: 
+L45: cite14†Image: Cinnabon Delights® 12 Pack L46: 
+L47: cite15†Cinnabon Delights® 12 Pack$7.59 | 1010 Cal L48: ## Hash Brown
+L49: 
+L50: A warm, freshly fried potato Hash Brown.
+L51: cite16†Image American Vegetarian Association certified Vegetarian food items, are lacto-ovo, allowing consumption of dairy and eggs but not animal byproducts. We may use the same frying oil to prepare menu items that could contain meat. Vegetarian and meat ingredients are handled in common, and cross contact may occur, which may not be acceptable to certain types of vegetarian diets. Neither Taco Bell®, our employees, nor our franchisees, nor the AVA assume any responsibility for such cross contact.
+L52: ## Redeem exclusive rewards only on the app.
+L53: 
+L54: scan to Download
+L55: taco bell app!
+L56: 
+L57: cite17†Download app L58: 
+L59: ###### About us
+L60: 
+L61: cite18†About Taco Bell cite4†Purpose cite19†Nutrition cite5†Locations cite20†Offers & Deals cite21†Newsroom cite22†Stories cite23†Responsible Disclosure L62: 
+L63: ###### Explore
+L64: 
+L65: cite24†Mobile App cite3†Gift Cards cite2†Rewards cite1†Delivery cite25†Taco Shop†www.tacobelltacoshop.com L66: ###### Contact Us
+L67: 
+L68: cite26†Help & FAQs†help.tacobell.com cite27†Careers†jobs.tacobell.com cite28†Taco Bell Foundation†www.tacobellfoundation.org cite29†Franchise Information L69: 
+L70: At participating U.S. Taco Bell® locations. Contact restaurant for prices, hours & participation, which vary. Tax extra. 2,000 calories a day used for general nutrition advice, but calorie needs vary. Additional nutrition information available upon request.
+L71: cite30†Image: Taco Bell ©2026 Taco Bell IP Holder, LLC. All Rights Reserved. TACO BELL, the Bell logo, and other marks are the property of Taco Bell IP Holder, LLC. All other trademarks are the property of their respective owners.
+L72: 
+L73: * * *
+L74: 
+L75: cite31†Privacy Center cite32†Terms Of Use cite33†Accessibility Statement cite34†Do Not Sell or Share My Personal Information†privacy.tacobell.com 

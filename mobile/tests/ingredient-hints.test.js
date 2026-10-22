@@ -115,10 +115,34 @@ test("generic named fish is excluded from vegetarian candidates", () => {
   );
 });
 
-test('oyster mushrooms and declared vegan seafood alternatives do not create shellfish flags', () => {
- for (const item of [{name:'King oyster mushrooms'}, {name:'Vegan clam pasta',tags:['Vegan']}]) {
-  const hints=ingredientHints(item);
-  assert.ok(!hints.allergens.includes('Shellfish') && !hints.possibleAllergens.includes('Shellfish'));
-  assert.ok(!hints.restrictionConflicts.includes('Vegan'));
- }
+test("oyster mushrooms and declared vegan seafood alternatives do not create shellfish flags", () => {
+  for (const item of [
+    { name: "King oyster mushrooms" },
+    { name: "Vegan clam pasta", tags: ["Vegan"] },
+  ]) {
+    const hints = ingredientHints(item);
+    assert.ok(
+      !hints.allergens.includes("Shellfish") &&
+        !hints.possibleAllergens.includes("Shellfish"),
+    );
+    assert.ok(!hints.restrictionConflicts.includes("Vegan"));
+  }
+});
+
+test("Indian dairy, soy and bread terms stay visible as ingredient clues", () => {
+  for (const word of ["paneer", "ghee", "curd", "khoya", "yoghurt"])
+    assert.ok(ingredientHints({ name: word }).allergens.includes("Milk"));
+  assert.ok(
+    ingredientHints({
+      name: "Hakka noodles",
+      ingredients: ["soya sauce"],
+    }).allergens.includes("Soy"),
+  );
+  for (const word of ["breadcrumbs", "chapati", "roti", "paratha"])
+    assert.ok(
+      ingredientHints({ name: word }).possibleAllergens.includes("Wheat"),
+    );
+  assert.ok(
+    !ingredientHints({ name: "Fish's Gold sauce" }).allergens.includes("Fish"),
+  );
 });

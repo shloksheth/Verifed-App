@@ -1,0 +1,274 @@
+{
+  "sourceUrl": "https://geocoding.geo.census.gov/geocoder/geographies/onelineaddress?address=1236+Hempel+Avenue%2C+Gotha%2C+FL+34786&benchmark=Public_AR_Current&vintage=ACS2025_Current&format=json",
+  "reviewedAt": "2026-10-21",
+  "response": {
+    "result": {
+      "input": {
+        "address": {
+          "address": "1236 Hempel Avenue, Gotha, FL 34786"
+        },
+        "vintage": {
+          "isDefault": false,
+          "id": "425",
+          "vintageName": "ACS2025_Current",
+          "vintageDescription": "ACS2025 Vintage - Current Benchmark"
+        },
+        "benchmark": {
+          "isDefault": true,
+          "benchmarkDescription": "Public Address Ranges - Current Benchmark",
+          "id": "4",
+          "benchmarkName": "Public_AR_Current"
+        }
+      },
+      "addressMatches": [
+        {
+          "tigerLine": {
+            "side": "R",
+            "tigerLineId": "94265969"
+          },
+          "geographies": {
+            "States": [
+              {
+                "STATENS": "00294478",
+                "GEOID": "12",
+                "CENTLAT": "+28.4062029",
+                "AREAWATER": "45960479273",
+                "STATE": "12",
+                "BASENAME": "Florida",
+                "STUSAB": "FL",
+                "OID": "2749046365780",
+                "LSADC": "00",
+                "FUNCSTAT": "A",
+                "INTPTLAT": "+28.3989775",
+                "DIVISION": "5",
+                "NAME": "Florida",
+                "REGION": "3",
+                "OBJECTID": 4,
+                "CENTLON": "-082.5022125",
+                "AREALAND": "138973813223",
+                "INTPTLON": "-082.5143005",
+                "MTFCC": "G4000"
+              }
+            ],
+            "Combined Statistical Areas": [
+              {
+                "POP100": "",
+                "GEOID": "422",
+                "CENTLAT": "+28.5124606",
+                "AREAWATER": "3025356348",
+                "BASENAME": "Orlando-Lakeland-Deltona, FL",
+                "OID": "2619034687908097",
+                "LSADC": "M0",
+                "FUNCSTAT": "S",
+                "INTPTLAT": "+28.5125827",
+                "NAME": "Orlando-Lakeland-Deltona, FL CSA",
+                "OBJECTID": 125,
+                "CSA": "422",
+                "CENTLON": "-081.4491586",
+                "INTPTLON": "-081.4489522",
+                "AREALAND": "19261541885",
+                "HU100": "",
+                "MTFCC": "G3100"
+              }
+            ],
+            "County Subdivisions": [
+              {
+                "COUSUB": "93198",
+                "GEOID": "1209593198",
+                "CENTLAT": "+28.4350374",
+                "AREAWATER": "62486564",
+                "STATE": "12",
+                "BASENAME": "Southwest Orange",
+                "OID": "27690359390749",
+                "LSADC": "22",
+                "FUNCSTAT": "S",
+                "INTPTLAT": "+28.4253671",
+                "NAME": "Southwest Orange CCD",
+                "OBJECTID": 10695,
+                "CENTLON": "-081.5411764",
+                "COUSUBCC": "Z5",
+                "AREALAND": "418412322",
+                "INTPTLON": "-081.5490746",
+                "MTFCC": "G4040",
+                "COUSUBNS": "01935935",
+                "COUNTY": "095"
+              }
+            ],
+            "Census Designated Places": [
+              {
+                "DISP_CLR": 2,
+                "STGEOMETRY_Area": 6497206.193886663,
+                "NECTAPCI": "N",
+                "GEOID": "1226900",
+                "CENTLAT": "+28.5306862",
+                "AREAWATER": "553644",
+                "BASENAME": "Gotha",
+                "STATE": "12",
+                "OID": "28090359410196",
+                "LSADC": "57",
+                "PLACE": "26900",
+                "FUNCSTAT": "S",
+                "INTPTLAT": "+28.5309864",
+                "NAME": "Gotha CDP",
+                "OBJECTID": 16609,
+                "PLACECC": "U1",
+                "CENTLON": "-081.5191665",
+                "STGEOMETRY_Length": 12880.145177206246,
+                "CBSAPCI": "N",
+                "AREALAND": "4443034",
+                "INTPTLON": "-081.5165766",
+                "PLACENS": "02402540",
+                "MTFCC": "G4210"
+              }
+            ],
+            "Urban Areas": [
+              {
+                "GEOID": "65863",
+                "CENTLAT": "+28.5757291",
+                "AREAWATER": "168582392",
+                "BASENAME": "Orlando, FL",
+                "OID": "2702190636326",
+                "UA": "65863",
+                "LSADC": "67",
+                "FUNCSTAT": "S",
+                "INTPTLAT": "+28.5768141",
+                "NAME": "Orlando, FL Urban Area",
+                "OBJECTID": 1222,
+                "CENTLON": "-081.4208843",
+                "AREALAND": "1669421721",
+                "INTPTLON": "-081.4209913",
+                "MTFCC": "G3500"
+              }
+            ],
+            "Counties": [
+              {
+                "GEOID": "12095",
+                "CENTLAT": "+28.5145210",
+                "AREAWATER": "259989516",
+                "STATE": "12",
+                "BASENAME": "Orange",
+                "OID": "2759090635982",
+                "LSADC": "06",
+                "FUNCSTAT": "A",
+                "INTPTLAT": "+28.5143906",
+                "NAME": "Orange County",
+                "OBJECTID": 3045,
+                "CENTLON": "-081.3233663",
+                "COUNTYCC": "H1",
+                "COUNTYNS": "00295750",
+                "AREALAND": "2338896297",
+                "INTPTLON": "-081.3232839",
+                "MTFCC": "G4020",
+                "COUNTY": "095"
+              }
+            ],
+            "2024 State Legislative Districts - Upper": [
+              {
+                "GEOID": "12013",
+                "CENTLAT": "+28.7284376",
+                "AREAWATER": "582513929",
+                "STATE": "12",
+                "BASENAME": "13",
+                "OID": "2129035963375438",
+                "SLDU": "013",
+                "LSADC": "LU",
+                "FUNCSTAT": "N",
+                "INTPTLAT": "+28.7315151",
+                "NAME": "State Senate District 13",
+                "OBJECTID": 348,
+                "CENTLON": "-081.6975266",
+                "LSY": "2024",
+                "AREALAND": "2759569512",
+                "INTPTLON": "-081.6988133",
+                "MTFCC": "G5210",
+                "LDTYP": "O"
+              }
+            ],
+            "2024 State Legislative Districts - Lower": [
+              {
+                "GEOID": "12045",
+                "CENTLAT": "+28.4114417",
+                "SLDL": "045",
+                "AREAWATER": "54235689",
+                "STATE": "12",
+                "BASENAME": "45",
+                "OID": "2139035963375628",
+                "LSADC": "LL",
+                "FUNCSTAT": "N",
+                "INTPTLAT": "+28.4154843",
+                "NAME": "State House District 45",
+                "OBJECTID": 2693,
+                "CENTLON": "-081.5852906",
+                "LSY": "2024",
+                "AREALAND": "403561599",
+                "INTPTLON": "-081.5843932",
+                "MTFCC": "G5220",
+                "LDTYP": "O"
+              }
+            ],
+            "Census Tracts": [
+              {
+                "GEOID": "12095014814",
+                "CENTLAT": "+28.5195511",
+                "AREAWATER": "1990292",
+                "STATE": "12",
+                "BASENAME": "148.14",
+                "OID": "2079019627694811",
+                "LSADC": "CT",
+                "FUNCSTAT": "S",
+                "INTPTLAT": "+28.5193143",
+                "NAME": "Census Tract 148.14",
+                "OBJECTID": 49133,
+                "TRACT": "014814",
+                "CENTLON": "-081.5308255",
+                "AREALAND": "6029876",
+                "INTPTLON": "-081.5303181",
+                "MTFCC": "G5020",
+                "COUNTY": "095"
+              }
+            ],
+            "119th Congressional Districts": [
+              {
+                "GEOID": "1211",
+                "CENTLAT": "+28.5838606",
+                "CDSESSN": "119",
+                "AREAWATER": "606551768",
+                "STATE": "12",
+                "BASENAME": "11",
+                "OID": "2119035951820960",
+                "LSADC": "C2",
+                "FUNCSTAT": "N",
+                "INTPTLAT": "+28.5834886",
+                "NAME": "Congressional District 11",
+                "OBJECTID": 5,
+                "CENTLON": "-081.8546560",
+                "AREALAND": "4149067616",
+                "INTPTLON": "-081.8548626",
+                "MTFCC": "G5200"
+              }
+            ]
+          },
+          "coordinates": {
+            "x": -81.522863671004,
+            "y": 28.527629209359
+          },
+          "addressComponents": {
+            "zip": "34786",
+            "streetName": "HEMPEL",
+            "preType": "",
+            "city": "WINDERMERE",
+            "preDirection": "",
+            "suffixDirection": "",
+            "fromAddress": "1236",
+            "state": "FL",
+            "suffixType": "AVE",
+            "toAddress": "1398",
+            "suffixQualifier": "",
+            "preQualifier": ""
+          },
+          "matchedAddress": "1236 HEMPEL AVE, WINDERMERE, FL, 34786"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,111 @@
+Breakfast Quesadilla Steak | Taco Bell® (https://www.tacobell.com/food/breakfast/breakfast-quesadilla-steak)
+citeturn167view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://www.tacobell.com/food/breakfast/breakfast-quesadilla-steak","lineno":null}); Total lines: 128
+L0: cite0†Menu cite1†Delivery cite2†Rewards cite3†Gift Cards L1: 
+L2: cite4†Purpose L3: 
+L4: cite5†Find a Nearby Bell L5: 
+L6: cite6†Download Our App†tblinks.tacobell.com L7: 
+L8: cite7†Sign Up cite8†Log in L9: 
+L10: cite9†$0.00 L11: 
+L12: #####
+L13: 
+L14: Subtotal Sales Tax
+L15: 
+L16: $0.00 Calculated At Checkout
+L17: 
+L18: cite9†View Bag & Checkout L19: 
+L20: cite0†Menu cite1†Delivery cite2†Rewards cite3†Gift Cards L21: 
+L22: cite4†Purpose L23: 
+L24: |
+L25: 
+L26: cite9†$0.00 L27: 
+L28: #####
+L29: 
+L30: Subtotal Sales Tax
+L31: 
+L32: $0.00 Calculated At Checkout
+L33: 
+L34: cite9†View Bag & Checkout L35: ### Make It Your Own
+L36: 
+L37: Make it Fresco Adds 0 Cal
+L38: 
+L39: Make it
+L40: 
+L41: Fresco
+L42: 
+L43: Replace dairy and mayo-sauces with pico de gallo
+L44: 
+L45: ### Popular Upgrades
+L46: 
+L47: Pico De Gallo +$0.80 | Adds 0 Cal
+L48: 
+L49: Reduced-Fat Sour Cream +$0.90 | Adds 20 Cal
+L50: 
+L51: Guacamole +$1.15 | Adds 35 Cal
+L52: 
+L53: Creamy Jalapeño Sauce +$0.70 | Adds 60 Cal
+L54: 
+L55: ### What's Included
+L56: 
+L57: Three-Cheese Blend
+L58: 
+L59: Steak
+L60: 
+L61: Egg
+L62: ### Add Ons
+L63: 
+L64: Onions +$0.50 | Adds 0 Cal
+L65: 
+L66: Tomatoes +$0.80 | Adds 0 Cal
+L67: 
+L68: Cheese +$0.75 | Adds 220 Cal
+L69: 
+L70: Pico De Gallo +$0.80 | Adds 0 Cal
+L71: 
+L72: Jalapeño Peppers +$0.65 | Adds 5 Cal
+L73: 
+L74: Bacon +$0.70 | Adds 60 Cal
+L75: 
+L76: ### Sauces
+L77: 
+L78: Reduced-Fat Sour Cream +$0.90 | Adds 20 Cal
+L79: 
+L80: Guacamole +$1.15 | Adds 35 Cal
+L81: 
+L82: Creamy Jalapeño Sauce +$0.70 | Adds 60 Cal
+L83: 
+L84: Nacho Cheese Sauce +$1.00 | Adds 30 Cal
+L85: 
+L86: Chipotle Sauce +$0.65 | Adds 270 Cal
+L87: 
+L88: Avocado Ranch Sauce +$0.65 | Adds 70 Cal
+L89: 
+L90: Spicy Ranch +$0.70 | Adds 70 Cal
+L91: ### You Might Also Like
+L92: 
+L93: cite10†Image: Hash Brown L94: 
+L95: cite11†Hash Brown$1.99 | 170 Cal L96: 
+L97: cite12†Image: Breakfast Salsa L98: 
+L99: cite13†Breakfast Salsa$0.00 | 0 Cal L100: 
+L101: ## Breakfast Quesadilla Steak
+L102: 
+L103: A large flour tortilla filled with fluffy cage-free eggs, grilled, marinated steak, and a blend of mozzarella, pepperjack, and cheddar cheeses, and grilled to perfection. Eggs are American Humane Society™ Certified cage-free.
+L104: 
+L105: ## Redeem exclusive rewards only on the app.
+L106: 
+L107: scan to Download
+L108: taco bell app!
+L109: 
+L110: cite14†Download app L111: ###### About us
+L112: 
+L113: cite15†About Taco Bell cite4†Purpose cite16†Nutrition cite5†Locations cite17†Offers & Deals cite18†Newsroom cite19†Stories cite20†Responsible Disclosure L114: 
+L115: ###### Explore
+L116: 
+L117: cite21†Mobile App cite3†Gift Cards cite2†Rewards cite1†Delivery cite22†Taco Shop†www.tacobelltacoshop.com L118: ###### Contact Us
+L119: 
+L120: cite23†Help & FAQs†help.tacobell.com cite24†Careers†jobs.tacobell.com cite25†Taco Bell Foundation†www.tacobellfoundation.org cite26†Franchise Information L121: 
+L122: At participating U.S. Taco Bell® locations. Contact restaurant for prices, hours & participation, which vary. Tax extra. 2,000 calories a day used for general nutrition advice, but calorie needs vary. Additional nutrition information available upon request.
+L123: cite27†Image: Taco Bell ©2026 Taco Bell IP Holder, LLC. All Rights Reserved. TACO BELL, the Bell logo, and other marks are the property of Taco Bell IP Holder, LLC. All other trademarks are the property of their respective owners.
+L124: 
+L125: * * *
+L126: 
+L127: cite28†Privacy Center cite29†Terms Of Use cite30†Accessibility Statement cite31†Do Not Sell or Share My Personal Information†privacy.tacobell.com 

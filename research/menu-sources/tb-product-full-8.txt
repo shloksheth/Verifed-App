@@ -1,0 +1,139 @@
+Chalupa Supreme | Taco Bell® (https://www.tacobell.com/food/specialties/chalupa-supreme)
+citeturn120view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://www.tacobell.com/food/specialties/chalupa-supreme","lineno":null}); Total lines: 159
+L0: cite0†Menu cite1†Delivery cite2†Rewards cite3†Gift Cards L1: 
+L2: cite4†Purpose L3: 
+L4: cite5†Find a Nearby Bell L5: 
+L6: cite6†Download Our App†tblinks.tacobell.com L7: 
+L8: cite7†Sign Up cite8†Log in L9: 
+L10: cite9†$0.00 L11: 
+L12: #####
+L13: 
+L14: Subtotal Sales Tax
+L15: 
+L16: $0.00 Calculated At Checkout
+L17: 
+L18: cite9†View Bag & Checkout L19: 
+L20: cite0†Menu cite1†Delivery cite2†Rewards cite3†Gift Cards L21: 
+L22: cite4†Purpose L23: 
+L24: |
+L25: 
+L26: cite9†$0.00 L27: 
+L28: #####
+L29: 
+L30: Subtotal Sales Tax
+L31: 
+L32: $0.00 Calculated At Checkout
+L33: 
+L34: cite9†View Bag & Checkout L35: ### Customer Creations
+L36: 
+L37: The Spicy Chalupa Supreme®
+L38: 
+L39: Chalupa Supreme® with Chipotle Sauce and Jalapeño Peppers
+L40: 
+L41: cite10†Explore Saucy Chicken Chalupa Supreme®
+L42: 
+L43: Chalupa Supreme® swap Chicken, add Nacho Cheese Sauce.
+L44: 
+L45: cite11†Explore L46: 
+L47: ### Make It Your Own
+L48: 
+L49: Make it Fresco Adds 0 Cal
+L50: 
+L51: Make it
+L52: 
+L53: Fresco
+L54: 
+L55: Replace dairy and mayo-sauces with pico de gallo
+L56: 
+L57: ### Popular Upgrades
+L58: 
+L59: Guacamole +$1.15 | Adds 35 Cal
+L60: 
+L61: Nacho Cheese Sauce +$1.00 | Adds 30 Cal
+L62: 
+L63: Chipotle Sauce +$0.65 | Adds 70 Cal
+L64: 
+L65: Onions +$0.50 | Adds 0 Cal
+L66: ### What's Included
+L67: 
+L68: Seasoned Beef
+L69: 
+L70: Tomatoes
+L71: 
+L72: Lettuce
+L73: 
+L74: Reduced-Fat Sour Cream
+L75: 
+L76: Three-Cheese Blend
+L77: 
+L78: ### Add Ons
+L79: 
+L80: Onions +$0.50 | Adds 0 Cal
+L81: 
+L82: Cheese +$0.75 | Adds 25 Cal
+L83: 
+L84: Pico De Gallo +$0.80 | Adds 0 Cal
+L85: 
+L86: Jalapeño Peppers +$0.65 | Adds 5 Cal
+L87: 
+L88: Beans +$0.65 | Adds 60 Cal
+L89: 
+L90: Seasoned Fries +$0.60 | Adds 120 Cal
+L91: 
+L92: Purple Cabbage +$0.60 | Adds 0 Cal
+L93: 
+L94: Black Beans +$0.45 | Adds 50 Cal
+L95: 
+L96: Seasoned Rice +$0.60 | Adds 50 Cal
+L97: 
+L98: Slow-Roasted Chicken +$1.70 | Adds 60 Cal
+L99: 
+L100: Fiesta Strips +$0.50 | Adds 80 Cal
+L101: ### Sauces
+L102: 
+L103: Guacamole +$1.15 | Adds 35 Cal
+L104: 
+L105: Red Sauce +$0.45 | Adds 10 Cal
+L106: 
+L107: Creamy Jalapeño Sauce +$0.70 | Adds 60 Cal
+L108: 
+L109: Nacho Cheese Sauce +$1.00 | Adds 30 Cal
+L110: 
+L111: Chipotle Sauce +$0.65 | Adds 70 Cal
+L112: 
+L113: Mexican Pizza Sauce +$0.30 | Adds 10 Cal
+L114: 
+L115: Avocado Ranch Sauce +$0.65 | Adds 70 Cal
+L116: 
+L117: Spicy Ranch +$0.70 | Adds 70 Cal
+L118: ### You Might Also Like
+L119: 
+L120: cite12†Image: Soft Taco L121: 
+L122: cite13†Soft Taco$1.99 | 180 Cal L123: 
+L124: cite14†Image: Nacho Cheese Doritos® Locos Tacos Supreme® L125: 
+L126: cite15†Nacho Cheese Doritos® Locos Tacos Supreme®$3.79 | 190 Cal L127: 
+L128: cite16†Image: Cantina Chicken Crispy Taco L129: 
+L130: cite17†Cantina Chicken Crispy Taco$3.29 | 320 Cal L131: 
+L132: ## Chalupa Supreme
+L133: 
+L134: A warm-and-flaky flatbread shell filled with seasoned beef, lettuce, diced tomaotes, a blend of mozzarella, pepperjack, and cheddar cheeses, and reduced-fat sour cream.
+L135: ## Redeem exclusive rewards only on the app.
+L136: 
+L137: scan to Download
+L138: taco bell app!
+L139: 
+L140: cite18†Download app L141: 
+L142: ###### About us
+L143: 
+L144: cite19†About Taco Bell cite4†Purpose cite20†Nutrition cite5†Locations cite21†Offers & Deals cite22†Newsroom cite23†Stories cite24†Responsible Disclosure L145: 
+L146: ###### Explore
+L147: 
+L148: cite25†Mobile App cite3†Gift Cards cite2†Rewards cite1†Delivery cite26†Taco Shop†www.tacobelltacoshop.com L149: ###### Contact Us
+L150: 
+L151: cite27†Help & FAQs†help.tacobell.com cite28†Careers†jobs.tacobell.com cite29†Taco Bell Foundation†www.tacobellfoundation.org cite30†Franchise Information L152: 
+L153: At participating U.S. Taco Bell® locations. Contact restaurant for prices, hours & participation, which vary. Tax extra. 2,000 calories a day used for general nutrition advice, but calorie needs vary. Additional nutrition information available upon request.
+L154: cite31†Image: Taco Bell ©2026 Taco Bell IP Holder, LLC. All Rights Reserved. TACO BELL, the Bell logo, and other marks are the property of Taco Bell IP Holder, LLC. All other trademarks are the property of their respective owners.
+L155: 
+L156: * * *
+L157: 
+L158: cite32†Privacy Center cite33†Terms Of Use cite34†Accessibility Statement cite35†Do Not Sell or Share My Personal Information†privacy.tacobell.com 

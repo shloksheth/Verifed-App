@@ -1,0 +1,129 @@
+Steak Quesadilla | Taco Bell® (https://www.tacobell.com/food/quesadillas/steak-quesadilla)
+citeturn175view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://www.tacobell.com/food/quesadillas/steak-quesadilla","lineno":null}); Total lines: 146
+L0: cite0†Menu cite1†Delivery cite2†Rewards cite3†Gift Cards L1: 
+L2: cite4†Purpose L3: 
+L4: cite5†Find a Nearby Bell L5: 
+L6: cite6†Download Our App†tblinks.tacobell.com L7: 
+L8: cite7†Sign Up cite8†Log in L9: 
+L10: cite9†$0.00 L11: 
+L12: #####
+L13: 
+L14: Subtotal Sales Tax
+L15: 
+L16: $0.00 Calculated At Checkout
+L17: 
+L18: cite9†View Bag & Checkout L19: 
+L20: cite0†Menu cite1†Delivery cite2†Rewards cite3†Gift Cards L21: 
+L22: cite4†Purpose L23: 
+L24: |
+L25: 
+L26: cite9†$0.00 L27: 
+L28: #####
+L29: 
+L30: Subtotal Sales Tax
+L31: 
+L32: $0.00 Calculated At Checkout
+L33: 
+L34: cite9†View Bag & Checkout L35: 
+L36: ### Make It Your Own
+L37: 
+L38: Make it Supreme +$0.90 | Adds 0 Cal
+L39: 
+L40: Make it
+L41: 
+L42: Supreme
+L43: 
+L44: Add sour cream and tomatoes
+L45: ### Popular Upgrades
+L46: 
+L47: Guacamole +$1.15 | Adds 35 Cal
+L48: 
+L49: Nacho Cheese Sauce +$1.00 | Adds 30 Cal
+L50: 
+L51: Spicy Ranch +$0.70 | Adds 70 Cal
+L52: 
+L53: Beans +$0.65 | Adds 60 Cal
+L54: 
+L55: ### What's Included
+L56: 
+L57: Steak
+L58: 
+L59: Three-Cheese Blend
+L60: 
+L61: Creamy Jalapeño Sauce
+L62: ### Add Ons
+L63: 
+L64: Onions +$0.50 | Adds 0 Cal
+L65: 
+L66: Tomatoes +$0.80 | Adds 0 Cal
+L67: 
+L68: Lettuce +$0.60 | Adds 0 Cal
+L69: 
+L70: Cheese +$0.75 | Adds 220 Cal
+L71: 
+L72: Pico De Gallo +$0.80 | Adds 0 Cal
+L73: 
+L74: Jalapeño Peppers +$0.65 | Adds 5 Cal
+L75: 
+L76: Beans +$0.65 | Adds 60 Cal
+L77: 
+L78: Seasoned Beef +$1.00 | Adds 70 Cal
+L79: 
+L80: Chicken +$1.50 | Adds 45 Cal
+L81: 
+L82: Seasoned Fries +$0.60 | Adds 120 Cal
+L83: 
+L84: Purple Cabbage +$0.60 | Adds 0 Cal
+L85: 
+L86: Black Beans +$0.45 | Adds 50 Cal
+L87: 
+L88: Seasoned Rice +$0.60 | Adds 50 Cal
+L89: 
+L90: Slow-Roasted Chicken +$1.70 | Adds 60 Cal
+L91: Fiesta Strips +$0.50 | Adds 80 Cal
+L92: ### Sauces
+L93: 
+L94: Reduced-Fat Sour Cream +$0.90 | Adds 20 Cal
+L95: 
+L96: Guacamole +$1.15 | Adds 35 Cal
+L97: 
+L98: Red Sauce +$0.45 | Adds 10 Cal
+L99: 
+L100: Nacho Cheese Sauce +$1.00 | Adds 30 Cal
+L101: 
+L102: Chipotle Sauce +$0.65 | Adds 70 Cal
+L103: 
+L104: Mexican Pizza Sauce +$0.30 | Adds 10 Cal
+L105: 
+L106: Avocado Ranch Sauce +$0.65 | Adds 70 Cal
+L107: 
+L108: Spicy Ranch +$0.70 | Adds 70 Cal
+L109: 
+L110: ### You Might Also Like
+L111: 
+L112: cite10†Image: Soft Taco L113: 
+L114: cite11†Soft Taco$1.99 | 180 Cal L115: 
+L116: cite12†Image: Cantina Chicken Crispy Taco L117: 
+L118: cite13†Cantina Chicken Crispy Taco$3.29 | 320 Cal L119: ## Steak Quesadilla
+L120: 
+L121: A large flour tortilla filled with a blend of mozzarella, pepperjack, and cheddar cheeses, grilled, marinated steak, Creamy Jalapeño sauce, and grilled to perfection.
+L122: 
+L123: ## Redeem exclusive rewards only on the app.
+L124: 
+L125: scan to Download
+L126: taco bell app!
+L127: 
+L128: cite14†Download app L129: 
+L130: ###### About us
+L131: 
+L132: cite15†About Taco Bell cite4†Purpose cite16†Nutrition cite5†Locations cite17†Offers & Deals cite18†Newsroom cite19†Stories cite20†Responsible Disclosure L133: ###### Explore
+L134: 
+L135: cite21†Mobile App cite3†Gift Cards cite2†Rewards cite1†Delivery cite22†Taco Shop†www.tacobelltacoshop.com L136: ###### Contact Us
+L137: 
+L138: cite23†Help & FAQs†help.tacobell.com cite24†Careers†jobs.tacobell.com cite25†Taco Bell Foundation†www.tacobellfoundation.org cite26†Franchise Information L139: 
+L140: At participating U.S. Taco Bell® locations. Contact restaurant for prices, hours & participation, which vary. Tax extra. 2,000 calories a day used for general nutrition advice, but calorie needs vary. Additional nutrition information available upon request.
+L141: cite27†Image: Taco Bell ©2026 Taco Bell IP Holder, LLC. All Rights Reserved. TACO BELL, the Bell logo, and other marks are the property of Taco Bell IP Holder, LLC. All other trademarks are the property of their respective owners.
+L142: 
+L143: * * *
+L144: 
+L145: cite28†Privacy Center cite29†Terms Of Use cite30†Accessibility Statement cite31†Do Not Sell or Share My Personal Information†privacy.tacobell.com 

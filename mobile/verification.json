@@ -1,0 +1,34 @@
+{
+  "version": 10,
+  "snapshot": "qEw0A9vgOiKizDke66XQZ",
+  "sourceHash": "b16c1cc14abff97dc1e7757ff8ccb6a85680441f0ed352395381fd392aa3621b",
+  "tests": 76,
+  "platformExports": [
+    "web",
+    "android",
+    "ios"
+  ],
+  "locations": 26,
+  "places": 24,
+  "sourceRecords": 1652,
+  "browserViewport": {
+    "width": 390,
+    "height": 844
+  },
+  "verifiedBrowserFlows": [
+    "welcome, sign-in/create-account entry and guest browsing",
+    "Home info sheet",
+    "Census street address and city/ZIP location center",
+    "Indian cuisine filter",
+    "map tiles and pin-to-menu navigation",
+    "three Taco Bell branch choices",
+    "strict all-nine empty-result explanation"
+  ],
+  "publicRestCatalogMatched": true,
+  "currentNativeSimulatorTested": false,
+  "physicalIphoneTested": false,
+  "nativeBlocker": "V10 Snack editor hung before simulator controls; DOM and screenshot operations timed out.",
+  "nativeGoogleOAuthTested": false,
+  "googleNativeRequirement": "Development build; Expo Go cannot receive registered app callback.",
+  "historicalNativeEvidence": "v9-release.json and cac-ios-*.png belong to prior V9, not V10."
+}

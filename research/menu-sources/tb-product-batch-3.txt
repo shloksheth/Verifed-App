@@ -1,0 +1,706 @@
+3 Cheese Chicken Flatbread Melt | Taco Bell® (https://www.tacobell.com/food/quesadillas/3-cheese-chicken-flatbread-melt)
+citeturn102view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://www.tacobell.com/food/quesadillas/3-cheese-chicken-flatbread-melt","lineno":null}); Total lines: 146
+L0: cite0†Menu cite1†Delivery cite2†Rewards cite3†Gift Cards L1: 
+L2: cite4†Purpose L3: 
+L4: cite5†Find a Nearby Bell L5: 
+L6: cite6†Download Our App†tblinks.tacobell.com L7: 
+L8: cite7†Sign Up cite8†Log in L9: 
+L10: cite9†$0.00 L11: 
+L12: #####
+L13: 
+L14: Subtotal Sales Tax
+L15: 
+L16: $0.00 Calculated At Checkout
+L17: 
+L18: cite9†View Bag & Checkout L19: 
+L20: cite0†Menu cite1†Delivery cite2†Rewards cite3†Gift Cards L21: 
+L22: cite4†Purpose L23: 
+L24: |
+L25: 
+L26: cite9†$0.00 L27: 
+L28: #####
+L29: 
+L30: Subtotal Sales Tax
+L31: 
+L32: $0.00 Calculated At Checkout
+L33: 
+L34: cite9†View Bag & Checkout L35: ### Make It Your Own
+L36: 
+L37: Make it Fresco Adds 0 Cal
+L38: 
+L39: Make it
+L40: 
+L41: Fresco
+L42: 
+L43: Replace dairy and mayo-sauces with pico de gallo
+L44: 
+L45: ### Popular Upgrades
+L46: 
+L47: Onions +$0.50 | Adds 0 Cal
+L48: 
+L49: Tomatoes +$0.80 | Adds 0 Cal
+L50: 
+L51: Jalapeño Peppers +$0.65 | Adds 5 Cal
+L52: 
+L53: Guacamole +$1.15 | Adds 35 Cal
+L54: 
+L55: ### What's Included
+L56: 
+L57: Chicken
+L58: 
+L59: Three-Cheese Blend
+L60: 
+L61: Chipotle Sauce
+--------------------------------------------------------------------------------
+Mexican Pizza | Taco Bell® (https://www.tacobell.com/food/specialties/mexican-pizza)
+citeturn102view1 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://www.tacobell.com/food/specialties/mexican-pizza","lineno":null}); Total lines: 145
+L0: cite0†Menu cite1†Delivery cite2†Rewards cite3†Gift Cards L1: 
+L2: cite4†Purpose L3: 
+L4: cite5†Find a Nearby Bell L5: 
+L6: cite6†Download Our App†tblinks.tacobell.com L7: 
+L8: cite7†Sign Up cite8†Log in L9: 
+L10: cite9†$0.00 L11: 
+L12: #####
+L13: 
+L14: Subtotal Sales Tax
+L15: 
+L16: $0.00 Calculated At Checkout
+L17: 
+L18: cite9†View Bag & Checkout L19: 
+L20: cite0†Menu cite1†Delivery cite2†Rewards cite3†Gift Cards L21: 
+L22: cite4†Purpose L23: 
+L24: |
+L25: 
+L26: cite9†$0.00 L27: 
+L28: #####
+L29: 
+L30: Subtotal Sales Tax
+L31: 
+L32: $0.00 Calculated At Checkout
+L33: 
+L34: cite9†View Bag & Checkout L35: ### Popular Upgrades
+L36: 
+L37: Reduced-Fat Sour Cream +$0.90 | Adds 20 Cal
+L38: 
+L39: Guacamole +$1.15 | Adds 35 Cal
+L40: 
+L41: Creamy Jalapeño Sauce +$0.70 | Adds 60 Cal
+L42: 
+L43: Nacho Cheese Sauce +$1.00 | Adds 30 Cal
+L44: 
+L45: ### What's Included
+L46: 
+L47: Seasoned Beef
+L48: 
+L49: Tomatoes
+L50: 
+L51: Beans
+L52: 
+L53: Three-Cheese Blend
+L54: 
+L55: Mexican Pizza Sauce
+L56: ### Add Ons
+L57: 
+L58: Seasoned Rice +$0.60 | Adds 50 Cal
+L59: 
+L60: Lettuce +$0.60 | Adds 0 Cal
+L61: 
+L62: Jalapeño Peppers +$0.65 | Adds 5 Cal
+L63: 
+L64: Black Beans +$0.45 | Adds 50 Cal
+L65: 
+L66: Onions +$0.50 | Adds 0 Cal
+L67: 
+L68: Cheese +$0.75 | Adds 110 Cal
+L69: 
+L70: Pico De Gallo +$0.80 | Adds 0 Cal
+L71: 
+L72: Chicken +$1.50 | Adds 45 Cal
+L73: 
+L74: Steak +$1.70 | Adds 60 Cal
+L75: 
+L76: Seasoned Fries +$0.60 | Adds 120 Cal
+L77: 
+L78: Purple Cabbage +$0.60 | Adds 0 Cal
+L79: 
+L80: Slow-Roasted Chicken +$1.70 | Adds 60 Cal
+L81: 
+L82: Fiesta Strips +$0.50 | Adds 80 Cal
+--------------------------------------------------------------------------------
+Veggie Mexican Pizza | Taco Bell® (https://www.tacobell.com/food/specialties/veggie-mexican-pizza)
+citeturn102view2 [wordlim: 200] Crawled: yesterday; Content type: text/html; Source: open({"ref_id":"https://www.tacobell.com/food/specialties/veggie-mexican-pizza","lineno":null}); Total lines: 135
+L0: cite0†Menu cite1†Delivery cite2†Rewards cite3†Gift Cards L1: 
+L2: cite4†Purpose L3: 
+L4: cite5†Find a Nearby Bell L5: 
+L6: cite6†Download Our App†tblinks.tacobell.com L7: 
+L8: cite7†Sign Up cite8†Log in L9: 
+L10: cite9†$0.00 L11: 
+L12: #####
+L13: 
+L14: Subtotal Sales Tax
+L15: 
+L16: $0.00 Calculated At Checkout
+L17: 
+L18: cite9†View Bag & Checkout L19: 
+L20: cite0†Menu cite1†Delivery cite2†Rewards cite3†Gift Cards L21: 
+L22: cite4†Purpose L23: 
+L24: |
+L25: 
+L26: cite9†$0.00 L27: 
+L28: #####
+L29: 
+L30: Subtotal Sales Tax
+L31: 
+L32: $0.00 Calculated At Checkout
+L33: 
+L34: cite9†View Bag & Checkout L35: ### Popular Upgrades
+L36: 
+L37: Onions +$0.50 | Adds 0 Cal
+L38: 
+L39: Jalapeño Peppers +$0.65 | Adds 5 Cal
+L40: 
+L41: Guacamole +$1.15 | Adds 35 Cal
+L42: 
+L43: Creamy Jalapeño Sauce +$0.70 | Adds 60 Cal
+L44: 
+L45: ### What's Included
+L46: 
+L47: Beans
+L48: 
+L49: Tomatoes
+L50: 
+L51: Three-Cheese Blend
+L52: 
+L53: Mexican Pizza Sauce
+L54: ### Add Ons
+L55: 
+L56: Onions +$0.50 | Adds 0 Cal
+L57: 
+L58: Lettuce +$0.60 | Adds 0 Cal
+L59: 
+L60: Cheese +$0.75 | Adds 110 Cal
+L61: 
+L62: Pico De Gallo +$0.80 | Adds 0 Cal
+L63: 
+L64: Jalapeño Peppers +$0.65 | Adds 5 Cal
+L65: 
+L66: Chicken +$1.50 | Adds 45 Cal
+L67: 
+L68: Steak +$1.70 | Adds 60 Cal
+L69: 
+L70: Seasoned Fries +$0.60 | Adds 120 Cal
+L71: 
+L72: Purple Cabbage +$0.60 | Adds 0 Cal
+L73: 
+L74: Black Beans +$0.45 | Adds 50 Cal
+L75: 
+L76: Seasoned Rice +$0.60 | Adds 50 Cal
+L77: 
+L78: Slow-Roasted Chicken +$1.70 | Adds 60 Cal
+L79: 
+L80: Fiesta Strips +$0.50 | Adds 80 Cal
+--------------------------------------------------------------------------------
+Crunchwrap Supreme® | Taco Bell® (https://www.tacobell.com/food/specialties/crunchwrap-supreme)
+citeturn102view3 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://www.tacobell.com/food/specialties/crunchwrap-supreme","lineno":null}); Total lines: 177
+L0: cite0†Menu cite1†Delivery cite2†Rewards cite3†Gift Cards L1: 
+L2: cite4†Purpose L3: 
+L4: cite5†Find a Nearby Bell L5: 
+L6: cite6†Download Our App†tblinks.tacobell.com L7: 
+L8: cite7†Sign Up cite8†Log in L9: 
+L10: cite9†$0.00 L11: 
+L12: #####
+L13: 
+L14: Subtotal Sales Tax
+L15: 
+L16: $0.00 Calculated At Checkout
+L17: 
+L18: cite9†View Bag & Checkout L19: 
+L20: cite0†Menu cite1†Delivery cite2†Rewards cite3†Gift Cards L21: 
+L22: cite4†Purpose L23: 
+L24: |
+L25: 
+L26: cite9†$0.00 L27: 
+L28: #####
+L29: 
+L30: Subtotal Sales Tax
+L31: 
+L32: $0.00 Calculated At Checkout
+L33: 
+L34: cite9†View Bag & Checkout L35: ### Customer Creations
+L36: 
+L37: Kickin' Chicken Crunchwrap
+L38: 
+L39: Crunchwrap Supreme® swapped for Slow-Roasted Chicken, add Creamy Jalapeño Sauce, Jalapeño Peppers, Pico De Gallo and Potatoes, easy Reduced-Fat Sour Cream
+L40: 
+L41: cite10†Explore Loaded Beef Crunchwrap
+L42: 
+L43: Crunchwrap Supreme® with extra Seasoned Beef, add Chipotle Sauce, Seasoned Fries, no Tomatoes
+L44: 
+L45: cite11†Explore --------------------------------------------------------------------------------
+Black Bean Crunchwrap Supreme® | Taco Bell® (https://www.tacobell.com/food/specialties/black-bean-crunchwrap-supreme)
+citeturn102view4 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://www.tacobell.com/food/specialties/black-bean-crunchwrap-supreme","lineno":null}); Total lines: 145
+L0: cite0†Menu cite1†Delivery cite2†Rewards cite3†Gift Cards L1: 
+L2: cite4†Purpose L3: 
+L4: cite5†Find a Nearby Bell L5: 
+L6: cite6†Download Our App†tblinks.tacobell.com L7: 
+L8: cite7†Sign Up cite8†Log in L9: 
+L10: cite9†$0.00 L11: 
+L12: #####
+L13: 
+L14: Subtotal Sales Tax
+L15: 
+L16: $0.00 Calculated At Checkout
+L17: 
+L18: cite9†View Bag & Checkout L19: 
+L20: cite0†Menu cite1†Delivery cite2†Rewards cite3†Gift Cards L21: 
+L22: cite4†Purpose L23: 
+L24: |
+L25: 
+L26: cite9†$0.00 L27: 
+L28: #####
+L29: 
+L30: Subtotal Sales Tax
+L31: 
+L32: $0.00 Calculated At Checkout
+L33: 
+L34: cite9†View Bag & Checkout L35: ### Make It Your Own
+L36: 
+L37: Make it Fresco Adds 0 Cal
+L38: 
+L39: Make it
+L40: 
+L41: Fresco
+L42: 
+L43: Replace dairy and mayo-sauces with pico de gallo
+L44: 
+L45: ### Popular Upgrades
+L46: 
+L47: Pico De Gallo +$0.80 | Adds 0 Cal
+L48: 
+L49: Jalapeño Peppers +$0.65 | Adds 5 Cal
+L50: 
+L51: Purple Cabbage +$0.60 | Adds 0 Cal
+L52: 
+L53: Guacamole +$1.15 | Adds 35 Cal
+L54: 
+L55: ### What's Included
+L56: 
+L57: Tomatoes
+L58: 
+L59: Lettuce
+L60: 
+L61: Reduced-Fat Sour Cream
+L62: 
+L63: Nacho Cheese Sauce
+L64: 
+L65: Black Beans
+--------------------------------------------------------------------------------
+Cheesy Roll Up | Taco Bell® (https://www.tacobell.com/food/specialties/cheesy-roll-up)
+citeturn102view5 [wordlim: 200] Crawled: yesterday; Content type: text/html; Source: open({"ref_id":"https://www.tacobell.com/food/specialties/cheesy-roll-up","lineno":null}); Total lines: 148
+L0: cite0†Menu cite1†Delivery cite2†Rewards cite3†Gift Cards L1: 
+L2: cite4†Purpose L3: 
+L4: cite5†Find a Nearby Bell L5: 
+L6: cite6†Download Our App†tblinks.tacobell.com L7: 
+L8: cite7†Sign Up cite8†Log in L9: 
+L10: cite9†$0.00 L11: 
+L12: #####
+L13: 
+L14: Subtotal Sales Tax
+L15: 
+L16: $0.00 Calculated At Checkout
+L17: 
+L18: cite9†View Bag & Checkout L19: 
+L20: cite0†Menu cite1†Delivery cite2†Rewards cite3†Gift Cards L21: 
+L22: cite4†Purpose L23: 
+L24: |
+L25: 
+L26: cite9†$0.00 L27: 
+L28: #####
+L29: 
+L30: Subtotal Sales Tax
+L31: 
+L32: $0.00 Calculated At Checkout
+L33: 
+L34: cite9†View Bag & Checkout L35: 
+L36: ### Make It Your Own
+L37: 
+L38: Make it Grilled Adds 0 Cal
+L39: 
+L40: Make it
+L41: 
+L42: Grilled
+L43: 
+L44: Get it grilled
+L45: ### Popular Upgrades
+L46: 
+L47: Pico De Gallo +$0.80 | Adds 0 Cal
+L48: 
+L49: Seasoned Beef +$1.00 | Adds 70 Cal
+L50: 
+L51: Seasoned Fries +$0.60 | Adds 120 Cal
+L52: 
+L53: ### What's Included
+L54: 
+L55: Three-Cheese Blend
+L56: ### Add Ons
+L57: 
+L58: Onions +$0.50 | Adds 0 Cal
+L59: 
+L60: Tomatoes +$0.80 | Adds 0 Cal
+L61: 
+L62: Lettuce +$0.60 | Adds 0 Cal
+L63: 
+L64: Cheese +$0.75 | Adds 110 Cal
+L65: 
+L66: Pico De Gallo +$0.80 | Adds 0 Cal
+L67: 
+L68: Jalapeño Peppers +$0.65 | Adds 5 Cal
+L69: 
+L70: Beans +$0.65 | Adds 60 Cal
+L71: 
+L72: Seasoned Beef +$1.00 | Adds 70 Cal
+L73: 
+L74: Chicken +$1.50 | Adds 45 Cal
+L75: 
+L76: Steak +$1.70 | Adds 60 Cal
+L77: 
+L78: Seasoned Fries +$0.60 | Adds 120 Cal
+L79: 
+L80: Purple Cabbage +$0.60 | Adds 0 Cal
+L81: 
+L82: Black Beans +$0.45 | Adds 50 Cal
+L83: 
+L84: Seasoned Rice +$0.60 | Adds 50 Cal
+L85: 
+L86: Slow-Roasted Chicken +$1.70 | Adds 60 Cal
+--------------------------------------------------------------------------------
+Milk Bar Birthday Cake Empanada | Taco Bell® (https://www.tacobell.com/food/sweets/milk-bar-birthday-cake-empanada)
+citeturn102view6 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://www.tacobell.com/food/sweets/milk-bar-birthday-cake-empanada","lineno":null}); Total lines: 84
+L0: cite0†Menu cite1†Delivery cite2†Rewards cite3†Gift Cards L1: 
+L2: cite4†Purpose L3: 
+L4: cite5†Find a Nearby Bell L5: 
+L6: cite6†Download Our App†tblinks.tacobell.com L7: 
+L8: cite7†Sign Up cite8†Log in L9: 
+L10: cite9†$0.00 L11: 
+L12: #####
+L13: 
+L14: Subtotal Sales Tax
+L15: 
+L16: $0.00 Calculated At Checkout
+L17: 
+L18: cite9†View Bag & Checkout L19: 
+L20: cite0†Menu cite1†Delivery cite2†Rewards cite3†Gift Cards L21: 
+L22: cite4†Purpose L23: 
+L24: |
+L25: 
+L26: cite9†$0.00 L27: 
+L28: #####
+L29: 
+L30: Subtotal Sales Tax
+L31: 
+L32: $0.00 Calculated At Checkout
+L33: 
+L34: cite9†View Bag & Checkout L35: ### You Might Also Like
+L36: 
+L37: cite10†Image: 5 Piece Crispy Chicken Nuggets L38: 
+L39: cite11†5 Piece Crispy Chicken Nuggets$4.49 | 540 Cal L40: 
+L41: cite12†Image: Large Nacho Fries L42: 
+L43: cite13†Large Nacho Fries$3.89 | 500 Cal L44: 
+L45: cite14†Image: Creamy Sriracha Chicken Nacho Fries L46: 
+L47: cite15†Creamy Sriracha Chicken Nacho Fries$5.49 | 500 Cal L48: 
+L49: cite16†Image: Medium Strawberry Dream Refresca L50: 
+L51: cite17†Medium Strawberry Dream Refresca$4.19 | 320 Cal L52: 
+L53: cite18†Image: Chips and Nacho Supreme Dip L54: 
+L55: cite19†Chips and Nacho Supreme Dip$2.49 | 360 Cal --------------------------------------------------------------------------------
+Veggie Bowl | Taco Bell® (https://www.tacobell.com/food/bowls/veggie-bowl)
+citeturn102view7 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://www.tacobell.com/food/bowls/veggie-bowl","lineno":null}); Total lines: 136
+L0: cite0†Menu cite1†Delivery cite2†Rewards cite3†Gift Cards L1: 
+L2: cite4†Purpose L3: 
+L4: cite5†Find a Nearby Bell L5: 
+L6: cite6†Download Our App†tblinks.tacobell.com L7: 
+L8: cite7†Sign Up cite8†Log in L9: 
+L10: cite9†$0.00 L11: 
+L12: #####
+L13: 
+L14: Subtotal Sales Tax
+L15: 
+L16: $0.00 Calculated At Checkout
+L17: 
+L18: cite9†View Bag & Checkout L19: 
+L20: cite0†Menu cite1†Delivery cite2†Rewards cite3†Gift Cards L21: 
+L22: cite4†Purpose L23: 
+L24: |
+L25: 
+L26: cite9†$0.00 L27: 
+L28: #####
+L29: 
+L30: Subtotal Sales Tax
+L31: 
+L32: $0.00 Calculated At Checkout
+L33: 
+L34: cite9†View Bag & Checkout L35: ### Popular Upgrades
+L36: 
+L37: Tomatoes +$0.80 | Adds 0 Cal
+L38: 
+L39: Jalapeño Peppers +$0.65 | Adds 5 Cal
+L40: 
+L41: Seasoned Fries +$0.60 | Adds 120 Cal
+L42: 
+L43: ### What's Included
+L44: 
+L45: Black Beans
+L46: 
+L47: Lettuce
+L48: 
+L49: Reduced-Fat Sour Cream
+L50: 
+L51: Cheese
+L52: 
+L53: Guacamole
+L54: 
+L55: Pico De Gallo
+L56: 
+L57: Avocado Ranch Sauce
+L58: 
+L59: Purple Cabbage
+L60: 
+L61: Seasoned Rice
+L62: ### Add Ons
+L63: 
+L64: Onions +$0.50 | Adds 0 Cal
+L65: 
+L66: Tomatoes +$0.80 | Adds 0 Cal
+L67: 
+L68: Jalapeño Peppers +$0.65 | Adds 5 Cal
+L69: 
+L70: Beans +$0.65 | Adds 120 Cal
+L71: 
+L72: Seasoned Beef +$1.00 | Adds 140 Cal
+L73: 
+L74: Three-Cheese Blend +$0.75 | Adds 45 Cal
+L75: 
+L76: Chicken +$1.50 | Adds 90 Cal
+L77: 
+L78: Steak +$1.70 | Adds 110 Cal
+L79: 
+L80: Seasoned Fries +$0.60 | Adds 120 Cal
+L81: 
+L82: Slow-Roasted Chicken +$1.70 | Adds 120 Cal
+L83: 
+L84: Fiesta Strips +$0.50 | Adds 80 Cal
+--------------------------------------------------------------------------------
+Cheese Quesadilla | Taco Bell® (https://www.tacobell.com/food/quesadillas/cheese-quesadilla)
+citeturn102view8 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://www.tacobell.com/food/quesadillas/cheese-quesadilla","lineno":null}); Total lines: 150
+L0: cite0†Menu cite1†Delivery cite2†Rewards cite3†Gift Cards L1: 
+L2: cite4†Purpose L3: 
+L4: cite5†Find a Nearby Bell L5: 
+L6: cite6†Download Our App†tblinks.tacobell.com L7: 
+L8: cite7†Sign Up cite8†Log in L9: 
+L10: cite9†$0.00 L11: 
+L12: #####
+L13: 
+L14: Subtotal Sales Tax
+L15: 
+L16: $0.00 Calculated At Checkout
+L17: 
+L18: cite9†View Bag & Checkout L19: 
+L20: cite0†Menu cite1†Delivery cite2†Rewards cite3†Gift Cards L21: 
+L22: cite4†Purpose L23: 
+L24: |
+L25: 
+L26: cite9†$0.00 L27: 
+L28: #####
+L29: 
+L30: Subtotal Sales Tax
+L31: 
+L32: $0.00 Calculated At Checkout
+L33: 
+L34: cite9†View Bag & Checkout L35: 
+L36: ### Make It Your Own
+L37: 
+L38: Make it Supreme +$0.90 | Adds 0 Cal
+L39: 
+L40: Make it
+L41: 
+L42: Supreme
+L43: 
+L44: Add sour cream and tomatoes
+L45: ### Popular Upgrades
+L46: 
+L47: Guacamole +$1.15 | Adds 35 Cal
+L48: 
+L49: Nacho Cheese Sauce +$1.00 | Adds 30 Cal
+L50: 
+L51: Spicy Ranch +$0.70 | Adds 70 Cal
+L52: 
+L53: Beans +$0.65 | Adds 60 Cal
+L54: 
+L55: ### What's Included
+L56: 
+L57: Three-Cheese Blend
+L58: 
+L59: Creamy Jalapeño Sauce
+L60: ### Add Ons
+L61: 
+L62: Onions +$0.50 | Adds 0 Cal
+L63: 
+L64: Tomatoes +$0.80 | Adds 0 Cal
+L65: 
+L66: Lettuce +$0.60 | Adds 0 Cal
+L67: 
+L68: Cheese +$0.75 | Adds 220 Cal
+L69: 
+L70: Pico De Gallo +$0.80 | Adds 0 Cal
+L71: 
+L72: Jalapeño Peppers +$0.65 | Adds 5 Cal
+L73: 
+L74: Beans +$0.65 | Adds 60 Cal
+L75: 
+--------------------------------------------------------------------------------
+Chips and Guacamole | Taco Bell® (https://www.tacobell.com/food/nachos/chips-and-guacamole)
+citeturn102view9 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://www.tacobell.com/food/nachos/chips-and-guacamole","lineno":null}); Total lines: 80
+L0: cite0†Menu cite1†Delivery cite2†Rewards cite3†Gift Cards L1: 
+L2: cite4†Purpose L3: 
+L4: cite5†Find a Nearby Bell L5: 
+L6: cite6†Download Our App†tblinks.tacobell.com L7: 
+L8: cite7†Sign Up cite8†Log in L9: 
+L10: cite9†$0.00 L11: 
+L12: #####
+L13: 
+L14: Subtotal Sales Tax
+L15: 
+L16: $0.00 Calculated At Checkout
+L17: 
+L18: cite9†View Bag & Checkout L19: 
+L20: cite0†Menu cite1†Delivery cite2†Rewards cite3†Gift Cards L21: 
+L22: cite4†Purpose L23: 
+L24: |
+L25: 
+L26: cite9†$0.00 L27: 
+L28: #####
+L29: 
+L30: Subtotal Sales Tax
+L31: 
+L32: $0.00 Calculated At Checkout
+L33: 
+L34: cite9†View Bag & Checkout L35: ### You Might Also Like
+L36: 
+L37: cite10†Image: Chips and Nacho Cheese Sauce L38: 
+L39: cite11†Chips and Nacho Cheese Sauce$2.99 | 220 Cal L40: 
+L41: cite12†Image: Soft Taco L42: 
+L43: cite13†Soft Taco$1.99 | 180 Cal L44: 
+L45: cite14†Image: Cheesy Roll Up L46: 
+L47: cite15†Cheesy Roll Up$1.39 | 170 Cal L48: 
+L49: cite16†Image: Cantina Chicken Crispy Taco L50: 
+L51: cite17†Cantina Chicken Crispy Taco$3.29 | 320 Cal L52: ## Chips And Guacamole
+L53: 
+L54: Warm-and-crispy tortilla chips with a side of guacamole made with Hass avocados to dip.
+--------------------------------------------------------------------------------
+Chips and Nacho Cheese Sauce | Taco Bell® (https://www.tacobell.com/food/nachos/chips-and-nacho-cheese-sauce)
+citeturn102view10 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://www.tacobell.com/food/nachos/chips-and-nacho-cheese-sauce","lineno":null}); Total lines: 80
+L0: cite0†Menu cite1†Delivery cite2†Rewards cite3†Gift Cards L1: 
+L2: cite4†Purpose L3: 
+L4: cite5†Find a Nearby Bell L5: 
+L6: cite6†Download Our App†tblinks.tacobell.com L7: 
+L8: cite7†Sign Up cite8†Log in L9: 
+L10: cite9†$0.00 L11: 
+L12: #####
+L13: 
+L14: Subtotal Sales Tax
+L15: 
+L16: $0.00 Calculated At Checkout
+L17: 
+L18: cite9†View Bag & Checkout L19: 
+L20: cite0†Menu cite1†Delivery cite2†Rewards cite3†Gift Cards L21: 
+L22: cite4†Purpose L23: 
+L24: |
+L25: 
+L26: cite9†$0.00 L27: 
+L28: #####
+L29: 
+L30: Subtotal Sales Tax
+L31: 
+L32: $0.00 Calculated At Checkout
+L33: 
+L34: cite9†View Bag & Checkout L35: ### You Might Also Like
+L36: 
+L37: cite10†Image: Soft Taco L38: 
+L39: cite11†Soft Taco$1.99 | 180 Cal L40: 
+L41: cite12†Image: Cheesy Roll Up L42: 
+L43: cite13†Cheesy Roll Up$1.39 | 170 Cal L44: 
+L45: cite14†Image: Chips and Guacamole L46: 
+L47: cite15†Chips and Guacamole$3.79 | 230 Cal L48: 
+L49: cite16†Image: Cantina Chicken Crispy Taco L50: 
+L51: cite17†Cantina Chicken Crispy Taco$3.29 | 320 Cal L52: ## Chips And Nacho Cheese Sauce
+L53: 
+L54: Warm-and-crispy tortilla chips with a side of warm nacho cheese sauce for dipping.
+--------------------------------------------------------------------------------
+Black Beans | Taco Bell® (https://www.tacobell.com/food/sides-sweets/black-beans)
+citeturn102view11 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://www.tacobell.com/food/sides-sweets/black-beans","lineno":null}); Total lines: 144
+L0: cite0†Menu cite1†Delivery cite2†Rewards cite3†Gift Cards L1: 
+L2: cite4†Purpose L3: 
+L4: cite5†Find a Nearby Bell L5: 
+L6: cite6†Download Our App†tblinks.tacobell.com L7: 
+L8: cite7†Sign Up cite8†Log in L9: 
+L10: cite9†$0.00 L11: 
+L12: #####
+L13: 
+L14: Subtotal Sales Tax
+L15: 
+L16: $0.00 Calculated At Checkout
+L17: 
+L18: cite9†View Bag & Checkout L19: 
+L20: cite0†Menu cite1†Delivery cite2†Rewards cite3†Gift Cards L21: 
+L22: cite4†Purpose L23: 
+L24: |
+L25: 
+L26: cite9†$0.00 L27: 
+L28: #####
+L29: 
+L30: Subtotal Sales Tax
+L31: 
+L32: $0.00 Calculated At Checkout
+L33: 
+L34: cite9†View Bag & Checkout L35: ### Popular Upgrades
+L36: 
+L37: Guacamole +$1.15 | Adds 35 Cal
+L38: 
+L39: Nacho Cheese Sauce +$1.00 | Adds 30 Cal
+L40: 
+L41: Onions +$0.50 | Adds 0 Cal
+L42: 
+L43: Jalapeño Peppers +$0.65 | Adds 5 Cal
+L44: 
+L45: ### What's Included
+L46: 
+L47: Black Beans
+L48: ### Add Ons
+L49: 
+L50: Onions +$0.50 | Adds 0 Cal
+L51: 
+L52: Tomatoes +$0.80 | Adds 0 Cal
+L53: 
+L54: Lettuce +$0.60 | Adds 0 Cal
+L55: 
+L56: Cheese +$0.75 | Adds 25 Cal
+L57: 
+L58: Pico De Gallo +$0.80 | Adds 0 Cal
+L59: 
+L60: Jalapeño Peppers +$0.65 | Adds 5 Cal
+L61: 
+L62: Beans +$0.65 | Adds 60 Cal
+L63: 
+L64: Seasoned Beef +$1.00 | Adds 70 Cal
+L65: 
+L66: Three-Cheese Blend +$0.75 | Adds 20 Cal
+L67: 
+L68: Chicken +$1.50 | Adds 45 Cal
+L69: 
+L70: Steak +$1.70 | Adds 60 Cal
+L71: 
+L72: Seasoned Fries +$0.60 | Adds 120 Cal
+L73: 
+L74: Purple Cabbage +$0.60 | Adds 0 Cal
+L75: 
+L76: Seasoned Rice +$0.60 | Adds 50 Cal
+

@@ -1,0 +1,151 @@
+Bean Burrito | Taco Bell® (https://www.tacobell.com/food/burritos/bean-burrito)
+citeturn127view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://www.tacobell.com/food/burritos/bean-burrito","lineno":null}); Total lines: 172
+L0: cite0†Menu cite1†Delivery cite2†Rewards cite3†Gift Cards L1: 
+L2: cite4†Purpose L3: 
+L4: cite5†Find a Nearby Bell L5: 
+L6: cite6†Download Our App†tblinks.tacobell.com L7: 
+L8: cite7†Sign Up cite8†Log in L9: 
+L10: cite9†$0.00 L11: 
+L12: #####
+L13: 
+L14: Subtotal Sales Tax
+L15: 
+L16: $0.00 Calculated At Checkout
+L17: 
+L18: cite9†View Bag & Checkout L19: 
+L20: cite0†Menu cite1†Delivery cite2†Rewards cite3†Gift Cards L21: 
+L22: cite4†Purpose L23: 
+L24: |
+L25: 
+L26: cite9†$0.00 L27: 
+L28: #####
+L29: 
+L30: Subtotal Sales Tax
+L31: 
+L32: $0.00 Calculated At Checkout
+L33: 
+L34: cite9†View Bag & Checkout L35: ### Make It Your Own
+L36: 
+L37: Make it Supreme +$0.90 | Adds 0 Cal
+L38: 
+L39: Make it
+L40: 
+L41: Supreme
+L42: 
+L43: Add sour cream and tomatoes
+L44: 
+L45: Make it Fresco Adds 0 Cal
+L46: 
+L47: Make it
+L48: 
+L49: Fresco
+L50: 
+L51: Replace dairy and mayo-sauces with pico de gallo
+L52: 
+L53: Make it Grilled Adds 0 Cal
+L54: 
+L55: Make it
+L56: 
+L57: Grilled
+L58: 
+L59: Get it grilled
+L60: 
+L61: ### Popular Upgrades
+L62: 
+L63: Reduced-Fat Sour Cream +$0.90 | Adds 20 Cal
+L64: 
+L65: Guacamole +$1.15 | Adds 35 Cal
+L66: 
+L67: Nacho Cheese Sauce +$1.00 | Adds 30 Cal
+L68: 
+L69: Tomatoes +$0.80 | Adds 0 Cal
+L70: 
+L71: Seasoned Rice +$0.60 | Adds 50 Cal
+L72: ### What's Included
+L73: 
+L74: Beans
+L75: 
+L76: Red Sauce
+L77: 
+L78: Onions
+L79: 
+L80: Cheese
+L81: ### Add Ons
+L82: 
+L83: Tomatoes +$0.80 | Adds 0 Cal
+L84: 
+L85: Lettuce +$0.60 | Adds 0 Cal
+L86: 
+L87: Pico De Gallo +$0.80 | Adds 0 Cal
+L88: 
+L89: Jalapeño Peppers +$0.65 | Adds 5 Cal
+L90: 
+L91: Seasoned Beef +$1.00 | Adds 70 Cal
+L92: 
+L93: Three-Cheese Blend +$0.75 | Adds 20 Cal
+L94: 
+L95: Chicken +$1.50 | Adds 45 Cal
+L96: 
+L97: Steak +$1.70 | Adds 60 Cal
+L98: 
+L99: Seasoned Fries +$0.60 | Adds 120 Cal
+L100: 
+L101: Purple Cabbage +$0.60 | Adds 0 Cal
+L102: 
+L103: Black Beans +$0.45 | Adds 100 Cal
+L104: 
+L105: Seasoned Rice +$0.60 | Adds 50 Cal
+L106: 
+L107: Slow-Roasted Chicken +$1.70 | Adds 60 Cal
+L108: 
+L109: Fiesta Strips +$0.50 | Adds 80 Cal
+L110: ### Sauces
+L111: 
+L112: Reduced-Fat Sour Cream +$0.90 | Adds 20 Cal
+L113: 
+L114: Guacamole +$1.15 | Adds 35 Cal
+L115: 
+L116: Creamy Jalapeño Sauce +$0.70 | Adds 60 Cal
+L117: 
+L118: Nacho Cheese Sauce +$1.00 | Adds 30 Cal
+L119: 
+L120: Chipotle Sauce +$0.65 | Adds 70 Cal
+L121: 
+L122: Mexican Pizza Sauce +$0.30 | Adds 10 Cal
+L123: 
+L124: Avocado Ranch Sauce +$0.65 | Adds 70 Cal
+L125: 
+L126: Spicy Ranch +$0.70 | Adds 70 Cal
+L127: ### You Might Also Like
+L128: 
+L129: cite10†Image: Cheesy Bean and Rice Burrito L130: 
+L131: cite11†Cheesy Bean and Rice Burrito$1.49 | 400 Cal L132: 
+L133: cite12†Image: Black Bean Crunchwrap Supreme® L134: 
+L135: cite13†Black Bean Crunchwrap Supreme®$5.99 | 520 Cal L136: 
+L137: cite14†Image: Black Beans and Rice L138: 
+L139: cite15†Black Beans and Rice$2.99 | 160 Cal L140: 
+L141: cite16†Image: Pintos N Cheese L142: 
+L143: cite17†Pintos N Cheese$2.99 | 170 Cal L144: ## Bean Burrito
+L145: 
+L146: A warm flour tortilla filled with refried beans, Red Sauce, diced onions, and shredded cheddar cheese.
+L147: cite18†Image American Vegetarian Association certified Vegetarian food items, are lacto-ovo, allowing consumption of dairy and eggs but not animal byproducts. We may use the same frying oil to prepare menu items that could contain meat. Vegetarian and meat ingredients are handled in common, and cross contact may occur, which may not be acceptable to certain types of vegetarian diets. Neither Taco Bell®, our employees, nor our franchisees, nor the AVA assume any responsibility for such cross contact.
+L148: ## Redeem exclusive rewards only on the app.
+L149: 
+L150: scan to Download
+L151: taco bell app!
+L152: 
+L153: cite19†Download app L154: 
+L155: ###### About us
+L156: 
+L157: cite20†About Taco Bell cite4†Purpose cite21†Nutrition cite5†Locations cite22†Offers & Deals cite23†Newsroom cite24†Stories cite25†Responsible Disclosure L158: 
+L159: ###### Explore
+L160: 
+L161: cite26†Mobile App cite3†Gift Cards cite2†Rewards cite1†Delivery cite27†Taco Shop†www.tacobelltacoshop.com L162: ###### Contact Us
+L163: 
+L164: cite28†Help & FAQs†help.tacobell.com cite29†Careers†jobs.tacobell.com cite30†Taco Bell Foundation†www.tacobellfoundation.org cite31†Franchise Information L165: 
+L166: At participating U.S. Taco Bell® locations. Contact restaurant for prices, hours & participation, which vary. Tax extra. 2,000 calories a day used for general nutrition advice, but calorie needs vary. Additional nutrition information available upon request.
+L167: cite32†Image: Taco Bell ©2026 Taco Bell IP Holder, LLC. All Rights Reserved. TACO BELL, the Bell logo, and other marks are the property of Taco Bell IP Holder, LLC. All other trademarks are the property of their respective owners.
+L168: 
+L169: * * *
+L170: 
+L171: cite33†Privacy Center cite34†Terms Of Use cite35†Accessibility Statement cite36†Do Not Sell or Share My Personal Information†privacy.tacobell.com 

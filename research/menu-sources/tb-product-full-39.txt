@@ -1,0 +1,153 @@
+Crunchwrap Supreme® | Taco Bell® (https://www.tacobell.com/food/specialties/crunchwrap-supreme)
+citeturn147view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://www.tacobell.com/food/specialties/crunchwrap-supreme","lineno":null}); Total lines: 177
+L0: cite0†Menu cite1†Delivery cite2†Rewards cite3†Gift Cards L1: 
+L2: cite4†Purpose L3: 
+L4: cite5†Find a Nearby Bell L5: 
+L6: cite6†Download Our App†tblinks.tacobell.com L7: 
+L8: cite7†Sign Up cite8†Log in L9: 
+L10: cite9†$0.00 L11: 
+L12: #####
+L13: 
+L14: Subtotal Sales Tax
+L15: 
+L16: $0.00 Calculated At Checkout
+L17: 
+L18: cite9†View Bag & Checkout L19: 
+L20: cite0†Menu cite1†Delivery cite2†Rewards cite3†Gift Cards L21: 
+L22: cite4†Purpose L23: 
+L24: |
+L25: 
+L26: cite9†$0.00 L27: 
+L28: #####
+L29: 
+L30: Subtotal Sales Tax
+L31: 
+L32: $0.00 Calculated At Checkout
+L33: 
+L34: cite9†View Bag & Checkout L35: ### Customer Creations
+L36: 
+L37: Kickin' Chicken Crunchwrap
+L38: 
+L39: Crunchwrap Supreme® swapped for Slow-Roasted Chicken, add Creamy Jalapeño Sauce, Jalapeño Peppers, Pico De Gallo and Potatoes, easy Reduced-Fat Sour Cream
+L40: 
+L41: cite10†Explore Loaded Beef Crunchwrap
+L42: 
+L43: Crunchwrap Supreme® with extra Seasoned Beef, add Chipotle Sauce, Seasoned Fries, no Tomatoes
+L44: 
+L45: cite11†Explore L46: ### Make It Your Own
+L47: 
+L48: Make it Fresco Adds 0 Cal
+L49: 
+L50: Make it
+L51: 
+L52: Fresco
+L53: 
+L54: Replace dairy and mayo-sauces with pico de gallo
+L55: 
+L56: Make it Grilled Adds 0 Cal
+L57: 
+L58: Make it
+L59: 
+L60: Grilled
+L61: 
+L62: Get it grilled
+L63: 
+L64: ### Popular Upgrades
+L65: 
+L66: Jalapeño Peppers +$0.65 | Adds 5 Cal
+L67: 
+L68: Beans +$0.65 | Adds 60 Cal
+L69: 
+L70: Guacamole +$1.15 | Adds 35 Cal
+L71: 
+L72: Creamy Jalapeño Sauce +$0.70 | Adds 60 Cal
+L73: 
+L74: ### What's Included
+L75: 
+L76: Seasoned Beef
+L77: 
+L78: Reduced-Fat Sour Cream
+L79: 
+L80: Nacho Cheese Sauce
+L81: 
+L82: Tomatoes
+L83: 
+L84: Lettuce
+L85: ### Add Ons
+L86: 
+L87: Seasoned Rice +$0.60 | Adds 50 Cal
+L88: 
+L89: Three-Cheese Blend +$0.75 | Adds 20 Cal
+L90: 
+L91: Jalapeño Peppers +$0.65 | Adds 5 Cal
+L92: 
+L93: Black Beans +$0.45 | Adds 50 Cal
+L94: 
+L95: Slow-Roasted Chicken +$1.70 | Adds 60 Cal
+L96: 
+L97: Fiesta Strips +$0.50 | Adds 80 Cal
+L98: 
+L99: Onions +$0.50 | Adds 0 Cal
+L100: 
+L101: Cheese +$0.75 | Adds 25 Cal
+L102: 
+L103: Pico De Gallo +$0.80 | Adds 0 Cal
+L104: 
+L105: Beans +$0.65 | Adds 60 Cal
+L106: 
+L107: Chicken +$1.50 | Adds 45 Cal
+L108: 
+L109: Steak +$1.70 | Adds 60 Cal
+L110: 
+L111: Seasoned Fries +$0.60 | Adds 120 Cal
+L112: 
+L113: Purple Cabbage +$0.60 | Adds 0 Cal
+L114: ### Sauces
+L115: 
+L116: Guacamole +$1.15 | Adds 35 Cal
+L117: 
+L118: Red Sauce +$0.45 | Adds 15 Cal
+L119: 
+L120: Creamy Jalapeño Sauce +$0.70 | Adds 60 Cal
+L121: 
+L122: Chipotle Sauce +$0.65 | Adds 70 Cal
+L123: 
+L124: Mexican Pizza Sauce +$0.30 | Adds 15 Cal
+L125: 
+L126: Avocado Ranch Sauce +$0.65 | Adds 70 Cal
+L127: 
+L128: Spicy Ranch +$0.70 | Adds 70 Cal
+L129: ### You Might Also Like
+L130: 
+L131: cite12†Image: Chalupa Supreme L132: 
+L133: cite13†Chalupa Supreme$5.79 | 350 Cal L134: 
+L135: cite14†Image: Soft Taco L136: 
+L137: cite15†Soft Taco$1.99 | 180 Cal L138: 
+L139: cite16†Image: Bean Burrito L140: 
+L141: cite17†Bean Burrito$1.99 | 360 Cal L142: 
+L143: cite18†Image: Cheesy Gordita Crunch L144: 
+L145: cite19†Cheesy Gordita Crunch$5.79 | 480 Cal L146: 
+L147: cite20†Image: Crunchwrap Supreme® Combo L148: 
+L149: cite21†Crunchwrap Supreme® Combo$9.49 | 700 Cal L150: ## Crunchwrap Supreme®
+L151: 
+L152: A warm flour tortilla filled with seasoned beef, warm Nacho Cheese sauce, a crispy tostada shell, lettuce, diced tomatoes, and reduced-fat sour cream folded into our signature Crunchwrap form and grilled to go
+L153: 
+L154: ## Redeem exclusive rewards only on the app.
+L155: 
+L156: scan to Download
+L157: taco bell app!
+L158: 
+L159: cite22†Download app L160: 
+L161: ###### About us
+L162: 
+L163: cite23†About Taco Bell cite4†Purpose cite24†Nutrition cite5†Locations cite25†Offers & Deals cite26†Newsroom cite27†Stories cite28†Responsible Disclosure L164: ###### Explore
+L165: 
+L166: cite29†Mobile App cite3†Gift Cards cite2†Rewards cite1†Delivery cite30†Taco Shop†www.tacobelltacoshop.com L167: ###### Contact Us
+L168: 
+L169: cite31†Help & FAQs†help.tacobell.com cite32†Careers†jobs.tacobell.com cite33†Taco Bell Foundation†www.tacobellfoundation.org cite34†Franchise Information L170: 
+L171: At participating U.S. Taco Bell® locations. Contact restaurant for prices, hours & participation, which vary. Tax extra. 2,000 calories a day used for general nutrition advice, but calorie needs vary. Additional nutrition information available upon request.
+L172: cite35†Image: Taco Bell ©2026 Taco Bell IP Holder, LLC. All Rights Reserved. TACO BELL, the Bell logo, and other marks are the property of Taco Bell IP Holder, LLC. All other trademarks are the property of their respective owners.
+L173: 
+L174: * * *
+L175: 
+L176: cite36†Privacy Center cite37†Terms Of Use cite38†Accessibility Statement cite39†Do Not Sell or Share My Personal Information†privacy.tacobell.com 

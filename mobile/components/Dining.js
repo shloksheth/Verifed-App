@@ -8,7 +8,7 @@ import {
   View,
 } from "react-native";
 import { api } from "../src/api";
-import { assessDish, rankDishes } from "../src/domain";
+import { assessDish } from "../src/domain";
 import { dietaryMenuStatus, groupMenu } from "../src/menu-filter";
 import { colors, s } from "../styles";
 import AllergenIcons, {
@@ -363,7 +363,13 @@ function RestaurantPhoto({ restaurant, style, credit = false }) {
   );
 }
 
-function RestaurantRow({ restaurant, state, navigate, featured = false }) {
+export function RestaurantRow({
+  restaurant,
+  state,
+  navigate,
+  featured = false,
+  onPress,
+}) {
   const items = state.dishes.filter(
     (dish) => dish.restaurantId === restaurant.id,
   );
@@ -377,7 +383,7 @@ function RestaurantRow({ restaurant, state, navigate, featured = false }) {
     <Pressable
       accessibilityRole="button"
       accessibilityLabel={`${restaurant.name}, ${restaurant.location}, ${items.length} menu entries`}
-      onPress={() => navigate(`restaurant/${restaurant.id}`)}
+      onPress={onPress || (() => navigate(`restaurant/${restaurant.id}`))}
       style={({ pressed }) => [
         featured ? s.featuredRestaurant : s.restaurantRow,
         pressed && { opacity: 0.8 },
@@ -473,7 +479,7 @@ export function Home({ state, navigate }) {
         <View style={s.homePhotoCaption}>
           <View style={s.flex}>
             <Text style={s.homePhotoEyebrow}>
-              {restaurants.length} RESTAURANTS · {totalItems} MENU ENTRIES
+              {restaurants.length} LOCATIONS · {totalItems} MENU ENTRIES
             </Text>
             <Text style={s.homePhotoTitle}>Good food starts here.</Text>
           </View>
@@ -577,192 +583,6 @@ export function DemoButton({ navigate }) {
         Try the local demo
       </Button>
       <ErrorText error={task.error} />
-    </>
-  );
-}
-
-export function Explore({ state, navigate }) {
-  const [query, setQuery] = useState("");
-  const [tab, setTab] = useState("restaurants");
-  const [cuisine, setCuisine] = useState("All");
-  const [hideConflicts, setHideConflicts] = useState(false);
-  const [visibleCount, setVisibleCount] = useState(30);
-  const restaurants = state.restaurants.filter(isLocal);
-  const cuisines = [
-    "All",
-    ...new Set(
-      restaurants.map((restaurant) => restaurant.cuisine).filter(Boolean),
-    ),
-  ];
-  const located = restaurants.filter(
-    (restaurant) => cuisine === "All" || restaurant.cuisine === cuisine,
-  );
-  const ids = new Set(located.map((restaurant) => restaurant.id));
-  const catalogDishes = state.dishes.filter((dish) =>
-    ids.has(dish.restaurantId),
-  );
-  const search = query.trim().toLowerCase();
-  const matchesSearch = (dish) => {
-    const restaurant = located.find((item) => item.id === dish.restaurantId);
-    return [
-      dish.name,
-      dish.description,
-      restaurant?.name,
-      restaurant?.location,
-      ...(dish.tags || []),
-    ]
-      .join(" ")
-      .toLowerCase()
-      .includes(search);
-  };
-  const dishes = rankDishes(
-    catalogDishes.filter(
-      (dish) =>
-        matchesSearch(dish) &&
-        (!hideConflicts ||
-          assessDish(dish, state.profile, state.meals).level !== "conflict"),
-    ),
-    state.profile,
-    state.meals,
-  );
-  const visibleRestaurants = located.filter(
-    (restaurant) =>
-      [
-        restaurant.name,
-        restaurant.address,
-        restaurant.location,
-        restaurant.cuisine,
-      ]
-        .join(" ")
-        .toLowerCase()
-        .includes(search) ||
-      catalogDishes.some(
-        (dish) => dish.restaurantId === restaurant.id && matchesSearch(dish),
-      ),
-  );
-  return (
-    <>
-      <Title eyebrow="The local menu club" title="Find your next table.">
-        {restaurants.length} Orlando restaurants. Explore the food, then make
-        the menu yours.
-      </Title>
-      <Field
-        label="Search restaurants & menus"
-        value={query}
-        onChangeText={(value) => {
-          setQuery(value);
-          setVisibleCount(30);
-        }}
-        placeholder="Try bowls, Hawkers, or Waterford…"
-        clearButtonMode="while-editing"
-      />
-      <ScrollView
-        horizontal
-        showsHorizontalScrollIndicator={false}
-        contentContainerStyle={s.cuisineRail}
-      >
-        {cuisines.map((value) => (
-          <Pressable
-            key={value}
-            accessibilityRole="button"
-            accessibilityState={{ selected: cuisine === value }}
-            aria-pressed={cuisine === value}
-            onPress={() => {
-              setCuisine(value);
-              setVisibleCount(30);
-            }}
-            style={[s.cuisineChip, cuisine === value && s.cuisineChipActive]}
-          >
-            <Text
-              style={[
-                s.cuisineChipText,
-                cuisine === value && { color: colors.paper },
-              ]}
-            >
-              {value === "All" ? "All cuisines" : value}
-            </Text>
-          </Pressable>
-        ))}
-      </ScrollView>
-      <Tabs
-        options={[
-          { value: "restaurants", label: "Restaurants" },
-          { value: "items", label: "Menu items" },
-        ]}
-        value={tab}
-        onChange={setTab}
-      />
-      {tab === "restaurants" ? (
-        <Section title={`${visibleRestaurants.length} places to explore`}>
-          {visibleRestaurants.map((restaurant) => (
-            <RestaurantRow
-              key={restaurant.id}
-              {...{ restaurant, state, navigate }}
-            />
-          ))}
-          {!visibleRestaurants.length && (
-            <Empty
-              title="No tables found"
-              action="Clear search"
-              onPress={() => {
-                setQuery("");
-                setCuisine("All");
-              }}
-            >
-              Try another restaurant, food, or neighborhood.
-            </Empty>
-          )}
-        </Section>
-      ) : (
-        <>
-          <Pressable
-            accessibilityRole="checkbox"
-            accessibilityState={{ checked: hideConflicts }}
-            aria-checked={hideConflicts}
-            style={s.row}
-            onPress={() => {
-              setHideConflicts(!hideConflicts);
-              setVisibleCount(30);
-            }}
-          >
-            <Icon
-              name={hideConflicts ? "checkbox" : "square-outline"}
-              color={colors.green}
-            />
-            <Text style={s.body}>Hide known dietary conflicts</Text>
-          </Pressable>
-          <Text style={s.small}>
-            Unknown information remains visible. Open a restaurant's “For my
-            diet” menu for explicitly supported matches.
-          </Text>
-          <Section title={`${dishes.length} menu entries`}>
-            {dishes.slice(0, visibleCount).map((dish) => (
-              <DishCard key={dish.id} {...{ dish, state, navigate }} />
-            ))}
-            {dishes.length > visibleCount && (
-              <Button
-                variant="secondary"
-                onPress={() => setVisibleCount((count) => count + 30)}
-              >
-                Show 30 more
-              </Button>
-            )}
-            {!dishes.length && (
-              <Empty
-                title="No items found"
-                action="Clear filters"
-                onPress={() => {
-                  setQuery("");
-                  setCuisine("All");
-                  setHideConflicts(false);
-                }}
-              >
-                Try another food or cuisine.
-              </Empty>
-            )}
-          </Section>
-        </>
-      )}
     </>
   );
 }
@@ -1338,7 +1158,7 @@ export function DishDetail({ id, state, navigate, openSheet }) {
       {!!restaurant && (
         <Button
           variant="quiet"
-          onPress={() => navigate(`restaurant/${restaurant.id}`)}
+          onPress={onPress || (() => navigate(`restaurant/${restaurant.id}`))}
         >
           View restaurant and full source links
         </Button>

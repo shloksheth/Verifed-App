@@ -1,0 +1,125 @@
+Grilled Cheese Burrito | Taco Bell® (https://www.tacobell.com/food/burritos/grilled-cheese-burrito)
+citeturn126view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://www.tacobell.com/food/burritos/grilled-cheese-burrito","lineno":null}); Total lines: 145
+L0: cite0†Menu cite1†Delivery cite2†Rewards cite3†Gift Cards L1: 
+L2: cite4†Purpose L3: 
+L4: cite5†Find a Nearby Bell L5: 
+L6: cite6†Download Our App†tblinks.tacobell.com L7: 
+L8: cite7†Sign Up cite8†Log in L9: 
+L10: cite9†$0.00 L11: 
+L12: #####
+L13: 
+L14: Subtotal Sales Tax
+L15: 
+L16: $0.00 Calculated At Checkout
+L17: 
+L18: cite9†View Bag & Checkout L19: 
+L20: cite0†Menu cite1†Delivery cite2†Rewards cite3†Gift Cards L21: 
+L22: cite4†Purpose L23: 
+L24: |
+L25: 
+L26: cite9†$0.00 L27: 
+L28: #####
+L29: 
+L30: Subtotal Sales Tax
+L31: 
+L32: $0.00 Calculated At Checkout
+L33: 
+L34: cite9†View Bag & Checkout L35: ### Customer Creations
+L36: 
+L37: Spicy Grilled Cheese Chicken Burrito
+L38: 
+L39: Grilled Cheese Burrito Seasoned Beef swapped for Slow-Roasted Chicken, add Onions and Jalapeño Peppers
+L40: 
+L41: cite10†Explore Steak & Fries Grilled Cheese Burrito
+L42: 
+L43: Grilled Cheese Burrito Seasoned Beef swapped for Steak, add Seasoned Fries, Guacamole, Pico De Gallo.
+L44: 
+L45: cite11†Explore L46: 
+L47: ### Popular Upgrades
+L48: 
+L49: Guacamole +$1.15 | Adds 35 Cal
+L50: 
+L51: Tomatoes +$0.80 | Adds 0 Cal
+L52: 
+L53: Jalapeño Peppers +$0.65 | Adds 5 Cal
+L54: ### What's Included
+L55: 
+L56: Seasoned Beef
+L57: 
+L58: Reduced-Fat Sour Cream
+L59: 
+L60: Three-Cheese Blend
+L61: 
+L62: Nacho Cheese Sauce
+L63: 
+L64: Chipotle Sauce
+L65: 
+L66: Seasoned Rice
+L67: 
+L68: Fiesta Strips
+L69: ### Add Ons
+L70: 
+L71: Onions +$0.50 | Adds 0 Cal
+L72: 
+L73: Tomatoes +$0.80 | Adds 0 Cal
+L74: 
+L75: Lettuce +$0.60 | Adds 0 Cal
+L76: 
+L77: Cheese +$0.75 | Adds 60 Cal
+L78: 
+L79: Pico De Gallo +$0.80 | Adds 0 Cal
+L80: 
+L81: Jalapeño Peppers +$0.65 | Adds 5 Cal
+L82: 
+L83: Beans +$0.65 | Adds 60 Cal
+L84: 
+L85: Seasoned Fries +$0.60 | Adds 120 Cal
+L86: 
+L87: Purple Cabbage +$0.60 | Adds 0 Cal
+L88: 
+L89: Black Beans +$0.45 | Adds 50 Cal
+L90: 
+L91: Slow-Roasted Chicken +$1.70 | Adds 60 Cal
+L92: ### Sauces
+L93: 
+L94: Guacamole +$1.15 | Adds 35 Cal
+L95: 
+L96: Red Sauce +$0.45 | Adds 10 Cal
+L97: 
+L98: Creamy Jalapeño Sauce +$0.70 | Adds 60 Cal
+L99: 
+L100: Mexican Pizza Sauce +$0.30 | Adds 10 Cal
+L101: 
+L102: Avocado Ranch Sauce +$0.65 | Adds 70 Cal
+L103: 
+L104: Spicy Ranch +$0.70 | Adds 70 Cal
+L105: ### You Might Also Like
+L106: 
+L107: cite12†Image: Black Bean Grilled Cheese Burrito - Black Beans L108: 
+L109: cite13†Black Bean Grilled Cheese Burrito - Black Beans$5.39 | 680 Cal L110: 
+L111: cite14†Image: Cantina Chicken Burrito L112: 
+L113: cite15†Cantina Chicken Burrito$6.29 | 570 Cal L114: 
+L115: cite16†Image: Cantina Chicken Crispy Taco L116: 
+L117: cite17†Cantina Chicken Crispy Taco$3.29 | 320 Cal L118: ## Grilled Cheese Burrito
+L119: 
+L120: A warm flour tortilla with seasoned beef, warm Nacho Cheese sauce, seasoned rice, crunchy fiesta strips, Creamy Chipotle sauce, reduced-fat sour cream, and a blend of mozzarella, pepperjack, and cheddar cheeses with even more cheese grilled on the top.
+L121: 
+L122: ## Redeem exclusive rewards only on the app.
+L123: 
+L124: scan to Download
+L125: taco bell app!
+L126: 
+L127: cite18†Download app L128: ###### About us
+L129: 
+L130: cite19†About Taco Bell cite4†Purpose cite20†Nutrition cite5†Locations cite21†Offers & Deals cite22†Newsroom cite23†Stories cite24†Responsible Disclosure L131: 
+L132: ###### Explore
+L133: 
+L134: cite25†Mobile App cite3†Gift Cards cite2†Rewards cite1†Delivery cite26†Taco Shop†www.tacobelltacoshop.com L135: ###### Contact Us
+L136: 
+L137: cite27†Help & FAQs†help.tacobell.com cite28†Careers†jobs.tacobell.com cite29†Taco Bell Foundation†www.tacobellfoundation.org cite30†Franchise Information L138: 
+L139: At participating U.S. Taco Bell® locations. Contact restaurant for prices, hours & participation, which vary. Tax extra. 2,000 calories a day used for general nutrition advice, but calorie needs vary. Additional nutrition information available upon request.
+L140: cite31†Image: Taco Bell ©2026 Taco Bell IP Holder, LLC. All Rights Reserved. TACO BELL, the Bell logo, and other marks are the property of Taco Bell IP Holder, LLC. All other trademarks are the property of their respective owners.
+L141: 
+L142: * * *
+L143: 
+L144: cite32†Privacy Center cite33†Terms Of Use cite34†Accessibility Statement cite35†Do Not Sell or Share My Personal Information†privacy.tacobell.com 

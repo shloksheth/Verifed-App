@@ -3,7 +3,8 @@ import { localRestaurants, localDishes } from "../verifed-mobile/src/local-catal
 
 // This file prepares SQL for the connected database tool. It holds public menu
 // facts only. UUIDs are allocated by Postgres, never guessed in application code.
-const selected = process.argv[2];
+const metadataOnly = process.argv[2] === "--metadata";
+const selected = metadataOnly ? null : process.argv[2];
 const offset = Number(process.argv[3] || 0);
 const size = Number(process.argv[4] || Number.MAX_SAFE_INTEGER);
 if (!Number.isSafeInteger(offset) || offset < 0 || !Number.isSafeInteger(size) || size < 1)
@@ -11,7 +12,7 @@ if (!Number.isSafeInteger(offset) || offset < 0 || !Number.isSafeInteger(size) |
 if (selected && !localRestaurants.some((restaurant) => restaurant.slug === selected))
   throw new Error("Unknown restaurant selection.");
 const restaurantRows = localRestaurants.filter((restaurant) => !selected || restaurant.slug === selected);
-const dishRows = localDishes.filter((dish) => !selected || dish.restaurantId === selected).slice(offset, offset + size);
+const dishRows = metadataOnly ? [] : localDishes.filter((dish) => !selected || dish.restaurantId === selected).slice(offset, offset + size);
 const restaurants = JSON.stringify(restaurantRows);
 const dishes = JSON.stringify(dishRows);
 const sql = `begin;
@@ -35,5 +36,5 @@ commit;
 select r.slug,count(d.id) as menu_entries,r.confirmed,r.fictional from public.restaurants r
 join public.dishes d on d.restaurant_id=r.id where not r.fictional group by r.id order by r.slug;
 `;
-await writeFile(new URL(`./orlando-catalog-seed${selected ? '-' + selected : ''}${process.argv[3] ? '-part' + offset : ''}.sql`, import.meta.url), sql);
+await writeFile(new URL(`./orlando-catalog-seed${metadataOnly ? '-metadata' : selected ? '-' + selected : ''}${process.argv[3] ? '-part' + offset : ''}.sql`, import.meta.url), sql);
 console.log("Prepared public catalog seed: " + restaurantRows.length + " restaurants, " + dishRows.length + " entries.");

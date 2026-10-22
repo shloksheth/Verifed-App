@@ -1,0 +1,57 @@
+Large Nacho Fries | Taco Bell® (https://www.tacobell.com/food/deals-and-combos/large-nacho-fries)
+citeturn142view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://www.tacobell.com/food/deals-and-combos/large-nacho-fries","lineno":null}); Total lines: 76
+L0: cite0†Menu cite1†Delivery cite2†Rewards cite3†Gift Cards L1: 
+L2: cite4†Purpose L3: 
+L4: cite5†Find a Nearby Bell L5: 
+L6: cite6†Download Our App†tblinks.tacobell.com L7: 
+L8: cite7†Sign Up cite8†Log in L9: 
+L10: cite9†$0.00 L11: 
+L12: #####
+L13: 
+L14: Subtotal Sales Tax
+L15: 
+L16: $0.00 Calculated At Checkout
+L17: 
+L18: cite9†View Bag & Checkout L19: 
+L20: cite10†Menu cite1†Delivery cite2†Rewards cite3†Gift Cards L21: 
+L22: cite4†Purpose L23: 
+L24: |
+L25: 
+L26: cite9†$0.00 L27: 
+L28: #####
+L29: 
+L30: Subtotal Sales Tax
+L31: 
+L32: $0.00 Calculated At Checkout
+L33: 
+L34: cite9†View Bag & Checkout L35: ### You Might Also Like
+L36: 
+L37: cite11†Image: Chips and Nacho Cheese Sauce L38: 
+L39: cite12†Chips and Nacho Cheese Sauce$2.59 | 220 Cal L40: 
+L41: cite13†Image: Nacho Fries L42: 
+L43: cite14†Nacho Fries$2.69 | 350 Cal L44: 
+L45: cite15†Image: Cinnabon Delights® 2 Pack L46: 
+L47: cite16†Cinnabon Delights® 2 Pack$2.29 | 170 Cal L48: ## Large Nacho Fries
+L49: 
+L50: Crispy Nacho Fries and nacho cheese sauce to dip.
+L51: cite17†Image American Vegetarian Association certified Vegetarian food items, are lacto-ovo, allowing consumption of dairy and eggs but not animal byproducts. We may use the same frying oil to prepare menu items that could contain meat. Vegetarian and meat ingredients are handled in common, and cross contact may occur, which may not be acceptable to certain types of vegetarian diets. Neither Taco Bell®, our employees, nor our franchisees, nor the AVA assume any responsibility for such cross contact.
+L52: ## Redeem exclusive rewards only on the app.
+L53: 
+L54: scan to Download
+L55: taco bell app!
+L56: 
+L57: cite18†Download app L58: 
+L59: ###### About us
+L60: 
+L61: cite19†About Taco Bell cite4†Purpose cite20†Nutrition cite5†Locations cite21†Offers & Deals cite22†Newsroom cite23†Stories cite24†Responsible Disclosure L62: 
+L63: ###### Explore
+L64: 
+L65: cite25†Mobile App cite3†Gift Cards cite2†Rewards cite1†Delivery cite26†Taco Shop†www.tacobelltacoshop.com L66: ###### Contact Us
+L67: 
+L68: cite27†Help & FAQs†help.tacobell.com cite28†Careers†jobs.tacobell.com cite29†Taco Bell Foundation†www.tacobellfoundation.org cite30†Franchise Information L69: 
+L70: At participating U.S. Taco Bell® locations. Contact restaurant for prices, hours & participation, which vary. Tax extra. 2,000 calories a day used for general nutrition advice, but calorie needs vary. Additional nutrition information available upon request.
+L71: cite31†Image: Taco Bell ©2026 Taco Bell IP Holder, LLC. All Rights Reserved. TACO BELL, the Bell logo, and other marks are the property of Taco Bell IP Holder, LLC. All other trademarks are the property of their respective owners.
+L72: 
+L73: * * *
+L74: 
+L75: cite32†Privacy Center cite33†Terms Of Use cite34†Accessibility Statement cite35†Do Not Sell or Share My Personal Information†privacy.tacobell.com 

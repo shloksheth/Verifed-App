@@ -1,6 +1,6 @@
 import { readFile, writeFile, mkdir } from "node:fs/promises";
 const root = new URL("./", import.meta.url);
-const extra = JSON.parse(await readFile(new URL('expanded-restaurants.json', root), 'utf8'));
+const extra = JSON.parse(await readFile(new URL(process.argv[2] || 'expanded-restaurants.json', root), 'utf8'));
 const locations = Array.isArray(extra) ? extra : extra.restaurants;
 await mkdir(new URL('district-evidence/', root), { recursive: true });
 for (const restaurant of locations) {

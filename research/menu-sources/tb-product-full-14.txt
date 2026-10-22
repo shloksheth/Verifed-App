@@ -1,0 +1,136 @@
+Chili Cheese Burrito | Taco Bell® (https://www.tacobell.com/food/burritos/chili-cheese-burrito)
+citeturn123view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://www.tacobell.com/food/burritos/chili-cheese-burrito","lineno":null}); Total lines: 151
+L0: cite0†Menu cite1†Delivery cite2†Rewards cite3†Gift Cards L1: 
+L2: cite4†Purpose L3: 
+L4: cite5†Find a Nearby Bell L5: 
+L6: cite6†Download Our App†tblinks.tacobell.com L7: 
+L8: cite7†Sign Up cite8†Log in L9: 
+L10: cite9†$0.00 L11: 
+L12: #####
+L13: 
+L14: Subtotal Sales Tax
+L15: 
+L16: $0.00 Calculated At Checkout
+L17: 
+L18: cite9†View Bag & Checkout L19: 
+L20: cite0†Menu cite1†Delivery cite2†Rewards cite3†Gift Cards L21: 
+L22: cite4†Purpose L23: 
+L24: |
+L25: 
+L26: cite9†$0.00 L27: 
+L28: #####
+L29: 
+L30: Subtotal Sales Tax
+L31: 
+L32: $0.00 Calculated At Checkout
+L33: 
+L34: cite9†View Bag & Checkout L35: ### Make It Your Own
+L36: 
+L37: Make it Supreme +$0.90 | Adds 0 Cal
+L38: 
+L39: Make it
+L40: 
+L41: Supreme
+L42: 
+L43: Add sour cream and tomatoes
+L44: 
+L45: Make it Grilled Adds 0 Cal
+L46: 
+L47: Make it
+L48: 
+L49: Grilled
+L50: 
+L51: Get it grilled
+L52: 
+L53: ### Popular Upgrades
+L54: 
+L55: Reduced-Fat Sour Cream +$0.90 | Adds 20 Cal
+L56: 
+L57: Onions +$0.50 | Adds 0 Cal
+L58: 
+L59: Tomatoes +$0.80 | Adds 0 Cal
+L60: 
+L61: Jalapeño Peppers +$0.65 | Adds 5 Cal
+L62: 
+L63: ### What's Included
+L64: 
+L65: Cheese
+L66: ### Add Ons
+L67: 
+L68: Onions +$0.50 | Adds 0 Cal
+L69: 
+L70: Tomatoes +$0.80 | Adds 0 Cal
+L71: 
+L72: Lettuce +$0.60 | Adds 0 Cal
+L73: 
+L74: Pico De Gallo +$0.80 | Adds 0 Cal
+L75: 
+L76: Jalapeño Peppers +$0.65 | Adds 5 Cal
+L77: 
+L78: Beans +$0.65 | Adds 60 Cal
+L79: 
+L80: Seasoned Beef +$1.00 | Adds 70 Cal
+L81: 
+L82: Three-Cheese Blend +$0.75 | Adds 20 Cal
+L83: 
+L84: Chicken +$1.50 | Adds 45 Cal
+L85: 
+L86: Steak +$1.70 | Adds 60 Cal
+L87: 
+L88: Seasoned Fries +$0.60 | Adds 120 Cal
+L89: 
+L90: Purple Cabbage +$0.60 | Adds 0 Cal
+L91: 
+L92: Black Beans +$0.45 | Adds 50 Cal
+L93: 
+L94: Seasoned Rice +$0.60 | Adds 50 Cal
+L95: Slow-Roasted Chicken +$1.70 | Adds 60 Cal
+L96: 
+L97: Fiesta Strips +$0.50 | Adds 80 Cal
+L98: ### Sauces
+L99: 
+L100: Reduced-Fat Sour Cream +$0.90 | Adds 20 Cal
+L101: 
+L102: Guacamole +$1.15 | Adds 35 Cal
+L103: 
+L104: Red Sauce +$0.45 | Adds 10 Cal
+L105: 
+L106: Creamy Jalapeño Sauce +$0.70 | Adds 60 Cal
+L107: 
+L108: Nacho Cheese Sauce +$1.00 | Adds 30 Cal
+L109: 
+L110: Chipotle Sauce +$0.65 | Adds 70 Cal
+L111: 
+L112: Mexican Pizza Sauce +$0.30 | Adds 10 Cal
+L113: 
+L114: Avocado Ranch Sauce +$0.65 | Adds 70 Cal
+L115: 
+L116: Spicy Ranch +$0.70 | Adds 70 Cal
+L117: 
+L118: ### You Might Also Like
+L119: 
+L120: cite10†Image: Large Nacho Fries L121: 
+L122: cite11†Large Nacho Fries$3.89 | 500 Cal L123: ## Chili Cheese Burrito
+L124: 
+L125: A warm flour tortilla filled with savory beef chili and shredded cheddar cheese – wrapped up to go.
+L126: 
+L127: ## Redeem exclusive rewards only on the app.
+L128: 
+L129: scan to Download
+L130: taco bell app!
+L131: 
+L132: cite12†Download app L133: 
+L134: ###### About us
+L135: 
+L136: cite13†About Taco Bell cite4†Purpose cite14†Nutrition cite5†Locations cite15†Offers & Deals cite16†Newsroom cite17†Stories cite18†Responsible Disclosure L137: 
+L138: ###### Explore
+L139: 
+L140: cite19†Mobile App cite3†Gift Cards cite2†Rewards cite1†Delivery cite20†Taco Shop†www.tacobelltacoshop.com L141: ###### Contact Us
+L142: 
+L143: cite21†Help & FAQs†help.tacobell.com cite22†Careers†jobs.tacobell.com cite23†Taco Bell Foundation†www.tacobellfoundation.org cite24†Franchise Information L144: 
+L145: At participating U.S. Taco Bell® locations. Contact restaurant for prices, hours & participation, which vary. Tax extra. 2,000 calories a day used for general nutrition advice, but calorie needs vary. Additional nutrition information available upon request.
+L146: cite25†Image: Taco Bell ©2026 Taco Bell IP Holder, LLC. All Rights Reserved. TACO BELL, the Bell logo, and other marks are the property of Taco Bell IP Holder, LLC. All other trademarks are the property of their respective owners.
+L147: 
+L148: * * *
+L149: 
+L150: cite26†Privacy Center cite27†Terms Of Use cite28†Accessibility Statement cite29†Do Not Sell or Share My Personal Information†privacy.tacobell.com 

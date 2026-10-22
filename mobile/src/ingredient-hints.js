@@ -3,7 +3,7 @@
 const direct = [
   [
     "Milk",
-    /\b(?:milk|dairy|gouda|manchego|stracciatella|mascarpone|provolone|crema|crème fraîche|queso fresco|cheddar|feta|parmesan|pecorino|mozzarella|ricotta|burrata|gorgonzola|cotija|buttermilk|whey|yogurt|sour cream|heavy cream|cream cheese|goat cheese)\b/i,
+    /\b(?:milk|dairy|gouda|manchego|stracciatella|mascarpone|provolone|crema|crème fraîche|queso fresco|cheddar|feta|parmesan|pecorino|mozzarella|ricotta|burrata|gorgonzola|cotija|paneer|ghee|curd|khoya|buttermilk|whey|yogurt|yoghurt|sour cream|heavy cream|cream cheese|goat cheese)\b/i,
   ],
   ["Egg", /\b(?:eggs?|omelet|omelette|egg yolks?|egg whites?)\b/i],
   [
@@ -17,7 +17,7 @@ const direct = [
   ],
   ["Peanuts", /\bpeanuts?\b/i],
   ["Wheat", /\b(?:wheat|seitan|semolina|bulgur|couscous)\b/i],
-  ["Soy", /\b(?:soy|soy sauce|soybeans?|edamame|tofu|miso|tempeh)\b/i],
+  ["Soy", /\b(?:soy|soya|soy sauce|soybeans?|edamame|tofu|miso|tempeh)\b/i],
   ["Sesame", /\b(?:sesame|tahini)\b/i],
 ];
 const uncertain = [
@@ -32,7 +32,7 @@ const uncertain = [
   ],
   [
     "Wheat",
-    /\b(?:bread|bun|buns|brioche|pasta|pizza|biscuit|biscuits|flour tortilla|flour tortillas|panko|battered|breaded|focaccia|croissant|naan|pita|dumplings?|wontons?|ramen|udon|tempura|flour|cake|cookies?|crackers?|croutons?|tortellini|rigatoni|spaghetti|pappardelle|bucatini|paccheri|gnocchi|fettuccine|macaroni|calzone|pastry|brownie|blondie|pretzel|toast|rye|lavash)\b/i,
+    /\b(?:bread|breadcrumbs|chapati|roti|paratha|poori|bun|buns|brioche|pasta|pizza|biscuit|biscuits|flour tortilla|flour tortillas|panko|battered|breaded|focaccia|croissant|naan|pita|dumplings?|wontons?|ramen|udon|tempura|flour|cake|cookies?|crackers?|croutons?|tortellini|rigatoni|spaghetti|pappardelle|bucatini|paccheri|gnocchi|fettuccine|macaroni|calzone|pastry|brownie|blondie|pretzel|toast|rye|lavash)\b/i,
   ],
 ];
 const meatOrFish =
@@ -46,6 +46,7 @@ export function ingredientHints(item) {
   // A plant-based substitute must not inherit the animal ingredient's risk.
   const cleaned = text
     .replace(/\b(?:king\s+)?oyster mushrooms?\b/gi, "mushrooms")
+    .replace(/\bFish[’\']s Gold\b/gi, "house sauce")
     .replace(/\+\s*[^.;·]*?\d+(?:\.\d+)?/gi, "")
     .replace(/\b(?:add|optional)\s+[^.;·]*/gi, "")
     .replace(

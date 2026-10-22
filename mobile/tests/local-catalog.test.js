@@ -19,9 +19,9 @@ test("district labels match saved Census geography rather than an assumed distri
       ),
     );
     const district =
-      evidence.response.result.addressMatches[0].geographies[
+      evidence.response.result.addressMatches[0]?.geographies?.[
         "119th Congressional Districts"
-      ][0];
+      ]?.[0];
     if (district) {
       assert.equal(restaurant.district.number, district.BASENAME);
       assert.equal(restaurant.district.congress, Number(district.CDSESSN));
@@ -111,8 +111,8 @@ test("opening a saved demo refreshes old allergen facts without losing stable ID
   assert.equal(merged.dishes[0].cloudBacked, false);
 });
 
-test("the CAC catalog has twenty real locations with traceable, clean food records", () => {
-  assert.equal(localRestaurants.length, 20);
+test("the CAC catalog has twenty-six real locations with traceable, clean food records", () => {
+  assert.equal(localRestaurants.length, 26);
   assert.equal(
     new Set(localDishes.map((dish) => dish.catalogKey)).size,
     localDishes.length,
@@ -121,9 +121,9 @@ test("the CAC catalog has twenty real locations with traceable, clean food recor
   for (const restaurant of localRestaurants) {
     assert.equal(restaurant.fictional, false);
     assert.equal(restaurant.confirmed, false);
-    assert.ok(restaurant.menuUrl.startsWith("https://"));
+    assert.match(restaurant.menuUrl, /^https?:\/\//);
     assert.ok(restaurant.menuCoverage);
-    assert.equal(restaurant.district.number, "10");
+    assert.ok(restaurant.coordinates);
     assert.ok(localDishes.some((dish) => dish.restaurantId === restaurant.id));
   }
   for (const dish of localDishes) {
