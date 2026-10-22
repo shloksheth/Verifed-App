@@ -1,0 +1,10 @@
+{
+  "number": 3,
+  "kind": "web",
+  "originalCommit": "a01b40b8f6b51f7ce963023da111e9cef9ef98ce",
+  "originalDate": "2026-10-19T20:23:18-04:00",
+  "summary": "Configured Google sign-in, explicit account selection, cancelled-login error messages and callback URL cleanup.",
+  "name": "Verifed V3",
+  "importedAt": "2026-10-22T11:14:31.227520+00:00",
+  "historicalDateRewritten": false
+}

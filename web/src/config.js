@@ -7,6 +7,6 @@ export const supabasePublishableKey =
   import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY ||
   "sb_publishable_LibLu5_Nro06ZmEZ2jre3w_Z8U8qNtj";
 
-// Enable only after the Google client and Supabase provider are configured.
+// Google is configured in Supabase; an environment override can disable it.
 export const googleAuthEnabled =
-  import.meta.env.VITE_GOOGLE_AUTH_ENABLED === "true";
+  import.meta.env.VITE_GOOGLE_AUTH_ENABLED !== "false";

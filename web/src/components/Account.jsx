@@ -34,7 +34,7 @@ import {
   useTask,
 } from "./UI";
 
-export function Auth({ state, navigate, recovery = false }) {
+export function Auth({ state, navigate, recovery = false, authError = "" }) {
   const [mode, setMode] = useState(recovery ? "recover" : "signin");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -117,6 +117,7 @@ export function Auth({ state, navigate, recovery = false }) {
                   ? "Use at least eight characters."
                   : "Save your profile, meals, and kitchen conversations."}
           </p>
+          <ErrorMessage error={authError} />
           {["signin", "signup"].includes(mode) && (
             <>
               <Button

@@ -22,6 +22,17 @@ import Workspace from "./components/Workspace";
 import { Button, Empty } from "./components/UI";
 
 function readRoute() {
+  const callback = new URLSearchParams(
+    window.location.hash.slice(1).startsWith("error=")
+      ? window.location.hash.slice(1)
+      : window.location.search,
+  );
+  if (callback.has("error"))
+    return {
+      page: "auth",
+      params: new URLSearchParams(),
+      authError: "Sign-in wasn't completed. Please try again or use the local demo.",
+    };
   const [path, search = ""] = window.location.hash
     .replace(/^#\/?/, "")
     .split("?");
@@ -35,6 +46,10 @@ export default function App() {
   const [route, setRoute] = useState(readRoute);
   const [composer, setComposer] = useState(null);
   const [meal, setMeal] = useState(null);
+  useEffect(() => {
+    if (route.authError)
+      window.history.replaceState(null, "", window.location.pathname + "#/auth");
+  }, [route.authError]);
   useEffect(() => {
     api.init().catch(() => {}); // The store exposes connection errors to the banner.
     const onHashChange = () => {
@@ -72,6 +87,7 @@ export default function App() {
     return (
       <Auth
         {...shared}
+        authError={route.authError}
         recovery={route.page === "reset-password" || state.passwordRecovery}
       />
     );

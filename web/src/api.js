@@ -275,7 +275,10 @@ export const api = {
     result(
       await requireCloud().auth.signInWithOAuth({
         provider: "google",
-        options: { redirectTo: window.location.origin + "/" },
+        options: {
+          redirectTo: window.location.origin + "/",
+          queryParams: { prompt: "select_account" },
+        },
       }),
     );
   },
