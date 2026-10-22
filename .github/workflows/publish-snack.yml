@@ -1,0 +1,76 @@
+name: Publish Verifed to Expo Snack
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'mobile/**'
+      - 'research/native-tools/**'
+      - '.github/workflows/publish-snack.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: verifed-snack-publication
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+          cache-dependency-path: |
+            mobile/package-lock.json
+            research/native-tools/package-lock.json
+      - name: Install mobile dependencies
+        run: npm ci --prefix mobile
+      - name: Run mobile regression suite
+        run: npm test --prefix mobile
+      - name: Install pinned Snack publisher
+        run: npm ci --prefix research/native-tools
+      - name: Publish Expo Snack snapshot
+        run: npm run publish:snack --prefix mobile
+      - name: Record Snack URL and create matching GitHub release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+          const release = JSON.parse(fs.readFileSync('mobile/release.json', 'utf8'));
+          const published = JSON.parse(fs.readFileSync('mobile/publication.json', 'utf8'));
+          if (String(release.number) !== String(published.version)) throw Error('Snack version mismatch');
+          if (!/^https:\/\/snack\.expo\.dev\//.test(published.editorUrl || '')) throw Error('Missing valid Snack URL');
+          const p = 'README.md';
+          let readme = fs.readFileSync(p, 'utf8');
+          const marker = '\n\nApplication directories appear';
+          const link = `[Verifed V${release.number}](https://github.com/shloksheth/Verifed-App/releases/tag/v${release.number})`;
+          if (!readme.includes(link)) {
+            if (!readme.includes(marker)) throw Error('Version table boundary missing');
+            const row = `| ${link} | ${release.description.replace(/\|/g, '/')} | [Verifed V${release.number}](${published.editorUrl}) |`;
+            readme = readme.replace(marker, `\n${row}${marker}`);
+            fs.writeFileSync(p, readme);
+          }
+          fs.writeFileSync('/tmp/verifed-release-notes.md', [release.description, '', `Expo Snack: ${published.editorUrl}`, '',
+            ...release.verification.map(x => `- ${x}`), '', 'Snack publication completed from the versioned source via GitHub Actions.'].join('\n'));
+          NODE
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add mobile/publication.json README.md
+          git diff --cached --quiet || git commit -m 'Record verified Expo Snack publication'
+          git push origin HEAD:main
+          VERSION=$(node -p "JSON.parse(require('fs').readFileSync('mobile/release.json')).number")
+          if gh release view "v${VERSION}" >/dev/null 2>&1; then
+            gh release edit "v${VERSION}" --notes-file /tmp/verifed-release-notes.md
+          else
+            gh release create "v${VERSION}" --target "$(git rev-parse HEAD)" --title "Verifed V${VERSION}" --notes-file /tmp/verifed-release-notes.md
+          fi
