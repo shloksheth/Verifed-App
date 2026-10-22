@@ -12,12 +12,11 @@ import {
   Field,
   Icon,
   Sheet,
-  Tabs,
   Tags,
   Title,
   useTask,
 } from "./UI";
-import { FoodArt, RequestRow } from "./Dining";
+import { FoodArt } from "./Dining";
 
 function Stars({ rating, onChange }) {
   return (
@@ -30,6 +29,7 @@ function Stars({ rating, onChange }) {
             accessibilityRole="radio"
             accessibilityLabel={`Rate ${value} out of 5`}
             accessibilityState={{ checked: rating === value }}
+            aria-checked={rating === value}
             onPress={() => onChange(value)}
           >
             <Icon
@@ -149,10 +149,7 @@ export function MealComposer({ dish, entry, state, onClose, navigate }) {
   );
 }
 
-export function History({ state, navigate, openSheet, initialTab }) {
-  const [tab, setTab] = useState(
-    initialTab === "requests" ? "requests" : "meals",
-  );
+export function History({ state, navigate, openSheet }) {
   const [query, setQuery] = useState("");
   const meals = state.meals
     .filter((meal) =>
@@ -161,37 +158,18 @@ export function History({ state, navigate, openSheet, initialTab }) {
         .includes(query.toLowerCase()),
     )
     .sort((a, b) => b.createdAt.localeCompare(a.createdAt));
-  const requests = state.requests
-    .filter(
-      (item) =>
-        item.userId === state.user?.id &&
-        item.dishName.toLowerCase().includes(query.toLowerCase()),
-    )
-    .sort((a, b) => b.updatedAt.localeCompare(a.updatedAt));
   return (
     <>
       <Title eyebrow="Your dining journal" title="One for the memories.">
-        The flavors, favorites, and conversations worth keeping.
+        Remember what you enjoyed and what to ask next time.
       </Title>
       <Button
         variant="secondary"
         icon="add-outline"
-        onPress={() =>
-          state.mode === "guest"
-            ? navigate("auth")
-            : openSheet({ type: "meal" })
-        }
+        onPress={() => openSheet({ type: "meal" })}
       >
         Log a meal
       </Button>
-      <Tabs
-        options={[
-          { value: "meals", label: `Meals · ${state.meals.length}` },
-          { value: "requests", label: "Kitchen requests" },
-        ]}
-        value={tab}
-        onChange={setTab}
-      />
       <Field
         label="Search your journal"
         value={query}
@@ -199,58 +177,38 @@ export function History({ state, navigate, openSheet, initialTab }) {
         placeholder="A dish or a restaurant…"
         clearButtonMode="while-editing"
       />
-      {tab === "meals" ? (
-        meals.length ? (
-          meals.map((meal) => (
-            <Pressable
-              accessibilityRole="button"
-              key={meal.id}
-              onPress={() => navigate(`meal/${meal.id}`)}
-              style={s.card}
-            >
-              <View style={s.between}>
-                <Stars rating={meal.rating} />
-                <Text style={s.small}>{date(meal.createdAt)}</Text>
-              </View>
-              <Text style={s.h3}>{meal.dishName}</Text>
-              <Text style={s.small}>{meal.restaurantName}</Text>
-              {!!meal.notes && (
-                <Text numberOfLines={2} style={s.body}>
-                  {meal.notes}
-                </Text>
-              )}
-              <Tags values={meal.tags} fallback="" />
-            </Pressable>
-          ))
-        ) : (
-          <Empty
-            title={
-              query ? "No matching memories" : "Your next favorite starts here"
-            }
-            icon="journal-outline"
-            action="Log a meal"
-            onPress={() =>
-              state.mode === "guest"
-                ? navigate("auth")
-                : openSheet({ type: "meal" })
-            }
+      {meals.length ? (
+        meals.map((meal) => (
+          <Pressable
+            accessibilityRole="button"
+            key={meal.id}
+            onPress={() => navigate(`meal/${meal.id}`)}
+            style={s.card}
           >
-            Even meals outside the sample menus belong here.
-          </Empty>
-        )
-      ) : requests.length ? (
-        requests.map((request) => (
-          <RequestRow key={request.id} request={request} navigate={navigate} />
+            <View style={s.between}>
+              <Stars rating={meal.rating} />
+              <Text style={s.small}>{date(meal.createdAt)}</Text>
+            </View>
+            <Text style={s.h3}>{meal.dishName}</Text>
+            <Text style={s.small}>{meal.restaurantName}</Text>
+            {!!meal.notes && (
+              <Text numberOfLines={2} style={s.body}>
+                {meal.notes}
+              </Text>
+            )}
+            <Tags values={meal.tags} fallback="" />
+          </Pressable>
         ))
       ) : (
         <Empty
-          title="Your conversations live here"
-          icon="chatbubbles-outline"
-          action="Explore a menu"
-          onPress={() => navigate("explore")}
+          title={
+            query ? "No matching memories" : "Your next favorite starts here"
+          }
+          icon="journal-outline"
+          action="Log a meal"
+          onPress={() => openSheet({ type: "meal" })}
         >
-          Open a dish to share your requirements with a connected sample
-          kitchen.
+          Keep notes for any restaurant, including places outside this catalog.
         </Empty>
       )}
     </>

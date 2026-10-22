@@ -22,7 +22,6 @@ import {
   Title,
   useTask,
 } from "./UI";
-import { DemoButton } from "./Dining";
 
 export function Auth({ state, navigate, recovery = false }) {
   const [mode, setMode] = useState(recovery ? "recover" : "signin");
@@ -65,7 +64,7 @@ export function Auth({ state, navigate, recovery = false }) {
   return (
     <>
       <Title eyebrow="Your dining companion" title={labels[mode]}>
-        Save the good meals. Keep the conversation clear.
+        Keep your dietary needs, saved menu items, and meal notes together.
       </Title>
       {mode === "signin" && (
         <>
@@ -85,8 +84,8 @@ export function Auth({ state, navigate, recovery = false }) {
           </Button>
           <Text style={s.small}>
             {googleAuthEnabled
-              ? "Google sign-in requires a Verifed development build. In Snack or Expo Go, try the local demo or use the companion website."
-              : "Google sign-in setup is pending. Try the local demo while the provider is being configured."}
+              ? "Google sign-in requires a Verifed development build. In Snack or Expo Go, browse without an account or use the companion website."
+              : "Google sign-in setup is pending. You can still browse every public menu."}
           </Text>
           {googleAuthEnabled && (
             <Button
@@ -159,12 +158,8 @@ export function Auth({ state, navigate, recovery = false }) {
       </View>
       {mode !== "recover" && (
         <>
-          <Text style={[s.small, { textAlign: "center" }]}>
-            Or take a look around with fictional sample data.
-          </Text>
-          <DemoButton navigate={navigate} />
           <Button variant="quiet" onPress={() => navigate("home")}>
-            Continue browsing
+            Continue without an account
           </Button>
         </>
       )}
@@ -247,7 +242,13 @@ export function ProfileEditor({ state, navigate, returnTo }) {
               state.mode === "guest"
                 ? api.previewProfile(draft)
                 : api.saveProfile(draft),
-            () => navigate(/^restaurant\/[a-zA-Z0-9-]+$/.test(returnTo || "") ? returnTo : "profile", { unwind: true }),
+            () =>
+              navigate(
+                /^restaurant\/[a-zA-Z0-9-]+$/.test(returnTo || "")
+                  ? returnTo
+                  : "profile",
+                { unwind: true },
+              ),
           )
         }
       >
@@ -345,12 +346,6 @@ export function Profile({ state, navigate }) {
           subtitle: "Your data, your account, your choices",
         },
         {
-          page: "workspace",
-          icon: "restaurant-outline",
-          title: "Restaurant space",
-          subtitle: "Review requests and manage a sample menu",
-        },
-        {
           page: "help",
           icon: "help-circle-outline",
           title: "How Verifed works",
@@ -397,7 +392,9 @@ export function Settings({ state, navigate }) {
         <Text style={s.small}>
           {state.mode === "demo"
             ? "Demo activity is saved locally, alongside public Orlando menu records. A signed-in account keeps separate cloud data."
-            : "Your profile and meal history belong to your account."}
+            : state.mode === "guest"
+              ? "Your dietary profile, saved menu items, and meal notes stay on this device. Sign-in is optional."
+              : "Your profile and meal history belong to your account."}
         </Text>
         {state.mode !== "cloud" && (
           <Button onPress={() => navigate("auth")}>
@@ -423,7 +420,9 @@ export function Settings({ state, navigate }) {
       <Section title="Your data">
         <View style={s.card}>
           <Text style={s.body}>
-            Export your profile, saved dishes, meals, and visible requests.
+            {state.mode === "guest"
+              ? "Export your dietary profile, saved items, and meal notes from this device."
+              : "Export the personal information Verifed stores for your account."}
           </Text>
           <Button
             variant="secondary"
@@ -433,21 +432,23 @@ export function Settings({ state, navigate }) {
           >
             Export my data
           </Button>
-          {state.mode !== "guest" && (
-            <Button
-              variant="danger"
-              icon="trash-outline"
-              onPress={() => setConfirm(true)}
-            >
-              {state.mode === "demo"
+          <Button
+            variant="danger"
+            icon="trash-outline"
+            onPress={() => setConfirm(true)}
+          >
+            {state.mode === "guest"
+              ? "Clear data on this device"
+              : state.mode === "demo"
                 ? "Reset local demo"
                 : "Delete my personal app data"}
-            </Button>
-          )}
+          </Button>
           <Text style={s.small}>
-            {state.mode === "demo"
-              ? "Reset restores the original demo activity and current public menu catalog."
-              : "Deleting app data removes your profile, meals, favorites, and requests. Your login and restaurant business records remain."}
+            {state.mode === "guest"
+              ? "Clearing removes your dietary profile, saved items, and meal notes from this device. Public menus stay available."
+              : state.mode === "demo"
+                ? "Reset restores the original demo activity and current public menu catalog."
+                : "Deleting personal app data removes your profile, meals, saved items, and any older activity. Your login remains."}
           </Text>
         </View>
       </Section>
@@ -469,16 +470,20 @@ export function Settings({ state, navigate }) {
       {confirm && (
         <Sheet
           title={
-            state.mode === "demo"
-              ? "Reset your demo?"
-              : "Delete personal app data?"
+            state.mode === "guest"
+              ? "Clear this device's data?"
+              : state.mode === "demo"
+                ? "Reset your demo?"
+                : "Delete personal app data?"
           }
           onClose={() => setConfirm(false)}
         >
           <Text style={s.body}>
-            {state.mode === "demo"
-              ? "Your local changes will be replaced with the original sample data."
-              : "Your personal app data will be removed. Export it first if you want to keep a copy. Your login and business records remain."}
+            {state.mode === "guest"
+              ? "Your dietary profile, saved menu items, and meal notes on this device will be removed. Export them first to keep a copy."
+              : state.mode === "demo"
+                ? "Your local changes will be replaced with the original sample data."
+                : "Your personal app data will be removed. Export it first if you want to keep a copy. Your login remains."}
           </Text>
           <ErrorText error={task.error} />
           <Button variant="secondary" onPress={() => setConfirm(false)}>
@@ -498,7 +503,12 @@ export function Settings({ state, navigate }) {
               )
             }
           >
-            Confirm {state.mode === "demo" ? "reset" : "deletion"}
+            Confirm{" "}
+            {state.mode === "guest"
+              ? "clear data"
+              : state.mode === "demo"
+                ? "reset"
+                : "deletion"}
           </Button>
         </Sheet>
       )}
@@ -535,60 +545,75 @@ export function Settings({ state, navigate }) {
 export function Help({ navigate }) {
   return (
     <>
-      <Title eyebrow="About Verifed" title="Using local menus">
-        Compare public menu information with your dietary needs. Open the
-        original sources and confirm questions with the restaurant.
+      <Title
+        eyebrow="A local idea with a real purpose"
+        title="More clarity. More choice."
+      >
+        Eating out can mean searching several websites just to understand one
+        menu. Verifed brings published Orlando menus and your dietary needs into
+        one place.
       </Title>
+      <View style={s.howPanel}>
+        <Text style={s.eyebrow}>THE COMMUNITY CHALLENGE</Text>
+        <Text style={s.h2}>Everyone deserves a place at the table.</Text>
+        <Text style={s.body}>
+          Built for the Congressional App Challenge, this app helps people with
+          food allergies and dietary restrictions ask informed questions at
+          local restaurants. Restaurants do not need to buy software or join
+          Verifed to appear.
+        </Text>
+      </View>
       {[
-        {
-          step: "01",
-          title: "Choose your dietary needs",
-          text: "Select allergies and preferences in your profile. A guest browsing profile is saved only on this device, not to an account.",
-          icon: "person-outline",
-        },
-        {
-          step: "02",
-          title: "Read the source",
-          text: "Each local menu has source links and a review date. Chainwide information may differ from preparation at a specific location.",
-          icon: "chatbubble-ellipses-outline",
-        },
-        {
-          step: "03",
-          title: "Confirm with the restaurant",
-          text: "Use the call button for current ingredients, modifications and cross-contact questions. Save menu items or log meals when signed in or using the local demo.",
-          icon: "checkmark-done-outline",
-        },
-      ].map((item) => (
-        <View key={item.step} style={s.card}>
-          <View style={s.between}>
-            <Text style={s.eyebrow}>{item.step}</Text>
-            <Icon name={item.icon} color={colors.orangeDark} />
+        [
+          "01",
+          "Set your needs",
+          "Choose allergies and dietary restrictions. Guest preferences stay on this device.",
+        ],
+        [
+          "02",
+          "Read both menus",
+          "Full menu shows published food entries and declared allergens. For my diet separates restaurant-reported matches from possible options with no known conflict in the available ingredient information.",
+        ],
+        [
+          "03",
+          "Know what is missing",
+          "Possible options may have incomplete information. Check the ingredient clues and ask the restaurant; a blank allergen field does not count as allergen-free.",
+        ],
+        [
+          "04",
+          "Ask the restaurant",
+          "Check the original source and ask about current ingredients, preparation, and cross-contact before ordering.",
+        ],
+      ].map(([step, title, text]) => (
+        <View key={step} style={s.howRow}>
+          <Text style={s.howNumber}>{step}</Text>
+          <View style={s.flex}>
+            <Text style={s.h3}>{title}</Text>
+            <Text style={s.body}>{text}</Text>
           </View>
-          <Text style={s.h2}>{item.title}</Text>
-          <Text style={s.body}>{item.text}</Text>
         </View>
       ))}
       <Section title="A few useful answers">
         {[
           {
-            title: "What does a kitchen response mean?",
-            text: "It records communication, not a food safety certification. Verifed cannot inspect food, detect undeclared changes, or guarantee absence of allergens or cross-contact.",
+            title: "Are these real menus?",
+            text: "Yes. Each restaurant includes links to official public menu sources and a review date. Chain sources and menu exclusions are labeled. Verifed is not partnered with these restaurants; current local availability can differ.",
           },
           {
-            title: "Are these real restaurants?",
-            text: "Local menus list real Orlando restaurants from public official sources. They are not connected or partnered kitchens. Sample kitchens are fictional and are listed separately for practice requests. Missing prices say Check menu.",
+            title: "Does a match mean safe?",
+            text: "No. A match means the source explicitly supports your selected dietary needs. It does not verify the kitchen, a specific meal, or cross-contact. Missing information stays unknown.",
           },
           {
-            title: "How are dishes ranked?",
-            text: "Tags use your likes, dislikes, and meal ratings. Known allergen conflicts rank after other items. Missing or incomplete allergen coverage remains unknown; a match never means an item is safe.",
+            title: "Why do some menus have no matches?",
+            text: "Some restaurants publish food names and ingredients without a complete allergen guide. Verifed separates explicit source-supported matches from possible options that still need a conversation with the restaurant.",
           },
           {
-            title: "Where is information stored?",
-            text: "The local demo stays on this device. Signed-in accounts use the connected Supabase backend. Staff see the requirements shared in requests for their restaurant. Export and deletion are in settings.",
+            title: "Where does my information go?",
+            text: "Guest dietary preferences, saved items, and meal notes stay on this device. Signed-in accounts use the connected backend with account-specific access. Preferences are not sent to restaurants. Export and deletion are in Settings.",
           },
           {
-            title: "Is this an order?",
-            text: "A request is a conversation, not a placed or paid order. Discuss ordering directly with the restaurant.",
+            title: "Can I order here?",
+            text: "Verifed is a menu and dietary-information companion. Use the restaurant's own website or telephone for orders.",
           },
         ].map((item) => (
           <View key={item.title} style={s.card}>
@@ -597,7 +622,7 @@ export function Help({ navigate }) {
           </View>
         ))}
       </Section>
-      <Button onPress={() => navigate("explore")}>Find your next dish</Button>
+      <Button onPress={() => navigate("explore")}>Explore local menus</Button>
     </>
   );
 }

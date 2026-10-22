@@ -1,0 +1,413 @@
+[
+  {
+    "category": "Featured Items"
+  },
+  {
+    "item": "Two Tacos Two Tacos - Mix & Match"
+  },
+  {
+    "item": "Three Tacos Three Tacos - Mix & Match"
+  },
+  {
+    "item": "Queso & Chips.."
+  },
+  {
+    "category": "Tacos"
+  },
+  {
+    "item": "Two Tacos Two Tacos - Mix & Match"
+  },
+  {
+    "item": "Three Tacos Three Tacos - Mix & Match"
+  },
+  {
+    "item": "Two Off the Hook Tacos SUSHI GRADE AHI TUNA POKE STYLE / PICO DE GALLO / MIXED GREENS / TOASRED SESAME & WASABI AIOLI / SESAME SEEDS"
+  },
+  {
+    "item": "Mac Attack Taco SEASONED GROUND BEEF / CRAFT BEER MAC & CHEESE / APPLEWOOD SMOKED BACON / GREEN ONION"
+  },
+  {
+    "item": "Tacosaurus Taco SEASONED GROUND BEEF / SHREDDED LETTUCE / PICO DE GALLO / WHITE CHEDDAR / CRUSHED DORITOS / SOUTHWEST SAUCE / COTIJA CHEESE"
+  },
+  {
+    "item": "Taco Bomb Taco SEASONED GROUND BEEF / WHITE CHEDDAR / CRAFT BEER QUESO / PICO DE GALLO / SOUR CREAM / POTATO STICKS"
+  },
+  {
+    "item": "Boom Boom Taco SEASONED GROUND BEEF / SHREDDED LETTUCE / PICO DE GALLO / BOOM SAUCE / POTATO STICKS"
+  },
+  {
+    "item": "Buffalo Soldier Taco SHREDDED CHICKEN / SHREDDED LETTUCE / BUFFALO WING SAUCE / HOMEMADE RANCH / GREEN ONION / DANISH BLUE CHEESE"
+  },
+  {
+    "item": "Chick Magnet Taco SHREDDED CHICKEN / SHREDDED LETTUCE / PICO DE GALLO / WHITE CHEDDAR / GARLIC CILANTRO SAUCE / COTIJA CHEESE"
+  },
+  {
+    "item": "Chicken Bacon Ranch Taco SHREDDED CHICKEN / WHITE CHEDDAR / APPLEWOOD SMOKED BACON / PICO DE GALLO / HOMEMADE RANCH"
+  },
+  {
+    "item": "Pesto Chicken Taco HONEY CHIPOTLE CHICKEN / PICO / MIXED GREENS / GARLIC PESTO AIOLI / COTIJA"
+  },
+  {
+    "item": "Notorious PIG Taco SMOKED PULLED PORK / CRAFT BEER QUESO / LETTUCE / BOOM SAUCE / SALSA ROJA / COTIJA CHEESE"
+  },
+  {
+    "item": "Pork on Fire Taco SMOKED PULLED PORK / FRIED JALAPENOS / PICO DE GALLO / ANCHO CHIPOTLE SAUCE / HOUSE PICKLED ONION / COTIJA / CILANTRO"
+  },
+  {
+    "item": "Al Pastor Taco SMOKED PULLED PORK / SHREDDED LETTUCE / PICO DE GALLO / FRESH PINEAPPLE / MANGO PINEAPPLE VINAIGRETTE / COTIJA CHEESE"
+  },
+  {
+    "item": "Trailer Park Taco SMOKED PULLED PORK / CRAFT BEER QUESO / MOONSHINE BBQ / POTATO STICKS"
+  },
+  {
+    "item": "Traditional Taco CHOICE OF MEAT / SHREDDED LETTUCE / PICO DE GALLO / WHITE CHEDDAR / SOUR CREAM"
+  },
+  {
+    "item": "Maui Taco SHREDDED CHICKEN / SHREDDED LETTUCE / PINEAPPLE PICO DE GALLO / MANGO PINEAPPLE VINAIGRETTE / COTIJA CHEESE"
+  },
+  {
+    "item": "Cheddar Bacon Cheesburger Taco SEASONED GROUND BEEF / APPLEWOOD SMOKED BACON / PICO DE GALLO / SHREDDED LETTUCE / WHITE CHEDDAR / SOUR CREAM"
+  },
+  {
+    "category": "Burritos"
+  },
+  {
+    "item": "Mac Attack Burrito SEASONED GROUND BEEF / CRAFT BEER MAC & CHEESE / APPLEWOOD SMOKED BACON / GREEN ONION"
+  },
+  {
+    "item": "Tacosaurus Burrito SEASONED GROUND BEEF / SHREDDED LETTUCE / PICO DE GALLO / WHITE CHEDDAR / CRUSHED DORITOS / SOUTHWEST SAUCE / COTIJA CHEESE"
+  },
+  {
+    "item": "Taco Bomb Burrito SEASONED GROUND BEEF / WHITE CHEDDAR / CRAFT BEER QUESO / PICO DE GALLO / SOUR CREAM / POTATO STICKS"
+  },
+  {
+    "item": "Boom Boom Burrito SEASONED GROUND BEEF / SHREDDED LETTUCE / PICO DE GALLO / BOOM SAUCE / POTATO STICKS"
+  },
+  {
+    "item": "Maui Burrito SHREDDED CHICKEN / SHREDDED LETTUCE / PINEAPPLE PICO DE GALLO / MANGO PINEAPPLE VINAIGRETTE / COTIJA CHEESE"
+  },
+  {
+    "item": "Buffalo Soldier Burrito SHREDDED CHICKEN / SHREDDED LETTUCE / BUFFALO WING SAUCE / HOMEMADE RANCH / GREEN ONION / DANISH BLUE CHEESE"
+  },
+  {
+    "item": "Chick Magnet Burrito SHREDDED CHICKEN / SHREDDED LETTUCE / PICO DE GALLO / WHITE CHEDDAR / GARLIC CILANTRO SAUCE / COTIJA CHEESE"
+  },
+  {
+    "item": "Chicken Bacon Ranch Burrito SHREDDED CHICKEN / WHITE CHEDDAR / APPLEWOOD SMOKED BACON / PICO DE GALLO / HOMEMADE RANCH"
+  },
+  {
+    "item": "Pesto Chicken Burrito HONEY CHIPOTLE CHICKEN / PICO / MIXED GREENS / GARLIC PESTO AIOLI / COTIJA"
+  },
+  {
+    "item": "Cheddar Bacon Cheeseburger Burrito SEASONED GROUND BEEF / APPLEWOOD SMOKED BACON / PICO DE GALLO / SHREDDED LETTUCE / WHITE CHEDDAR / SOUR CREAM"
+  },
+  {
+    "item": "Notorious PIG Burrito SMOKED PULLED PORK / CRAFT BEER QUESO / LETTUCE / BOOM SAUCE / SALSA ROJA / COTIJA CHEESE"
+  },
+  {
+    "item": "Pork on Fire Burrito SMOKED PULLED PORK / FRIED JALAPENOS / PICO DE GALLO / ANCHO CHIPOTLE SAUCE / HOUSE PICKLED ONION / COTIJA / CILANTRO"
+  },
+  {
+    "item": "Al Pastor Burrito SMOKED PULLED PORK / SHREDDED LETTUCE / PICO DE GALLO / FRESH PINEAPPLE / MANGO PINEAPPLE VINAIGRETTE / COTIJA CHEESE"
+  },
+  {
+    "item": "Trailer Park Burrito SMOKED PULLED PORK / CRAFT BEER QUESO / MOONSHINE BBQ / POTATO STICKS"
+  },
+  {
+    "item": "Traditional Burrito CHOICE OF MEAT / SHREDDED LETTUCE / PICO DE GALLO / WHITE CHEDDAR / SOUR CREAM"
+  },
+  {
+    "item": "Off the Hook Burrito SUSHI GRADE AHI TUNA POKE STYLE / PICO DE GALLO / MIXED GREENS / TOASRED SESAME & WASABI AIOLI / SESAME SEEDS"
+  },
+  {
+    "category": "Rice Bowl"
+  },
+  {
+    "item": "Mac Attack Rice Bowl SEASONED GROUND BEEF / CRAFT BEER MAC & CHEESE / APPLEWOOD SMOKED BACON / GREEN ONION"
+  },
+  {
+    "item": "Tacosaurus Rice Bowl SEASONED GROUND BEEF / SHREDDED LETTUCE / PICO DE GALLO / WHITE CHEDDAR / CRUSHED DORITOS / SOUTHWEST SAUCE / COTIJA CHEESE"
+  },
+  {
+    "item": "Taco Bomb Rice Bowl SEASONED GROUND BEEF / WHITE CHEDDAR / CRAFT BEER QUESO / PICO DE GALLO / SOUR CREAM / POTATO STICKS"
+  },
+  {
+    "item": "Boom Boom Rice Bowl SEASONED GROUND BEEF / SHREDDED LETTUCE / PICO DE GALLO / BOOM SAUCE / POTATO STICKS"
+  },
+  {
+    "item": "Maui Rice Bowl SHREDDED CHICKEN / SHREDDED LETTUCE / PINEAPPLE PICO DE GALLO / MANGO PINEAPPLE VINAIGRETTE / COTIJA CHEESE"
+  },
+  {
+    "item": "Buffalo Soldier Rice Bowl SHREDDED CHICKEN / SHREDDED LETTUCE / BUFFALO WING SAUCE / HOMEMADE RANCH / GREEN ONION / DANISH BLUE CHEESE"
+  },
+  {
+    "item": "Chick Magnet Rice Bowl SHREDDED CHICKEN / SHREDDED LETTUCE / PICO DE GALLO / WHITE CHEDDAR / GARLIC CILANTRO SAUCE / COTIJA CHEESE"
+  },
+  {
+    "item": "Chicken Bacon Ranch Rice Bowl SHREDDED CHICKEN / WHITE CHEDDAR / APPLEWOOD SMOKED BACON / PICO DE GALLO / HOMEMADE RANCH"
+  },
+  {
+    "item": "Pesto Chicken Rice Bowl HONEY CHIPOTLE CHICKEN / PICO / MIXED GREENS / GARLIC PESTO AIOLI / COTIJA"
+  },
+  {
+    "item": "Cheddar Bacon Cheeseburger Rice Bowl SEASONED GROUND BEEF / APPLEWOOD SMOKED BACON / PICO DE GALLO / SHREDDED LETTUCE / WHITE CHEDDAR / SOUR CREAM"
+  },
+  {
+    "item": "Notorious PIG Rice Bowl SMOKED PULLED PORK / CRAFT BEER QUESO / LETTUCE / BOOM SAUCE / SALSA ROJA / COTIJA CHEESE"
+  },
+  {
+    "item": "Pork on Fire Rice Bowl SMOKED PULLED PORK / FRIED JALAPENOS / PICO DE GALLO / ANCHO CHIPOTLE SAUCE / HOUSE PICKLED ONION / COTIJA / CILANTRO"
+  },
+  {
+    "item": "Al Pastor Rice Bowl SMOKED PULLED PORK / SHREDDED LETTUCE / PICO DE GALLO / FRESH PINEAPPLE / MANGO PINEAPPLE VINAIGRETTE / COTIJA CHEESE"
+  },
+  {
+    "item": "Trailer Park Rice Bowl SMOKED PULLED PORK / CRAFT BEER QUESO / MOONSHINE BBQ / POTATO STICKS"
+  },
+  {
+    "item": "Traditional Rice Bowl CHOICE OF MEAT / SHREDDED LETTUCE / PICO DE GALLO / WHITE CHEDDAR / SOUR CREAM"
+  },
+  {
+    "item": "Off the Hook Rice Bowl SUSHI GRADE AHI TUNA POKE STYLE / PICO DE GALLO / MIXED GREENS / TOASRED SESAME & WASABI AIOLI / SESAME SEEDS"
+  },
+  {
+    "category": "Mixed Green Salad"
+  },
+  {
+    "item": "Mac Attack Salad SEASONED GROUND BEEF / CRAFT BEER MAC & CHEESE / APPLEWOOD SMOKED BACON / GREEN ONION"
+  },
+  {
+    "item": "Tacosaurus Salad SEASONED GROUND BEEF / SHREDDED LETTUCE / PICO DE GALLO / WHITE CHEDDAR / CRUSHED DORITOS / SOUTHWEST SAUCE / COTIJA CHEESE"
+  },
+  {
+    "item": "Taco Bomb Salad SEASONED GROUND BEEF / WHITE CHEDDAR / CRAFT BEER QUESO / PICO DE GALLO / SOUR CREAM / POTATO STICKS"
+  },
+  {
+    "item": "Boom Boom Salad SEASONED GROUND BEEF / SHREDDED LETTUCE / PICO DE GALLO / BOOM SAUCE / POTATO STICKS"
+  },
+  {
+    "item": "Buffalo Soldier Salad SHREDDED CHICKEN / SHREDDED LETTUCE / BUFFALO WING SAUCE / HOMEMADE RANCH / GREEN ONION / DANISH BLUE CHEESE"
+  },
+  {
+    "item": "Chick Magnet Salad SHREDDED CHICKEN / SHREDDED LETTUCE / PICO DE GALLO / WHITE CHEDDAR / GARLIC CILANTRO SAUCE / COTIJA CHEESE"
+  },
+  {
+    "item": "Chicken Bacon Ranch Salad SHREDDED CHICKEN / WHITE CHEDDAR / APPLEWOOD SMOKED BACON / PICO DE GALLO / HOMEMADE RANCH"
+  },
+  {
+    "item": "Pesto Chicken Salad HONEY CHIPOTLE CHICKEN / PICO / MIXED GREENS / GARLIC PESTO AIOLI / COTIJA"
+  },
+  {
+    "item": "Notorious PIG Salad SMOKED PULLED PORK / CRAFT BEER QUESO / LETTUCE / BOOM SAUCE / SALSA ROJA / COTIJA CHEESE"
+  },
+  {
+    "item": "Pork on Fire Salad SMOKED PULLED PORK / FRIED JALAPENOS / PICO DE GALLO / ANCHO CHIPOTLE SAUCE / HOUSE PICKLED ONION / COTIJA / CILANTRO"
+  },
+  {
+    "item": "Al Pastor Salad SMOKED PULLED PORK / SHREDDED LETTUCE / PICO DE GALLO / FRESH PINEAPPLE / MANGO PINEAPPLE VINAIGRETTE / COTIJA CHEESE"
+  },
+  {
+    "item": "Trailer Park Salad SMOKED PULLED PORK / CRAFT BEER QUESO / MOONSHINE BBQ / POTATO STICKS"
+  },
+  {
+    "item": "Traditional Salad CHOICE OF MEAT / SHREDDED LETTUCE / PICO DE GALLO / WHITE CHEDDAR / SOUR CREAM"
+  },
+  {
+    "item": "Off the Hook Salad SUSHI GRADE AHI TUNA POKE STYLE / PICO DE GALLO / MIXED GREENS / TOASRED SESAME & WASABI AIOLI / SESAME SEEDS"
+  },
+  {
+    "item": "Maui Salad SHREDDED CHICKEN / SHREDDED LETTUCE / PINEAPPLE PICO DE GALLO / MANGO PINEAPPLE VINAIGRETTE / COTIJA CHEESE"
+  },
+  {
+    "item": "Cheddar Bacon Cheeseburger Salad SEASONED GROUND BEEF / APPLEWOOD SMOKED BACON / PICO DE GALLO / SHREDDED LETTUCE / WHITE CHEDDAR / SOUR CREAM"
+  },
+  {
+    "category": "In-The-Bag"
+  },
+  {
+    "item": "Mac Attack In-The-Bag SEASONED GROUND BEEF / CRAFT BEER MAC & CHEESE / APPLEWOOD SMOKED BACON / GREEN ONION"
+  },
+  {
+    "item": "Tacosaurus In-The-Bag SEASONED GROUND BEEF / SHREDDED LETTUCE / PICO DE GALLO / WHITE CHEDDAR / CRUSHED DORITOS / SOUTHWEST SAUCE / COTIJA CHEESE"
+  },
+  {
+    "item": "Taco Bomb In-The-Bag SEASONED GROUND BEEF / WHITE CHEDDAR / CRAFT BEER QUESO / PICO DE GALLO / SOUR CREAM / POTATO STICKS"
+  },
+  {
+    "item": "Boom Boom In-The-Bag SEASONED GROUND BEEF / SHREDDED LETTUCE / PICO DE GALLO / BOOM SAUCE / POTATO STICKS"
+  },
+  {
+    "item": "Buffalo Soldier In-The-Bag SHREDDED CHICKEN / SHREDDED LETTUCE / BUFFALO WING SAUCE / HOMEMADE RANCH / GREEN ONION / DANISH BLUE CHEESE"
+  },
+  {
+    "item": "Chick Magnet In-The-Bag SHREDDED CHICKEN / SHREDDED LETTUCE / PICO DE GALLO / WHITE CHEDDAR / GARLIC CILANTRO SAUCE / COTIJA CHEESE"
+  },
+  {
+    "item": "Chicken Bacon Ranch In-The-Bag SHREDDED CHICKEN / WHITE CHEDDAR / APPLEWOOD SMOKED BACON / PICO DE GALLO / HOMEMADE RANCH"
+  },
+  {
+    "item": "Pesto Chicken In-The-Bag HONEY CHIPOTLE CHICKEN / PICO / MIXED GREENS / GARLIC PESTO AIOLI / COTIJA"
+  },
+  {
+    "item": "Notorious PIG In-The-Bag SMOKED PULLED PORK / CRAFT BEER QUESO / LETTUCE / BOOM SAUCE / SALSA ROJA / COTIJA CHEESE"
+  },
+  {
+    "item": "Pork on Fire In-The-Bag SMOKED PULLED PORK / FRIED JALAPENOS / PICO DE GALLO / ANCHO CHIPOTLE SAUCE / HOUSE PICKLED ONION / COTIJA / CILANTRO"
+  },
+  {
+    "item": "Al Pastor In-The-Bag SMOKED PULLED PORK / SHREDDED LETTUCE / PICO DE GALLO / FRESH PINEAPPLE / MANGO PINEAPPLE VINAIGRETTE / COTIJA CHEESE"
+  },
+  {
+    "item": "Trailer Park In-The-Bag SMOKED PULLED PORK / CRAFT BEER QUESO / MOONSHINE BBQ / POTATO STICKS"
+  },
+  {
+    "item": "Traditional In-The-Bag CHOICE OF MEAT / SHREDDED LETTUCE / PICO DE GALLO / WHITE CHEDDAR / SOUR CREAM"
+  },
+  {
+    "item": "Off the Hook In-The-Bag SUSHI GRADE AHI TUNA POKE STYLE / PICO DE GALLO / MIXED GREENS / TOASRED SESAME & WASABI AIOLI / SESAME SEEDS"
+  },
+  {
+    "item": "Maui In-The-Bag SHREDDED CHICKEN / SHREDDED LETTUCE / PINEAPPLE PICO DE GALLO / MANGO PINEAPPLE VINAIGRETTE / COTIJA CHEESE"
+  },
+  {
+    "item": "Cheddar Bacon Cheeseburger In-The-Bag SEASONED GROUND BEEF / APPLEWOOD SMOKED BACON / PICO DE GALLO / SHREDDED LETTUCE / WHITE CHEDDAR / SOUR CREAM"
+  },
+  {
+    "category": "Nachos"
+  },
+  {
+    "item": "Mac Attack Nachos SEASONED GROUND BEEF / CRAFT BEER MAC & CHEESE / APPLEWOOD SMOKED BACON / GREEN ONION"
+  },
+  {
+    "item": "Tacosaurus Nachos SEASONED GROUND BEEF / SHREDDED LETTUCE / PICO DE GALLO / WHITE CHEDDAR / CRUSHED DORITOS / SOUTHWEST SAUCE / COTIJA CHEESE"
+  },
+  {
+    "item": "Taco Bomb Nachos SEASONED GROUND BEEF / WHITE CHEDDAR / CRAFT BEER QUESO / PICO DE GALLO / SOUR CREAM / POTATO STICKS"
+  },
+  {
+    "item": "Boom Boom Nachos SEASONED GROUND BEEF / SHREDDED LETTUCE / PICO DE GALLO / BOOM SAUCE / POTATO STICKS"
+  },
+  {
+    "item": "Buffalo Soldier Nachos SHREDDED CHICKEN / SHREDDED LETTUCE / BUFFALO WING SAUCE / HOMEMADE RANCH / GREEN ONION / DANISH BLUE CHEESE"
+  },
+  {
+    "item": "Chick Magnet Nachos SHREDDED CHICKEN / SHREDDED LETTUCE / PICO DE GALLO / WHITE CHEDDAR / GARLIC CILANTRO SAUCE / COTIJA CHEESE"
+  },
+  {
+    "item": "Chicken Bacon Ranch Nachos SHREDDED CHICKEN / WHITE CHEDDAR / APPLEWOOD SMOKED BACON / PICO DE GALLO / HOMEMADE RANCH"
+  },
+  {
+    "item": "Pesto Chicken Nachos HONEY CHIPOTLE CHICKEN / PICO / MIXED GREENS / GARLIC PESTO AIOLI / COTIJA"
+  },
+  {
+    "item": "Notorious PIG Nachos SMOKED PULLED PORK / CRAFT BEER QUESO / LETTUCE / BOOM SAUCE / SALSA ROJA / COTIJA CHEESE"
+  },
+  {
+    "item": "Pork on Fire Nachos SMOKED PULLED PORK / FRIED JALAPENOS / PICO DE GALLO / ANCHO CHIPOTLE SAUCE / HOUSE PICKLED ONION / COTIJA / CILANTRO"
+  },
+  {
+    "item": "Al Pastor Nachos SMOKED PULLED PORK / SHREDDED LETTUCE / PICO DE GALLO / FRESH PINEAPPLE / MANGO PINEAPPLE VINAIGRETTE / COTIJA CHEESE"
+  },
+  {
+    "item": "Trailer Park Nachos SMOKED PULLED PORK / CRAFT BEER QUESO / MOONSHINE BBQ / POTATO STICKS"
+  },
+  {
+    "item": "Traditional Nachos CHOICE OF MEAT / SHREDDED LETTUCE / PICO DE GALLO / WHITE CHEDDAR / SOUR CREAM"
+  },
+  {
+    "item": "Off the Hook Nachos SUSHI GRADE AHI TUNA POKE STYLE / PICO DE GALLO / MIXED GREENS / TOASRED SESAME & WASABI AIOLI / SESAME SEEDS"
+  },
+  {
+    "item": "Maui Nachos SHREDDED CHICKEN / SHREDDED LETTUCE / PINEAPPLE PICO DE GALLO / MANGO PINEAPPLE VINAIGRETTE / COTIJA CHEESE"
+  },
+  {
+    "item": "Cheddar Bacon Cheeseburger Nachos SEASONED GROUND BEEF / APPLEWOOD SMOKED BACON / PICO DE GALLO / SHREDDED LETTUCE / WHITE CHEDDAR / SOUR CREAM"
+  },
+  {
+    "category": "Sides & Add-Ons"
+  },
+  {
+    "item": "Trio.Chips, Guacamole, Salsa, and Queso"
+  },
+  {
+    "item": "Queso & Chips.."
+  },
+  {
+    "item": "Guacamole & Chips.."
+  },
+  {
+    "item": "Salsa & Chips.."
+  },
+  {
+    "item": "Mac & Cheese.."
+  },
+  {
+    "item": "2oz Queso.."
+  },
+  {
+    "item": "2oz Guacamole.."
+  },
+  {
+    "item": "2oz Salsa.."
+  },
+  {
+    "item": "Doritos.."
+  },
+  {
+    "item": "Side of Rice.."
+  },
+  {
+    "item": "Side Tortilla.."
+  },
+  {
+    "item": "Tortilla Chips.."
+  },
+  {
+    "item": "Extra Sauce..Please select a Sauce Option"
+  },
+  {
+    "item": "Extra Ground Beef.."
+  },
+  {
+    "item": "Extra Chicken.."
+  },
+  {
+    "item": "Extra Pork.."
+  },
+  {
+    "item": "BIG DEAL COMBO"
+  },
+  {
+    "category": "Kids"
+  },
+  {
+    "item": "Kid's Cheese Quesadilla"
+  },
+  {
+    "item": "Kid's Beef Quesadilla"
+  },
+  {
+    "item": "Kid's Chicken Quesadilla"
+  },
+  {
+    "item": "Kid's Pork Quesadilla"
+  },
+  {
+    "category": "NA Beverage"
+  },
+  {
+    "item": "Water Bottle"
+  },
+  {
+    "item": "Unsweet Tea"
+  },
+  {
+    "item": "Sweet Tea"
+  },
+  {
+    "item": "Lemonade"
+  },
+  {
+    "item": "Stubborn Craft Soda"
+  }
+]

@@ -1,0 +1,359 @@
+[
+  {
+    "key": "black-rooster-mills",
+    "id": "black-rooster-mills",
+    "slug": "black-rooster-mills",
+    "name": "Black Rooster Taqueria",
+    "location": "Mills 50 · Orlando",
+    "address": "1323 N Mills Ave, Orlando, FL 32803",
+    "websiteUrl": "https://www.blackroostertaqueria.com/",
+    "menuUrl": "https://www.blackroostertaqueria.com/menu-mills/",
+    "allergenUrl": null,
+    "phone": "407-601-0994",
+    "cuisine": "Mexican",
+    "description": "Mexican food in Mills 50.",
+    "fictional": false,
+    "confirmed": false,
+    "source": {
+      "scope": "location",
+      "reviewedAt": "2026-10-21",
+      "note": "Official published food menu. Menu names and explicitly named ingredients do not constitute a complete allergen declaration. Confirm availability and cross-contact with staff."
+    }
+  },
+  {
+    "key": "pig-floyds-mills",
+    "id": "pig-floyds-mills",
+    "slug": "pig-floyds-mills",
+    "name": "Pig Floyd’s & Pigzza",
+    "location": "Mills 50 · Orlando",
+    "address": "1050 N Mills Ave, Orlando, FL 32803",
+    "websiteUrl": "https://www.pigfloyds.com/",
+    "menuUrl": "https://www.pigfloyds.com/",
+    "allergenUrl": null,
+    "phone": "407-704-8223",
+    "cuisine": "BBQ & Pizza",
+    "description": "BBQ & Pizza food in Mills 50.",
+    "fictional": false,
+    "confirmed": false,
+    "source": {
+      "scope": "location",
+      "reviewedAt": "2026-10-21",
+      "note": "Official published food menu. Menu names and explicitly named ingredients do not constitute a complete allergen declaration. Confirm availability and cross-contact with staff."
+    }
+  },
+  {
+    "key": "tako-cheena-mills",
+    "id": "tako-cheena-mills",
+    "slug": "tako-cheena-mills",
+    "name": "Tako Cheena",
+    "location": "Mills 50 · Orlando",
+    "address": "948 N Mills Ave, Orlando, FL 32803",
+    "websiteUrl": "https://tako407cheena.com/",
+    "menuUrl": "https://tako407cheena.com/menu?dialogState=orderDetails",
+    "allergenUrl": null,
+    "phone": null,
+    "cuisine": "Asian Fusion",
+    "description": "Asian Fusion food in Mills 50.",
+    "fictional": false,
+    "confirmed": false,
+    "source": {
+      "scope": "location",
+      "reviewedAt": "2026-10-21",
+      "note": "Official published food menu. Menu names and explicitly named ingredients do not constitute a complete allergen declaration. Confirm availability and cross-contact with staff."
+    }
+  },
+  {
+    "key": "loving-hut-orlando",
+    "id": "loving-hut-orlando",
+    "slug": "loving-hut-orlando",
+    "name": "Loving Hut Orlando",
+    "location": "Colonialtown · Orlando",
+    "address": "2101 E Colonial Dr, Orlando, FL 32803",
+    "websiteUrl": "https://lovinghut.us/orlando/",
+    "menuUrl": "https://lovinghut.us/orlando/",
+    "allergenUrl": null,
+    "phone": "321-247-5889",
+    "cuisine": "Vegan",
+    "description": "Vegan food in Colonialtown.",
+    "fictional": false,
+    "confirmed": false,
+    "source": {
+      "scope": "location",
+      "reviewedAt": "2026-10-21",
+      "note": "Official published food menu. Menu names and explicitly named ingredients do not constitute a complete allergen declaration. Confirm availability and cross-contact with staff."
+    }
+  },
+  {
+    "key": "the-strand-mills",
+    "id": "the-strand-mills",
+    "slug": "the-strand-mills",
+    "name": "The Strand",
+    "location": "Mills 50 · Orlando",
+    "address": "807 N Mills Ave, Orlando, FL 32803",
+    "websiteUrl": "https://www.strandorlando.com/",
+    "menuUrl": "https://www.strandorlando.com/food",
+    "allergenUrl": null,
+    "phone": "407-920-7744",
+    "cuisine": "Seasonal American",
+    "description": "Seasonal American food in Mills 50.",
+    "fictional": false,
+    "confirmed": false,
+    "source": {
+      "scope": "location",
+      "reviewedAt": "2026-10-21",
+      "note": "Official published food menu. Menu names and explicitly named ingredients do not constitute a complete allergen declaration. Confirm availability and cross-contact with staff."
+    }
+  },
+  {
+    "key": "the-monroe",
+    "id": "the-monroe",
+    "slug": "the-monroe",
+    "name": "The Monroe",
+    "location": "Creative Village · Orlando",
+    "address": "448 N Terry Ave, Orlando, FL 32801",
+    "websiteUrl": "https://www.themonroeorlando.com/",
+    "menuUrl": "https://www.themonroeorlando.com/menus",
+    "allergenUrl": null,
+    "phone": "407-734-2102",
+    "cuisine": "American",
+    "description": "American food in Creative Village.",
+    "fictional": false,
+    "confirmed": false,
+    "source": {
+      "scope": "location",
+      "reviewedAt": "2026-10-21",
+      "note": "Official published food menu. Menu names and explicitly named ingredients do not constitute a complete allergen declaration. Confirm availability and cross-contact with staff."
+    }
+  },
+  {
+    "key": "lazy-moon-mills",
+    "id": "lazy-moon-mills",
+    "slug": "lazy-moon-mills",
+    "name": "Lazy Moon · Mills/50",
+    "location": "Mills 50 · Orlando",
+    "address": "1011 E Colonial Dr, Suite 101, Orlando, FL 32803",
+    "websiteUrl": "https://www.lazymoonpizza.com/",
+    "menuUrl": "https://order.lazymoonpizza.com/menu/lazy-moon-mills-50-1011-east-colonial-drive",
+    "allergenUrl": null,
+    "phone": "407-412-6222",
+    "cuisine": "Pizza",
+    "description": "Pizza food in Mills 50.",
+    "fictional": false,
+    "confirmed": false,
+    "source": {
+      "scope": "location",
+      "reviewedAt": "2026-10-21",
+      "note": "Official published food menu. Menu names and explicitly named ingredients do not constitute a complete allergen declaration. Confirm availability and cross-contact with staff."
+    }
+  },
+  {
+    "key": "winter-park-biscuit",
+    "id": "winter-park-biscuit",
+    "slug": "winter-park-biscuit",
+    "name": "Winter Park Biscuit Company",
+    "location": "Audubon Park · Orlando",
+    "address": "3201 Corrine Dr, Orlando, FL 32803",
+    "websiteUrl": "https://www.winterparkbiscuitco.com/",
+    "menuUrl": "https://order.toasttab.com/online/winterparkbiscuitco",
+    "allergenUrl": null,
+    "phone": null,
+    "cuisine": "Vegan",
+    "description": "Vegan food in Audubon Park.",
+    "fictional": false,
+    "confirmed": false,
+    "source": {
+      "scope": "location",
+      "reviewedAt": "2026-10-21",
+      "note": "Official published food menu. Menu names and explicitly named ingredients do not constitute a complete allergen declaration. Confirm availability and cross-contact with staff."
+    }
+  },
+  {
+    "key": "reyes-mezcaleria",
+    "id": "reyes-mezcaleria",
+    "slug": "reyes-mezcaleria",
+    "name": "Reyes Mezcaleria",
+    "location": "North Quarter · Orlando",
+    "address": "821 N Orange Ave, Orlando, FL 32804",
+    "websiteUrl": "https://www.reyesmex.com/",
+    "menuUrl": "https://www.reyesmex.com/copy-of-happy-hour-menu",
+    "allergenUrl": null,
+    "phone": "407-868-9007",
+    "cuisine": "Mexican",
+    "description": "Mexican food in North Quarter.",
+    "fictional": false,
+    "confirmed": false,
+    "source": {
+      "scope": "location",
+      "reviewedAt": "2026-10-21",
+      "note": "Official published food menu. Menu names and explicitly named ingredients do not constitute a complete allergen declaration. Confirm availability and cross-contact with staff."
+    }
+  },
+  {
+    "key": "the-osprey",
+    "id": "the-osprey",
+    "slug": "the-osprey",
+    "name": "The Osprey",
+    "location": "Baldwin Park · Orlando",
+    "address": "4899 New Broad St, Orlando, FL 32814",
+    "websiteUrl": "https://www.theospreyorlando.com/",
+    "menuUrl": "https://www.theospreyorlando.com/copy-of-menu",
+    "allergenUrl": null,
+    "phone": "407-960-7700",
+    "cuisine": "Seafood",
+    "description": "Seafood food in Baldwin Park.",
+    "fictional": false,
+    "confirmed": false,
+    "source": {
+      "scope": "location",
+      "reviewedAt": "2026-10-21",
+      "note": "Official published food menu. Menu names and explicitly named ingredients do not constitute a complete allergen declaration. Confirm availability and cross-contact with staff."
+    }
+  },
+  {
+    "key": "seito-baldwin-park",
+    "id": "seito-baldwin-park",
+    "slug": "seito-baldwin-park",
+    "name": "Seito Sushi · Baldwin Park",
+    "location": "Baldwin Park · Orlando",
+    "address": "4898 New Broad St, Orlando, FL 32814",
+    "websiteUrl": "https://www.seitosushibp.com/",
+    "menuUrl": "https://www.seitosushibp.com/menu",
+    "allergenUrl": null,
+    "phone": "407-898-8801",
+    "cuisine": "Japanese",
+    "description": "Japanese food in Baldwin Park.",
+    "fictional": false,
+    "confirmed": false,
+    "source": {
+      "scope": "location",
+      "reviewedAt": "2026-10-21",
+      "note": "Official published food menu. Menu names and explicitly named ingredients do not constitute a complete allergen declaration. Confirm availability and cross-contact with staff."
+    }
+  },
+  {
+    "key": "stubborn-mule",
+    "id": "stubborn-mule",
+    "slug": "stubborn-mule",
+    "name": "The Stubborn Mule",
+    "location": "Thornton Park · Orlando",
+    "address": "100 S Eola Dr, Orlando, FL 32801",
+    "websiteUrl": "https://www.thestubbornmuleorlando.com/",
+    "menuUrl": "https://order.toasttab.com/online/the-stubborn-mule-100-s-eola-drive",
+    "allergenUrl": null,
+    "phone": "407-730-3400",
+    "cuisine": "American",
+    "description": "American food in Thornton Park.",
+    "fictional": false,
+    "confirmed": false,
+    "source": {
+      "scope": "location",
+      "reviewedAt": "2026-10-21",
+      "note": "Official published food menu. Menu names and explicitly named ingredients do not constitute a complete allergen declaration. Confirm availability and cross-contact with staff."
+    }
+  },
+  {
+    "key": "pizza-bruno-curry",
+    "id": "pizza-bruno-curry",
+    "slug": "pizza-bruno-curry",
+    "name": "Pizza Bruno · Curry Ford",
+    "location": "Curry Ford · Orlando",
+    "address": "3990 Curry Ford Rd, Orlando, FL 32806",
+    "websiteUrl": "https://pizzabrunofl.com/",
+    "menuUrl": "https://pizzabrunofl.com/order/pizza-bruno-curry-ford-3990-curry-ford-road",
+    "allergenUrl": null,
+    "phone": "689-220-8020",
+    "cuisine": "Italian & Pizza",
+    "description": "Italian & Pizza food in Curry Ford.",
+    "fictional": false,
+    "confirmed": false,
+    "source": {
+      "scope": "location",
+      "reviewedAt": "2026-10-21",
+      "note": "Official published food menu. Menu names and explicitly named ingredients do not constitute a complete allergen declaration. Confirm availability and cross-contact with staff."
+    }
+  },
+  {
+    "key": "mamak-colonial",
+    "id": "mamak-colonial",
+    "slug": "mamak-colonial",
+    "name": "Mamak Asian Street Food",
+    "location": "Mills 50 · Orlando",
+    "address": "1231 E Colonial Dr, Orlando, FL 32803",
+    "websiteUrl": "https://www.mamakeats.com/",
+    "menuUrl": "https://order.toasttab.com/online/mamak-asian-street-food-1231-e-colonial-drive",
+    "allergenUrl": null,
+    "phone": "407-270-4688",
+    "cuisine": "Malaysian",
+    "description": "Malaysian food in Mills 50.",
+    "fictional": false,
+    "confirmed": false,
+    "source": {
+      "scope": "location",
+      "reviewedAt": "2026-10-21",
+      "note": "Official published food menu. Menu names and explicitly named ingredients do not constitute a complete allergen declaration. Confirm availability and cross-contact with staff."
+    }
+  },
+  {
+    "key": "tin-taco-downtown",
+    "id": "tin-taco-downtown",
+    "slug": "tin-taco-downtown",
+    "name": "Tin & Taco · Downtown",
+    "location": "Downtown · Orlando",
+    "address": "40 W Washington St, Orlando, FL 32801",
+    "websiteUrl": "https://www.tinandtaco.com/",
+    "menuUrl": "https://order.toasttab.com/online/tin-and-taco-downtown-orlando-40-w-washington-st",
+    "allergenUrl": null,
+    "phone": null,
+    "cuisine": "Tacos",
+    "description": "Tacos food in Downtown.",
+    "fictional": false,
+    "confirmed": false,
+    "source": {
+      "scope": "location",
+      "reviewedAt": "2026-10-21",
+      "note": "Official published food menu. Menu names and explicitly named ingredients do not constitute a complete allergen declaration. Confirm availability and cross-contact with staff."
+    }
+  },
+  {
+    "key": "sparrow-orlando",
+    "id": "sparrow-orlando",
+    "slug": "sparrow-orlando",
+    "name": "Sparrow",
+    "location": "North Quarter · Orlando",
+    "address": "807 N Orange Ave, Orlando, FL 32801",
+    "websiteUrl": "https://www.sparroworlando.com/",
+    "menuUrl": "https://www.sparroworlando.com/menu",
+    "allergenUrl": null,
+    "phone": null,
+    "cuisine": "Contemporary",
+    "description": "Contemporary food in North Quarter.",
+    "fictional": false,
+    "confirmed": false,
+    "source": {
+      "scope": "location",
+      "reviewedAt": "2026-10-21",
+      "note": "Official published food menu. Menu names and explicitly named ingredients do not constitute a complete allergen declaration. Confirm availability and cross-contact with staff."
+    }
+  },
+  {
+    "key": "osteria-ester",
+    "id": "osteria-ester",
+    "slug": "osteria-ester",
+    "name": "Osteria Ester",
+    "location": "Thornton Park · Orlando",
+    "address": "629 E Central Blvd, Orlando, FL 32801",
+    "websiteUrl": "https://www.osteriaester.com/",
+    "menuUrl": "https://www.osteriaester.com/menu",
+    "allergenUrl": null,
+    "phone": "407-203-3577",
+    "cuisine": "Italian",
+    "description": "Italian food in Thornton Park.",
+    "fictional": false,
+    "confirmed": false,
+    "source": {
+      "scope": "location",
+      "reviewedAt": "2026-10-21",
+      "note": "Official published food menu. Menu names and explicitly named ingredients do not constitute a complete allergen declaration. Confirm availability and cross-contact with staff."
+    }
+  }
+]

@@ -1,0 +1,135 @@
+import test from "node:test";
+import assert from "node:assert/strict";
+import { readFile } from "node:fs/promises";
+import {
+  localRestaurants,
+  localDishes,
+  mergeLocalCatalog,
+} from "../src/local-catalog.js";
+import { assessDish, rankDishes } from "../src/domain.js";
+
+test("district labels match saved Census geography rather than an assumed district", async () => {
+  for (const restaurant of localRestaurants) {
+    const evidence = JSON.parse(
+      await readFile(
+        new URL(
+          `../../research/district-evidence/${restaurant.slug}.json`,
+          import.meta.url,
+        ),
+      ),
+    );
+    const district =
+      evidence.response.result.addressMatches[0].geographies[
+        "119th Congressional Districts"
+      ][0];
+    if (district) {
+      assert.equal(restaurant.district.number, district.BASENAME);
+      assert.equal(restaurant.district.congress, Number(district.CDSESSN));
+      assert.equal(restaurant.district.sourceUrl, evidence.sourceUrl);
+    } else assert.equal(restaurant.district, null);
+    assert.equal(restaurant.confirmed, false);
+  }
+});
+
+test("live UUID records replace bundled copies without breaking dish associations", () => {
+  const restaurant = localRestaurants[0];
+  const dish = localDishes[0];
+  const { id, slug, name, confirmed, fictional, ...details } = restaurant;
+  const merged = mergeLocalCatalog(
+    [{ id: "server-restaurant", slug, name, confirmed, fictional, details }],
+    [{ ...dish, id: "server-dish", restaurantId: "server-restaurant" }],
+  );
+  assert.equal(merged.restaurants.length, localRestaurants.length);
+  assert.equal(merged.dishes.length, localDishes.length);
+  assert.equal(merged.restaurants[0].address, restaurant.address);
+  assert.equal(merged.restaurants[0].id, "server-restaurant");
+  assert.equal(merged.dishes[0].id, "server-dish");
+  for (const entry of merged.dishes.filter((entry) =>
+    entry.catalogKey.startsWith(restaurant.slug),
+  ))
+    assert.equal(entry.restaurantId, "server-restaurant");
+});
+
+test("published empty allergen cells never become an allergen-free recommendation", () => {
+  const rice = localDishes.find((dish) =>
+    dish.catalogKey.endsWith("brown-rice"),
+  );
+  const result = assessDish(
+    { ...rice, informationComplete: true },
+    { allergies: ["Milk"], restrictions: [] },
+  );
+  assert.equal(result.level, "unknown");
+  assert.match(result.reasons.join(" "), /not your complete order/);
+  assert.equal(rice.price, null);
+});
+
+test("Hawkers missing wheat coverage stays unknown; positive milk evidence conflicts", () => {
+  const bao = localDishes.find((dish) =>
+    dish.catalogKey.endsWith("seoul-chicken-bao"),
+  );
+  const wheat = assessDish(bao, { allergies: ["Wheat"], restrictions: [] });
+  assert.equal(wheat.level, "unknown");
+  assert.match(wheat.reasons.join(" "), /Source does not cover: Wheat/);
+  const milk = assessDish(bao, { allergies: ["Milk"], restrictions: [] });
+  assert.equal(milk.level, "conflict");
+  assert.deepEqual(milk.conflicts, ["Milk"]);
+});
+
+test("ingredient evidence catches egg in almond chicken and sorting never rewards a conflict", () => {
+  const chicken = localDishes.find((dish) =>
+    dish.catalogKey.endsWith("almond-chicken"),
+  );
+  const rice = localDishes.find((dish) =>
+    dish.catalogKey.endsWith("brown-rice"),
+  );
+  assert.equal(assessDish(chicken, { allergies: ["Egg"] }).level, "conflict");
+  assert.equal(
+    rankDishes([chicken, rice], { allergies: ["Egg"], likes: [] })[0].id,
+    rice.id,
+  );
+  const noodles = localDishes.find((dish) =>
+    dish.catalogKey.endsWith("sweet-potato-noodles"),
+  );
+  assert.equal(
+    assessDish(noodles, { allergies: ["Sesame"] }).level,
+    "conflict",
+  );
+  assert.ok(
+    noodles.ingredients.some(
+      (item) => item.toLowerCase() === "toasted white sesame seeds",
+    ),
+  );
+});
+
+test("opening a saved demo refreshes old allergen facts without losing stable IDs", () => {
+  const dish = { ...localDishes[0], id: "saved-id", allergens: ["Soy"] };
+  const merged = mergeLocalCatalog(localRestaurants, [dish], {
+    preferBundled: true,
+  });
+  assert.equal(merged.dishes[0].id, "saved-id");
+  assert.deepEqual(merged.dishes[0].allergens, localDishes[0].allergens);
+  assert.equal(merged.dishes[0].cloudBacked, false);
+});
+
+test("the CAC catalog has twenty real locations with traceable, clean food records", () => {
+  assert.equal(localRestaurants.length, 20);
+  assert.equal(
+    new Set(localDishes.map((dish) => dish.catalogKey)).size,
+    localDishes.length,
+  );
+  assert.ok(localDishes.length > 1000);
+  for (const restaurant of localRestaurants) {
+    assert.equal(restaurant.fictional, false);
+    assert.equal(restaurant.confirmed, false);
+    assert.ok(restaurant.menuUrl.startsWith("https://"));
+    assert.ok(restaurant.menuCoverage);
+    assert.equal(restaurant.district.number, "10");
+    assert.ok(localDishes.some((dish) => dish.restaurantId === restaurant.id));
+  }
+  for (const dish of localDishes) {
+    assert.doesNotMatch(dish.name, /Image: item|OUT OF STOCK|\uE200/);
+    assert.doesNotMatch(dish.category, /From The Bar|Happy Hour · Cans/);
+    assert.ok(dish.provenance.evidenceNote);
+    assert.equal(dish.informationComplete, false);
+  }
+});

@@ -1,0 +1,274 @@
+{
+  "sourceUrl": "https://geocoding.geo.census.gov/geocoder/geographies/onelineaddress?address=807+N+Orange+Ave%2C+Orlando%2C+FL+32801&benchmark=Public_AR_Current&vintage=ACS2025_Current&format=json",
+  "reviewedAt": "2026-10-21",
+  "response": {
+    "result": {
+      "input": {
+        "address": {
+          "address": "807 N Orange Ave, Orlando, FL 32801"
+        },
+        "vintage": {
+          "isDefault": false,
+          "id": "425",
+          "vintageName": "ACS2025_Current",
+          "vintageDescription": "ACS2025 Vintage - Current Benchmark"
+        },
+        "benchmark": {
+          "isDefault": true,
+          "benchmarkDescription": "Public Address Ranges - Current Benchmark",
+          "id": "4",
+          "benchmarkName": "Public_AR_Current"
+        }
+      },
+      "addressMatches": [
+        {
+          "tigerLine": {
+            "side": "R",
+            "tigerLineId": "642885145"
+          },
+          "geographies": {
+            "States": [
+              {
+                "STATENS": "00294478",
+                "GEOID": "12",
+                "CENTLAT": "+28.4062029",
+                "AREAWATER": "45960479273",
+                "STATE": "12",
+                "BASENAME": "Florida",
+                "STUSAB": "FL",
+                "OID": "2749046365780",
+                "LSADC": "00",
+                "FUNCSTAT": "A",
+                "INTPTLAT": "+28.3989775",
+                "DIVISION": "5",
+                "NAME": "Florida",
+                "REGION": "3",
+                "OBJECTID": 4,
+                "CENTLON": "-082.5022125",
+                "AREALAND": "138973813223",
+                "INTPTLON": "-082.5143005",
+                "MTFCC": "G4000"
+              }
+            ],
+            "Combined Statistical Areas": [
+              {
+                "POP100": "",
+                "GEOID": "422",
+                "CENTLAT": "+28.5124606",
+                "AREAWATER": "3025356348",
+                "BASENAME": "Orlando-Lakeland-Deltona, FL",
+                "OID": "2619034687908097",
+                "LSADC": "M0",
+                "FUNCSTAT": "S",
+                "INTPTLAT": "+28.5125827",
+                "NAME": "Orlando-Lakeland-Deltona, FL CSA",
+                "OBJECTID": 125,
+                "CSA": "422",
+                "CENTLON": "-081.4491586",
+                "INTPTLON": "-081.4489522",
+                "AREALAND": "19261541885",
+                "HU100": "",
+                "MTFCC": "G3100"
+              }
+            ],
+            "County Subdivisions": [
+              {
+                "COUSUB": "92522",
+                "GEOID": "1209592522",
+                "CENTLAT": "+28.5016600",
+                "AREAWATER": "45607882",
+                "STATE": "12",
+                "BASENAME": "Orlando",
+                "OID": "27690359390748",
+                "LSADC": "22",
+                "FUNCSTAT": "S",
+                "INTPTLAT": "+28.5018656",
+                "NAME": "Orlando CCD",
+                "OBJECTID": 10699,
+                "CENTLON": "-081.3642140",
+                "COUSUBCC": "Z5",
+                "AREALAND": "495398841",
+                "INTPTLON": "-081.3649215",
+                "MTFCC": "G4040",
+                "COUSUBNS": "01935881",
+                "COUNTY": "095"
+              }
+            ],
+            "Urban Areas": [
+              {
+                "GEOID": "65863",
+                "CENTLAT": "+28.5757291",
+                "AREAWATER": "168582392",
+                "BASENAME": "Orlando, FL",
+                "OID": "2702190636326",
+                "UA": "65863",
+                "LSADC": "67",
+                "FUNCSTAT": "S",
+                "INTPTLAT": "+28.5768141",
+                "NAME": "Orlando, FL Urban Area",
+                "OBJECTID": 1222,
+                "CENTLON": "-081.4208843",
+                "AREALAND": "1669421721",
+                "INTPTLON": "-081.4209913",
+                "MTFCC": "G3500"
+              }
+            ],
+            "Incorporated Places": [
+              {
+                "DISP_CLR": 1,
+                "STGEOMETRY_Area": 464094860.22530836,
+                "NECTAPCI": "N",
+                "GEOID": "1253000",
+                "CENTLAT": "+28.4705902",
+                "AREAWATER": "21649307",
+                "BASENAME": "Orlando",
+                "STATE": "12",
+                "OID": "27890359410208",
+                "LSADC": "25",
+                "PLACE": "53000",
+                "FUNCSTAT": "A",
+                "INTPTLAT": "+28.4728185",
+                "NAME": "Orlando city",
+                "OBJECTID": 32211,
+                "PLACECC": "C1",
+                "CENTLON": "-081.3128433",
+                "STGEOMETRY_Length": 559089.1759521137,
+                "CBSAPCI": "Y",
+                "AREALAND": "335664599",
+                "INTPTLON": "-081.3202421",
+                "PLACENS": "02404443",
+                "MTFCC": "G4110"
+              }
+            ],
+            "Counties": [
+              {
+                "GEOID": "12095",
+                "CENTLAT": "+28.5145210",
+                "AREAWATER": "259989516",
+                "STATE": "12",
+                "BASENAME": "Orange",
+                "OID": "2759090635982",
+                "LSADC": "06",
+                "FUNCSTAT": "A",
+                "INTPTLAT": "+28.5143906",
+                "NAME": "Orange County",
+                "OBJECTID": 3045,
+                "CENTLON": "-081.3233663",
+                "COUNTYCC": "H1",
+                "COUNTYNS": "00295750",
+                "AREALAND": "2338896297",
+                "INTPTLON": "-081.3232839",
+                "MTFCC": "G4020",
+                "COUNTY": "095"
+              }
+            ],
+            "2024 State Legislative Districts - Upper": [
+              {
+                "GEOID": "12017",
+                "CENTLAT": "+28.4774064",
+                "AREAWATER": "54924961",
+                "STATE": "12",
+                "BASENAME": "17",
+                "OID": "2129035963375588",
+                "SLDU": "017",
+                "LSADC": "LU",
+                "FUNCSTAT": "N",
+                "INTPTLAT": "+28.4746853",
+                "NAME": "State Senate District 17",
+                "OBJECTID": 116,
+                "CENTLON": "-081.1250825",
+                "LSY": "2024",
+                "AREALAND": "1211649525",
+                "INTPTLON": "-081.1303748",
+                "MTFCC": "G5210",
+                "LDTYP": "O"
+              }
+            ],
+            "2024 State Legislative Districts - Lower": [
+              {
+                "GEOID": "12042",
+                "CENTLAT": "+28.5517985",
+                "SLDL": "042",
+                "AREAWATER": "24895669",
+                "STATE": "12",
+                "BASENAME": "42",
+                "OID": "2139035963375778",
+                "LSADC": "LL",
+                "FUNCSTAT": "N",
+                "INTPTLAT": "+28.5517989",
+                "NAME": "State House District 42",
+                "OBJECTID": 3464,
+                "CENTLON": "-081.3558718",
+                "LSY": "2024",
+                "AREALAND": "120459596",
+                "INTPTLON": "-081.3551243",
+                "MTFCC": "G5220",
+                "LDTYP": "O"
+              }
+            ],
+            "Census Tracts": [
+              {
+                "GEOID": "12095018800",
+                "CENTLAT": "+28.5637067",
+                "AREAWATER": "438013",
+                "STATE": "12",
+                "BASENAME": "188",
+                "OID": "2079019627694930",
+                "LSADC": "CT",
+                "FUNCSTAT": "S",
+                "INTPTLAT": "+28.5629679",
+                "NAME": "Census Tract 188",
+                "OBJECTID": 56303,
+                "TRACT": "018800",
+                "CENTLON": "-081.3719805",
+                "AREALAND": "2833994",
+                "INTPTLON": "-081.3722749",
+                "MTFCC": "G5020",
+                "COUNTY": "095"
+              }
+            ],
+            "119th Congressional Districts": [
+              {
+                "GEOID": "1210",
+                "CENTLAT": "+28.5416767",
+                "CDSESSN": "119",
+                "AREAWATER": "40801652",
+                "STATE": "12",
+                "BASENAME": "10",
+                "OID": "2119035951820944",
+                "LSADC": "C2",
+                "FUNCSTAT": "N",
+                "INTPTLAT": "+28.5413937",
+                "NAME": "Congressional District 10",
+                "OBJECTID": 310,
+                "CENTLON": "-081.2947180",
+                "AREALAND": "665081350",
+                "INTPTLON": "-081.2935153",
+                "MTFCC": "G5200"
+              }
+            ]
+          },
+          "coordinates": {
+            "x": -81.37914291547,
+            "y": 28.555134316068
+          },
+          "addressComponents": {
+            "zip": "32801",
+            "streetName": "ORANGE",
+            "preType": "",
+            "city": "ORLANDO",
+            "preDirection": "N",
+            "suffixDirection": "",
+            "fromAddress": "801",
+            "state": "FL",
+            "suffixType": "AVE",
+            "toAddress": "899",
+            "suffixQualifier": "",
+            "preQualifier": ""
+          },
+          "matchedAddress": "807 N ORANGE AVE, ORLANDO, FL, 32801"
+        }
+      ]
+    }
+  }
+}

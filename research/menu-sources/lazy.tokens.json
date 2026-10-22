@@ -1,0 +1,434 @@
+[
+  {
+    "category": "Build Your Own Slice"
+  },
+  {
+    "item": "Slice - Tomato Base (Includes Mozzarella)Made with Italian San Marzano tomatoes, garlic, basil, oregano and extra virgin olive oil"
+  },
+  {
+    "item": "Slice - Ricotta Base (Includes Mozzarella)Whipped ricotta with asiago and garlic"
+  },
+  {
+    "item": "Slice - Pesto Base (Includes Mozzarella)A classic pesto made with pine nuts, Parmesan, garlic and olive oil"
+  },
+  {
+    "item": "Slice - Mustard Base (Includes Mozzarella)Our 'Mustard base' is made with whole grain mustard & a creamy emulsified olive oil"
+  },
+  {
+    "item": "Slice - BBQ Base (Includes Mozzarella)Our 'BBQ base' is made with inhouse-smoked San Marzano tomatoes, molasses, brown sugar, mustard and BBQ spices"
+  },
+  {
+    "category": "Build Your Own 20\""
+  },
+  {
+    "item": "20\" Tomato Base (Includes Mozzarella)Made with Italian San Marzano tomatoes, garlic, basil, oregano and extra virgin olive oil"
+  },
+  {
+    "item": "20\" Ricotta Base (Includes Mozzarella)Whipped ricotta with asiago and garlic"
+  },
+  {
+    "item": "20\" Pesto Base (Includes Mozzarella)A classic pesto made with pine nuts, Parmesan, garlic and olive oil"
+  },
+  {
+    "item": "20\" Mustard Base (Includes Mozzarella)Our 'Mustard base' is made with whole grain mustard & a creamy emulsified olive oil"
+  },
+  {
+    "item": "20\" BBQ Base (Includes Mozzarella)Our 'BBQ base' is made with inhouse-smoked San Marzano tomatoes, molasses, brown sugar, mustard and BBQ spices"
+  },
+  {
+    "category": "Special Featured Menu"
+  },
+  {
+    "item": "Slice - French Onion - LTO Mustard Base topped with a Beef stock, thyme, and sherry-infused caramelized onions - simmered in butter for a naturally sweet, luscious bite. Melted Gruyère, Asiago, and Mozzarella cheeses, finished with a fresh chive garnish."
+  },
+  {
+    "item": "20 inch - French Onion - LTO Mustard Base topped with a Beef stock, thyme, and sherry-infused caramelized onions - simmered in butter for a naturally sweet, luscious bite. Melted Gruyère, Asiago, and Mozzarella cheeses, finished with a fresh chive garnish."
+  },
+  {
+    "category": "Lazy Faves Slice"
+  },
+  {
+    "item": "Slice - Meaty McMeatface Pizza Tomato Sauce, Birria Beef, Ground Beef, Pepperoni, Bacon, Mozzarella"
+  },
+  {
+    "item": "Slice - Cuban Pizza Mustard Sauce, Dill Pickles, Ham, Mojo Pork, Mozzarella"
+  },
+  {
+    "item": "Slice - Down Home Pizza Homemade BBQ Sauce, Red Onions, Bacon, House-Smoked BBQ Chicken, Mozzarella"
+  },
+  {
+    "item": "Slice - Jason's Mom's Pizza Tomato Sauce, Chicken, Sauteed Mushrooms, Caramelized Onions, Tomatoes, Baked Ranch, Jason's Mom's Sauce, Mozzarella"
+  },
+  {
+    "item": "Slice - The Buff Pizza Tomato Sauce, Buffalo Chicken, Blue Cheese Crumbles, Buffalo Sauce, Baked Ranch, Mozzarella"
+  },
+  {
+    "item": "Slice - Treehugger Pizza Tomato Sauce, You Pick 2 Vegan toppings, Vegan Mozzarella"
+  },
+  {
+    "item": "Slice - Garden Grazer Pizza Tomato Sauce, Artichokes, Spinach, Broccoli, White Onions, Sun Dried Tomatoes, Mozzarella"
+  },
+  {
+    "item": "Slice - Uptown Pizza Vegan BBQ Sauce, Vegan BBQ Chicken, Red Onions, Vegan Mozzarella"
+  },
+  {
+    "item": "Slice - Chili Pizza Homemade Beef & Bean Chili, Cheddar & Mozzarella Cheese, Sour Cream"
+  },
+  {
+    "item": "Slice - The Vegetarian Chili Slice Homemade Hearty Vegetable Chili, Cheddar & Mozzarella Cheeses, Sour Cream"
+  },
+  {
+    "item": "Slice - The Saganaki Slice Ricotta, Fontina, Aged Cheese Blend, Lemon Zest, Parsley, Shredded Mozzarella, Lemon Wedge Side"
+  },
+  {
+    "category": "Lazy Faves 20\""
+  },
+  {
+    "item": "20\" Meaty McMeatface Pizza Tomato Sauce, Birria Beef, Ground Beef, Pepperoni, Bacon, Mozzarella"
+  },
+  {
+    "item": "20\" Jason's Mom's Pizza Tomato Sauce, Chicken, Sauteed Mushrooms, Caramelized Onions, Tomatoes, Baked Ranch, Jason's Mom's Sauce, Mozzarella"
+  },
+  {
+    "item": "20\" Uptown Pizza Vegan BBQ Sauce, Vegan BBQ Chicken, Red Onions, Vegan Mozzarella"
+  },
+  {
+    "item": "20\" The Buff Pizza Tomato Sauce, Buffalo Chicken, Blue Cheese Crumbles, Buffalo Sauce, Baked Ranch, Mozzarella"
+  },
+  {
+    "item": "20\" Down Home Pizza Homemade BBQ Sauce, Red Onions, Bacon, House-Smoked BBQ Chicken, Mozzarella"
+  },
+  {
+    "item": "20\" Cuban Pizza Mustard Sauce, Dill Pickles, Ham, Mojo Pork, Mozzarella"
+  },
+  {
+    "item": "20\" Chili Pizza Homemade Beef & Bean Chili, Cheddar & Mozzarella Cheese, Sour Cream"
+  },
+  {
+    "item": "20\" The Vegetarian Chili Pizza Homemade Hearty Vegetable Chili, Cheddar & Mozzarella Cheeses, Sour Cream"
+  },
+  {
+    "item": "20\" Garden Grazer Pizza Red Sauce, Artichokes, Spinach, Broccoli, White Onions, Sun Dried Tomatoes, Mozzarella"
+  },
+  {
+    "item": "20\" Treehugger Pizza Tomato Sauce, You Pick 2 Vegan toppings, Vegan Mozzarella"
+  },
+  {
+    "item": "20\" The Saganaki Pizza Ricotta, Fontina, Aged Cheese Blend, Lemon Zest, Parsley, Shredded Mozzarella, Lemon Wedge Side"
+  },
+  {
+    "item": "20\" H&H Lazy Fave Go ahead! Split 2 of those Lazy Faves on the same pie!"
+  },
+  {
+    "category": "Calzones"
+  },
+  {
+    "item": "Classic Calzone Tomato Sauce, You Pick 1 Topping, Mozzarella, Ricotta, Includes 1 Dipping Side"
+  },
+  {
+    "item": "Birria Calzone Cilantro, White Onions, Slow Simmered Pulled Beef, Feta, Pickled Red Onions, Tomato Sauce, Mozzarella, -Includes Birria Dipping Jus"
+  },
+  {
+    "item": "Hawaiian Calzone Mojo Pork, Ham, Pineapple, Bacon, Jason's Mom's Sauce, Mozzarella"
+  },
+  {
+    "item": "Veggie Calzone White Onions, Green Peppers, Mushrooms, Black Olives, Baked Ranch, Luvin' Seasoning, Asiago, Mozzarella"
+  },
+  {
+    "category": "Gluten Free"
+  },
+  {
+    "item": "Gluten Free Pizza (contains egg & dairy)12\" Pizza Gluten Free Pizza with Tomato Sauce & Shredded Mozzarella"
+  },
+  {
+    "category": "Cheesy Bread"
+  },
+  {
+    "item": "Cheesy Bread Garlic, Luvin' Seasoning, Mozzarella - Includes 1 Dipping Side"
+  },
+  {
+    "category": "Soup"
+  },
+  {
+    "item": "Tomato Bisque Soup Vine-Ripened Tomaotes Simmered in Homemade Broth with Fresh Basil, Parmesan and a Dash of Cream. Includes Saltine Crackers"
+  },
+  {
+    "item": "Beef Chili Ground Beef & Kidney Beans Stewed with Vine-Ripe Tomatoes and a Hefty Medley of Chili Spices. Garnished with Cheddar Cheese and Served with Saltine Crackers"
+  },
+  {
+    "item": "Vegan Chili Zucchini, Squash and a Medley of Beans Simmered with Mild Chili Spices and Served with Saltine Crackers"
+  },
+  {
+    "category": "Salad"
+  },
+  {
+    "item": "Large Caesar Salad Romaine, Fresh Parmesan, Focaccia Breadcrumbs, Tossed with Homemade Caesar Dressing"
+  },
+  {
+    "item": "Large Brussels and Broccoli Salad Roasted-Chilled & Chopped. Dates, Pecorino, Toasted Cashews, Maple-Mustard Vinaigrette Tossed"
+  },
+  {
+    "item": "Large Greek Salad Artisan Greens, Tomatoes, Red Onions, Cucumbers, Roasted Red Peppers, Pepperoncini, Feta, Black Olives, Homemade Greek Dressing Side"
+  },
+  {
+    "item": "Large Smoked Chickpea Artisan greens, smoked chickpeas, roasted barley, carrots, pumpkin seeds, pink onions, whipped feta, Moroccan vinaigrette"
+  },
+  {
+    "item": "Large Goats in Verona (Goats 2.0)Tender Greens tossed in our House made Balsamic Vinaigrette with Pickled Beets and a Garbanzos-Barley & Carrot medley. Garnished with fresh Goat Cheese crumbles and a crunchy-sweet Quinoa-Pumpkin Crumble OUT OF STOCK"
+  },
+  {
+    "item": "Small Caesar Salad Romaine, Fresh Parmesan, Focaccia Breadcrumbs, Tossed with Homemade Caesar Dressing"
+  },
+  {
+    "item": "Small Brussels and Broccoli Salad Roasted-Chilled & Chopped. Dates, Pecorino, Toasted Cashews, Maple-Mustard Vinaigrette Tossed"
+  },
+  {
+    "item": "Small Greek Salad Artisan Greens, Tomatoes, Red Onions, Cucumbers, Roasted Red Peppers, Pepperoncini, Feta, Black Olives, Homemade Greek Dressing Side"
+  },
+  {
+    "item": "Small Smoked Chickpea Artisan greens, smoked chickpeas, roasted barley, carrots, pumpkin seeds, pink onions, whipped feta, Moroccan vinaigrette"
+  },
+  {
+    "item": "Small Goats in Verona (Goats 2.0)Tender Greens tossed in our House made Balsamic Vinaigrette with Pickled Beets and a Garbanzos-Barley & Carrot medley. Garnished with fresh Goat Cheese crumbles and a crunchy-sweet Quinoa-Pumpkin Crumble OUT OF STOCK"
+  },
+  {
+    "item": "Catering Caesar Salad - 15 to 20 ppl Romaine, Fresh Parmesan, Focaccia Breadcrumbs, Tossed with Homemade Caesar Dressing Feeds Approx 15 to 20 people. Call store to order"
+  },
+  {
+    "item": "Catering Greek Salad - 15 to 20 ppl Artisan Greens, Tomatoes, Red Onions, Cucumbers, Roasted Red Peppers, Pepperoncini, Feta, Black Olives, Homemade Greek Dressing Feeds Approx 15 to 20 people. Call store to order"
+  },
+  {
+    "item": "Catering Garden Salad - 15 to 20 ppl Aritsan Greens, Cucumbers, Grape Tomatoes, Cheddar Cheese, Red Onions, Croutons, Ranch or Maple Mustard Vinaigrette Feeds Approx 15 to 20 people."
+  },
+  {
+    "item": "Catering Smoked Chickpea Salad - 15 to20 ppl Artisan greens, smoked chickpeas, roasted barley, carrots, pumpkin seeds, pink onions, whipped feta, Moroccan vinaigrette Feeds Approx 15 to 20 people."
+  },
+  {
+    "item": "Catering Goats in Verona (Goats 2.0) - 15 to 20 ppl Tender Greens with Pickled Beets and a Garbanzos-Barley & Carrot medley. Garnished with fresh Goat Cheese crumbles and a crunchy-sweet Quinoa-Pumpkin Crumble. Served with our House made Balsamic Vinaigrette Feeds Approx 15 to 20 people."
+  },
+  {
+    "category": "Wraps"
+  },
+  {
+    "item": "Chicken Caesar Wrap Lazy Moon Caesar salad tossed with baked chicken, wrapped in a 12\" flour tortilla, and lightly pressed."
+  },
+  {
+    "item": "Buffalo Chicken Caesar Wrap Lazy Moon Caesar salad tossed with our Buffalo-baked chicken and Buffalo Sauce, wrapped in a 12\" flour tortilla, and lightly pressed."
+  },
+  {
+    "category": "Wings"
+  },
+  {
+    "item": "Wings - Plain No Toss 6 Oven baked wings served with your choice of homemade ranch or blue cheese dressing."
+  },
+  {
+    "item": "Wings - Buffalo Toss 6 Oven baked wings tossed in a classic Buffalo Hot Sauce and served with your choice of homemade ranch or blue cheese dressings."
+  },
+  {
+    "item": "Wings - Hot Honey Mustard Toss Our Signature Flavor! 6 Oven baked wings tossed in our Spicy Whole Grain Mustard & Hot-Honey dressing. Served with your choice of homemade ranch or blue cheese dressing."
+  },
+  {
+    "category": "24 Wings - Package"
+  },
+  {
+    "item": "24 WINGS Our same Jumbo dry-brined wings baked to perfection but served as a package of 20! Hot Honey Mustard, Buffalo, or Dry"
+  },
+  {
+    "category": "Side Dippers"
+  },
+  {
+    "item": "Side of Ranch Made in house with classic ranch spices, buttermilk & sour cream"
+  },
+  {
+    "item": "Side of Blue Cheese Dressing Made in house with loads of fresh blue cheese & creamy sourcream"
+  },
+  {
+    "item": "Side of Balsamic Vinaigrette The balance of Dijon mustard and aged balsamic elevated & enhanced with honey OUT OF STOCK"
+  },
+  {
+    "item": "Side of Marinara As good as your Grandma's recipe"
+  },
+  {
+    "item": "Side of Marinara 4oz As good as your Grandma's recipe"
+  },
+  {
+    "item": "Side Lazy Hot Honey - 1.5 oz Our own blend of peppers steeped in local Orlando honey"
+  },
+  {
+    "item": "Side of Jason's A sweet-spicy sauce that's great on anything"
+  },
+  {
+    "item": "Side of Ranch & Jason's Mom Mix Two item we love blended in harmony"
+  },
+  {
+    "item": "Side of Honey Local bees producing top notch goodness"
+  },
+  {
+    "item": "Side of Caesar Dressing Made in house with whole grain mustard, anchovies & EVOO"
+  },
+  {
+    "item": "Side of Greek Dressing Oregano, basil & rosemary whisked harmoniously with red & balsamic vinegars"
+  },
+  {
+    "item": "Side of BBQ Sauce Smoked in house tomatoes, simmered with mustard & brown sugar"
+  },
+  {
+    "item": "Side of Birria Jus Guajillo peppers make for a smokey & warm dipping broth"
+  },
+  {
+    "item": "Side of Buffalo Sauce Made in house hot sauce"
+  },
+  {
+    "item": "Side of Sour Cream"
+  },
+  {
+    "item": "Side of Extra Virgin Olive Oil European grown olives, cold pressed"
+  },
+  {
+    "item": "Side of Pesto - 1.5 oz"
+  },
+  {
+    "item": "Side of Spicy Honey Mustard"
+  },
+  {
+    "category": "8oz Dippers & Dressings"
+  },
+  {
+    "item": "Ranch Dressing - 8oz"
+  },
+  {
+    "item": "Blue Cheese Dressing - 8oz"
+  },
+  {
+    "item": "Balsamic Vinaigrette - 8oz"
+  },
+  {
+    "item": "Greek Dressing - 8oz"
+  },
+  {
+    "item": "Caesar Dressing - 8oz"
+  },
+  {
+    "item": "Marinara Sauce - 8oz"
+  },
+  {
+    "item": "BBQ Sauce - 8oz"
+  },
+  {
+    "item": "Buffalo Sauce - 8oz"
+  },
+  {
+    "item": "Hot Honey Mustard Sauce - 8oz"
+  },
+  {
+    "item": "Jason's Mom's Sauce"
+  },
+  {
+    "item": "Maple Mustard Vinaigrette - 8oz"
+  },
+  {
+    "item": "Hot Honey Bear - 12oz"
+  },
+  {
+    "category": "Desserts"
+  },
+  {
+    "item": "Blondie Browned Butter & Butterscotch with Dark Chocolate Chips OUT OF STOCK"
+  },
+  {
+    "item": "Blondie Bites 16 Homemade Blondies Bites"
+  },
+  {
+    "item": "Cookies & Cream Dessert Pizza Get ready for smiles! A decadent twist on a classic favorite — topped with crushed Oreo cookies, rich sweet vanilla cream cheese, and a drizzle of smooth glaze baked over our signature crust. Every bite is crunchy, creamy, and totally crave-worthy — the perfect treat for sharing after dinner or to celebrate any big win!"
+  },
+  {
+    "item": "Pumpkin Spice Blondie OUT OF STOCK"
+  },
+  {
+    "category": "Dough Balls"
+  },
+  {
+    "item": "Calzone Dough Ball"
+  },
+  {
+    "item": "Medium Dough Ball"
+  },
+  {
+    "item": "Large Dough Ball"
+  },
+  {
+    "item": "Coca Cola 12 fl oz Can"
+  },
+  {
+    "item": "Diet Coke 12 fl oz Can"
+  },
+  {
+    "item": "Coke Zero 12 fl oz Can"
+  },
+  {
+    "item": "Dr. Pepper 12 fl oz Can"
+  },
+  {
+    "item": "Sprite 12 fl oz Can"
+  },
+  {
+    "item": "Niagara Springs Bottled Water"
+  },
+  {
+    "item": "Apple Juice Squeeze Box"
+  },
+  {
+    "item": "Ginger Beer"
+  },
+  {
+    "item": "Original Sin White Widow N/A Seltzer"
+  },
+  {
+    "item": "Red Bull Regular"
+  },
+  {
+    "item": "Red Bull Sugar Free"
+  },
+  {
+    "category": "Wines by the Bottle"
+  },
+  {
+    "item": "Pinot Noir - Alan de la Treille"
+  },
+  {
+    "item": "Malbec - Vino San Esteban Ripe plums and cherries, with a dry finish"
+  },
+  {
+    "item": "Garnacha - Vina Borgia Fresh bright red fruit balanced by a fine structure and ample bouquet"
+  },
+  {
+    "item": "Sauvignon Blanc - In Situ"
+  },
+  {
+    "item": "Pinot Grigio - Bel Vento"
+  },
+  {
+    "category": "Wrap Trays: 5-40 ppl"
+  },
+  {
+    "category": "Kickback Package: 8-10 ppl"
+  },
+  {
+    "item": "KICKBACK"
+  },
+  {
+    "category": "Rager Package: 15-20ppl"
+  },
+  {
+    "item": "RAGER"
+  },
+  {
+    "category": "cite126†Maitland†lazymoon.toast.site"
+  },
+  {
+    "category": "cite128†Mills/50†lazymoon.toast.site"
+  },
+  {
+    "category": "cite130†UCF†lazymoon.toast.site"
+  }
+]

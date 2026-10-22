@@ -1,31 +1,35 @@
 {
-  "license": "0BSD",
+  "name": "verifed-mobile",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "start": "expo start",
+    "web": "expo start --web",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "web": "expo start --web"
+    "test": "node --test tests/*.test.js",
+    "publish:snack": "node ../research/native-tools/publish.mjs"
   },
   "dependencies": {
-    "expo": "~54.0.37",
-    "expo-status-bar": "~3.0.9",
-    "react": "19.1.0",
-    "react-native": "0.81.5",
-    "@expo/vector-icons": "^15.0.3",
+    "@expo/vector-icons": "15.0.3",
     "@react-native-async-storage/async-storage": "2.2.0",
     "@supabase/supabase-js": "2.118.0",
-    "expo-auth-session": "~7.0.11",
-    "expo-camera": "~17.0.10",
-    "expo-constants": "~18.0.14",
-    "expo-crypto": "~15.0.9",
-    "expo-linking": "~8.0.12",
-    "expo-web-browser": "~15.0.11",
+    "expo": "54.0.32",
+    "expo-auth-session": "7.0.11",
+    "expo-camera": "17.0.10",
+    "expo-constants": "18.0.14",
+    "expo-crypto": "15.0.9",
+    "expo-linking": "8.0.12",
+    "expo-web-browser": "15.0.11",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "react-native": "0.81.5",
     "react-native-qrcode-svg": "6.3.21",
-    "react-native-safe-area-context": "~5.6.0",
+    "react-native-safe-area-context": "5.6.0",
     "react-native-svg": "15.12.1",
     "react-native-url-polyfill": "4.0.0",
-    "@opentelemetry/api": "^1.0.0"
-  },
-  "private": true
+    "react-native-web": "0.21.0"
+  }
 }

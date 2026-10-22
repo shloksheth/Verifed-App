@@ -179,6 +179,7 @@ export function Tabs({ options, value, onChange }) {
           <Pressable
             accessibilityRole="tab"
             accessibilityState={{ selected: value === key }}
+            aria-selected={value === key}
             key={key}
             onPress={() => onChange(key)}
             style={[s.chip, value === key && s.chipActive]}

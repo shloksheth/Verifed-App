@@ -1,30 +1,22 @@
 {
   "expo": {
-    "name": "verifed-—-know-your-meal",
-    "slug": "snack-5eecf44b-6cf5-4202-89a3-53d6344fa64a",
+    "name": "Verifed",
+    "slug": "verifed",
     "version": "1.0.0",
+    "scheme": "verifed",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
-    "newArchEnabled": true,
-    "splash": {
-      "image": "./assets/splash-icon.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
+    "icon": "./assets/verifed-mark.png",
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.verifed.dining"
     },
     "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      },
-      "edgeToEdgeEnabled": true
+      "package": "com.verifed.dining"
     },
+    "plugins": [],
     "web": {
-      "favicon": "./assets/favicon.png"
-    },
-    "description": "Explore 110 published food selections across three Orlando FL-10 locations. Switch between an editorial Full menu with allergen icons and For my diet, matched to your selected needs using explicit restaurant claims. Branch availability and cross-contact need confirmation. Separate fictional sample kitchens demonstrate requests. Google OAuth requires a development build."
+      "bundler": "metro"
+    }
   }
 }

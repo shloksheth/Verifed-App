@@ -1,0 +1,92 @@
+[
+  {
+    "id": "hawkers-orlando",
+    "slug": "hawkers-orlando",
+    "name": "Hawkers Orlando",
+    "location": "Mills 50 · Orlando",
+    "address": "1103 N Mills Ave, Orlando, FL 32803",
+    "phone": "407-237-0606",
+    "description": "Street-food plates, noodles and dim sum in Mills 50.",
+    "websiteUrl": "https://eathawkers.com/locations/orlando/",
+    "menuUrl": "https://eathawkers.com/menus/dining/",
+    "allergenUrl": "https://eathawkers.com/wp-content/uploads/2026/06/Allergen-Guide-6.26-Digital.pdf",
+    "emoji": "",
+    "fictional": false,
+    "confirmed": false,
+    "district": {
+      "state": "FL",
+      "number": "10",
+      "congress": 119,
+      "verifiedAt": "2026-10-21",
+      "sourceUrl": "https://geocoding.geo.census.gov/geocoder/geographies/onelineaddress?address=1103+N+Mills+Ave+Orlando+FL+32803&benchmark=Public_AR_Current&vintage=ACS2025_Current&format=json"
+    },
+    "source": {
+      "reviewedAt": "2026-10-21",
+      "scope": "chain",
+      "note": "Guide omits wheat/tree nuts. Blank cells establish no absence. Oil may contain trace soy. Sauce mappings are explicit only when named sauce correspondence is clear."
+    },
+    "menuCoverage": "Every food entry on the current generic dining page, including explicit protein variants, the Happy Hour-only chicken and fried-egg add-on; excludes duplicate promotional listings and Atlanta-only pork belly. Not independently confirmed as this branch’s complete current menu. Kids and guide-only items are outside this dining-page inventory.",
+    "availabilityVerified": false,
+    "cuisine": "Asian street food"
+  },
+  {
+    "id": "fresh-kitchen-waterford",
+    "slug": "fresh-kitchen-waterford",
+    "name": "Fresh Kitchen · Waterford Lakes",
+    "location": "Waterford Lakes · Orlando",
+    "address": "851 N Alafaya Trail, Q01, Orlando, FL 32828",
+    "phone": "407-866-2219",
+    "description": "Mix-and-match bowls in Waterford Lakes. Components are listed individually.",
+    "websiteUrl": "https://www.eatfreshkitchen.com/locations/orlando-ucf",
+    "menuUrl": "https://www.eatfreshkitchen.com/menu",
+    "allergenUrl": "https://cdn.prod.website-files.com/693520b45340ea3acc83192b/6ab51f5af1b27f93c60865a5_2609-FK-Allergen-and-Ingredient-Document.pdf",
+    "emoji": "",
+    "fictional": false,
+    "confirmed": false,
+    "district": {
+      "state": "FL",
+      "number": "10",
+      "congress": 119,
+      "verifiedAt": "2026-10-21",
+      "sourceUrl": "https://geocoding.geo.census.gov/geocoder/geographies/onelineaddress?address=851+N+Alafaya+Trail+Orlando+FL+32828&benchmark=Public_AR_Current&vintage=ACS2025_Current&format=json"
+    },
+    "source": {
+      "reviewedAt": "2026-10-21",
+      "scope": "chain",
+      "note": "Dairy Free/Soy Free columns are explicit restaurant claims, not safety. Nut Free wording is retained without mapping to both peanut/tree nuts. GF is a dietary tag, not a wheat-free claim. Recipes and availability change; cross-contact is not ruled out."
+    },
+    "menuCoverage": "All 30 food components from September ingredient PDF matched to the updated menu block, plus three configurable bowl sizes and two current cookies. Old-only menu block items excluded. Seasonal cauliflower variant correspondence and branch availability remain unconfirmed.",
+    "availabilityVerified": false,
+    "cuisine": "Bowls"
+  },
+  {
+    "id": "chipotle-south-orange",
+    "slug": "chipotle-south-orange",
+    "name": "Chipotle · South Orange",
+    "location": "South Orange · Orlando",
+    "address": "2211 S Orange Ave, Orlando, FL 32806",
+    "phone": "407-841-5656",
+    "description": "Build-your-own burritos and bowls on South Orange. Components are listed individually.",
+    "websiteUrl": "https://locations.chipotle.com/fl/orlando/2211-s-orange-ave",
+    "menuUrl": "https://locations.chipotle.com/fl/orlando/2211-s-orange-ave",
+    "allergenUrl": "https://www.chipotle.com/content/chipotle/us/en/allergens.html",
+    "emoji": "",
+    "fictional": false,
+    "confirmed": false,
+    "district": {
+      "state": "FL",
+      "number": "10",
+      "congress": 119,
+      "verifiedAt": "2026-10-21",
+      "sourceUrl": "https://geocoding.geo.census.gov/geocoder/geographies/onelineaddress?address=2211+S+Orange+Ave+Orlando+FL+32806&benchmark=Public_AR_Current&vintage=ACS2025_Current&format=json"
+    },
+    "source": {
+      "reviewedAt": "2026-10-21",
+      "scope": "chain",
+      "note": "Global no-ingredient statement also names mustard. In this JSON only six tracked categories are mapped. Cross-contact, agriculture-related trace gluten and limited-time/test recipes remain caveats."
+    },
+    "menuCoverage": "All 26 components on the official US allergen matrix. This is not a complete list of customized entrÃ©es or current limited-time foods; Pollo Asado and featured complete meals need separate data.",
+    "availabilityVerified": false,
+    "cuisine": "Mexican"
+  }
+]

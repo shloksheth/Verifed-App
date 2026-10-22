@@ -1,5 +1,12 @@
 import React, { useState } from "react";
-import { Linking, Pressable, Text, View } from "react-native";
+import {
+  Image,
+  Linking,
+  Pressable,
+  ScrollView,
+  Text,
+  View,
+} from "react-native";
 import { api } from "../src/api";
 import { assessDish, rankDishes } from "../src/domain";
 import { dietaryMenuStatus, groupMenu } from "../src/menu-filter";
@@ -22,14 +29,9 @@ import {
   Tags,
   Title,
   useTask,
-  closedRequest,
 } from "./UI";
 
 const isLocal = (restaurant) => restaurant?.fictional === false;
-const districtKey = (restaurant) =>
-  restaurant.district
-    ? `${restaurant.district.state}-${restaurant.district.number}`
-    : "";
 const scopeLabel = (scope) =>
   scope === "location"
     ? "Location-specific source"
@@ -192,9 +194,19 @@ function RestaurantSources({
 
 export function Assessment({ dish, state, detailed = false }) {
   const result = assessDish(dish, state.profile, state.meals);
+  const hints = dish.ingredientHints || {};
+  const inferredFlag =
+    (state.profile.allergies || []).some((allergen) =>
+      [...(hints.allergens || []), ...(hints.possibleAllergens || [])].includes(
+        allergen,
+      ),
+    ) ||
+    (state.profile.restrictions || []).some((restriction) =>
+      (hints.restrictionConflicts || []).includes(restriction),
+    );
   const message =
     result.level === "conflict"
-      ? `Known profile conflict${detailed ? ": " + result.conflicts.join(", ") : ""}`
+      ? `${inferredFlag ? "Check your dietary flags" : "Known profile conflict"}${detailed ? ": " + result.conflicts.join(", ") : ""}`
       : result.level === "unknown"
         ? "Unknown — information needs confirmation"
         : "Review ingredients and preparation";
@@ -264,11 +276,7 @@ export function DishCard({ dish, state, navigate }) {
           }}
           disabled={task.busy || saveUnavailable}
           style={s.iconButton}
-          onPress={() =>
-            state.mode === "guest"
-              ? navigate("auth")
-              : task.run(() => api.toggleFavorite(dish.id))
-          }
+          onPress={() => task.run(() => api.toggleFavorite(dish.id))}
         >
           <Icon
             name={saved ? "heart" : "heart-outline"}
@@ -300,30 +308,108 @@ export function DishCard({ dish, state, navigate }) {
   );
 }
 
-function RestaurantRow({ restaurant, state, navigate }) {
-  const count = state.dishes.filter(
+// Venue photos help identify a restaurant; they never stand in for a specific dish.
+function RestaurantPhoto({ restaurant, style, credit = false }) {
+  const [failed, setFailed] = useState(false);
+  const task = useTask();
+  const creditLabel =
+    typeof restaurant.imageCredit === "string"
+      ? restaurant.imageCredit
+      : restaurant.imageCredit?.label;
+  const creditUrl = restaurant.imageCredit?.url;
+  return (
+    <View style={[s.restaurantPhoto, style]}>
+      {restaurant.imageUrl && !failed ? (
+        <Image
+          source={{ uri: restaurant.imageUrl }}
+          resizeMode={
+            restaurant.imageKind === "brand-art" ? "contain" : "cover"
+          }
+          style={[
+            s.photoFill,
+            restaurant.imageKind === "brand-art" && {
+              backgroundColor: "#FFFDF8",
+            },
+          ]}
+          accessibilityLabel={
+            restaurant.imageAlt || `${restaurant.name} restaurant photography`
+          }
+          onError={() => setFailed(true)}
+        />
+      ) : (
+        <View style={s.photoFallback}>
+          <Icon name="restaurant-outline" size={34} color={colors.green} />
+          <Text style={s.photoFallbackText}>
+            {restaurant.cuisine || "Local dining"}
+          </Text>
+        </View>
+      )}
+      {credit && !!creditLabel && (
+        <Pressable
+          accessibilityRole={creditUrl ? "link" : "text"}
+          accessibilityLabel={`Photo source: ${creditLabel}`}
+          disabled={!creditUrl || task.busy}
+          onPress={() => task.run(() => Linking.openURL(creditUrl))}
+          style={s.photoCredit}
+        >
+          <Text style={s.photoCreditText}>
+            {creditLabel}
+            {creditUrl ? " ↗" : ""}
+          </Text>
+        </Pressable>
+      )}
+      {!!task.error && <ErrorText error={task.error} />}
+    </View>
+  );
+}
+
+function RestaurantRow({ restaurant, state, navigate, featured = false }) {
+  const items = state.dishes.filter(
     (dish) => dish.restaurantId === restaurant.id,
-  ).length;
+  );
+  const needs = [...state.profile.allergies, ...state.profile.restrictions];
+  const supported = needs.length
+    ? items.filter(
+        (dish) => dietaryMenuStatus(dish, state.profile).level === "match",
+      ).length
+    : 0;
   return (
     <Pressable
       accessibilityRole="button"
+      accessibilityLabel={`${restaurant.name}, ${restaurant.location}, ${items.length} menu entries`}
       onPress={() => navigate(`restaurant/${restaurant.id}`)}
-      style={s.restaurantRow}
+      style={({ pressed }) => [
+        featured ? s.featuredRestaurant : s.restaurantRow,
+        pressed && { opacity: 0.8 },
+      ]}
     >
-      <View style={s.restaurantMark}>
-        <Icon name="restaurant-outline" color={colors.orangeDark} />
-      </View>
-      <View style={s.flex}>
-        <Text style={s.h3}>{restaurant.name}</Text>
-        <Text style={s.small}>{restaurant.address || restaurant.location}</Text>
-        <Text style={s.sourceText}>
-          {count} menu entries
-          {isLocal(restaurant)
-            ? ` · ${districtKey(restaurant) || "District unlisted"}`
-            : " · Fictional sample"}
+      <RestaurantPhoto
+        restaurant={restaurant}
+        style={featured ? s.featuredPhoto : s.restaurantThumbnail}
+      />
+      <View style={[s.restaurantCopy, featured && { padding: 14 }]}>
+        <Text style={s.restaurantCuisine}>
+          {restaurant.cuisine || "Orlando dining"}
         </Text>
+        <Text style={s.restaurantName} numberOfLines={2}>
+          {restaurant.name}
+        </Text>
+        <Text style={s.small} numberOfLines={1}>
+          {restaurant.location}
+        </Text>
+        <View style={[s.row, { gap: 5, marginTop: 5 }]}>
+          <Icon name="reader-outline" size={13} color={colors.green} />
+          <Text style={s.sourceText}>{items.length} menu entries</Text>
+        </View>
+        {!!supported && (
+          <Text style={s.restaurantMatch}>
+            {supported} reported matches for you
+          </Text>
+        )}
       </View>
-      <Icon name="chevron-forward" size={18} />
+      {!featured && (
+        <Icon name="chevron-forward" size={17} color={colors.green} />
+      )}
     </Pressable>
   );
 }
@@ -353,80 +439,122 @@ export function RequestRow({ request, navigate, staff = false }) {
 }
 
 export function Home({ state, navigate }) {
-  const local = state.restaurants.filter(isLocal);
-  const active = state.requests.filter(
-    (item) => item.userId === state.user?.id && !closedRequest(item),
-  );
+  const restaurants = state.restaurants.filter(isLocal);
+  const cover =
+    restaurants.find(
+      (restaurant) => restaurant.slug === "black-rooster-mills",
+    ) || restaurants[0];
+  const needs = [...state.profile.allergies, ...state.profile.restrictions];
+  const totalItems = state.dishes.filter((dish) =>
+    restaurants.some((restaurant) => restaurant.id === dish.restaurantId),
+  ).length;
   return (
     <>
-      <Title eyebrow="Orlando, Florida" title="Find a local menu">
-        Browse official menus and compare their reported information with your
-        profile.
-      </Title>
-      <Button icon="restaurant-outline" onPress={() => navigate("explore")}>
-        Explore Orlando menus
-      </Button>
-      <View style={s.card}>
-        <View style={s.between}>
-          <Text style={s.h3}>Your dietary needs</Text>
-          <Pressable
-            accessibilityRole="button"
-            hitSlop={10}
-            onPress={() => navigate("edit-profile")}
-          >
-            <Text style={s.link}>
-              {state.profile.allergies.length ? "Edit" : "Choose allergies"}
-            </Text>
-          </Pressable>
+      <View style={s.homeIntro}>
+        <View style={s.locationPill}>
+          <Icon name="location-outline" size={14} color={colors.green} />
+          <Text style={s.locationText}>YOUR ORLANDO TABLE</Text>
         </View>
-        <Tags
-          values={state.profile.allergies.map((item) => `Avoid ${item}`)}
-          fallback="No allergies selected"
-        />
-        <Text style={s.small}>
-          {state.mode === "guest"
-            ? "Browse without signing in. Your profile is saved only on this device, not to an account."
-            : "Your profile helps identify known conflicts and missing information."}
+        <Text accessibilityRole="header" style={s.homeHeadline}>
+          A seat for every appetite.
+        </Text>
+        <Text style={s.homeSubtitle}>
+          Local menus. Your dietary needs. A little more clarity before you
+          order.
         </Text>
       </View>
+      <Pressable
+        accessibilityRole="button"
+        accessibilityLabel="Explore Orlando restaurant menus"
+        onPress={() => navigate("explore")}
+        style={s.homePhotoCard}
+      >
+        <RestaurantPhoto restaurant={cover || {}} style={s.homePhoto} />
+        <View style={s.homePhotoCaption}>
+          <View style={s.flex}>
+            <Text style={s.homePhotoEyebrow}>
+              {restaurants.length} RESTAURANTS · {totalItems} MENU ENTRIES
+            </Text>
+            <Text style={s.homePhotoTitle}>Good food starts here.</Text>
+          </View>
+          <View style={s.roundArrow}>
+            <Icon name="arrow-forward" size={22} color={colors.paper} />
+          </View>
+        </View>
+      </Pressable>
+      <Pressable
+        accessibilityRole="button"
+        accessibilityLabel="Edit your dietary needs"
+        onPress={() => navigate("edit-profile")}
+        style={s.needsCard}
+      >
+        <View style={s.needsIcon}>
+          <Icon name="leaf-outline" color={colors.green} size={22} />
+        </View>
+        <View style={s.flex}>
+          <Text style={s.h3}>
+            {needs.length ? "Made around your needs" : "Make the menu yours"}
+          </Text>
+          <Text style={s.small} numberOfLines={2}>
+            {needs.length
+              ? needs.join(" · ")
+              : "Choose allergies and dietary restrictions"}
+          </Text>
+        </View>
+        <Icon name="chevron-forward" size={18} color={colors.green} />
+      </Pressable>
       <Section
-        title="Local restaurants"
+        title="Around your table"
         action="See all"
         onPress={() => navigate("explore")}
       >
-        {local.length ? (
-          local
-            .slice(0, 4)
-            .map((restaurant) => (
-              <RestaurantRow
-                key={restaurant.id}
-                {...{ restaurant, state, navigate }}
-              />
-            ))
-        ) : (
-          <Empty title="No local menus available">
-            Refresh data in settings to try again.
-          </Empty>
-        )}
-      </Section>
-      <Notice>
-        Menu sources can be incomplete. Call the restaurant to confirm
-        ingredients and cross-contact before ordering.
-      </Notice>
-      <Button
-        variant="secondary"
-        icon="scan-outline"
-        onPress={() => navigate("scan")}
-      >
-        Open a menu code
-      </Button>
-      {!!active.length && (
-        <Section title="Sample kitchen conversations">
-          {active.slice(0, 2).map((request) => (
-            <RequestRow key={request.id} {...{ request, navigate }} />
+        <ScrollView
+          horizontal
+          showsHorizontalScrollIndicator={false}
+          contentContainerStyle={s.featuredRail}
+        >
+          {restaurants.slice(0, 5).map((restaurant) => (
+            <RestaurantRow
+              key={restaurant.id}
+              {...{ restaurant, state, navigate }}
+              featured
+            />
           ))}
-        </Section>
-      )}
+        </ScrollView>
+      </Section>
+      <View style={s.howPanel}>
+        <Text style={s.eyebrow}>KNOW BEFORE YOU GO</Text>
+        <Text style={s.h2}>Less guesswork at the table.</Text>
+        {[
+          [
+            "01",
+            "Choose your needs",
+            "Set the allergies and restrictions that matter to you.",
+          ],
+          [
+            "02",
+            "Read your menu",
+            "See the full menu, ingredient clues, and options for your needs.",
+          ],
+          [
+            "03",
+            "Ask one better question",
+            "Open the source or call about ingredients and preparation.",
+          ],
+        ].map(([number, title, text]) => (
+          <View key={number} style={s.howRow}>
+            <Text style={s.howNumber}>{number}</Text>
+            <View style={s.flex}>
+              <Text style={s.h3}>{title}</Text>
+              <Text style={s.small}>{text}</Text>
+            </View>
+          </View>
+        ))}
+      </View>
+      <Text style={s.sourceFootnote}>
+        Built for the Orlando community. Menu information comes from published
+        restaurant sources; a match is not an allergen-free guarantee.
+      </Text>
     </>
   );
 }
@@ -455,47 +583,42 @@ export function DemoButton({ navigate }) {
 
 export function Explore({ state, navigate }) {
   const [query, setQuery] = useState("");
-  const [catalog, setCatalog] = useState("local");
   const [tab, setTab] = useState("restaurants");
-  const [district, setDistrict] = useState("all");
-  const [category, setCategory] = useState("All");
+  const [cuisine, setCuisine] = useState("All");
   const [hideConflicts, setHideConflicts] = useState(false);
-  const restaurants = state.restaurants.filter((restaurant) =>
-    catalog === "local" ? isLocal(restaurant) : !isLocal(restaurant),
-  );
-  // These are restaurant locations, not an assumption about the diner's district.
-  const districts = [
-    ...new Set(restaurants.map(districtKey).filter(Boolean)),
-  ].sort();
-  const located = restaurants.filter(
-    (restaurant) => district === "all" || districtKey(restaurant) === district,
-  );
-  const restaurantIds = new Set(located.map((restaurant) => restaurant.id));
-  const catalogDishes = state.dishes.filter((dish) =>
-    restaurantIds.has(dish.restaurantId),
-  );
-  const categories = [
+  const [visibleCount, setVisibleCount] = useState(30);
+  const restaurants = state.restaurants.filter(isLocal);
+  const cuisines = [
     "All",
-    ...new Set(catalogDishes.map((dish) => dish.category)),
+    ...new Set(
+      restaurants.map((restaurant) => restaurant.cuisine).filter(Boolean),
+    ),
   ];
+  const located = restaurants.filter(
+    (restaurant) => cuisine === "All" || restaurant.cuisine === cuisine,
+  );
+  const ids = new Set(located.map((restaurant) => restaurant.id));
+  const catalogDishes = state.dishes.filter((dish) =>
+    ids.has(dish.restaurantId),
+  );
+  const search = query.trim().toLowerCase();
   const matchesSearch = (dish) => {
     const restaurant = located.find((item) => item.id === dish.restaurantId);
     return [
       dish.name,
       dish.description,
       restaurant?.name,
-      restaurant?.address,
+      restaurant?.location,
       ...(dish.tags || []),
     ]
       .join(" ")
       .toLowerCase()
-      .includes(query.trim().toLowerCase());
+      .includes(search);
   };
   const dishes = rankDishes(
     catalogDishes.filter(
       (dish) =>
         matchesSearch(dish) &&
-        (category === "All" || category === dish.category) &&
         (!hideConflicts ||
           assessDish(dish, state.profile, state.meals).level !== "conflict"),
     ),
@@ -504,68 +627,63 @@ export function Explore({ state, navigate }) {
   );
   const visibleRestaurants = located.filter(
     (restaurant) =>
-      [restaurant.name, restaurant.address, restaurant.location]
+      [
+        restaurant.name,
+        restaurant.address,
+        restaurant.location,
+        restaurant.cuisine,
+      ]
         .join(" ")
         .toLowerCase()
-        .includes(query.trim().toLowerCase()) ||
+        .includes(search) ||
       catalogDishes.some(
         (dish) => dish.restaurantId === restaurant.id && matchesSearch(dish),
       ),
   );
-  function changeCatalog(value) {
-    setCatalog(value);
-    setDistrict("all");
-    setCategory("All");
-  }
   return (
     <>
-      <Title eyebrow="Menu directory" title="Explore Orlando" />
-      <Tabs
-        options={[
-          { value: "local", label: "Local menus" },
-          { value: "sample", label: "Sample kitchens" },
-        ]}
-        value={catalog}
-        onChange={changeCatalog}
-      />
+      <Title eyebrow="The local menu club" title="Find your next table.">
+        {restaurants.length} Orlando restaurants. Explore the food, then make
+        the menu yours.
+      </Title>
       <Field
-        label="Search menus"
+        label="Search restaurants & menus"
         value={query}
-        onChangeText={setQuery}
-        placeholder="Restaurant, menu item, or ingredient"
+        onChangeText={(value) => {
+          setQuery(value);
+          setVisibleCount(30);
+        }}
+        placeholder="Try bowls, Hawkers, or Waterford…"
         clearButtonMode="while-editing"
       />
-      {catalog === "local" ? (
-        <View style={s.stack}>
-          {districts.length > 1 ? (
-            <>
-              <Text style={s.label}>Area</Text>
-              <Tabs
-                options={[
-                  { value: "all", label: "All Orlando" },
-                  ...districts.map((value) => ({ value, label: value })),
-                ]}
-                value={district}
-                onChange={(value) => {
-                  setDistrict(value);
-                  setCategory("All");
-                }}
-              />
-              <Text style={s.small}>Filter restaurant locations.</Text>
-            </>
-          ) : (
-            <Text style={s.small}>
-              {restaurants.length} locations in Orlando
-              {districts.length === 1 ? ` · ${districts[0]}` : ""}
+      <ScrollView
+        horizontal
+        showsHorizontalScrollIndicator={false}
+        contentContainerStyle={s.cuisineRail}
+      >
+        {cuisines.map((value) => (
+          <Pressable
+            key={value}
+            accessibilityRole="button"
+            accessibilityState={{ selected: cuisine === value }}
+            aria-pressed={cuisine === value}
+            onPress={() => {
+              setCuisine(value);
+              setVisibleCount(30);
+            }}
+            style={[s.cuisineChip, cuisine === value && s.cuisineChipActive]}
+          >
+            <Text
+              style={[
+                s.cuisineChipText,
+                cuisine === value && { color: colors.paper },
+              ]}
+            >
+              {value === "All" ? "All cuisines" : value}
             </Text>
-          )}
-        </View>
-      ) : (
-        <Notice>
-          Fictional menus for trying kitchen requests. No real restaurant staff
-          receive these requests.
-        </Notice>
-      )}
+          </Pressable>
+        ))}
+      </ScrollView>
       <Tabs
         options={[
           { value: "restaurants", label: "Restaurants" },
@@ -575,7 +693,7 @@ export function Explore({ state, navigate }) {
         onChange={setTab}
       />
       {tab === "restaurants" ? (
-        <Section title={`${visibleRestaurants.length} restaurants`}>
+        <Section title={`${visibleRestaurants.length} places to explore`}>
           {visibleRestaurants.map((restaurant) => (
             <RestaurantRow
               key={restaurant.id}
@@ -583,46 +701,63 @@ export function Explore({ state, navigate }) {
             />
           ))}
           {!visibleRestaurants.length && (
-            <Empty title="No restaurants match">
-              Try another search or area.
+            <Empty
+              title="No tables found"
+              action="Clear search"
+              onPress={() => {
+                setQuery("");
+                setCuisine("All");
+              }}
+            >
+              Try another restaurant, food, or neighborhood.
             </Empty>
           )}
         </Section>
       ) : (
         <>
-          <Tabs options={categories} value={category} onChange={setCategory} />
           <Pressable
             accessibilityRole="checkbox"
             accessibilityState={{ checked: hideConflicts }}
+            aria-checked={hideConflicts}
             style={s.row}
-            onPress={() => setHideConflicts(!hideConflicts)}
+            onPress={() => {
+              setHideConflicts(!hideConflicts);
+              setVisibleCount(30);
+            }}
           >
             <Icon
               name={hideConflicts ? "checkbox" : "square-outline"}
-              color={colors.orangeDark}
+              color={colors.green}
             />
-            <Text style={s.body}>Hide known profile conflicts</Text>
+            <Text style={s.body}>Hide known dietary conflicts</Text>
           </Pressable>
           <Text style={s.small}>
-            Unknown information stays visible. Select allergies in your profile
-            to compare.
+            Unknown information remains visible. Open a restaurant's “For my
+            diet” menu for explicitly supported matches.
           </Text>
           <Section title={`${dishes.length} menu entries`}>
-            {dishes.map((dish) => (
+            {dishes.slice(0, visibleCount).map((dish) => (
               <DishCard key={dish.id} {...{ dish, state, navigate }} />
             ))}
+            {dishes.length > visibleCount && (
+              <Button
+                variant="secondary"
+                onPress={() => setVisibleCount((count) => count + 30)}
+              >
+                Show 30 more
+              </Button>
+            )}
             {!dishes.length && (
               <Empty
-                title="No menu items match"
+                title="No items found"
                 action="Clear filters"
                 onPress={() => {
                   setQuery("");
-                  setCategory("All");
+                  setCuisine("All");
                   setHideConflicts(false);
-                  setDistrict("all");
                 }}
               >
-                Try another item or category.
+                Try another food or cuisine.
               </Empty>
             )}
           </Section>
@@ -701,11 +836,15 @@ function MenuSections({
             ].join(" · ")
           : "";
         const declarations = [
-          ...(dish.allergens || []),
-          ...(dish.otherDeclaredAllergens || []),
+          ...new Set([
+            ...(dish.allergens || []),
+            ...(dish.ingredientHints?.allergens || []),
+            ...(dish.otherDeclaredAllergens || []),
+          ]),
         ];
+        const possibleFlags = dish.ingredientHints?.possibleAllergens || [];
         const declarationLabel = declarations.length
-          ? ` Declared allergens: ${declarations.join(", ")}.`
+          ? ` Allergen flags: ${declarations.join(", ")}.`
           : supported
             ? ""
             : " No allergens declared; check details.";
@@ -713,7 +852,7 @@ function MenuSections({
           <Pressable
             key={dish.id}
             accessibilityRole="button"
-            accessibilityLabel={`View ${dish.name}.${supported ? ` ${supportLine}.` : ""}${declarationLabel}${!supported && hasUnknownAllergenCoverage(dish) ? " Allergen coverage is incomplete." : ""}`}
+            accessibilityLabel={`View ${dish.name}.${supported ? ` ${supportLine}.` : ""}${declarationLabel}${possibleFlags.length ? ` Check ingredients: ${possibleFlags.join(", ")}.` : ""}${!supported && hasUnknownAllergenCoverage(dish) ? " Allergen coverage is incomplete." : ""}`}
             onPress={() => navigate(`dish/${dish.id}`)}
             style={s.editorialMenuRow}
           >
@@ -755,7 +894,7 @@ export function Restaurant({ id, state, navigate }) {
     ...(state.profile.restrictions || []),
   ];
   const [mode, setMode] = useState(() => (needs.length ? "diet" : "full"));
-  const [showUnknown, setShowUnknown] = useState(false);
+  const [showUnknown, setShowUnknown] = useState(true);
   const [showCoverage, setShowCoverage] = useState(false);
   const restaurant = state.restaurants.find((item) => item.id === id);
   if (!restaurant)
@@ -785,6 +924,7 @@ export function Restaurant({ id, state, navigate }) {
     navigate(`edit-profile?returnTo=${encodeURIComponent(`restaurant/${id}`)}`);
   return (
     <View style={s.restaurantMenu}>
+      <RestaurantPhoto restaurant={restaurant} style={s.menuHeroPhoto} credit />
       <View style={[s.editorialMenuHeader, { borderTopColor: theme.accent }]}>
         <View style={s.between}>
           <Text style={[s.menuOverline, { color: theme.accent }]}>
@@ -907,8 +1047,8 @@ export function Restaurant({ id, state, navigate }) {
         <View style={s.menuEmptyState}>
           <Text style={s.menuListTitle}>Make this menu yours</Text>
           <Text style={s.body}>
-            Choose your allergies and dietary restrictions to see items with
-            explicit restaurant support for your needs.
+            Choose your allergies and dietary restrictions to compare this menu
+            and explore options for your needs.
           </Text>
           <Button variant="secondary" onPress={editNeeds}>
             Choose dietary needs
@@ -916,21 +1056,23 @@ export function Restaurant({ id, state, navigate }) {
         </View>
       ) : (
         <>
-          <View style={s.menuListIntro}>
-            <Text style={[s.menuListTitle, { color: theme.accent }]}>
-              Restaurant-reported matches
-            </Text>
-            <Text style={s.menuCaption}>
-              {matches.length} {matches.length === 1 ? "item" : "items"}{" "}
-              explicitly support every selected need.
-            </Text>
-            {!!matches.length && (
-              <Text style={s.menuCaption}>
-                Matches cover your selected needs; other allergens and
-                preparation may need confirmation.
+          {!!matches.length && (
+            <View style={s.menuListIntro}>
+              <Text style={[s.menuListTitle, { color: theme.accent }]}>
+                Restaurant-reported matches
               </Text>
-            )}
-          </View>
+              <Text style={s.menuCaption}>
+                {matches.length} {matches.length === 1 ? "item" : "items"}{" "}
+                explicitly support every selected need.
+              </Text>
+              {!!matches.length && (
+                <Text style={s.menuCaption}>
+                  Matches cover your selected needs; other allergens and
+                  preparation may need confirmation.
+                </Text>
+              )}
+            </View>
+          )}
           {matches.length ? (
             <View style={s.menuPaper}>
               <MenuSections
@@ -941,18 +1083,16 @@ export function Restaurant({ id, state, navigate }) {
                 showSupport
               />
             </View>
-          ) : (
+          ) : !unknown.length ? (
             <View style={s.menuEmptyState}>
-              <Text style={s.h3}>No supported matches yet</Text>
+              <Text style={s.h3}>No matching options found</Text>
               <Text style={s.body}>
-                {unknown.length
-                  ? "The available sources do not explicitly support all your selected needs. Open the items needing confirmation below."
-                  : conflicts.length
-                    ? "The cataloged items have known conflicts with your needs. Open the full menu to review their declarations."
-                    : "No food items are available in this catalog yet."}
+                {conflicts.length
+                  ? "The cataloged items have reported or ingredient-based flags for your needs. Open the full menu to review them."
+                  : "No food items are available in this catalog yet."}
               </Text>
             </View>
-          )}
+          ) : null}
           {!!unknown.length && (
             <View style={s.menuUnknownSection}>
               <Pressable
@@ -963,11 +1103,9 @@ export function Restaurant({ id, state, navigate }) {
                 style={s.menuUnknownToggle}
               >
                 <View style={s.flex}>
-                  <Text style={s.h3}>
-                    Needs confirmation ({unknown.length})
-                  </Text>
+                  <Text style={s.h3}>Possible options ({unknown.length})</Text>
                   <Text style={s.menuCaption}>
-                    Missing explicit support for one or more needs
+                    No known conflict in the available information
                   </Text>
                 </View>
                 <Icon
@@ -976,22 +1114,29 @@ export function Restaurant({ id, state, navigate }) {
                 />
               </Pressable>
               {showUnknown && (
-                <View style={s.menuPaper}>
-                  <MenuSections
-                    dishes={unknown}
-                    navigate={navigate}
-                    accent={theme.accent}
-                    showMissing
-                    profile={state.profile}
-                  />
+                <View style={s.stack}>
+                  <Text style={s.menuCaption}>
+                    These items list no known conflict with your needs.
+                    Ingredient information may be incomplete; ask the
+                    restaurant.
+                  </Text>
+                  <View style={s.menuPaper}>
+                    <MenuSections
+                      dishes={unknown}
+                      navigate={navigate}
+                      accent={theme.accent}
+                      showMissing
+                      profile={state.profile}
+                    />
+                  </View>
                 </View>
               )}
             </View>
           )}
           {!!conflicts.length && (
             <Text style={s.menuCaption}>
-              {conflicts.length} items with known conflicts are excluded from
-              this view.
+              {conflicts.length} items with dietary flags are excluded from this
+              view.
             </Text>
           )}
           <Pressable
@@ -1029,8 +1174,6 @@ export function DishDetail({ id, state, navigate, openSheet }) {
   const saved = state.favorites.includes(id);
   const saveUnavailable =
     state.mode === "cloud" && !!dish.provenance && !dish.cloudBacked;
-  const signedAction = (work) =>
-    state.mode === "guest" ? navigate("auth") : work();
   return (
     <>
       <Title eyebrow={restaurant?.name} title={dish.name}>
@@ -1047,6 +1190,22 @@ export function DishDetail({ id, state, navigate, openSheet }) {
         </Notice>
       )}
       <Assessment dish={dish} state={state} detailed />
+      {!!dish.ingredientHints?.clues?.length && (
+        <Section title="Clues in the published menu">
+          <View style={s.card}>
+            {dish.ingredientHints.clues.map((clue) => (
+              <Text key={clue} style={s.body}>
+                {clue}
+              </Text>
+            ))}
+            <Text style={s.small}>
+              These clues come from recognizable ingredient words. “Possible”
+              flags use common recipe knowledge and need confirmation; they are
+              not restaurant allergen declarations.
+            </Text>
+          </View>
+        </Section>
+      )}
       <Section title="Ingredients and preparation">
         <View style={s.card}>
           <Text style={s.h3}>Reported ingredients</Text>
@@ -1128,40 +1287,17 @@ export function DishDetail({ id, state, navigate, openSheet }) {
           )}
         </Section>
       )}
-      {local ? (
-        <>
-          <Notice>
-            Confirm current ingredients and cross-contact with this restaurant
-            before ordering.
-          </Notice>
-          <SourceLink
-            url={
-              restaurant.phone
-                ? `tel:${restaurant.phone.replace(/[^+\d]/g, "")}`
-                : null
-            }
-            icon="call-outline"
-          >
-            Call {restaurant.name}
-          </SourceLink>
-        </>
-      ) : (
-        <>
-          <Notice>
-            Fictional sample kitchen. Responses record a practice conversation.
-          </Notice>
-          <Button
-            icon="chatbubble-ellipses-outline"
-            disabled={!restaurant?.confirmed}
-            onPress={() =>
-              signedAction(() => openSheet({ type: "request", dish }))
-            }
-          >
-            {restaurant?.confirmed
-              ? "Practice a kitchen request"
-              : "Sample kitchen unavailable"}
-          </Button>
-        </>
+      {local && (
+        <SourceLink
+          url={
+            restaurant.phone
+              ? `tel:${restaurant.phone.replace(/[^+\d]/g, "")}`
+              : null
+          }
+          icon="call-outline"
+        >
+          Call {restaurant.name}
+        </SourceLink>
       )}
       <View style={s.wrap}>
         <Button
@@ -1170,9 +1306,7 @@ export function DishDetail({ id, state, navigate, openSheet }) {
           icon={saved ? "heart" : "heart-outline"}
           busy={task.busy}
           disabled={saveUnavailable}
-          onPress={() =>
-            signedAction(() => task.run(() => api.toggleFavorite(id)))
-          }
+          onPress={() => task.run(() => api.toggleFavorite(id))}
         >
           {saved ? "Saved" : "Save item"}
         </Button>
@@ -1180,7 +1314,7 @@ export function DishDetail({ id, state, navigate, openSheet }) {
           style={s.flex}
           variant="secondary"
           icon="journal-outline"
-          onPress={() => signedAction(() => openSheet({ type: "meal", dish }))}
+          onPress={() => openSheet({ type: "meal", dish })}
         >
           Log a meal
         </Button>
@@ -1214,12 +1348,20 @@ export function DishDetail({ id, state, navigate, openSheet }) {
 }
 
 export function Favorites({ state, navigate }) {
-  const dishes = state.dishes.filter((item) =>
-    state.favorites.includes(item.id),
+  const realIds = new Set(
+    state.restaurants.filter(isLocal).map((restaurant) => restaurant.id),
+  );
+  const dishes = state.dishes.filter(
+    (item) =>
+      state.favorites.includes(item.id) && realIds.has(item.restaurantId),
   );
   return (
     <>
-      <Title eyebrow="Your collection" title="Saved menu items" />
+      <Title eyebrow="Your collection" title="Your next good meal.">
+        {state.mode === "guest"
+          ? "Saved on this device. No account needed."
+          : "Your saved menu items, ready for next time."}
+      </Title>
       {dishes.length ? (
         dishes.map((dish) => (
           <DishCard key={dish.id} {...{ dish, state, navigate }} />
@@ -1231,7 +1373,7 @@ export function Favorites({ state, navigate }) {
           action="Explore menus"
           onPress={() => navigate("explore")}
         >
-          Tap a menu item's heart to keep it here.
+          Save the menu items you want to ask about or try next.
         </Empty>
       )}
     </>

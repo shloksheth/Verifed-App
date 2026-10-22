@@ -1,0 +1,335 @@
+{
+  "hawkers-orlando": {
+    "imageUrl": "https://eathawkers.com/wp-content/uploads/2020/06/Mills50_2.jpg",
+    "imageCredit": {
+      "label": "Hawkers · official website",
+      "url": "https://eathawkers.com/locations/orlando/"
+    },
+    "imageAlt": "Hawkers Orlando location, as pictured on its official website",
+    "imageKind": "venue",
+    "verification": {
+      "status": 200,
+      "contentType": "image/jpeg",
+      "bytes": 130844,
+      "width": 1200,
+      "height": 750,
+      "checkedAt": "2026-10-21T18:49:23.155123+00:00"
+    }
+  },
+  "fresh-kitchen-waterford": {
+    "imageUrl": "https://cdn.prod.website-files.com/693842c5467272494a7d47f2/6aa939e6ce8bbb07f0b2e60e_FK%20Desktop%202-p-800.webp",
+    "imageCredit": {
+      "label": "Fresh Kitchen · official website",
+      "url": "https://www.eatfreshkitchen.com/"
+    },
+    "imageAlt": "Fresh Kitchen staff member preparing a bowl, from the restaurant website",
+    "imageKind": "brand-food",
+    "verification": {
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 82896,
+      "width": 800,
+      "height": 1044,
+      "checkedAt": "2026-10-21T18:49:23.053486+00:00"
+    }
+  },
+  "chipotle-south-orange": {
+    "imageUrl": "https://dyn.mktgcdn.com/p/AoomnJ8W6lQ_KkLS1lPx82ai0f1og8tW5-ZQle6WYzE/width=960,height=640",
+    "imageCredit": {
+      "label": "Chipotle · official website",
+      "url": "https://locations.chipotle.com/fl/orlando/2211-s-orange-ave"
+    },
+    "imageAlt": "Chipotle promotional bowl photograph from its official location page; not an allergen assessment",
+    "imageKind": "brand-food",
+    "verification": {
+      "status": 200,
+      "contentType": "image/jpeg",
+      "bytes": 120323,
+      "width": 960,
+      "height": 640,
+      "checkedAt": "2026-10-21T18:49:23.027486+00:00"
+    }
+  },
+  "black-rooster-mills": {
+    "imageUrl": "https://www.blackroostertaqueria.com/wp-content/uploads/2021/05/food-1024x682.jpg",
+    "imageCredit": {
+      "label": "Black Rooster Taqueria · official website",
+      "url": "https://www.blackroostertaqueria.com/"
+    },
+    "imageAlt": "Black Rooster Taqueria food spread from its official website",
+    "imageKind": "brand-food",
+    "verification": {
+      "status": 200,
+      "contentType": "image/jpeg",
+      "bytes": 174773,
+      "width": 1024,
+      "height": 682,
+      "checkedAt": "2026-10-21T18:49:23.423234+00:00"
+    }
+  },
+  "pig-floyds-mills": {
+    "imageUrl": "https://s3.amazonaws.com/webflow-prod-assets/61e04feb6d15de516ae40221/6ab6c4950d823bf32f6dd891_Pigzza%20and%20Pig%20Floyds%20Logo%20Mashed.png",
+    "imageCredit": {
+      "label": "Pig Floyd’s & Pigzza · official website",
+      "url": "https://www.pigfloyds.com/"
+    },
+    "imageAlt": "Official Pig Floyd’s & Pigzza brand artwork; not a food photograph",
+    "imageKind": "brand-art",
+    "verification": {
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 681203,
+      "width": 1862,
+      "height": 845,
+      "checkedAt": "2026-10-21T18:49:24.562316+00:00"
+    }
+  },
+  "tako-cheena-mills": {
+    "imageUrl": null,
+    "imageCredit": {
+      "label": "Tako Cheena · official website",
+      "url": "https://tako407cheena.com/"
+    },
+    "imageAlt": "Tako Cheena restaurant image is unavailable",
+    "imageKind": "unavailable",
+    "imageUnavailableReason": "Official website image endpoint returned HTTP 403 during verification; no unrelated restaurant photograph substituted."
+  },
+  "loving-hut-orlando": {
+    "imageUrl": "https://lovinghut.us/wp-content/uploads/2020/01/Heavenly.jpg",
+    "imageCredit": {
+      "label": "Loving Hut Orlando · official website",
+      "url": "https://lovinghut.us/orlando/"
+    },
+    "imageAlt": "Loving Hut food photograph from its Orlando menu page",
+    "imageKind": "brand-food",
+    "verification": {
+      "status": 200,
+      "contentType": "image/jpeg",
+      "bytes": 28811,
+      "width": 300,
+      "height": 200,
+      "checkedAt": "2026-10-21T18:49:23.008714+00:00"
+    }
+  },
+  "the-strand-mills": {
+    "imageUrl": "https://static.wixstatic.com/media/53512c_b2214b0e767947b4b63be1e1016a9137~mv2.jpeg/v1/crop/x_0,y_17,w_822,h_774/fill/w_760,h_716,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/strand-branzino.jpeg",
+    "imageCredit": {
+      "label": "The Strand · official website",
+      "url": "https://www.strandorlando.com/"
+    },
+    "imageAlt": "Food photographed for The Strand official website",
+    "imageKind": "brand-food",
+    "verification": {
+      "status": 200,
+      "contentType": "image/jpeg",
+      "bytes": 289971,
+      "width": 760,
+      "height": 716,
+      "checkedAt": "2026-10-21T18:49:23.136869+00:00"
+    }
+  },
+  "the-monroe": {
+    "imageUrl": "https://static.wixstatic.com/media/8f9fe8_d9a3bcab160f44bbac60c813f7da1f9e~mv2.jpg/v1/fill/w_600,h_750,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Monroe%20Magical%202025-36.jpg",
+    "imageCredit": {
+      "label": "The Monroe · official website",
+      "url": "https://www.themonroeorlando.com/"
+    },
+    "imageAlt": "Dinner spread at The Monroe from its official website",
+    "imageKind": "brand-food",
+    "verification": {
+      "status": 200,
+      "contentType": "image/jpeg",
+      "bytes": 135939,
+      "width": 600,
+      "height": 750,
+      "checkedAt": "2026-10-21T18:49:23.095243+00:00"
+    }
+  },
+  "lazy-moon-mills": {
+    "imageUrl": "https://cdn.prod.website-files.com/630bc362e064f47bd1baf171/65d7855dda244ed58b6aa17b_IMG_5274-p-800.webp",
+    "imageCredit": {
+      "label": "Lazy Moon Pizza · official website",
+      "url": "https://www.lazymoonpizza.com/"
+    },
+    "imageAlt": "Lazy Moon Mills 50 location from its official website",
+    "imageKind": "venue",
+    "verification": {
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 95092,
+      "width": 800,
+      "height": 533,
+      "checkedAt": "2026-10-21T18:49:23.143870+00:00"
+    }
+  },
+  "winter-park-biscuit": {
+    "imageUrl": "https://images.squarespace-cdn.com/content/v1/5911d92a3a0411f8aed6f89b/57d0c22f-e6b0-45d2-9240-1d5e28909b6e/vegan+biscuit+orlando%2C+fl?format=1000w",
+    "imageCredit": {
+      "label": "Winter Park Biscuit Company · official website",
+      "url": "https://www.winterparkbiscuitco.com/"
+    },
+    "imageAlt": "Winter Park Biscuit Company food imagery from its official website",
+    "imageKind": "brand-food",
+    "verification": {
+      "status": 200,
+      "contentType": "image/jpeg",
+      "bytes": 44926,
+      "width": 1000,
+      "height": 667,
+      "checkedAt": "2026-10-21T18:49:23.622029+00:00"
+    }
+  },
+  "reyes-mezcaleria": {
+    "imageUrl": "https://static.wixstatic.com/media/e2d616_3c792a0ecad54f7b81bba0d94459076a~mv2.jpg/v1/fill/w_669,h_446,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Reyes-03717.jpg",
+    "imageCredit": {
+      "label": "Reyes Mezcaleria · official website",
+      "url": "https://www.reyesmex.com/"
+    },
+    "imageAlt": "Reyes Mezcaleria interior from its official website",
+    "imageKind": "venue",
+    "verification": {
+      "status": 200,
+      "contentType": "image/jpeg",
+      "bytes": 88588,
+      "width": 669,
+      "height": 446,
+      "checkedAt": "2026-10-21T18:49:23.321753+00:00"
+    }
+  },
+  "the-osprey": {
+    "imageUrl": "https://static.wixstatic.com/media/34ad14_26acfed0ef204326a6d4cb9bd0c3f46e~mv2.jpg",
+    "imageCredit": {
+      "label": "The Osprey · official website",
+      "url": "https://www.theospreyorlando.com/"
+    },
+    "imageAlt": "The Osprey food photograph from its official website",
+    "imageKind": "brand-food",
+    "verification": {
+      "status": 200,
+      "contentType": "image/jpeg",
+      "bytes": 532020,
+      "width": 879,
+      "height": 965,
+      "checkedAt": "2026-10-21T18:49:23.449912+00:00"
+    }
+  },
+  "seito-baldwin-park": {
+    "imageUrl": "https://static.wixstatic.com/media/34ad14_adac8b474af14b21aca6425889dee08b~mv2.jpg/v1/fill/w_896,h_549,q_90,enc_avif,quality_auto/34ad14_adac8b474af14b21aca6425889dee08b~mv2.jpg",
+    "imageCredit": {
+      "label": "Seito Sushi Baldwin Park · official website",
+      "url": "https://www.seitosushibp.com/"
+    },
+    "imageAlt": "Seito Sushi dining interior from its official website",
+    "imageKind": "venue",
+    "verification": {
+      "status": 200,
+      "contentType": "image/jpeg",
+      "bytes": 113276,
+      "width": 896,
+      "height": 549,
+      "checkedAt": "2026-10-21T18:49:23.373133+00:00"
+    }
+  },
+  "stubborn-mule": {
+    "imageUrl": "https://static.wixstatic.com/media/585d60_38e0e7f9ad594fc587c95313a919ead8~mv2.jpg/v1/fill/w_1218,h_802,q_90,enc_avif,quality_auto/585d60_38e0e7f9ad594fc587c95313a919ead8~mv2.jpg",
+    "imageCredit": {
+      "label": "The Stubborn Mule · official website",
+      "url": "https://www.thestubbornmuleorlando.com/venue-photos"
+    },
+    "imageAlt": "The Stubborn Mule venue from its official photo gallery",
+    "imageKind": "venue",
+    "verification": {
+      "status": 200,
+      "contentType": "image/jpeg",
+      "bytes": 244077,
+      "width": 1218,
+      "height": 802,
+      "checkedAt": "2026-10-21T18:49:23.440399+00:00"
+    }
+  },
+  "pizza-bruno-curry": {
+    "imageUrl": "https://d1w7312wesee68.cloudfront.net/lNei2BCDpqgTnUtsP0g4SDV5LpaRIImSMXhRQOYulaw/ext%3Awebp/quality%3A85/plain/s3%3A//toast-sites-resources-prod/restaurantImages/48be630c-57db-4532-86a8-a217d46e14d2/BC_211109_1026_Master.jpg",
+    "imageCredit": {
+      "label": "Pizza Bruno · official website",
+      "url": "https://pizzabrunofl.com/"
+    },
+    "imageAlt": "Pizza and cannoli pictured on Pizza Bruno’s official website",
+    "imageKind": "brand-food",
+    "verification": {
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 1524700,
+      "width": 3000,
+      "height": 2000,
+      "checkedAt": "2026-10-21T18:49:23.580436+00:00"
+    }
+  },
+  "mamak-colonial": {
+    "imageUrl": "https://res.cloudinary.com/targetable/image/upload/f_auto,q_auto,w_900/Customers/mamakeats/site/mamak-roti-canai",
+    "imageCredit": {
+      "label": "Mamak Asian Street Food · official website",
+      "url": "https://www.mamakeats.com/"
+    },
+    "imageAlt": "Roti canai and curry from Mamak’s official website",
+    "imageKind": "brand-food",
+    "verification": {
+      "status": 200,
+      "contentType": "image/jpeg",
+      "bytes": 112922,
+      "width": 900,
+      "height": 600,
+      "checkedAt": "2026-10-21T18:49:23.603027+00:00"
+    }
+  },
+  "tin-taco-downtown": {
+    "imageUrl": "https://static.wixstatic.com/media/b00dad_4294a5a1260d42b39fff4679f7935c49~mv2.jpg/v1/crop/x_158,y_0,w_808,h_1069/fill/w_808,h_882,al_c,q_85,enc_avif,quality_auto/IMG_7796.jpg",
+    "imageCredit": {
+      "label": "Tin & Taco · official website",
+      "url": "https://www.tinandtaco.com/"
+    },
+    "imageAlt": "Tin & Taco website photography",
+    "imageKind": "brand-food",
+    "verification": {
+      "status": 200,
+      "contentType": "image/jpeg",
+      "bytes": 234644,
+      "width": 808,
+      "height": 882,
+      "checkedAt": "2026-10-21T18:49:23.649026+00:00"
+    }
+  },
+  "sparrow-orlando": {
+    "imageUrl": "https://static.wixstatic.com/media/34ad14_dc78bab4d5964b73b07e5830934ce01c~mv2.jpg",
+    "imageCredit": {
+      "label": "Sparrow · official website",
+      "url": "https://www.sparroworlando.com/"
+    },
+    "imageAlt": "Sparrow interior from its official website",
+    "imageKind": "venue",
+    "verification": {
+      "status": 200,
+      "contentType": "image/jpeg",
+      "bytes": 721458,
+      "width": 2748,
+      "height": 1706,
+      "checkedAt": "2026-10-21T18:49:23.828617+00:00"
+    }
+  },
+  "osteria-ester": {
+    "imageUrl": "https://static.wixstatic.com/media/34ad14_53af82dc0987485fb8a8fccbb781226c~mv2.jpg",
+    "imageCredit": {
+      "label": "Osteria Ester · official website",
+      "url": "https://www.osteriaester.com/"
+    },
+    "imageAlt": "Osteria Ester bar and dining interior from its official website",
+    "imageKind": "venue",
+    "verification": {
+      "status": 200,
+      "contentType": "image/jpeg",
+      "bytes": 337736,
+      "width": 1600,
+      "height": 803,
+      "checkedAt": "2026-10-21T18:49:23.825617+00:00"
+    }
+  }
+}

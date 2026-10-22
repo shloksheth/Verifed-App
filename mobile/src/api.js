@@ -8,7 +8,14 @@ import { makeRedirectUri } from "expo-auth-session";
 import { configureIdFactory, newId, copy } from "./model-utils.js";
 import { createSerialQueue } from "./storage-queue.js";
 import { createClient, processLock } from "@supabase/supabase-js";
-import { restaurants, dishes, defaultProfile, ALLERGENS, RESTRICTIONS, TASTE_TAGS } from "./data.js";
+import {
+  restaurants,
+  dishes,
+  defaultProfile,
+  ALLERGENS,
+  RESTRICTIONS,
+  TASTE_TAGS,
+} from "./data.js";
 import { makeDemoState, makeRequest, transitionRequest } from "./domain.js";
 import { supabaseUrl, supabasePublishableKey } from "./config.js";
 import { finishCommittedWrite } from "./write-sync.js";
@@ -19,15 +26,24 @@ WebBrowser.maybeCompleteAuthSession();
 const DEMO_KEY = "verifed-demo-v1";
 const MODE_KEY = "verifed-mode";
 const PREVIEW_KEY = "verifed-preview-profile-v1";
+const LIBRARY_KEY = "verifed-device-library-v1";
 let previewProfile = cloneProfile(defaultProfile);
+let deviceLibrary = { favoriteKeys: [], meals: [] };
 function cloneProfile(profile) {
   return JSON.parse(JSON.stringify(profile));
 }
 function cleanProfile(profile) {
-  const choices = (values, allowed) => [...new Set((Array.isArray(values) ? values : [])
-    .filter((value) => allowed.includes(value)))];
+  const choices = (values, allowed) => [
+    ...new Set(
+      (Array.isArray(values) ? values : []).filter((value) =>
+        allowed.includes(value),
+      ),
+    ),
+  ];
   return {
-    name: String(profile.name || "").trim().slice(0, 100),
+    name: String(profile.name || "")
+      .trim()
+      .slice(0, 100),
     allergies: choices(profile.allergies, ALLERGENS),
     restrictions: choices(profile.restrictions, RESTRICTIONS),
     likes: choices(profile.likes, TASTE_TAGS),
@@ -56,20 +72,39 @@ const client =
     : null;
 const clone = copy;
 const listeners = new Set();
-const empty = () => ({
-  ready: false,
-  mode: "guest",
-  user: null,
-  profile: clone(previewProfile),
-  ...clone(mergeLocalCatalog(restaurants, dishes)),
-  requests: [],
-  meals: [],
-  favorites: [],
-  memberships: [],
-  connection: "idle",
-  error: null,
-  passwordRecovery: false,
-});
+function deviceCollections(catalog) {
+  const find = (key) =>
+    catalog.dishes.find((dish) => (dish.catalogKey || dish.id) === key);
+  return {
+    favorites: deviceLibrary.favoriteKeys
+      .map((key) => find(key)?.id)
+      .filter(Boolean),
+    meals: deviceLibrary.meals.map((meal) => {
+      const dish = find(meal.dishKey);
+      return {
+        ...meal,
+        dishId: dish?.id || null,
+        restaurantId: dish?.restaurantId || null,
+      };
+    }),
+  };
+}
+const empty = () => {
+  const catalog = clone(mergeLocalCatalog(restaurants, dishes));
+  return {
+    ready: false,
+    mode: "guest",
+    user: null,
+    profile: clone(previewProfile),
+    ...catalog,
+    requests: [],
+    ...deviceCollections(catalog),
+    memberships: [],
+    connection: "idle",
+    error: null,
+    passwordRecovery: false,
+  };
+};
 let state = empty();
 let initialized = false;
 let generation = 0;
@@ -110,7 +145,12 @@ async function loadDemo() {
       Array.isArray(saved.requests) &&
       Array.isArray(saved.dishes)
     )
-      return { ...saved, ...mergeLocalCatalog(saved.restaurants, saved.dishes, { preferBundled: true }) };
+      return {
+        ...saved,
+        ...mergeLocalCatalog(saved.restaurants, saved.dishes, {
+          preferBundled: true,
+        }),
+      };
   } catch {
     /* A damaged demo can be safely reset without touching cloud data. */
   }
@@ -120,6 +160,23 @@ async function loadDemo() {
 // A single queue keeps two rapid taps from reading and overwriting the same
 // saved demo. Failed edits release the queue so the next action can continue.
 const enqueueDemo = createSerialQueue();
+const enqueueDevice = createSerialQueue();
+async function editDevice(change) {
+  if (state.mode !== "guest")
+    throw new Error("Open your device library as a guest first.");
+  const isCurrent = writeContext();
+  return enqueueDevice(async () => {
+    if (!isCurrent())
+      throw new Error("Your session changed. Try that action again.");
+    const next = clone(deviceLibrary);
+    const value = change(next);
+    await AsyncStorage.setItem(LIBRARY_KEY, JSON.stringify(next));
+    deviceLibrary = next;
+    // A delayed device write must never replace a signed-in account's data.
+    if (isCurrent()) publish({ ...state, ...deviceCollections(state) });
+    return value;
+  });
+}
 async function editDemo(change) {
   const isCurrent = writeContext();
   return enqueueDemo(async () => {
@@ -139,7 +196,10 @@ async function openDemo(reset) {
     if (started !== generation)
       throw new Error("Your session changed. Open the demo again.");
     const next = reset ? makeDemoState() : await loadDemo();
-    Object.assign(next, mergeLocalCatalog(next.restaurants, next.dishes, { preferBundled: true }));
+    Object.assign(
+      next,
+      mergeLocalCatalog(next.restaurants, next.dishes, { preferBundled: true }),
+    );
     await AsyncStorage.setItem(DEMO_KEY, JSON.stringify(next));
     await AsyncStorage.setItem(MODE_KEY, "demo");
     if (started === generation)
@@ -170,24 +230,34 @@ async function refreshCloud() {
     return;
   const [catalog, menu, profile, requests, meals, favorites, memberships] =
     responses;
+  const publicCatalog = mergeLocalCatalog(
+    catalog,
+    menu.map((row) => row.body),
+  );
   publish({
     ...empty(),
     ready: true,
     mode: user ? "cloud" : "guest",
     user,
-    profile: !user ? clone(previewProfile) : profile || {
-      ...clone(defaultProfile),
-      id: user?.id,
-      name: user?.user_metadata?.name || "",
-    },
-    ...mergeLocalCatalog(catalog, menu.map((row) => row.body)),
+    profile: !user
+      ? clone(previewProfile)
+      : profile || {
+          ...clone(defaultProfile),
+          id: user?.id,
+          name: user?.user_metadata?.name || "",
+        },
+    ...publicCatalog,
     requests: (requests || [])
       .map((row) => row.body)
       .sort((a, b) => b.updatedAt.localeCompare(a.updatedAt)),
-    meals: (meals || [])
-      .map((row) => ({ ...row.body, id: row.id }))
-      .sort((a, b) => b.createdAt.localeCompare(a.createdAt)),
-    favorites: (favorites || []).map((row) => row.dish_id),
+    meals: user
+      ? (meals || [])
+          .map((row) => ({ ...row.body, id: row.id }))
+          .sort((a, b) => b.createdAt.localeCompare(a.createdAt))
+      : deviceCollections(publicCatalog).meals,
+    favorites: user
+      ? (favorites || []).map((row) => row.dish_id)
+      : deviceCollections(publicCatalog).favorites,
     memberships: (memberships || []).map((row) => ({
       restaurantId: row.restaurant_id,
       role: row.role,
@@ -283,9 +353,33 @@ export const api = {
     if (initialized) return;
     try {
       const saved = JSON.parse(await AsyncStorage.getItem(PREVIEW_KEY));
-      if (saved && Array.isArray(saved.allergies)) previewProfile = cleanProfile(saved);
-    } catch { /* Ignore damaged local preferences; no account data is involved. */ }
-    if (state.mode === "guest") publish({ ...state, profile: clone(previewProfile) });
+      if (saved && Array.isArray(saved.allergies))
+        previewProfile = cleanProfile(saved);
+    } catch {
+      /* Ignore damaged local preferences; no account data is involved. */
+    }
+    try {
+      const saved = JSON.parse(await AsyncStorage.getItem(LIBRARY_KEY));
+      if (Array.isArray(saved?.favoriteKeys) && Array.isArray(saved?.meals)) {
+        deviceLibrary = {
+          favoriteKeys: saved.favoriteKeys.filter(
+            (key) => typeof key === "string",
+          ),
+          meals: saved.meals.filter(
+            (meal) =>
+              typeof meal?.id === "string" && typeof meal.dishName === "string",
+          ),
+        };
+      }
+    } catch {
+      /* A damaged device library does not affect any cloud account. */
+    }
+    if (state.mode === "guest")
+      publish({
+        ...state,
+        profile: clone(previewProfile),
+        ...deviceCollections(state),
+      });
     if ((await AsyncStorage.getItem(MODE_KEY)) === "demo")
       publish({ ...(await loadDemo()), connection: "local", error: null });
     initialized = true;
@@ -338,7 +432,7 @@ export const api = {
       Constants.executionEnvironment === "storeClient"
     )
       throw new Error(
-        "Google sign-in needs a Verifed development build. Use the local demo in Snack / Expo Go, or sign in on the companion website.",
+        "Google sign-in needs a Verifed development build. You can save dishes and journal on this device without signing in, or use the companion website for an account.",
       );
     const redirectTo = makeRedirectUri({
       scheme: "verifed",
@@ -436,7 +530,8 @@ export const api = {
     return synchronizeWrite(clean, isCurrent);
   },
   async previewProfile(profile) {
-    if (state.mode !== "guest") throw new Error("Use Save profile for your signed-in account.");
+    if (state.mode !== "guest")
+      throw new Error("Use Save profile for your signed-in account.");
     const isCurrent = writeContext();
     const clean = cleanProfile(profile);
     await AsyncStorage.setItem(PREVIEW_KEY, JSON.stringify(clean));
@@ -450,7 +545,9 @@ export const api = {
         const dish = next.dishes.find((d) => d.id === input.dishId);
         if (!dish) throw new Error("Dish not found.");
         if (
-          !next.restaurants.find((r) => r.id === dish.restaurantId && r.fictional)?.confirmed
+          !next.restaurants.find(
+            (r) => r.id === dish.restaurantId && r.fictional,
+          )?.confirmed
         )
           throw new Error(
             "This menu is unconfirmed. Contact the restaurant directly.",
@@ -492,7 +589,7 @@ export const api = {
     });
   },
   async saveMeal(meal) {
-    requireUser();
+    if (state.mode !== "guest") requireUser();
     const isCurrent = writeContext();
     if (
       !String(meal.dishName || "").trim() ||
@@ -516,6 +613,22 @@ export const api = {
       tags: meal.tags || [],
       createdAt: existing?.createdAt || new Date().toISOString(),
     };
+    if (state.mode === "guest") {
+      const dish = state.dishes.find((item) => item.id === meal.dishId);
+      return editDevice((next) => {
+        const saved = {
+          ...body,
+          dishKey: dish?.catalogKey || dish?.id || existing?.dishKey || null,
+          id: existing?.id || newId(),
+        };
+        if (existing)
+          next.meals = next.meals.map((item) =>
+            item.id === existing.id ? saved : item,
+          );
+        else next.meals.unshift(saved);
+        return saved;
+      });
+    }
     if (state.mode === "demo")
       return editDemo((next) => {
         const saved = { ...body, id: existing?.id || newId() };
@@ -545,10 +658,20 @@ export const api = {
     return synchronizeWrite(value, isCurrent);
   },
   async toggleFavorite(dishId) {
-    requireUser();
     const dish = state.dishes.find((item) => item.id === dishId);
+    if (!dish) throw new Error("Dish not found.");
+    if (state.mode === "guest")
+      return editDevice((next) => {
+        const key = dish.catalogKey || dish.id;
+        next.favoriteKeys = next.favoriteKeys.includes(key)
+          ? next.favoriteKeys.filter((item) => item !== key)
+          : [...next.favoriteKeys, key];
+      });
+    requireUser();
     if (state.mode === "cloud" && dish?.provenance && !dish.cloudBacked)
-      throw new Error("This menu is an offline copy. Refresh the catalog before saving it to your account.");
+      throw new Error(
+        "This menu is an offline copy. Refresh the catalog before saving it to your account.",
+      );
     const isCurrent = writeContext();
     if (state.mode === "demo")
       return editDemo((next) => {
@@ -709,17 +832,26 @@ export const api = {
     return command("createRestaurant", input);
   },
   async exportData() {
-    requireUser();
     return clone({
       exportedAt: new Date().toISOString(),
       mode: state.mode,
       profile: state.profile,
-      requests: state.requests.filter((r) => r.userId === state.user.id),
+      requests: state.user
+        ? state.requests.filter((r) => r.userId === state.user.id)
+        : [],
       meals: state.meals,
       favorites: state.favorites,
     });
   },
   async deleteMyData() {
+    if (state.mode === "guest") {
+      await editDevice((next) => {
+        next.favoriteKeys = [];
+        next.meals = [];
+      });
+      await api.previewProfile(defaultProfile);
+      return;
+    }
     requireUser();
     if (state.mode === "demo")
       return editDemo((next) => {

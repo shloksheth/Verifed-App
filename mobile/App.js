@@ -37,9 +37,6 @@ import {
   Restaurant,
 } from "./components/Dining";
 import { History, MealComposer, MealDetail } from "./components/Journal";
-import { RequestComposer, RequestDetail } from "./components/Requests";
-import Scanner from "./components/Scanner";
-import Workspace, { KitchenRequest } from "./components/Workspace";
 import {
   Button,
   Empty,
@@ -49,16 +46,22 @@ import {
   Notice,
 } from "./components/UI";
 
-const primaryRoutes = ["home", "explore", "scan", "history", "profile"];
+// Keep the community tools one tap away. Home replaces the old scanner action.
+const primaryRoutes = ["home", "explore", "favorites", "history", "profile"];
 const navigation = [
-  { route: "home", label: "Home", icon: "home-outline", active: "home" },
   {
     route: "explore",
     label: "Explore",
     icon: "compass-outline",
     active: "compass",
   },
-  { route: "scan", label: "Scan", icon: "scan-outline", active: "scan" },
+  {
+    route: "favorites",
+    label: "Saved",
+    icon: "heart-outline",
+    active: "heart",
+  },
+  { route: "home", label: "Home", icon: "home-outline", active: "home" },
   {
     route: "history",
     label: "Journal",
@@ -75,18 +78,9 @@ function parseRoute(path) {
 }
 
 function activeTab(page) {
-  if (["dish", "restaurant", "favorites"].includes(page)) return "explore";
-  if (["meal", "request"].includes(page)) return "history";
-  if (
-    [
-      "settings",
-      "help",
-      "edit-profile",
-      "workspace",
-      "kitchen-request",
-      "auth",
-    ].includes(page)
-  )
+  if (["dish", "restaurant"].includes(page)) return "explore";
+  if (page === "meal") return "history";
+  if (["settings", "help", "edit-profile", "auth"].includes(page))
     return "profile";
   return page;
 }
@@ -136,7 +130,7 @@ function AppContent() {
           navigate(`restaurant/${decodeURIComponent(match[1])}`);
         } catch {
           setInitError(
-            "This menu link could not be read. Enter its code on the Scan tab.",
+            "This menu link could not be read. Find the restaurant in Explore.",
           );
         }
       }
@@ -177,17 +171,11 @@ function AppContent() {
       case "explore":
         screen = <Explore {...shared} />;
         break;
-      case "scan":
-        screen = <Scanner {...shared} />;
-        break;
       case "restaurant":
         screen = <Restaurant {...shared} id={route.id} />;
         break;
       case "dish":
         screen = <DishDetail {...shared} id={route.id} />;
-        break;
-      case "request":
-        screen = <RequestDetail {...shared} id={route.id} />;
         break;
       case "history":
         screen = <History {...shared} initialTab={route.params.get("tab")} />;
@@ -202,19 +190,15 @@ function AppContent() {
         screen = <Profile {...shared} />;
         break;
       case "edit-profile":
-        screen = <ProfileEditor {...shared} returnTo={route.params.get("returnTo")} />;
+        screen = (
+          <ProfileEditor {...shared} returnTo={route.params.get("returnTo")} />
+        );
         break;
       case "settings":
         screen = <Settings {...shared} />;
         break;
       case "help":
         screen = <Help {...shared} />;
-        break;
-      case "workspace":
-        screen = <Workspace {...shared} />;
-        break;
-      case "kitchen-request":
-        screen = <KitchenRequest {...shared} id={route.id} />;
         break;
       default:
         screen = (
@@ -256,13 +240,7 @@ function AppContent() {
           </Text>
         </Pressable>
         <View style={s.headerRight}>
-          <Text style={s.mode}>
-            {state.mode === "demo"
-              ? "LOCAL DEMO"
-              : state.mode === "cloud"
-                ? "CONNECTED"
-                : "WELCOME"}
-          </Text>
+          <Text style={s.mode}>ORLANDO, FL</Text>
           <Pressable
             accessibilityRole="button"
             accessibilityLabel="Open saved dishes"
@@ -322,13 +300,18 @@ function AppContent() {
               key={item.route}
               accessibilityRole="tab"
               accessibilityState={{ selected }}
+              aria-selected={selected}
               accessibilityLabel={item.label}
               onPress={() => navigate(item.route)}
               style={s.navItem}
             >
-              {item.route === "scan" ? (
-                <View style={s.scanNav}>
-                  <Icon name="scan-outline" color={colors.paper} size={25} />
+              {item.route === "home" ? (
+                <View style={s.homeNav}>
+                  <Icon
+                    name={selected ? "home" : "home-outline"}
+                    color={colors.paper}
+                    size={25}
+                  />
                 </View>
               ) : (
                 <Icon
@@ -344,13 +327,6 @@ function AppContent() {
           );
         })}
       </View>
-      {sheet?.type === "request" && (
-        <RequestComposer
-          {...shared}
-          {...sheet}
-          onClose={() => setSheet(null)}
-        />
-      )}
       {sheet?.type === "meal" && (
         <MealComposer {...shared} {...sheet} onClose={() => setSheet(null)} />
       )}

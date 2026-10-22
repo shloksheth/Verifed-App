@@ -120,14 +120,19 @@ export function AllergenGlyph({ allergen, size = 18, color = colors.ink }) {
   );
 }
 
-function AllergenToken({ allergen, unknown = false, other = false }) {
+function AllergenToken({
+  allergen,
+  unknown = false,
+  other = false,
+  ingredient = false,
+}) {
   return (
     <View
       accessible
       accessibilityLabel={
         unknown
           ? "Unknown: incomplete allergen source coverage"
-          : `${allergen}: declared allergen`
+          : `${allergen}: ${ingredient ? "recognizable named ingredient" : "declared allergen"}`
       }
       style={s.allergenToken}
     >
@@ -135,7 +140,9 @@ function AllergenToken({ allergen, unknown = false, other = false }) {
         allergen={other ? "other" : allergen}
         color={unknown ? colors.muted : colors.ink}
       />
-      <Text style={s.allergenLabel}>{unknown ? "Unknown" : allergen}</Text>
+      <Text style={s.allergenLabel}>
+        {unknown ? "Unknown" : `${allergen}${ingredient ? "†" : ""}`}
+      </Text>
     </View>
   );
 }
@@ -155,12 +162,18 @@ export default function AllergenIcons({
   showEmpty = true,
 }) {
   const declared = [...new Set(dish.allergens || [])];
+  const ingredient = [...new Set(dish.ingredientHints?.allergens || [])].filter(
+    (allergen) => !declared.includes(allergen),
+  );
+  const possible = [...new Set(dish.ingredientHints?.possibleAllergens || [])];
   const other = [...new Set(dish.otherDeclaredAllergens || [])].filter(
     (allergen) => !declared.includes(allergen),
   );
   const unknown = hasUnknownAllergenCoverage(dish);
   if (
     !declared.length &&
+    !ingredient.length &&
+    !possible.length &&
     !other.length &&
     !showEmpty &&
     !(showUnknown && unknown)
@@ -171,15 +184,27 @@ export default function AllergenIcons({
       {declared.map((allergen) => (
         <AllergenToken key={allergen} allergen={allergen} />
       ))}
+      {ingredient.map((allergen) => (
+        <AllergenToken key={allergen} allergen={allergen} ingredient />
+      ))}
       {other.map((allergen) => (
         <AllergenToken key={allergen} allergen={allergen} other />
       ))}
       {showUnknown && unknown && <AllergenToken unknown />}
-      {showEmpty && !declared.length && !other.length && (
+      {!!possible.length && (
         <Text style={s.allergenLabel}>
-          No allergens declared; check details
+          Check ingredients: {possible.join(", ")}
         </Text>
       )}
+      {showEmpty &&
+        !declared.length &&
+        !ingredient.length &&
+        !possible.length &&
+        !other.length && (
+          <Text style={s.allergenLabel}>
+            No allergens declared; check details
+          </Text>
+        )}
     </View>
   );
 }
@@ -202,7 +227,8 @@ export function AllergenLegend({ accent = colors.ink }) {
           </Text>
         </Pressable>
         <Text style={[s.menuCaption, s.flex]}>
-          Icons show declared allergens. ? means incomplete source coverage.
+          Icons: source declarations or named ingredients (†). ? means
+          incomplete coverage.
         </Text>
       </View>
       {expanded && (
@@ -213,8 +239,12 @@ export function AllergenLegend({ accent = colors.ink }) {
           <AllergenToken unknown />
           <AllergenToken allergen="Other source declaration" other />
           <Text style={s.menuCaption}>
-            Additional declarations keep the restaurant's wording, including
-            unspecified nut types. They are not mapped to a different allergen.
+            † marks a recognizable ingredient named in the published menu, not a
+            restaurant allergen declaration. “Check ingredients” flags common
+            recipe possibilities inferred from menu wording; they need
+            confirmation. Additional declarations keep the restaurant's wording,
+            including unspecified nut types. They are not mapped to a different
+            allergen.
           </Text>
         </View>
       )}

@@ -1,5 +1,10 @@
-const same = (left, right) => String(left).toLowerCase() === String(right).toLowerCase();
-const includes = (values, value) => (values || []).some((item) => same(item, value));
+const same = (left, right) =>
+  String(left).toLowerCase() === String(right).toLowerCase();
+const includes = (values, value) =>
+  (values || []).some((item) => same(item, value));
+const supportsRestriction = (dish, restriction) =>
+  includes(dish.tags, restriction) ||
+  (same(restriction, "Vegetarian") && includes(dish.tags, "Vegan"));
 
 // A dietary-menu match means the restaurant explicitly supports each selected
 // requirement. It is separate from the meal assessment and cannot certify food.
@@ -9,11 +14,27 @@ export function dietaryMenuStatus(dish, profile = {}) {
   if (!allergies.length && !restrictions.length)
     return { level: "unset", missing: [], conflicts: [] };
 
-  const conflicts = allergies.filter((allergen) => includes(dish.allergens, allergen));
+  const hints = dish.ingredientHints || {};
+  const conflicts = [
+    ...allergies.filter((allergen) => includes(dish.allergens, allergen)),
+    ...allergies.filter(
+      (allergen) =>
+        includes(hints.allergens, allergen) ||
+        includes(hints.possibleAllergens, allergen),
+    ),
+    ...restrictions.filter((restriction) =>
+      includes(hints.restrictionConflicts, restriction),
+    ),
+  ].filter((value, index, values) => values.indexOf(value) === index);
   const claims = dish.provenance?.freeFromAllergens || [];
   const missing = [
-    ...allergies.filter((allergen) => !includes(claims, allergen) && !includes(conflicts, allergen)),
-    ...restrictions.filter((restriction) => !includes(dish.tags, restriction)),
+    ...allergies.filter(
+      (allergen) =>
+        !includes(claims, allergen) && !includes(conflicts, allergen),
+    ),
+    ...restrictions.filter(
+      (restriction) => !supportsRestriction(dish, restriction),
+    ),
   ];
   return {
     level: conflicts.length ? "conflict" : missing.length ? "unknown" : "match",

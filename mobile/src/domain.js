@@ -45,6 +45,16 @@ export function assessDish(dish, profile = defaultProfile, meals = []) {
   const conflicts = (profile.allergies || []).filter((allergen) =>
     dish.allergens.some((item) => lower(item) === lower(allergen)),
   );
+  const hints = dish.ingredientHints || {};
+  const ingredientFlags = (profile.allergies || []).filter(
+    (allergen) =>
+      [...(hints.allergens || []), ...(hints.possibleAllergens || [])].some(
+        (item) => lower(item) === lower(allergen),
+      ) && !conflicts.includes(allergen),
+  );
+  const dietaryFlags = (profile.restrictions || []).filter((restriction) =>
+    (hints.restrictionConflicts || []).includes(restriction),
+  );
   const missingRestrictions = (profile.restrictions || []).filter(
     (tag) => !dish.tags.some((item) => lower(item) === lower(tag)),
   );
@@ -75,24 +85,37 @@ export function assessDish(dish, profile = defaultProfile, meals = []) {
   }
   const reasons = [
     ...conflicts.map((item) => `Listed allergen: ${item}`),
+    ...ingredientFlags.map((item) => `Ingredient clue to check: ${item}`),
+    ...dietaryFlags.map(
+      (item) => `Named ingredients may conflict with ${item}`,
+    ),
     ...missingRestrictions.map(
       (item) => `${item} suitability needs clarification`,
     ),
   ];
   const source = dish.provenance;
-  const uncovered = source ? (profile.allergies || []).filter((allergen) =>
-    !source.coverage?.some((item) => lower(item) === lower(allergen)) &&
-    !conflicts.includes(allergen)) : [];
-  if (uncovered.length) reasons.push(`Source does not cover: ${uncovered.join(", ")}`);
-  if (source?.kind === "component") reasons.push("This record covers one component, not your complete order");
+  const uncovered = source
+    ? (profile.allergies || []).filter(
+        (allergen) =>
+          !source.coverage?.some((item) => lower(item) === lower(allergen)) &&
+          !conflicts.includes(allergen),
+      )
+    : [];
+  if (uncovered.length)
+    reasons.push(`Source does not cover: ${uncovered.join(", ")}`);
+  if (source?.kind === "component")
+    reasons.push("This record covers one component, not your complete order");
   if (!dish.informationComplete) reasons.push("Menu details are unconfirmed");
   return {
-    level: conflicts.length
-      ? "conflict"
-      : source || !dish.informationComplete || missingRestrictions.length
-        ? "unknown"
-        : "review",
-    conflicts,
+    level:
+      conflicts.length || ingredientFlags.length || dietaryFlags.length
+        ? "conflict"
+        : source || !dish.informationComplete || missingRestrictions.length
+          ? "unknown"
+          : "review",
+    conflicts: [
+      ...new Set([...conflicts, ...ingredientFlags, ...dietaryFlags]),
+    ],
     reasons,
     tasteScore:
       tasteReasons.length * 2 +
