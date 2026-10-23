@@ -1,11 +1,11 @@
 {
   "number": 14.3,
   "name": "Verifed V14.3",
-  "description": "Added 37 individually matched food-image references across Fresh Kitchen, Reyes Mezcaleria, Monroe, Strand, Osprey, Stubborn Mule, Lazy Moon, Pig Floyds and Woodlands. 29 sources are from Fresh Kitchen's official menu; remaining sources describe specific named restaurant dishes. Per-item image coverage grows from 267 to 304 of 1,630 active menu entries, without repeating generic venue photography or changing food safety assessment. GitHub-only update; no new Expo Snack publish.",
+  "description": "Added 40 individually source-matched food photos across Fresh Kitchen, Reyes, Monroe, Strand, Osprey, Stubborn Mule, Lazy Moon, Pig Floyds, Woodlands, Winter Park Biscuit Company, Bombay Street Kitchen and Tin & Taco. Per-item coverage increased to 307 of 1,630 catalog entries; remaining item images cannot safely be guessed. All 25 restaurants already have hero imagery. GitHub-only update.",
   "verification": [
-    "Image registry and menu catalog are tested to map exact item keys and preserve absence of unrelated default photos.",
-    "Fresh Kitchen photo assets are provided as AVIF and may require device-specific support; app falls back when remote images fail.",
-    "All 25 restaurants retain venue-level header imagery, but some have no verified individual food photo yet.",
-    "No image establishes allergen safety or location availability; third-party commercial image reuse may require permission."
+    "Image registry matches photos to exact catalog item keys, preserving the rule against unrelated photos on menu cards.",
+    "29 new Fresh Kitchen menu asset references use AVIF and have neutral fallbacks if a device cannot display them.",
+    "External links are monitored in CI but may expire; many menu items remain without individually verified images.",
+    "Photos do not certify ingredients, allergen safety, availability or permissions for commercial redistribution."
   ]
 }
