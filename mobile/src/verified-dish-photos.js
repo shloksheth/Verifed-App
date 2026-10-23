@@ -925,5 +925,13 @@ export const verifiedDishPhotos = {
       "credit": "BringFido · Tin & Taco guest photograph",
       "sourceUrl": "https://www.bringfido.com/restaurant/91902"
     }
+  },
+  "osteria-ester": {
+    "spaghetti-alle-vongole": {
+      "url": "https://prod-pics.guide.michelin.com/api/public/content/45709af6dac041ff870dc98e6cb53598.jpeg?format=jpeg&h=500&w=500",
+      "alt": "Spaghetti alle Vongole with clams photographed at Osteria Ester",
+      "credit": "MICHELIN Guide · Osteria Ester food photograph",
+      "sourceUrl": "https://guide.michelin.com/us/en/florida/orlando/restaurant/osteria-ester"
+    }
   }
 };
