@@ -616,6 +616,39 @@ export const s = StyleSheet.create({
     borderBottomColor: colors.line,
     gap: 8,
   },
+  menuDishLayout: {
+    flexDirection: "row",
+    alignItems: "flex-start",
+    gap: 12,
+  },
+  menuDishBody: { flex: 1, minWidth: 0, gap: 7 },
+  menuDishPhotoFrame: {
+    width: 92,
+    gap: 4,
+  },
+  menuDishPhoto: {
+    width: 92,
+    height: 86,
+    borderRadius: 11,
+    backgroundColor: "#F4F0E8",
+  },
+  menuDishPhotoLargeFrame: { width: "100%", gap: 6 },
+  menuDishPhotoLarge: {
+    width: "100%",
+    height: 205,
+    borderRadius: 17,
+    backgroundColor: "#F4F0E8",
+  },
+  menuDishPhotoEmpty: {
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  menuPhotoType: {
+    fontSize: 9,
+    lineHeight: 12,
+    color: colors.muted,
+    textAlign: "center",
+  },
   editorialItemName: {
     color: colors.ink,
     fontSize: 16,
