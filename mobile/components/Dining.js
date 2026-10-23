@@ -10,6 +10,7 @@ import {
 import { api } from "../src/api";
 import { assessDish } from "../src/domain";
 import { chainBrand } from "../src/chain-brand";
+import TacoBellMenu, { isTacoBell } from "./TacoBellMenu";
 import { menuPhotoFor, representativeMenuPhotos } from "../src/menu-photos";
 import { dietaryMenuStatus, groupMenu } from "../src/menu-filter";
 import { colors, s } from "../styles";
@@ -249,12 +250,7 @@ function DishPhoto({ dish, restaurant, large = false }) {
   const [failed, setFailed] = useState(false);
   const photo = menuPhotoFor(dish, restaurant);
   const dimensions = large ? s.menuDishPhotoLarge : s.menuDishPhoto;
-  if (!photo || failed)
-    return (
-      <View style={[dimensions, s.menuDishPhotoEmpty]}>
-        <Icon name="restaurant-outline" size={large ? 36 : 24} color={colors.orangeDark} />
-      </View>
-    );
+  if (!photo || failed) return null;
   return (
     <View style={large ? s.menuDishPhotoLargeFrame : s.menuDishPhotoFrame}>
       <Image
@@ -763,6 +759,17 @@ export function Restaurant({ id, state, navigate }) {
       />
     );
   const dishes = state.dishes.filter((item) => item.restaurantId === id);
+  if (isTacoBell(restaurant)) {
+    return (
+      <TacoBellMenu
+        restaurant={restaurant}
+        dishes={dishes}
+        profile={state.profile}
+        favorites={state.favorites}
+        navigate={navigate}
+      />
+    );
+  }
   const theme = restaurantTheme(restaurant);
   const menuPreview = representativeMenuPhotos[restaurant.slug || restaurant.id];
   const menuHeroRestaurant = menuPreview
@@ -868,8 +875,9 @@ export function Restaurant({ id, state, navigate }) {
       </View>
       <AllergenLegend accent={theme.accent} />
       <Text style={s.menuCaption}>
-        Images marked “Restaurant photo” are examples of this restaurant’s food,
-        not necessarily the named item. Check ingredient and allergen details separately.
+        Only verified item photographs appear beside dishes; some dishes have
+        no photo yet. Menu banners may use general restaurant photography.
+        Images do not establish ingredient or allergen safety.
       </Text>
       {mode === "full" ? (
         <>

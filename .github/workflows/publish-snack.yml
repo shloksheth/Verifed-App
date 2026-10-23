@@ -5,8 +5,7 @@ on:
     branches:
       - main
     paths:
-      - 'mobile/**'
-      - 'research/native-tools/**'
+      - 'mobile/snack-publish.request.json'
       - '.github/workflows/publish-snack.yml'
   workflow_dispatch:
 
@@ -32,6 +31,15 @@ jobs:
           cache-dependency-path: |
             mobile/package-lock.json
             research/native-tools/package-lock.json
+      - name: Verify explicit Snack publication request
+        run: |
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+          const request = JSON.parse(fs.readFileSync('mobile/snack-publish.request.json', 'utf8'));
+          const release = JSON.parse(fs.readFileSync('mobile/release.json', 'utf8'));
+          if (String(request.version) !== String(release.number))
+            throw Error('Explicit Snack publication request does not match the release version');
+          NODE
       - name: Install mobile dependencies
         run: npm ci --prefix mobile
       - name: Run mobile regression suite

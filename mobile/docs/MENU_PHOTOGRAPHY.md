@@ -1,22 +1,32 @@
-# Food photography and image provenance (V14)
+# Menu photography and sources — Verifed V14.1
 
-The active mobile catalog has 25 restaurants and 1,630 published menu entries. Tako Cheena remains retired. Images are part of presentation and are never used to infer ingredients, allergens, dietary matches, or food safety.
+Food photography is for visual identification only. It is never used to infer ingredients, allergen absence, preparation methods, or dietary safety.
 
-## How an image is chosen
+## Fix for repeated generic photos
 
-1. A dish with a sourced `imageUrl` takes precedence and is labeled **Menu item**. This currently covers 53 Taco Bell products repeated across three Orlando branch menus, or 159 menu entries, plus the separately sourced Chipotle guacamole component. Official product photos are not inferred from similar dish names.
-2. Otherwise, `src/menu-photos.js` selects a sourced restaurant-specific image. These images are labeled **Restaurant photo** because the item pictured may be different.
-3. If an image fails to load, the interface falls back to a neutral restaurant icon. It does not silently substitute an unrelated dish.
-4. The restaurant menu hero prefers a food photo to a venue interior where a sourced food photograph was identified.
+V14 had a restaurant-wide fallback: the same general food image was displayed beside every item in that restaurant's menu, even though it did not depict those dishes. V14.1 removes that fallback completely.
 
-Images are identified via `imageUrl`, `imageAlt`, `imageCredit`, or the reviewed source registry. Product-level images from the published source catalog are copied into `localDishes` and persist through public cloud-row merging. This means Taco Bell menu photos show in the app, rather than being discarded by the existing local catalog transformation.
+An image can now appear beside a dish only when there is an exact product match from a reviewed source. If a photograph is missing or fails to load, the generic Verifed menu shows the item's text with no misleading image; the Taco Bell-specific menu displays a clearly labeled unavailable-photo tile. Restaurant-wide food images may still appear in a **restaurant header**, not as individual dish photos.
 
-**Image sources:** existing reviewed `research/restaurant-images.json` URLs, product URLs from `research/requested-menu-data.json` and the generated `restaurant-menus.js`, plus restaurant-specific food image URLs documented in `src/menu-photos.js`. Some representative images are credited to restaurant ordering pages or editorial coverage rather than the restaurant's own server. Image providers can remove URLs, block hotlinking or change assets over time. The application therefore includes `onError` fallbacks. A loaded photo is not proof that a listed product is stocked by an Orlando branch.
+## Source registry
 
-## User experience
+`src/verified-dish-photos.js` stores photos keyed by stable restaurant slug and stable item key.
 
-Both **Full menu** and **For my diet** now show consistent food thumbnails beside menu records and continue to show allergen flags, dietary statuses and source links. Dish detail has a large photo with the same provenance label. The restaurant header displays a sourced food photograph where available.
+- Taco Bell: 53 original verified product images in the source menu plus one official Cantina Chicken Bowl photo, for 54 unique items copied across all three Orlando branches (162 menu entries).
+- Loving Hut Orlando: 53 uniquely matched named dish images from the official restaurant web menu saved under `research/menu-sources/loving.html`. The remaining eight sides/components lack exact pictures.
+- Chipotle: the official side-of-guacamole image; other components do not inherit the same general bowl image.
+- Other venues: restaurant hero photographs remain. Product photos must be independently researched and matched before they are attached to a dish.
 
-Exact product photos and representative images have different captions and accessible descriptions. A disclaimer above each menu states that restaurant photos might not depict the named item. No image is a statement of dietary safety. Restaurant menu styling and dietary assessment logic are unchanged.
+Exact-product image matching is based on the item's published menu name and source and is not a representation of whether that item is currently available at a particular branch.
 
-The current source catalog does **not** provide a verified exact dish image for every individual menu entry. This release makes food imagery available throughout all active restaurant menus without inventing or mislabeling exact dish photos. Replacing representative photos with exact official images can continue as additional verifiable assets become available.
+## Authenticity and image generation
+
+Do not replace exact restaurant photography with AI-generated images while continuing to label them official or exact. Generated food art requires an explicit **Illustration** label and accurate descriptive source metadata. This avoids inventing ingredient or presentation details for people who are using menu images to recognize a particular product.
+
+Some source images have low resolution. These should be replaced with a higher-resolution copy of the **same actual item** where one is verifiable, rather than a generic upscale or synthetic substitute presented as official.
+
+## Remaining work
+
+The catalog includes roughly 1,630 menu entries across 25 active restaurants. As of V14.1, 216 entries have specifically sourced item photography (162 Taco Bell, 53 Loving Hut, and 1 Chipotle). The remaining menu entries still need individual verification.
+
+To add a photo, verify that the public source describes the same named item and that the image actually depicts it. Record a stable menu item key, image URL, accessible description, credit, and source page. Then update `verified-dish-photos.js` and extend regression coverage. A generic restaurant image is not acceptable evidence for another dish.

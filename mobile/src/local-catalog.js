@@ -1,4 +1,5 @@
 import { publishedMenus } from "./restaurant-menus.js";
+import { verifiedDishPhotos } from "./verified-dish-photos.js";
 import { ingredientHints } from "./ingredient-hints.js";
 
 import { catalogLocations } from "./restaurant-locations.js";
@@ -40,9 +41,9 @@ export const localDishes = activeMenus.flatMap((menu) =>
     emoji: "",
     // Product photos must match this item. Representative restaurant photos
     // are selected separately in menu-photos.js, never stored as dish evidence.
-    imageUrl: item.imageUrl || null,
-    imageAlt: item.imageAlt || null,
-    imageCredit: item.imageCredit || null,
+    imageUrl: item.imageUrl || verifiedDishPhotos[menu.key]?.[item.key]?.url || null,
+    imageAlt: item.imageAlt || verifiedDishPhotos[menu.key]?.[item.key]?.alt || null,
+    imageCredit: item.imageCredit || verifiedDishPhotos[menu.key]?.[item.key]?.credit || null,
     revision: 1,
     ingredients: item.ingredients || [],
     allergens: item.allergens || [],
@@ -113,9 +114,11 @@ export function mergeLocalCatalog(
       return {
         ...live,
         ingredientHints: ingredientHints(live),
-        imageUrl: local.imageUrl || live.imageUrl || null,
-        imageAlt: local.imageAlt || live.imageAlt || null,
-        imageCredit: local.imageCredit || live.imageCredit || null,
+        // Only reviewed source records can supply exact dish photos. Older
+        // cloud rows might contain unverified or restaurant-wide images.
+        imageUrl: local.imageUrl || null,
+        imageAlt: local.imageAlt || null,
+        imageCredit: local.imageCredit || null,
         cloudBacked: true,
       };
     // Device-saved demo facts are a cache, not a source. Refresh them from this
