@@ -1,4 +1,4 @@
-// Item-specific sourced menu photography. Images never establish allergen safety or location stock.
+// Individually sourced photographs keyed by reviewed menu item; image content is not dietary evidence.
 export const verifiedDishPhotos = {
   "loving-hut-orlando": {
     "spring-rolls-4-rolls-cha-gio": {
@@ -884,6 +884,22 @@ export const verifiedDishPhotos = {
       "alt": "Twenty-inch tomato-base pizza with mozzarella at Lazy Moon; photo from Maitland menu, branch preparation may vary",
       "credit": "Lazy Moon · official menu item photograph",
       "sourceUrl": "https://order.lazymoonpizza.com/menu/lazy-moon-pizza-maitland/group_6e9318a3-2312-4926-89db-c95baf610be5/item-20-tomato-base-includes-mozzarella_139be63b-1510-4107-b7a0-19a964582dea"
+    }
+  },
+  "pig-floyds-mills": {
+    "the-big-floyd": {
+      "url": "https://scottjosephorlando.com/wp-content/uploads/Pig_Floyd_sandwich.jpg",
+      "alt": "The Big Floyd brisket, pulled pork and sausage sandwich, photographed at Pig Floyd's in Orlando in 2014; plating and location may have changed",
+      "credit": "Scott Joseph's Food & Travel · Big Floyd sandwich photograph",
+      "sourceUrl": "https://scottjosephorlando.com/pig-floyd-s-urban-barbakoa/"
+    }
+  },
+  "woodlands-orlando": {
+    "masala-dosai": {
+      "url": "https://images.happycow.net/venues/1024/35/88/hcmp3588_116473.jpeg",
+      "alt": "Large Masala Dosai photographed at Woodlands Orlando; diner appears behind dish",
+      "credit": "HappyCow · Woodlands Masala Dosa guest photo",
+      "sourceUrl": "https://www.happycow.net/reviews/woodlands-orlando-3588"
     }
   }
 };
