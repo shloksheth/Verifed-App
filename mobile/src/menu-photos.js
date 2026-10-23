@@ -86,20 +86,7 @@ export function menuPhotoFor(dish, restaurant) {
       exact: true,
     };
   }
-  const fallback = representativeMenuPhotos[slug];
-  if (fallback) return { ...fallback, exact: false };
-  if (restaurant?.imageUrl && isHttpImage(restaurant.imageUrl) &&
-      (restaurant.imageKind === "brand-food" ||
-       (!restaurant.imageKind && /food|dish|pizza|dosai|bowl/i.test(restaurant.imageAlt || "")))) {
-    return {
-      url: restaurant.imageUrl,
-      alt: restaurant.imageAlt || `Food photograph from ${restaurant.name}`,
-      credit: typeof restaurant.imageCredit === "string"
-        ? restaurant.imageCredit
-        : restaurant.imageCredit?.label || restaurant.name,
-      sourceUrl: restaurant.imageCredit?.url || restaurant.websiteUrl || null,
-      exact: false,
-    };
-  }
+  // Do not apply a single hero image to every item in the menu.
+  // A missing photograph stays missing until an exact item match is sourced.
   return null;
 }
