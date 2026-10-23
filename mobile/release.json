@@ -1,9 +1,10 @@
 {
-  "number": 13.1,
-  "name": "Verifed V13.1",
-  "description": "Removed the mobile Google sign-in button, companion website authentication links and development-build notice. Username/email and password sign-in, account creation, recovery and guest browsing remain available. No changes to restaurant menu inventory.",
+  "number": 14,
+  "name": "Verifed V14",
+  "description": "Added sourced food photography throughout all 25 active restaurant menus. Displays 159 exact Taco Bell product-photo entries, an official Chipotle guacamole photo, and clearly labeled representative restaurant food images for menu entries without exact assets. Added food thumbnails to both dietary and full menus, dish details, source labels, image fallbacks, and cloud merge retention. Tako Cheena stays retired; allergen assessment rules are unchanged.",
   "verification": [
-    "Regression checks assert that the mobile authentication screen and API have no Google sign-in entry point.",
-    "Existing username/email, password and guest routes remain present."
+    "Image coverage and provenance regression tests added for all 25 active restaurants and 53 unique Taco Bell items across three branches.",
+    "Representative images are explicitly labeled as restaurant photos, not photographs of the named dish.",
+    "Images can fail or change at the external host; the app has a neutral fallback and does not claim complete exact-dish photo coverage."
   ]
 }

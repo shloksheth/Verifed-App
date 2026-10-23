@@ -10,6 +10,7 @@ import {
 import { api } from "../src/api";
 import { assessDish } from "../src/domain";
 import { chainBrand } from "../src/chain-brand";
+import { menuPhotoFor, representativeMenuPhotos } from "../src/menu-photos";
 import { dietaryMenuStatus, groupMenu } from "../src/menu-filter";
 import { colors, s } from "../styles";
 import AllergenIcons, {
@@ -242,15 +243,37 @@ export function Assessment({ dish, state, detailed = false }) {
   );
 }
 
-// Real menu entries use text and source records; sample artwork stays in the demo.
-export function FoodArt({ dish, large }) {
-  if (dish.provenance)
+// A menu entry can have an exact official product photo or a clearly labeled
+// representative image from that restaurant. Imagery never influences allergies.
+function DishPhoto({ dish, restaurant, large = false }) {
+  const [failed, setFailed] = useState(false);
+  const photo = menuPhotoFor(dish, restaurant);
+  const dimensions = large ? s.menuDishPhotoLarge : s.menuDishPhoto;
+  if (!photo || failed)
     return (
-      <View style={[s.foodArt, s.row]}>
-        <Icon name="restaurant-outline" size={24} color={colors.orangeDark} />
-        <Text style={s.body}>{dish.category || "Menu item"}</Text>
+      <View style={[dimensions, s.menuDishPhotoEmpty]}>
+        <Icon name="restaurant-outline" size={large ? 36 : 24} color={colors.orangeDark} />
       </View>
     );
+  return (
+    <View style={large ? s.menuDishPhotoLargeFrame : s.menuDishPhotoFrame}>
+      <Image
+        source={{ uri: photo.url }}
+        accessibilityLabel={photo.exact ? photo.alt : `${photo.alt}. Restaurant photography, not this specific menu item.`}
+        resizeMode={photo.exact ? "contain" : "cover"}
+        style={dimensions}
+        onError={() => setFailed(true)}
+      />
+      <Text style={s.menuPhotoType} numberOfLines={1}>
+        {photo.exact ? "Menu item" : "Restaurant photo"}
+      </Text>
+    </View>
+  );
+}
+
+export function FoodArt({ dish, large }) {
+  if (dish.provenance || dish.imageUrl)
+    return <DishPhoto dish={dish} large={large} />;
   return (
     <View style={[s.foodArt, large && { height: 100 }]}>
       <Text accessibilityLabel={dish.name} style={s.foodEmoji}>
@@ -270,6 +293,7 @@ export function DishCard({ dish, state, navigate }) {
     state.mode === "cloud" && !!dish.provenance && !dish.cloudBacked;
   return (
     <View style={s.menuCard}>
+      <DishPhoto dish={dish} restaurant={restaurant} />
       <View style={s.between}>
         <Pressable
           accessibilityRole="button"
@@ -636,6 +660,7 @@ function restaurantTheme(restaurant) {
 
 function MenuSections({
   dishes,
+  restaurant,
   accent,
   navigate,
   profile,
@@ -688,26 +713,31 @@ function MenuSections({
             onPress={() => navigate(`dish/${dish.id}`)}
             style={s.editorialMenuRow}
           >
-            <View style={[s.between, { alignItems: "flex-start" }]}>
-              <Text style={s.editorialItemName}>{dish.name}</Text>
-              <Text style={s.editorialItemPrice}>{money(dish.price)}</Text>
+            <View style={s.menuDishLayout}>
+              <DishPhoto dish={dish} restaurant={restaurant} />
+              <View style={s.menuDishBody}>
+                <View style={[s.between, { alignItems: "flex-start" }]}>
+                  <Text style={s.editorialItemName}>{dish.name}</Text>
+                  <Text style={s.editorialItemPrice}>{money(dish.price)}</Text>
+                </View>
+                {(!!dish.description || dish.provenance?.kind === "component") && (
+                  <Text style={s.editorialItemDescription} numberOfLines={2}>
+                    {dish.provenance?.kind === "component" ? "Component · " : ""}
+                    {dish.description || "Choose this as part of an order."}
+                  </Text>
+                )}
+                {supported && (
+                  <Text style={[s.menuCaption, { color: accent }]}>
+                    {supportLine}
+                  </Text>
+                )}
+                <AllergenIcons
+                  dish={dish}
+                  showUnknown={!supported}
+                  showEmpty={!supported}
+                />
+              </View>
             </View>
-            {(!!dish.description || dish.provenance?.kind === "component") && (
-              <Text style={s.editorialItemDescription} numberOfLines={2}>
-                {dish.provenance?.kind === "component" ? "Component · " : ""}
-                {dish.description || "Choose this as part of an order."}
-              </Text>
-            )}
-            {supported && (
-              <Text style={[s.menuCaption, { color: accent }]}>
-                {supportLine}
-              </Text>
-            )}
-            <AllergenIcons
-              dish={dish}
-              showUnknown={!supported}
-              showEmpty={!supported}
-            />
           </Pressable>
         );
       })}
@@ -734,6 +764,16 @@ export function Restaurant({ id, state, navigate }) {
     );
   const dishes = state.dishes.filter((item) => item.restaurantId === id);
   const theme = restaurantTheme(restaurant);
+  const menuPreview = representativeMenuPhotos[restaurant.slug || restaurant.id];
+  const menuHeroRestaurant = menuPreview
+    ? {
+        ...restaurant,
+        imageUrl: menuPreview.url,
+        imageAlt: menuPreview.alt,
+        imageKind: "brand-food",
+        imageCredit: { label: menuPreview.credit, url: menuPreview.sourceUrl },
+      }
+    : restaurant;
   const assessed = dishes.map((dish) => ({
     dish,
     status: dietaryMenuStatus(dish, state.profile),
@@ -751,7 +791,7 @@ export function Restaurant({ id, state, navigate }) {
     navigate(`edit-profile?returnTo=${encodeURIComponent(`restaurant/${id}`)}`);
   return (
     <View style={s.restaurantMenu}>
-      <RestaurantPhoto restaurant={restaurant} style={s.menuHeroPhoto} credit />
+      <RestaurantPhoto restaurant={menuHeroRestaurant} style={s.menuHeroPhoto} credit />
       <View style={[s.editorialMenuHeader, { borderTopColor: theme.accent, backgroundColor: theme.background || "transparent", padding: theme.background ? 18 : undefined, borderRadius: theme.background ? 18 : 0 }]}>
         <View style={s.between}>
           <Text style={[s.menuOverline, { color: theme.accent }]}>
@@ -827,6 +867,10 @@ export function Restaurant({ id, state, navigate }) {
         ))}
       </View>
       <AllergenLegend accent={theme.accent} />
+      <Text style={s.menuCaption}>
+        Images marked “Restaurant photo” are examples of this restaurant’s food,
+        not necessarily the named item. Check ingredient and allergen details separately.
+      </Text>
       {mode === "full" ? (
         <>
           <View style={s.menuListIntro}>
@@ -860,7 +904,7 @@ export function Restaurant({ id, state, navigate }) {
             )}
           </View>
           <View style={s.menuPaper}>
-            <MenuSections {...{ dishes, navigate }} accent={theme.accent} />
+            <MenuSections {...{ dishes, navigate, restaurant }} accent={theme.accent} />
           </View>
         </>
       ) : !needs.length ? (
@@ -891,6 +935,7 @@ export function Restaurant({ id, state, navigate }) {
             <View style={s.menuPaper}>
               <MenuSections
                 dishes={matches}
+                restaurant={restaurant}
                 navigate={navigate}
                 accent={theme.accent}
                 profile={state.profile}
@@ -932,6 +977,7 @@ export function Restaurant({ id, state, navigate }) {
                   <View style={s.menuPaper}>
                     <MenuSections
                       dishes={unknown}
+                      restaurant={restaurant}
                       navigate={navigate}
                       accent={theme.accent}
                       profile={state.profile}
@@ -992,6 +1038,7 @@ export function DishDetail({ id, state, navigate, openSheet }) {
         <Text style={s.body}>{dish.category}</Text>
         <Text style={s.h3}>{money(dish.price)}</Text>
       </View>
+      <DishPhoto dish={dish} restaurant={restaurant} large />
       {dish.provenance?.kind === "component" && <Notice>Menu component</Notice>}
       <Assessment dish={dish} state={state} detailed />
       {!!dish.ingredientHints?.clues?.length && (

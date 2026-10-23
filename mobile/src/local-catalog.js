@@ -38,6 +38,11 @@ export const localDishes = activeMenus.flatMap((menu) =>
         : ""),
     price: null,
     emoji: "",
+    // Product photos must match this item. Representative restaurant photos
+    // are selected separately in menu-photos.js, never stored as dish evidence.
+    imageUrl: item.imageUrl || null,
+    imageAlt: item.imageAlt || null,
+    imageCredit: item.imageCredit || null,
     revision: 1,
     ingredients: item.ingredients || [],
     allergens: item.allergens || [],
@@ -83,7 +88,16 @@ export function mergeLocalCatalog(
   const mergedRestaurants = localRestaurants.map((local) => {
     const live = flat.find((row) => row.slug === local.slug);
     if (live && preferBundled) return { ...local, id: live.id };
-    return live || { ...local };
+    return live
+      ? {
+          ...local,
+          ...live,
+          imageUrl: local.imageUrl || live.imageUrl || null,
+          imageAlt: local.imageAlt || live.imageAlt || null,
+          imageCredit: local.imageCredit || live.imageCredit || null,
+          imageKind: local.imageKind || live.imageKind || null,
+        }
+      : { ...local };
   });
   mergedRestaurants.push(
     ...flat.filter(
@@ -99,6 +113,9 @@ export function mergeLocalCatalog(
       return {
         ...live,
         ingredientHints: ingredientHints(live),
+        imageUrl: local.imageUrl || live.imageUrl || null,
+        imageAlt: local.imageAlt || live.imageAlt || null,
+        imageCredit: local.imageCredit || live.imageCredit || null,
         cloudBacked: true,
       };
     // Device-saved demo facts are a cache, not a source. Refresh them from this
