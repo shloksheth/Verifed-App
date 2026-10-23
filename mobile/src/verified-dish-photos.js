@@ -1,6 +1,6 @@
-// Individually matched menu dish photographs from restaurant and editorial pages.
-// A photo is not evidence of ingredient composition, allergens or serving size.
-// Attribution does not provide permission to redistribute these assets commercially.
+// Item-matched menu images: official restaurant menu sources and separately credited editorial pages.
+// Image appearance is not an ingredient, allergen, safety, or restaurant-partnership claim.
+// Copyright and redistribution rights must be checked for public commercial deployment.
 export const verifiedDishPhotos = {
   "loving-hut-orlando": {
     "spring-rolls-4-rolls-cha-gio": {
@@ -356,16 +356,262 @@ export const verifiedDishPhotos = {
   },
   "hawkers-orlando": {
     "twice-fried-wings": {
-      "url": "https://www.theorlandoreal.com/uploads/agent-1/Life%20In%20Orlando/Hawkers%20Asian/IMG_9118.jpg",
-      "alt": "Korean Twice Fried Wings at Hawkers Orlando",
-      "credit": "The Orlando Real · Hawkers Orlando photograph",
-      "sourceUrl": "https://www.theorlandoreal.com/hawkers-asian-street-food-in-mills-50/"
+      "url": "https://eathawkers.com/wp-content/uploads/2020/09/hawkers_87610170.jpg",
+      "alt": "Korean Twice Fried Wings, pictured on the Hawkers official dining menu; presentation may vary by location",
+      "credit": "Hawkers · official dining menu",
+      "sourceUrl": "https://eathawkers.com/menus/dining/"
     },
     "pad-thai": {
-      "url": "https://media.bizj.us/view/img/10845914/hawkers-asian-street-fare-pad-thai%2A1200xx5184-2916-0-270.jpg",
-      "alt": "Pad Thai from Hawkers; presentation may vary by location",
-      "credit": "Charlotte Business Journal · Hawkers Pad Thai",
-      "sourceUrl": "https://www.bizjournals.com/charlotte/news/2024/04/05/restaurants-ballantyne-hawkers-asian-street-food.html"
+      "url": "https://eathawkers.com/wp-content/uploads/2021/10/Pad-Thai.jpg",
+      "alt": "Pad Thai, pictured on the Hawkers official dining menu; presentation may vary by location",
+      "credit": "Hawkers · official dining menu",
+      "sourceUrl": "https://eathawkers.com/menus/dining/"
+    },
+    "roti-canai": {
+      "url": "https://eathawkers.com/wp-content/uploads/2020/09/hawkers_40973772.jpg",
+      "alt": "Roti Canai, pictured on the Hawkers official dining menu; presentation may vary by location",
+      "credit": "Hawkers · official dining menu",
+      "sourceUrl": "https://eathawkers.com/menus/dining/"
+    },
+    "seoul-chicken-bao": {
+      "url": "https://eathawkers.com/wp-content/uploads/2020/09/hawkers_72231769.jpg",
+      "alt": "Seoul Hot Chicken Baos, pictured on the Hawkers official dining menu; presentation may vary by location",
+      "credit": "Hawkers · official dining menu",
+      "sourceUrl": "https://eathawkers.com/menus/dining/"
+    },
+    "pork-belly-bao": {
+      "url": "https://eathawkers.com/wp-content/uploads/2024/09/2409_PorkBellyBaos-300x169.jpg",
+      "alt": "Pork Belly Baos, pictured on the Hawkers official dining menu; presentation may vary by location",
+      "credit": "Hawkers · official dining menu",
+      "sourceUrl": "https://eathawkers.com/menus/dining/"
+    },
+    "bbq-pork-bao": {
+      "url": "https://eathawkers.com/wp-content/uploads/2022/01/Char-Siu-Bao.jpg",
+      "alt": "Chinese BBQ Pork Baos, pictured on the Hawkers official dining menu; presentation may vary by location",
+      "credit": "Hawkers · official dining menu",
+      "sourceUrl": "https://eathawkers.com/menus/dining/"
+    },
+    "chicken-dumplings": {
+      "url": "https://eathawkers.com/wp-content/uploads/2020/09/hawkers_10819782.jpg",
+      "alt": "Yi-Yi’s Chicken Dumplings, pictured on the Hawkers official dining menu; presentation may vary by location",
+      "credit": "Hawkers · official dining menu",
+      "sourceUrl": "https://eathawkers.com/menus/dining/"
+    },
+    "chili-crisp-wontons": {
+      "url": "https://eathawkers.com/wp-content/uploads/2020/09/hawkers_47306849.jpg",
+      "alt": "Chili Crisp Wontons, pictured on the Hawkers official dining menu; presentation may vary by location",
+      "credit": "Hawkers · official dining menu",
+      "sourceUrl": "https://eathawkers.com/menus/dining/"
+    },
+    "golden-wontons": {
+      "url": "https://eathawkers.com/wp-content/uploads/2020/09/hawkers_45343522.jpg",
+      "alt": "Golden Wontons, pictured on the Hawkers official dining menu; presentation may vary by location",
+      "credit": "Hawkers · official dining menu",
+      "sourceUrl": "https://eathawkers.com/menus/dining/"
+    },
+    "soup-dumplings": {
+      "url": "https://eathawkers.com/wp-content/uploads/2024/09/2409_Soup-Dumplings-300x169.jpg",
+      "alt": "Soup Dumplings, pictured on the Hawkers official dining menu; presentation may vary by location",
+      "credit": "Hawkers · official dining menu",
+      "sourceUrl": "https://eathawkers.com/menus/dining/"
+    },
+    "chicken-egg-rolls": {
+      "url": "https://eathawkers.com/wp-content/uploads/2020/11/chicken-egg-rolls.jpg",
+      "alt": "Chicken Egg Rolls, pictured on the Hawkers official dining menu; presentation may vary by location",
+      "credit": "Hawkers · official dining menu",
+      "sourceUrl": "https://eathawkers.com/menus/dining/"
+    },
+    "spring-rolls": {
+      "url": "https://eathawkers.com/wp-content/uploads/2020/09/hawkers_42979522.jpg",
+      "alt": "Spring Rolls, pictured on the Hawkers official dining menu; presentation may vary by location",
+      "credit": "Hawkers · official dining menu",
+      "sourceUrl": "https://eathawkers.com/menus/dining/"
+    },
+    "shrimp-summer-rolls": {
+      "url": "https://eathawkers.com/wp-content/uploads/2020/09/hawkers_21349428.jpg",
+      "alt": "Shrimp Summer Rolls, pictured on the Hawkers official dining menu; presentation may vary by location",
+      "credit": "Hawkers · official dining menu",
+      "sourceUrl": "https://eathawkers.com/menus/dining/"
+    },
+    "chicken-karaage": {
+      "url": "https://eathawkers.com/wp-content/uploads/2026/04/Chicken-Karaage-Web-300x169.jpg",
+      "alt": "Chicken Karaage, pictured on the Hawkers official dining menu; presentation may vary by location",
+      "credit": "Hawkers · official dining menu",
+      "sourceUrl": "https://eathawkers.com/menus/dining/"
+    },
+    "chuan-jerk-wings": {
+      "url": "https://eathawkers.com/wp-content/uploads/2026/04/Chuan-Jerk-Web-300x169.jpg",
+      "alt": "Chuan Jerk Wings, pictured on the Hawkers official dining menu; presentation may vary by location",
+      "credit": "Hawkers · official dining menu",
+      "sourceUrl": "https://eathawkers.com/menus/dining/"
+    },
+    "hawkers-fries": {
+      "url": "https://eathawkers.com/wp-content/uploads/2026/04/Hawkers-Fries-Web-300x169.jpg",
+      "alt": "Hawkers Fries, pictured on the Hawkers official dining menu; presentation may vary by location",
+      "credit": "Hawkers · official dining menu",
+      "sourceUrl": "https://eathawkers.com/menus/dining/"
+    },
+    "gochujang-salad": {
+      "url": "https://eathawkers.com/wp-content/uploads/2026/04/Gochujang-Salad-Web-300x169.jpg",
+      "alt": "Gochujang Salad, pictured on the Hawkers official dining menu; presentation may vary by location",
+      "credit": "Hawkers · official dining menu",
+      "sourceUrl": "https://eathawkers.com/menus/dining/"
+    },
+    "chilly-chili-noodles": {
+      "url": "https://eathawkers.com/wp-content/uploads/2026/04/Chilly-Chili-Noodles-Web-1-300x213.jpg",
+      "alt": "Chilly Chili Noodles, pictured on the Hawkers official dining menu; presentation may vary by location",
+      "credit": "Hawkers · official dining menu",
+      "sourceUrl": "https://eathawkers.com/menus/dining/"
+    },
+    "bulgogi-steak": {
+      "url": "https://eathawkers.com/wp-content/uploads/2024/09/2409_Bulgogi_Steak2-300x169.jpg",
+      "alt": "Bulgogi Steak, pictured on the Hawkers official dining menu; presentation may vary by location",
+      "credit": "Hawkers · official dining menu",
+      "sourceUrl": "https://eathawkers.com/menus/dining/"
+    },
+    "hong-kong-sticky-ribs": {
+      "url": "https://eathawkers.com/wp-content/uploads/2024/09/2409_HongKongStickyRibs-300x169.jpg",
+      "alt": "Hong Kong Sticky Ribs, pictured on the Hawkers official dining menu; presentation may vary by location",
+      "credit": "Hawkers · official dining menu",
+      "sourceUrl": "https://eathawkers.com/menus/dining/"
+    },
+    "pok-pok-wings": {
+      "url": "https://eathawkers.com/wp-content/uploads/2026/04/Pok-Pok-Wings-Website-300x169.jpg",
+      "alt": "Pok Pok Wings, pictured on the Hawkers official dining menu; presentation may vary by location",
+      "credit": "Hawkers · official dining menu",
+      "sourceUrl": "https://eathawkers.com/menus/dining/"
+    },
+    "satay-chicken": {
+      "url": "https://eathawkers.com/wp-content/uploads/2026/04/Satay-Chicken-Website-300x169.jpg",
+      "alt": "Satay Chicken, pictured on the Hawkers official dining menu; presentation may vary by location",
+      "credit": "Hawkers · official dining menu",
+      "sourceUrl": "https://eathawkers.com/menus/dining/"
+    },
+    "coconut-shrimp": {
+      "url": "https://eathawkers.com/wp-content/uploads/2020/09/hawkers_40348214.jpg",
+      "alt": "Coconut Shrimp, pictured on the Hawkers official dining menu; presentation may vary by location",
+      "credit": "Hawkers · official dining menu",
+      "sourceUrl": "https://eathawkers.com/menus/dining/"
+    },
+    "goi-ga-salad": {
+      "url": "https://eathawkers.com/wp-content/uploads/2024/09/2409_VietnameseGoiGaSalad-300x169.jpg",
+      "alt": "Vietnamese “Goi Gá” Salad, pictured on the Hawkers official dining menu; presentation may vary by location",
+      "credit": "Hawkers · official dining menu",
+      "sourceUrl": "https://eathawkers.com/menus/dining/"
+    },
+    "chili-crisp-cucumbers": {
+      "url": "https://eathawkers.com/wp-content/uploads/2024/09/2409_ChiliCrispCucumbers-300x169.jpg",
+      "alt": "Chili Crisp Cucumbers, pictured on the Hawkers official dining menu; presentation may vary by location",
+      "credit": "Hawkers · official dining menu",
+      "sourceUrl": "https://eathawkers.com/menus/dining/"
+    },
+    "chili-garlic-edamame": {
+      "url": "https://eathawkers.com/wp-content/uploads/2020/09/hawkers_69556686.jpg",
+      "alt": "Chili Garlic Edamame, pictured on the Hawkers official dining menu; presentation may vary by location",
+      "credit": "Hawkers · official dining menu",
+      "sourceUrl": "https://eathawkers.com/menus/dining/"
+    },
+    "hawkers-delight": {
+      "url": "https://eathawkers.com/wp-content/uploads/2021/10/Hawkers-Delight.jpg",
+      "alt": "Hawker’s Delight, pictured on the Hawkers official dining menu; presentation may vary by location",
+      "credit": "Hawkers · official dining menu",
+      "sourceUrl": "https://eathawkers.com/menus/dining/"
+    },
+    "crispy-tofu-bites": {
+      "url": "https://eathawkers.com/wp-content/uploads/2020/09/hawkers_88710082.jpg",
+      "alt": "Crispy Tofu Bites, pictured on the Hawkers official dining menu; presentation may vary by location",
+      "credit": "Hawkers · official dining menu",
+      "sourceUrl": "https://eathawkers.com/menus/dining/"
+    },
+    "banchan": {
+      "url": "https://eathawkers.com/wp-content/uploads/2026/04/Banchan-Website-300x169.jpg",
+      "alt": "Banchan, pictured on the Hawkers official dining menu; presentation may vary by location",
+      "credit": "Hawkers · official dining menu",
+      "sourceUrl": "https://eathawkers.com/menus/dining/"
+    },
+    "chow-faan": {
+      "url": "https://eathawkers.com/wp-content/uploads/2020/09/hawkers_26940114.jpg",
+      "alt": "Chow Faan, pictured on the Hawkers official dining menu; presentation may vary by location",
+      "credit": "Hawkers · official dining menu",
+      "sourceUrl": "https://eathawkers.com/menus/dining/"
+    },
+    "bibimbap": {
+      "url": "https://eathawkers.com/wp-content/uploads/2024/09/2409_Bibimbap-300x169.jpg",
+      "alt": "Bibimbap, pictured on the Hawkers official dining menu; presentation may vary by location",
+      "credit": "Hawkers · official dining menu",
+      "sourceUrl": "https://eathawkers.com/menus/dining/"
+    },
+    "curry-chicken": {
+      "url": "https://eathawkers.com/wp-content/uploads/2024/09/2409_PoPoLosCurry_Chicken-300x169.jpg",
+      "alt": "Po Po Lo’s Curry — Chicken, pictured on the Hawkers official dining menu; presentation may vary by location",
+      "credit": "Hawkers · official dining menu",
+      "sourceUrl": "https://eathawkers.com/menus/dining/"
+    },
+    "steak-kimchi-rice": {
+      "url": "https://eathawkers.com/wp-content/uploads/2020/11/kimchi-friend-rice.jpg",
+      "alt": "Steak and Kimchi Fried Rice, pictured on the Hawkers official dining menu; presentation may vary by location",
+      "credit": "Hawkers · official dining menu",
+      "sourceUrl": "https://eathawkers.com/menus/dining/"
+    },
+    "jasmine-rice": {
+      "url": "https://eathawkers.com/wp-content/uploads/2020/09/hawkers_82330416.jpg",
+      "alt": "Jasmine Rice, pictured on the Hawkers official dining menu; presentation may vary by location",
+      "credit": "Hawkers · official dining menu",
+      "sourceUrl": "https://eathawkers.com/menus/dining/"
+    },
+    "ckt": {
+      "url": "https://eathawkers.com/wp-content/uploads/2021/10/CCCKT.jpg",
+      "alt": "C.K.T., pictured on the Hawkers official dining menu; presentation may vary by location",
+      "credit": "Hawkers · official dining menu",
+      "sourceUrl": "https://eathawkers.com/menus/dining/"
+    },
+    "singapore-mei-fun": {
+      "url": "https://eathawkers.com/wp-content/uploads/2021/10/Singapore-MF.jpg",
+      "alt": "Singapore Mei Fun, pictured on the Hawkers official dining menu; presentation may vary by location",
+      "credit": "Hawkers · official dining menu",
+      "sourceUrl": "https://eathawkers.com/menus/dining/"
+    },
+    "yaki-udon": {
+      "url": "https://eathawkers.com/wp-content/uploads/2020/09/hawkers_48476634.jpg",
+      "alt": "Yaki Udon, pictured on the Hawkers official dining menu; presentation may vary by location",
+      "credit": "Hawkers · official dining menu",
+      "sourceUrl": "https://eathawkers.com/menus/dining/"
+    },
+    "beef-haw-fun": {
+      "url": "https://eathawkers.com/wp-content/uploads/2021/10/Beef-HF.jpg",
+      "alt": "Beef Haw Fun, pictured on the Hawkers official dining menu; presentation may vary by location",
+      "credit": "Hawkers · official dining menu",
+      "sourceUrl": "https://eathawkers.com/menus/dining/"
+    },
+    "hong-kong-wonton": {
+      "url": "https://eathawkers.com/wp-content/uploads/2020/09/hawkers_66599378.jpg",
+      "alt": "Hong Kong Wonton, pictured on the Hawkers official dining menu; presentation may vary by location",
+      "credit": "Hawkers · official dining menu",
+      "sourceUrl": "https://eathawkers.com/menus/dining/"
+    },
+    "curry-laksa-ramen": {
+      "url": "https://eathawkers.com/wp-content/uploads/2020/09/hawkers_20602178.jpg",
+      "alt": "Curry Laksa Ramen, pictured on the Hawkers official dining menu; presentation may vary by location",
+      "credit": "Hawkers · official dining menu",
+      "sourceUrl": "https://eathawkers.com/menus/dining/"
+    },
+    "chili-vanilli": {
+      "url": "https://eathawkers.com/wp-content/uploads/2024/09/2409_ChilliVanili-300x169.jpg",
+      "alt": "Chili Vanilli, pictured on the Hawkers official dining menu; presentation may vary by location",
+      "credit": "Hawkers · official dining menu",
+      "sourceUrl": "https://eathawkers.com/menus/dining/"
+    },
+    "bag-o-donuts": {
+      "url": "https://eathawkers.com/wp-content/uploads/2024/09/2409_JoHeBagODonuts-300x169.jpg",
+      "alt": "Jo-Hé Bag O’ Donuts, pictured on the Hawkers official dining menu; presentation may vary by location",
+      "credit": "Hawkers · official dining menu",
+      "sourceUrl": "https://eathawkers.com/menus/dining/"
+    },
+    "korean-fried-chicken": {
+      "url": "https://eathawkers.com/wp-content/uploads/2022/05/koreanfriedchickwn_hawkers_33552468.jpg",
+      "alt": "Korean Fried Chicken, pictured on the Hawkers official dining menu; presentation may vary by location",
+      "credit": "Hawkers · official dining menu",
+      "sourceUrl": "https://eathawkers.com/menus/dining/"
     }
   },
   "pizza-bruno-curry": {
