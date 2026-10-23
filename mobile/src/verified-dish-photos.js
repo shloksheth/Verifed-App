@@ -1,6 +1,5 @@
-// Item-matched menu images: official restaurant menu sources and separately credited editorial pages.
-// Image appearance is not an ingredient, allergen, safety, or restaurant-partnership claim.
-// Copyright and redistribution rights must be checked for public commercial deployment.
+// Reviewed source-backed menu-item photographs; never use for allergen assertions.
+// Some official Webflow images are AVIF; rendering depends on platform support.
 export const verifiedDishPhotos = {
   "loving-hut-orlando": {
     "spring-rolls-4-rolls-cha-gio": {
@@ -662,6 +661,190 @@ export const verifiedDishPhotos = {
       "alt": "Florida Cracker pulled pork sandwich from Yellow Dog Eats",
       "credit": "Roadfood · Yellow Dog Eats Florida Cracker photo",
       "sourceUrl": "https://roadfood.com/restaurants/yellow-dog-eats"
+    }
+  },
+  "fresh-kitchen-waterford": {
+    "6-bowl": {
+      "url": "https://cdn.prod.website-files.com/693520b45340ea3acc83192b/69589600890250bb54ce3ae7_Mask%20group%20%284%29.avif",
+      "alt": "6 Bowl photographed on Fresh Kitchen's official menu",
+      "credit": "Fresh Kitchen · official food menu",
+      "sourceUrl": "https://www.eatfreshkitchen.com/menu"
+    },
+    "4-bowl": {
+      "url": "https://cdn.prod.website-files.com/693520b45340ea3acc83192b/69589600266b23c6466555a0_Mask%20group%20%285%29.avif",
+      "alt": "4 Bowl photographed on Fresh Kitchen's official menu",
+      "credit": "Fresh Kitchen · official food menu",
+      "sourceUrl": "https://www.eatfreshkitchen.com/menu"
+    },
+    "3-bowl": {
+      "url": "https://cdn.prod.website-files.com/693520b45340ea3acc83192b/695896008d24219c67c1886e_Mask%20group%20%286%29.avif",
+      "alt": "3 Bowl photographed on Fresh Kitchen's official menu",
+      "credit": "Fresh Kitchen · official food menu",
+      "sourceUrl": "https://www.eatfreshkitchen.com/menu"
+    },
+    "cauliflower-rice": {
+      "url": "https://cdn.prod.website-files.com/693520b45340ea3acc83192b/695899c9dfbbcb0713863d5c_Mask%20group%20%2811%29.avif",
+      "alt": "Seasonal Cauliflower Rice photographed on Fresh Kitchen's official menu",
+      "credit": "Fresh Kitchen · official food menu",
+      "sourceUrl": "https://www.eatfreshkitchen.com/menu"
+    },
+    "cauli-potato-mash": {
+      "url": "https://cdn.prod.website-files.com/693520b45340ea3acc83192b/695899c9136d89e94eb45e87_Mask%20group%20%288%29.avif",
+      "alt": "Cauliflower Potato Mash photographed on Fresh Kitchen's official menu",
+      "credit": "Fresh Kitchen · official food menu",
+      "sourceUrl": "https://www.eatfreshkitchen.com/menu"
+    },
+    "coconut-ginger-rice": {
+      "url": "https://cdn.prod.website-files.com/693520b45340ea3acc83192b/695899c9d9909bf471b4f63a_Mask%20group%20%289%29.avif",
+      "alt": "Coconut Ginger Rice photographed on Fresh Kitchen's official menu",
+      "credit": "Fresh Kitchen · official food menu",
+      "sourceUrl": "https://www.eatfreshkitchen.com/menu"
+    },
+    "brown-rice": {
+      "url": "https://cdn.prod.website-files.com/693520b45340ea3acc83192b/695899c9ba2de3fdc9805798_Mask%20group%20%2810%29.avif",
+      "alt": "Brown Rice photographed on Fresh Kitchen's official menu",
+      "credit": "Fresh Kitchen · official food menu",
+      "sourceUrl": "https://www.eatfreshkitchen.com/menu"
+    },
+    "sweet-potato-noodles": {
+      "url": "https://cdn.prod.website-files.com/693520b45340ea3acc83192b/695899c9cbef0aed81a0caf1_Mask%20group%20%287%29.avif",
+      "alt": "Sweet Potato Noodles photographed on Fresh Kitchen's official menu",
+      "credit": "Fresh Kitchen · official food menu",
+      "sourceUrl": "https://www.eatfreshkitchen.com/menu"
+    },
+    "chard-cabbage-slaw": {
+      "url": "https://cdn.prod.website-files.com/693520b45340ea3acc83192b/695899c9f07d5bddb7341760_Mask%20group%20%2812%29.avif",
+      "alt": "Chard & Cabbage Slaw photographed on Fresh Kitchen's official menu",
+      "credit": "Fresh Kitchen · official food menu",
+      "sourceUrl": "https://www.eatfreshkitchen.com/menu"
+    },
+    "kale-caesar": {
+      "url": "https://cdn.prod.website-files.com/693520b45340ea3acc83192b/695899c99e48b631d8eb2795_Mask%20group%20%2813%29.avif",
+      "alt": "Crunchy Kale Caesar photographed on Fresh Kitchen's official menu",
+      "credit": "Fresh Kitchen · official food menu",
+      "sourceUrl": "https://www.eatfreshkitchen.com/menu"
+    },
+    "arugula-spinach-salad": {
+      "url": "https://cdn.prod.website-files.com/693520b45340ea3acc83192b/695899c9caded0b4720639a1_Mask%20group%20%2814%29.avif",
+      "alt": "Arugula + Spinach Salad photographed on Fresh Kitchen's official menu",
+      "credit": "Fresh Kitchen · official food menu",
+      "sourceUrl": "https://www.eatfreshkitchen.com/menu"
+    },
+    "almond-chicken": {
+      "url": "https://cdn.prod.website-files.com/693520b45340ea3acc83192b/6958a024cbef0aed81a12eca_Mask%20group%20%2815%29.avif",
+      "alt": "Almond Baked Chicken photographed on Fresh Kitchen's official menu",
+      "credit": "Fresh Kitchen · official food menu",
+      "sourceUrl": "https://www.eatfreshkitchen.com/menu"
+    },
+    "bbq-chicken": {
+      "url": "https://cdn.prod.website-files.com/693520b45340ea3acc83192b/6958a024576c42dc8341c862_Mask%20group%20%2816%29.avif",
+      "alt": "BBQ Chicken photographed on Fresh Kitchen's official menu",
+      "credit": "Fresh Kitchen · official food menu",
+      "sourceUrl": "https://www.eatfreshkitchen.com/menu"
+    },
+    "rosemary-chicken": {
+      "url": "https://cdn.prod.website-files.com/693520b45340ea3acc83192b/6958a0241c895bd85ac45301_Mask%20group%20%2819%29.avif",
+      "alt": "Grilled Rosemary Chicken photographed on Fresh Kitchen's official menu",
+      "credit": "Fresh Kitchen · official food menu",
+      "sourceUrl": "https://www.eatfreshkitchen.com/menu"
+    },
+    "herb-steak": {
+      "url": "https://cdn.prod.website-files.com/693520b45340ea3acc83192b/6958a024f73e8a2a86c61423_Mask%20group%20%2818%29.avif",
+      "alt": "Herb Grilled Steak photographed on Fresh Kitchen's official menu",
+      "credit": "Fresh Kitchen · official food menu",
+      "sourceUrl": "https://www.eatfreshkitchen.com/menu"
+    },
+    "lemon-broccoli": {
+      "url": "https://cdn.prod.website-files.com/693520b45340ea3acc83192b/6958a1852f8d1bb5aa13c97a_Mask%20group%20%2821%29.avif",
+      "alt": "Lemon Garlic Broccoli photographed on Fresh Kitchen's official menu",
+      "credit": "Fresh Kitchen · official food menu",
+      "sourceUrl": "https://www.eatfreshkitchen.com/menu"
+    },
+    "maple-sweet-potatoes": {
+      "url": "https://cdn.prod.website-files.com/693520b45340ea3acc83192b/6958a185c3900b713c4da125_Mask%20group%20%2822%29.avif",
+      "alt": "Maple Sweet Potatoes photographed on Fresh Kitchen's official menu",
+      "credit": "Fresh Kitchen · official food menu",
+      "sourceUrl": "https://www.eatfreshkitchen.com/menu"
+    },
+    "basil-mushrooms": {
+      "url": "https://cdn.prod.website-files.com/693520b45340ea3acc83192b/6958a18711d0790da869ba20_Mask%20group%20%2823%29.avif",
+      "alt": "Basil Mushrooms photographed on Fresh Kitchen's official menu",
+      "credit": "Fresh Kitchen · official food menu",
+      "sourceUrl": "https://www.eatfreshkitchen.com/menu"
+    },
+    "golden-chickpeas": {
+      "url": "https://cdn.prod.website-files.com/693520b45340ea3acc83192b/6958a1854062b42c0bdaa9b7_Mask%20group%20%2824%29.avif",
+      "alt": "Golden Spice Chickpeas photographed on Fresh Kitchen's official menu",
+      "credit": "Fresh Kitchen · official food menu",
+      "sourceUrl": "https://www.eatfreshkitchen.com/menu"
+    },
+    "green-beans": {
+      "url": "https://cdn.prod.website-files.com/693520b45340ea3acc83192b/6958a185162e9c0104dc391c_Mask%20group%20%2825%29.avif",
+      "alt": "Blistered Green Beans photographed on Fresh Kitchen's official menu",
+      "credit": "Fresh Kitchen · official food menu",
+      "sourceUrl": "https://www.eatfreshkitchen.com/menu"
+    },
+    "white-ginger": {
+      "url": "https://cdn.prod.website-files.com/693520b45340ea3acc83192b/6958a2615b680f35a84c365b_Mask%20group%20%2828%29.avif",
+      "alt": "Creamy White Ginger photographed on Fresh Kitchen's official menu",
+      "credit": "Fresh Kitchen · official food menu",
+      "sourceUrl": "https://www.eatfreshkitchen.com/menu"
+    },
+    "coconut-sriracha": {
+      "url": "https://cdn.prod.website-files.com/693520b45340ea3acc83192b/6958a2619a8277770b7cd335_Mask%20group%20%2829%29.avif",
+      "alt": "Coconut Sriracha photographed on Fresh Kitchen's official menu",
+      "credit": "Fresh Kitchen · official food menu",
+      "sourceUrl": "https://www.eatfreshkitchen.com/menu"
+    },
+    "parmesan-cheese": {
+      "url": "https://cdn.prod.website-files.com/693520b45340ea3acc83192b/6958b8e941277b5446e4df2e_Mask%20group%20%2831%29.avif",
+      "alt": "Parmesan Cheese photographed on Fresh Kitchen's official menu",
+      "credit": "Fresh Kitchen · official food menu",
+      "sourceUrl": "https://www.eatfreshkitchen.com/menu"
+    },
+    "pico-de-gallo": {
+      "url": "https://cdn.prod.website-files.com/693520b45340ea3acc83192b/6958b8e90c6553cc6945c14e_Mask%20group%20%2832%29.avif",
+      "alt": "Pico De Gallo photographed on Fresh Kitchen's official menu",
+      "credit": "Fresh Kitchen · official food menu",
+      "sourceUrl": "https://www.eatfreshkitchen.com/menu"
+    },
+    "citrus-avocado": {
+      "url": "https://cdn.prod.website-files.com/693520b45340ea3acc83192b/6958b8e967947dfd59e6372a_Mask%20group%20%2833%29.avif",
+      "alt": "Citrus Avocado photographed on Fresh Kitchen's official menu",
+      "credit": "Fresh Kitchen · official food menu",
+      "sourceUrl": "https://www.eatfreshkitchen.com/menu"
+    },
+    "toasted-almonds": {
+      "url": "https://cdn.prod.website-files.com/693520b45340ea3acc83192b/6958b8e9bc4c6be1f4574013_Mask%20group%20%2834%29.avif",
+      "alt": "Toasted Almonds photographed on Fresh Kitchen's official menu",
+      "credit": "Fresh Kitchen · official food menu",
+      "sourceUrl": "https://www.eatfreshkitchen.com/menu"
+    },
+    "feta-cheese": {
+      "url": "https://cdn.prod.website-files.com/693520b45340ea3acc83192b/6958b8e9cfd0d796669b9a51_Mask%20group%20%2835%29.avif",
+      "alt": "Feta Cheese photographed on Fresh Kitchen's official menu",
+      "credit": "Fresh Kitchen · official food menu",
+      "sourceUrl": "https://www.eatfreshkitchen.com/menu"
+    },
+    "cucumber-salad": {
+      "url": "https://cdn.prod.website-files.com/693520b45340ea3acc83192b/6958b8e9caded0b4720830de_Mask%20group%20%2836%29.avif",
+      "alt": "Cucumber Salad photographed on Fresh Kitchen's official menu",
+      "credit": "Fresh Kitchen · official food menu",
+      "sourceUrl": "https://www.eatfreshkitchen.com/menu"
+    },
+    "kale-pesto-tomatoes": {
+      "url": "https://cdn.prod.website-files.com/693520b45340ea3acc83192b/6958b8e99850b96d92b5283c_Mask%20group%20%2837%29.avif",
+      "alt": "Kale Pesto Tomatoes photographed on Fresh Kitchen's official menu",
+      "credit": "Fresh Kitchen · official food menu",
+      "sourceUrl": "https://www.eatfreshkitchen.com/menu"
+    }
+  },
+  "reyes-mezcaleria": {
+    "tuna-tostada": {
+      "url": "https://www.orlandomagazine.com/content/uploads/data-import/d88f18f9/reyes.jpg",
+      "alt": "Tuna Tostada served at Reyes Mezcaleria, pictured with a cocktail in Orlando Magazine",
+      "credit": "Orlando Magazine · Reyes Mezcaleria food photograph",
+      "sourceUrl": "https://www.orlandomagazine.com/reyes-mezcaleria-third-time-another-charm/"
     }
   }
 };
