@@ -1,12 +1,12 @@
 {
-  "version": 13.1,
-  "name": "Verifed V13.1",
-  "id": "ngsN3j83Tl1_g4z5yQ1xh",
-  "url": "exp://u.expo.dev/933fd9c0-1666-11e7-afca-d980795c5824?runtime-version=exposdk%3A54.0.0&channel-name=production&snack=ngsN3j83Tl1_g4z5yQ1xh",
-  "hashId": "ngsN3j83Tl1_g4z5yQ1xh",
-  "snackId": "f85afca2-878f-4698-a741-8a5c9d818b8d",
-  "editorUrl": "https://snack.expo.dev/ngsN3j83Tl1_g4z5yQ1xh",
-  "publishedAt": "2026-10-22T23:20:56.723Z",
+  "version": 14,
+  "name": "Verifed V14",
+  "id": "Ftnn-G6ZUdBy6MkuwHsR3",
+  "url": "exp://u.expo.dev/933fd9c0-1666-11e7-afca-d980795c5824?runtime-version=exposdk%3A54.0.0&channel-name=production&snack=Ftnn-G6ZUdBy6MkuwHsR3",
+  "hashId": "Ftnn-G6ZUdBy6MkuwHsR3",
+  "snackId": "e2b49260-6125-4e58-b370-f4e1aeb6c31e",
+  "editorUrl": "https://snack.expo.dev/Ftnn-G6ZUdBy6MkuwHsR3",
+  "publishedAt": "2026-10-23T01:29:54.682Z",
   "sdkVersion": "54.0.0",
   "files": [
     "App.js",
@@ -31,6 +31,7 @@
     "src/location-search.js",
     "src/map-html.js",
     "src/menu-filter.js",
+    "src/menu-photos.js",
     "src/model-utils.js",
     "src/native-globals.js",
     "src/restaurant-locations.js",
@@ -39,5 +40,5 @@
     "src/write-sync.js",
     "assets/verifed-mark.png"
   ],
-  "sourceHash": "b101a592512e9a24f30e200bee26e9c9c24ad71220546f4b5b59161b8ebc6cfb"
+  "sourceHash": "75853a02a084c0add57ae6fb03a51824cacb22b53beba2e55ecf81b480453123"
 }
