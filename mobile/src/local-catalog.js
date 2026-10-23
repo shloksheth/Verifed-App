@@ -114,9 +114,11 @@ export function mergeLocalCatalog(
       return {
         ...live,
         ingredientHints: ingredientHints(live),
-        imageUrl: local.imageUrl || live.imageUrl || null,
-        imageAlt: local.imageAlt || live.imageAlt || null,
-        imageCredit: local.imageCredit || live.imageCredit || null,
+        // Only reviewed source records can supply exact dish photos. Older
+        // cloud rows might contain unverified or restaurant-wide images.
+        imageUrl: local.imageUrl || null,
+        imageAlt: local.imageAlt || null,
+        imageCredit: local.imageCredit || null,
         cloudBacked: true,
       };
     // Device-saved demo facts are a cache, not a source. Refresh them from this
