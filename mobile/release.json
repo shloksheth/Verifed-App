@@ -1,11 +1,11 @@
 {
   "number": 14.2,
   "name": "Verifed V14.2",
-  "description": "Second independently sourced food-photo update: 10 additional named dish images across Hawkers, Chipotle, Black Rooster, Pizza Bruno, Mamak and Yellow Dog Eats, with credited source URLs and alt text. The generic restaurant-wide photo is still prohibited on individual menu items. Existing Taco Bell and Loving Hut product photos remain. No Expo Snack publish requested for this GitHub-only installment.",
+  "description": "Photo sourcing update: 43 individually named Hawkers dish images from its official menu, plus eight additional item-matched photos for Chipotle, Black Rooster, Pizza Bruno, Mamak and Yellow Dog Eats. The active catalog now has item-specific photos for 267 of 1,630 menu entries; missing photos remain neutral instead of repeating one restaurant photo. Source credits, per-item keys, source links and regression checks included. GitHub-only: no new Expo Snack snapshot.",
   "verification": [
-    "All new image entries have individual restaurant and menu-item keys, source URLs and credits.",
-    "Regression suite tests exact image-to-item mapping, no repeated default restaurant images and no dietary logic changes.",
-    "The full active catalog has roughly 1,630 entries; image coverage is partial and external hosts may block images.",
-    "No orders, allergen certifications or menu safety claims are inferred from images."
+    "Automated source URL probe confirmed 51/51 newly sourced photo URLs returned image content at check time.",
+    "105 mobile tests passed on the final image code snapshot; web, iOS, and Android bundles built successfully.",
+    "Photo images do not change dietary risk assessment or certify allergen-free preparation.",
+    "Some editorial photos represent the named dish at another time or location; menu availability and photo rights require separate verification."
   ]
 }
