@@ -901,5 +901,29 @@ export const verifiedDishPhotos = {
       "credit": "HappyCow · Woodlands Masala Dosa guest photo",
       "sourceUrl": "https://www.happycow.net/reviews/woodlands-orlando-3588"
     }
+  },
+  "winter-park-biscuit": {
+    "the-og": {
+      "url": "https://wpcdn.us-east-1.vip.tn-cloud.net/www.orlandomagazine.com/content/uploads/2022/02/f/o/winter-park-biscuit-5.jpg?etag=%22620d701c-778c0%22",
+      "alt": "The OG vegan chicken on an oat buttermilk biscuit, photographed at Winter Park Biscuit Company; older presentation",
+      "credit": "Orlando Magazine · Winter Park Biscuit Company OG biscuit",
+      "sourceUrl": "https://www.orlandomagazine.com/orlandos-best-breakfasts-and-brunch-too-breakfast-part-2/"
+    }
+  },
+  "bombay-street-kitchen": {
+    "pani-puri-8-pcs": {
+      "url": "https://media1.orlandoweekly.com/orlando/imager/u/original/29379386/bombay_street_kitchen_4.jpg",
+      "alt": "Pani Puri shells and flavored waters photographed at Bombay Street Kitchen; historical presentation",
+      "credit": "Orlando Weekly · Bombay Street Kitchen Pani Puri",
+      "sourceUrl": "https://www.orlandoweekly.com/food-drink/bombay-street-kitchen-on-south-obt-gives-indian-street-food-its-long-overdue-spotlight-29379392"
+    }
+  },
+  "tin-taco-downtown": {
+    "mac-attack-taco": {
+      "url": "https://photos.bringfido.com/restaurants/2/0/9/91902/91902_340866.jpg?density=2x&size=full",
+      "alt": "Mac Attack Taco (middle, macaroni topping) alongside other tacos in a guest image from Tin & Taco at Orange County Brewers in Lake Mary; downtown presentation may differ",
+      "credit": "BringFido · Tin & Taco guest photograph",
+      "sourceUrl": "https://www.bringfido.com/restaurant/91902"
+    }
   }
 };
