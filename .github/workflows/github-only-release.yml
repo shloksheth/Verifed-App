@@ -1,0 +1,55 @@
+name: Publish GitHub-only Verifed release
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'mobile/release.json'
+      - '.github/workflows/github-only-release.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  github-release:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Create GitHub release only when Expo Snack wasn't requested
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+          const release = JSON.parse(fs.readFileSync('mobile/release.json', 'utf8'));
+          const request = JSON.parse(fs.readFileSync('mobile/snack-publish.request.json', 'utf8'));
+          const publication = JSON.parse(fs.readFileSync('mobile/publication.json', 'utf8'));
+          if (String(release.number) === String(request.version) ||
+              String(release.number) === String(publication.version)) {
+            fs.writeFileSync('/tmp/should-publish', 'no');
+          } else {
+            fs.writeFileSync('/tmp/should-publish', 'yes');
+            fs.writeFileSync('/tmp/verifed-notes.md', [
+              release.description,
+              '',
+              '**GitHub-only release.** No new Expo Snack snapshot was published for this version.',
+              'The latest Snack link is from the previous Snack publication: ' + publication.editorUrl,
+              '',
+              ...release.verification.map((note) => '- ' + note)
+            ].join('\n'));
+          }
+          fs.writeFileSync('/tmp/version', String(release.number));
+          NODE
+          if [ "$(cat /tmp/should-publish)" != "yes" ]; then
+            echo "A Snack publication was requested or already exists for this version; skipping GitHub-only release"
+            exit 0
+          fi
+          VERSION="$(cat /tmp/version)"
+          if gh release view "v$VERSION" >/dev/null 2>&1; then
+            echo "Release v$VERSION already exists"
+          else
+            gh release create "v$VERSION" --target "$GITHUB_SHA" --title "Verifed V$VERSION" --notes-file /tmp/verifed-notes.md
+          fi
