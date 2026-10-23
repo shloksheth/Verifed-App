@@ -1,4 +1,4 @@
-# Menu photography and sources — Verifed V14.3
+# Menu photography and sources — Verifed V14.4
 
 Food photography is for visual identification only. It is never used to infer ingredients, allergen absence, preparation methods, or dietary safety.
 
@@ -7,6 +7,16 @@ Food photography is for visual identification only. It is never used to infer in
 V14 had a restaurant-wide fallback: the same general food image was displayed beside every item in that restaurant's menu, even though it did not depict those dishes. V14.1 removes that fallback completely.
 
 An image can now appear beside a dish only when there is an exact product match from a reviewed source. If a photograph is missing or fails to load, the generic Verifed menu shows the item's text with no misleading image; the Taco Bell-specific menu displays a clearly labeled unavailable-photo tile. Restaurant-wide food images may still appear in a **restaurant header**, not as individual dish photos.
+
+## V14.4 covers and visual consistency
+
+Each active restaurant's discovery card and menu header now prioritizes a **sourced food photograph**, not a logo, dining room or indiscriminate generic food image. The cover resolver searches the individually reviewed `verified-dish-photos.js` registry first, then a credited restaurant-specific food photograph from `menu-photos.js`. An original restaurant image is retained as a fallback if the selected remote photo fails.
+
+This food-cover photo identifies the restaurant but **does not depict every listed menu item**. A menu row still receives a photo only when its own item key has an independently sourced exact photo; the earlier repeated-default bug is not reintroduced.
+
+The catalog includes **25 active restaurants, all with food covers**, including the previously item-photo-empty Seito Sushi and Sparrow venues, which have credited restaurant food photography but no independently verified item-specific photo yet. Osteria Ester now has its own photographed Spaghetti alle Vongole from the MICHELIN Guide. The individual item-photo count has increased from V14.3's 307 to **308/1,630 active menu entries**. Another **1,322 entries** still need original dish-specific photographs, quality evaluation, and permission checks.
+
+No AI-generated food is represented as a real dish and no dietary claims are inferred from photography.
 
 ## Source registry
 
@@ -29,7 +39,7 @@ Some source images have low resolution. These should be replaced with a higher-r
 
 ## Remaining work
 
-The catalog includes roughly 1,630 menu entries across 25 active restaurants. As of V14.2, the source registry covers **267 of 1,630 active menu entries** (162 Taco Bell, 53 Loving Hut, 43 Hawkers, 2 Chipotle and 7 additional items across four other restaurants). The other **1,363 menu entries still need individually matched photographs**. The updated source URL health probe confirmed that all **51 new photo references** returned an image in GitHub Actions on 2026-10-23. Availability can still change or vary on mobile devices. The probe reports URL health separately from dish identity; editorial or cross-branch photo use may require permission and further checks before public commercial deployment.
+As of V14.4, 308 of 1,630 active menu entries have independently mapped food images. The remaining 1,322 items retain neutral placeholders. Restaurant-level food covers exist for all 25 active venues; these do not count as exact item photographs. The updated source URL health probe confirmed that all **51 new photo references** returned an image in GitHub Actions on 2026-10-23. Availability can still change or vary on mobile devices. The probe reports URL health separately from dish identity; editorial or cross-branch photo use may require permission and further checks before public commercial deployment.
 
 To add a photo, verify that the public source describes the same named item and that the image actually depicts it. Record a stable menu item key, image URL, accessible description, credit, and source page. Then update `verified-dish-photos.js` and extend regression coverage. A generic restaurant image is not acceptable evidence for another dish.
 
