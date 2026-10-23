@@ -1,4 +1,4 @@
-# Menu photography and sources — Verifed V14.1
+# Menu photography and sources — Verifed V14.2
 
 Food photography is for visual identification only. It is never used to infer ingredients, allergen absence, preparation methods, or dietary safety.
 
@@ -15,7 +15,9 @@ An image can now appear beside a dish only when there is an exact product match 
 - Taco Bell: 53 original verified product images in the source menu plus one official Cantina Chicken Bowl photo, for 54 unique items copied across all three Orlando branches (162 menu entries).
 - Loving Hut Orlando: 53 uniquely matched named dish images from the official restaurant web menu saved under `research/menu-sources/loving.html`. The remaining eight sides/components lack exact pictures.
 - Chipotle: the official side-of-guacamole image; other components do not inherit the same general bowl image.
-- Other venues: restaurant hero photographs remain. Product photos must be independently researched and matched before they are attached to a dish.
+- V14.2 includes ten newly keyed photo references across Hawkers, Chipotle, Black Rooster, Pizza Bruno, Mamak and Yellow Dog Eats. They are matched to the actual named menu entry rather than reusing a restaurant hero image. Individual sources, attribution and accessible descriptions are recorded per key in `verified-dish-photos.js`.
+- Third-party editorial photos may show an older presentation, portion or a related location. This is disclosed in their item alt text; the image is not evidence of current stock or exact recipe.
+- Other venues: restaurant hero photographs remain, but item images must be independently sourced before appearing beside a particular dish.
 
 Exact-product image matching is based on the item's published menu name and source and is not a representation of whether that item is currently available at a particular branch.
 
@@ -27,6 +29,6 @@ Some source images have low resolution. These should be replaced with a higher-r
 
 ## Remaining work
 
-The catalog includes roughly 1,630 menu entries across 25 active restaurants. As of V14.1, 216 entries have specifically sourced item photography (162 Taco Bell, 53 Loving Hut, and 1 Chipotle). The remaining menu entries still need individual verification.
+The catalog includes roughly 1,630 menu entries across 25 active restaurants. As of V14.2, the source registry covers 226 active menu entries (162 Taco Bell, 53 Loving Hut, 2 Chipotle, and 9 other individually sourced images). Most of the remaining ~1,404 active entries still need exact item photos and validation. The web-image source URL health probe reports availability separately from dish identity; editorial or cross-branch photo use may require permission and further checks before public commercial deployment.
 
 To add a photo, verify that the public source describes the same named item and that the image actually depicts it. Record a stable menu item key, image URL, accessible description, credit, and source page. Then update `verified-dish-photos.js` and extend regression coverage. A generic restaurant image is not acceptable evidence for another dish.
