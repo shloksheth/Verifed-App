@@ -1,11 +1,11 @@
 {
-  "number": 14.2,
-  "name": "Verifed V14.2",
-  "description": "Photo sourcing update: 43 individually named Hawkers dish images from its official menu, plus eight additional item-matched photos for Chipotle, Black Rooster, Pizza Bruno, Mamak and Yellow Dog Eats. The active catalog now has item-specific photos for 267 of 1,630 menu entries; missing photos remain neutral instead of repeating one restaurant photo. Source credits, per-item keys, source links and regression checks included. Now also available as a requested Expo Snack snapshot.",
+  "number": 14.3,
+  "name": "Verifed V14.3",
+  "description": "Added 40 individually source-matched food photos across Fresh Kitchen, Reyes, Monroe, Strand, Osprey, Stubborn Mule, Lazy Moon, Pig Floyds, Woodlands, Winter Park Biscuit Company, Bombay Street Kitchen and Tin & Taco. Per-item coverage increased to 307 of 1,630 catalog entries; remaining item images cannot safely be guessed. All 25 restaurants already have hero imagery. GitHub-only update.",
   "verification": [
-    "Automated source URL probe confirmed 51/51 newly sourced photo URLs returned image content at check time.",
-    "105 mobile tests passed on the final image code snapshot; web, iOS, and Android bundles built successfully.",
-    "Photo images do not change dietary risk assessment or certify allergen-free preparation.",
-    "Some editorial photos represent the named dish at another time or location; menu availability and photo rights require separate verification."
+    "Image registry matches photos to exact catalog item keys, preserving the rule against unrelated photos on menu cards.",
+    "29 new Fresh Kitchen menu asset references use AVIF and have neutral fallbacks if a device cannot display them.",
+    "External links are monitored in CI but may expire; many menu items remain without individually verified images.",
+    "Photos do not certify ingredients, allergen safety, availability or permissions for commercial redistribution."
   ]
 }

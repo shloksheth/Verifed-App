@@ -1,4 +1,4 @@
-# Menu photography and sources — Verifed V14.2
+# Menu photography and sources — Verifed V14.3
 
 Food photography is for visual identification only. It is never used to infer ingredients, allergen absence, preparation methods, or dietary safety.
 
@@ -32,3 +32,12 @@ Some source images have low resolution. These should be replaced with a higher-r
 The catalog includes roughly 1,630 menu entries across 25 active restaurants. As of V14.2, the source registry covers **267 of 1,630 active menu entries** (162 Taco Bell, 53 Loving Hut, 43 Hawkers, 2 Chipotle and 7 additional items across four other restaurants). The other **1,363 menu entries still need individually matched photographs**. The updated source URL health probe confirmed that all **51 new photo references** returned an image in GitHub Actions on 2026-10-23. Availability can still change or vary on mobile devices. The probe reports URL health separately from dish identity; editorial or cross-branch photo use may require permission and further checks before public commercial deployment.
 
 To add a photo, verify that the public source describes the same named item and that the image actually depicts it. Record a stable menu item key, image URL, accessible description, credit, and source page. Then update `verified-dish-photos.js` and extend regression coverage. A generic restaurant image is not acceptable evidence for another dish.
+
+
+## V14.3 expanded official item photographs
+
+New item-linked records were researched from Fresh Kitchen's official menu: 29 pictures for its actual named build-your-bowl bases, toppings, proteins, sauces and bowl sizes. They use the provider's AVIF URLs; supported image rendering can vary by device and the UI will show a neutral fallback on failure. Additional individually named photographs include Reyes' Tuna Tostada, Monroe fried chicken, Strand Burger, Osprey Lobster Roll, Stubborn Mule Burger, Lazy Moon 20-inch tomato-and-mozzarella pizza, Pig Floyd's Big Floyd, Woodlands' Masala Dosai, Winter Park Biscuit's The OG, Bombay Street Kitchen's Pani Puri and Tin & Taco's Mac Attack (pictured alongside other tacos at its Lake Mary location). Editorial and cross-location sources disclose this in their alt text.
+
+This increases catalog records with item-specific source images from 267 to **307 of 1,630 active entries**. The remaining **1,323** entries have no independently matched product photograph. All 25 restaurants still have restaurant-level imagery in their menu header, but restaurant-level photography is never automatically assigned to individual items. The three venues currently lacking any verified menu-item photograph remain Seito Sushi Baldwin Park, Sparrow, and Osteria Ester. All three still have restaurant-level hero images.
+
+No automatically generated or generic stock food photograph is represented as an official product. Photo attribution is not a redistribution license; publishing externally hosted editorial photos commercially may require permission. Source URL checks only verify that an image responds, not copyright ownership, exact restaurant branch availability, or whether the product photo still matches the current recipe.
