@@ -1,12 +1,12 @@
 {
-  "version": 14,
-  "name": "Verifed V14",
-  "id": "Ftnn-G6ZUdBy6MkuwHsR3",
-  "url": "exp://u.expo.dev/933fd9c0-1666-11e7-afca-d980795c5824?runtime-version=exposdk%3A54.0.0&channel-name=production&snack=Ftnn-G6ZUdBy6MkuwHsR3",
-  "hashId": "Ftnn-G6ZUdBy6MkuwHsR3",
-  "snackId": "e2b49260-6125-4e58-b370-f4e1aeb6c31e",
-  "editorUrl": "https://snack.expo.dev/Ftnn-G6ZUdBy6MkuwHsR3",
-  "publishedAt": "2026-10-23T01:29:54.682Z",
+  "version": 14.1,
+  "name": "Verifed V14.1",
+  "id": "YFgvtmCAN1gHPxsOVnNTb",
+  "url": "exp://u.expo.dev/933fd9c0-1666-11e7-afca-d980795c5824?runtime-version=exposdk%3A54.0.0&channel-name=production&snack=YFgvtmCAN1gHPxsOVnNTb",
+  "hashId": "YFgvtmCAN1gHPxsOVnNTb",
+  "snackId": "a5f18e18-1dc5-4e3b-b69f-1f30312e9a3b",
+  "editorUrl": "https://snack.expo.dev/YFgvtmCAN1gHPxsOVnNTb",
+  "publishedAt": "2026-10-23T01:55:46.217Z",
   "sdkVersion": "54.0.0",
   "files": [
     "App.js",
@@ -17,6 +17,7 @@
     "components/Explore.js",
     "components/Journal.js",
     "components/RestaurantMap.js",
+    "components/TacoBellMenu.js",
     "components/UI.js",
     "components/Welcome.js",
     "src/account-auth.js",
@@ -37,8 +38,9 @@
     "src/restaurant-locations.js",
     "src/restaurant-menus.js",
     "src/storage-queue.js",
+    "src/verified-dish-photos.js",
     "src/write-sync.js",
     "assets/verifed-mark.png"
   ],
-  "sourceHash": "75853a02a084c0add57ae6fb03a51824cacb22b53beba2e55ecf81b480453123"
+  "sourceHash": "d0de950e6d7f12448b087858aaabc1dea2dde4a56331b52d5230ed51409bc4c0"
 }
