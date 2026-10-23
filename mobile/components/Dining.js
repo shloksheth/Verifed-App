@@ -10,6 +10,7 @@ import {
 import { api } from "../src/api";
 import { assessDish } from "../src/domain";
 import { chainBrand } from "../src/chain-brand";
+import TacoBellMenu, { isTacoBell } from "./TacoBellMenu";
 import { menuPhotoFor, representativeMenuPhotos } from "../src/menu-photos";
 import { dietaryMenuStatus, groupMenu } from "../src/menu-filter";
 import { colors, s } from "../styles";
@@ -763,6 +764,17 @@ export function Restaurant({ id, state, navigate }) {
       />
     );
   const dishes = state.dishes.filter((item) => item.restaurantId === id);
+  if (isTacoBell(restaurant)) {
+    return (
+      <TacoBellMenu
+        restaurant={restaurant}
+        dishes={dishes}
+        profile={state.profile}
+        favorites={state.favorites}
+        navigate={navigate}
+      />
+    );
+  }
   const theme = restaurantTheme(restaurant);
   const menuPreview = representativeMenuPhotos[restaurant.slug || restaurant.id];
   const menuHeroRestaurant = menuPreview
