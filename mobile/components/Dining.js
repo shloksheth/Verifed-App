@@ -11,7 +11,7 @@ import { api } from "../src/api";
 import { assessDish } from "../src/domain";
 import { chainBrand } from "../src/chain-brand";
 import TacoBellMenu, { isTacoBell } from "./TacoBellMenu";
-import { menuPhotoFor, representativeMenuPhotos } from "../src/menu-photos";
+import { menuPhotoFor, restaurantFoodPhoto } from "../src/menu-photos";
 import { dietaryMenuStatus, groupMenu } from "../src/menu-filter";
 import { colors, s } from "../styles";
 import AllergenIcons, {
@@ -346,19 +346,31 @@ export function DishCard({ dish, state, navigate }) {
 // Venue photos help identify a restaurant; they never stand in for a specific dish.
 function RestaurantPhoto({ restaurant, style, credit = false }) {
   const [failed, setFailed] = useState(false);
+  const [usingOriginal, setUsingOriginal] = useState(false);
   const task = useTask();
+  const preferred = restaurantFoodPhoto(restaurant);
+  const hasBackup = !!restaurant.imageUrl && restaurant.imageUrl !== preferred?.url;
+  const displayed = !usingOriginal && preferred
+    ? {
+        ...restaurant,
+        imageUrl: preferred.url,
+        imageAlt: preferred.alt,
+        imageKind: "brand-food",
+        imageCredit: { label: preferred.credit, url: preferred.sourceUrl },
+      }
+    : restaurant;
   const creditLabel =
-    typeof restaurant.imageCredit === "string"
-      ? restaurant.imageCredit
-      : restaurant.imageCredit?.label;
-  const creditUrl = restaurant.imageCredit?.url;
+    typeof displayed.imageCredit === "string"
+      ? displayed.imageCredit
+      : displayed.imageCredit?.label;
+  const creditUrl = displayed.imageCredit?.url;
   return (
     <View style={[s.restaurantPhoto, style]}>
-      {restaurant.imageUrl && !failed ? (
+      {displayed.imageUrl && !failed ? (
         <Image
-          source={{ uri: restaurant.imageUrl }}
+          source={{ uri: displayed.imageUrl }}
           resizeMode={
-            restaurant.imageKind === "brand-art" ? "contain" : "cover"
+            displayed.imageKind === "brand-art" ? "contain" : "cover"
           }
           style={[
             s.photoFill,
@@ -367,9 +379,12 @@ function RestaurantPhoto({ restaurant, style, credit = false }) {
             },
           ]}
           accessibilityLabel={
-            restaurant.imageAlt || `${restaurant.name} restaurant photography`
+            displayed.imageAlt || `${restaurant.name} restaurant photography`
           }
-          onError={() => setFailed(true)}
+          onError={() => {
+            if (!usingOriginal && preferred && hasBackup) setUsingOriginal(true);
+            else setFailed(true);
+          }}
         />
       ) : (
         <View style={s.photoFallback}>
@@ -771,16 +786,7 @@ export function Restaurant({ id, state, navigate }) {
     );
   }
   const theme = restaurantTheme(restaurant);
-  const menuPreview = representativeMenuPhotos[restaurant.slug || restaurant.id];
-  const menuHeroRestaurant = menuPreview
-    ? {
-        ...restaurant,
-        imageUrl: menuPreview.url,
-        imageAlt: menuPreview.alt,
-        imageKind: "brand-food",
-        imageCredit: { label: menuPreview.credit, url: menuPreview.sourceUrl },
-      }
-    : restaurant;
+  // RestaurantPhoto selects a food cover with a fallback to venue imagery.
   const assessed = dishes.map((dish) => ({
     dish,
     status: dietaryMenuStatus(dish, state.profile),
@@ -798,7 +804,7 @@ export function Restaurant({ id, state, navigate }) {
     navigate(`edit-profile?returnTo=${encodeURIComponent(`restaurant/${id}`)}`);
   return (
     <View style={s.restaurantMenu}>
-      <RestaurantPhoto restaurant={menuHeroRestaurant} style={s.menuHeroPhoto} credit />
+      <RestaurantPhoto restaurant={restaurant} style={s.menuHeroPhoto} credit />
       <View style={[s.editorialMenuHeader, { borderTopColor: theme.accent, backgroundColor: theme.background || "transparent", padding: theme.background ? 18 : undefined, borderRadius: theme.background ? 18 : 0 }]}>
         <View style={s.between}>
           <Text style={[s.menuOverline, { color: theme.accent }]}>
