@@ -19,6 +19,9 @@ const added = {
   "lazy-moon-mills": ["20-tomato-base-includes-mozzarella"],
   "pig-floyds-mills": ["the-big-floyd"],
   "woodlands-orlando": ["masala-dosai"],
+  "winter-park-biscuit": ["the-og"],
+  "bombay-street-kitchen": ["pani-puri-8-pcs"],
+  "tin-taco-downtown": ["mac-attack-taco"],
 };
 const jobs = Object.entries(added).flatMap(([slug, keys]) => keys.map((key) => ({ slug, key, ...verifiedDishPhotos[slug][key] })));
 async function inspect(item) {
