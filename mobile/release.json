@@ -1,11 +1,12 @@
 {
-  "number": 14.3,
-  "name": "Verifed V14.3",
-  "description": "Added 40 individually source-matched food photos across Fresh Kitchen, Reyes, Monroe, Strand, Osprey, Stubborn Mule, Lazy Moon, Pig Floyds, Woodlands, Winter Park Biscuit Company, Bombay Street Kitchen and Tin & Taco. Per-item coverage increased to 307 of 1,630 catalog entries; remaining item images cannot safely be guessed. All 25 restaurants already have hero imagery. GitHub-only update.",
+  "number": 14.4,
+  "name": "Verifed V14.4",
+  "description": "Food-first restaurant imagery on every active restaurant's discovery card and menu cover. All 25 restaurants now prioritize sourced restaurant-specific food photography over interiors or logos, with a fallback to the original image when needed. Added an exact photographed Osteria Ester Spaghetti alle Vongole. Dish image matching remains strict: 308/1,630 active menu entries have verified per-item images, while other entries do not reuse arbitrary restaurant photos. GitHub-only update.",
   "verification": [
-    "Image registry matches photos to exact catalog item keys, preserving the rule against unrelated photos on menu cards.",
-    "29 new Fresh Kitchen menu asset references use AVIF and have neutral fallbacks if a device cannot display them.",
-    "External links are monitored in CI but may expire; many menu items remain without individually verified images.",
-    "Photos do not certify ingredients, allergen safety, availability or permissions for commercial redistribution."
+    "25/25 active restaurants have sourced food cover candidates and retain a venue image fallback.",
+    "Restaurant food covers do not overwrite a dish's photo, ingredients, allergens or dietary assessment.",
+    "MICHELIN Guide restaurant photograph matched to Osteria Ester Spaghetti alle Vongole with source metadata.",
+    "External-image availability may change, and redistribution rights must be confirmed for public commercial use.",
+    "No additional Expo Snack release is requested for this incremental version."
   ]
 }
