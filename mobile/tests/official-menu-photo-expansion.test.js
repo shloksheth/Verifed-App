@@ -21,7 +21,10 @@ const newSourceKeys = {
   "stubborn-mule": ["stubborn-mule-burger"],
   "lazy-moon-mills": ["20-tomato-base-includes-mozzarella"],
   "pig-floyds-mills": ["the-big-floyd"],
-  "woodlands-orlando": ["masala-dosai"]
+  "woodlands-orlando": ["masala-dosai"],
+  "winter-park-biscuit": ["the-og"],
+  "bombay-street-kitchen": ["pani-puri-8-pcs"],
+  "tin-taco-downtown": ["mac-attack-taco"]
 };
 
 test("new menu photography is individually sourced, matched and nonduplicated", () => {
@@ -44,7 +47,7 @@ test("new menu photography is individually sourced, matched and nonduplicated", 
       assert.equal(resolved.exact, true);
     }
   }
-  assert.equal(urls.size, 37);
+  assert.equal(urls.size, 40);
 });
 
 test("official Fresh Kitchen images use their own item keys and source page", () => {
