@@ -1,3 +1,5 @@
+import { verifiedDishPhotos } from "./verified-dish-photos.js";
+
 // Image sources are independent of allergen and ingredient evidence.
 // Restaurant photography does not mean the pictured dish matches a menu entry.
 export const representativeMenuPhotos = {
@@ -88,5 +90,37 @@ export function menuPhotoFor(dish, restaurant) {
   }
   // Do not apply a single hero image to every item in the menu.
   // A missing photograph stays missing until an exact item match is sourced.
+  return null;
+}
+
+/**
+ * Choose food imagery for restaurant-level cards and menu covers.
+ * These do not imply the pictured dish depicts every menu item.
+ * Never reuse the selected hero in item-level menu tiles.
+ */
+export function restaurantFoodPhoto(restaurant) {
+  const slug = restaurant?.slug || restaurant?.id;
+  if (!slug) return null;
+  const itemPhotos = verifiedDishPhotos[slug];
+  const preferred = itemPhotos && Object.values(itemPhotos).find(
+    (entry) => isHttpImage(entry?.url) && entry.alt && entry.credit && entry.sourceUrl
+  );
+  if (preferred) return {
+    url: preferred.url,
+    alt: `${preferred.alt}. One example from the restaurant menu.`,
+    credit: preferred.credit,
+    sourceUrl: preferred.sourceUrl,
+  };
+  const representative = representativeMenuPhotos[slug];
+  if (representative && isHttpImage(representative.url)) return representative;
+  if (restaurant.imageKind === "brand-food" && isHttpImage(restaurant.imageUrl)) {
+    return {
+      url: restaurant.imageUrl,
+      alt: restaurant.imageAlt || `Food photographed at ${restaurant.name}`,
+      credit: typeof restaurant.imageCredit === "string"
+        ? restaurant.imageCredit : restaurant.imageCredit?.label || restaurant.name,
+      sourceUrl: restaurant.imageCredit?.url || restaurant.source?.url || null,
+    };
+  }
   return null;
 }
