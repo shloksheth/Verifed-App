@@ -67,3 +67,22 @@ test("image update leaves allergens and dietary data independent of pictures", (
     assert.ok(dish.provenance);
   }
 });
+
+test("Hawkers photos map to named items on its official dining menu", () => {
+  const restaurant = localRestaurants.find((r) => r.slug === "hawkers-orlando");
+  const photoMap = verifiedDishPhotos["hawkers-orlando"];
+  const entries = Object.entries(photoMap);
+  assert.equal(entries.length, 43);
+  const urls = new Set();
+  for (const [key, meta] of entries) {
+    const item = localDishes.find((d) => d.catalogKey === `hawkers-orlando-${key}`);
+    assert.ok(item, `Missing Hawkers dish ${key}`);
+    assert.equal(meta.sourceUrl, "https://eathawkers.com/menus/dining/");
+    assert.equal(meta.credit, "Hawkers · official dining menu");
+    assert.match(meta.alt, new RegExp(item.name.replace(/[.*+?^\$\{\}()|[\]\\]/g, "\\$&").slice(0, 12), "i"));
+    assert.equal(urls.has(meta.url), false, `Duplicate Hawkers image for ${key}`);
+    urls.add(meta.url);
+    const rendered = menuPhotoFor(item, restaurant);
+    assert.equal(rendered.url, meta.url);
+  }
+});
