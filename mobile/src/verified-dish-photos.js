@@ -1,5 +1,6 @@
-// Exact menu-item photos transcribed from reviewed restaurant-specific source HTML.
-// Preserve the item key as published in the source catalog, never infer a match.
+// Individually matched menu dish photographs from restaurant and editorial pages.
+// A photo is not evidence of ingredient composition, allergens or serving size.
+// Attribution does not provide permission to redistribute these assets commercially.
 export const verifiedDishPhotos = {
   "loving-hut-orlando": {
     "spring-rolls-4-rolls-cha-gio": {
@@ -321,7 +322,84 @@ export const verifiedDishPhotos = {
       "sourceUrl": "https://lovinghut.us/orlando/"
     }
   },
-  "taco-bell-south-orange": {"cantina-chicken-bowl":{"url":"https://www.tacobell.com/images/29199_cantina_bowl_1_640x650.jpg","alt":"Official Taco Bell Cantina Chicken Bowl product photo","credit":"Taco Bell · official menu","sourceUrl":"https://www.tacobell.com/food/bowls"}},
-  "taco-bell-east-colonial": {"cantina-chicken-bowl":{"url":"https://www.tacobell.com/images/29199_cantina_bowl_1_640x650.jpg","alt":"Official Taco Bell Cantina Chicken Bowl product photo","credit":"Taco Bell · official menu","sourceUrl":"https://www.tacobell.com/food/bowls"}},
-  "taco-bell-orlando-west": {"cantina-chicken-bowl":{"url":"https://www.tacobell.com/images/29199_cantina_bowl_1_640x650.jpg","alt":"Official Taco Bell Cantina Chicken Bowl product photo","credit":"Taco Bell · official menu","sourceUrl":"https://www.tacobell.com/food/bowls"}},
+  "taco-bell-south-orange": {
+    "cantina-chicken-bowl": {
+      "url": "https://www.tacobell.com/images/29199_cantina_bowl_1_640x650.jpg",
+      "alt": "Official Taco Bell Cantina Chicken Bowl product photo",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/bowls"
+    }
+  },
+  "taco-bell-east-colonial": {
+    "cantina-chicken-bowl": {
+      "url": "https://www.tacobell.com/images/29199_cantina_bowl_1_640x650.jpg",
+      "alt": "Official Taco Bell Cantina Chicken Bowl product photo",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/bowls"
+    }
+  },
+  "taco-bell-orlando-west": {
+    "cantina-chicken-bowl": {
+      "url": "https://www.tacobell.com/images/29199_cantina_bowl_1_640x650.jpg",
+      "alt": "Official Taco Bell Cantina Chicken Bowl product photo",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/bowls"
+    }
+  },
+  "chipotle-south-orange": {
+    "tortilla-chips": {
+      "url": "https://www.chipotle.com/content/dam/chipotle/menu/menu-items/cmg-1002-chips/web-mobile/chips.png",
+      "alt": "Tortilla chips photographed for Chipotle's ingredients page",
+      "credit": "Chipotle · official menu",
+      "sourceUrl": "https://www.chipotle.com/ingredients/corn-masa-flour"
+    }
+  },
+  "hawkers-orlando": {
+    "twice-fried-wings": {
+      "url": "https://www.theorlandoreal.com/uploads/agent-1/Life%20In%20Orlando/Hawkers%20Asian/IMG_9118.jpg",
+      "alt": "Korean Twice Fried Wings at Hawkers Orlando",
+      "credit": "The Orlando Real · Hawkers Orlando photograph",
+      "sourceUrl": "https://www.theorlandoreal.com/hawkers-asian-street-food-in-mills-50/"
+    },
+    "pad-thai": {
+      "url": "https://media.bizj.us/view/img/10845914/hawkers-asian-street-fare-pad-thai%2A1200xx5184-2916-0-270.jpg",
+      "alt": "Pad Thai from Hawkers; presentation may vary by location",
+      "credit": "Charlotte Business Journal · Hawkers Pad Thai",
+      "sourceUrl": "https://www.bizjournals.com/charlotte/news/2024/04/05/restaurants-ballantyne-hawkers-asian-street-food.html"
+    }
+  },
+  "pizza-bruno-curry": {
+    "take-out-garlic-knots-sauce": {
+      "url": "https://media2.orlandoweekly.com/orlando/imager/u/magnum/16946353/pizzabruno_mg_0208_photo_by_lindsey_thompson.webp?cb=1738521608",
+      "alt": "Pizza Bruno garlic knots with dipping sauce; pictured portion may differ",
+      "credit": "Orlando Weekly · Pizza Bruno garlic knots",
+      "sourceUrl": "https://www.orlandoweekly.com/orlando-guides/10-iconic-orlando-orders-thatll-give-you-a-taste-of-the-town-16946355"
+    },
+    "meatballs-lemon-ricotta": {
+      "url": "https://d1w7312wesee68.cloudfront.net/-QNpq_OFUjaB4I3SCmWSuENVDLdOQpRBW7Z0ehfUMVk/resize%3Afit%3A720%3A720/plain/s3%3A/toasttab/restaurants/restaurant-126675000000000000/menu/items/3/item-200000037151922183_1724798654.jpg",
+      "alt": "Pizza Bruno meatballs at College Park; Curry Ford presentation may differ",
+      "credit": "Pizza Bruno College Park · official ordering page",
+      "sourceUrl": "https://pizzabrunofl.com/order/pizza-bruno-college-park-2429-edgewater-dr/item-meatballs_d44a2102-9bf6-4e9d-a144-8d04a04b3991"
+    },
+    "margherita-v": {
+      "url": "https://media.cntraveler.com/photos/6115b3b305fa3b167fa39acd/4%3A3/w_748%2Cc_limit/Pizza%2520Bruno%2C%2520Orlando_image0.jpeg",
+      "alt": "Pizza Bruno wood-fired Margherita in Orlando",
+      "credit": "Condé Nast Traveler · Pizza Bruno Margherita",
+      "sourceUrl": "https://www.cntraveler.com/gallery/best-restaurants-in-orlando-florida"
+    }
+  },
+  "black-rooster-mills": {
+    "guacamole-made-to-order": {
+      "url": "https://wpcdn.us-east-1.vip.tn-cloud.net/www.orlandomagazine.com/content/uploads/2023/07/l/n/blackroosterguac.jpg",
+      "alt": "Black Rooster made-to-order guacamole served with chips",
+      "credit": "Orlando Magazine · Black Rooster guacamole",
+      "sourceUrl": "https://www.orlandomagazine.com/delicious-dishes-in-mills-50/"
+    },
+    "achiote-pork": {
+      "url": "https://visitorlando.widen.net/content/badlszjsba/jpeg/201128-achiote-pork-taco.jpg?color=ffffffff&crop=false&position=c&q=80&u=c4dqed",
+      "alt": "Achiote pork taco at Black Rooster Taqueria",
+      "credit": "Visit Orlando · Black Rooster Achiote Pork Taco",
+      "sourceUrl": "https://www.visitorlando.com/listing/black-rooster-taqueria/53404/"
+    }
+  }
 };
