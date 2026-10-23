@@ -79,7 +79,7 @@ test("Hawkers photos map to named items on its official dining menu", () => {
     assert.ok(item, `Missing Hawkers dish ${key}`);
     assert.equal(meta.sourceUrl, "https://eathawkers.com/menus/dining/");
     assert.equal(meta.credit, "Hawkers · official dining menu");
-    assert.match(meta.alt, new RegExp(item.name.replace(/[.*+?^\$\{\}()|[\]\\]/g, "\\$&").slice(0, 12), "i"));
+    assert.ok(meta.alt.startsWith(item.name), `Photo alt does not match ${key}`);
     assert.equal(urls.has(meta.url), false, `Duplicate Hawkers image for ${key}`);
     urls.add(meta.url);
     const rendered = menuPhotoFor(item, restaurant);
