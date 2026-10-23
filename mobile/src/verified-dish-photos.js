@@ -401,5 +401,21 @@ export const verifiedDishPhotos = {
       "credit": "Visit Orlando · Black Rooster Achiote Pork Taco",
       "sourceUrl": "https://www.visitorlando.com/listing/black-rooster-taqueria/53404/"
     }
+  },
+  "mamak-colonial": {
+    "roti-canai": {
+      "url": "https://static.spotapps.co/spots/ac/85155c065644d3b364b025c61c1ff2/full",
+      "alt": "Roti Canai flatbread with curry at Mamak Asian Street Food",
+      "credit": "Mamak Asian Street Food · official website photo",
+      "sourceUrl": "https://mamakeats.com/"
+    }
+  },
+  "yellow-dog-eats-gotha": {
+    "florida-cracker": {
+      "url": "https://roadfood.com/.image/c_fill%2Cw_1200%2Ch_900%2Cg_faces%3Acenter/MTM6MDAwMDAwMDAwMDE4NDkx/rfl_21242.jpg",
+      "alt": "Florida Cracker pulled pork sandwich from Yellow Dog Eats",
+      "credit": "Roadfood · Yellow Dog Eats Florida Cracker photo",
+      "sourceUrl": "https://roadfood.com/restaurants/yellow-dog-eats"
+    }
   }
 };
