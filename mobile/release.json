@@ -1,11 +1,11 @@
 {
-  "number": 14.1,
-  "name": "Verifed V14.1",
-  "description": "First Taco Bell app-style menu with purple ordering-style header, searchable categories, item gallery, dietary view and locally drafted ingredient-change requests. Corrected the food-photo bug: removed generic restaurant photos from individual menu entries, recovered 53 exact Loving Hut dish photos from official source HTML, and added the official Taco Bell Cantina Chicken Bowl photo for three branches. Official Taco Bell item photos now cover 54 unique products across 3 branches. No orders or modifications are sent to restaurants.",
+  "number": 14.2,
+  "name": "Verifed V14.2",
+  "description": "Photo sourcing update: 43 individually named Hawkers dish images from its official menu, plus eight additional item-matched photos for Chipotle, Black Rooster, Pizza Bruno, Mamak and Yellow Dog Eats. The active catalog now has item-specific photos for 267 of 1,630 menu entries; missing photos remain neutral instead of repeating one restaurant photo. Source credits, per-item keys, source links and regression checks included. GitHub-only: no new Expo Snack snapshot.",
   "verification": [
-    "Image-source tests verify the Taco Bell, Loving Hut and Chipotle exact-photo matches and suppress unrelated representative photos.",
-    "Taco Bell menu customization is an unsent staff-request draft; no allergen-free result is inferred from removing ingredients.",
-    "The app's 25 active restaurants have incomplete photo coverage; missing photographs are intentionally not fabricated.",
-    "Snack publishing now requires an explicit version-matched request; future per-chain GitHub commits do not automatically publish to Snack."
+    "Automated source URL probe confirmed 51/51 newly sourced photo URLs returned image content at check time.",
+    "105 mobile tests passed on the final image code snapshot; web, iOS, and Android bundles built successfully.",
+    "Photo images do not change dietary risk assessment or certify allergen-free preparation.",
+    "Some editorial photos represent the named dish at another time or location; menu availability and photo rights require separate verification."
   ]
 }
