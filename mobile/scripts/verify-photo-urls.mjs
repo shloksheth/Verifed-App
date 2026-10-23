@@ -5,7 +5,7 @@ import { verifiedDishPhotos } from "../src/verified-dish-photos.js";
 
 const added = {
   "chipotle-south-orange": ["tortilla-chips"],
-  "hawkers-orlando": ["twice-fried-wings", "pad-thai"],
+  "hawkers-orlando": Object.keys(verifiedDishPhotos["hawkers-orlando"]),
   "pizza-bruno-curry": ["take-out-garlic-knots-sauce", "meatballs-lemon-ricotta", "margherita-v"],
   "black-rooster-mills": ["guacamole-made-to-order", "achiote-pork"],
   "mamak-colonial": ["roti-canai"],
@@ -17,7 +17,7 @@ async function inspect(item) {
     const response = await fetch(item.url, {
       method: "GET",
       headers: { Range: "bytes=0-8191", Accept: "image/*" },
-      signal: AbortSignal.timeout(10000),
+      signal: AbortSignal.timeout(8000),
       redirect: "follow",
     });
     const contentType = response.headers.get("content-type") || "";
@@ -33,8 +33,8 @@ async function inspect(item) {
   }
 }
 const results = [];
-for (let i = 0; i < jobs.length; i += 4) {
-  results.push(...await Promise.all(jobs.slice(i, i + 4).map(inspect)));
+for (let i = 0; i < jobs.length; i += 8) {
+  results.push(...await Promise.all(jobs.slice(i, i + 8).map(inspect)));
 }
 for (const result of results) console.log(JSON.stringify(result));
 console.log(`PHOTO_HEALTH ${results.filter((r) => r.healthy).length}/${results.length}`);
