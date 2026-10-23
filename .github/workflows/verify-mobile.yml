@@ -1,0 +1,38 @@
+name: Verify Verifed mobile changes
+
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'mobile/**'
+      - '.github/workflows/verify-mobile.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+          cache-dependency-path: mobile/package-lock.json
+      - name: Install pinned Expo dependencies
+        run: npm ci --prefix mobile
+      - name: Run mobile regression suite
+        run: npm test --prefix mobile
+      - name: Check web bundle
+        working-directory: mobile
+        run: npx expo export --platform web --output-dir /tmp/verifed-web
+      - name: Check iOS bundle
+        working-directory: mobile
+        run: npx expo export --platform ios --output-dir /tmp/verifed-ios
+      - name: Check Android bundle
+        working-directory: mobile
+        run: npx expo export --platform android --output-dir /tmp/verifed-android
