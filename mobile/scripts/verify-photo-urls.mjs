@@ -2,6 +2,8 @@
 // Run: node scripts/verify-photo-urls.mjs
 // 403 from a publisher can mean hotlink restrictions, not necessarily a missing asset.
 import { verifiedDishPhotos } from "../src/verified-dish-photos.js";
+import { localRestaurants } from "../src/local-catalog.js";
+import { restaurantFoodPhoto } from "../src/menu-photos.js";
 
 const added = {
   "chipotle-south-orange": ["tortilla-chips"],
@@ -22,8 +24,15 @@ const added = {
   "winter-park-biscuit": ["the-og"],
   "bombay-street-kitchen": ["pani-puri-8-pcs"],
   "tin-taco-downtown": ["mac-attack-taco"],
+  "osteria-ester": ["spaghetti-alle-vongole"],
 };
-const jobs = Object.entries(added).flatMap(([slug, keys]) => keys.map((key) => ({ slug, key, ...verifiedDishPhotos[slug][key] })));
+const dishJobs = Object.entries(added).flatMap(([slug, keys]) => keys.map((key) => ({ slug, key, ...verifiedDishPhotos[slug][key] })));
+const coverJobs = localRestaurants.map((restaurant) => ({
+  slug: restaurant.slug,
+  key: "restaurant-food-cover",
+  ...restaurantFoodPhoto(restaurant),
+}));
+const jobs = [...dishJobs, ...coverJobs];
 async function inspect(item) {
   try {
     const response = await fetch(item.url, {
