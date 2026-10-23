@@ -10,6 +10,15 @@ const added = {
   "black-rooster-mills": ["guacamole-made-to-order", "achiote-pork"],
   "mamak-colonial": ["roti-canai"],
   "yellow-dog-eats-gotha": ["florida-cracker"],
+  "fresh-kitchen-waterford": Object.keys(verifiedDishPhotos["fresh-kitchen-waterford"]),
+  "reyes-mezcaleria": ["tuna-tostada"],
+  "the-monroe": ["the-monroes-famous-fried-chicken"],
+  "the-strand-mills": ["strand-burger"],
+  "the-osprey": ["lobster-roll"],
+  "stubborn-mule": ["stubborn-mule-burger"],
+  "lazy-moon-mills": ["20-tomato-base-includes-mozzarella"],
+  "pig-floyds-mills": ["the-big-floyd"],
+  "woodlands-orlando": ["masala-dosai"],
 };
 const jobs = Object.entries(added).flatMap(([slug, keys]) => keys.map((key) => ({ slug, key, ...verifiedDishPhotos[slug][key] })));
 async function inspect(item) {
