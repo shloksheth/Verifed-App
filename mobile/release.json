@@ -1,11 +1,11 @@
 {
-  "number": 14.1,
-  "name": "Verifed V14.1",
-  "description": "First Taco Bell app-style menu with purple ordering-style header, searchable categories, item gallery, dietary view and locally drafted ingredient-change requests. Corrected the food-photo bug: removed generic restaurant photos from individual menu entries, recovered 53 exact Loving Hut dish photos from official source HTML, and added the official Taco Bell Cantina Chicken Bowl photo for three branches. Official Taco Bell item photos now cover 54 unique products across 3 branches. No orders or modifications are sent to restaurants.",
+  "number": 14.2,
+  "name": "Verifed V14.2",
+  "description": "Second independently sourced food-photo update: 10 additional named dish images across Hawkers, Chipotle, Black Rooster, Pizza Bruno, Mamak and Yellow Dog Eats, with credited source URLs and alt text. The generic restaurant-wide photo is still prohibited on individual menu items. Existing Taco Bell and Loving Hut product photos remain. No Expo Snack publish requested for this GitHub-only installment.",
   "verification": [
-    "Image-source tests verify the Taco Bell, Loving Hut and Chipotle exact-photo matches and suppress unrelated representative photos.",
-    "Taco Bell menu customization is an unsent staff-request draft; no allergen-free result is inferred from removing ingredients.",
-    "The app's 25 active restaurants have incomplete photo coverage; missing photographs are intentionally not fabricated.",
-    "Snack publishing now requires an explicit version-matched request; future per-chain GitHub commits do not automatically publish to Snack."
+    "All new image entries have individual restaurant and menu-item keys, source URLs and credits.",
+    "Regression suite tests exact image-to-item mapping, no repeated default restaurant images and no dietary logic changes.",
+    "The full active catalog has roughly 1,630 entries; image coverage is partial and external hosts may block images.",
+    "No orders, allergen certifications or menu safety claims are inferred from images."
   ]
 }
