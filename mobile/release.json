@@ -1,11 +1,11 @@
 {
-  "number": 14.2,
-  "name": "Verifed V14.2",
-  "description": "Photo sourcing update: 43 individually named Hawkers dish images from its official menu, plus eight additional item-matched photos for Chipotle, Black Rooster, Pizza Bruno, Mamak and Yellow Dog Eats. The active catalog now has item-specific photos for 267 of 1,630 menu entries; missing photos remain neutral instead of repeating one restaurant photo. Source credits, per-item keys, source links and regression checks included. Now also available as a requested Expo Snack snapshot.",
+  "number": 14.3,
+  "name": "Verifed V14.3",
+  "description": "Added 37 individually matched food-image references across Fresh Kitchen, Reyes Mezcaleria, Monroe, Strand, Osprey, Stubborn Mule, Lazy Moon, Pig Floyds and Woodlands. 29 sources are from Fresh Kitchen's official menu; remaining sources describe specific named restaurant dishes. Per-item image coverage grows from 267 to 304 of 1,630 active menu entries, without repeating generic venue photography or changing food safety assessment. GitHub-only update; no new Expo Snack publish.",
   "verification": [
-    "Automated source URL probe confirmed 51/51 newly sourced photo URLs returned image content at check time.",
-    "105 mobile tests passed on the final image code snapshot; web, iOS, and Android bundles built successfully.",
-    "Photo images do not change dietary risk assessment or certify allergen-free preparation.",
-    "Some editorial photos represent the named dish at another time or location; menu availability and photo rights require separate verification."
+    "Image registry and menu catalog are tested to map exact item keys and preserve absence of unrelated default photos.",
+    "Fresh Kitchen photo assets are provided as AVIF and may require device-specific support; app falls back when remote images fail.",
+    "All 25 restaurants retain venue-level header imagery, but some have no verified individual food photo yet.",
+    "No image establishes allergen safety or location availability; third-party commercial image reuse may require permission."
   ]
 }
