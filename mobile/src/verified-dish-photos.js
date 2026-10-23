@@ -320,5 +320,8 @@ export const verifiedDishPhotos = {
       "credit": "Loving Hut Orlando · official menu",
       "sourceUrl": "https://lovinghut.us/orlando/"
     }
-  }
+  },
+  "taco-bell-south-orange": {"cantina-chicken-bowl":{"url":"https://www.tacobell.com/images/29199_cantina_bowl_1_640x650.jpg","alt":"Official Taco Bell Cantina Chicken Bowl product photo","credit":"Taco Bell · official menu","sourceUrl":"https://www.tacobell.com/food/bowls"}},
+  "taco-bell-east-colonial": {"cantina-chicken-bowl":{"url":"https://www.tacobell.com/images/29199_cantina_bowl_1_640x650.jpg","alt":"Official Taco Bell Cantina Chicken Bowl product photo","credit":"Taco Bell · official menu","sourceUrl":"https://www.tacobell.com/food/bowls"}},
+  "taco-bell-orlando-west": {"cantina-chicken-bowl":{"url":"https://www.tacobell.com/images/29199_cantina_bowl_1_640x650.jpg","alt":"Official Taco Bell Cantina Chicken Bowl product photo","credit":"Taco Bell · official menu","sourceUrl":"https://www.tacobell.com/food/bowls"}},
 };
