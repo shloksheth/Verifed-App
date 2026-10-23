@@ -1,5 +1,4 @@
-// Reviewed source-backed menu-item photographs; never use for allergen assertions.
-// Some official Webflow images are AVIF; rendering depends on platform support.
+// Item-specific sourced menu photography. Images never establish allergen safety or location stock.
 export const verifiedDishPhotos = {
   "loving-hut-orlando": {
     "spring-rolls-4-rolls-cha-gio": {
@@ -845,6 +844,46 @@ export const verifiedDishPhotos = {
       "alt": "Tuna Tostada served at Reyes Mezcaleria, pictured with a cocktail in Orlando Magazine",
       "credit": "Orlando Magazine · Reyes Mezcaleria food photograph",
       "sourceUrl": "https://www.orlandomagazine.com/reyes-mezcaleria-third-time-another-charm/"
+    }
+  },
+  "the-monroe": {
+    "the-monroes-famous-fried-chicken": {
+      "url": "https://wpcdn.us-east-1.vip.tn-cloud.net/www.orlandomagazine.com/content/uploads/2021/06/q/c/rg30762-copy.jpg?amp=1&etag=%2260dcb756-c1c5e%22",
+      "alt": "The Monroe fried chicken platter photographed by Orlando Magazine; sides and plating may have changed",
+      "credit": "Orlando Magazine · Monroe fried chicken",
+      "sourceUrl": "https://www.orlandomagazine.com/food-drink-orlandos-living-room-the-monroe/"
+    }
+  },
+  "the-strand-mills": {
+    "strand-burger": {
+      "url": "https://wpcdn.us-east-1.vip.tn-cloud.net/www.orlandomagazine.com/content/uploads/2025/10/s/o/rg37710.jpg?etag=%2268ed5324-30c8f%22",
+      "alt": "The Strand burger with fries in Orlando Magazine; toppings may vary",
+      "credit": "Orlando Magazine · The Strand burger",
+      "sourceUrl": "https://www.orlandomagazine.com/the-2025-orlando-dining-awards-brendans-picks-part-1/"
+    }
+  },
+  "the-osprey": {
+    "lobster-roll": {
+      "url": "https://media2.orlandoweekly.com/orlando/imager/u/original/27471020/robbartlett_4_54_59_am.jpg",
+      "alt": "Lobster Roll served at The Osprey; historic photo, presentation may have changed",
+      "credit": "Orlando Weekly · The Osprey Lobster Roll",
+      "sourceUrl": "https://www.orlandoweekly.com/food-drink/the-osprey-switches-concepts-and-sets-its-sights-on-seafood-27471022"
+    }
+  },
+  "stubborn-mule": {
+    "stubborn-mule-burger": {
+      "url": "https://d1w7312wesee68.cloudfront.net/ja5IEL8YW_TY6vqGoWaZEgTQIx2e0MS4SpHqh0rL84A/resize%3Afit%3A720%3A720/plain/s3%3A/toasttab/restaurants/restaurant-71579000000000000/menu/items/2/item-400000010205582742_1681758608.jpg",
+      "alt": "The Stubborn Mule Burger served with a copper mug; photo from restaurant ordering page",
+      "credit": "The Stubborn Mule · restaurant ordering photograph",
+      "sourceUrl": "https://order.toasttab.com/online/the-stubborn-mule-100-s-eola-drive"
+    }
+  },
+  "lazy-moon-mills": {
+    "20-tomato-base-includes-mozzarella": {
+      "url": "https://d1w7312wesee68.cloudfront.net/liUChHsNuldhJh3-_RDbhvXQxjw4Sr93PiZgnD8FSp0/resize%3Afit%3A1080%3A1080/plain/s3%3A/toasttab/restaurants/restaurant-194032000000000000/menu/items/6/item-800000004396409086_1722462316.jpg",
+      "alt": "Twenty-inch tomato-base pizza with mozzarella at Lazy Moon; photo from Maitland menu, branch preparation may vary",
+      "credit": "Lazy Moon · official menu item photograph",
+      "sourceUrl": "https://order.lazymoonpizza.com/menu/lazy-moon-pizza-maitland/group_6e9318a3-2312-4926-89db-c95baf610be5/item-20-tomato-base-includes-mozzarella_139be63b-1510-4107-b7a0-19a964582dea"
     }
   }
 };
