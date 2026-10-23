@@ -74,6 +74,18 @@ export function menuPhotoFor(dish, restaurant) {
     };
   }
   const slug = restaurant?.slug || restaurant?.id || dish?.restaurantId;
+  // Chipotle's official ordering page pictures a standalone side of
+  // guacamole, which accurately represents this menu component.
+  if (slug === "chipotle-south-orange" &&
+      String(dish?.name || "").trim().toLowerCase() === "guacamole") {
+    return {
+      url: "https://www.chipotle.com/content/dam/chipotle/menu/menu-items/cmg-1025-large-side-of-guac/web-mobile/order.png",
+      alt: "Official Chipotle side of guacamole photograph",
+      credit: "Chipotle · official menu",
+      sourceUrl: "https://www.chipotle.com/order/build/chips-%26-sides",
+      exact: true,
+    };
+  }
   const fallback = representativeMenuPhotos[slug];
   if (fallback) return { ...fallback, exact: false };
   if (restaurant?.imageUrl && isHttpImage(restaurant.imageUrl) &&
