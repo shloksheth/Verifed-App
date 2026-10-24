@@ -1,4 +1,4 @@
-// Item matched and source credited restaurant food photos, not allergen guarantees.
+// Individual menu product photography with original source and attribution; not a food-allergen guarantee.
 export const verifiedDishPhotos = {
   "loving-hut-orlando": {
     "spring-rolls-4-rolls-cha-gio": {
@@ -668,6 +668,213 @@ export const verifiedDishPhotos = {
       "kind": "official-product",
       "reviewedAt": "2026-10-24",
       "matchMethod": "Exact normalized menu item name matched to product image alt and official image URL on Taco Bell category page."
+    },
+    "chili": {
+      "url": "https://www.tacobell.com/images/2420_chili_269x269.jpg",
+      "alt": "Official Chili menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "mild-sauce-packet": {
+      "url": "https://www.tacobell.com/images/22763_mild_sauce_packet_269x269.jpg",
+      "alt": "Official Mild Sauce Packet menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "hot-sauce-packet": {
+      "url": "https://www.tacobell.com/images/22760_hot_sauce_packet_269x269.jpg",
+      "alt": "Official Hot Sauce Packet menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "fire-sauce-packet": {
+      "url": "https://www.tacobell.com/images/22759_fire_sauce_packet_269x269.jpg",
+      "alt": "Official Fire Sauce Packet menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "diablo-sauce-packet": {
+      "url": "https://www.tacobell.com/images/22765_diablo_sauce_packet_269x269.jpg",
+      "alt": "Official Diablo Sauce Packet menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "creamy-sriracha-sauce": {
+      "url": "https://www.tacobell.com/images/8087_creamy_sriracha_sauce_269x269.jpg",
+      "alt": "Official Creamy Sriracha Sauce menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "jalapeno-peppers": {
+      "url": "https://www.tacobell.com/images/2115_jalapeno_peppers_269x269.jpg",
+      "alt": "Official Jalapeño Peppers menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "nacho-cheese-sauce": {
+      "url": "https://www.tacobell.com/images/2253_nacho_cheese_sauce_269x269.jpg",
+      "alt": "Official Nacho Cheese Sauce menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "reduced-fat-sour-cream": {
+      "url": "https://www.tacobell.com/images/2053_reduced_fat_sour_cream_269x269.jpg",
+      "alt": "Official Reduced-Fat Sour Cream menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "creamy-jalapeno-sauce": {
+      "url": "https://www.tacobell.com/images/2240_creamy_jalapeno_sauce_269x269.jpg",
+      "alt": "Official Creamy Jalapeño Sauce menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "guacamole": {
+      "url": "https://www.tacobell.com/images/2063_guacamole_269x269.jpg",
+      "alt": "Official Guacamole menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "chipotle-sauce": {
+      "url": "https://www.tacobell.com/images/2323_chipotle_sauce_269x269.jpg",
+      "alt": "Official Chipotle Sauce menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "avocado-ranch-sauce": {
+      "url": "https://www.tacobell.com/images/2383_avocado_ranch_sauce_269x269.jpg",
+      "alt": "Official Avocado Ranch Sauce menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "spicy-ranch": {
+      "url": "https://www.tacobell.com/images/2519_spicy_ranch_269x269.jpg",
+      "alt": "Official Spicy Ranch menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "red-sauce": {
+      "url": "https://www.tacobell.com/images/2148_red_sauce_269x269.jpg",
+      "alt": "Official Red Sauce menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "mexican-pizza-sauce": {
+      "url": "https://www.tacobell.com/images/2370_mexican_pizza_sauce_269x269.jpg",
+      "alt": "Official Mexican Pizza Sauce menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "taco-burrito-cravings-pack": {
+      "url": "https://www.tacobell.com/images/60528_taco_and_burrito_pack_750x340.jpg",
+      "alt": "Official Taco & Burrito Cravings Pack menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/party-packs",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "taco-party-pack": {
+      "url": "https://www.tacobell.com/images/22189_taco_12_pack_750x340.jpg",
+      "alt": "Official Taco Party Pack menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/party-packs",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "supreme-taco-party-pack": {
+      "url": "https://www.tacobell.com/images/21200_supreme_taco_party_pack_750x340.jpg",
+      "alt": "Official Supreme Taco Party Pack menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/party-packs",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "soft-taco-party-pack": {
+      "url": "https://www.tacobell.com/images/22187_soft_taco_party_pack_750x340.jpg",
+      "alt": "Official Soft Taco Party Pack menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/party-packs",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "supreme-soft-taco-party-pack": {
+      "url": "https://www.tacobell.com/images/21201_soft_taco_supreme_party_pack_750x340.jpg",
+      "alt": "Official Supreme Soft Taco Party Pack menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/party-packs",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "variety-taco-party-pack": {
+      "url": "https://www.tacobell.com/images/22119_variety_taco_12_pack_750x340.jpg",
+      "alt": "Official Variety Taco Party Pack menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/party-packs",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "supreme-variety-taco-party-pack": {
+      "url": "https://www.tacobell.com/images/21202_supreme_variety_pack_750x340.jpg",
+      "alt": "Official Supreme Variety Taco Party Pack menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/party-packs",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
     }
   },
   "taco-bell-east-colonial": {
@@ -1018,6 +1225,213 @@ export const verifiedDishPhotos = {
       "kind": "official-product",
       "reviewedAt": "2026-10-24",
       "matchMethod": "Exact normalized menu item name matched to product image alt and official image URL on Taco Bell category page."
+    },
+    "chili": {
+      "url": "https://www.tacobell.com/images/2420_chili_269x269.jpg",
+      "alt": "Official Chili menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "mild-sauce-packet": {
+      "url": "https://www.tacobell.com/images/22763_mild_sauce_packet_269x269.jpg",
+      "alt": "Official Mild Sauce Packet menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "hot-sauce-packet": {
+      "url": "https://www.tacobell.com/images/22760_hot_sauce_packet_269x269.jpg",
+      "alt": "Official Hot Sauce Packet menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "fire-sauce-packet": {
+      "url": "https://www.tacobell.com/images/22759_fire_sauce_packet_269x269.jpg",
+      "alt": "Official Fire Sauce Packet menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "diablo-sauce-packet": {
+      "url": "https://www.tacobell.com/images/22765_diablo_sauce_packet_269x269.jpg",
+      "alt": "Official Diablo Sauce Packet menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "creamy-sriracha-sauce": {
+      "url": "https://www.tacobell.com/images/8087_creamy_sriracha_sauce_269x269.jpg",
+      "alt": "Official Creamy Sriracha Sauce menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "jalapeno-peppers": {
+      "url": "https://www.tacobell.com/images/2115_jalapeno_peppers_269x269.jpg",
+      "alt": "Official Jalapeño Peppers menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "nacho-cheese-sauce": {
+      "url": "https://www.tacobell.com/images/2253_nacho_cheese_sauce_269x269.jpg",
+      "alt": "Official Nacho Cheese Sauce menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "reduced-fat-sour-cream": {
+      "url": "https://www.tacobell.com/images/2053_reduced_fat_sour_cream_269x269.jpg",
+      "alt": "Official Reduced-Fat Sour Cream menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "creamy-jalapeno-sauce": {
+      "url": "https://www.tacobell.com/images/2240_creamy_jalapeno_sauce_269x269.jpg",
+      "alt": "Official Creamy Jalapeño Sauce menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "guacamole": {
+      "url": "https://www.tacobell.com/images/2063_guacamole_269x269.jpg",
+      "alt": "Official Guacamole menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "chipotle-sauce": {
+      "url": "https://www.tacobell.com/images/2323_chipotle_sauce_269x269.jpg",
+      "alt": "Official Chipotle Sauce menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "avocado-ranch-sauce": {
+      "url": "https://www.tacobell.com/images/2383_avocado_ranch_sauce_269x269.jpg",
+      "alt": "Official Avocado Ranch Sauce menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "spicy-ranch": {
+      "url": "https://www.tacobell.com/images/2519_spicy_ranch_269x269.jpg",
+      "alt": "Official Spicy Ranch menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "red-sauce": {
+      "url": "https://www.tacobell.com/images/2148_red_sauce_269x269.jpg",
+      "alt": "Official Red Sauce menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "mexican-pizza-sauce": {
+      "url": "https://www.tacobell.com/images/2370_mexican_pizza_sauce_269x269.jpg",
+      "alt": "Official Mexican Pizza Sauce menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "taco-burrito-cravings-pack": {
+      "url": "https://www.tacobell.com/images/60528_taco_and_burrito_pack_750x340.jpg",
+      "alt": "Official Taco & Burrito Cravings Pack menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/party-packs",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "taco-party-pack": {
+      "url": "https://www.tacobell.com/images/22189_taco_12_pack_750x340.jpg",
+      "alt": "Official Taco Party Pack menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/party-packs",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "supreme-taco-party-pack": {
+      "url": "https://www.tacobell.com/images/21200_supreme_taco_party_pack_750x340.jpg",
+      "alt": "Official Supreme Taco Party Pack menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/party-packs",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "soft-taco-party-pack": {
+      "url": "https://www.tacobell.com/images/22187_soft_taco_party_pack_750x340.jpg",
+      "alt": "Official Soft Taco Party Pack menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/party-packs",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "supreme-soft-taco-party-pack": {
+      "url": "https://www.tacobell.com/images/21201_soft_taco_supreme_party_pack_750x340.jpg",
+      "alt": "Official Supreme Soft Taco Party Pack menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/party-packs",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "variety-taco-party-pack": {
+      "url": "https://www.tacobell.com/images/22119_variety_taco_12_pack_750x340.jpg",
+      "alt": "Official Variety Taco Party Pack menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/party-packs",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "supreme-variety-taco-party-pack": {
+      "url": "https://www.tacobell.com/images/21202_supreme_variety_pack_750x340.jpg",
+      "alt": "Official Supreme Variety Taco Party Pack menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/party-packs",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
     }
   },
   "taco-bell-orlando-west": {
@@ -1368,6 +1782,213 @@ export const verifiedDishPhotos = {
       "kind": "official-product",
       "reviewedAt": "2026-10-24",
       "matchMethod": "Exact normalized menu item name matched to product image alt and official image URL on Taco Bell category page."
+    },
+    "chili": {
+      "url": "https://www.tacobell.com/images/2420_chili_269x269.jpg",
+      "alt": "Official Chili menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "mild-sauce-packet": {
+      "url": "https://www.tacobell.com/images/22763_mild_sauce_packet_269x269.jpg",
+      "alt": "Official Mild Sauce Packet menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "hot-sauce-packet": {
+      "url": "https://www.tacobell.com/images/22760_hot_sauce_packet_269x269.jpg",
+      "alt": "Official Hot Sauce Packet menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "fire-sauce-packet": {
+      "url": "https://www.tacobell.com/images/22759_fire_sauce_packet_269x269.jpg",
+      "alt": "Official Fire Sauce Packet menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "diablo-sauce-packet": {
+      "url": "https://www.tacobell.com/images/22765_diablo_sauce_packet_269x269.jpg",
+      "alt": "Official Diablo Sauce Packet menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "creamy-sriracha-sauce": {
+      "url": "https://www.tacobell.com/images/8087_creamy_sriracha_sauce_269x269.jpg",
+      "alt": "Official Creamy Sriracha Sauce menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "jalapeno-peppers": {
+      "url": "https://www.tacobell.com/images/2115_jalapeno_peppers_269x269.jpg",
+      "alt": "Official Jalapeño Peppers menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "nacho-cheese-sauce": {
+      "url": "https://www.tacobell.com/images/2253_nacho_cheese_sauce_269x269.jpg",
+      "alt": "Official Nacho Cheese Sauce menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "reduced-fat-sour-cream": {
+      "url": "https://www.tacobell.com/images/2053_reduced_fat_sour_cream_269x269.jpg",
+      "alt": "Official Reduced-Fat Sour Cream menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "creamy-jalapeno-sauce": {
+      "url": "https://www.tacobell.com/images/2240_creamy_jalapeno_sauce_269x269.jpg",
+      "alt": "Official Creamy Jalapeño Sauce menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "guacamole": {
+      "url": "https://www.tacobell.com/images/2063_guacamole_269x269.jpg",
+      "alt": "Official Guacamole menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "chipotle-sauce": {
+      "url": "https://www.tacobell.com/images/2323_chipotle_sauce_269x269.jpg",
+      "alt": "Official Chipotle Sauce menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "avocado-ranch-sauce": {
+      "url": "https://www.tacobell.com/images/2383_avocado_ranch_sauce_269x269.jpg",
+      "alt": "Official Avocado Ranch Sauce menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "spicy-ranch": {
+      "url": "https://www.tacobell.com/images/2519_spicy_ranch_269x269.jpg",
+      "alt": "Official Spicy Ranch menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "red-sauce": {
+      "url": "https://www.tacobell.com/images/2148_red_sauce_269x269.jpg",
+      "alt": "Official Red Sauce menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "mexican-pizza-sauce": {
+      "url": "https://www.tacobell.com/images/2370_mexican_pizza_sauce_269x269.jpg",
+      "alt": "Official Mexican Pizza Sauce menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "taco-burrito-cravings-pack": {
+      "url": "https://www.tacobell.com/images/60528_taco_and_burrito_pack_750x340.jpg",
+      "alt": "Official Taco & Burrito Cravings Pack menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/party-packs",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "taco-party-pack": {
+      "url": "https://www.tacobell.com/images/22189_taco_12_pack_750x340.jpg",
+      "alt": "Official Taco Party Pack menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/party-packs",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "supreme-taco-party-pack": {
+      "url": "https://www.tacobell.com/images/21200_supreme_taco_party_pack_750x340.jpg",
+      "alt": "Official Supreme Taco Party Pack menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/party-packs",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "soft-taco-party-pack": {
+      "url": "https://www.tacobell.com/images/22187_soft_taco_party_pack_750x340.jpg",
+      "alt": "Official Soft Taco Party Pack menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/party-packs",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "supreme-soft-taco-party-pack": {
+      "url": "https://www.tacobell.com/images/21201_soft_taco_supreme_party_pack_750x340.jpg",
+      "alt": "Official Supreme Soft Taco Party Pack menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/party-packs",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "variety-taco-party-pack": {
+      "url": "https://www.tacobell.com/images/22119_variety_taco_12_pack_750x340.jpg",
+      "alt": "Official Variety Taco Party Pack menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/party-packs",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "supreme-variety-taco-party-pack": {
+      "url": "https://www.tacobell.com/images/21202_supreme_variety_pack_750x340.jpg",
+      "alt": "Official Supreme Variety Taco Party Pack menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/party-packs",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
     }
   },
   "chipotle-south-orange": {
