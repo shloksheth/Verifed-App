@@ -3921,6 +3921,36 @@ export const verifiedDishPhotos = {
     }
   },
   "lazy-moon-mills": {
+    "large-caesar-salad": {
+      "url": "https://www.theorlandoreal.com/uploads/agent-1/Life%20In%20Orlando/Lazy%20Moon/IMG_3283.jpg",
+      "alt": "Caesar salad photographed at Lazy Moon Mills/50 with romaine lettuce, Parmesan and croutons; current menu includes focaccia breadcrumbs and plating may differ",
+      "credit": "The Orlando Real · Lazy Moon Mills/50 editorial coverage",
+      "sourceUrl": "https://www.theorlandoreal.com/lazy-moon-in-mills-50/",
+      "kind": "editorial-context",
+      "matchMethod": "Same restaurant Caesar salad explicitly photographed in independent restaurant coverage; crouton/breadcrumb details not exact, rights pending",
+      "needsPermissionReview": true,
+      "reviewedAt": "2026-10-24"
+    },
+    "gluten-free-pizza-contains-egg-dairy": {
+      "url": "https://d1w7312wesee68.cloudfront.net/Y5HI6dsdYsS8AsbbbhsLTUHr9x3EJjHwMxzIbhmd3fQ/resize%3Afit%3A720%3A720/plain/s3%3A/toasttab/restaurants/restaurant-136153000000000000/menu/items/4/item-800000004396409724_1726792022.jpg",
+      "alt": "Lazy Moon 12-inch gluten-free tomato sauce and shredded mozzarella pizza pictured at UCF, with no claim of cross-contact safety; Mills/50 may differ",
+      "credit": "Lazy Moon UCF · official ordering menu",
+      "sourceUrl": "https://order.lazymoonpizza.com/order/lazy-moon-ucf-11551-university-blvd/item-gluten-free-pizza-contains-egg-dairy_7bc5cbb0-c0da-4fbc-bd82-eb808915cfa6",
+      "kind": "official-product",
+      "matchMethod": "Same branded named menu product; photo cannot verify ingredient or cross-contact safety, different branch, reuse rights pending",
+      "needsPermissionReview": true,
+      "reviewedAt": "2026-10-24"
+    },
+    "tomato-bisque-soup": {
+      "url": "https://d1w7312wesee68.cloudfront.net/vs-s1jmhlgL8Xw2Ub6tZjrnDiJn47bKabDqh5gMxB34/resize%3Afit%3A720%3A720/plain/s3%3A/toasttab/restaurants/restaurant-194032000000000000/menu/items/2/item-800000005972071082_1722462678.jpg",
+      "alt": "Lazy Moon Tomato Bisque Soup in a white handled bowl with parmesan and crackers, pictured at the UCF location; Mills/50 may differ",
+      "credit": "Lazy Moon UCF · official ordering menu",
+      "sourceUrl": "https://order.toasttab.com/online/lazy-moon-ucf-11551-university-blvd/item-tomato-bisque-soup_75217d33-d9c2-4c9c-8e4d-9b1f3337aab7",
+      "kind": "official-product",
+      "matchMethod": "Named item on same-brand official ordering page, product picture and ingredients align; location and reuse rights require review",
+      "needsPermissionReview": true,
+      "reviewedAt": "2026-10-24"
+    },
     "slice-the-vegetarian-chili-slice": {
       "url": "https://d1w7312wesee68.cloudfront.net/Hjc-M97ljFfZ8_WDXc-YfR5VXnMpVD0UDMiyfeo26iE/resize%3Afit%3A720%3A720/plain/s3%3A/toasttab/restaurants/restaurant-194032000000000000/menu/items/3/item-800000006277168883_1722461587.jpg",
       "alt": "Vegetarian chili pizza slice on metal plate photographed at Lazy Moon UCF; the Mills/50 serving can vary",
