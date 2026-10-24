@@ -27,12 +27,12 @@ test("photo audit covers every published dish with stable identifiers", () => {
 test("menu image UI preserves full dish framing", () => {
   const source = readFileSync(new URL("../components/Dining.js", import.meta.url), "utf8");
   const styles = readFileSync(new URL("../styles.js", import.meta.url), "utf8");
-  assert.match(source, /resizeMode="contain"/);
+  assert.match(source, /contentFit="contain"/);
   assert.match(source, /menuDishPhotoLargeCanvas/);
   assert.match(source, /menuDishPhotoCanvas/);
   assert.match(styles, /menuDishPhotoLargeCanvas/);
   assert.match(styles, /menuDishPhotoCanvas/);
-  assert.doesNotMatch(source.slice(source.indexOf("function DishPhoto"),source.indexOf("export function FoodArt")), /resizeMode="cover"/);
+  assert.doesNotMatch(source.slice(source.indexOf("function DishPhoto"),source.indexOf("export function FoodArt")), /contentFit="cover"/);
 });
 
 test("each sourced photo retains image-specific provenance", () => {

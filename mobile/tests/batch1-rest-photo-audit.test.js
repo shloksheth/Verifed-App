@@ -41,7 +41,7 @@ test("Batch 1 remainder menu registry uses individually keyed sources and descri
 
 test("The editor retains full image and neutral handling of unavailable photos", () => {
   const dining = readFileSync(new URL("../components/Dining.js", import.meta.url), "utf8");
-  assert.match(dining, /resizeMode="contain"/);
+  assert.match(dining, /contentFit="contain"/);
   assert.match(dining, /failedUrl === photo\.url/);
   assert.match(dining, /photo\.exact \? "Dish photo" : "Representative food photo"/);
 });

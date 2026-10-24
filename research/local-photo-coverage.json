@@ -1,7 +1,7 @@
 {
   "activeItems": 1630,
-  "approvedLocalImages": 279,
-  "remaining": 1351,
+  "approvedLocalImages": 313,
+  "remaining": 1317,
   "errors": [],
   "duplicateFinalImages": [],
   "restaurants": {
@@ -32,8 +32,8 @@
     },
     "loving-hut-orlando": {
       "active": 61,
-      "approved": 9,
-      "generated": 9
+      "approved": 37,
+      "generated": 37
     },
     "the-strand-mills": {
       "active": 20,
@@ -52,7 +52,7 @@
     },
     "winter-park-biscuit": {
       "active": 41,
-      "approved": 2,
+      "approved": 7,
       "generated": 0
     },
     "reyes-mezcaleria": {
@@ -82,7 +82,7 @@
     },
     "mamak-colonial": {
       "active": 70,
-      "approved": 39,
+      "approved": 40,
       "generated": 0
     },
     "tin-taco-downtown": {

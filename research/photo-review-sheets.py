@@ -10,6 +10,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument("restaurant")
 parser.add_argument("--pending-candidates", action="store_true")
 parser.add_argument("--item", help="Show every downloaded candidate for one stable catalog key")
+parser.add_argument("--latest-candidate", action="store_true", help="Show each item's most recently registered downloaded candidate")
 args = parser.parse_args()
 manifest = json.loads((ROOT / "research/local-photo-manifest.json").read_text(encoding="utf-8"))
 items = [item for item in manifest["items"] if item["restaurant"] == args.restaurant or args.restaurant == "all"]
@@ -20,6 +21,7 @@ if args.pending_candidates:
     items = [item for item in items if item["review"]["status"] == "pending" and any(candidate.get("path") for candidate in item["candidates"]) and item["restaurant"] not in ["loving-hut-orlando", "mamak-colonial", "hawkers-orlando", "taco-bell-east-colonial", "taco-bell-orlando-west"]]
 out = ROOT / "tmp/photo-review" / args.restaurant
 if args.item: out = out / args.item
+if args.latest_candidate: out = out / 'latest'
 out.mkdir(parents=True, exist_ok=True)
 font_path = Path("C:/Windows/Fonts/arial.ttf")
 font = ImageFont.truetype(str(font_path), 16) if font_path.exists() else ImageFont.load_default(size=16)
@@ -30,7 +32,8 @@ for start in range(0, len(items), 9):
         x, y = (offset % 3) * 500, (offset // 3) * 500
         draw.text((x+12, y+8), f"{start+offset+1}. {item['specification']['name']}"[:57], font=font, fill="black")
         if args.restaurant == "all": draw.text((x+12, y+28), item["restaurantName"][:57], font=font, fill="#444444")
-        candidate = next((candidate for candidate in item["candidates"] if candidate.get("path")), None)
+        candidates = reversed(item['candidates']) if args.latest_candidate else item['candidates']
+        candidate = next((candidate for candidate in candidates if candidate.get("path")), None)
         if candidate:
             with Image.open(ROOT / candidate["path"]) as image:
                 image = ImageOps.contain(image.convert("RGBA"), (476, 330))

@@ -8666,7 +8666,7 @@
           "width": 1200,
           "height": 800,
           "bytes": 118698,
-          "status": "generated-awaiting-visual-review",
+          "status": "rejected-after-visual-review",
           "generation": {
             "tool": "image_gen.imagegen built-in",
             "prompt": "Use case: photorealistic-natural. Improve the supplied low-resolution official menu reference into a sharp photorealistic reconstruction for Verifed. Exactly TWO whole Vietnamese vegan summer rolls, each cut in half so FOUR halves total, translucent rice paper tightly wrapped around stir-fried jicama, thin orange carrot strips, pale tofu and green lettuce. No shrimp (the menu says it is optional, so omit it), no pork, no real seafood. One small peanut dipping bowl with crushed peanuts and one separate small bowl of vegan Aulac dipping sauce, as named in the menu. White plate. Keep fine rice-paper wrinkles, visible vegetables and soft realistic translucency. All food and both ends of every item fully visible with breathing room, whole plate in frame, three-quarter overhead camera, soft natural light, neutral tabletop, realistic textures. No text, logo, watermark, flowers, cutlery or invented garnishes. Follow the published ingredients: Ingredients: (Add vegan shrimp for $2) Freshly made: Jicama stir fry with carrot, tofu, lettuce, wrapped in rice paper (Side of peanut sauce and Aulac sauce) Contains: soy, sauce has peanut. Preserve the named serving count. This is a generated reconstruction informed by an official reference, not a newly taken restaurant photograph.",
@@ -8680,7 +8680,8 @@
             }
           },
           "alt": "Menu illustration of Summer Rolls (2 Rolls) - Bò Bía",
-          "credit": "Verifed generated menu illustration"
+          "credit": "Verifed generated menu illustration",
+          "reviewNotes": "Right dipping cup cropped; selected framing repair."
         },
         {
           "id": "generated-df98f2b693fc9fa6",
@@ -8791,7 +8792,7 @@
           },
           "alt": "Menu illustration of BBQ Rolls (2 Rolls)",
           "credit": "Verifed generated menu illustration",
-          "reviewNotes": "Generated thick chunky peanut sauce instead of the named Aulac dipping sauce; repaired in selected candidate."
+          "reviewNotes": "Wrong thick peanut sauce; selected thin Aulac-style sauce repair."
         },
         {
           "id": "generated-a32a4ffb3591a309",
@@ -8875,15 +8876,48 @@
           "width": 350,
           "height": 350,
           "bytes": 24418
+        },
+        {
+          "id": "generated-06da2900c5300c61",
+          "origin": "generated",
+          "kind": "generated-illustration",
+          "path": "mobile/assets/food/loving-hut-orlando/avocado-rolls-2-rolls.webp",
+          "sha256": "8fd366132c42aba00744928d127e27260e5727b9da606963131a84517e1db8e8",
+          "pixelHash": "13615835c6a01200d665efa930a09d545bc531db4f869950e51eeb280cfbc03b",
+          "width": 1200,
+          "height": 1200,
+          "bytes": 167360,
+          "status": "generated-awaiting-visual-review",
+          "generation": {
+            "tool": "image_gen.imagegen built-in",
+            "prompt": "Reconstruct this low-resolution official Loving Hut Orlando Avocado Rolls photograph as clean photorealistic menu photography. Exactly TWO whole translucent rice-paper rolls filled with visible avocado slices, lettuce, white rice noodles and browned soy protein with a few peanuts and lemongrass. Menu ingredients: avocado, lettuce, peanuts, rice noodle, soy protein, rice paper, lemongrass, served with Aulac sauce. Do not add carrot strips, cilantro, real meat or seafood. A small separate white cup of thin amber Aulac-style dipping sauce, not thick peanut paste; sauce recipe unspecified so no extra garnish. Preserve the recognizably fresh green avocado roll presentation but use a neutral pale stone tabletop and white plate. Entire food and cup in frame with generous clear margins, soft daylight, realistic rice-paper wrinkles, avocado texture and lettuce. No text, logo, hands, props or other dishes.",
+            "createdAt": "2026-10-24T07:56:26.617033+00:00",
+            "originalSha256": "06da2900c5300c61f22acd55ec2fb0f3161e3076f03456de63e4e9aa3280e2ed",
+            "operation": "reference-guided reconstruction",
+            "reference": {
+              "sha256": "ca9c6fab2f02e52370494f532c0dce05621477c17963783c08d224b3180722bc",
+              "candidateId": "b3710b3a694d4a43",
+              "sourceUrl": "https://lovinghut.us/orlando/"
+            }
+          },
+          "alt": "Menu illustration of Avocado Rolls (2 Rolls)",
+          "credit": "Verifed generated menu illustration"
         }
       ],
       "searchLog": [],
       "review": {
-        "status": "needs-replacement",
-        "selectedCandidateId": null,
-        "inspectedAt": "2026-10-24T07:33:31.048543+00:00",
+        "status": "approved",
+        "selectedCandidateId": "generated-06da2900c5300c61",
+        "inspectedAt": "2026-10-24T07:57:38.218818+00:00",
         "reviewer": "Codex visual inspection",
-        "notes": "Visually inspected official candidate against its ingredient description. Current source is low-resolution, poorly lit, tightly framed, or needs a portion check; requires improvement before final approval."
+        "notes": "Inspected optimized WebP: two whole translucent rolls with avocado, lettuce, noodles, browned soy protein, peanuts and lemongrass; separate thin amber dipping sauce. Carrot strips from the low-quality reference were excluded because the published recipe does not list carrot. Every roll and sauce is visible. Sauce formulation remains unspecified.",
+        "checks": {
+          "identity": "pass",
+          "ingredients": "pass",
+          "portion": "pass",
+          "framing": "pass",
+          "quality": "pass"
+        }
       }
     },
     {
@@ -8925,15 +8959,48 @@
           "width": 300,
           "height": 200,
           "bytes": 7352
+        },
+        {
+          "id": "generated-be3f2ab32d279914",
+          "origin": "generated",
+          "kind": "generated-illustration",
+          "path": "mobile/assets/food/loving-hut-orlando/loving-hut-rolls-2-rolls-goi-cuon.webp",
+          "sha256": "83c7c47bd68d61354692982b69fca31f86d6a41b864dfbe4d6d6341e87564090",
+          "pixelHash": "3c46935c14cea025c52db31388363f9f634b17cf67dad6b413252d7955671e65",
+          "width": 1200,
+          "height": 800,
+          "bytes": 81172,
+          "status": "generated-awaiting-visual-review",
+          "generation": {
+            "tool": "image_gen.imagegen built-in",
+            "prompt": "Reconstruct this pixelated Loving Hut Orlando official fresh-roll photograph as realistic high-resolution menu photography. Dish: Loving Hut Rolls (2 Rolls) - Goi Cuon. Make exactly TWO rice-paper rolls, each cut once diagonally, yielding FOUR halves, neatly arranged on one white plate. Ingredients: vegan shrimp (smooth pink-and-white plant-based pieces with no shell/tail), vegan ham (pale pink plant-based slices), tofu, lettuce and thin white rice noodles wrapped in translucent rice paper, with one separate small cup of thick smooth peanut sauce with a little crushed peanut. Keep the fresh roll shape and visible ingredients from the reference. No real meat/seafood, no extra garnish, carrot, rice on side or third roll. Soft daylight, realistic fine noodle and rice-paper texture, neutral pale tabletop, full food and dipping cup visible with generous margin. No text, logos, hands or cutlery.",
+            "createdAt": "2026-10-24T07:56:02.354193+00:00",
+            "originalSha256": "be3f2ab32d279914a3533572fb7f3f5f2536504d57d160f1bc8a9341293fd9e3",
+            "operation": "reference-guided reconstruction",
+            "reference": {
+              "sha256": "a71b87905fcc1edff16cf7a60caebf716ca8d2c53361070639095a59c6f4054c",
+              "candidateId": "391681df428e6487",
+              "sourceUrl": "https://lovinghut.us/orlando/"
+            }
+          },
+          "alt": "Menu illustration of Loving Hut Rolls (2 Rolls) - Gỏi Cuốn",
+          "credit": "Verifed generated menu illustration"
         }
       ],
       "searchLog": [],
       "review": {
-        "status": "needs-replacement",
-        "selectedCandidateId": null,
-        "inspectedAt": "2026-10-24T07:33:31.048543+00:00",
+        "status": "approved",
+        "selectedCandidateId": "generated-be3f2ab32d279914",
+        "inspectedAt": "2026-10-24T07:57:38.218818+00:00",
         "reviewer": "Codex visual inspection",
-        "notes": "Visually inspected official candidate against its ingredient description. Current source is low-resolution, poorly lit, tightly framed, or needs a portion check; requires improvement before final approval."
+        "notes": "Inspected optimized WebP: four cut halves represent the named two rolls, with translucent wrapper, lettuce, noodles, tofu, pale pink vegan ham and smooth vegan shrimp-style pieces; separate peanut sauce. Full-food framing and realistic texture pass. Illustration does not establish the hidden vegan protein formulation.",
+        "checks": {
+          "identity": "pass",
+          "ingredients": "pass",
+          "portion": "pass",
+          "framing": "pass",
+          "quality": "pass"
+        }
       }
     },
     {
@@ -9616,15 +9683,48 @@
           "width": 300,
           "height": 200,
           "bytes": 8396
+        },
+        {
+          "id": "generated-91febf497979ac05",
+          "origin": "generated",
+          "kind": "generated-illustration",
+          "path": "mobile/assets/food/loving-hut-orlando/golden-nuggets.webp",
+          "sha256": "450d167cedacb4142d025b0b5728f230caf4ba5caa073cc22bd0e76072f9fd37",
+          "pixelHash": "808d0768976c94d4c0764c4fd2dbd829fed46a396cbd4ade9d99618799548fdc",
+          "width": 1200,
+          "height": 800,
+          "bytes": 162774,
+          "status": "generated-awaiting-visual-review",
+          "generation": {
+            "tool": "image_gen.imagegen built-in",
+            "prompt": "Reconstruct this low-resolution official Loving Hut Orlando Golden Nuggets photo into clear photorealistic menu photography. Show exactly FIVE golden breaded oval soy-protein nuggets, preserving the reference's five-piece arrangement but zoomed out so all five pieces are fully visible. No chicken meat; these are vegan soy nuggets. One separate small black cup of smooth red ketchup, the menu's offered dipping choice, beside the nuggets. A small lettuce bed matching the reference on one simple black serving plate, neutral pale tabletop, soft diffused natural light. Crisp fine breadcrumb texture, irregular handmade oval shapes, no exposed real meat, no cheese, herbs, seeds, sauces on top or extra side dish. All food, dip cup and plate clearly visible with generous margins. Remove red logo. No text, hands, utensils or other nuggets.",
+            "createdAt": "2026-10-24T08:13:06.226128+00:00",
+            "originalSha256": "91febf497979ac05f2fd83903004ad0a64890246e8a2c9c8b5ef66d5b8d8c183",
+            "operation": "reference-guided reconstruction",
+            "reference": {
+              "sha256": "647b0579ef7b43001d3f1023382ec9f070e105873435a47cde914e155876a94c",
+              "candidateId": "58d42a944f1379c6",
+              "sourceUrl": "https://lovinghut.us/orlando/"
+            }
+          },
+          "alt": "Menu illustration of Golden Nuggets",
+          "credit": "Verifed generated menu illustration"
         }
       ],
       "searchLog": [],
       "review": {
-        "status": "needs-replacement",
-        "selectedCandidateId": null,
-        "inspectedAt": "2026-10-24T07:33:31.048543+00:00",
+        "status": "approved",
+        "selectedCandidateId": "generated-91febf497979ac05",
+        "inspectedAt": "2026-10-24T08:14:18.177807+00:00",
         "reviewer": "Codex visual inspection",
-        "notes": "Visually inspected official candidate against its ingredient description. Current source is low-resolution, poorly lit, tightly framed, or needs a portion check; requires improvement before final approval."
+        "notes": "Inspected optimized WebP: five fully visible golden breaded soy nuggets matching the five pieces visible in the cropped official reference, small lettuce presentation and one separate ketchup cup (offered menu sauce choice). Fine crumb texture, full-food framing. Text does not specify count/weight; count follows official photo, not a measured serving claim.",
+        "checks": {
+          "identity": "pass",
+          "ingredients": "pass",
+          "portion": "pass",
+          "framing": "pass",
+          "quality": "pass"
+        }
       }
     },
     {
@@ -9747,15 +9847,48 @@
           "width": 300,
           "height": 200,
           "bytes": 10054
+        },
+        {
+          "id": "generated-a0cec8253d25d065",
+          "origin": "generated",
+          "kind": "generated-illustration",
+          "path": "mobile/assets/food/loving-hut-orlando/heavenly-salad.webp",
+          "sha256": "287f8af8cf8b08b8ed5eff70ac3cb882bc7d6c033ef264adeac64d5701e0ea85",
+          "pixelHash": "06474ab8f0438f1fdcf2e508cc8a9f6d6fbe59e21139925f09ae60d12f76400f",
+          "width": 1200,
+          "height": 800,
+          "bytes": 170200,
+          "status": "generated-awaiting-visual-review",
+          "generation": {
+            "tool": "image_gen.imagegen built-in",
+            "prompt": "Reconstruct this low-resolution official Loving Hut Orlando Heavenly Salad photograph as sharp realistic menu photography. Preserve the generous mound of finely shredded pale cabbage and lettuce mixed with thin carrot, bean sprouts, onion, celery, a few dark raisins and fresh cilantro leaves, topped with crushed roasted peanuts. Menu dressing is light Asian-inspired lime juice, a barely visible glossy coating, no thick mayonnaise. Ingredients exactly cabbage, lettuce, bean sprouts, carrot, onion, celery, raisin, cilantro, lime dressing and roasted peanut. No meat, tofu, noodles, fruit slices, sesame or cheese. One plain white plate on neutral pale stone tabletop, soft daylight, realistic fine shreds and varied textures. Entire salad mound, all loose vegetables and whole plate fully in frame with clear margin. Remove the red logo. No text, hands or utensils.",
+            "createdAt": "2026-10-24T08:01:28.107118+00:00",
+            "originalSha256": "a0cec8253d25d065102dbcfdadb4f7c7362d06de684a8cbe7b8c71cf7b28dddb",
+            "operation": "reference-guided reconstruction",
+            "reference": {
+              "sha256": "9a1f20f19b2cecbe2566a6b341df68df5694e2818a56ec7101a11bf004bf415c",
+              "candidateId": "3dda47ab014b66a9",
+              "sourceUrl": "https://lovinghut.us/orlando/"
+            }
+          },
+          "alt": "Menu illustration of Heavenly Salad",
+          "credit": "Verifed generated menu illustration"
         }
       ],
       "searchLog": [],
       "review": {
-        "status": "needs-replacement",
-        "selectedCandidateId": null,
-        "inspectedAt": "2026-10-24T07:33:31.048543+00:00",
+        "status": "approved",
+        "selectedCandidateId": "generated-a0cec8253d25d065",
+        "inspectedAt": "2026-10-24T08:05:49.168163+00:00",
         "reviewer": "Codex visual inspection",
-        "notes": "Visually inspected official candidate against its ingredient description. Current source is low-resolution, poorly lit, tightly framed, or needs a portion check; requires improvement before final approval."
+        "notes": "Individually inspected optimized WebP against official reference and full recipe: shredded cabbage/lettuce, carrot, bean sprouts, onion, celery, raisins, cilantro and crushed peanuts in a light dressing. No meat, tofu, noodles or thick mayonnaise. Whole mound and loose ingredients visible; portion follows reference photograph, weight unpublished.",
+        "checks": {
+          "identity": "pass",
+          "ingredients": "pass",
+          "portion": "pass",
+          "framing": "pass",
+          "quality": "pass"
+        }
       }
     },
     {
@@ -9798,15 +9931,48 @@
           "width": 300,
           "height": 200,
           "bytes": 8442
+        },
+        {
+          "id": "generated-8f40f1ead9bf1886",
+          "origin": "generated",
+          "kind": "generated-illustration",
+          "path": "mobile/assets/food/loving-hut-orlando/avocado-salad.webp",
+          "sha256": "d99f023551c1972f5fa37d668fb30b6a497cc8191986931e623f1aa4a5ddf8c2",
+          "pixelHash": "4a46d88643a31200bb16ad29210d0d665accbac33fcf31c7eaf91e2f082493a6",
+          "width": 1200,
+          "height": 800,
+          "bytes": 123306,
+          "status": "generated-awaiting-visual-review",
+          "generation": {
+            "tool": "image_gen.imagegen built-in",
+            "prompt": "Reconstruct this low-resolution official Loving Hut Orlando Avocado Salad photo as high-resolution realistic menu photography. One generous mound of fresh lettuce with chunky ripe green avocado, pale apple pieces with some red skin, red tomato wedges, thin onion, a few raisins, walnut pieces and fresh cilantro. Light coating of avocado oil and Asian-inspired lime juice, not creamy dressing. These are the exact published ingredients. No basil garnish, cucumber, cheese, croutons, sesame or meat. Keep the reference's chopped avocado salad presentation while removing the red logo and using a neutral pale tabletop. One white plate, soft daylight, realistic avocado/walnut/apple textures and natural color variation. Entire food and plate fully visible with ample margin. No text, hands, utensils or extra food.",
+            "createdAt": "2026-10-24T08:06:32.515619+00:00",
+            "originalSha256": "8f40f1ead9bf1886118522e04d0b14f95aa6aa44856c777851d612b3ec4e2b52",
+            "operation": "reference-guided reconstruction",
+            "reference": {
+              "sha256": "8b650d77849c6d438a947065ab5932fa226eba930a3cf8c29b64bea8eedab5cc",
+              "candidateId": "c887bdc9187f8ba1",
+              "sourceUrl": "https://lovinghut.us/orlando/"
+            }
+          },
+          "alt": "Menu illustration of Avocado Salad",
+          "credit": "Verifed generated menu illustration"
         }
       ],
       "searchLog": [],
       "review": {
-        "status": "needs-replacement",
-        "selectedCandidateId": null,
-        "inspectedAt": "2026-10-24T07:33:31.048543+00:00",
+        "status": "approved",
+        "selectedCandidateId": "generated-8f40f1ead9bf1886",
+        "inspectedAt": "2026-10-24T08:11:23.110180+00:00",
         "reviewer": "Codex visual inspection",
-        "notes": "Visually inspected official candidate against its ingredient description. Current source is low-resolution, poorly lit, tightly framed, or needs a portion check; requires improvement before final approval."
+        "notes": "Inspected optimized WebP against official photo and full menu recipe: avocado, lettuce, apple pieces, tomatoes, onion, walnuts, raisins and cilantro with light dressing. No basil/cucumber/cheese added. Complete food mound visible, realistic textures; portion follows official photographed serving, weight unpublished.",
+        "checks": {
+          "identity": "pass",
+          "ingredients": "pass",
+          "portion": "pass",
+          "framing": "pass",
+          "quality": "pass"
+        }
       }
     },
     {
@@ -9844,15 +10010,75 @@
           "width": 150,
           "height": 150,
           "bytes": 8264
+        },
+        {
+          "id": "generated-55fe14828493a78a",
+          "origin": "generated",
+          "kind": "generated-illustration",
+          "path": "research/generated-photo-candidates/loving-hut-orlando-crispy-green-beans-55fe1482.webp",
+          "sha256": "87e0e60fc6004b6772971d05a83d7f5aeb959e156852f731476dbfebd29aaa08",
+          "pixelHash": "f634359bd473d4991256c551d108de09f52487fafb6b76168b5163f7adcf0f32",
+          "width": 1200,
+          "height": 1200,
+          "bytes": 213724,
+          "status": "rejected-after-visual-review",
+          "generation": {
+            "tool": "image_gen.imagegen built-in",
+            "prompt": "Reconstruct this tiny official Loving Hut Orlando Crispy Green Beans photograph as sharp realistic menu photography. Preserve one plate of whole green beans lightly blistered and cooked until crisp-tender, glistening with a thin soy-sauce and sesame-oil coating and sprinkled with modest white sesame seeds. Exact ingredients: green beans, sesame oil, soy sauce, sesame seeds. No breadcrumb batter, garlic chunks, onion, chili, other vegetables, meat or rice. Plain white round plate on neutral pale tabletop, softly diffused daylight. Realistic varied bean lengths and curved shapes, a few natural browned patches, not perfectly identical plastic beans. Show the entire serving and whole plate with generous clear margin, no food cropped. No text, logos, utensils, hands or other dishes.",
+            "createdAt": "2026-10-24T08:06:58.371280+00:00",
+            "originalSha256": "55fe14828493a78a9bd7bc072a9cd603d07b40096ea66a09b4b45b8aef85c92a",
+            "operation": "reference-guided reconstruction",
+            "reference": {
+              "sha256": "388c01e13a025e78f46e94bc0a4856887b27f3c5ba68036276d776983a222f9d",
+              "candidateId": "6cbbc26cc83a1f64",
+              "sourceUrl": "https://lovinghut.us/orlando/"
+            }
+          },
+          "alt": "Menu illustration of Crispy Green Beans",
+          "credit": "Verifed generated menu illustration",
+          "reviewNotes": "Unlisted garlic-like pieces among beans; selected removal repair."
+        },
+        {
+          "id": "generated-fcf0fa63ef2b48df",
+          "origin": "generated",
+          "kind": "generated-illustration",
+          "path": "mobile/assets/food/loving-hut-orlando/crispy-green-beans.webp",
+          "sha256": "901a39d8b4c632fcd77549d6f823f8fc63997a1f711ed1c16be6cbc25fcb5b4d",
+          "pixelHash": "d0f56be4cb9278aa6b8fa33eb757c725dea42ef829df4b0436a7889a5d869e7f",
+          "width": 1200,
+          "height": 1200,
+          "bytes": 196300,
+          "status": "generated-awaiting-visual-review",
+          "generation": {
+            "tool": "image_gen.imagegen built-in",
+            "prompt": "Edit this Crispy Green Beans menu illustration to remove ALL visible chopped golden garlic/onion-like cubes or flakes between the beans and on the plate. This recipe has ONLY green beans, sesame oil, soy sauce and white sesame seeds. Retain the whole blistered green beans, tiny oval white sesame seeds and thin dark soy glaze. Any stray golden ingredient pieces should become plain clean white plate or a whole green bean, never chopped garlic. Keep the same natural serving size, lighting, composition, realistic bean texture, whole plate and full-food framing. No additional food, text or props.",
+            "createdAt": "2026-10-24T08:12:39.268653+00:00",
+            "originalSha256": "fcf0fa63ef2b48df271ad29bda08dfbe64b2659332753d2e46c5a91496492faf",
+            "operation": "reference-guided reconstruction",
+            "reference": {
+              "sha256": "55fe14828493a78a9bd7bc072a9cd603d07b40096ea66a09b4b45b8aef85c92a",
+              "candidateId": "generated-55fe14828493a78a",
+              "sourceUrl": null
+            }
+          },
+          "alt": "Menu illustration of Crispy Green Beans",
+          "credit": "Verifed generated menu illustration"
         }
       ],
       "searchLog": [],
       "review": {
-        "status": "needs-replacement",
-        "selectedCandidateId": null,
-        "inspectedAt": "2026-10-24T07:33:31.048543+00:00",
+        "status": "approved",
+        "selectedCandidateId": "generated-fcf0fa63ef2b48df",
+        "inspectedAt": "2026-10-24T08:14:18.177807+00:00",
         "reviewer": "Codex visual inspection",
-        "notes": "Visually inspected official candidate against its ingredient description. Current source is low-resolution, poorly lit, tightly framed, or needs a portion check; requires improvement before final approval."
+        "notes": "Inspected optimized repaired WebP: whole blistered green beans, thin soy/sesame-oil glaze and white sesame seeds only. Removed the initial draft's stray garlic-like pieces. Complete serving and plate visible with clear margins, realistic varied bean shapes.",
+        "checks": {
+          "identity": "pass",
+          "ingredients": "pass",
+          "portion": "pass",
+          "framing": "pass",
+          "quality": "pass"
+        }
       }
     },
     {
@@ -9941,15 +10167,75 @@
           "width": 300,
           "height": 200,
           "bytes": 10182
+        },
+        {
+          "id": "generated-549f19432f001ded",
+          "origin": "generated",
+          "kind": "generated-illustration",
+          "path": "research/generated-photo-candidates/loving-hut-orlando-pho-549f1943.webp",
+          "sha256": "b99f984c344239f5f0cc0e1b957b55027ca91bb0d164ac329380956714cbb834",
+          "pixelHash": "f7f7d8b83771e2acc22b20658b1ee764de4cf7c37df9406b797bd92645cb7cc4",
+          "width": 1200,
+          "height": 800,
+          "bytes": 114592,
+          "status": "rejected-after-visual-review",
+          "generation": {
+            "tool": "image_gen.imagegen built-in",
+            "prompt": "Reconstruct this tiny official Loving Hut Orlando Pho photograph as realistic high-resolution menu photography. One full white bowl of translucent light amber vegan broth with thin flat white rice noodles, golden tofu, browned textured vegetable protein pieces, sliced mushrooms, pale bean sprouts, thin onion, fresh cilantro and Thai basil. Ingredients exactly rice noodles, tofu, TVP, mushroom, bean sprouts, onion, cilantro and Thai basil. Preserve the simple noodle bowl appearance of reference. No beef, chicken, fish, eggs, dumplings, carrot, chili oil or extra garnishes. Natural delicate noodle strands, realistic tofu pores and mushroom texture, gentle warm broth sheen, no plastic food. White bowl on neutral pale tabletop, soft daylight, whole bowl and entire food visible with generous margin. Remove red logo. No text, hands, utensils or other dishes.",
+            "createdAt": "2026-10-24T08:02:02.714107+00:00",
+            "originalSha256": "549f19432f001ded1b745b3f984d2ffac526b2638f53ac6a4739aa0c46ef97f1",
+            "operation": "reference-guided reconstruction",
+            "reference": {
+              "sha256": "d5ad310970cd5193cdf2c706823bea5037dfc8cfe057086d97406c08324c4078",
+              "candidateId": "21b46f576529fdb3",
+              "sourceUrl": "https://lovinghut.us/orlando/"
+            }
+          },
+          "alt": "Menu illustration of Pho",
+          "credit": "Verifed generated menu illustration",
+          "reviewNotes": "Unlisted visible star-anise pod; selected removal/framing repair."
+        },
+        {
+          "id": "generated-b84d4366dbd5a286",
+          "origin": "generated",
+          "kind": "generated-illustration",
+          "path": "mobile/assets/food/loving-hut-orlando/pho.webp",
+          "sha256": "bd4484c2397a36a13004d5003f4d27b216c673090877a29b60a710b0703ecd6a",
+          "pixelHash": "f0755a593767a66a9ca4077fa00b866c6a1abfccf1563e5b4949e16240460d36",
+          "width": 1200,
+          "height": 800,
+          "bytes": 116660,
+          "status": "generated-awaiting-visual-review",
+          "generation": {
+            "tool": "image_gen.imagegen built-in",
+            "prompt": "Edit this vegan Pho menu illustration with two precise corrections. Remove the visible dark brown star-anise pod near the upper-left basil leaves; replace its space with the existing broth only. There must be NO star anise pod anywhere. Preserve the exact tofu, TVP, mushrooms, rice noodles, bean sprouts, onions, cilantro and Thai basil already pictured. Zoom out slightly so the entire white bowl and all food have clear margin on every side. Do not add ingredients, sides or garnishes. Keep realistic textures, natural soft light and pale neutral tabletop. No text or logos.",
+            "createdAt": "2026-10-24T08:04:14.465200+00:00",
+            "originalSha256": "b84d4366dbd5a286be0bb67f8fad2780e5d970db1361e78c6b72af44ae981302",
+            "operation": "reference-guided reconstruction",
+            "reference": {
+              "sha256": "549f19432f001ded1b745b3f984d2ffac526b2638f53ac6a4739aa0c46ef97f1",
+              "candidateId": "generated-549f19432f001ded",
+              "sourceUrl": null
+            }
+          },
+          "alt": "Menu illustration of Pho",
+          "credit": "Verifed generated menu illustration"
         }
       ],
       "searchLog": [],
       "review": {
-        "status": "needs-replacement",
-        "selectedCandidateId": null,
-        "inspectedAt": "2026-10-24T07:33:31.048543+00:00",
+        "status": "approved",
+        "selectedCandidateId": "generated-b84d4366dbd5a286",
+        "inspectedAt": "2026-10-24T08:05:49.168163+00:00",
         "reviewer": "Codex visual inspection",
-        "notes": "Visually inspected official candidate against its ingredient description. Current source is low-resolution, poorly lit, tightly framed, or needs a portion check; requires improvement before final approval."
+        "notes": "Inspected optimized repaired WebP: white rice noodles, golden tofu, browned TVP, mushrooms, sprouts, onions, cilantro and Thai basil in light amber broth. Unlisted visible star-anise pod from the initial draft has been removed. Entire bowl and food now have margin. Hidden broth formulation is not inferred.",
+        "checks": {
+          "identity": "pass",
+          "ingredients": "pass",
+          "portion": "pass",
+          "framing": "pass",
+          "quality": "pass"
+        }
       }
     },
     {
@@ -9993,15 +10279,75 @@
           "width": 300,
           "height": 200,
           "bytes": 14090
+        },
+        {
+          "id": "generated-fa3d26689a169f69",
+          "origin": "generated",
+          "kind": "generated-illustration",
+          "path": "research/generated-photo-candidates/loving-hut-orlando-bun-hue-fa3d2668.webp",
+          "sha256": "1fd4a6d37133a49219387a88a23839f709a7414588ecf040733bee2a0b3c7ff1",
+          "pixelHash": "91255b69cb80b9c16e19cdd0bbb690b3d1c3f66e217de4ab3a3fe7e5fd40417c",
+          "width": 1200,
+          "height": 800,
+          "bytes": 170238,
+          "status": "rejected-after-visual-review",
+          "generation": {
+            "tool": "image_gen.imagegen built-in",
+            "prompt": "Improve this low-resolution official Loving Hut Orlando Bun Hue photograph into sharp photorealistic menu photography. One white bowl of spicy red-orange vegan lemongrass broth containing round white rice noodles, golden tofu cubes, dark brown textured vegetable protein pieces, mushrooms, bean sprouts, onion, fresh Thai basil. Recipe also contains lemongrass and garlic in the broth. Preserve the recognizable red soup, broad visible noodles and tofu/protein distribution from reference. No real meat, shrimp, fish, blood cubes, eggs, cheese, dumplings or carrots; this is the vegan Orlando recipe. Natural broth surface sheen and realistic noodle/protein textures, soft daylight. Neutral pale tabletop. Entire bowl and all food visible with ample clear margin, not a close crop. No logos, text, hands, chopsticks or other dishes.",
+            "createdAt": "2026-10-24T08:02:22.173372+00:00",
+            "originalSha256": "fa3d26689a169f69b3c98d46dba05c3c9088363c8b066293345bac218d02776b",
+            "operation": "reference-guided reconstruction",
+            "reference": {
+              "sha256": "04a88c5dd3af95d161fb8adb143324a35e9fabbf65dde21f118d8b1a0e98febe",
+              "candidateId": "95207841fcf9158e",
+              "sourceUrl": "https://lovinghut.us/orlando/"
+            }
+          },
+          "alt": "Menu illustration of Bun Hue",
+          "credit": "Verifed generated menu illustration",
+          "reviewNotes": "Lobed parsley-like garnish instead of Thai basil; selected herb repair."
+        },
+        {
+          "id": "generated-b3b893ebe70bedfd",
+          "origin": "generated",
+          "kind": "generated-illustration",
+          "path": "mobile/assets/food/loving-hut-orlando/bun-hue.webp",
+          "sha256": "301efe63d6e4517b113fdfa3ca0c8441a70cbd008d6677dd4fb2cb1579c37d76",
+          "pixelHash": "8a2ce0b19f232111d9bc17f3014d485cb2f46c290b4e993019b874f241229605",
+          "width": 1200,
+          "height": 800,
+          "bytes": 135604,
+          "status": "generated-awaiting-visual-review",
+          "generation": {
+            "tool": "image_gen.imagegen built-in",
+            "prompt": "Edit this vegan Bun Hue menu illustration: replace ONLY the large deeply lobed parsley/cilantro-like garnish in the center with a small natural sprig of THAI BASIL, recognizable by smooth narrow oval pointed green leaves and a delicate purple stem. Thai basil leaves are not broad deeply lobed parsley leaves. Preserve the red-orange broth, round rice noodles, tofu cubes, browned TVP, mushrooms, bean sprouts and onions. Zoom out slightly so the entire bowl is visible with clear margin. No new meat, seafood, eggs, vegetables, sides, spices, text or logo.",
+            "createdAt": "2026-10-24T08:04:38.635408+00:00",
+            "originalSha256": "b3b893ebe70bedfdf0a91c62ae50414ae9d15c91af43733232749df58ce2cd87",
+            "operation": "reference-guided reconstruction",
+            "reference": {
+              "sha256": "fa3d26689a169f69b3c98d46dba05c3c9088363c8b066293345bac218d02776b",
+              "candidateId": "generated-fa3d26689a169f69",
+              "sourceUrl": null
+            }
+          },
+          "alt": "Menu illustration of Bun Hue",
+          "credit": "Verifed generated menu illustration"
         }
       ],
       "searchLog": [],
       "review": {
-        "status": "needs-replacement",
-        "selectedCandidateId": null,
-        "inspectedAt": "2026-10-24T07:33:31.048543+00:00",
+        "status": "approved",
+        "selectedCandidateId": "generated-b3b893ebe70bedfd",
+        "inspectedAt": "2026-10-24T08:05:49.168163+00:00",
         "reviewer": "Codex visual inspection",
-        "notes": "Visually inspected official candidate against its ingredient description. Current source is low-resolution, poorly lit, tightly framed, or needs a portion check; requires improvement before final approval."
+        "notes": "Inspected optimized repaired WebP: red spicy broth, round white rice noodles, tofu, TVP, mushroom, sprouts and onion with recognizable narrow-leaf Thai basil and purple stem. Incorrect lobed herb from first draft replaced. Full bowl and food framed; no meat or seafood.",
+        "checks": {
+          "identity": "pass",
+          "ingredients": "pass",
+          "portion": "pass",
+          "framing": "pass",
+          "quality": "pass"
+        }
       }
     },
     {
@@ -10044,15 +10390,48 @@
           "width": 300,
           "height": 200,
           "bytes": 10654
+        },
+        {
+          "id": "generated-aa3738d380ab2de0",
+          "origin": "generated",
+          "kind": "generated-illustration",
+          "path": "mobile/assets/food/loving-hut-orlando/yogi-rice-noodle-soup-hu-tieu.webp",
+          "sha256": "6f0051d7b87a5d8d906b1fd1177a2b37025b5f7fc88c5da7d63099071bd77d86",
+          "pixelHash": "b765918e2898fa2c795e8fb47625fb740c4721acb48508bd57d28f4187851855",
+          "width": 1200,
+          "height": 800,
+          "bytes": 141968,
+          "status": "generated-awaiting-visual-review",
+          "generation": {
+            "tool": "image_gen.imagegen built-in",
+            "prompt": "Reconstruct this tiny official Loving Hut Orlando Yogi Rice Noodle Soup (Hu Tieu) photograph as clean photorealistic menu photography. One white bowl of light clear golden broth containing white rice noodles, sliced king oyster mushrooms, smooth white-and-pink vegan shrimp-style pieces with no shell/tail, golden tofu, pale pink vegan ham slices, bean sprouts, chopped green onion, cilantro and a modest scattering of fried garlic. These are the exact published ingredients. Preserve the reference's open white bowl, light broth and pale plant-based protein arrangement. No eggs, actual seafood/meat, basil, chili oil, carrots or unrelated garnish. Realistic thin noodle strands, porous tofu and mushroom cut surfaces, natural varied shapes. Plain pale tabletop, softly diffused daylight, entire bowl and all food visible with ample clear margin. Remove logo. No text, utensils, hands or side dishes.",
+            "createdAt": "2026-10-24T08:16:18.175105+00:00",
+            "originalSha256": "aa3738d380ab2de0f9af65926b4fb929986a161732ebb9fbf7e86a71dcb41460",
+            "operation": "reference-guided reconstruction",
+            "reference": {
+              "sha256": "83640182b08dd0ab4d34211649c66d8431777301de0e03a4ef62324e20432bb5",
+              "candidateId": "f1f4eb2b80ae09ee",
+              "sourceUrl": "https://lovinghut.us/orlando/"
+            }
+          },
+          "alt": "Menu illustration of Yogi Rice Noodle Soup - Hủ Tiếu",
+          "credit": "Verifed generated menu illustration"
         }
       ],
       "searchLog": [],
       "review": {
-        "status": "needs-replacement",
-        "selectedCandidateId": null,
-        "inspectedAt": "2026-10-24T07:33:31.048543+00:00",
+        "status": "approved",
+        "selectedCandidateId": "generated-aa3738d380ab2de0",
+        "inspectedAt": "2026-10-24T08:18:49.527050+00:00",
         "reviewer": "Codex visual inspection",
-        "notes": "Visually inspected official candidate against its ingredient description. Current source is low-resolution, poorly lit, tightly framed, or needs a portion check; requires improvement before final approval."
+        "notes": "Inspected optimized WebP against official photo: light broth with white rice noodles, king oyster slices, smooth vegan shrimp-style pieces, tofu, vegan ham, sprouts, green onion, cilantro and fried garlic. No real shellfish or egg. Whole food surface visible; portion follows official bowl photo, volume unpublished.",
+        "checks": {
+          "identity": "pass",
+          "ingredients": "pass",
+          "portion": "pass",
+          "framing": "pass",
+          "quality": "pass"
+        }
       }
     },
     {
@@ -10094,15 +10473,75 @@
           "width": 300,
           "height": 200,
           "bytes": 9598
+        },
+        {
+          "id": "generated-dc25a7a02f80e84c",
+          "origin": "generated",
+          "kind": "generated-illustration",
+          "path": "research/generated-photo-candidates/loving-hut-orlando-small-wonton-soup-dc25a7a0.webp",
+          "sha256": "c3f52d7fee10611b7f2b5a3db99716f714c49e93fa9760b12e874e21abc6e409",
+          "pixelHash": "23472469fa7df7efc549bc2a7fef1604994170aa3b53a94a69a6781ab0c492af",
+          "width": 1200,
+          "height": 800,
+          "bytes": 116438,
+          "status": "rejected-after-visual-review",
+          "generation": {
+            "tool": "image_gen.imagegen built-in",
+            "prompt": "Reconstruct this low-resolution official Loving Hut Orlando Small Wonton Soup photo as sharp realistic menu photography. Preserve a SINGLE small deep blue bowl of clear light amber broth with THREE visibly distinct soft folded pale wontons, a little chopped cilantro and green onion, and fine fried onion flakes. The closed wontons contain jicama, soy protein, mushroom and onion, with sesame oil in the dish; no meat/seafood. Match the simple photographed small serving, not a large noodle bowl. No noodles, carrots, spinach, shrimp, peas, extra dumplings or sesame seeds. Natural translucent wrapper folds and gentle broth reflections, soft daylight on neutral pale tabletop. Entire bowl and all food visible with generous clear margin on every side. Remove red logo. No text, hands, utensils or side dishes.",
+            "createdAt": "2026-10-24T08:16:38.820430+00:00",
+            "originalSha256": "dc25a7a02f80e84c4173e12b9f8d602fffb85c5419bb25803150731b7d315e5a",
+            "operation": "reference-guided reconstruction",
+            "reference": {
+              "sha256": "2354ad9141532baab6ced5c8033ad842640fd925a8af03a6cf4a36c838fe1db7",
+              "candidateId": "4a2230cadae049a5",
+              "sourceUrl": "https://lovinghut.us/orlando/"
+            }
+          },
+          "alt": "Menu illustration of Small Wonton Soup",
+          "credit": "Verifed generated menu illustration",
+          "reviewNotes": "Four wontons rather than the three forms in the reference; selected count repair."
+        },
+        {
+          "id": "generated-cb6e15f0ea736d17",
+          "origin": "generated",
+          "kind": "generated-illustration",
+          "path": "mobile/assets/food/loving-hut-orlando/small-wonton-soup.webp",
+          "sha256": "543a99e8ba74927295eb610fef8ba76c2302a28a9880c5de53c7d1de891c8615",
+          "pixelHash": "daf082a765a8a3749b907af85bf71bbefdbb9587ae8985d2834588f2cd46e146",
+          "width": 1200,
+          "height": 800,
+          "bytes": 110538,
+          "status": "generated-awaiting-visual-review",
+          "generation": {
+            "tool": "image_gen.imagegen built-in",
+            "prompt": "Correct the serving count in this Small Wonton Soup illustration. It currently shows four wontons. Show exactly THREE distinct folded wontons, one at the rear center, one at front left and one at front right, separated by visible clear broth. Remove the extra rear-left wonton entirely, replacing its area with broth only. Keep the small blue bowl, light amber broth, cilantro, green onion and fried onion flakes. Do not add noodles, vegetables or other food. Zoom out slightly to keep the entire bowl visible with ample margin. Realistic natural light and textures, no text or logos.",
+            "createdAt": "2026-10-24T08:19:24.444715+00:00",
+            "originalSha256": "cb6e15f0ea736d17cd8ec4332d9837177f1ac002357ad757b9f18b635588ba29",
+            "operation": "reference-guided reconstruction",
+            "reference": {
+              "sha256": "dc25a7a02f80e84c4173e12b9f8d602fffb85c5419bb25803150731b7d315e5a",
+              "candidateId": "generated-dc25a7a02f80e84c",
+              "sourceUrl": null
+            }
+          },
+          "alt": "Menu illustration of Small Wonton Soup",
+          "credit": "Verifed generated menu illustration"
         }
       ],
       "searchLog": [],
       "review": {
-        "status": "needs-replacement",
-        "selectedCandidateId": null,
-        "inspectedAt": "2026-10-24T07:33:31.048543+00:00",
+        "status": "approved",
+        "selectedCandidateId": "generated-cb6e15f0ea736d17",
+        "inspectedAt": "2026-10-24T08:22:09.324526+00:00",
         "reviewer": "Codex visual inspection",
-        "notes": "Visually inspected official candidate against its ingredient description. Current source is low-resolution, poorly lit, tightly framed, or needs a portion check; requires improvement before final approval."
+        "notes": "Inspected optimized repaired WebP: exactly three distinct folded wontons in the small blue bowl with cilantro, green onion and fried onion. Initial four-wonton draft corrected to the three visible forms in the official reference. No noodles or other vegetables. Full bowl framed; hidden jicama/soy/mushroom filling is specified by menu, not proven visually.",
+        "checks": {
+          "identity": "pass",
+          "ingredients": "pass",
+          "portion": "pass",
+          "framing": "pass",
+          "quality": "pass"
+        }
       }
     },
     {
@@ -10141,15 +10580,48 @@
           "width": 350,
           "height": 350,
           "bytes": 14896
+        },
+        {
+          "id": "generated-bc0b0813cee7ce90",
+          "origin": "generated",
+          "kind": "generated-illustration",
+          "path": "mobile/assets/food/loving-hut-orlando/small-tofu-soup.webp",
+          "sha256": "02528d4af5c56687685b32c33efee3e8f94434ea2fe3f90d7f42ccbb662ef47c",
+          "pixelHash": "468878f932b1c8dad1b07de03dc9c32e1956fa5b29d23456d321aacc452b5296",
+          "width": 1200,
+          "height": 1200,
+          "bytes": 182508,
+          "status": "generated-awaiting-visual-review",
+          "generation": {
+            "tool": "image_gen.imagegen built-in",
+            "prompt": "Improve this low-resolution official Loving Hut Orlando Small Tofu Soup photo into sharp realistic menu photography. Preserve one small white bowl of clear very pale broth with clean ivory tofu cubes, wilted dark green spinach leaves, a few thin orange carrot strips, chopped green onion and fresh cilantro. These five ingredients are the exact published dish description. No meat, seafood, noodles, mushrooms, wontons, sesame seeds or other garnish. Match the simple small tofu-soup serving in the reference, naturally varied tofu cube sizes and spinach folds, not a huge bowl. Remove decorative flowers. Soft daylight and neutral pale stone tabletop, entire bowl and all food visible with generous margin. No text, logos, spoons, hands or extra dishes.",
+            "createdAt": "2026-10-24T08:16:59.119861+00:00",
+            "originalSha256": "bc0b0813cee7ce907c52d9b65810784f743637c2f7191996e3630ff5d3f649e3",
+            "operation": "reference-guided reconstruction",
+            "reference": {
+              "sha256": "830fbd7035d85dc8ad6aa3e4b3fc00362c99d63e6fb4f3ab0eea8f559b006575",
+              "candidateId": "14a0861000289fe2",
+              "sourceUrl": "https://lovinghut.us/orlando/"
+            }
+          },
+          "alt": "Menu illustration of Small Tofu Soup",
+          "credit": "Verifed generated menu illustration"
         }
       ],
       "searchLog": [],
       "review": {
-        "status": "needs-replacement",
-        "selectedCandidateId": null,
-        "inspectedAt": "2026-10-24T07:33:31.048543+00:00",
+        "status": "approved",
+        "selectedCandidateId": "generated-bc0b0813cee7ce90",
+        "inspectedAt": "2026-10-24T08:18:49.527050+00:00",
         "reviewer": "Codex visual inspection",
-        "notes": "Visually inspected official candidate against its ingredient description. Current source is low-resolution, poorly lit, tightly framed, or needs a portion check; requires improvement before final approval."
+        "notes": "Inspected optimized WebP: one small bowl with ivory tofu cubes, wilted spinach, thin carrot strips, green onion and cilantro in clear broth, matching official menu/reference. No mushrooms or noodles introduced. Full bowl visible and realistic natural textures.",
+        "checks": {
+          "identity": "pass",
+          "ingredients": "pass",
+          "portion": "pass",
+          "framing": "pass",
+          "quality": "pass"
+        }
       }
     },
     {
@@ -10190,15 +10662,48 @@
           "width": 300,
           "height": 200,
           "bytes": 8786
+        },
+        {
+          "id": "generated-9ada7e2865af6b2d",
+          "origin": "generated",
+          "kind": "generated-illustration",
+          "path": "mobile/assets/food/loving-hut-orlando/small-seaweed-soup.webp",
+          "sha256": "5fd6621cf0ded349fd309857f88760ae6f06e65f308027bf66bf7004f28891c3",
+          "pixelHash": "4110a1d8c517780bd2506e05921683967e74605953ec16f879c5a61f7a61f205",
+          "width": 1200,
+          "height": 800,
+          "bytes": 158050,
+          "status": "generated-awaiting-visual-review",
+          "generation": {
+            "tool": "image_gen.imagegen built-in",
+            "prompt": "Reconstruct this tiny official Loving Hut Orlando Small Seaweed Soup photo as sharp realistic menu photography. ONE small dark bowl of clear light broth with dark tender seaweed ribbons, a few thin orange carrot rounds with scalloped edges matching the reference, mushroom slices, wilted spinach, chopped green onion, cilantro and tiny fried garlic flakes. These are exactly the published ingredients. No tofu, noodles, wontons, meat, egg, seafood or sesame seeds. Preserve the simple small soup bowl and carrot-green-herb arrangement, improve natural textures and lighting. Neutral pale tabletop, soft daylight, entire bowl and all food fully visible with ample margin. No text, logos, hands or spoons.",
+            "createdAt": "2026-10-24T08:21:04.543580+00:00",
+            "originalSha256": "9ada7e2865af6b2d4a308bad3c618373f835ab0464f53094f7431afeb7aa8305",
+            "operation": "reference-guided reconstruction",
+            "reference": {
+              "sha256": "2b6e25c0c5a6ba748c4a046bed8e0b382ca2055bcc6892f5bd187e10f6542fb7",
+              "candidateId": "fba42d739323890b",
+              "sourceUrl": "https://lovinghut.us/orlando/"
+            }
+          },
+          "alt": "Menu illustration of Small Seaweed Soup",
+          "credit": "Verifed generated menu illustration"
         }
       ],
       "searchLog": [],
       "review": {
-        "status": "needs-replacement",
-        "selectedCandidateId": null,
-        "inspectedAt": "2026-10-24T07:33:31.048543+00:00",
+        "status": "approved",
+        "selectedCandidateId": "generated-9ada7e2865af6b2d",
+        "inspectedAt": "2026-10-24T08:22:09.324526+00:00",
         "reviewer": "Codex visual inspection",
-        "notes": "Visually inspected official candidate against its ingredient description. Current source is low-resolution, poorly lit, tightly framed, or needs a portion check; requires improvement before final approval."
+        "notes": "Inspected optimized WebP: one small dark bowl with seaweed ribbons, scalloped carrot rounds, mushroom, spinach, green onion, cilantro and fried garlic. Matches official reference/recipe with no tofu or noodles. All food visible and detailed texture.",
+        "checks": {
+          "identity": "pass",
+          "ingredients": "pass",
+          "portion": "pass",
+          "framing": "pass",
+          "quality": "pass"
+        }
       }
     },
     {
@@ -10236,15 +10741,75 @@
           "width": 150,
           "height": 150,
           "bytes": 6384
+        },
+        {
+          "id": "generated-23ae5732cc913b4e",
+          "origin": "generated",
+          "kind": "generated-illustration",
+          "path": "research/generated-photo-candidates/loving-hut-orlando-chickun-burger-23ae5732.webp",
+          "sha256": "fc512d39024ef19a9af9be84f94ad0176d5c5e052751fb48112968d44949f71d",
+          "pixelHash": "eeaac8ae2964d4b67cd087292cdc2d7fe00f4af6b749495631e78272b5a9be58",
+          "width": 1200,
+          "height": 1200,
+          "bytes": 208718,
+          "status": "rejected-after-visual-review",
+          "generation": {
+            "tool": "image_gen.imagegen built-in",
+            "prompt": "Reconstruct this tiny official Loving Hut Orlando Chickun Burger photo as sharp realistic menu photography from a slightly lower three-quarter angle, showing the filling. ONE vegan chicken burger on a softly browned round bun, filled with a golden plant-based chicken patty, a little onion, cilantro and a modest layer of pale orange vegan Thousand Islands sauce. These are the current menu ingredients, with French fries included. Show the burger and one modest side pile of straight golden French fries on one white plate, plus a tiny separate cup of the same sauce as the reference. No cheese, tomato, lettuce, real chicken, bacon, pickles or other toppings. Natural toasted bun and irregular crispy plant-based patty texture, neutral pale tabletop and soft daylight. Entire burger, fries, cup and plate visible with clear margins, no food crop, no text/logos/hands.",
+            "createdAt": "2026-10-24T08:19:48.061473+00:00",
+            "originalSha256": "23ae5732cc913b4ea0dcd7bac03d12cf81a562969a01f2ebdbe7b8beeb598bb3",
+            "operation": "reference-guided reconstruction",
+            "reference": {
+              "sha256": "47b9e8a0106ba2e77690627c59c60b002828fd03ee0d912467fb9c0637dc622f",
+              "candidateId": "b640bcc5e77ac3f8",
+              "sourceUrl": "https://lovinghut.us/orlando/"
+            }
+          },
+          "alt": "Menu illustration of Chickun Burger",
+          "credit": "Verifed generated menu illustration",
+          "reviewNotes": "Fries cut off at left edge; selected zoomed-out framing repair."
+        },
+        {
+          "id": "generated-04286e1812c4bcd0",
+          "origin": "generated",
+          "kind": "generated-illustration",
+          "path": "mobile/assets/food/loving-hut-orlando/chickun-burger.webp",
+          "sha256": "87f1c5eab341a6889c69a9e3d7c6e6c63dc373f55b2ad1996f990232655e9bdc",
+          "pixelHash": "a89233e2b2de5b7b69973b45dfa7e234982cfc114c082deb0c83677f28fbd8ae",
+          "width": 1200,
+          "height": 1200,
+          "bytes": 196664,
+          "status": "generated-awaiting-visual-review",
+          "generation": {
+            "tool": "image_gen.imagegen built-in",
+            "prompt": "Fix framing only. The French fries are cut off on the left edge. Pull the camera back by at least 35 percent so the ENTIRE burger, EVERY French fry, whole sauce cup and whole plate are comfortably inside the image with at least 15 percent empty neutral tabletop margin on all four sides. Preserve the exact existing food, bun, plant-based patty, onion, cilantro and orange vegan dressing. Do not add ingredients or remove any food. Keep photorealistic textures and soft daylight. No text or logos.",
+            "createdAt": "2026-10-24T08:23:56.477636+00:00",
+            "originalSha256": "04286e1812c4bcd0f1540c4ccb8b366710b7587ba10f60754f238950edfb1b4e",
+            "operation": "reference-guided reconstruction",
+            "reference": {
+              "sha256": "23ae5732cc913b4ea0dcd7bac03d12cf81a562969a01f2ebdbe7b8beeb598bb3",
+              "candidateId": "generated-23ae5732cc913b4e",
+              "sourceUrl": null
+            }
+          },
+          "alt": "Menu illustration of Chickun Burger",
+          "credit": "Verifed generated menu illustration"
         }
       ],
       "searchLog": [],
       "review": {
-        "status": "needs-replacement",
-        "selectedCandidateId": null,
-        "inspectedAt": "2026-10-24T07:33:31.048543+00:00",
+        "status": "approved",
+        "selectedCandidateId": "generated-04286e1812c4bcd0",
+        "inspectedAt": "2026-10-24T08:29:07.388743+00:00",
         "reviewer": "Codex visual inspection",
-        "notes": "Visually inspected official candidate against its ingredient description. Current source is low-resolution, poorly lit, tightly framed, or needs a portion check; requires improvement before final approval."
+        "notes": "Inspected optimized framing repair: entire burger, all fries and separate dressing cup visible with margins. Golden plant-based patty, onion, cilantro and pale orange sauce match current menu; no lettuce/tomato/cheese introduced. Initial left-edge fry crop corrected.",
+        "checks": {
+          "identity": "pass",
+          "ingredients": "pass",
+          "portion": "pass",
+          "framing": "pass",
+          "quality": "pass"
+        }
       }
     },
     {
@@ -10284,15 +10849,48 @@
           "width": 300,
           "height": 200,
           "bytes": 7536
+        },
+        {
+          "id": "generated-849c10ecd2c28839",
+          "origin": "generated",
+          "kind": "generated-illustration",
+          "path": "mobile/assets/food/loving-hut-orlando/loving-burger.webp",
+          "sha256": "08e380530fa8f116e76416f170c9f3fb6c65d7a777bca3c137575d4904fa8008",
+          "pixelHash": "a1c93b4e0184e6db7dd36f26837a9b9b0235e3ea7e43a04f544b19ad328c0272",
+          "width": 1200,
+          "height": 800,
+          "bytes": 98828,
+          "status": "generated-awaiting-visual-review",
+          "generation": {
+            "tool": "image_gen.imagegen built-in",
+            "prompt": "Reconstruct this low-resolution official Loving Hut Orlando Loving Burger photo as photorealistic current-menu photography. ONE round burger with a browned plant-based Impossible patty, crisp lettuce, sliced onion, red tomato, pickle and a small amount of white vegan mayonnaise on a plain lightly toasted golden round bun. No cheese, bacon, egg or extra sauce. Current menu says served with French fries: arrange one modest portion of golden straight fries beside it on one white plate rather than the older reference's thick potato wedges. Preserve the reference's simple burger presentation, realistic cooked patty and bread texture, natural varied shapes. Soft daylight, neutral pale tabletop, entire burger and all fries fully visible with generous margin. Remove the red logo. No text, hands, utensils or additional dishes.",
+            "createdAt": "2026-10-24T08:20:06.872325+00:00",
+            "originalSha256": "849c10ecd2c2883991f9049372336d73ae75d8626f826cb51b22c363fcad3ada",
+            "operation": "reference-guided reconstruction",
+            "reference": {
+              "sha256": "dc47da3e03eaf42dff6c86e75b49a8afe2d5cd3cdc5a29d62ede9fdeba2d2ec9",
+              "candidateId": "6376884a8b6b731d",
+              "sourceUrl": "https://lovinghut.us/orlando/"
+            }
+          },
+          "alt": "Menu illustration of Loving Burger",
+          "credit": "Verifed generated menu illustration"
         }
       ],
       "searchLog": [],
       "review": {
-        "status": "needs-replacement",
-        "selectedCandidateId": null,
-        "inspectedAt": "2026-10-24T07:33:31.048543+00:00",
+        "status": "approved",
+        "selectedCandidateId": "generated-849c10ecd2c28839",
+        "inspectedAt": "2026-10-24T08:22:09.324526+00:00",
         "reviewer": "Codex visual inspection",
-        "notes": "Visually inspected official candidate against its ingredient description. Current source is low-resolution, poorly lit, tightly framed, or needs a portion check; requires improvement before final approval."
+        "notes": "Inspected optimized WebP: one browned plant-based burger patty, lettuce, onion, tomato, pickle and white vegan mayonnaise on round bun, with included fries. No cheese/bacon. Full food visible. Straight fries follow current menu rather than the older official photo's potato wedges; portion weight unpublished.",
+        "checks": {
+          "identity": "pass",
+          "ingredients": "pass",
+          "portion": "pass",
+          "framing": "pass",
+          "quality": "pass"
+        }
       }
     },
     {
@@ -10331,15 +10929,48 @@
           "width": 300,
           "height": 200,
           "bytes": 8978
+        },
+        {
+          "id": "generated-2c696933392ba8f1",
+          "origin": "generated",
+          "kind": "generated-illustration",
+          "path": "mobile/assets/food/loving-hut-orlando/philly-love.webp",
+          "sha256": "60531f7a494a5528df5d1abd1808789c6aa0173d6502c0b18ff0ef28a0ab37fc",
+          "pixelHash": "9a08929547ab79d23fcd4b73e978420393a100c6f6333f55699805fcae52fe5a",
+          "width": 1200,
+          "height": 800,
+          "bytes": 158040,
+          "status": "generated-awaiting-visual-review",
+          "generation": {
+            "tool": "image_gen.imagegen built-in",
+            "prompt": "Improve this official Loving Hut Orlando Philly Love sandwich photo into sharp photorealistic menu photography. ONE long golden toasted hoagie-style roll filled with dark browned textured vegetable protein, sautéed onion, green bell pepper strips, a little garlic and thin vegan mayonnaise spread. Exact menu ingredients: TVP, garlic, onion, green pepper, mayonnaise. Preserve the reference's elongated roll and dark browned soy filling; no cheese, real steak, mushrooms, lettuce, tomatoes or extra toppings. No fries because they are an optional paid addition, not part of the base item. One plain white plate on a neutral pale tabletop, soft natural light and realistic bread crust and soy-protein texture. Entire sandwich and plate in frame with generous margin, no food cut off. No text, logo, hands or utensils.",
+            "createdAt": "2026-10-24T08:20:31.219693+00:00",
+            "originalSha256": "2c696933392ba8f16b57e9b7b1595fc2dfe3571ec1e13f73782a9c07d94efc2e",
+            "operation": "reference-guided reconstruction",
+            "reference": {
+              "sha256": "522e44e7e321f329130e21ef26d6db304cb9c901d10fd61473626e21db25d764",
+              "candidateId": "8eed4a8068e67b4a",
+              "sourceUrl": "https://lovinghut.us/orlando/"
+            }
+          },
+          "alt": "Menu illustration of Philly Love",
+          "credit": "Verifed generated menu illustration"
         }
       ],
       "searchLog": [],
       "review": {
-        "status": "needs-replacement",
-        "selectedCandidateId": null,
-        "inspectedAt": "2026-10-24T07:33:31.048543+00:00",
+        "status": "approved",
+        "selectedCandidateId": "generated-2c696933392ba8f1",
+        "inspectedAt": "2026-10-24T08:22:09.324526+00:00",
         "reviewer": "Codex visual inspection",
-        "notes": "Visually inspected official candidate against its ingredient description. Current source is low-resolution, poorly lit, tightly framed, or needs a portion check; requires improvement before final approval."
+        "notes": "Inspected optimized WebP: one long golden roll with browned TVP, onion, green pepper and mayonnaise, no cheese or optional fries. Bread shape follows official reference; complete sandwich visible with natural crust/filling texture.",
+        "checks": {
+          "identity": "pass",
+          "ingredients": "pass",
+          "portion": "pass",
+          "framing": "pass",
+          "quality": "pass"
+        }
       }
     },
     {
@@ -10379,15 +11010,48 @@
           "width": 300,
           "height": 200,
           "bytes": 7018
+        },
+        {
+          "id": "generated-448589d658f17f0f",
+          "origin": "generated",
+          "kind": "generated-illustration",
+          "path": "mobile/assets/food/loving-hut-orlando/ocean-filet-burger.webp",
+          "sha256": "b2d3c416751c0432dbdc19f90d23e68e825a1e527c12ea7d81016572ed503e51",
+          "pixelHash": "b82e21bcdecebcb16dacfc767cd20ccaac8bb6ed1838c30e12665698ebb4ed31",
+          "width": 1200,
+          "height": 800,
+          "bytes": 121996,
+          "status": "generated-awaiting-visual-review",
+          "generation": {
+            "tool": "image_gen.imagegen built-in",
+            "prompt": "Improve this low-resolution official Loving Hut Orlando Ocean Filet Burger photo into sharp photorealistic current-menu photography. ONE round golden bun holding a single golden tempura plant-based ocean filet, lettuce, onion, pickle and pale orange vegan Thousand Islands dressing. This is vegan fish-style protein, no actual fish, cheese, tomatoes or egg. Current menu says served with French fries, so show a modest pile of golden straight French fries beside the burger rather than the old thick wedges. Preserve the reference's simple lettuce-and-golden-filet burger form. One white plate on a neutral pale tabletop, soft natural daylight, realistic light tempura craggy texture and softly toasted bun. Entire burger, all fries and plate fully visible with clear margin. Remove logo. No text, hands, skewers or other dishes.",
+            "createdAt": "2026-10-24T08:20:48.795297+00:00",
+            "originalSha256": "448589d658f17f0f706f1bf1432064a3b1f403c8160a54c0b405a572625ea489",
+            "operation": "reference-guided reconstruction",
+            "reference": {
+              "sha256": "aa9989f5716d0a860949c454c3eb7daa671399263d4543190915211c6010aefa",
+              "candidateId": "76c81eb6cb6843e7",
+              "sourceUrl": "https://lovinghut.us/orlando/"
+            }
+          },
+          "alt": "Menu illustration of Ocean Filet Burger",
+          "credit": "Verifed generated menu illustration"
         }
       ],
       "searchLog": [],
       "review": {
-        "status": "needs-replacement",
-        "selectedCandidateId": null,
-        "inspectedAt": "2026-10-24T07:33:31.048543+00:00",
+        "status": "approved",
+        "selectedCandidateId": "generated-448589d658f17f0f",
+        "inspectedAt": "2026-10-24T08:22:09.324526+00:00",
         "reviewer": "Codex visual inspection",
-        "notes": "Visually inspected official candidate against its ingredient description. Current source is low-resolution, poorly lit, tightly framed, or needs a portion check; requires improvement before final approval."
+        "notes": "Inspected optimized WebP: one golden plant-based tempura filet on bun with lettuce, onion, pickle and pale orange dressing, included fries. No tomato/cheese. Full food visible and realistic texture. Straight fries follow current menu wording; exact weight is unpublished.",
+        "checks": {
+          "identity": "pass",
+          "ingredients": "pass",
+          "portion": "pass",
+          "framing": "pass",
+          "quality": "pass"
+        }
       }
     },
     {
@@ -10428,15 +11092,48 @@
           "width": 350,
           "height": 350,
           "bytes": 32016
+        },
+        {
+          "id": "generated-4b77eaa08ba63ef4",
+          "origin": "generated",
+          "kind": "generated-illustration",
+          "path": "mobile/assets/food/loving-hut-orlando/singapore-curry-noodle.webp",
+          "sha256": "12d10a610d02082a98e0051935c9327f65264330c158c239bd040dead0443a9e",
+          "pixelHash": "65610cdfb5eb74d9f840852b3084c7c320ce0ea60b8e9216fedc6b9d6ec750f3",
+          "width": 1200,
+          "height": 1200,
+          "bytes": 194560,
+          "status": "generated-awaiting-visual-review",
+          "generation": {
+            "tool": "image_gen.imagegen built-in",
+            "prompt": "Reconstruct this tiny official Loving Hut Orlando Singapore Curry Noodle photo. One generous serving of fine thin yellow curry-seasoned rice noodles stir-fried with browned soy protein, golden fried tofu, pale napa and cabbage, thin orange carrots and smooth pink-white vegan shrimp-style pieces, no actual seafood. Use exactly the published ingredients: thin rice noodles, soy protein, fried tofu, napa, cabbage, carrots, vegan shrimp, curry. Preserve the thin noodle and varied soy/tofu presentation, no mushrooms, broccoli, cilantro, nuts or sesame garnish. Remove the decorative flowers. Photorealistic restaurant menu illustration, soft daylight, realistic varied textures. Camera pulled back: the complete white serving plate and every food edge must fit comfortably inside the image with a broad 15% empty pale tabletop border on every side. Nothing touches the image edges. No text, logo, hands, cutlery, flowers or unrelated sides.",
+            "createdAt": "2026-10-24T08:24:20.660180+00:00",
+            "originalSha256": "4b77eaa08ba63ef45b5de41df89c86dd62f946bf4c1c882701bb1587b6b25679",
+            "operation": "reference-guided reconstruction",
+            "reference": {
+              "sha256": "da4623bdaed68492b33574f51d16a0e4e56c9f2d624e4dea42303c286894565d",
+              "candidateId": "4603ec4d6a2655a1",
+              "sourceUrl": "https://lovinghut.us/orlando/"
+            }
+          },
+          "alt": "Menu illustration of Singapore Curry Noodle",
+          "credit": "Verifed generated menu illustration"
         }
       ],
       "searchLog": [],
       "review": {
-        "status": "needs-replacement",
-        "selectedCandidateId": null,
-        "inspectedAt": "2026-10-24T07:33:31.048543+00:00",
+        "status": "approved",
+        "selectedCandidateId": "generated-4b77eaa08ba63ef4",
+        "inspectedAt": "2026-10-24T08:29:07.388743+00:00",
         "reviewer": "Codex visual inspection",
-        "notes": "Visually inspected official candidate against its ingredient description. Current source is low-resolution, poorly lit, tightly framed, or needs a portion check; requires improvement before final approval."
+        "notes": "Inspected optimized WebP: fine yellow curry rice noodles with soy protein, fried tofu, napa/cabbage, carrot and smooth shell-free vegan shrimp-style pieces. No unrelated garnish. Serving follows official photograph, all food and plate visible with realistic textures.",
+        "checks": {
+          "identity": "pass",
+          "ingredients": "pass",
+          "portion": "pass",
+          "framing": "pass",
+          "quality": "pass"
+        }
       }
     },
     {
@@ -10479,15 +11176,75 @@
           "width": 350,
           "height": 350,
           "bytes": 23988
+        },
+        {
+          "id": "generated-f363ee6b808ff250",
+          "origin": "generated",
+          "kind": "generated-illustration",
+          "path": "research/generated-photo-candidates/loving-hut-orlando-tofu-noodle-bun-xao-f363ee6b.webp",
+          "sha256": "968c011d37b7f91d5c464196d995ae7e625c639092f0c5cbc322c2a1f1f0a14b",
+          "pixelHash": "24ae91f716248da0dd7db8e406029ce4118b80228d11edf729e5256fed256ed5",
+          "width": 1200,
+          "height": 1200,
+          "bytes": 164340,
+          "status": "rejected-after-visual-review",
+          "generation": {
+            "tool": "image_gen.imagegen built-in",
+            "prompt": "Reconstruct the official Loving Hut Orlando Tofu Noodle (Bun Xao) photo. One bowl of white rice vermicelli with golden-brown strips of tofu, sautéed mushrooms and onion, bean sprouts, shredded lettuce and crushed roasted peanuts. Tofu cooked with lemongrass and garlic. Small separate white cup of thin amber Aulac dipping sauce (recipe unspecified), not peanut paste. Exclude cucumber sticks visible in the low-quality photo because cucumber is not in this item's published ingredients. No meat, seafood, egg, carrot, cilantro or sesame. Preserve the ingredient-separated noodle bowl presentation and toasted tofu texture. Photorealistic restaurant menu illustration, soft daylight, realistic varied textures. Camera pulled back: the complete white serving plate and every food edge must fit comfortably inside the image with a broad 15% empty pale tabletop border on every side. Nothing touches the image edges. No text, logo, hands, cutlery, flowers or unrelated sides.",
+            "createdAt": "2026-10-24T08:24:54.672439+00:00",
+            "originalSha256": "f363ee6b808ff2501825c2b42c8081693feb58e8b3c07bbd6c3803e762188807",
+            "operation": "reference-guided reconstruction",
+            "reference": {
+              "sha256": "08dd074790a9aa178b4d1e5bb47e8a6b5747f5f4c66884db92f7d58c0e1922e7",
+              "candidateId": "7013bedddf4c47e1",
+              "sourceUrl": "https://lovinghut.us/orlando/"
+            }
+          },
+          "alt": "Menu illustration of Tofu Noodle - Bún Xào",
+          "credit": "Verifed generated menu illustration",
+          "reviewNotes": "Unlisted sesame-like garnish and unsupported sauce chunks; selected correction."
+        },
+        {
+          "id": "generated-7c9529f99d803f67",
+          "origin": "generated",
+          "kind": "generated-illustration",
+          "path": "mobile/assets/food/loving-hut-orlando/tofu-noodle-bun-xao.webp",
+          "sha256": "4429af24378d425cc3275779448b325ca0cb241146b02b81e2c6fe7d7c8de6a6",
+          "pixelHash": "311046e358771f415b5c3619e938ad1c634674d67bf4a52cc3723d08e7737236",
+          "width": 1200,
+          "height": 1200,
+          "bytes": 149504,
+          "status": "generated-awaiting-visual-review",
+          "generation": {
+            "tool": "image_gen.imagegen built-in",
+            "prompt": "Correct only two ingredient details in this Tofu Noodle illustration. Remove every tiny oval white sesame-seed garnish from the tofu/mushroom/onion area; keep the chopped garlic because garlic IS in this recipe. Keep the larger tan roasted peanuts in the separate central pile. Change the dipping cup to plain THIN TRANSLUCENT AMBER Aulac-style sauce with NO visible chopped garlic, chili chunks, seeds or nut paste, since sauce formulation is unpublished. Preserve all rice noodles, tofu, mushroom, onion, sprouts, lettuce, peanuts and composition. No extra ingredients. Whole bowl, cup and food visible, realistic daylight, no text.",
+            "createdAt": "2026-10-24T08:32:10.612228+00:00",
+            "originalSha256": "7c9529f99d803f6762ed9b3a8953699dd44decceb197130cf5e4ae90024e25de",
+            "operation": "reference-guided reconstruction",
+            "reference": {
+              "sha256": "f363ee6b808ff2501825c2b42c8081693feb58e8b3c07bbd6c3803e762188807",
+              "candidateId": "generated-f363ee6b808ff250",
+              "sourceUrl": null
+            }
+          },
+          "alt": "Menu illustration of Tofu Noodle - Bún Xào",
+          "credit": "Verifed generated menu illustration"
         }
       ],
       "searchLog": [],
       "review": {
-        "status": "needs-replacement",
-        "selectedCandidateId": null,
-        "inspectedAt": "2026-10-24T07:33:31.048543+00:00",
+        "status": "approved",
+        "selectedCandidateId": "generated-7c9529f99d803f67",
+        "inspectedAt": "2026-10-24T08:43:57.825469+00:00",
         "reviewer": "Codex visual inspection",
-        "notes": "Visually inspected official candidate against its ingredient description. Current source is low-resolution, poorly lit, tightly framed, or needs a portion check; requires improvement before final approval."
+        "notes": "Inspected optimized repair: rice noodles, tofu strips, mushrooms, onion, sprouts, lettuce, garlic and distinct roasted peanut pile, with plain thin amber dipping sauce. Unlisted sesame garnish and unsupported visible sauce chunks removed; cucumber from the original reference excluded per recipe. Complete bowl and cup visible.",
+        "checks": {
+          "identity": "pass",
+          "ingredients": "pass",
+          "portion": "pass",
+          "framing": "pass",
+          "quality": "pass"
+        }
       }
     },
     {
@@ -10527,15 +11284,75 @@
           "width": 350,
           "height": 350,
           "bytes": 30932
+        },
+        {
+          "id": "generated-7b60ab9f177255ca",
+          "origin": "generated",
+          "kind": "generated-illustration",
+          "path": "research/generated-photo-candidates/loving-hut-orlando-lemongrass-noodle-7b60ab9f.webp",
+          "sha256": "109a03505576ea35334885292d185054df486a406351fdf37108a93f4e043efb",
+          "pixelHash": "a91c6ca1e8a3fb4760ae7aa1ca7770c62bbdf079fd7bb20460da7c977d59cb5a",
+          "width": 1200,
+          "height": 1200,
+          "bytes": 196304,
+          "status": "rejected-after-visual-review",
+          "generation": {
+            "tool": "image_gen.imagegen built-in",
+            "prompt": "Reconstruct this official Loving Hut Orlando Lemongrass Noodle photo. One white bowl with thin white rice noodles, substantial dark browned TVP pieces cooked with lemongrass and onion, fresh bean sprouts and shredded lettuce, topped with a modest sprinkle of crushed roasted peanuts. One small separate cup of thin translucent amber Aulac dipping sauce, no chunky peanut sauce. Exact menu ingredients: rice noodle, TVP with lemongrass, onion, bean sprouts, lettuce, roasted peanut and Aulac sauce. No real beef/meat, tofu, mushrooms, carrot, cucumber, cilantro or sesame. Keep the distinct dark soy-protein, white sprouts and green lettuce areas of the reference, natural irregular textures. Photorealistic restaurant menu illustration, soft daylight, realistic varied textures. Camera pulled back: the complete white serving plate and every food edge must fit comfortably inside the image with a broad 15% empty pale tabletop border on every side. Nothing touches the image edges. No text, logo, hands, cutlery, flowers or unrelated sides.",
+            "createdAt": "2026-10-24T08:25:32.422580+00:00",
+            "originalSha256": "7b60ab9f177255ca0352e54dc0bfde0b8fdddde3b2ccf70711bffc48f7eb397c",
+            "operation": "reference-guided reconstruction",
+            "reference": {
+              "sha256": "06246bb7efe9c607bc1d33c7dd87363a02ab431496a2c3bbb00d27eb94830a53",
+              "candidateId": "d8106ee28bd6cba0",
+              "sourceUrl": "https://lovinghut.us/orlando/"
+            }
+          },
+          "alt": "Menu illustration of Lemongrass Noodle",
+          "credit": "Verifed generated menu illustration",
+          "reviewNotes": "Unlisted sesame-like garnish and unsupported sauce chunks; selected correction."
+        },
+        {
+          "id": "generated-52604fdf66b6d3fe",
+          "origin": "generated",
+          "kind": "generated-illustration",
+          "path": "mobile/assets/food/loving-hut-orlando/lemongrass-noodle.webp",
+          "sha256": "4299eda9568b7064508ea75fc532d16b004b946dd5c650c362df28066768e197",
+          "pixelHash": "3021fa24640231319eb63041828e5682a17a12308933c3b32b2794d835b83cd9",
+          "width": 1200,
+          "height": 1200,
+          "bytes": 175484,
+          "status": "generated-awaiting-visual-review",
+          "generation": {
+            "tool": "image_gen.imagegen built-in",
+            "prompt": "Correct only the unlisted visible garnish in this Lemongrass Noodle illustration. Remove every small white/tan oval SESAME SEED sprinkled over the dark TVP pieces. Their surfaces should have natural browned textured vegetable protein pores, not seeds. Keep the distinct larger crushed roasted PEANUTS in the central pile because peanuts ARE in this recipe. Preserve the rice vermicelli, browned TVP, cooked onion, bean sprouts and lettuce. Dipping cup should hold plain thin translucent amber Aulac-style sauce without visible chili, garlic, seeds or chunky paste; sauce formulation is unpublished. No new ingredients. Whole bowl/cup/food framed with soft realistic daylight, no text.",
+            "createdAt": "2026-10-24T08:32:57.556895+00:00",
+            "originalSha256": "52604fdf66b6d3fe5e87e2f0f10902c2be51e9982d720cb6b376fd9749335537",
+            "operation": "reference-guided reconstruction",
+            "reference": {
+              "sha256": "7b60ab9f177255ca0352e54dc0bfde0b8fdddde3b2ccf70711bffc48f7eb397c",
+              "candidateId": "generated-7b60ab9f177255ca",
+              "sourceUrl": null
+            }
+          },
+          "alt": "Menu illustration of Lemongrass Noodle",
+          "credit": "Verifed generated menu illustration"
         }
       ],
       "searchLog": [],
       "review": {
-        "status": "needs-replacement",
-        "selectedCandidateId": null,
-        "inspectedAt": "2026-10-24T07:33:31.048543+00:00",
+        "status": "approved",
+        "selectedCandidateId": "generated-52604fdf66b6d3fe",
+        "inspectedAt": "2026-10-24T08:43:57.825469+00:00",
         "reviewer": "Codex visual inspection",
-        "notes": "Visually inspected official candidate against its ingredient description. Current source is low-resolution, poorly lit, tightly framed, or needs a portion check; requires improvement before final approval."
+        "notes": "Inspected optimized repair: browned TVP, onion, sprouts, lettuce, rice noodles and central roasted peanuts, plus plain thin amber sauce. White sesame-like garnish removed. Full bowl and cup visible, plant-protein textures follow official reference.",
+        "checks": {
+          "identity": "pass",
+          "ingredients": "pass",
+          "portion": "pass",
+          "framing": "pass",
+          "quality": "pass"
+        }
       }
     },
     {
@@ -10580,15 +11397,48 @@
           "width": 300,
           "height": 200,
           "bytes": 13786
+        },
+        {
+          "id": "generated-a4b3435d6116b74a",
+          "origin": "generated",
+          "kind": "generated-illustration",
+          "path": "mobile/assets/food/loving-hut-orlando/chow-mein-mi-xao.webp",
+          "sha256": "63bd1ec162edd4379cc229b41a24fa09adca798aa3fbeeb008c0069ee93569db",
+          "pixelHash": "88c2510f62031c75bf60bd3e8fd88ece2432e9d835573530bd709906659b3d36",
+          "width": 1200,
+          "height": 800,
+          "bytes": 124144,
+          "status": "generated-awaiting-visual-review",
+          "generation": {
+            "tool": "image_gen.imagegen built-in",
+            "prompt": "Reconstruct this tiny official Loving Hut Orlando Chow Mein (Mi Xao) photo into high quality. One generous serving of light golden wheat noodles, broad flat strands like the reference, stir-fried with golden tofu strips, bok choy, bean sprouts, browned TVP pieces, mushrooms, onion, celery, carrot strips, mixed vegetables and garlic. All ingredients listed in the current menu, no real meat, shrimp, egg, cheese, nuts or sesame. Keep the reference's light noodles with orange carrot and green vegetables; remove cilantro garnish because recipe doesn't list cilantro. Natural wok sheen, varied noodle folds and tofu/vegetable textures. Photorealistic restaurant menu illustration, soft daylight, realistic varied textures. Camera pulled back: the complete white serving plate and every food edge must fit comfortably inside the image with a broad 15% empty pale tabletop border on every side. Nothing touches the image edges. No text, logo, hands, cutlery, flowers or unrelated sides.",
+            "createdAt": "2026-10-24T08:25:59.229234+00:00",
+            "originalSha256": "a4b3435d6116b74ae22effc746f1debfa698a2ec02e04f2cf17fa68528b70b1c",
+            "operation": "reference-guided reconstruction",
+            "reference": {
+              "sha256": "0c694b420283a5539204bba771952fae9b7cbdf8e2cfa1ddf6b2138f87900803",
+              "candidateId": "5e67c06c5bc06844",
+              "sourceUrl": "https://lovinghut.us/orlando/"
+            }
+          },
+          "alt": "Menu illustration of Chow Mein - Mì Xào",
+          "credit": "Verifed generated menu illustration"
         }
       ],
       "searchLog": [],
       "review": {
-        "status": "needs-replacement",
-        "selectedCandidateId": null,
-        "inspectedAt": "2026-10-24T07:33:31.048543+00:00",
+        "status": "approved",
+        "selectedCandidateId": "generated-a4b3435d6116b74a",
+        "inspectedAt": "2026-10-24T08:29:07.388743+00:00",
         "reviewer": "Codex visual inspection",
-        "notes": "Visually inspected official candidate against its ingredient description. Current source is low-resolution, poorly lit, tightly framed, or needs a portion check; requires improvement before final approval."
+        "notes": "Inspected optimized WebP: light broad wheat noodles with tofu, TVP, bok choy, sprouts, mushrooms, onion, celery, carrot and green vegetables as the menu describes. No meat, seafood, egg or nut garnish. Whole mound and plate visible, natural textures.",
+        "checks": {
+          "identity": "pass",
+          "ingredients": "pass",
+          "portion": "pass",
+          "framing": "pass",
+          "quality": "pass"
+        }
       }
     },
     {
@@ -10629,15 +11479,75 @@
           "width": 300,
           "height": 200,
           "bytes": 7152
+        },
+        {
+          "id": "generated-b90507dea3def91c",
+          "origin": "generated",
+          "kind": "generated-illustration",
+          "path": "research/generated-photo-candidates/loving-hut-orlando-saigon-noodle-bun-cha-gio-b90507de.webp",
+          "sha256": "af53dbe09bb8131b7c10d30fdaca9da0be0334c4fdadc2bb5d44bad4292ec1ff",
+          "pixelHash": "2b3d6171e167b6e7da10e38bcaeed91b5f0cd0f6463bae7dfe2cf170670f20db",
+          "width": 1200,
+          "height": 800,
+          "bytes": 96992,
+          "status": "rejected-after-visual-review",
+          "generation": {
+            "tool": "image_gen.imagegen built-in",
+            "prompt": "Reconstruct this low-resolution official Loving Hut Orlando Saigon Noodle (Bun Cha Gio) photo. One white bowl of fine white rice noodles with one golden crisp vegan spring roll cut diagonally into two halves at the front, dark browned TVP pieces behind, green onion, bean sprouts and shredded lettuce, topped with crushed roasted peanuts. One separate small cup of thin amber Aulac dipping sauce at the side, not thick peanut sauce. Exact named ingredients rice noodles, spring roll, TVP, green onion, bean sprouts, lettuce, roasted peanut and Aulac sauce. No actual meat/seafood, tofu cubes, cucumber, carrot garnish, cilantro or sesame. Preserve the reference's visible cut roll and noodle salad arrangement; spring roll filling stays as the reference, no exposed meat. Photorealistic restaurant menu illustration, soft daylight, realistic varied textures. Camera pulled back: the complete white serving plate and every food edge must fit comfortably inside the image with a broad 15% empty pale tabletop border on every side. Nothing touches the image edges. No text, logo, hands, cutlery, flowers or unrelated sides.",
+            "createdAt": "2026-10-24T08:26:18.402011+00:00",
+            "originalSha256": "b90507dea3def91c6aca4444548761e6bfe667a4bef3f32b661b125605f51fa5",
+            "operation": "reference-guided reconstruction",
+            "reference": {
+              "sha256": "ebd95204ccac538f69814159fec160ec87b0cd8156432c445d1671822a6afae9",
+              "candidateId": "7c6551557930843d",
+              "sourceUrl": "https://lovinghut.us/orlando/"
+            }
+          },
+          "alt": "Menu illustration of Saigon Noodle - Bún Chả Giò",
+          "credit": "Verifed generated menu illustration",
+          "reviewNotes": "Extra breaded fragment and incorrect corn/pea-like spring-roll filling; selected ingredient repair."
+        },
+        {
+          "id": "generated-a1fb190a5e6c51da",
+          "origin": "generated",
+          "kind": "generated-illustration",
+          "path": "mobile/assets/food/loving-hut-orlando/saigon-noodle-bun-cha-gio.webp",
+          "sha256": "144b6a8f262c3468f9e228f55996508076b3b6712bd17d705774983773e06897",
+          "pixelHash": "5baf863b02e790f0ae90d235877592419755dff8ce2dd8e76050df881d3c9d2c",
+          "width": 1200,
+          "height": 800,
+          "bytes": 96522,
+          "status": "generated-awaiting-visual-review",
+          "generation": {
+            "tool": "image_gen.imagegen built-in",
+            "prompt": "Correct this Saigon Noodle illustration precisely. Retain exactly TWO cut spring-roll halves at the front, representing one whole roll. Remove the extra golden breaded fragment at the rear left, replacing it with white rice noodles. Correct the exposed roll filling to soy protein, taro, cabbage, carrot, onion, mung beans, fine translucent bean-thread noodles and tofu. NO corn kernels, green peas, rice grains or meat inside the rolls. Keep the dark TVP behind, green onion, bean sprouts, lettuce and chopped roasted peanut topping. Make the Aulac dipping sauce plain thin translucent amber with no visible chili/garlic/seed chunks, because its formula is unpublished. No additional garnish. Preserve full-food framing, realistic textures, neutral tabletop and soft light, no text.",
+            "createdAt": "2026-10-24T08:33:57.929327+00:00",
+            "originalSha256": "a1fb190a5e6c51da950bdc08d8b325c7ce016d3399ccfafb1e8bd427317e0c09",
+            "operation": "reference-guided reconstruction",
+            "reference": {
+              "sha256": "b90507dea3def91c6aca4444548761e6bfe667a4bef3f32b661b125605f51fa5",
+              "candidateId": "generated-b90507dea3def91c",
+              "sourceUrl": null
+            }
+          },
+          "alt": "Menu illustration of Saigon Noodle - Bún Chả Giò",
+          "credit": "Verifed generated menu illustration"
         }
       ],
       "searchLog": [],
       "review": {
-        "status": "needs-replacement",
-        "selectedCandidateId": null,
-        "inspectedAt": "2026-10-24T07:33:31.048543+00:00",
+        "status": "approved",
+        "selectedCandidateId": "generated-a1fb190a5e6c51da",
+        "inspectedAt": "2026-10-24T08:43:57.825469+00:00",
         "reviewer": "Codex visual inspection",
-        "notes": "Visually inspected official candidate against its ingredient description. Current source is low-resolution, poorly lit, tightly framed, or needs a portion check; requires improvement before final approval."
+        "notes": "Inspected optimized repair: two cut spring-roll halves with bean threads, tofu/soy, taro/cabbage/carrot/onion/mung-bean filling consistent with the restaurant's spring-roll recipe. Removed extra breaded fragment, corn/pea-like filling and unsupported sauce chunks. Dark TVP, noodles, sprouts, lettuce, green onion and roasted peanuts retained; full-food framing passes.",
+        "checks": {
+          "identity": "pass",
+          "ingredients": "pass",
+          "portion": "pass",
+          "framing": "pass",
+          "quality": "pass"
+        }
       }
     },
     {
@@ -10680,15 +11590,48 @@
           "width": 150,
           "height": 150,
           "bytes": 7554
+        },
+        {
+          "id": "generated-b0cd2c7086e5795d",
+          "origin": "generated",
+          "kind": "generated-illustration",
+          "path": "mobile/assets/food/loving-hut-orlando/stir-fry-veggie.webp",
+          "sha256": "37abac5b28cfdea7157e139fea2af4399a8a480074e7d80b3a4807bed32d7395",
+          "pixelHash": "16608a13381bb591aee621c70b1da568133c5080cdc320d0618d8b08eb6bd1f5",
+          "width": 1200,
+          "height": 1200,
+          "bytes": 152486,
+          "status": "generated-awaiting-visual-review",
+          "generation": {
+            "tool": "image_gen.imagegen built-in",
+            "prompt": "Reconstruct this tiny official Loving Hut Orlando Stir-Fry Veggie photograph clearly. One white plate of golden tofu cubes with broccoli, cauliflower, red and green bell pepper, celery, green beans, onion, garlic and cilantro, lightly stir-fried, preserving the vegetable colors and roughly similar proportions of the reference. Preserve the reference's separate modest mound of plain brown rice on the same plate; this item is in Rice Dishes and its official photo shows rice, although no rice weight is published. No mushrooms, meat, seafood, nuts, sesame or new vegetables. Remove flower decorations. Photorealistic, soft daylight, realistic natural textures. Pull back to show every piece of food, whole plate and any cup with a broad empty pale tabletop margin on all sides; nothing touches image edges. No text, logo, flowers, hands, utensils or unrelated sides.",
+            "createdAt": "2026-10-24T08:34:34.612549+00:00",
+            "originalSha256": "b0cd2c7086e5795dd6ef779a12b5b2b3512f29f1f65e88eef3df85c794494cdd",
+            "operation": "reference-guided reconstruction",
+            "reference": {
+              "sha256": "1fc7c227cb35aeae9ccaa1d25e17eccb7b4e488c04b4a128e0a7591953c90666",
+              "candidateId": "a5d0323f844a3a05",
+              "sourceUrl": "https://lovinghut.us/orlando/"
+            }
+          },
+          "alt": "Menu illustration of Stir-Fry Veggie",
+          "credit": "Verifed generated menu illustration"
         }
       ],
       "searchLog": [],
       "review": {
-        "status": "needs-replacement",
-        "selectedCandidateId": null,
-        "inspectedAt": "2026-10-24T07:33:31.048543+00:00",
+        "status": "approved",
+        "selectedCandidateId": "generated-b0cd2c7086e5795d",
+        "inspectedAt": "2026-10-24T08:43:57.825469+00:00",
         "reviewer": "Codex visual inspection",
-        "notes": "Visually inspected official candidate against its ingredient description. Current source is low-resolution, poorly lit, tightly framed, or needs a portion check; requires improvement before final approval."
+        "notes": "Inspected optimized WebP: golden tofu, broccoli, cauliflower, red/green pepper, celery, green beans, onion, garlic and cilantro, with the modest plain rice mound shown in the official Rice Dishes reference. No sesame or unrelated proteins. Entire serving visible; rice portion follows photo, not published weight.",
+        "checks": {
+          "identity": "pass",
+          "ingredients": "pass",
+          "portion": "pass",
+          "framing": "pass",
+          "quality": "pass"
+        }
       }
     },
     {
@@ -10773,15 +11716,48 @@
           "width": 300,
           "height": 200,
           "bytes": 10634
+        },
+        {
+          "id": "generated-27a8de3022820669",
+          "origin": "generated",
+          "kind": "generated-illustration",
+          "path": "mobile/assets/food/loving-hut-orlando/mushroom-spicy-cha-cha.webp",
+          "sha256": "c28fd7edac43f220f4057e26c495f87940b1705fe475f77394b1fd69bfb27aa8",
+          "pixelHash": "df9e6ce6d362a56df38d7ca933051dd9c90b34b49578c16749c1c6dd9450f977",
+          "width": 1200,
+          "height": 800,
+          "bytes": 111834,
+          "status": "generated-awaiting-visual-review",
+          "generation": {
+            "tool": "image_gen.imagegen built-in",
+            "prompt": "Reconstruct this pixelated official Loving Hut Orlando Mushroom Spicy Cha Cha photo sharply. One simple white plate of golden-brown crisp king-oyster mushroom pieces, some elongated and some round cross-sections, stir-fried with bright red and green bell pepper strips, celery, onion and modest crushed red pepper. These are the exact published ingredients. Preserve the reference's golden mushroom pieces and pepper-onion mixture, without real chicken or seafood. No tofu, broccoli, rice, sesame seeds, peanuts, cilantro or dipping sauce. Natural uneven mushroom coating and vegetables, not uniform nuggets. Photorealistic, soft daylight, realistic natural textures. Pull back to show every piece of food, whole plate and any cup with a broad empty pale tabletop margin on all sides; nothing touches image edges. No text, logo, flowers, hands, utensils or unrelated sides.",
+            "createdAt": "2026-10-24T08:34:52.462975+00:00",
+            "originalSha256": "27a8de3022820669fb07ce5133fd0da5e0f9474e23d0cbd0cca358e4855c18f0",
+            "operation": "reference-guided reconstruction",
+            "reference": {
+              "sha256": "e477e53380d3d8efeb7a7a89a80c5cb51910690d51ee72b703db443cb5440ff3",
+              "candidateId": "4548e588fc058d97",
+              "sourceUrl": "https://lovinghut.us/orlando/"
+            }
+          },
+          "alt": "Menu illustration of Mushroom Spicy Cha Cha",
+          "credit": "Verifed generated menu illustration"
         }
       ],
       "searchLog": [],
       "review": {
-        "status": "needs-replacement",
-        "selectedCandidateId": null,
-        "inspectedAt": "2026-10-24T07:33:31.048543+00:00",
+        "status": "approved",
+        "selectedCandidateId": "generated-27a8de3022820669",
+        "inspectedAt": "2026-10-24T08:43:57.825469+00:00",
         "reviewer": "Codex visual inspection",
-        "notes": "Visually inspected official candidate against its ingredient description. Current source is low-resolution, poorly lit, tightly framed, or needs a portion check; requires improvement before final approval."
+        "notes": "Inspected optimized WebP: irregular golden king-oyster mushroom pieces with red/green peppers, celery, onion and red pepper flakes/seeds, matching recipe/reference. No sesame, real chicken, tofu or rice introduced. All food visible and sharp natural texture.",
+        "checks": {
+          "identity": "pass",
+          "ingredients": "pass",
+          "portion": "pass",
+          "framing": "pass",
+          "quality": "pass"
+        }
       }
     },
     {
@@ -10820,15 +11796,48 @@
           "width": 232,
           "height": 125,
           "bytes": 6790
+        },
+        {
+          "id": "generated-f93aede0354c200e",
+          "origin": "generated",
+          "kind": "generated-illustration",
+          "path": "mobile/assets/food/loving-hut-orlando/eggplant-tofu.webp",
+          "sha256": "842f9d9382c60d8b3fdac5daf3f3d6158de23ba227ee9d6131e21cf99b511397",
+          "pixelHash": "c92b06759cb11cf43b03fcb03aedfa472f02d70e50a25640ed60e75ec07cdc84",
+          "width": 1200,
+          "height": 646,
+          "bytes": 83886,
+          "status": "generated-awaiting-visual-review",
+          "generation": {
+            "tool": "image_gen.imagegen built-in",
+            "prompt": "Reconstruct this tiny official Loving Hut Orlando Eggplant Tofu photo sharply. White serving plate of glossy purple-skinned eggplant wedges and golden tofu rectangles in a light brown mushroom sauce with onion, garlic and cilantro. Exact entree ingredients are eggplant, tofu in mushroom sauce, onion, garlic and cilantro. No red bell pepper pieces despite the ambiguous low-resolution colors, no meat, sesame, nuts or other vegetables. Preserve the separate small white dish with a modest mound of plain brown rice behind it as in the official Rice Dishes reference; no serving weight is published. Realistic tender eggplant skin, porous tofu and gentle sauce sheen. Photorealistic, soft daylight, realistic natural textures. Pull back to show every piece of food, whole plate and any cup with a broad empty pale tabletop margin on all sides; nothing touches image edges. No text, logo, flowers, hands, utensils or unrelated sides.",
+            "createdAt": "2026-10-24T08:35:12.045170+00:00",
+            "originalSha256": "f93aede0354c200e9710b8b269ccd423e660edad2469a40914e658b742060914",
+            "operation": "reference-guided reconstruction",
+            "reference": {
+              "sha256": "e6ea826ef67ff61dade9bcb2fddf57225d2df1cbc5475eacd3e186241b490e9f",
+              "candidateId": "0b3aefa98b33a019",
+              "sourceUrl": "https://lovinghut.us/orlando/"
+            }
+          },
+          "alt": "Menu illustration of Eggplant Tofu",
+          "credit": "Verifed generated menu illustration"
         }
       ],
       "searchLog": [],
       "review": {
-        "status": "needs-replacement",
-        "selectedCandidateId": null,
-        "inspectedAt": "2026-10-24T07:33:31.048543+00:00",
+        "status": "approved",
+        "selectedCandidateId": "generated-f93aede0354c200e",
+        "inspectedAt": "2026-10-24T08:43:57.825469+00:00",
         "reviewer": "Codex visual inspection",
-        "notes": "Visually inspected official candidate against its ingredient description. Current source is low-resolution, poorly lit, tightly framed, or needs a portion check; requires improvement before final approval."
+        "notes": "Inspected optimized WebP: glossy purple-skinned eggplant, golden tofu, onion, garlic and cilantro in mushroom sauce. Separate modest plain rice dish follows the official reference in Rice Dishes; weight unpublished. No bell pepper or sesame. Both dishes and all food fully framed.",
+        "checks": {
+          "identity": "pass",
+          "ingredients": "pass",
+          "portion": "pass",
+          "framing": "pass",
+          "quality": "pass"
+        }
       }
     },
     {
@@ -11681,15 +12690,48 @@
           "width": 375,
           "height": 375,
           "bytes": 12346
+        },
+        {
+          "id": "generated-090b83cfb2e2c7e7",
+          "origin": "generated",
+          "kind": "generated-illustration",
+          "path": "mobile/assets/food/loving-hut-orlando/vegan-flan.webp",
+          "sha256": "702390a1e16a9253e063807d3ed9606b4cb1eb55ad49f762a2077d71cdd49a37",
+          "pixelHash": "fac2bbecefe78fcf7f357ad2ee6787e30672b8953e528875c126ecbedee33ae5",
+          "width": 1200,
+          "height": 1200,
+          "bytes": 94188,
+          "status": "generated-awaiting-visual-review",
+          "generation": {
+            "tool": "image_gen.imagegen built-in",
+            "prompt": "Improve this low-resolution Loving Hut Orlando official Vegan Flan photograph into realistic clean menu photography while preserving the actual simple plated dessert. A SINGLE smooth pale cream-yellow oval mound of vegan flan, softly set, glossy pale amber syrup pooled around it, topped with natural thin sliced almonds with brown skins as shown. Menu ingredients: soy milk, coconut milk, silken tofu, vanilla, sugar, sliced almond. No eggs, no dairy, no berries, whipped cream, mint, decorative sugar, chocolate or extra desserts. One white round plate on a neutral pale stone tabletop, soft natural daylight. Show entire flan, syrup, almonds and whole plate with ample margin. Realistic delicate custard texture and almond edges, no overly perfect plastic sheen. No text, logos, utensils or hands.",
+            "createdAt": "2026-10-24T07:56:47.516569+00:00",
+            "originalSha256": "090b83cfb2e2c7e786156a7930d7815ab0afea89bc2a6be406771afd7eca56a5",
+            "operation": "reference-guided reconstruction",
+            "reference": {
+              "sha256": "8a1f2ab9fb27f18ecf2e5e67ae9accd7d5d313ad25bab3aafe78dd09ed889cbe",
+              "candidateId": "823cd4f26d814030",
+              "sourceUrl": "https://lovinghut.us/orlando/"
+            }
+          },
+          "alt": "Menu illustration of Vegan Flan",
+          "credit": "Verifed generated menu illustration"
         }
       ],
       "searchLog": [],
       "review": {
-        "status": "needs-replacement",
-        "selectedCandidateId": null,
-        "inspectedAt": "2026-10-24T07:33:31.048543+00:00",
+        "status": "approved",
+        "selectedCandidateId": "generated-090b83cfb2e2c7e7",
+        "inspectedAt": "2026-10-24T07:57:38.218818+00:00",
         "reviewer": "Codex visual inspection",
-        "notes": "Visually inspected official candidate against its ingredient description. Current source is low-resolution, poorly lit, tightly framed, or needs a portion check; requires improvement before final approval."
+        "notes": "Inspected optimized WebP against official plated reference: one soft pale-yellow oval custard with glossy syrup and sliced skin-on almonds, all dessert fully visible. No extra fruit or dairy garnish. Portion follows the restaurant's photo; weight is not published.",
+        "checks": {
+          "identity": "pass",
+          "ingredients": "pass",
+          "portion": "pass",
+          "framing": "pass",
+          "quality": "pass"
+        }
       }
     },
     {
@@ -11729,15 +12771,48 @@
           "width": 329,
           "height": 214,
           "bytes": 4712
+        },
+        {
+          "id": "generated-9c6ae9bcc560a462",
+          "origin": "generated",
+          "kind": "generated-illustration",
+          "path": "mobile/assets/food/loving-hut-orlando/cheese-cake.webp",
+          "sha256": "d9099f73aa276f22b028f434cfb2389bfa5c7a8b9cd8cb724d2ef014dc667be4",
+          "pixelHash": "1f49f8ee5bde8985ad80b24666eacf8854301a967a6070f8737e9c7422766502",
+          "width": 1200,
+          "height": 781,
+          "bytes": 65466,
+          "status": "generated-awaiting-visual-review",
+          "generation": {
+            "tool": "image_gen.imagegen built-in",
+            "prompt": "Reconstruct this low-resolution official Loving Hut Orlando Cheese Cake photograph as high-quality photorealistic menu photography. ONE slender triangular slice of creamy ivory vegan cheesecake on its light brown Graham crumb base, a slightly taller crust rim at its back. Preserve the simple smooth bright red sauce flowing thinly across the top and a little on the plate as in this reference; the sauce formulation is unspecified, do not add whole fruit. Menu cheesecake ingredients: silken tofu, vegan cream cheese, soy milk, vanilla, lemon juice and Graham crust. No dairy/egg visual props, whipped cream, mint or nuts. A plain white round plate, neutral pale tabletop, softly diffused daylight, natural crumb texture and creamy cut side. Entire slice, back crust, pointed tip, sauce pool and plate fully visible with generous margins. No text, logos, hands or utensils.",
+            "createdAt": "2026-10-24T07:58:22.626914+00:00",
+            "originalSha256": "9c6ae9bcc560a4624e569cb5585d87de517b5b4a4422aab7850d56dafe7c657a",
+            "operation": "reference-guided reconstruction",
+            "reference": {
+              "sha256": "4d536460d0eb4902447ea6d6d391529a73abc7c63a0a33d2043e64bbe77728c5",
+              "candidateId": "c2532782bd2bcf30",
+              "sourceUrl": "https://lovinghut.us/orlando/"
+            }
+          },
+          "alt": "Menu illustration of Cheese Cake",
+          "credit": "Verifed generated menu illustration"
         }
       ],
       "searchLog": [],
       "review": {
-        "status": "needs-replacement",
-        "selectedCandidateId": null,
-        "inspectedAt": "2026-10-24T07:33:31.048543+00:00",
+        "status": "approved",
+        "selectedCandidateId": "generated-9c6ae9bcc560a462",
+        "inspectedAt": "2026-10-24T08:00:46.606763+00:00",
         "reviewer": "Codex visual inspection",
-        "notes": "Visually inspected official candidate against its ingredient description. Current source is low-resolution, poorly lit, tightly framed, or needs a portion check; requires improvement before final approval."
+        "notes": "Inspected optimized WebP: one slender ivory cheesecake wedge on Graham crust with taller rear crumb edge and red topping matching the official photo. Full slice, tip and sauce remain in frame. Red sauce is visually supported by reference, but its formulation is unpublished; no fruit identity inferred.",
+        "checks": {
+          "identity": "pass",
+          "ingredients": "pass",
+          "portion": "pass",
+          "framing": "pass",
+          "quality": "pass"
+        }
       }
     },
     {
@@ -11778,15 +12853,48 @@
           "width": 300,
           "height": 200,
           "bytes": 5036
+        },
+        {
+          "id": "generated-faeb59f4720727c0",
+          "origin": "generated",
+          "kind": "generated-illustration",
+          "path": "mobile/assets/food/loving-hut-orlando/chocolate-cake.webp",
+          "sha256": "15469997faca864272acc2c8d7f666647d99d5c96e9c0008e98cd8f13b558970",
+          "pixelHash": "be42bca1c66dab7512ee1fd19775d34263414ce7404b62cbb56c06149ac4c6b7",
+          "width": 1200,
+          "height": 800,
+          "bytes": 83070,
+          "status": "generated-awaiting-visual-review",
+          "generation": {
+            "tool": "image_gen.imagegen built-in",
+            "prompt": "Reconstruct this very pixelated official Loving Hut Orlando Chocolate Cake photograph as sharp photorealistic menu photography. ONE triangular wedge of moist dark cocoa cake, with a thin even white vegan whipped cream layer across its top and a few simple dark chocolate sauce lines on the white plate like the reference. Menu ingredients: gluten flour, cocoa powder, oil, sugar, salt, coconut milk and vegan whipped cream. Show the actual simple single cake layer, fine soft crumb, not a tall chocolate layer cake. Do not add strawberries, fruit, mint, nuts or extra slices. Plain white plate on pale neutral tabletop, soft daylight, complete cake tip and back edge and all food fully visible with ample margins. No text, logos, utensils or hands.",
+            "createdAt": "2026-10-24T07:58:04.550206+00:00",
+            "originalSha256": "faeb59f4720727c07170ed9957b9c882f87023daa35f4312c0ba0c5730eb582e",
+            "operation": "reference-guided reconstruction",
+            "reference": {
+              "sha256": "759160488f60b44b986288f2f190129feb77fa4d27e98baf539e0e0e462d5525",
+              "candidateId": "7362bd7a02d15f9d",
+              "sourceUrl": "https://lovinghut.us/orlando/"
+            }
+          },
+          "alt": "Menu illustration of Chocolate Cake",
+          "credit": "Verifed generated menu illustration"
         }
       ],
       "searchLog": [],
       "review": {
-        "status": "needs-replacement",
-        "selectedCandidateId": null,
-        "inspectedAt": "2026-10-24T07:33:31.048543+00:00",
+        "status": "approved",
+        "selectedCandidateId": "generated-faeb59f4720727c0",
+        "inspectedAt": "2026-10-24T08:00:46.606763+00:00",
         "reviewer": "Codex visual inspection",
-        "notes": "Visually inspected official candidate against its ingredient description. Current source is low-resolution, poorly lit, tightly framed, or needs a portion check; requires improvement before final approval."
+        "notes": "Inspected optimized WebP: one low single-layer chocolate cake wedge, thin white whipped topping and simple chocolate sauce lines matching official reference. Full-food framing and realistic crumb pass. Strawberry garnish excluded because it is not in the published recipe.",
+        "checks": {
+          "identity": "pass",
+          "ingredients": "pass",
+          "portion": "pass",
+          "framing": "pass",
+          "quality": "pass"
+        }
       }
     },
     {
@@ -11826,15 +12934,48 @@
           "width": 350,
           "height": 350,
           "bytes": 12252
+        },
+        {
+          "id": "generated-223220f7820cbdfb",
+          "origin": "generated",
+          "kind": "generated-illustration",
+          "path": "mobile/assets/food/loving-hut-orlando/chocolate-chip-cookie.webp",
+          "sha256": "b069cc62fbcfee9f750d50f77617c82335ab319f9533e5826f9f87a4e99e8c99",
+          "pixelHash": "256e2cf5fa3c753b5c24c5a1353c27058440765a36860e686bf3c5792c9659e5",
+          "width": 1200,
+          "height": 1200,
+          "bytes": 176642,
+          "status": "generated-awaiting-visual-review",
+          "generation": {
+            "tool": "image_gen.imagegen built-in",
+            "prompt": "Improve this official Loving Hut Orlando Chocolate Chip Cookie photo into sharp realistic menu photography. Preserve exactly ONE round thick pale golden-tan cookie with a slightly uneven handmade edge, natural small cracks and visible irregular dark chocolate chips as in reference. Menu ingredients: vegan butter, cocoa powder, chocolate chip, flour, flaxseeds and sugar. Keep the pale cookie color shown, not a dark chocolate brownie; no oats or nuts added despite the source filename. Remove the decorative flowers, leaving only the single cookie fully visible in the center of a simple white plate with generous clear margin, on a neutral pale stone tabletop. Soft natural side light, realistic baked crumb and chocolate texture. No milk glass, dairy, eggs, text, logos, hands or other cookies.",
+            "createdAt": "2026-10-24T07:58:52.382547+00:00",
+            "originalSha256": "223220f7820cbdfb6fbfd013fe9e28ce62a3dde2ac7bd22fa8ded11faa534693",
+            "operation": "reference-guided reconstruction",
+            "reference": {
+              "sha256": "42310f2347ae569b1546df277eae3042fb0e8e5c1a0ba066c10640306a3c4e22",
+              "candidateId": "2c77ac2e67854654",
+              "sourceUrl": "https://lovinghut.us/orlando/"
+            }
+          },
+          "alt": "Menu illustration of Chocolate Chip Cookie",
+          "credit": "Verifed generated menu illustration"
         }
       ],
       "searchLog": [],
       "review": {
-        "status": "needs-replacement",
-        "selectedCandidateId": null,
-        "inspectedAt": "2026-10-24T07:33:31.048543+00:00",
+        "status": "approved",
+        "selectedCandidateId": "generated-223220f7820cbdfb",
+        "inspectedAt": "2026-10-24T08:00:46.606763+00:00",
         "reviewer": "Codex visual inspection",
-        "notes": "Visually inspected official candidate against its ingredient description. Current source is low-resolution, poorly lit, tightly framed, or needs a portion check; requires improvement before final approval."
+        "notes": "Inspected optimized WebP: one round pale-golden chocolate-chip cookie with irregular baked edge, cracks and dark chocolate chunks matching official photo. Cookie completely visible; no flowers, oats, nuts or extra cookies added.",
+        "checks": {
+          "identity": "pass",
+          "ingredients": "pass",
+          "portion": "pass",
+          "framing": "pass",
+          "quality": "pass"
+        }
       }
     },
     {
@@ -17673,7 +18814,29 @@
         "kind": "dish"
       },
       "specificationHash": "3d6b7bdc734edb5d5066ba78d848a961a44c0d58944f57adc87616f502f27b58",
-      "candidates": [],
+      "candidates": [
+        {
+          "id": "a97b07da6bac814f",
+          "origin": "sourced",
+          "kind": "official-product",
+          "url": "https://d1w7312wesee68.cloudfront.net/2tsD3_RhC4Dp2y4d6TvpG_Bw0DuaTI6rlxByVzQHKZw/resize:fit:360:360/plain/s3://toasttab/menu_service/restaurants/36c97c3c-f359-4485-af22-1d0087e36fb0/MenuItem/e844dd24-65fe-4e41-80ab-091badb4c722.jpg",
+          "sourceUrl": "https://order.toasttab.com/online/winterparkbiscuitco",
+          "credit": "Winter Park Biscuit Company official ordering menu",
+          "alt": "The Biscuit photographed for Winter Park Biscuit Company",
+          "path": "research/photo-candidates/a97b07da6bac814f351f5ac1e066bb579143caf1ccfcb5c257b6840eacb0c2d4.webp",
+          "sha256": "1df476c71f1f4dbb39cd9798726b2de13b8f343b23d90360b824369f7d545dab",
+          "pixelHash": "6c571c87ee60b9e7911228defa53d1268b6b4f862011b6982468e4ad98ae5362",
+          "width": 360,
+          "height": 240,
+          "bytes": 4092,
+          "status": "needs-replacement",
+          "discovery": {
+            "method": "visible menu DOM: named item link contains this image",
+            "observedAt": "2026-10-24T08:36:00Z"
+          },
+          "reviewNotes": "Photo drizzles an unspecified syrup over a held biscuit; base item has no such topping specified. Need plain biscuit depiction."
+        }
+      ],
       "searchLog": [],
       "review": {
         "status": "pending",
@@ -17766,6 +18929,27 @@
           "width": 946,
           "height": 946,
           "bytes": 160170
+        },
+        {
+          "id": "b7beab2441d9ea39",
+          "origin": "sourced",
+          "kind": "official-product",
+          "url": "https://d1w7312wesee68.cloudfront.net/CJREKz8lUjWXY716SAK8-AkXxTMe9R3-EZlUYNnK8l0/resize:fit:360:360/plain/s3://toasttab/restaurants/restaurant-62922000000000000/menu/items/0/item-100000007541444280_1658418727.jpg",
+          "sourceUrl": "https://order.toasttab.com/online/winterparkbiscuitco",
+          "credit": "Winter Park Biscuit Company official ordering menu",
+          "alt": "The SEC photographed for Winter Park Biscuit Company",
+          "path": "research/photo-candidates/b7beab2441d9ea3971f61a62207d41247f4b4945f8c529b58d34ff6fc8f19062.webp",
+          "sha256": "e8904e3627a7ace916c2144ce187b9c6a0b4c4749464fe42aa864598f63a6e0e",
+          "pixelHash": "865c9159023e6179cbfd7129308d6078591de56af962a67d456df336a04f24f7",
+          "width": 240,
+          "height": 360,
+          "bytes": 3610,
+          "status": "needs-replacement",
+          "discovery": {
+            "method": "visible menu DOM: named item link contains this image",
+            "observedAt": "2026-10-24T08:36:00Z"
+          },
+          "reviewNotes": "Biscuit sandwich is visible but the explicitly included Cholula hot-sauce side is absent; need complete serving."
         }
       ],
       "searchLog": [],
@@ -17809,15 +18993,66 @@
           "width": 900,
           "height": 1200,
           "bytes": 46186
+        },
+        {
+          "id": "634b294efe5198a3",
+          "origin": "sourced",
+          "kind": "official-product",
+          "url": "https://d1w7312wesee68.cloudfront.net/2wobN5634_1cBZFxu48JB3o3pnLMKNel1lZ427WVJNo/resize:fit:360:360/plain/s3://toasttab/restaurants/restaurant-62922000000000000/menu/items/4/item-100000007541444284_1658418958.jpg",
+          "sourceUrl": "https://order.toasttab.com/online/winterparkbiscuitco",
+          "credit": "Winter Park Biscuit Company official ordering menu",
+          "alt": "Biscuits & Gravy photographed for Winter Park Biscuit Company",
+          "path": "research/photo-candidates/634b294efe5198a367ad3422aac53889005acd02896c2285cca66b0130be2e56.webp",
+          "sha256": "8fc804f18ec5da5f18abc064ab33cc0158362e3cb69e57943aefb1f22a4ec859",
+          "pixelHash": "6d5180b7d411fae9cfe1c33be36ffad49c36a913eb412c4e8c2fd434ed1a566d",
+          "width": 240,
+          "height": 360,
+          "bytes": 5038,
+          "status": "downloaded-unreviewed",
+          "discovery": {
+            "method": "visible menu DOM: named item link contains this image",
+            "observedAt": "2026-10-24T08:36:00Z"
+          }
+        },
+        {
+          "id": "1d1bfa8fbdad5150",
+          "origin": "sourced",
+          "kind": "research-candidate",
+          "url": "https://d1w7312wesee68.cloudfront.net/yaYEFFriRI_dxwsBbibh2mabEKhI_yq2ocsQrInjkOY/resize:fit:1080:1080/plain/s3://toasttab/restaurants/restaurant-62922000000000000/menu/items/4/item-100000007541444284_1658418958.jpg",
+          "sourceUrl": "https://order.toasttab.com/online/winterparkbiscuitco",
+          "credit": "Winter Park Biscuit Company official ordering menu",
+          "alt": "biscuits gravy pictured for Winter Park Biscuit Company",
+          "status": "downloaded-unreviewed",
+          "path": "mobile/assets/food/winter-park-biscuit/biscuits-gravy.webp",
+          "sha256": "1b2ff9031bb04a77d54e77c4e2cbe6c2597be13e970ef9199900709d9b733897",
+          "pixelHash": "5a5cb22a6154ee2b762baa599ac53fd0f8fe97ecfb2242f2c15b444d04d98cb6",
+          "width": 720,
+          "height": 1080,
+          "bytes": 27432
         }
       ],
-      "searchLog": [],
+      "searchLog": [
+        {
+          "query": "Read named official ordering-menu item's image srcset in the browser",
+          "searchedAt": "2026-10-24T08:42:26.891404+00:00",
+          "candidateCount": 1,
+          "inspectedCandidateCount": 0,
+          "result": "Downloaded candidates await actual visual inspection; no automatic approval."
+        }
+      ],
       "review": {
-        "status": "needs-replacement",
-        "selectedCandidateId": null,
-        "inspectedAt": "2026-10-24T07:33:31.048543+00:00",
+        "status": "approved",
+        "selectedCandidateId": "1d1bfa8fbdad5150",
+        "inspectedAt": "2026-10-24T08:43:57.825469+00:00",
         "reviewer": "Codex visual inspection",
-        "notes": "Visually inspected existing candidate from another restaurant or recipe. This does not establish an accurate image of the specified menu entry; obtain four suitable candidates or a documented reconstruction."
+        "notes": "Individually inspected 720x1080 optimized official ordering photo: one paper bowl of chopped biscuit pieces with country gravy and photographed green-onion garnish. Dish-specific name/image association confirmed in visible ordering menu DOM. All food visible and sharp; serving weight not published.",
+        "checks": {
+          "identity": "pass",
+          "ingredients": "pass",
+          "portion": "pass",
+          "framing": "pass",
+          "quality": "pass"
+        }
       }
     },
     {
@@ -17836,13 +19071,66 @@
         "kind": "dish"
       },
       "specificationHash": "ebb8df4f2ef30d7277c9d633f06f160b3d41096575318b326335bbcdc0718506",
-      "candidates": [],
-      "searchLog": [],
+      "candidates": [
+        {
+          "id": "437b034435870cb9",
+          "origin": "sourced",
+          "kind": "official-product",
+          "url": "https://d1w7312wesee68.cloudfront.net/3W82YTcQ8WviwAIoCUs_FLGqV6otAy3uwMMZ_1VKdgQ/resize:fit:360:360/plain/s3://toasttab/restaurants/restaurant-62922000000000000/menu/items/5/item-100000006192579565_1658419000.jpg",
+          "sourceUrl": "https://order.toasttab.com/online/winterparkbiscuitco",
+          "credit": "Winter Park Biscuit Company official ordering menu",
+          "alt": "French Fries photographed for Winter Park Biscuit Company",
+          "path": "research/photo-candidates/437b034435870cb9c87201c37ec6ec897582712f46b51c2ae43db1665bb10251.webp",
+          "sha256": "1a5eb9d5ab501262a343d7c65006daa58c4cc4bf67cc41609289cc18f53fdcb9",
+          "pixelHash": "0ecf86205390c8e64134631895572863ca6dc3c2d940fa4b97ba925d701a8906",
+          "width": 240,
+          "height": 360,
+          "bytes": 5586,
+          "status": "downloaded-unreviewed",
+          "discovery": {
+            "method": "visible menu DOM: named item link contains this image",
+            "observedAt": "2026-10-24T08:36:00Z"
+          }
+        },
+        {
+          "id": "6a3032dc853a2933",
+          "origin": "sourced",
+          "kind": "research-candidate",
+          "url": "https://d1w7312wesee68.cloudfront.net/RicRiS-MB0y711Ot5qM1HZHnFhz7OWuNIfePAIKi3c8/resize:fit:1080:1080/plain/s3://toasttab/restaurants/restaurant-62922000000000000/menu/items/5/item-100000006192579565_1658419000.jpg",
+          "sourceUrl": "https://order.toasttab.com/online/winterparkbiscuitco",
+          "credit": "Winter Park Biscuit Company official ordering menu",
+          "alt": "french fries pictured for Winter Park Biscuit Company",
+          "status": "downloaded-unreviewed",
+          "path": "mobile/assets/food/winter-park-biscuit/french-fries.webp",
+          "sha256": "d877f807b31cae3b41feb3fa6ef212cfbe940530022af4fc4fc48c51c5b04966",
+          "pixelHash": "872a0bc61bbde3cec6bd4ca3a359f8616f4a95276297d717cc63a6358583fc5d",
+          "width": 720,
+          "height": 1080,
+          "bytes": 28180
+        }
+      ],
+      "searchLog": [
+        {
+          "query": "Read named official ordering-menu item's image srcset in the browser",
+          "searchedAt": "2026-10-24T08:42:28.187444+00:00",
+          "candidateCount": 1,
+          "inspectedCandidateCount": 0,
+          "result": "Downloaded candidates await actual visual inspection; no automatic approval."
+        }
+      ],
       "review": {
-        "status": "pending",
-        "selectedCandidateId": null,
-        "inspectedAt": null,
-        "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
+        "status": "approved",
+        "selectedCandidateId": "6a3032dc853a2933",
+        "inspectedAt": "2026-10-24T08:43:57.825469+00:00",
+        "reviewer": "Codex visual inspection",
+        "notes": "Individually inspected 720x1080 official ordering photo: one paper-bag portion of golden fries, entirely visible with sharp crisp texture. Menu offers small or large without weight; photo depicts the restaurant's pictured order without claiming a particular gram weight or size variant.",
+        "checks": {
+          "identity": "pass",
+          "ingredients": "pass",
+          "portion": "pass",
+          "framing": "pass",
+          "quality": "pass"
+        }
       }
     },
     {
@@ -17864,13 +19152,66 @@
         "kind": "dish"
       },
       "specificationHash": "a2aa3a7aa937abacb9bf20ff73960dbb63cb0740d8b7acfff11a485e25e6aef6",
-      "candidates": [],
-      "searchLog": [],
+      "candidates": [
+        {
+          "id": "e998190e450baad1",
+          "origin": "sourced",
+          "kind": "official-product",
+          "url": "https://d1w7312wesee68.cloudfront.net/_9810Ffiq0W5Z89CRrZCNhhIuqwkZvz3aVhx8DqqNlI/resize:fit:360:360/plain/s3://toasttab/restaurants/restaurant-62922000000000000/menu/items/1/item-100000006192579571_1658419028.jpg",
+          "sourceUrl": "https://order.toasttab.com/online/winterparkbiscuitco",
+          "credit": "Winter Park Biscuit Company official ordering menu",
+          "alt": "Side Kale Salad photographed for Winter Park Biscuit Company",
+          "path": "research/photo-candidates/e998190e450baad1658d5368c16e752de94e2d4406fc397b20604a72e0ff57ce.webp",
+          "sha256": "e80a8dcb876c61e71cce0989cf7b060b34c79eef06a306d20b68745931a8afc4",
+          "pixelHash": "34fe52c8aaf483158348541f2c26d7956f4c205609a22f11a97246206c5a2bee",
+          "width": 240,
+          "height": 360,
+          "bytes": 19456,
+          "status": "downloaded-unreviewed",
+          "discovery": {
+            "method": "visible menu DOM: named item link contains this image",
+            "observedAt": "2026-10-24T08:36:00Z"
+          }
+        },
+        {
+          "id": "ebfaf883d1470e8c",
+          "origin": "sourced",
+          "kind": "research-candidate",
+          "url": "https://d1w7312wesee68.cloudfront.net/p9KV9i_flJubnKBD211d4dmrcxai0G6K7GlFUWlfiaM/resize:fit:1080:1080/plain/s3://toasttab/restaurants/restaurant-62922000000000000/menu/items/1/item-100000006192579571_1658419028.jpg",
+          "sourceUrl": "https://order.toasttab.com/online/winterparkbiscuitco",
+          "credit": "Winter Park Biscuit Company official ordering menu",
+          "alt": "side kale salad pictured for Winter Park Biscuit Company",
+          "status": "downloaded-unreviewed",
+          "path": "mobile/assets/food/winter-park-biscuit/side-kale-salad.webp",
+          "sha256": "2c87421b0b4073d42b7e5b8a685030a70a91b9873759ebb470bf928b09382ea3",
+          "pixelHash": "7cc215da0d5b8295e10c3da94098ba47ff2e5d50f552664fcdcae504716f0e86",
+          "width": 720,
+          "height": 1080,
+          "bytes": 113056
+        }
+      ],
+      "searchLog": [
+        {
+          "query": "Read named official ordering-menu item's image srcset in the browser",
+          "searchedAt": "2026-10-24T08:42:27.822594+00:00",
+          "candidateCount": 1,
+          "inspectedCandidateCount": 0,
+          "result": "Downloaded candidates await actual visual inspection; no automatic approval."
+        }
+      ],
       "review": {
-        "status": "pending",
-        "selectedCandidateId": null,
-        "inspectedAt": null,
-        "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
+        "status": "approved",
+        "selectedCandidateId": "ebfaf883d1470e8c",
+        "inspectedAt": "2026-10-24T08:43:57.825469+00:00",
+        "reviewer": "Codex visual inspection",
+        "notes": "Individually inspected 720x1080 official ordering photo: one side-size carton of massaged kale, pumpkin seeds, biscuit crumble and cashew-parm/dressing presentation. Radish garnish appears in restaurant's own named product photo despite not being listed in the description. Entire salad visible; hidden ingredients rely on source, not photo.",
+        "checks": {
+          "identity": "pass",
+          "ingredients": "pass",
+          "portion": "pass",
+          "framing": "pass",
+          "quality": "pass"
+        }
       }
     },
     {
@@ -17887,13 +19228,66 @@
         "kind": "dish"
       },
       "specificationHash": "07fa261bcf72c2c389c15336d9de76ec5cf337c28dad1dab394b5a8ee1f63fb8",
-      "candidates": [],
-      "searchLog": [],
+      "candidates": [
+        {
+          "id": "6703e481dbfbd10c",
+          "origin": "sourced",
+          "kind": "official-product",
+          "url": "https://d1w7312wesee68.cloudfront.net/TesSc1K6AMkBNeDUAVlFSDPAIBgplSuH8wUj_xhXmJA/resize:fit:360:360/plain/s3://toasttab/restaurants/restaurant-62922000000000000/menu/items/7/item-100000013425088507_1658419075.jpg",
+          "sourceUrl": "https://order.toasttab.com/online/winterparkbiscuitco",
+          "credit": "Winter Park Biscuit Company official ordering menu",
+          "alt": "Side Chickpea Salad photographed for Winter Park Biscuit Company",
+          "path": "research/photo-candidates/6703e481dbfbd10c942311098643763884720272cd488eda902a1a40b2561271.webp",
+          "sha256": "961232fb52d659769feccffedc4b414a3af787d8ec1a367acea29d472d08a342",
+          "pixelHash": "350c333b865959b887e43839847d8cd45124ff7206c95f227a90dd03c251db73",
+          "width": 240,
+          "height": 360,
+          "bytes": 2980,
+          "status": "downloaded-unreviewed",
+          "discovery": {
+            "method": "visible menu DOM: named item link contains this image",
+            "observedAt": "2026-10-24T08:36:00Z"
+          }
+        },
+        {
+          "id": "773bf375894bcf60",
+          "origin": "sourced",
+          "kind": "research-candidate",
+          "url": "https://d1w7312wesee68.cloudfront.net/sK3ooWkhs3NJ3JztEf022-OcM6o9YfGEJCT7O3vG9Cg/resize:fit:1080:1080/plain/s3://toasttab/restaurants/restaurant-62922000000000000/menu/items/7/item-100000013425088507_1658419075.jpg",
+          "sourceUrl": "https://order.toasttab.com/online/winterparkbiscuitco",
+          "credit": "Winter Park Biscuit Company official ordering menu",
+          "alt": "side chickpea salad pictured for Winter Park Biscuit Company",
+          "status": "downloaded-unreviewed",
+          "path": "mobile/assets/food/winter-park-biscuit/side-chickpea-salad.webp",
+          "sha256": "c12c3de2b8ed3fa3eb2540574dcd147c6955e765242f2fb696939a5fdb8583f1",
+          "pixelHash": "a3b3a3f3e31b69afc6bf6aa46524aeb310de9f7b9dcf1255790fb15a1c1837a9",
+          "width": 720,
+          "height": 1080,
+          "bytes": 16950
+        }
+      ],
+      "searchLog": [
+        {
+          "query": "Read named official ordering-menu item's image srcset in the browser",
+          "searchedAt": "2026-10-24T08:42:28.579510+00:00",
+          "candidateCount": 1,
+          "inspectedCandidateCount": 0,
+          "result": "Downloaded candidates await actual visual inspection; no automatic approval."
+        }
+      ],
       "review": {
-        "status": "pending",
-        "selectedCandidateId": null,
-        "inspectedAt": null,
-        "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
+        "status": "approved",
+        "selectedCandidateId": "773bf375894bcf60",
+        "inspectedAt": "2026-10-24T08:43:57.825469+00:00",
+        "reviewer": "Codex visual inspection",
+        "notes": "Individually inspected 720x1080 official ordering photo: one small clear cup of creamy mashed chickpea salad, full serving visible with adequate detail. Product identity established by the named official menu link containing this image. No full ingredient formula or weight is published; none is inferred.",
+        "checks": {
+          "identity": "pass",
+          "ingredients": "pass",
+          "portion": "pass",
+          "framing": "pass",
+          "quality": "pass"
+        }
       }
     },
     {
@@ -18077,7 +19471,29 @@
         "kind": "dish"
       },
       "specificationHash": "87cf07801e47011e79826af2c758625b904aedcba9d691cdaaac18596de9b656",
-      "candidates": [],
+      "candidates": [
+        {
+          "id": "3fc14f07d15cc1ed",
+          "origin": "sourced",
+          "kind": "official-product",
+          "url": "https://d1w7312wesee68.cloudfront.net/gyc23iDFOGHVYSqaALwS_VCLAAyOt9URijGpbHP91ek/resize:fit:360:360/plain/s3://toasttab/restaurants/restaurant-62922000000000000/menu/items/8/item-100000012457856238_1658419266.jpg",
+          "sourceUrl": "https://order.toasttab.com/online/winterparkbiscuitco",
+          "credit": "Winter Park Biscuit Company official ordering menu",
+          "alt": "Strawberry Preserves photographed for Winter Park Biscuit Company",
+          "path": "research/photo-candidates/3fc14f07d15cc1edfcf22d21dcdab4c620a7088f5f94183a1825173fde22fc1d.webp",
+          "sha256": "910f756504cef53240e40153c3d8a2ee030d2b7199ffcf2754084707a84e489a",
+          "pixelHash": "29810d03db23e649327a8415207c432488c0bc9612bfde3a8d52d83b570358e4",
+          "width": 240,
+          "height": 360,
+          "bytes": 4624,
+          "status": "needs-replacement",
+          "discovery": {
+            "method": "visible menu DOM: named item link contains this image",
+            "observedAt": "2026-10-24T08:36:00Z"
+          },
+          "reviewNotes": "Full sealed retail jam jar is pictured for a low-priced side portion. Cannot establish the actual serving quantity from this image."
+        }
+      ],
       "searchLog": [],
       "review": {
         "status": "pending",
@@ -18100,13 +19516,66 @@
         "kind": "dish"
       },
       "specificationHash": "98885b6f923b9c10e562f277fa98485dc670848da65634e8ec01ead573752587",
-      "candidates": [],
-      "searchLog": [],
+      "candidates": [
+        {
+          "id": "70c72589b080fae2",
+          "origin": "sourced",
+          "kind": "official-product",
+          "url": "https://d1w7312wesee68.cloudfront.net/-jmk2zsdjJA0ge8PU903cOOSl9O0Fq8_7yyzu51lTWY/resize:fit:360:360/plain/s3://toasttab/restaurants/restaurant-62922000000000000/menu/items/6/item-100000012540622326_1658419418.jpg",
+          "sourceUrl": "https://order.toasttab.com/online/winterparkbiscuitco",
+          "credit": "Winter Park Biscuit Company official ordering menu",
+          "alt": "Sausage Gravy photographed for Winter Park Biscuit Company",
+          "path": "research/photo-candidates/70c72589b080fae24b4ad449e1feed15f89ea4d3a1c26c5864cc822bce1094de.webp",
+          "sha256": "ca241b072f423b951f14d78b8125f7bd9793e18385d634dfc739eb6fe0d8321c",
+          "pixelHash": "1f2ab30f9da311fc5faa7a5866a49e577f14d082f41e97a0043e6c96326ca1e1",
+          "width": 240,
+          "height": 360,
+          "bytes": 3252,
+          "status": "downloaded-unreviewed",
+          "discovery": {
+            "method": "visible menu DOM: named item link contains this image",
+            "observedAt": "2026-10-24T08:36:00Z"
+          }
+        },
+        {
+          "id": "cba4d9e64247309d",
+          "origin": "sourced",
+          "kind": "research-candidate",
+          "url": "https://d1w7312wesee68.cloudfront.net/RIwaMqbcysviWnzavT5vcrF0ggBJddnVrMwnXWDPWNc/resize:fit:1080:1080/plain/s3://toasttab/restaurants/restaurant-62922000000000000/menu/items/6/item-100000012540622326_1658419418.jpg",
+          "sourceUrl": "https://order.toasttab.com/online/winterparkbiscuitco",
+          "credit": "Winter Park Biscuit Company official ordering menu",
+          "alt": "sausage gravy pictured for Winter Park Biscuit Company",
+          "status": "downloaded-unreviewed",
+          "path": "mobile/assets/food/winter-park-biscuit/sausage-gravy.webp",
+          "sha256": "dba8c2e5eb523a1526d83e583f002aac9c616ac8e464849c67f17f772356178c",
+          "pixelHash": "1079de13633a4154fb687f267af830e3314a7757a334b201c799b8f6c97f1a74",
+          "width": 720,
+          "height": 1080,
+          "bytes": 15194
+        }
+      ],
+      "searchLog": [
+        {
+          "query": "Read named official ordering-menu item's image srcset in the browser",
+          "searchedAt": "2026-10-24T08:42:27.272865+00:00",
+          "candidateCount": 1,
+          "inspectedCandidateCount": 0,
+          "result": "Downloaded candidates await actual visual inspection; no automatic approval."
+        }
+      ],
       "review": {
-        "status": "pending",
-        "selectedCandidateId": null,
-        "inspectedAt": null,
-        "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
+        "status": "approved",
+        "selectedCandidateId": "cba4d9e64247309d",
+        "inspectedAt": "2026-10-24T08:43:57.825469+00:00",
+        "reviewer": "Codex visual inspection",
+        "notes": "Individually inspected 720x1080 official ordering photo: one cup of thick plant-based sausage gravy with visible dark flecks, spoon and drip. All food including drip remains visible; hand is incidental. Current menu associates this exact image with Sausage Gravy. Portion volume and hidden formula not inferred.",
+        "checks": {
+          "identity": "pass",
+          "ingredients": "pass",
+          "portion": "pass",
+          "framing": "pass",
+          "quality": "pass"
+        }
       }
     },
     {
@@ -18146,7 +19615,29 @@
         "kind": "dish"
       },
       "specificationHash": "5b49bdc3c5f6c48b59c67e847cd7a1d3f2d19792231d49e07507418dd28002ca",
-      "candidates": [],
+      "candidates": [
+        {
+          "id": "25643e9cbbb0806b",
+          "origin": "sourced",
+          "kind": "official-product",
+          "url": "https://d1w7312wesee68.cloudfront.net/DP7_mTZhU8y_qdKSagyR04ZvZptUh9AhoW14JJgS5PM/resize:fit:360:360/plain/s3://toasttab/restaurants/restaurant-62922000000000000/menu/items/2/item-100000006192576132_1658419549.jpg",
+          "sourceUrl": "https://order.toasttab.com/online/winterparkbiscuitco",
+          "credit": "Winter Park Biscuit Company official ordering menu",
+          "alt": "Maple Mustard photographed for Winter Park Biscuit Company",
+          "path": "research/photo-candidates/25643e9cbbb0806b9ca34575780c0ec07212045d93798b9b8146f41bc9085607.webp",
+          "sha256": "2f47f7513cfeda4f892445c99fadc766e8a2170881aa1459db4e83b2cc104272",
+          "pixelHash": "3d6e123aa2284418bf79c63eb326a74e0650437521fcf300b0e1425f9dad6fb9",
+          "width": 360,
+          "height": 240,
+          "bytes": 20420,
+          "status": "rejected-after-visual-review",
+          "discovery": {
+            "method": "visible menu DOM: named item link contains this image",
+            "observedAt": "2026-10-24T08:36:00Z"
+          },
+          "reviewNotes": "Repeated assortment of nine sauce cups, not an isolated identified photograph of this specific sauce. Named menu association alone does not make a group photo accurate."
+        }
+      ],
       "searchLog": [],
       "review": {
         "status": "pending",
@@ -18169,7 +19660,29 @@
         "kind": "dish"
       },
       "specificationHash": "13dbb068d3437099c06835d2a0f4221556f6f2f691a1190493e065dbbc47b2e1",
-      "candidates": [],
+      "candidates": [
+        {
+          "id": "451854a08ce9a8f0",
+          "origin": "sourced",
+          "kind": "official-product",
+          "url": "https://d1w7312wesee68.cloudfront.net/xi1hqdogSlzrB9frfTP60wKd1Pa5UrJmxNw7Qbnb548/resize:fit:360:360/plain/s3://toasttab/restaurants/restaurant-62922000000000000/menu/items/8/item-100000006192576138_1658419599.jpg",
+          "sourceUrl": "https://order.toasttab.com/online/winterparkbiscuitco",
+          "credit": "Winter Park Biscuit Company official ordering menu",
+          "alt": "Bleu Cheese photographed for Winter Park Biscuit Company",
+          "path": "research/photo-candidates/451854a08ce9a8f07f1af438dc72635b8bcd4d4a5880b36edad3a2c5fa960cb6.webp",
+          "sha256": "2f47f7513cfeda4f892445c99fadc766e8a2170881aa1459db4e83b2cc104272",
+          "pixelHash": "3d6e123aa2284418bf79c63eb326a74e0650437521fcf300b0e1425f9dad6fb9",
+          "width": 360,
+          "height": 240,
+          "bytes": 20420,
+          "status": "rejected-after-visual-review",
+          "discovery": {
+            "method": "visible menu DOM: named item link contains this image",
+            "observedAt": "2026-10-24T08:36:00Z"
+          },
+          "reviewNotes": "Repeated assortment of nine sauce cups, not an isolated identified photograph of this specific sauce. Named menu association alone does not make a group photo accurate."
+        }
+      ],
       "searchLog": [],
       "review": {
         "status": "pending",
@@ -18192,7 +19705,29 @@
         "kind": "dish"
       },
       "specificationHash": "c040b63e968ca8494a1dd9e220054b93d4e497be24ad32b5adc470014f65048b",
-      "candidates": [],
+      "candidates": [
+        {
+          "id": "9284cf60bf771fc0",
+          "origin": "sourced",
+          "kind": "official-product",
+          "url": "https://d1w7312wesee68.cloudfront.net/ieCZUJ8LyRjpPbsADtMMPXfmTG29Y7o-8D2foDNJ7Z8/resize:fit:360:360/plain/s3://toasttab/restaurants/restaurant-62922000000000000/menu/items/6/item-100000006192576136_1658419623.jpg",
+          "sourceUrl": "https://order.toasttab.com/online/winterparkbiscuitco",
+          "credit": "Winter Park Biscuit Company official ordering menu",
+          "alt": "Dill Ranch photographed for Winter Park Biscuit Company",
+          "path": "research/photo-candidates/9284cf60bf771fc0aa108893ade0476caaecf12d9235ef860b382367f29a03b8.webp",
+          "sha256": "2f47f7513cfeda4f892445c99fadc766e8a2170881aa1459db4e83b2cc104272",
+          "pixelHash": "3d6e123aa2284418bf79c63eb326a74e0650437521fcf300b0e1425f9dad6fb9",
+          "width": 360,
+          "height": 240,
+          "bytes": 20420,
+          "status": "rejected-after-visual-review",
+          "discovery": {
+            "method": "visible menu DOM: named item link contains this image",
+            "observedAt": "2026-10-24T08:36:00Z"
+          },
+          "reviewNotes": "Repeated assortment of nine sauce cups, not an isolated identified photograph of this specific sauce. Named menu association alone does not make a group photo accurate."
+        }
+      ],
       "searchLog": [],
       "review": {
         "status": "pending",
@@ -18215,7 +19750,29 @@
         "kind": "dish"
       },
       "specificationHash": "85b66bebd5fc98bf452ba80d6fe6ed607ce1c46ba373a6976ea2f57b3c1b4a65",
-      "candidates": [],
+      "candidates": [
+        {
+          "id": "95d3088ff04d06bb",
+          "origin": "sourced",
+          "kind": "official-product",
+          "url": "https://d1w7312wesee68.cloudfront.net/a1qoIdVsUzGQOZchBLuJCqCVSHRHsg2eVYtNvz_LpFg/resize:fit:360:360/plain/s3://toasttab/restaurants/restaurant-62922000000000000/menu/items/4/item-100000006192576134_1658419715.jpg",
+          "sourceUrl": "https://order.toasttab.com/online/winterparkbiscuitco",
+          "credit": "Winter Park Biscuit Company official ordering menu",
+          "alt": "BBQ photographed for Winter Park Biscuit Company",
+          "path": "research/photo-candidates/95d3088ff04d06bbf0fa4b5fdab89aee2a9efb2b5e640f9b68d993b3feb01c61.webp",
+          "sha256": "2f47f7513cfeda4f892445c99fadc766e8a2170881aa1459db4e83b2cc104272",
+          "pixelHash": "3d6e123aa2284418bf79c63eb326a74e0650437521fcf300b0e1425f9dad6fb9",
+          "width": 360,
+          "height": 240,
+          "bytes": 20420,
+          "status": "rejected-after-visual-review",
+          "discovery": {
+            "method": "visible menu DOM: named item link contains this image",
+            "observedAt": "2026-10-24T08:36:00Z"
+          },
+          "reviewNotes": "Repeated assortment of nine sauce cups, not an isolated identified photograph of this specific sauce. Named menu association alone does not make a group photo accurate."
+        }
+      ],
       "searchLog": [],
       "review": {
         "status": "pending",
@@ -18238,7 +19795,29 @@
         "kind": "dish"
       },
       "specificationHash": "72a49f549a8b201bb89b93ea6d7e7e17fcbcc7cd52fe56e0c28a2b93c1922218",
-      "candidates": [],
+      "candidates": [
+        {
+          "id": "c0e95b64ea611004",
+          "origin": "sourced",
+          "kind": "official-product",
+          "url": "https://d1w7312wesee68.cloudfront.net/6OqWcLAj5yihpuKGmcBY_LGouNxF02nLeTNwFz41YLc/resize:fit:360:360/plain/s3://toasttab/restaurants/restaurant-62922000000000000/menu/items/0/item-100000006192576140_1658419690.jpg",
+          "sourceUrl": "https://order.toasttab.com/online/winterparkbiscuitco",
+          "credit": "Winter Park Biscuit Company official ordering menu",
+          "alt": "Buffalo photographed for Winter Park Biscuit Company",
+          "path": "research/photo-candidates/c0e95b64ea61100448d9dbf9962a97a1ca191c50af0875703c343fab27a51e6d.webp",
+          "sha256": "2f47f7513cfeda4f892445c99fadc766e8a2170881aa1459db4e83b2cc104272",
+          "pixelHash": "3d6e123aa2284418bf79c63eb326a74e0650437521fcf300b0e1425f9dad6fb9",
+          "width": 360,
+          "height": 240,
+          "bytes": 20420,
+          "status": "rejected-after-visual-review",
+          "discovery": {
+            "method": "visible menu DOM: named item link contains this image",
+            "observedAt": "2026-10-24T08:36:00Z"
+          },
+          "reviewNotes": "Repeated assortment of nine sauce cups, not an isolated identified photograph of this specific sauce. Named menu association alone does not make a group photo accurate."
+        }
+      ],
       "searchLog": [],
       "review": {
         "status": "pending",
@@ -18261,7 +19840,29 @@
         "kind": "dish"
       },
       "specificationHash": "e9d1567034fa553d42914e008af02003f2f5e2998f030a2516fa80a59e4e630f",
-      "candidates": [],
+      "candidates": [
+        {
+          "id": "917fb52644c6455f",
+          "origin": "sourced",
+          "kind": "official-product",
+          "url": "https://d1w7312wesee68.cloudfront.net/YpDi0IJJWRTSe0OvNFZwk4ZhFYztWnkECfikY8JLd7M/resize:fit:360:360/plain/s3://toasttab/restaurants/restaurant-62922000000000000/menu/items/9/item-100000006589968289_1658419767.jpg",
+          "sourceUrl": "https://order.toasttab.com/online/winterparkbiscuitco",
+          "credit": "Winter Park Biscuit Company official ordering menu",
+          "alt": "Vegan Honey photographed for Winter Park Biscuit Company",
+          "path": "research/photo-candidates/917fb52644c6455fef89dc0f8b7ceffba43c712f7b646d7d8ca79588df69c7d6.webp",
+          "sha256": "4490768868d341aeb7ce69fc47ebf6e7cc9642c2df588a6db67ffdb1e4e7a8f2",
+          "pixelHash": "c710bb57c715efb2beec954c495860b15ba170189214e0ef250de42016f1aedb",
+          "width": 240,
+          "height": 360,
+          "bytes": 3368,
+          "status": "needs-replacement",
+          "discovery": {
+            "method": "visible menu DOM: named item link contains this image",
+            "observedAt": "2026-10-24T08:36:00Z"
+          },
+          "reviewNotes": "Pouring cup photo shows no landed serving; need clear contained side portion."
+        }
+      ],
       "searchLog": [],
       "review": {
         "status": "pending",
@@ -18284,7 +19885,29 @@
         "kind": "dish"
       },
       "specificationHash": "4581268400b612131cde4c1ff36a59f24fa86254878e964806ca91bdacaa5b54",
-      "candidates": [],
+      "candidates": [
+        {
+          "id": "02777f89b149923a",
+          "origin": "sourced",
+          "kind": "official-product",
+          "url": "https://d1w7312wesee68.cloudfront.net/wPRL9K8fSk-vdKOl-Q7FVafbdtiHHKt9TfSn3PR1FVI/resize:fit:360:360/plain/s3://toasttab/restaurants/restaurant-62922000000000000/menu/items/7/item-100000007544627387_1658419791.jpg",
+          "sourceUrl": "https://order.toasttab.com/online/winterparkbiscuitco",
+          "credit": "Winter Park Biscuit Company official ordering menu",
+          "alt": "Spicy Mayo photographed for Winter Park Biscuit Company",
+          "path": "research/photo-candidates/02777f89b149923ac721c18b2e8d1f508528c1784d0dd6d634ca0fea73b95c18.webp",
+          "sha256": "2f47f7513cfeda4f892445c99fadc766e8a2170881aa1459db4e83b2cc104272",
+          "pixelHash": "3d6e123aa2284418bf79c63eb326a74e0650437521fcf300b0e1425f9dad6fb9",
+          "width": 360,
+          "height": 240,
+          "bytes": 20420,
+          "status": "rejected-after-visual-review",
+          "discovery": {
+            "method": "visible menu DOM: named item link contains this image",
+            "observedAt": "2026-10-24T08:36:00Z"
+          },
+          "reviewNotes": "Repeated assortment of nine sauce cups, not an isolated identified photograph of this specific sauce. Named menu association alone does not make a group photo accurate."
+        }
+      ],
       "searchLog": [],
       "review": {
         "status": "pending",
@@ -18310,7 +19933,29 @@
         "kind": "dish"
       },
       "specificationHash": "cc1c130b87aaf8cc1b9d00b7262a22d7630ff117cfac3a68d928c12c206eca01",
-      "candidates": [],
+      "candidates": [
+        {
+          "id": "f4cb9f1cb5856cab",
+          "origin": "sourced",
+          "kind": "official-product",
+          "url": "https://d1w7312wesee68.cloudfront.net/rDvTxvDpHMsTgFcgqJnFy5jaHbYzRpSJEGFblL_yklA/resize:fit:360:360/plain/s3://toasttab/restaurants/restaurant-62922000000000000/menu/items/1/item-100000007544734711_1658419827.jpg",
+          "sourceUrl": "https://order.toasttab.com/online/winterparkbiscuitco",
+          "credit": "Winter Park Biscuit Company official ordering menu",
+          "alt": "Spicy Gator photographed for Winter Park Biscuit Company",
+          "path": "research/photo-candidates/f4cb9f1cb5856cab3c829b0a90bce19ac836238636b66db7bd96bff6d300e52c.webp",
+          "sha256": "2f47f7513cfeda4f892445c99fadc766e8a2170881aa1459db4e83b2cc104272",
+          "pixelHash": "3d6e123aa2284418bf79c63eb326a74e0650437521fcf300b0e1425f9dad6fb9",
+          "width": 360,
+          "height": 240,
+          "bytes": 20420,
+          "status": "rejected-after-visual-review",
+          "discovery": {
+            "method": "visible menu DOM: named item link contains this image",
+            "observedAt": "2026-10-24T08:36:00Z"
+          },
+          "reviewNotes": "Repeated assortment of nine sauce cups, not an isolated identified photograph of this specific sauce. Named menu association alone does not make a group photo accurate."
+        }
+      ],
       "searchLog": [],
       "review": {
         "status": "pending",
@@ -18333,7 +19978,29 @@
         "kind": "dish"
       },
       "specificationHash": "3c0fb5b673cde60cd6810c4a9de106dc5e216b6fa8bc874f8e46df6db3582a35",
-      "candidates": [],
+      "candidates": [
+        {
+          "id": "848c03b665985752",
+          "origin": "sourced",
+          "kind": "official-product",
+          "url": "https://d1w7312wesee68.cloudfront.net/n2pmxTyzTT28JzCY9sxPuVbY1uXecZOz1T-_TInJ_x4/resize:fit:360:360/plain/s3://toasttab/restaurants/restaurant-62922000000000000/menu/items/1/item-100000007883529841_1658419846.jpg",
+          "sourceUrl": "https://order.toasttab.com/online/winterparkbiscuitco",
+          "credit": "Winter Park Biscuit Company official ordering menu",
+          "alt": "WPBC photographed for Winter Park Biscuit Company",
+          "path": "research/photo-candidates/848c03b665985752c293f28f7ead247ef08b12c6bbb44acaa7a3cf56e9088258.webp",
+          "sha256": "2f47f7513cfeda4f892445c99fadc766e8a2170881aa1459db4e83b2cc104272",
+          "pixelHash": "3d6e123aa2284418bf79c63eb326a74e0650437521fcf300b0e1425f9dad6fb9",
+          "width": 360,
+          "height": 240,
+          "bytes": 20420,
+          "status": "rejected-after-visual-review",
+          "discovery": {
+            "method": "visible menu DOM: named item link contains this image",
+            "observedAt": "2026-10-24T08:36:00Z"
+          },
+          "reviewNotes": "Repeated assortment of nine sauce cups, not an isolated identified photograph of this specific sauce. Named menu association alone does not make a group photo accurate."
+        }
+      ],
       "searchLog": [],
       "review": {
         "status": "pending",
@@ -18356,7 +20023,29 @@
         "kind": "dish"
       },
       "specificationHash": "ac298cf866c68f5fecef3b434e4bbfd41534b310dbb4d82f6bfd4a4c3f4803e3",
-      "candidates": [],
+      "candidates": [
+        {
+          "id": "cd9aea144db8fbd5",
+          "origin": "sourced",
+          "kind": "official-product",
+          "url": "https://d1w7312wesee68.cloudfront.net/qeNcNwlBk1I0UAUeNmPkvBaXmHw64wKmlwPZSVHvyRQ/resize:fit:360:360/plain/s3://toasttab/restaurants/restaurant-62922000000000000/menu/items/8/item-100000008294441328_1658419880.jpg",
+          "sourceUrl": "https://order.toasttab.com/online/winterparkbiscuitco",
+          "credit": "Winter Park Biscuit Company official ordering menu",
+          "alt": "Vegan Mayo photographed for Winter Park Biscuit Company",
+          "path": "research/photo-candidates/cd9aea144db8fbd5754ea120c1f44671b647d8239692cf250bd0cd4f273f822a.webp",
+          "sha256": "2f47f7513cfeda4f892445c99fadc766e8a2170881aa1459db4e83b2cc104272",
+          "pixelHash": "3d6e123aa2284418bf79c63eb326a74e0650437521fcf300b0e1425f9dad6fb9",
+          "width": 360,
+          "height": 240,
+          "bytes": 20420,
+          "status": "rejected-after-visual-review",
+          "discovery": {
+            "method": "visible menu DOM: named item link contains this image",
+            "observedAt": "2026-10-24T08:36:00Z"
+          },
+          "reviewNotes": "Repeated assortment of nine sauce cups, not an isolated identified photograph of this specific sauce. Named menu association alone does not make a group photo accurate."
+        }
+      ],
       "searchLog": [],
       "review": {
         "status": "pending",
@@ -18379,7 +20068,29 @@
         "kind": "dish"
       },
       "specificationHash": "c3e8252b7e92bcc7e58c35e33614df5302cbf6bc9923c541be7cf78faf0495bd",
-      "candidates": [],
+      "candidates": [
+        {
+          "id": "180ed23e7bb2a5f8",
+          "origin": "sourced",
+          "kind": "official-product",
+          "url": "https://d1w7312wesee68.cloudfront.net/XM_wZKX-ADKgD-u-Kp6vtMUIH6jQ7FKl2d3k3zudPnQ/resize:fit:360:360/plain/s3://toasttab/restaurants/restaurant-62922000000000000/menu/items/1/item-100000011120723081_1658419918.jpg",
+          "sourceUrl": "https://order.toasttab.com/online/winterparkbiscuitco",
+          "credit": "Winter Park Biscuit Company official ordering menu",
+          "alt": "Caesar Dressing photographed for Winter Park Biscuit Company",
+          "path": "research/photo-candidates/180ed23e7bb2a5f87d016f611b59326f3c6420bf727393c11b0417786bfa35a5.webp",
+          "sha256": "2f47f7513cfeda4f892445c99fadc766e8a2170881aa1459db4e83b2cc104272",
+          "pixelHash": "3d6e123aa2284418bf79c63eb326a74e0650437521fcf300b0e1425f9dad6fb9",
+          "width": 360,
+          "height": 240,
+          "bytes": 20420,
+          "status": "rejected-after-visual-review",
+          "discovery": {
+            "method": "visible menu DOM: named item link contains this image",
+            "observedAt": "2026-10-24T08:36:00Z"
+          },
+          "reviewNotes": "Repeated assortment of nine sauce cups, not an isolated identified photograph of this specific sauce. Named menu association alone does not make a group photo accurate."
+        }
+      ],
       "searchLog": [],
       "review": {
         "status": "pending",
@@ -27854,7 +29565,7 @@
           "kind": "official-product",
           "status": "downloaded-unreviewed",
           "discoveryMethod": "Published menu img alt matches normalized item name; not visual approval",
-          "path": "research/photo-candidates/2c9e485a19886b2d5a17d57f7a941ff2e06ced44974cba3af5c357c7d0e45c5f.webp",
+          "path": "mobile/assets/food/mamak-colonial/roti-canai.webp",
           "sha256": "908c3771c001ba3c6a29aa0354492f9204afdff5774beb5be76463595af04c3e",
           "pixelHash": "15cef766ed1882309677d7ed5b6085504c980e8369aadf243ed85a2d81fcc130",
           "width": 1200,
@@ -27881,10 +29592,18 @@
       ],
       "searchLog": [],
       "review": {
-        "status": "needs-replacement",
-        "selectedCandidateId": null,
-        "inspectedAt": "2026-10-24T07:06:58.918495+00:00",
-        "notes": "The left side of the actual flatbread is cropped in this source. Need full-food framing."
+        "status": "approved",
+        "selectedCandidateId": "2c9e485a19886b2d",
+        "inspectedAt": "2026-10-24T08:00:46.606763+00:00",
+        "reviewer": "Codex visual inspection",
+        "notes": "Compared all three real candidates. Selected the official Mamak product photo with two golden folded flatbreads and one kari gravy cup, all food visible on the blue plate. Better framing than the cropped legacy image and better resolution/presentation than the delivery image. Hidden coconut/mushroom sauce recipe comes from the menu, not visual inference.",
+        "checks": {
+          "identity": "pass",
+          "ingredients": "pass",
+          "portion": "pass",
+          "framing": "pass",
+          "quality": "pass"
+        }
       }
     },
     {

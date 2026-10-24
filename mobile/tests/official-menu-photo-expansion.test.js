@@ -60,9 +60,9 @@ test("native and chain menu displays preserve the entire photo without cropping"
   const dining = readFileSync(new URL("../components/Dining.js", import.meta.url), "utf8");
   const taco = readFileSync(new URL("../components/TacoBellMenu.js", import.meta.url), "utf8");
   const styles = readFileSync(new URL("../styles.js", import.meta.url), "utf8");
-  assert.match(dining, /resizeMode="contain"/);
-  assert.match(taco, /resizeMode="contain"/);
+  assert.match(dining, /contentFit="contain"/);
+  assert.match(taco, /contentFit="contain"/);
   assert.match(styles, /menuDishPhotoLargeCanvas:[\s\S]*?height: 260/);
   assert.match(taco, /photoWide: \{ height: 250/);
-  assert.doesNotMatch(dining, /resizeMode=\{photo\.exact \? "contain" : "cover"\}/);
+  assert.doesNotMatch(dining, /contentFit=\{photo\.exact \? "contain" : "cover"\}/);
 });

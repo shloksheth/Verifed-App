@@ -1,8 +1,9 @@
 import React, { useMemo, useState } from "react";
 import {
-  Image, Linking, Modal, Pressable, ScrollView, Share, StyleSheet, Text,
+  Linking, Modal, Pressable, ScrollView, Share, StyleSheet, Text,
   TextInput, View,
 } from "react-native";
+import { Image } from "expo-image";
 import { api } from "../src/api";
 import { dietaryMenuStatus, groupMenu } from "../src/menu-filter";
 import { menuPhotoFor } from "../src/menu-photos";
@@ -39,7 +40,7 @@ function FoodPhoto({ dish, restaurant, wide = false }) {
         <Image
           source={localAsset || { uri: photo.url }}
           style={look.photoFill}
-          resizeMode="contain"
+          contentFit="contain"
           accessibilityLabel={localMetadata?.alt || photo.alt || dish.name}
           onError={() => setFailed(true)}
         />

@@ -62,6 +62,7 @@ test("both menu renderers prefer the local asset over the legacy remote referenc
     const source = readFileSync(new URL(`../components/${file}`, import.meta.url), "utf8");
     assert.match(source, /localFoodAssets\[dish\.catalogKey\]/);
     assert.match(source, /source=\{localAsset \|\| \{ uri: photo\.url \}\}/);
-    assert.match(source, /resizeMode="contain"/);
+    assert.match(source, /contentFit="contain"/);
+    assert.match(source, /import \{ Image \} from "expo-image"/);
   }
 });

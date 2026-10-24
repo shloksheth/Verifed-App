@@ -891,6 +891,24 @@ export const localFoodPhotoMetadata = {
     "width": 1200,
     "height": 1200
   },
+  "loving-hut-orlando-avocado-rolls-2-rolls": {
+    "path": "assets/food/loving-hut-orlando/avocado-rolls-2-rolls.webp",
+    "alt": "Menu illustration of Avocado Rolls (2 Rolls)",
+    "credit": "Verifed generated menu illustration",
+    "generated": true,
+    "sha256": "8fd366132c42aba00744928d127e27260e5727b9da606963131a84517e1db8e8",
+    "width": 1200,
+    "height": 1200
+  },
+  "loving-hut-orlando-loving-hut-rolls-2-rolls-goi-cuon": {
+    "path": "assets/food/loving-hut-orlando/loving-hut-rolls-2-rolls-goi-cuon.webp",
+    "alt": "Menu illustration of Loving Hut Rolls (2 Rolls) - Gỏi Cuốn",
+    "credit": "Verifed generated menu illustration",
+    "generated": true,
+    "sha256": "83c7c47bd68d61354692982b69fca31f86d6a41b864dfbe4d6d6341e87564090",
+    "width": 1200,
+    "height": 800
+  },
   "loving-hut-orlando-taro-bun": {
     "path": "assets/food/loving-hut-orlando/taro-bun.webp",
     "alt": "Menu illustration of Taro Bun",
@@ -936,12 +954,246 @@ export const localFoodPhotoMetadata = {
     "width": 1200,
     "height": 800
   },
+  "loving-hut-orlando-golden-nuggets": {
+    "path": "assets/food/loving-hut-orlando/golden-nuggets.webp",
+    "alt": "Menu illustration of Golden Nuggets",
+    "credit": "Verifed generated menu illustration",
+    "generated": true,
+    "sha256": "450d167cedacb4142d025b0b5728f230caf4ba5caa073cc22bd0e76072f9fd37",
+    "width": 1200,
+    "height": 800
+  },
   "loving-hut-orlando-potsticker-4-pieces": {
     "path": "assets/food/loving-hut-orlando/potsticker-4-pieces.webp",
     "alt": "Menu illustration of Potsticker (4 Pieces)",
     "credit": "Verifed generated menu illustration",
     "generated": true,
     "sha256": "e0bab4f83c9ab518a30752d2ac0f9e6793ae4cc383930cc5be8c5b99b7a3b5f9",
+    "width": 1200,
+    "height": 1200
+  },
+  "loving-hut-orlando-heavenly-salad": {
+    "path": "assets/food/loving-hut-orlando/heavenly-salad.webp",
+    "alt": "Menu illustration of Heavenly Salad",
+    "credit": "Verifed generated menu illustration",
+    "generated": true,
+    "sha256": "287f8af8cf8b08b8ed5eff70ac3cb882bc7d6c033ef264adeac64d5701e0ea85",
+    "width": 1200,
+    "height": 800
+  },
+  "loving-hut-orlando-avocado-salad": {
+    "path": "assets/food/loving-hut-orlando/avocado-salad.webp",
+    "alt": "Menu illustration of Avocado Salad",
+    "credit": "Verifed generated menu illustration",
+    "generated": true,
+    "sha256": "d99f023551c1972f5fa37d668fb30b6a497cc8191986931e623f1aa4a5ddf8c2",
+    "width": 1200,
+    "height": 800
+  },
+  "loving-hut-orlando-crispy-green-beans": {
+    "path": "assets/food/loving-hut-orlando/crispy-green-beans.webp",
+    "alt": "Menu illustration of Crispy Green Beans",
+    "credit": "Verifed generated menu illustration",
+    "generated": true,
+    "sha256": "901a39d8b4c632fcd77549d6f823f8fc63997a1f711ed1c16be6cbc25fcb5b4d",
+    "width": 1200,
+    "height": 1200
+  },
+  "loving-hut-orlando-pho": {
+    "path": "assets/food/loving-hut-orlando/pho.webp",
+    "alt": "Menu illustration of Pho",
+    "credit": "Verifed generated menu illustration",
+    "generated": true,
+    "sha256": "bd4484c2397a36a13004d5003f4d27b216c673090877a29b60a710b0703ecd6a",
+    "width": 1200,
+    "height": 800
+  },
+  "loving-hut-orlando-bun-hue": {
+    "path": "assets/food/loving-hut-orlando/bun-hue.webp",
+    "alt": "Menu illustration of Bun Hue",
+    "credit": "Verifed generated menu illustration",
+    "generated": true,
+    "sha256": "301efe63d6e4517b113fdfa3ca0c8441a70cbd008d6677dd4fb2cb1579c37d76",
+    "width": 1200,
+    "height": 800
+  },
+  "loving-hut-orlando-yogi-rice-noodle-soup-hu-tieu": {
+    "path": "assets/food/loving-hut-orlando/yogi-rice-noodle-soup-hu-tieu.webp",
+    "alt": "Menu illustration of Yogi Rice Noodle Soup - Hủ Tiếu",
+    "credit": "Verifed generated menu illustration",
+    "generated": true,
+    "sha256": "6f0051d7b87a5d8d906b1fd1177a2b37025b5f7fc88c5da7d63099071bd77d86",
+    "width": 1200,
+    "height": 800
+  },
+  "loving-hut-orlando-small-wonton-soup": {
+    "path": "assets/food/loving-hut-orlando/small-wonton-soup.webp",
+    "alt": "Menu illustration of Small Wonton Soup",
+    "credit": "Verifed generated menu illustration",
+    "generated": true,
+    "sha256": "543a99e8ba74927295eb610fef8ba76c2302a28a9880c5de53c7d1de891c8615",
+    "width": 1200,
+    "height": 800
+  },
+  "loving-hut-orlando-small-tofu-soup": {
+    "path": "assets/food/loving-hut-orlando/small-tofu-soup.webp",
+    "alt": "Menu illustration of Small Tofu Soup",
+    "credit": "Verifed generated menu illustration",
+    "generated": true,
+    "sha256": "02528d4af5c56687685b32c33efee3e8f94434ea2fe3f90d7f42ccbb662ef47c",
+    "width": 1200,
+    "height": 1200
+  },
+  "loving-hut-orlando-small-seaweed-soup": {
+    "path": "assets/food/loving-hut-orlando/small-seaweed-soup.webp",
+    "alt": "Menu illustration of Small Seaweed Soup",
+    "credit": "Verifed generated menu illustration",
+    "generated": true,
+    "sha256": "5fd6621cf0ded349fd309857f88760ae6f06e65f308027bf66bf7004f28891c3",
+    "width": 1200,
+    "height": 800
+  },
+  "loving-hut-orlando-chickun-burger": {
+    "path": "assets/food/loving-hut-orlando/chickun-burger.webp",
+    "alt": "Menu illustration of Chickun Burger",
+    "credit": "Verifed generated menu illustration",
+    "generated": true,
+    "sha256": "87f1c5eab341a6889c69a9e3d7c6e6c63dc373f55b2ad1996f990232655e9bdc",
+    "width": 1200,
+    "height": 1200
+  },
+  "loving-hut-orlando-loving-burger": {
+    "path": "assets/food/loving-hut-orlando/loving-burger.webp",
+    "alt": "Menu illustration of Loving Burger",
+    "credit": "Verifed generated menu illustration",
+    "generated": true,
+    "sha256": "08e380530fa8f116e76416f170c9f3fb6c65d7a777bca3c137575d4904fa8008",
+    "width": 1200,
+    "height": 800
+  },
+  "loving-hut-orlando-philly-love": {
+    "path": "assets/food/loving-hut-orlando/philly-love.webp",
+    "alt": "Menu illustration of Philly Love",
+    "credit": "Verifed generated menu illustration",
+    "generated": true,
+    "sha256": "60531f7a494a5528df5d1abd1808789c6aa0173d6502c0b18ff0ef28a0ab37fc",
+    "width": 1200,
+    "height": 800
+  },
+  "loving-hut-orlando-ocean-filet-burger": {
+    "path": "assets/food/loving-hut-orlando/ocean-filet-burger.webp",
+    "alt": "Menu illustration of Ocean Filet Burger",
+    "credit": "Verifed generated menu illustration",
+    "generated": true,
+    "sha256": "b2d3c416751c0432dbdc19f90d23e68e825a1e527c12ea7d81016572ed503e51",
+    "width": 1200,
+    "height": 800
+  },
+  "loving-hut-orlando-singapore-curry-noodle": {
+    "path": "assets/food/loving-hut-orlando/singapore-curry-noodle.webp",
+    "alt": "Menu illustration of Singapore Curry Noodle",
+    "credit": "Verifed generated menu illustration",
+    "generated": true,
+    "sha256": "12d10a610d02082a98e0051935c9327f65264330c158c239bd040dead0443a9e",
+    "width": 1200,
+    "height": 1200
+  },
+  "loving-hut-orlando-tofu-noodle-bun-xao": {
+    "path": "assets/food/loving-hut-orlando/tofu-noodle-bun-xao.webp",
+    "alt": "Menu illustration of Tofu Noodle - Bún Xào",
+    "credit": "Verifed generated menu illustration",
+    "generated": true,
+    "sha256": "4429af24378d425cc3275779448b325ca0cb241146b02b81e2c6fe7d7c8de6a6",
+    "width": 1200,
+    "height": 1200
+  },
+  "loving-hut-orlando-lemongrass-noodle": {
+    "path": "assets/food/loving-hut-orlando/lemongrass-noodle.webp",
+    "alt": "Menu illustration of Lemongrass Noodle",
+    "credit": "Verifed generated menu illustration",
+    "generated": true,
+    "sha256": "4299eda9568b7064508ea75fc532d16b004b946dd5c650c362df28066768e197",
+    "width": 1200,
+    "height": 1200
+  },
+  "loving-hut-orlando-chow-mein-mi-xao": {
+    "path": "assets/food/loving-hut-orlando/chow-mein-mi-xao.webp",
+    "alt": "Menu illustration of Chow Mein - Mì Xào",
+    "credit": "Verifed generated menu illustration",
+    "generated": true,
+    "sha256": "63bd1ec162edd4379cc229b41a24fa09adca798aa3fbeeb008c0069ee93569db",
+    "width": 1200,
+    "height": 800
+  },
+  "loving-hut-orlando-saigon-noodle-bun-cha-gio": {
+    "path": "assets/food/loving-hut-orlando/saigon-noodle-bun-cha-gio.webp",
+    "alt": "Menu illustration of Saigon Noodle - Bún Chả Giò",
+    "credit": "Verifed generated menu illustration",
+    "generated": true,
+    "sha256": "144b6a8f262c3468f9e228f55996508076b3b6712bd17d705774983773e06897",
+    "width": 1200,
+    "height": 800
+  },
+  "loving-hut-orlando-stir-fry-veggie": {
+    "path": "assets/food/loving-hut-orlando/stir-fry-veggie.webp",
+    "alt": "Menu illustration of Stir-Fry Veggie",
+    "credit": "Verifed generated menu illustration",
+    "generated": true,
+    "sha256": "37abac5b28cfdea7157e139fea2af4399a8a480074e7d80b3a4807bed32d7395",
+    "width": 1200,
+    "height": 1200
+  },
+  "loving-hut-orlando-mushroom-spicy-cha-cha": {
+    "path": "assets/food/loving-hut-orlando/mushroom-spicy-cha-cha.webp",
+    "alt": "Menu illustration of Mushroom Spicy Cha Cha",
+    "credit": "Verifed generated menu illustration",
+    "generated": true,
+    "sha256": "c28fd7edac43f220f4057e26c495f87940b1705fe475f77394b1fd69bfb27aa8",
+    "width": 1200,
+    "height": 800
+  },
+  "loving-hut-orlando-eggplant-tofu": {
+    "path": "assets/food/loving-hut-orlando/eggplant-tofu.webp",
+    "alt": "Menu illustration of Eggplant Tofu",
+    "credit": "Verifed generated menu illustration",
+    "generated": true,
+    "sha256": "842f9d9382c60d8b3fdac5daf3f3d6158de23ba227ee9d6131e21cf99b511397",
+    "width": 1200,
+    "height": 646
+  },
+  "loving-hut-orlando-vegan-flan": {
+    "path": "assets/food/loving-hut-orlando/vegan-flan.webp",
+    "alt": "Menu illustration of Vegan Flan",
+    "credit": "Verifed generated menu illustration",
+    "generated": true,
+    "sha256": "702390a1e16a9253e063807d3ed9606b4cb1eb55ad49f762a2077d71cdd49a37",
+    "width": 1200,
+    "height": 1200
+  },
+  "loving-hut-orlando-cheese-cake": {
+    "path": "assets/food/loving-hut-orlando/cheese-cake.webp",
+    "alt": "Menu illustration of Cheese Cake",
+    "credit": "Verifed generated menu illustration",
+    "generated": true,
+    "sha256": "d9099f73aa276f22b028f434cfb2389bfa5c7a8b9cd8cb724d2ef014dc667be4",
+    "width": 1200,
+    "height": 781
+  },
+  "loving-hut-orlando-chocolate-cake": {
+    "path": "assets/food/loving-hut-orlando/chocolate-cake.webp",
+    "alt": "Menu illustration of Chocolate Cake",
+    "credit": "Verifed generated menu illustration",
+    "generated": true,
+    "sha256": "15469997faca864272acc2c8d7f666647d99d5c96e9c0008e98cd8f13b558970",
+    "width": 1200,
+    "height": 800
+  },
+  "loving-hut-orlando-chocolate-chip-cookie": {
+    "path": "assets/food/loving-hut-orlando/chocolate-chip-cookie.webp",
+    "alt": "Menu illustration of Chocolate Chip Cookie",
+    "credit": "Verifed generated menu illustration",
+    "generated": true,
+    "sha256": "b069cc62fbcfee9f750d50f77617c82335ab319f9533e5826f9f87a4e99e8c99",
     "width": 1200,
     "height": 1200
   },
@@ -1043,6 +1295,51 @@ export const localFoodPhotoMetadata = {
     "sha256": "94aa941b49169d74e9e6babe3c9f369f2bd3549d79b491181a86666645141781",
     "width": 765,
     "height": 510
+  },
+  "winter-park-biscuit-biscuits-gravy": {
+    "path": "assets/food/winter-park-biscuit/biscuits-gravy.webp",
+    "alt": "biscuits gravy pictured for Winter Park Biscuit Company",
+    "credit": "Winter Park Biscuit Company official ordering menu",
+    "generated": false,
+    "sha256": "1b2ff9031bb04a77d54e77c4e2cbe6c2597be13e970ef9199900709d9b733897",
+    "width": 720,
+    "height": 1080
+  },
+  "winter-park-biscuit-french-fries": {
+    "path": "assets/food/winter-park-biscuit/french-fries.webp",
+    "alt": "french fries pictured for Winter Park Biscuit Company",
+    "credit": "Winter Park Biscuit Company official ordering menu",
+    "generated": false,
+    "sha256": "d877f807b31cae3b41feb3fa6ef212cfbe940530022af4fc4fc48c51c5b04966",
+    "width": 720,
+    "height": 1080
+  },
+  "winter-park-biscuit-side-kale-salad": {
+    "path": "assets/food/winter-park-biscuit/side-kale-salad.webp",
+    "alt": "side kale salad pictured for Winter Park Biscuit Company",
+    "credit": "Winter Park Biscuit Company official ordering menu",
+    "generated": false,
+    "sha256": "2c87421b0b4073d42b7e5b8a685030a70a91b9873759ebb470bf928b09382ea3",
+    "width": 720,
+    "height": 1080
+  },
+  "winter-park-biscuit-side-chickpea-salad": {
+    "path": "assets/food/winter-park-biscuit/side-chickpea-salad.webp",
+    "alt": "side chickpea salad pictured for Winter Park Biscuit Company",
+    "credit": "Winter Park Biscuit Company official ordering menu",
+    "generated": false,
+    "sha256": "c12c3de2b8ed3fa3eb2540574dcd147c6955e765242f2fb696939a5fdb8583f1",
+    "width": 720,
+    "height": 1080
+  },
+  "winter-park-biscuit-sausage-gravy": {
+    "path": "assets/food/winter-park-biscuit/sausage-gravy.webp",
+    "alt": "sausage gravy pictured for Winter Park Biscuit Company",
+    "credit": "Winter Park Biscuit Company official ordering menu",
+    "generated": false,
+    "sha256": "dba8c2e5eb523a1526d83e583f002aac9c616ac8e464849c67f17f772356178c",
+    "width": 720,
+    "height": 1080
   },
   "stubborn-mule-stubborn-mule-burger": {
     "path": "assets/food/stubborn-mule/stubborn-mule-burger.webp",
@@ -1187,6 +1484,15 @@ export const localFoodPhotoMetadata = {
     "sha256": "856be7cee5e5f3157391593fa4169ad000be2b26c4ae622d5cafbc6848a7c2a8",
     "width": 650,
     "height": 433
+  },
+  "mamak-colonial-roti-canai": {
+    "path": "assets/food/mamak-colonial/roti-canai.webp",
+    "alt": "Roti Canai",
+    "credit": "Mamak Asian Street Food published menu",
+    "generated": false,
+    "sha256": "908c3771c001ba3c6a29aa0354492f9204afdff5774beb5be76463595af04c3e",
+    "width": 1200,
+    "height": 800
   },
   "mamak-colonial-stir-fried-green-beans": {
     "path": "assets/food/mamak-colonial/stir-fried-green-beans.webp",

@@ -14,13 +14,19 @@ This migration is in progress. `research/local-photo-coverage.json` is the curre
 
 `research/register-researched-candidates.py` accepts a JSON list of item keys, queries and source candidates. It records real downloaded search alternatives with an initial inspected count of zero. Update that count only after actually comparing them, and retain reasons for rejection.
 
+`research/register-browser-photo-candidates.py` imports only explicitly observed item/image associations from a Browser Use asset bundle. `research/browser-photo-observations.json` stores the item name, image filename and menu page that were visible together. The importer checks the catalog name, picks the largest observed responsive image and converts it to WebP without approving it. It copies no browser history, cookies, analytics requests or raw browser bundle metadata into the repository. `research/wpbc-official-high-resolution.json` records larger image URLs read from the same menu's actual `srcset` attributes. A named link can still contain a generic or repeated photo, so visual review remains necessary.
+
+Use `--latest-candidate` with the review-sheet tool to inspect the most recently registered image for each item. `--item` shows all downloaded alternatives for a single entry. Neither option grants approval.
+
 ## Runtime files
 
 `mobile/src/local-food-assets.js` contains static `require` calls. Metro needs these static paths to package images on iOS, Android and web. Do not replace them with constructed strings.
 
 `mobile/src/local-food-photo-metadata.js` contains local paths, alternative text, credits, dimensions, hashes and a generated-image flag. External source URLs and full prompts stay in the internal research manifest, rather than being requested to display an approved image.
 
-`mobile/components/Dining.js` and `mobile/components/TacoBellMenu.js` prefer an approved local asset and its metadata. Their `contain` sizing keeps the food visible. General menu cards identify generated illustrations. Unapproved entries retain legacy behavior until their replacements pass review; this checkpoint does not claim that those images meet the new requirements.
+`mobile/components/Dining.js` and `mobile/components/TacoBellMenu.js` prefer an approved local asset and its metadata. They use `Image` from `expo-image` for WebP decoding on iOS, Android and web, including assets served by Snack. `contentFit="contain"` keeps the food visible. General menu cards identify generated illustrations. Unapproved entries retain legacy behavior until their replacements pass review; this checkpoint does not claim that those images meet the new requirements.
+
+`mobile/package.json` and its lockfile pin the Expo SDK 54 compatible `expo-image` dependency selected by `expo install`. No Expo SDK upgrade was performed. Image support is documented at https://docs.expo.dev/versions/latest/sdk/image/.
 
 `research/native-tools/assets.mjs` recursively lists supported image assets and their MIME types. `research/native-tools/publish.mjs` uses that list to upload WebP assets to Snack and records their hashes. It previously included only the logo. Publishing is separate from visual approval.
 

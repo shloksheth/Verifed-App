@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import {
-  Image,
   Linking,
   Pressable,
   ScrollView,
   Text,
   View,
 } from "react-native";
+import { Image } from "expo-image";
 import { api } from "../src/api";
 import { assessDish } from "../src/domain";
 import { chainBrand } from "../src/chain-brand";
@@ -263,7 +263,7 @@ function DishPhoto({ dish, restaurant, large = false }) {
         <Image
           source={localAsset || { uri: photo.url }}
           accessibilityLabel={localMetadata?.alt || photo.alt || `Menu photo for ${dish.name}`}
-          resizeMode="contain"
+          contentFit="contain"
           style={large ? s.menuDishPhotoLarge : s.menuDishPhoto}
           onError={() => setFailedUrl(photo.url)}
         />
@@ -377,7 +377,7 @@ function RestaurantPhoto({ restaurant, style, credit = false }) {
       {displayed.imageUrl && !failed ? (
         <Image
           source={{ uri: displayed.imageUrl }}
-          resizeMode={
+          contentFit={
             displayed.imageKind === "brand-art" ? "contain" : "cover"
           }
           style={[
