@@ -1,5 +1,5 @@
-// Dish-keyed menu and explicitly labeled representative photos with verified source attribution.
-// No food photo is evidence of allergen safety, current menu details, or reuse permission.
+// Menu item photography with credit and explicit labels for other-branch/representative images.
+// Images do not certify allergy safety or grant reproduction rights.
 export const verifiedDishPhotos = {
   "loving-hut-orlando": {
     "spring-rolls-4-rolls-cha-gio": {
@@ -1681,7 +1681,7 @@ export const verifiedDishPhotos = {
     },
     "wpbc-burger": {
       "url": "https://i0.wp.com/www.orlandoweekly.com/wp-content/uploads/2020/11/wpbco2.webp?ssl=1",
-      "alt": "Winter Park Biscuit Company's own Impossible Burger with vegan American cheese, lettuce, tomato, pickles and house sauce, photographed by Faiyaz Kara in 2020. Historical photo shows a potato bun, while the current menu specifies brioche; exact current plating differs.",
+      "alt": "Authentic Winter Park Biscuit Company Impossible Burger with vegan American cheese, lettuce, tomato, pickles, and house sauce, photographed by Faiyaz Kara in 2020. This is NOT the current verified plating: historical potato bun differs from today's brioche-bun menu description.",
       "credit": "Orlando Weekly · Faiyaz Kara photograph of Winter Park Biscuit Company's Impossible Burger",
       "sourceUrl": "https://www.orlandoweekly.com/food-drink/brace-yourself-winter-park-biscuit-co-slated-to-open-thanksgiving-week-inside-east-end-market-28271078/",
       "kind": "editorial-context",
