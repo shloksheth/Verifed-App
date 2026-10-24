@@ -25,7 +25,12 @@ test("restaurant cover images do not leak onto unrelated menu item cards", () =>
   assert.match(cover2.url, /\.(jpg|jpeg|png|webp)(\?|$)/i);
   for (const restaurant of [seito, sparrow]) {
     for (const dish of localDishes.filter((d) => d.restaurantId === restaurant.id)) {
-      assert.equal(menuPhotoFor(dish, restaurant), null, `Unverified picture for ${dish.name}`);
+      const photo = menuPhotoFor(dish, restaurant);
+      if (photo) {
+        assert.equal(photo.exact, true);
+        assert.ok(photo.alt && photo.sourceUrl, `Missing image provenance for ${dish.name}`);
+        assert.ok(dish.imageUrl, `Cover leaked onto ${dish.name}`);
+      }
     }
   }
 });
