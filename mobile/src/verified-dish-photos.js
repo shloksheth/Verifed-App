@@ -1,4 +1,5 @@
-// Item-specific credited menu photos, plus explicitly labeled representative food photos; not allergen evidence.
+// Restaurant menu images are keyed to items; photos may be official or clearly labeled representative.
+// No image certifies dietary safety. Third-party images require publication-rights verification.
 export const verifiedDishPhotos = {
   "loving-hut-orlando": {
     "spring-rolls-4-rolls-cha-gio": {
@@ -2662,6 +2663,39 @@ export const verifiedDishPhotos = {
       "reviewedAt": "2026-10-24",
       "needsPermissionReview": true,
       "matchMethod": "Visually compared restaurant photo with protein-specific Lo Mein and menu description."
+    },
+    "curry-steak": {
+      "url": "https://s.yimg.com/ny/api/res/1.2/rhxOZtPqgz_gMRV5QNr86Q--/YXBwaWQ9aGlnaGxhbmRlcjt3PTI0MDA7aD0xODAwO2NmPXdlYnA-/https%3A/media.zenfs.com/en/seattle_eater_760/8120bd8c54796a1ae03eb74ec66c6a62",
+      "alt": "Representative steak in an orange curry sauce, with a separate bowl of white rice. This is NOT Hawkers Po Po Lo's Steak Curry; plating and recipe differ.",
+      "credit": "Eater Seattle · photographed steak with curry at another restaurant",
+      "sourceUrl": "https://www.yahoo.com/lifestyle/articles/save-room-dessert-green-lake-170000795.html",
+      "kind": "representative-food",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Visually compared food type and primary protein with menu variant, differences explicitly disclosed; no authentic restaurant item photo available.",
+      "needsPermissionReview": true,
+      "photoIdentityNote": "Illustrative photograph from another restaurant or editorial source. Not a genuine Hawkers product photo."
+    },
+    "curry-shrimp": {
+      "url": "https://c.ndtvimg.com/2023-10/qp9poet8_fatty-bao_625x300_23_October_23.jpg",
+      "alt": "Representative whole prawns in golden curry sauce with lemongrass and bell pepper. This is NOT Hawkers Po Po Lo's Shrimp Curry and does not show its jasmine rice.",
+      "credit": "NDTV Food · Fatty Bao prawn curry photograph",
+      "sourceUrl": "https://food.ndtv.com/food-drinks/these-are-the-best-restaurants-on-lavelle-road-bengaluru-4507376",
+      "kind": "representative-food",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Visually compared food type and primary protein with menu variant, differences explicitly disclosed; no authentic restaurant item photo available.",
+      "needsPermissionReview": true,
+      "photoIdentityNote": "Illustrative photograph from another restaurant or editorial source. Not a genuine Hawkers product photo."
+    },
+    "thai-fried-egg": {
+      "url": "https://res.cloudinary.com/the-infatuation/image/upload/c_fill%2Cw_3840%2Car_4%3A3%2Cg_center%2Cf_auto/cms/Plaza_Khao_Gaeng_Fried_Eggs_Aleksandra_Boruch_London2",
+      "alt": "Representative Thai-style crispy fried egg with golden lacy edges and runny yolk, alongside chili dip. This is not Hawkers' actual Thai Fried Egg topping.",
+      "credit": "The Infatuation · Plaza Khao Gaeng Thai fried egg",
+      "sourceUrl": "https://www.theinfatuation.com/london/reviews/plaza-khao-gaeng",
+      "kind": "representative-food",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Visually compared food type and primary protein with menu variant, differences explicitly disclosed; no authentic restaurant item photo available.",
+      "needsPermissionReview": true,
+      "photoIdentityNote": "Illustrative photograph from another restaurant or editorial source. Not a genuine Hawkers product photo."
     }
   },
   "pizza-bruno-curry": {
