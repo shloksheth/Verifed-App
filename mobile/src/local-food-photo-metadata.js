@@ -279,6 +279,24 @@ export const localFoodPhotoMetadata = {
     "width": 1200,
     "height": 675
   },
+  "hawkers-orlando-curry-steak": {
+    "path": "assets/food/hawkers-orlando/curry-steak.webp",
+    "alt": "Menu illustration of Po Po Lo’s Curry — Steak",
+    "credit": "Verifed generated menu illustration",
+    "generated": true,
+    "sha256": "4eb6eebeac7505adf5f81c8175864caf0603e38637f8b28ab9badb0f9b08bf5e",
+    "width": 1200,
+    "height": 675
+  },
+  "hawkers-orlando-curry-shrimp": {
+    "path": "assets/food/hawkers-orlando/curry-shrimp.webp",
+    "alt": "Menu illustration of Po Po Lo’s Curry — Shrimp",
+    "credit": "Verifed generated menu illustration",
+    "generated": true,
+    "sha256": "fa97e7cff684030e00e99546b88fd2104a4615424733da83c34120f09d3a0f91",
+    "width": 1200,
+    "height": 675
+  },
   "hawkers-orlando-steak-kimchi-rice": {
     "path": "assets/food/hawkers-orlando/steak-kimchi-rice.webp",
     "alt": "Steak and Kimchi Fried Rice, pictured on the Hawkers official dining menu; presentation may vary by location",
@@ -351,6 +369,24 @@ export const localFoodPhotoMetadata = {
     "width": 800,
     "height": 450
   },
+  "hawkers-orlando-steak-lo-mein": {
+    "path": "assets/food/hawkers-orlando/steak-lo-mein.webp",
+    "alt": "Hawkers beef lo mein with visible steak slices atop stir-fried egg noodles and scallions, photographed at a Hawkers location other than Orlando",
+    "credit": "Hawkers Charlotte · Postmates menu product photo",
+    "generated": false,
+    "sha256": "265f23b01423145ca01793c9568e832770d6a184efc3e6551c8c3775d16af3a7",
+    "width": 660,
+    "height": 440
+  },
+  "hawkers-orlando-shrimp-lo-mein": {
+    "path": "assets/food/hawkers-orlando/shrimp-lo-mein.webp",
+    "alt": "Hawkers shrimp lo mein with whole shrimp, wok-fried egg noodles and fresh scallions, photographed at the Dallas restaurant; Orlando plating may differ",
+    "credit": "Hawkers Dallas · Postmates menu photograph",
+    "generated": false,
+    "sha256": "573c7011fdca91a9d6f64ee89f691a6719a2769fdbcafd0fb294184b769e9737",
+    "width": 660,
+    "height": 440
+  },
   "hawkers-orlando-hong-kong-wonton": {
     "path": "assets/food/hawkers-orlando/hong-kong-wonton.webp",
     "alt": "Hong Kong Wonton, pictured on the Hawkers official dining menu; presentation may vary by location",
@@ -395,6 +431,15 @@ export const localFoodPhotoMetadata = {
     "sha256": "d9a410bf2ecbb9a4ad7b370d06090af883d011254c8cf3f76d1a87c3a8f36023",
     "width": 800,
     "height": 450
+  },
+  "hawkers-orlando-thai-fried-egg": {
+    "path": "assets/food/hawkers-orlando/thai-fried-egg.webp",
+    "alt": "Menu illustration of Thai Fried Egg",
+    "credit": "Verifed generated menu illustration",
+    "generated": true,
+    "sha256": "b05e15b52e9665bbb7ac54a07d3db100a232b8f70afc045b185181aff7bc6954",
+    "width": 1200,
+    "height": 800
   },
   "fresh-kitchen-waterford-sweet-potato-noodles": {
     "path": "assets/food/fresh-kitchen-waterford/sweet-potato-noodles.webp",
@@ -2160,6 +2205,15 @@ export const localFoodPhotoMetadata = {
     "width": 750,
     "height": 340
   },
+  "taco-bell-south-orange-diablo-ranch-crispy-chicken-crunchwrap-slider": {
+    "path": "assets/food/taco-bell-south-orange/diablo-ranch-crispy-chicken-crunchwrap-slider.webp",
+    "alt": "Menu illustration of Diablo Ranch Crispy Chicken Crunchwrap Slider",
+    "credit": "Verifed generated menu illustration",
+    "generated": true,
+    "sha256": "70c9b1b4bc882c73a3b2cadca36c55a9ac5fb05a6ca6670c912d1fe0c2663fae",
+    "width": 1200,
+    "height": 800
+  },
   "taco-bell-south-orange-5-piece-crispy-chicken-nuggets": {
     "path": "assets/food/taco-bell-south-orange/5-piece-crispy-chicken-nuggets.webp",
     "alt": "5 Piece Crispy Chicken Nuggets",
@@ -2573,6 +2627,15 @@ export const localFoodPhotoMetadata = {
     "sha256": "edd427f8ecdb1f2604b411177896fa0648a5d59c7dc9d69317d1b500ba8280df",
     "width": 1200,
     "height": 686
+  },
+  "taco-bell-south-orange-jalapeno-peppers": {
+    "path": "assets/food/taco-bell-south-orange/jalapeno-peppers.webp",
+    "alt": "Official Jalapeño Peppers menu product photo from Taco Bell; product or party pack shown in full",
+    "credit": "Taco Bell · official menu",
+    "generated": false,
+    "sha256": "af9ded1d23aa44ef0d21ed3e77f90906b8f0450d227f23e356740187b2f98581",
+    "width": 269,
+    "height": 269
   },
   "taco-bell-south-orange-nacho-cheese-sauce": {
     "path": "assets/food/taco-bell-south-orange/nacho-cheese-sauce.webp",

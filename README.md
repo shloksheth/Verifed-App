@@ -26,6 +26,8 @@ The import commits were created when the history was recovered. Original saved d
 
 | [Verifed V15](https://github.com/shloksheth/Verifed-App/releases/tag/v15) | Incomplete local-image checkpoint: 325 of 1,630 menu entries reviewed, including 49 labeled generated illustrations. 1,305 entries remain. 136 tests pass; all 325 assets match iOS, Android and web exports. Snack remote ZIP verification unavailable (HTTP 503). | [Verifed V15](https://snack.expo.dev/nVxSAddL6Uy4R1ADM8zre) |
 
+| [Verifed V16](https://github.com/shloksheth/Verifed-App/releases/tag/v16) | Three photo-complete imported menus: Fresh Kitchen 35/35, Hawkers 49/49, Taco Bell 116/116. Home shortcuts, shared chain photos, 139 tests and verified iOS/Android/web asset exports. Ingredient/allergen coverage remains partial. | [Verifed V16](https://snack.expo.dev/MZCalF1nWbpzdRvSsllH0) |
+
 Application directories appear as they are introduced: `prototype/` (original JavaScript web prototype), `web/` (React companion), and `mobile/` (React Native/Expo). Every release preserves the other applications already introduced.
 
 Native V6–V9 are new version-named copies of recovered immutable Snack snapshots. Their original snapshot IDs remain in release notes. Downloaded V6–V8 contain Expo-generated project scaffolding rather than original local lockfiles and tests. V9 also restores the archived local code, tests and documentation.

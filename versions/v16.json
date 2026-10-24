@@ -1,0 +1,23 @@
+{
+  "number": 16,
+  "name": "Verifed V16",
+  "description": "Three photo-complete menus for the CAC video: Fresh Kitchen Waterford Lakes (35 entries), Hawkers Orlando (49), and Taco Bell (116). Home links directly to these menus. All 200 entries use reviewed local WebPs. Taco Bell locations share the same reviewed product images with recipe-change guards. Adds seven final images, including four generated illustrations, and keeps ingredient/allergen evidence separate from photo completeness. The wider catalog still has unfinished images and incomplete dietary source coverage.",
+  "verification": [
+    "139 regression tests passed, including all 200 featured entries, all 232 Taco Bell branch aliases, changed-recipe rejection and live UUID navigation.",
+    "332 individually reviewed final WebPs decoded with no image errors or repeated final pixel content; 232 additional branch entries share matching chain products.",
+    "The featured-menu gate passes: Fresh Kitchen 35/35, Hawkers 49/49, Taco Bell 116/116. These are the complete imported food inventories, not a live branch availability claim.",
+    "Expo iOS, Android and web exports passed. Every platform contains all 332 source images with matching SHA-256 hashes.",
+    "Four new generated illustrations were viewed after WebP optimization; the private-facing text list now contains 53 approved generated images.",
+    "Fresh browser/device runtime checks were unavailable because the browser connection was closed. No new iPhone test is claimed.",
+    "Ingredient and allergen completeness is not claimed. The wider catalog has 1066 entries still lacking an approved local image or validated chain alias.",
+    "Snack save returned snapshot MZCalF1nWbpzdRvSsllH0; remote ZIP verification is unconfirmed because the download API returned HTTP 503."
+  ],
+  "snack": "https://snack.expo.dev/MZCalF1nWbpzdRvSsllH0",
+  "snackId": "MZCalF1nWbpzdRvSsllH0",
+  "snackSourceHash": "35d3b0c204879c229a8a1e4a84c47176790ddef6417b8a884ea894626bd16ac7",
+  "status": "three-photo-complete-menus",
+  "approvedLocalImages": 332,
+  "sharedChainEntries": 232,
+  "featuredEntries": 200,
+  "branch": "codex/local-menu-photography"
+}

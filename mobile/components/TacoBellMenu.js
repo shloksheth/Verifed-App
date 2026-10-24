@@ -9,6 +9,7 @@ import { dietaryMenuStatus, groupMenu } from "../src/menu-filter";
 import { menuPhotoFor } from "../src/menu-photos";
 import { localFoodAssets } from "../src/local-food-assets";
 import { localFoodPhotoMetadata } from "../src/local-food-photo-metadata";
+import { localPhotoKeyFor } from "../src/local-photo-key";
 import AllergenIcons from "./AllergenIcons";
 
 const purple = "#6821B7";
@@ -28,8 +29,9 @@ export { isTacoBell };
 // URL has been positively matched to its own menu name and source.
 function FoodPhoto({ dish, restaurant, wide = false }) {
   const [failed, setFailed] = useState(false);
-  const localAsset = localFoodAssets[dish.catalogKey];
-  const localMetadata = localFoodPhotoMetadata[dish.catalogKey];
+  const photoKey = localPhotoKeyFor(dish);
+  const localAsset = localFoodAssets[photoKey];
+  const localMetadata = localFoodPhotoMetadata[photoKey];
   const photo = localMetadata
     ? { ...localMetadata, exact: !localMetadata.generated }
     : menuPhotoFor(dish, restaurant);
@@ -49,6 +51,9 @@ function FoodPhoto({ dish, restaurant, wide = false }) {
           <Text style={look.missingSymbol}>✦</Text>
           <Text style={look.missingLabel}>PHOTO NOT AVAILABLE</Text>
         </View>
+      )}
+      {valid && localMetadata?.generated && (
+        <Text style={look.illustrationLabel}>Menu illustration</Text>
       )}
     </View>
   );
@@ -360,6 +365,7 @@ const look = StyleSheet.create({
   photo: { height: 150, backgroundColor: "#FFFFFF", alignItems: "center", justifyContent: "center", borderRadius: 11, overflow: "hidden", padding: 5 },
   photoWide: { height: 250, width: "100%", padding: 10 },
   photoFill: { width: "100%", height: "100%" },
+  illustrationLabel: { position: "absolute", bottom: 3, right: 6, color: muted, fontSize: 8, backgroundColor: "#FFFFFFE8", paddingHorizontal: 4, borderRadius: 3 },
   photoMissing: { alignItems: "center", justifyContent: "center", padding: 9, gap: 3 },
   missingSymbol: { color: "#D2C3E2", fontSize: 28 },
   missingLabel: { color: "#9B91A6", fontSize: 8, fontWeight: "700", textAlign: "center" },

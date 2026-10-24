@@ -1815,14 +1815,48 @@
           "width": 1200,
           "height": 900,
           "bytes": 179958
+        },
+        {
+          "id": "generated-7ed656f21165126e",
+          "origin": "generated",
+          "kind": "generated-illustration",
+          "path": "mobile/assets/food/hawkers-orlando/curry-steak.webp",
+          "sha256": "4eb6eebeac7505adf5f81c8175864caf0603e38637f8b28ab9badb0f9b08bf5e",
+          "pixelHash": "8bb86a49e8f62a47937fef75e0319c9170ea1faff17315fb237777de73333b47",
+          "width": 1200,
+          "height": 675,
+          "bytes": 109410,
+          "status": "generated-awaiting-visual-review",
+          "generation": {
+            "tool": "image_gen.imagegen built-in",
+            "prompt": "Generate a new photorealistic menu illustration of Hawkers Po Po Lo's Curry with STEAK. Use the reference only for the curry's orange-brown color, vegetables and blue ceramic bowl, not its chicken protein. The published dish is hearty curry with choice of steak and vegetables, served with jasmine rice. Show tender browned bite-size steak strips in rich orange-brown curry with red and green bell pepper chunks and onion. NO chicken, shrimp, tofu, fried egg or garnish not pictured. A full blue ceramic bowl of steak curry and a separate small yellow plate with a neat mound of white jasmine rice, both fully visible with generous margins on a pale neutral restaurant tabletop. No red inverted cup or other objects covering rice. Entire meal framed, no cropping. Natural soft daylight, realistic glossy curry, meat fibers and rice grains. Three-quarter angle, appetizing professional food photograph, no text/logo. This is an illustrative portion based on published description and reference, not a claim of exact serving weight.",
+            "createdAt": "2026-10-24T16:06:55.580112+00:00",
+            "originalSha256": "7ed656f21165126ea89ca8dc16d69fc7d48b440515960eccdab2121492e43e47",
+            "operation": "reference-guided reconstruction",
+            "reference": {
+              "sha256": "732450ab8c69d9a5f7a397c23b737526970b7850555f2c820394e1e3026aa3c8",
+              "candidateId": null,
+              "sourceUrl": null
+            }
+          },
+          "alt": "Menu illustration of Po Po Lo’s Curry — Steak",
+          "credit": "Verifed generated menu illustration"
         }
       ],
       "searchLog": [],
       "review": {
-        "status": "needs-replacement",
-        "selectedCandidateId": null,
-        "inspectedAt": "2026-10-24",
-        "notes": "Visually reviewed: third-party food/another restaurant, not this Hawkers dish. Must source an actual match or generate a checked illustration."
+        "status": "approved",
+        "selectedCandidateId": "generated-7ed656f21165126e",
+        "inspectedAt": "2026-10-24T16:10:53.827831+00:00",
+        "reviewer": "Codex visual inspection",
+        "notes": "Viewed final 1200px WebP: browned steak strips in orange-brown curry with red/green pepper and onion, separate white jasmine rice on yellow plate and blue curry bowl. Both full servings framed; natural sauce/meat/rice textures, no chicken/shrimp or extra garnish. Based on published steak-and-vegetables description and official chicken variant's plating. Illustrative quantities, not a published serving weight.",
+        "checks": {
+          "identity": "pass",
+          "ingredients": "pass",
+          "portion": "pass",
+          "framing": "pass",
+          "quality": "pass"
+        }
       }
     },
     {
@@ -1855,14 +1889,48 @@
           "width": 1200,
           "height": 798,
           "bytes": 114708
+        },
+        {
+          "id": "generated-e0a398b287fdf4d0",
+          "origin": "generated",
+          "kind": "generated-illustration",
+          "path": "mobile/assets/food/hawkers-orlando/curry-shrimp.webp",
+          "sha256": "fa97e7cff684030e00e99546b88fd2104a4615424733da83c34120f09d3a0f91",
+          "pixelHash": "600bf60b8bc47778c53d6313702c86473e4564c75a56062eb754e13d80e520c4",
+          "width": 1200,
+          "height": 675,
+          "bytes": 116340,
+          "status": "generated-awaiting-visual-review",
+          "generation": {
+            "tool": "image_gen.imagegen built-in",
+            "prompt": "Generate a new photorealistic menu illustration of Hawkers Po Po Lo's Curry with SHRIMP. Reference supplies blue ceramic bowl and orange-brown curry color/vegetables only; replace ALL chicken with peeled curled cooked shrimp. The published dish is hearty shrimp and vegetable curry served with jasmine rice. A generous small entree bowl containing recognizable plump pink-orange peeled shrimp in orange-brown curry, red and green bell pepper chunks, onion; separate small yellow plate with neat mound of white jasmine rice. NO chicken, beef, tofu, noodles, cilantro garnish, shells or whole heads. Whole blue bowl and rice plate fully visible, generous margins, no inverted red cup or other food. Pale neutral tabletop, different natural three-quarter composition than reference. Soft daylight, realistic shrimp texture, glossy sauce and individual rice grains. No text or logos. Illustrative portion from description, not restaurant-confirmed serving weight.",
+            "createdAt": "2026-10-24T16:07:37.675925+00:00",
+            "originalSha256": "e0a398b287fdf4d05194a8655edd9c72eacd29eebae09571eb42826ca044450c",
+            "operation": "reference-guided reconstruction",
+            "reference": {
+              "sha256": "732450ab8c69d9a5f7a397c23b737526970b7850555f2c820394e1e3026aa3c8",
+              "candidateId": null,
+              "sourceUrl": null
+            }
+          },
+          "alt": "Menu illustration of Po Po Lo’s Curry — Shrimp",
+          "credit": "Verifed generated menu illustration"
         }
       ],
       "searchLog": [],
       "review": {
-        "status": "needs-replacement",
-        "selectedCandidateId": null,
-        "inspectedAt": "2026-10-24",
-        "notes": "Visually reviewed: third-party food/another restaurant, not this Hawkers dish. Must source an actual match or generate a checked illustration."
+        "status": "approved",
+        "selectedCandidateId": "generated-e0a398b287fdf4d0",
+        "inspectedAt": "2026-10-24T16:10:53.827831+00:00",
+        "reviewer": "Codex visual inspection",
+        "notes": "Viewed final 1200px WebP: peeled curled shrimp in orange-brown curry, red/green peppers and onion, with a separate mound of white jasmine rice. Entire bowl and rice plate visible; plausible shrimp/rice textures, no meat/noodles or unrelated garnish. Description-based variant guided by official curry reference; portion illustrative.",
+        "checks": {
+          "identity": "pass",
+          "ingredients": "pass",
+          "portion": "pass",
+          "framing": "pass",
+          "quality": "pass"
+        }
       }
     },
     {
@@ -2279,22 +2347,31 @@
           "sourceUrl": "https://postmates.com/store/hawkers-asian-street-food-charlotte/1Vh2YAWBRy-2dwUPN0ihWw",
           "credit": "Hawkers Charlotte · Postmates menu product photo",
           "alt": "Hawkers beef lo mein with visible steak slices atop stir-fried egg noodles and scallions, photographed at a Hawkers location other than Orlando",
-          "kind": "brand-other-location",
+          "kind": "chain-product-photo",
           "status": "downloaded-unreviewed",
-          "path": "research/photo-candidates/93118d09bd881f4e548552229868f17bd9d5f0eb3a33f4134fe426c1fdcc868e.webp",
+          "path": "mobile/assets/food/hawkers-orlando/steak-lo-mein.webp",
           "sha256": "265f23b01423145ca01793c9568e832770d6a184efc3e6551c8c3775d16af3a7",
           "pixelHash": "bd8abfd46d8340924c41fbc1a0d3af1cacdce7f9afe18a55322b842fc1003967",
           "width": 660,
           "height": 440,
-          "bytes": 61548
+          "bytes": 61548,
+          "usageNote": "Same named Hawkers national menu product; source branch is preserved in sourceUrl and alt. Not evidence of local plating."
         }
       ],
       "searchLog": [],
       "review": {
-        "status": "pending",
-        "selectedCandidateId": null,
-        "inspectedAt": null,
-        "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
+        "status": "approved",
+        "selectedCandidateId": "93118d09bd881f4e",
+        "inspectedAt": "2026-10-24T16:10:53.827831+00:00",
+        "reviewer": "Codex visual inspection",
+        "notes": "Viewed optimized 660px WebP: browned steak slices over glossy egg noodles with bean sprouts, carrot, green vegetables and onion; complete serving and patterned plate visible. Hawkers product photograph from its Charlotte delivery menu, matching the national Lo Mein steak variant; chain-product reuse permitted by the user's clarification. Not presented as documentary Orlando plating.",
+        "checks": {
+          "identity": "pass",
+          "ingredients": "pass",
+          "portion": "pass",
+          "framing": "pass",
+          "quality": "pass"
+        }
       }
     },
     {
@@ -2319,22 +2396,31 @@
           "sourceUrl": "https://postmates.com/store/hawkers-asian-street-food-dallas/nB94O0kAUA-YOlgGYKKaCw",
           "credit": "Hawkers Dallas · Postmates menu photograph",
           "alt": "Hawkers shrimp lo mein with whole shrimp, wok-fried egg noodles and fresh scallions, photographed at the Dallas restaurant; Orlando plating may differ",
-          "kind": "brand-other-location",
+          "kind": "chain-product-photo",
           "status": "downloaded-unreviewed",
-          "path": "research/photo-candidates/f86ab3d45891763c989dd1566e29c5b50e06e6fce5933366659ce8c05b9d870a.webp",
+          "path": "mobile/assets/food/hawkers-orlando/shrimp-lo-mein.webp",
           "sha256": "573c7011fdca91a9d6f64ee89f691a6719a2769fdbcafd0fb294184b769e9737",
           "pixelHash": "1cee9dd3a9134b63971f3792af235045d6b3de60eb74003cbc56524d42799ed4",
           "width": 660,
           "height": 440,
-          "bytes": 48782
+          "bytes": 48782,
+          "usageNote": "Same named Hawkers national menu product; source branch is preserved in sourceUrl and alt. Not evidence of local plating."
         }
       ],
       "searchLog": [],
       "review": {
-        "status": "pending",
-        "selectedCandidateId": null,
-        "inspectedAt": null,
-        "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
+        "status": "approved",
+        "selectedCandidateId": "f86ab3d45891763c",
+        "inspectedAt": "2026-10-24T16:10:53.827831+00:00",
+        "reviewer": "Codex visual inspection",
+        "notes": "Viewed optimized 660px WebP: clearly recognizable curled shrimp atop stir-fried egg noodles, carrot, sprouts, green vegetables and onion; whole plate and food framed, sharp enough for menu display. Hawkers product photo from its Dallas delivery listing, matching the national shrimp variant; chainwide product image, not documentary Orlando plating.",
+        "checks": {
+          "identity": "pass",
+          "ingredients": "pass",
+          "portion": "pass",
+          "framing": "pass",
+          "quality": "pass"
+        }
       }
     },
     {
@@ -2644,14 +2730,43 @@
           "width": 1200,
           "height": 900,
           "bytes": 195516
+        },
+        {
+          "id": "generated-2a4b640baeeb73e8",
+          "origin": "generated",
+          "kind": "generated-illustration",
+          "path": "mobile/assets/food/hawkers-orlando/thai-fried-egg.webp",
+          "sha256": "b05e15b52e9665bbb7ac54a07d3db100a232b8f70afc045b185181aff7bc6954",
+          "pixelHash": "5e2872a6d59f22b336c9f1b676c01b47a4d35e79d69d9eebc702857ced58da06",
+          "width": 1200,
+          "height": 800,
+          "bytes": 105766,
+          "status": "generated-awaiting-visual-review",
+          "generation": {
+            "tool": "image_gen.imagegen built-in",
+            "prompt": "Photorealistic professional food menu image: one Thai-style fried chicken egg as a standalone add-on, sunny-side up, small bright golden runny yolk intact, set opaque white with bubbly crisp lacy golden-brown edges from hot oil. One whole egg on a simple small off-white ceramic plate. Show entire egg and plate with plenty of margin, three-quarter overhead angle on pale neutral tabletop. No rice, noodles, sauce, garnish, chili, herbs, utensils or other food. Natural warm daylight, physically realistic egg textures, no plastic appearance. No text/logo. Illustrative serving for a menu item named Thai Fried Egg; no claim of exact restaurant plating.",
+            "createdAt": "2026-10-24T16:07:12.012131+00:00",
+            "originalSha256": "2a4b640baeeb73e8f4df0ab76d09f4c225833d9e156611ea7e876c6a4502a232",
+            "operation": "from-scratch"
+          },
+          "alt": "Menu illustration of Thai Fried Egg",
+          "credit": "Verifed generated menu illustration"
         }
       ],
       "searchLog": [],
       "review": {
-        "status": "needs-replacement",
-        "selectedCandidateId": null,
-        "inspectedAt": "2026-10-24",
-        "notes": "Visually reviewed: third-party food/another restaurant, not this Hawkers dish. Must source an actual match or generate a checked illustration."
+        "status": "approved",
+        "selectedCandidateId": "generated-2a4b640baeeb73e8",
+        "inspectedAt": "2026-10-24T16:10:53.827831+00:00",
+        "reviewer": "Codex visual inspection",
+        "notes": "Viewed final 1200px WebP: one intact sunny-side fried egg with golden yolk, opaque white and bubbly crisp golden-brown lacy edges. Entire egg and plate framed, natural lighting and texture, no sauces/rice/garnish. Illustrates the named Thai Fried Egg add-on, not exact restaurant plating.",
+        "checks": {
+          "identity": "pass",
+          "ingredients": "pass",
+          "portion": "pass",
+          "framing": "pass",
+          "quality": "pass"
+        }
       }
     },
     {
@@ -46859,14 +46974,43 @@
           "width": 1200,
           "height": 318,
           "bytes": 14396
+        },
+        {
+          "id": "generated-f6f7b797b257b4ea",
+          "origin": "generated",
+          "kind": "generated-illustration",
+          "path": "mobile/assets/food/taco-bell-south-orange/diablo-ranch-crispy-chicken-crunchwrap-slider.webp",
+          "sha256": "70c9b1b4bc882c73a3b2cadca36c55a9ac5fb05a6ca6670c912d1fe0c2663fae",
+          "pixelHash": "7297293b3af3f093f38de079d41c46a40f583feb1671536f9893e7afa6d0a379",
+          "width": 1200,
+          "height": 800,
+          "bytes": 104526,
+          "status": "generated-awaiting-visual-review",
+          "generation": {
+            "tool": "image_gen.imagegen built-in",
+            "prompt": "Create one photorealistic professional fast-food menu product photograph illustrating Taco Bell's Diablo Ranch Crispy Chicken Crunchwrap Slider, based on its published description. A single small hexagonal toasted flour tortilla parcel, grilled with natural brown contact marks, cut through its front so the filling is visible: two chunky pieces of white-meat chicken with crunchy golden tortilla-chip breading, freshly diced tomato and white onion pico de gallo with a little green cilantro, melted mozzarella/pepperjack/cheddar cheese, and a modest amount of spicy creamy Diablo ranch sauce. Chicken is clearly white inside, crisp outside. The parcel is a small slider, not a full-size burrito, with folded thin flour tortilla edges. Entire food and all corners fully within frame, room around the food. Three-quarter tabletop angle, soft realistic studio lighting, white seamless background, natural soft shadow. No fries, no other sides, no lettuce, no beans, no rice, no utensils, no text, no logo or promotional badge. Real textures and physically plausible food, distinct original composition. This is an illustrative menu image, not documentary restaurant photography.",
+            "createdAt": "2026-10-24T16:03:20.357039+00:00",
+            "originalSha256": "f6f7b797b257b4ea1a9ea920312bde324f128777532f9410d4eb437820adf24c",
+            "operation": "from-scratch"
+          },
+          "alt": "Menu illustration of Diablo Ranch Crispy Chicken Crunchwrap Slider",
+          "credit": "Verifed generated menu illustration"
         }
       ],
       "searchLog": [],
       "review": {
-        "status": "needs-replacement",
-        "selectedCandidateId": null,
-        "inspectedAt": "2026-10-24T07:06:58.918495+00:00",
-        "notes": "Visually too similar to the creamy chipotle variant to establish a distinct sauce/image match. Need a clearly distinct accurate image."
+        "status": "approved",
+        "selectedCandidateId": "generated-f6f7b797b257b4ea",
+        "inspectedAt": "2026-10-24T16:10:53.827831+00:00",
+        "reviewer": "Codex visual inspection",
+        "notes": "Viewed optimized 1200px WebP: small folded toasted tortilla slider with white-meat crispy coated chicken, tomato/onion/cilantro pico, melted cheese and creamy spicy ranch. Full parcel visible, plausible food textures, no unrelated side or badge. Original composition avoids reusing the Creamy Chipotle photo. Illustrative portion from official description, not confirmed serving weight.",
+        "checks": {
+          "identity": "pass",
+          "ingredients": "pass",
+          "portion": "pass",
+          "framing": "pass",
+          "quality": "pass"
+        }
       }
     },
     {
@@ -50366,7 +50510,7 @@
           "alt": "Official Jalapeño Peppers menu product photo from Taco Bell; product or party pack shown in full",
           "kind": "official-product",
           "status": "downloaded-unreviewed",
-          "path": "research/photo-candidates/0bc403dcd9e004a98a8985a446af23bca01c9afafe6eee2b694a2575750a7a7d.webp",
+          "path": "mobile/assets/food/taco-bell-south-orange/jalapeno-peppers.webp",
           "sha256": "af9ded1d23aa44ef0d21ed3e77f90906b8f0450d227f23e356740187b2f98581",
           "pixelHash": "545db00b8bdc5804f21c20b3cf4767a756a0783027c925d2743525eee2cbdfcc",
           "width": 269,
@@ -50376,10 +50520,18 @@
       ],
       "searchLog": [],
       "review": {
-        "status": "needs-replacement",
-        "selectedCandidateId": null,
-        "inspectedAt": "2026-10-24T07:06:58.918495+00:00",
-        "notes": "The current 269px image shows sliced jalapenos but is soft at display size. The attempted official 1400px original returned 404."
+        "status": "approved",
+        "selectedCandidateId": "0bc403dcd9e004a9",
+        "inspectedAt": "2026-10-24T16:10:53.827831+00:00",
+        "reviewer": "Codex visual inspection",
+        "notes": "Viewed the final 269px official WebP at native size and in a contact sheet: sliced pickled green jalapenos with seeds in a complete black side cup. Food and cup are fully framed; native source is small but clear for a compact menu tile. No extra food. Exact named official product source; recipe quantity is unpublished.",
+        "checks": {
+          "identity": "pass",
+          "ingredients": "pass",
+          "portion": "pass",
+          "framing": "pass",
+          "quality": "pass"
+        }
       }
     },
     {
@@ -52805,7 +52957,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-cantina-chicken-crispy-taco"
     },
     {
       "catalogKey": "taco-bell-east-colonial-cantina-chicken-soft-taco",
@@ -52872,7 +53025,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-cantina-chicken-soft-taco"
     },
     {
       "catalogKey": "taco-bell-east-colonial-soft-taco",
@@ -52938,7 +53092,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-soft-taco"
     },
     {
       "catalogKey": "taco-bell-east-colonial-soft-taco-supreme",
@@ -53002,7 +53157,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-soft-taco-supreme"
     },
     {
       "catalogKey": "taco-bell-east-colonial-crunchy-taco",
@@ -53064,7 +53220,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-crunchy-taco"
     },
     {
       "catalogKey": "taco-bell-east-colonial-crunchy-taco-supreme",
@@ -53128,7 +53285,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-crunchy-taco-supreme"
     },
     {
       "catalogKey": "taco-bell-east-colonial-nacho-cheese-doritos-locos-tacos",
@@ -53190,7 +53348,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-nacho-cheese-doritos-locos-tacos"
     },
     {
       "catalogKey": "taco-bell-east-colonial-nacho-cheese-doritos-locos-tacos-supreme",
@@ -53254,7 +53413,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-nacho-cheese-doritos-locos-tacos-supreme"
     },
     {
       "catalogKey": "taco-bell-east-colonial-chalupa-supreme",
@@ -53318,7 +53478,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-chalupa-supreme"
     },
     {
       "catalogKey": "taco-bell-east-colonial-black-bean-chalupa-supreme",
@@ -53382,7 +53543,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-black-bean-chalupa-supreme"
     },
     {
       "catalogKey": "taco-bell-east-colonial-cheesy-gordita-crunch",
@@ -53445,7 +53607,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-cheesy-gordita-crunch"
     },
     {
       "catalogKey": "taco-bell-east-colonial-doritos-cheesy-gordita-crunch-nacho-cheese",
@@ -53508,7 +53671,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-doritos-cheesy-gordita-crunch-nacho-cheese"
     },
     {
       "catalogKey": "taco-bell-east-colonial-steak-double-dipping-burritos",
@@ -53567,7 +53731,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-steak-double-dipping-burritos"
     },
     {
       "catalogKey": "taco-bell-east-colonial-slow-roasted-chicken-double-dipping-burritos",
@@ -53626,7 +53791,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-slow-roasted-chicken-double-dipping-burritos"
     },
     {
       "catalogKey": "taco-bell-east-colonial-chili-cheese-burrito",
@@ -53686,7 +53852,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-chili-cheese-burrito"
     },
     {
       "catalogKey": "taco-bell-east-colonial-cantina-chicken-burrito",
@@ -53745,7 +53912,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-cantina-chicken-burrito"
     },
     {
       "catalogKey": "taco-bell-east-colonial-cheesy-double-beef-burrito",
@@ -53810,7 +53978,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-cheesy-double-beef-burrito"
     },
     {
       "catalogKey": "taco-bell-east-colonial-grilled-cheese-burrito",
@@ -53876,7 +54045,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-grilled-cheese-burrito"
     },
     {
       "catalogKey": "taco-bell-east-colonial-black-bean-grilled-cheese-burrito-black-beans",
@@ -53942,7 +54112,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-black-bean-grilled-cheese-burrito-black-beans"
     },
     {
       "catalogKey": "taco-bell-east-colonial-bean-burrito",
@@ -54010,7 +54181,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-bean-burrito"
     },
     {
       "catalogKey": "taco-bell-east-colonial-beefy-5-layer-burrito",
@@ -54074,7 +54246,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-beefy-5-layer-burrito"
     },
     {
       "catalogKey": "taco-bell-east-colonial-burrito-supreme",
@@ -54141,7 +54314,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-burrito-supreme"
     },
     {
       "catalogKey": "taco-bell-east-colonial-cheesy-bean-and-rice-burrito",
@@ -54204,7 +54378,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-cheesy-bean-and-rice-burrito"
     },
     {
       "catalogKey": "taco-bell-east-colonial-sriracha-chicken-crunchadilla",
@@ -54267,7 +54442,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-sriracha-chicken-crunchadilla"
     },
     {
       "catalogKey": "taco-bell-east-colonial-classic-chicken-crunchadilla",
@@ -54330,7 +54506,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-classic-chicken-crunchadilla"
     },
     {
       "catalogKey": "taco-bell-east-colonial-creamy-sriracha-chicken-nacho-fries",
@@ -54394,7 +54571,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-creamy-sriracha-chicken-nacho-fries"
     },
     {
       "catalogKey": "taco-bell-east-colonial-steak-gordita-crunch-duos-2pk",
@@ -54458,7 +54636,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-steak-gordita-crunch-duos-2pk"
     },
     {
       "catalogKey": "taco-bell-east-colonial-slow-roasted-chicken-gordita-crunch-duos-2pk",
@@ -54522,7 +54701,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-slow-roasted-chicken-gordita-crunch-duos-2pk"
     },
     {
       "catalogKey": "taco-bell-east-colonial-creamy-chipotle-crispy-chicken-crunchwrap-slider",
@@ -54584,7 +54764,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-creamy-chipotle-crispy-chicken-crunchwrap-slider"
     },
     {
       "catalogKey": "taco-bell-east-colonial-diablo-ranch-crispy-chicken-crunchwrap-slider",
@@ -54646,7 +54827,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-diablo-ranch-crispy-chicken-crunchwrap-slider"
     },
     {
       "catalogKey": "taco-bell-east-colonial-5-piece-crispy-chicken-nuggets",
@@ -54705,7 +54887,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-5-piece-crispy-chicken-nuggets"
     },
     {
       "catalogKey": "taco-bell-east-colonial-10-piece-crispy-chicken-nuggets",
@@ -54764,7 +54947,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-10-piece-crispy-chicken-nuggets"
     },
     {
       "catalogKey": "taco-bell-east-colonial-mini-taco-salad",
@@ -54829,7 +55013,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-mini-taco-salad"
     },
     {
       "catalogKey": "taco-bell-east-colonial-avocado-ranch-chicken-stacker",
@@ -54893,7 +55078,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-avocado-ranch-chicken-stacker"
     },
     {
       "catalogKey": "taco-bell-east-colonial-large-nacho-fries",
@@ -54952,7 +55138,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-large-nacho-fries"
     },
     {
       "catalogKey": "taco-bell-east-colonial-nacho-fries",
@@ -55011,7 +55198,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-nacho-fries"
     },
     {
       "catalogKey": "taco-bell-east-colonial-3-cheese-chicken-flatbread-melt",
@@ -55073,7 +55261,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-3-cheese-chicken-flatbread-melt"
     },
     {
       "catalogKey": "taco-bell-east-colonial-mexican-pizza",
@@ -55137,7 +55326,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-mexican-pizza"
     },
     {
       "catalogKey": "taco-bell-east-colonial-veggie-mexican-pizza",
@@ -55200,7 +55390,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-veggie-mexican-pizza"
     },
     {
       "catalogKey": "taco-bell-east-colonial-crunchwrap-supreme",
@@ -55264,7 +55455,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-crunchwrap-supreme"
     },
     {
       "catalogKey": "taco-bell-east-colonial-black-bean-crunchwrap-supreme",
@@ -55328,7 +55520,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-black-bean-crunchwrap-supreme"
     },
     {
       "catalogKey": "taco-bell-east-colonial-cheesy-roll-up",
@@ -55388,7 +55581,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-cheesy-roll-up"
     },
     {
       "catalogKey": "taco-bell-east-colonial-milk-bar-birthday-cake-empanada",
@@ -55447,7 +55641,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-milk-bar-birthday-cake-empanada"
     },
     {
       "catalogKey": "taco-bell-east-colonial-veggie-bowl",
@@ -55524,7 +55719,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-veggie-bowl"
     },
     {
       "catalogKey": "taco-bell-east-colonial-cheese-quesadilla",
@@ -55588,7 +55784,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-cheese-quesadilla"
     },
     {
       "catalogKey": "taco-bell-east-colonial-chips-and-guacamole",
@@ -55649,7 +55846,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-chips-and-guacamole"
     },
     {
       "catalogKey": "taco-bell-east-colonial-chips-and-nacho-cheese-sauce",
@@ -55708,7 +55906,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-chips-and-nacho-cheese-sauce"
     },
     {
       "catalogKey": "taco-bell-east-colonial-black-beans",
@@ -55769,7 +55968,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-black-beans"
     },
     {
       "catalogKey": "taco-bell-east-colonial-black-beans-and-rice",
@@ -55830,7 +56030,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-black-beans-and-rice"
     },
     {
       "catalogKey": "taco-bell-east-colonial-pintos-n-cheese",
@@ -55892,7 +56093,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-pintos-n-cheese"
     },
     {
       "catalogKey": "taco-bell-east-colonial-cinnamon-twists",
@@ -55951,7 +56153,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-cinnamon-twists"
     },
     {
       "catalogKey": "taco-bell-east-colonial-cinnabon-delights-2-pack",
@@ -56010,7 +56213,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-cinnabon-delights-2-pack"
     },
     {
       "catalogKey": "taco-bell-east-colonial-cinnabon-delights-12-pack",
@@ -56069,7 +56273,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-cinnabon-delights-12-pack"
     },
     {
       "catalogKey": "taco-bell-east-colonial-cheesy-toasted-breakfast-burrito-bacon",
@@ -56131,7 +56336,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-cheesy-toasted-breakfast-burrito-bacon"
     },
     {
       "catalogKey": "taco-bell-east-colonial-cheesy-toasted-breakfast-burrito-potato",
@@ -56193,7 +56399,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-cheesy-toasted-breakfast-burrito-potato"
     },
     {
       "catalogKey": "taco-bell-east-colonial-grande-toasted-breakfast-burrito-steak",
@@ -56256,7 +56463,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-grande-toasted-breakfast-burrito-steak"
     },
     {
       "catalogKey": "taco-bell-east-colonial-grande-toasted-breakfast-burrito-bacon",
@@ -56319,7 +56527,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-grande-toasted-breakfast-burrito-bacon"
     },
     {
       "catalogKey": "taco-bell-east-colonial-breakfast-quesadilla-bacon",
@@ -56381,7 +56590,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-breakfast-quesadilla-bacon"
     },
     {
       "catalogKey": "taco-bell-east-colonial-breakfast-quesadilla-steak",
@@ -56443,7 +56653,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-breakfast-quesadilla-steak"
     },
     {
       "catalogKey": "taco-bell-east-colonial-breakfast-california-crunchwrap",
@@ -56508,7 +56719,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-breakfast-california-crunchwrap"
     },
     {
       "catalogKey": "taco-bell-east-colonial-breakfast-crunchwrap-bacon",
@@ -56572,7 +56784,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-breakfast-crunchwrap-bacon"
     },
     {
       "catalogKey": "taco-bell-east-colonial-breakfast-crunchwrap-combo",
@@ -56612,7 +56825,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-breakfast-crunchwrap-combo"
     },
     {
       "catalogKey": "taco-bell-east-colonial-hash-brown",
@@ -56671,7 +56885,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-hash-brown"
     },
     {
       "catalogKey": "taco-bell-east-colonial-breakfast-salsa",
@@ -56728,7 +56943,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-breakfast-salsa"
     },
     {
       "catalogKey": "taco-bell-east-colonial-cantina-chicken-rolled-quesadilla",
@@ -56787,7 +57003,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-cantina-chicken-rolled-quesadilla"
     },
     {
       "catalogKey": "taco-bell-east-colonial-chicken-quesadilla",
@@ -56849,7 +57066,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-chicken-quesadilla"
     },
     {
       "catalogKey": "taco-bell-east-colonial-steak-quesadilla",
@@ -56911,7 +57129,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-steak-quesadilla"
     },
     {
       "catalogKey": "taco-bell-east-colonial-nachos-bellgrande",
@@ -56975,7 +57194,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-nachos-bellgrande"
     },
     {
       "catalogKey": "taco-bell-east-colonial-chips-and-nacho-supreme-dip",
@@ -57034,7 +57254,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-chips-and-nacho-supreme-dip"
     },
     {
       "catalogKey": "taco-bell-east-colonial-cantina-chicken-bowl",
@@ -57102,7 +57323,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-cantina-chicken-bowl"
     },
     {
       "catalogKey": "taco-bell-east-colonial-chili",
@@ -57142,7 +57364,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-chili"
     },
     {
       "catalogKey": "taco-bell-east-colonial-mild-sauce-packet",
@@ -57182,7 +57405,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-mild-sauce-packet"
     },
     {
       "catalogKey": "taco-bell-east-colonial-hot-sauce-packet",
@@ -57222,7 +57446,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-hot-sauce-packet"
     },
     {
       "catalogKey": "taco-bell-east-colonial-fire-sauce-packet",
@@ -57262,7 +57487,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-fire-sauce-packet"
     },
     {
       "catalogKey": "taco-bell-east-colonial-diablo-sauce-packet",
@@ -57302,7 +57528,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-diablo-sauce-packet"
     },
     {
       "catalogKey": "taco-bell-east-colonial-creamy-sriracha-sauce",
@@ -57342,7 +57569,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-creamy-sriracha-sauce"
     },
     {
       "catalogKey": "taco-bell-east-colonial-jalapeno-peppers",
@@ -57382,7 +57610,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-jalapeno-peppers"
     },
     {
       "catalogKey": "taco-bell-east-colonial-nacho-cheese-sauce",
@@ -57422,7 +57651,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-nacho-cheese-sauce"
     },
     {
       "catalogKey": "taco-bell-east-colonial-reduced-fat-sour-cream",
@@ -57462,7 +57692,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-reduced-fat-sour-cream"
     },
     {
       "catalogKey": "taco-bell-east-colonial-creamy-jalapeno-sauce",
@@ -57502,7 +57733,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-creamy-jalapeno-sauce"
     },
     {
       "catalogKey": "taco-bell-east-colonial-guacamole",
@@ -57542,7 +57774,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-guacamole"
     },
     {
       "catalogKey": "taco-bell-east-colonial-chipotle-sauce",
@@ -57582,7 +57815,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-chipotle-sauce"
     },
     {
       "catalogKey": "taco-bell-east-colonial-avocado-ranch-sauce",
@@ -57622,7 +57856,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-avocado-ranch-sauce"
     },
     {
       "catalogKey": "taco-bell-east-colonial-spicy-ranch",
@@ -57662,7 +57897,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-spicy-ranch"
     },
     {
       "catalogKey": "taco-bell-east-colonial-red-sauce",
@@ -57702,7 +57938,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-red-sauce"
     },
     {
       "catalogKey": "taco-bell-east-colonial-mexican-pizza-sauce",
@@ -57742,7 +57979,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-mexican-pizza-sauce"
     },
     {
       "catalogKey": "taco-bell-east-colonial-avocado-verde-salsa-sauce-packet",
@@ -57782,7 +58020,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-avocado-verde-salsa-sauce-packet"
     },
     {
       "catalogKey": "taco-bell-east-colonial-paris-hilton-s-usual",
@@ -57839,7 +58078,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-paris-hilton-s-usual"
     },
     {
       "catalogKey": "taco-bell-east-colonial-discovery-luxe-box",
@@ -57879,7 +58119,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-discovery-luxe-box"
     },
     {
       "catalogKey": "taco-bell-east-colonial-crispy-chicken-nuggets-deluxe-combo",
@@ -57919,7 +58160,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-crispy-chicken-nuggets-deluxe-combo"
     },
     {
       "catalogKey": "taco-bell-east-colonial-10-piece-crispy-chicken-nuggets-combo",
@@ -57959,7 +58201,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-10-piece-crispy-chicken-nuggets-combo"
     },
     {
       "catalogKey": "taco-bell-east-colonial-build-your-own-luxe-cravings-box",
@@ -57999,7 +58242,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-build-your-own-luxe-cravings-box"
     },
     {
       "catalogKey": "taco-bell-east-colonial-cantina-chicken-crispy-taco-combo",
@@ -58039,7 +58283,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-cantina-chicken-crispy-taco-combo"
     },
     {
       "catalogKey": "taco-bell-east-colonial-cantina-chicken-burrito-combo",
@@ -58079,7 +58324,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-cantina-chicken-burrito-combo"
     },
     {
       "catalogKey": "taco-bell-east-colonial-cantina-chicken-rolled-quesadilla-combo",
@@ -58119,7 +58365,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-cantina-chicken-rolled-quesadilla-combo"
     },
     {
       "catalogKey": "taco-bell-east-colonial-mexican-pizza-combo",
@@ -58159,7 +58406,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-mexican-pizza-combo"
     },
     {
       "catalogKey": "taco-bell-east-colonial-chicken-quesadilla-combo",
@@ -58199,7 +58447,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-chicken-quesadilla-combo"
     },
     {
       "catalogKey": "taco-bell-east-colonial-2-chicken-chalupas-supreme-combo",
@@ -58239,7 +58488,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-2-chicken-chalupas-supreme-combo"
     },
     {
       "catalogKey": "taco-bell-east-colonial-crunchwrap-supreme-combo",
@@ -58279,7 +58529,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-crunchwrap-supreme-combo"
     },
     {
       "catalogKey": "taco-bell-east-colonial-3-crunchy-tacos-combo",
@@ -58319,7 +58570,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-3-crunchy-tacos-combo"
     },
     {
       "catalogKey": "taco-bell-east-colonial-3-crunchy-tacos-supreme-combo",
@@ -58359,7 +58611,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-3-crunchy-tacos-supreme-combo"
     },
     {
       "catalogKey": "taco-bell-east-colonial-3-doritos-locos-tacos-combo",
@@ -58399,7 +58652,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-3-doritos-locos-tacos-combo"
     },
     {
       "catalogKey": "taco-bell-east-colonial-3-doritos-locos-tacos-supreme-combo",
@@ -58439,7 +58693,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-3-doritos-locos-tacos-supreme-combo"
     },
     {
       "catalogKey": "taco-bell-east-colonial-supreme-luxe-box",
@@ -58479,7 +58734,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-supreme-luxe-box"
     },
     {
       "catalogKey": "taco-bell-east-colonial-classic-luxe-box",
@@ -58519,7 +58775,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-classic-luxe-box"
     },
     {
       "catalogKey": "taco-bell-east-colonial-doritos-locos-taco-party-pack",
@@ -58559,7 +58816,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-doritos-locos-taco-party-pack"
     },
     {
       "catalogKey": "taco-bell-east-colonial-supreme-doritos-locos-taco-party-pack",
@@ -58599,7 +58857,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-supreme-doritos-locos-taco-party-pack"
     },
     {
       "catalogKey": "taco-bell-east-colonial-meal-for-2",
@@ -58639,7 +58898,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-meal-for-2"
     },
     {
       "catalogKey": "taco-bell-east-colonial-meal-for-4",
@@ -58679,7 +58939,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-meal-for-4"
     },
     {
       "catalogKey": "taco-bell-east-colonial-taco-burrito-cravings-pack",
@@ -58719,7 +58980,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-taco-burrito-cravings-pack"
     },
     {
       "catalogKey": "taco-bell-east-colonial-taco-party-pack",
@@ -58759,7 +59021,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-taco-party-pack"
     },
     {
       "catalogKey": "taco-bell-east-colonial-supreme-taco-party-pack",
@@ -58799,7 +59062,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-supreme-taco-party-pack"
     },
     {
       "catalogKey": "taco-bell-east-colonial-soft-taco-party-pack",
@@ -58839,7 +59103,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-soft-taco-party-pack"
     },
     {
       "catalogKey": "taco-bell-east-colonial-supreme-soft-taco-party-pack",
@@ -58879,7 +59144,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-supreme-soft-taco-party-pack"
     },
     {
       "catalogKey": "taco-bell-east-colonial-variety-taco-party-pack",
@@ -58919,7 +59185,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-variety-taco-party-pack"
     },
     {
       "catalogKey": "taco-bell-east-colonial-supreme-variety-taco-party-pack",
@@ -58959,7 +59226,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-supreme-variety-taco-party-pack"
     },
     {
       "catalogKey": "taco-bell-orlando-west-cantina-chicken-crispy-taco",
@@ -59024,7 +59292,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-cantina-chicken-crispy-taco"
     },
     {
       "catalogKey": "taco-bell-orlando-west-cantina-chicken-soft-taco",
@@ -59091,7 +59360,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-cantina-chicken-soft-taco"
     },
     {
       "catalogKey": "taco-bell-orlando-west-soft-taco",
@@ -59157,7 +59427,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-soft-taco"
     },
     {
       "catalogKey": "taco-bell-orlando-west-soft-taco-supreme",
@@ -59221,7 +59492,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-soft-taco-supreme"
     },
     {
       "catalogKey": "taco-bell-orlando-west-crunchy-taco",
@@ -59283,7 +59555,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-crunchy-taco"
     },
     {
       "catalogKey": "taco-bell-orlando-west-crunchy-taco-supreme",
@@ -59347,7 +59620,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-crunchy-taco-supreme"
     },
     {
       "catalogKey": "taco-bell-orlando-west-nacho-cheese-doritos-locos-tacos",
@@ -59409,7 +59683,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-nacho-cheese-doritos-locos-tacos"
     },
     {
       "catalogKey": "taco-bell-orlando-west-nacho-cheese-doritos-locos-tacos-supreme",
@@ -59473,7 +59748,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-nacho-cheese-doritos-locos-tacos-supreme"
     },
     {
       "catalogKey": "taco-bell-orlando-west-chalupa-supreme",
@@ -59537,7 +59813,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-chalupa-supreme"
     },
     {
       "catalogKey": "taco-bell-orlando-west-black-bean-chalupa-supreme",
@@ -59601,7 +59878,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-black-bean-chalupa-supreme"
     },
     {
       "catalogKey": "taco-bell-orlando-west-cheesy-gordita-crunch",
@@ -59664,7 +59942,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-cheesy-gordita-crunch"
     },
     {
       "catalogKey": "taco-bell-orlando-west-doritos-cheesy-gordita-crunch-nacho-cheese",
@@ -59727,7 +60006,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-doritos-cheesy-gordita-crunch-nacho-cheese"
     },
     {
       "catalogKey": "taco-bell-orlando-west-steak-double-dipping-burritos",
@@ -59786,7 +60066,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-steak-double-dipping-burritos"
     },
     {
       "catalogKey": "taco-bell-orlando-west-slow-roasted-chicken-double-dipping-burritos",
@@ -59845,7 +60126,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-slow-roasted-chicken-double-dipping-burritos"
     },
     {
       "catalogKey": "taco-bell-orlando-west-chili-cheese-burrito",
@@ -59905,7 +60187,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-chili-cheese-burrito"
     },
     {
       "catalogKey": "taco-bell-orlando-west-cantina-chicken-burrito",
@@ -59964,7 +60247,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-cantina-chicken-burrito"
     },
     {
       "catalogKey": "taco-bell-orlando-west-cheesy-double-beef-burrito",
@@ -60029,7 +60313,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-cheesy-double-beef-burrito"
     },
     {
       "catalogKey": "taco-bell-orlando-west-grilled-cheese-burrito",
@@ -60095,7 +60380,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-grilled-cheese-burrito"
     },
     {
       "catalogKey": "taco-bell-orlando-west-black-bean-grilled-cheese-burrito-black-beans",
@@ -60161,7 +60447,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-black-bean-grilled-cheese-burrito-black-beans"
     },
     {
       "catalogKey": "taco-bell-orlando-west-bean-burrito",
@@ -60229,7 +60516,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-bean-burrito"
     },
     {
       "catalogKey": "taco-bell-orlando-west-beefy-5-layer-burrito",
@@ -60293,7 +60581,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-beefy-5-layer-burrito"
     },
     {
       "catalogKey": "taco-bell-orlando-west-burrito-supreme",
@@ -60360,7 +60649,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-burrito-supreme"
     },
     {
       "catalogKey": "taco-bell-orlando-west-cheesy-bean-and-rice-burrito",
@@ -60423,7 +60713,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-cheesy-bean-and-rice-burrito"
     },
     {
       "catalogKey": "taco-bell-orlando-west-sriracha-chicken-crunchadilla",
@@ -60486,7 +60777,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-sriracha-chicken-crunchadilla"
     },
     {
       "catalogKey": "taco-bell-orlando-west-classic-chicken-crunchadilla",
@@ -60549,7 +60841,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-classic-chicken-crunchadilla"
     },
     {
       "catalogKey": "taco-bell-orlando-west-creamy-sriracha-chicken-nacho-fries",
@@ -60613,7 +60906,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-creamy-sriracha-chicken-nacho-fries"
     },
     {
       "catalogKey": "taco-bell-orlando-west-steak-gordita-crunch-duos-2pk",
@@ -60677,7 +60971,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-steak-gordita-crunch-duos-2pk"
     },
     {
       "catalogKey": "taco-bell-orlando-west-slow-roasted-chicken-gordita-crunch-duos-2pk",
@@ -60741,7 +61036,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-slow-roasted-chicken-gordita-crunch-duos-2pk"
     },
     {
       "catalogKey": "taco-bell-orlando-west-creamy-chipotle-crispy-chicken-crunchwrap-slider",
@@ -60803,7 +61099,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-creamy-chipotle-crispy-chicken-crunchwrap-slider"
     },
     {
       "catalogKey": "taco-bell-orlando-west-diablo-ranch-crispy-chicken-crunchwrap-slider",
@@ -60865,7 +61162,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-diablo-ranch-crispy-chicken-crunchwrap-slider"
     },
     {
       "catalogKey": "taco-bell-orlando-west-5-piece-crispy-chicken-nuggets",
@@ -60924,7 +61222,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-5-piece-crispy-chicken-nuggets"
     },
     {
       "catalogKey": "taco-bell-orlando-west-10-piece-crispy-chicken-nuggets",
@@ -60983,7 +61282,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-10-piece-crispy-chicken-nuggets"
     },
     {
       "catalogKey": "taco-bell-orlando-west-mini-taco-salad",
@@ -61048,7 +61348,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-mini-taco-salad"
     },
     {
       "catalogKey": "taco-bell-orlando-west-avocado-ranch-chicken-stacker",
@@ -61112,7 +61413,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-avocado-ranch-chicken-stacker"
     },
     {
       "catalogKey": "taco-bell-orlando-west-large-nacho-fries",
@@ -61171,7 +61473,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-large-nacho-fries"
     },
     {
       "catalogKey": "taco-bell-orlando-west-nacho-fries",
@@ -61230,7 +61533,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-nacho-fries"
     },
     {
       "catalogKey": "taco-bell-orlando-west-3-cheese-chicken-flatbread-melt",
@@ -61292,7 +61596,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-3-cheese-chicken-flatbread-melt"
     },
     {
       "catalogKey": "taco-bell-orlando-west-mexican-pizza",
@@ -61356,7 +61661,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-mexican-pizza"
     },
     {
       "catalogKey": "taco-bell-orlando-west-veggie-mexican-pizza",
@@ -61419,7 +61725,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-veggie-mexican-pizza"
     },
     {
       "catalogKey": "taco-bell-orlando-west-crunchwrap-supreme",
@@ -61483,7 +61790,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-crunchwrap-supreme"
     },
     {
       "catalogKey": "taco-bell-orlando-west-black-bean-crunchwrap-supreme",
@@ -61547,7 +61855,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-black-bean-crunchwrap-supreme"
     },
     {
       "catalogKey": "taco-bell-orlando-west-cheesy-roll-up",
@@ -61607,7 +61916,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-cheesy-roll-up"
     },
     {
       "catalogKey": "taco-bell-orlando-west-milk-bar-birthday-cake-empanada",
@@ -61666,7 +61976,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-milk-bar-birthday-cake-empanada"
     },
     {
       "catalogKey": "taco-bell-orlando-west-veggie-bowl",
@@ -61743,7 +62054,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-veggie-bowl"
     },
     {
       "catalogKey": "taco-bell-orlando-west-cheese-quesadilla",
@@ -61807,7 +62119,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-cheese-quesadilla"
     },
     {
       "catalogKey": "taco-bell-orlando-west-chips-and-guacamole",
@@ -61868,7 +62181,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-chips-and-guacamole"
     },
     {
       "catalogKey": "taco-bell-orlando-west-chips-and-nacho-cheese-sauce",
@@ -61927,7 +62241,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-chips-and-nacho-cheese-sauce"
     },
     {
       "catalogKey": "taco-bell-orlando-west-black-beans",
@@ -61988,7 +62303,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-black-beans"
     },
     {
       "catalogKey": "taco-bell-orlando-west-black-beans-and-rice",
@@ -62049,7 +62365,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-black-beans-and-rice"
     },
     {
       "catalogKey": "taco-bell-orlando-west-pintos-n-cheese",
@@ -62111,7 +62428,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-pintos-n-cheese"
     },
     {
       "catalogKey": "taco-bell-orlando-west-cinnamon-twists",
@@ -62170,7 +62488,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-cinnamon-twists"
     },
     {
       "catalogKey": "taco-bell-orlando-west-cinnabon-delights-2-pack",
@@ -62229,7 +62548,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-cinnabon-delights-2-pack"
     },
     {
       "catalogKey": "taco-bell-orlando-west-cinnabon-delights-12-pack",
@@ -62288,7 +62608,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-cinnabon-delights-12-pack"
     },
     {
       "catalogKey": "taco-bell-orlando-west-cheesy-toasted-breakfast-burrito-bacon",
@@ -62350,7 +62671,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-cheesy-toasted-breakfast-burrito-bacon"
     },
     {
       "catalogKey": "taco-bell-orlando-west-cheesy-toasted-breakfast-burrito-potato",
@@ -62412,7 +62734,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-cheesy-toasted-breakfast-burrito-potato"
     },
     {
       "catalogKey": "taco-bell-orlando-west-grande-toasted-breakfast-burrito-steak",
@@ -62475,7 +62798,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-grande-toasted-breakfast-burrito-steak"
     },
     {
       "catalogKey": "taco-bell-orlando-west-grande-toasted-breakfast-burrito-bacon",
@@ -62538,7 +62862,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-grande-toasted-breakfast-burrito-bacon"
     },
     {
       "catalogKey": "taco-bell-orlando-west-breakfast-quesadilla-bacon",
@@ -62600,7 +62925,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-breakfast-quesadilla-bacon"
     },
     {
       "catalogKey": "taco-bell-orlando-west-breakfast-quesadilla-steak",
@@ -62662,7 +62988,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-breakfast-quesadilla-steak"
     },
     {
       "catalogKey": "taco-bell-orlando-west-breakfast-california-crunchwrap",
@@ -62727,7 +63054,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-breakfast-california-crunchwrap"
     },
     {
       "catalogKey": "taco-bell-orlando-west-breakfast-crunchwrap-bacon",
@@ -62791,7 +63119,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-breakfast-crunchwrap-bacon"
     },
     {
       "catalogKey": "taco-bell-orlando-west-breakfast-crunchwrap-combo",
@@ -62831,7 +63160,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-breakfast-crunchwrap-combo"
     },
     {
       "catalogKey": "taco-bell-orlando-west-hash-brown",
@@ -62890,7 +63220,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-hash-brown"
     },
     {
       "catalogKey": "taco-bell-orlando-west-breakfast-salsa",
@@ -62947,7 +63278,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-breakfast-salsa"
     },
     {
       "catalogKey": "taco-bell-orlando-west-cantina-chicken-rolled-quesadilla",
@@ -63006,7 +63338,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-cantina-chicken-rolled-quesadilla"
     },
     {
       "catalogKey": "taco-bell-orlando-west-chicken-quesadilla",
@@ -63068,7 +63401,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-chicken-quesadilla"
     },
     {
       "catalogKey": "taco-bell-orlando-west-steak-quesadilla",
@@ -63130,7 +63464,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-steak-quesadilla"
     },
     {
       "catalogKey": "taco-bell-orlando-west-nachos-bellgrande",
@@ -63194,7 +63529,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-nachos-bellgrande"
     },
     {
       "catalogKey": "taco-bell-orlando-west-chips-and-nacho-supreme-dip",
@@ -63253,7 +63589,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-chips-and-nacho-supreme-dip"
     },
     {
       "catalogKey": "taco-bell-orlando-west-cantina-chicken-bowl",
@@ -63321,7 +63658,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-cantina-chicken-bowl"
     },
     {
       "catalogKey": "taco-bell-orlando-west-chili",
@@ -63361,7 +63699,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-chili"
     },
     {
       "catalogKey": "taco-bell-orlando-west-mild-sauce-packet",
@@ -63401,7 +63740,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-mild-sauce-packet"
     },
     {
       "catalogKey": "taco-bell-orlando-west-hot-sauce-packet",
@@ -63441,7 +63781,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-hot-sauce-packet"
     },
     {
       "catalogKey": "taco-bell-orlando-west-fire-sauce-packet",
@@ -63481,7 +63822,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-fire-sauce-packet"
     },
     {
       "catalogKey": "taco-bell-orlando-west-diablo-sauce-packet",
@@ -63521,7 +63863,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-diablo-sauce-packet"
     },
     {
       "catalogKey": "taco-bell-orlando-west-creamy-sriracha-sauce",
@@ -63561,7 +63904,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-creamy-sriracha-sauce"
     },
     {
       "catalogKey": "taco-bell-orlando-west-jalapeno-peppers",
@@ -63601,7 +63945,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-jalapeno-peppers"
     },
     {
       "catalogKey": "taco-bell-orlando-west-nacho-cheese-sauce",
@@ -63641,7 +63986,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-nacho-cheese-sauce"
     },
     {
       "catalogKey": "taco-bell-orlando-west-reduced-fat-sour-cream",
@@ -63681,7 +64027,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-reduced-fat-sour-cream"
     },
     {
       "catalogKey": "taco-bell-orlando-west-creamy-jalapeno-sauce",
@@ -63721,7 +64068,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-creamy-jalapeno-sauce"
     },
     {
       "catalogKey": "taco-bell-orlando-west-guacamole",
@@ -63761,7 +64109,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-guacamole"
     },
     {
       "catalogKey": "taco-bell-orlando-west-chipotle-sauce",
@@ -63801,7 +64150,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-chipotle-sauce"
     },
     {
       "catalogKey": "taco-bell-orlando-west-avocado-ranch-sauce",
@@ -63841,7 +64191,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-avocado-ranch-sauce"
     },
     {
       "catalogKey": "taco-bell-orlando-west-spicy-ranch",
@@ -63881,7 +64232,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-spicy-ranch"
     },
     {
       "catalogKey": "taco-bell-orlando-west-red-sauce",
@@ -63921,7 +64273,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-red-sauce"
     },
     {
       "catalogKey": "taco-bell-orlando-west-mexican-pizza-sauce",
@@ -63961,7 +64314,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-mexican-pizza-sauce"
     },
     {
       "catalogKey": "taco-bell-orlando-west-avocado-verde-salsa-sauce-packet",
@@ -64001,7 +64355,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-avocado-verde-salsa-sauce-packet"
     },
     {
       "catalogKey": "taco-bell-orlando-west-paris-hilton-s-usual",
@@ -64058,7 +64413,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-paris-hilton-s-usual"
     },
     {
       "catalogKey": "taco-bell-orlando-west-discovery-luxe-box",
@@ -64098,7 +64454,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-discovery-luxe-box"
     },
     {
       "catalogKey": "taco-bell-orlando-west-crispy-chicken-nuggets-deluxe-combo",
@@ -64138,7 +64495,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-crispy-chicken-nuggets-deluxe-combo"
     },
     {
       "catalogKey": "taco-bell-orlando-west-10-piece-crispy-chicken-nuggets-combo",
@@ -64178,7 +64536,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-10-piece-crispy-chicken-nuggets-combo"
     },
     {
       "catalogKey": "taco-bell-orlando-west-build-your-own-luxe-cravings-box",
@@ -64218,7 +64577,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-build-your-own-luxe-cravings-box"
     },
     {
       "catalogKey": "taco-bell-orlando-west-cantina-chicken-crispy-taco-combo",
@@ -64258,7 +64618,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-cantina-chicken-crispy-taco-combo"
     },
     {
       "catalogKey": "taco-bell-orlando-west-cantina-chicken-burrito-combo",
@@ -64298,7 +64659,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-cantina-chicken-burrito-combo"
     },
     {
       "catalogKey": "taco-bell-orlando-west-cantina-chicken-rolled-quesadilla-combo",
@@ -64338,7 +64700,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-cantina-chicken-rolled-quesadilla-combo"
     },
     {
       "catalogKey": "taco-bell-orlando-west-mexican-pizza-combo",
@@ -64378,7 +64741,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-mexican-pizza-combo"
     },
     {
       "catalogKey": "taco-bell-orlando-west-chicken-quesadilla-combo",
@@ -64418,7 +64782,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-chicken-quesadilla-combo"
     },
     {
       "catalogKey": "taco-bell-orlando-west-2-chicken-chalupas-supreme-combo",
@@ -64458,7 +64823,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-2-chicken-chalupas-supreme-combo"
     },
     {
       "catalogKey": "taco-bell-orlando-west-crunchwrap-supreme-combo",
@@ -64498,7 +64864,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-crunchwrap-supreme-combo"
     },
     {
       "catalogKey": "taco-bell-orlando-west-3-crunchy-tacos-combo",
@@ -64538,7 +64905,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-3-crunchy-tacos-combo"
     },
     {
       "catalogKey": "taco-bell-orlando-west-3-crunchy-tacos-supreme-combo",
@@ -64578,7 +64946,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-3-crunchy-tacos-supreme-combo"
     },
     {
       "catalogKey": "taco-bell-orlando-west-3-doritos-locos-tacos-combo",
@@ -64618,7 +64987,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-3-doritos-locos-tacos-combo"
     },
     {
       "catalogKey": "taco-bell-orlando-west-3-doritos-locos-tacos-supreme-combo",
@@ -64658,7 +65028,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-3-doritos-locos-tacos-supreme-combo"
     },
     {
       "catalogKey": "taco-bell-orlando-west-supreme-luxe-box",
@@ -64698,7 +65069,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-supreme-luxe-box"
     },
     {
       "catalogKey": "taco-bell-orlando-west-classic-luxe-box",
@@ -64738,7 +65110,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-classic-luxe-box"
     },
     {
       "catalogKey": "taco-bell-orlando-west-doritos-locos-taco-party-pack",
@@ -64778,7 +65151,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-doritos-locos-taco-party-pack"
     },
     {
       "catalogKey": "taco-bell-orlando-west-supreme-doritos-locos-taco-party-pack",
@@ -64818,7 +65192,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-supreme-doritos-locos-taco-party-pack"
     },
     {
       "catalogKey": "taco-bell-orlando-west-meal-for-2",
@@ -64858,7 +65233,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-meal-for-2"
     },
     {
       "catalogKey": "taco-bell-orlando-west-meal-for-4",
@@ -64898,7 +65274,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-meal-for-4"
     },
     {
       "catalogKey": "taco-bell-orlando-west-taco-burrito-cravings-pack",
@@ -64938,7 +65315,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-taco-burrito-cravings-pack"
     },
     {
       "catalogKey": "taco-bell-orlando-west-taco-party-pack",
@@ -64978,7 +65356,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-taco-party-pack"
     },
     {
       "catalogKey": "taco-bell-orlando-west-supreme-taco-party-pack",
@@ -65018,7 +65397,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-supreme-taco-party-pack"
     },
     {
       "catalogKey": "taco-bell-orlando-west-soft-taco-party-pack",
@@ -65058,7 +65438,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-soft-taco-party-pack"
     },
     {
       "catalogKey": "taco-bell-orlando-west-supreme-soft-taco-party-pack",
@@ -65098,7 +65479,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-supreme-soft-taco-party-pack"
     },
     {
       "catalogKey": "taco-bell-orlando-west-variety-taco-party-pack",
@@ -65138,7 +65520,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-variety-taco-party-pack"
     },
     {
       "catalogKey": "taco-bell-orlando-west-supreme-variety-taco-party-pack",
@@ -65178,7 +65561,8 @@
         "selectedCandidateId": null,
         "inspectedAt": null,
         "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
-      }
+      },
+      "sharedPhotoFrom": "taco-bell-south-orange-supreme-variety-taco-party-pack"
     }
   ]
 }

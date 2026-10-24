@@ -12,13 +12,29 @@ parser = argparse.ArgumentParser()
 parser.add_argument("--require-complete", action="store_true")
 args = parser.parse_args()
 manifest = json.loads((ROOT / "research/local-photo-manifest.json").read_text(encoding="utf-8"))
-approved, errors, missing = [], [], []
+approved, shared, errors, missing = [], [], [], []
+items_by_key = {item['catalogKey']: item for item in manifest['items']}
 by_restaurant = {}
 hashes = defaultdict(list)
 for item in manifest["items"]:
-    summary = by_restaurant.setdefault(item["restaurant"], {"active": 0, "approved": 0, "generated": 0})
+    summary = by_restaurant.setdefault(item["restaurant"], {"active": 0, "approved": 0, "shared": 0, "generated": 0})
     summary["active"] += 1
     if item["review"]["status"] != "approved":
+        source = items_by_key.get(item.get('sharedPhotoFrom'))
+        if source:
+            # Only the same national Taco Bell product can share a photo.
+            # A second branch is not a second individually reviewed image.
+            fields = ('name', 'description', 'ingredients', 'servingSize', 'kind')
+            same_product = all(item['specification'].get(field) == source['specification'].get(field) for field in fields)
+            allowed_branch = item['restaurant'] in ('taco-bell-east-colonial', 'taco-bell-orlando-west')
+            if not (allowed_branch and source['restaurant'] == 'taco-bell-south-orange'
+                    and item['itemKey'] == source['itemKey'] and same_product
+                    and source['review']['status'] == 'approved'):
+                errors.append({'key': item['catalogKey'], 'error': 'Invalid shared chain product'})
+            else:
+                shared.append(item['catalogKey'])
+                summary['shared'] += 1
+                continue
         missing.append(item["catalogKey"])
         continue
     key = item["catalogKey"]
@@ -45,6 +61,7 @@ for item in manifest["items"]:
         errors.append({"key": key, "error": str(error)})
 duplicates = [keys for keys in hashes.values() if len(keys) > 1]
 report = {"activeItems": len(manifest["items"]), "approvedLocalImages": len(approved),
+          "sharedLocalEntries": len(shared), "coveredLocalEntries": len(approved) + len(shared),
           "remaining": len(missing), "errors": errors, "duplicateFinalImages": duplicates,
           "restaurants": by_restaurant,
           "complete": not missing and not errors and not duplicates}

@@ -1,21 +1,21 @@
 {
-  "checkedAt": "2026-10-24T09:08:12.193493+00:00",
-  "exportDirectoryName": "verifed-local-photos-325",
-  "registrySha256": "5bc2841f66c713e71eb61c991b6925b8eaa48581c83add192a07389b8d40b035",
+  "checkedAt": "2026-10-24T16:16:41.392809+00:00",
+  "exportDirectoryName": "verifed-v16-demo",
+  "registrySha256": "5cee2097df6eccf461e3a447074235205e07d32e445a6b7b9f3d304854fde0c4",
   "platforms": {
     "android": {
-      "expected": 325,
-      "matched": 325,
+      "expected": 332,
+      "matched": 332,
       "missing": []
     },
     "ios": {
-      "expected": 325,
-      "matched": 325,
+      "expected": 332,
+      "matched": 332,
       "missing": []
     },
     "web": {
-      "expected": 325,
-      "matched": 325,
+      "expected": 332,
+      "matched": 332,
       "missing": []
     }
   },

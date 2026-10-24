@@ -4,6 +4,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { localDishes } from "../mobile/src/local-catalog.js";
 import { publishedMenus } from "../mobile/src/restaurant-menus.js";
+import { sharedChainPhotoKeys } from "../mobile/src/local-photo-key.js";
 
 const root = path.resolve(fileURLToPath(new URL("../", import.meta.url)));
 const manifest = JSON.parse(readFileSync(path.join(root, "research/local-photo-manifest.json"), "utf8"));
@@ -68,6 +69,14 @@ for (const item of manifest.items) {
     width: candidate.width,
     height: candidate.height,
   };
+}
+
+// Sharing a reviewed chain product does not invent a second visual review.
+// Preserve each branch's pending review while recording its approved source.
+for (const item of manifest.items) {
+  const sourceKey = sharedChainPhotoKeys[item.catalogKey];
+  if (sourceKey && metadata[sourceKey]) item.sharedPhotoFrom = sourceKey;
+  else delete item.sharedPhotoFrom;
 }
 
 writeFileSync(path.join(root, "mobile/src/local-food-assets.js"),

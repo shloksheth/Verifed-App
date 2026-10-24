@@ -1,0 +1,38 @@
+{
+  "checkedAt": "2026-10-24T16:13:42.715Z",
+  "scope": "Three featured imported food menus; not a claim of live restaurant availability or complete allergy information",
+  "menus": [
+    {
+      "restaurant": "fresh-kitchen-waterford",
+      "name": "Fresh Kitchen · Waterford Lakes",
+      "menuEntries": 35,
+      "localImages": 35,
+      "missingImages": [],
+      "generatedIllustrations": 0,
+      "itemsWithPublishedIngredientText": 29,
+      "itemsWithUnconfirmedMajorAllergens": 35
+    },
+    {
+      "restaurant": "hawkers-orlando",
+      "name": "Hawkers Orlando",
+      "menuEntries": 49,
+      "localImages": 49,
+      "missingImages": [],
+      "generatedIllustrations": 3,
+      "itemsWithPublishedIngredientText": 0,
+      "itemsWithUnconfirmedMajorAllergens": 49
+    },
+    {
+      "restaurant": "taco-bell-south-orange",
+      "name": "Taco Bell · South Orange",
+      "menuEntries": 116,
+      "localImages": 116,
+      "missingImages": [],
+      "generatedIllustrations": 1,
+      "itemsWithPublishedIngredientText": 68,
+      "itemsWithUnconfirmedMajorAllergens": 116
+    }
+  ],
+  "totalMenuEntries": 200,
+  "allFeaturedImagesLocal": true
+}

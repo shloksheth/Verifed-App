@@ -1,8 +1,17 @@
 VERIFED GENERATED FOOD IMAGES
 
-49 approved generated illustrations in the current image checkpoint.
+53 approved generated illustrations in the current image checkpoint.
 These images illustrate menu items; they are not restaurant photographs.
 This list does not imply that the full image migration is complete.
+
+Hawkers Orlando - Po Po Lo’s Curry — Shrimp
+mobile/assets/food/hawkers-orlando/curry-shrimp.webp
+
+Hawkers Orlando - Po Po Lo’s Curry — Steak
+mobile/assets/food/hawkers-orlando/curry-steak.webp
+
+Hawkers Orlando - Thai Fried Egg
+mobile/assets/food/hawkers-orlando/thai-fried-egg.webp
 
 Loving Hut Orlando - Angel Rice - Cải Xào
 mobile/assets/food/loving-hut-orlando/angel-rice-cai-xao.webp
@@ -150,3 +159,6 @@ mobile/assets/food/loving-hut-orlando/yam-spicy-cha-cha.webp
 
 Loving Hut Orlando - Yogi Rice Noodle Soup - Hủ Tiếu
 mobile/assets/food/loving-hut-orlando/yogi-rice-noodle-soup-hu-tieu.webp
+
+Taco Bell · South Orange - Diablo Ranch Crispy Chicken Crunchwrap Slider
+mobile/assets/food/taco-bell-south-orange/diablo-ranch-crispy-chicken-crunchwrap-slider.webp

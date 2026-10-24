@@ -1,9 +1,9 @@
 {
-  "checkedAt": "2026-10-24T09:13:30.874831+00:00",
-  "name": "Verifed V15",
-  "snackId": "nVxSAddL6Uy4R1ADM8zre",
-  "expectedFiles": 359,
-  "foodImages": 325,
+  "checkedAt": "2026-10-24T16:19:44.245002+00:00",
+  "name": "Verifed V16",
+  "snackId": "MZCalF1nWbpzdRvSsllH0",
+  "expectedFiles": 368,
+  "foodImages": 332,
   "errors": [
     {
       "reason": "Snack download unavailable: HTTP 503"

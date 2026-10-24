@@ -60,7 +60,8 @@ test("downloads, rejected images and generated drafts are not silently approved"
 test("both menu renderers prefer the local asset over the legacy remote reference", () => {
   for (const file of ["Dining.js", "TacoBellMenu.js"]) {
     const source = readFileSync(new URL(`../components/${file}`, import.meta.url), "utf8");
-    assert.match(source, /localFoodAssets\[dish\.catalogKey\]/);
+    assert.match(source, /localPhotoKeyFor\(dish\)/);
+    assert.match(source, /localFoodAssets\[photoKey\]/);
     assert.match(source, /source=\{localAsset \|\| \{ uri: photo\.url \}\}/);
     assert.match(source, /contentFit="contain"/);
     assert.match(source, /import \{ Image \} from "expo-image"/);

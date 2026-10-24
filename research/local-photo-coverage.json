@@ -1,133 +1,160 @@
 {
   "activeItems": 1630,
-  "approvedLocalImages": 325,
-  "remaining": 1305,
+  "approvedLocalImages": 332,
+  "sharedLocalEntries": 232,
+  "coveredLocalEntries": 564,
+  "remaining": 1066,
   "errors": [],
   "duplicateFinalImages": [],
   "restaurants": {
     "hawkers-orlando": {
       "active": 49,
-      "approved": 44,
-      "generated": 0
+      "approved": 49,
+      "shared": 0,
+      "generated": 3
     },
     "fresh-kitchen-waterford": {
       "active": 35,
       "approved": 35,
+      "shared": 0,
       "generated": 0
     },
     "chipotle-south-orange": {
       "active": 26,
       "approved": 14,
+      "shared": 0,
       "generated": 0
     },
     "black-rooster-mills": {
       "active": 27,
       "approved": 3,
+      "shared": 0,
       "generated": 0
     },
     "pig-floyds-mills": {
       "active": 43,
       "approved": 0,
+      "shared": 0,
       "generated": 0
     },
     "loving-hut-orlando": {
       "active": 61,
       "approved": 49,
+      "shared": 0,
       "generated": 49
     },
     "the-strand-mills": {
       "active": 20,
       "approved": 0,
+      "shared": 0,
       "generated": 0
     },
     "the-monroe": {
       "active": 69,
       "approved": 0,
+      "shared": 0,
       "generated": 0
     },
     "lazy-moon-mills": {
       "active": 97,
       "approved": 9,
+      "shared": 0,
       "generated": 0
     },
     "winter-park-biscuit": {
       "active": 41,
       "approved": 7,
+      "shared": 0,
       "generated": 0
     },
     "reyes-mezcaleria": {
       "active": 32,
       "approved": 0,
+      "shared": 0,
       "generated": 0
     },
     "the-osprey": {
       "active": 39,
       "approved": 0,
+      "shared": 0,
       "generated": 0
     },
     "seito-baldwin-park": {
       "active": 81,
       "approved": 0,
+      "shared": 0,
       "generated": 0
     },
     "stubborn-mule": {
       "active": 84,
       "approved": 3,
+      "shared": 0,
       "generated": 0
     },
     "pizza-bruno-curry": {
       "active": 68,
       "approved": 6,
+      "shared": 0,
       "generated": 0
     },
     "mamak-colonial": {
       "active": 70,
       "approved": 40,
+      "shared": 0,
       "generated": 0
     },
     "tin-taco-downtown": {
       "active": 119,
       "approved": 0,
+      "shared": 0,
       "generated": 0
     },
     "sparrow-orlando": {
       "active": 26,
       "approved": 0,
+      "shared": 0,
       "generated": 0
     },
     "osteria-ester": {
       "active": 54,
       "approved": 1,
+      "shared": 0,
       "generated": 0
     },
     "woodlands-orlando": {
       "active": 100,
       "approved": 0,
+      "shared": 0,
       "generated": 0
     },
     "bombay-street-kitchen": {
       "active": 84,
       "approved": 0,
+      "shared": 0,
       "generated": 0
     },
     "yellow-dog-eats-gotha": {
       "active": 57,
       "approved": 0,
+      "shared": 0,
       "generated": 0
     },
     "taco-bell-south-orange": {
       "active": 116,
-      "approved": 114,
-      "generated": 0
+      "approved": 116,
+      "shared": 0,
+      "generated": 1
     },
     "taco-bell-east-colonial": {
       "active": 116,
       "approved": 0,
+      "shared": 116,
       "generated": 0
     },
     "taco-bell-orlando-west": {
       "active": 116,
       "approved": 0,
+      "shared": 116,
       "generated": 0
     }
   },

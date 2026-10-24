@@ -1,13 +1,15 @@
 {
-  "number": 15,
-  "name": "Verifed V15",
-  "description": "Local menu image migration checkpoint: 325 of 1630 active entries have individually reviewed local WebP assets, including 49 labeled generated illustrations. Adds recipe/hash review guards, source and generation provenance, Expo Image rendering and recursive Snack asset uploads. INCOMPLETE: 1305 entries still require reviewed local replacements; legacy remote images and restaurant banners remain for unfinished content.",
+  "number": 16,
+  "name": "Verifed V16",
+  "description": "Three photo-complete menus for the CAC video: Fresh Kitchen Waterford Lakes (35 entries), Hawkers Orlando (49), and Taco Bell (116). Home links directly to these menus. All 200 entries use reviewed local WebPs. Taco Bell locations share the same reviewed product images with recipe-change guards. Adds seven final images, including four generated illustrations, and keeps ingredient/allergen evidence separate from photo completeness. The wider catalog still has unfinished images and incomplete dietary source coverage.",
   "verification": [
-    "325 approved WebPs decoded with unchanged hashes and no duplicate final pixel content; every selected image has recorded visual review.",
-    "Browser gallery loaded 325/325 approved images without failures; actual Hawkers menu loaded all 44 approved local images through Expo Image.",
-    "136 regression tests passed, including recursive Snack assets and compatible Expo Image dependency ranges.",
-    "iOS, Android and web exports completed; every platform contains all 325 approved images with source-matching SHA-256 hashes.",
-    "The require-complete gate intentionally fails: 1305 of 1630 active entries remain unfinished. No complete image migration or physical iPhone test is claimed.",
-    "Snack save returned its snapshot ID, but remote ZIP correspondence is unconfirmed: the download service returned HTTP 503 twice."
+    "139 regression tests passed, including all 200 featured entries, all 232 Taco Bell branch aliases, changed-recipe rejection and live UUID navigation.",
+    "332 individually reviewed final WebPs decoded with no image errors or repeated final pixel content; 232 additional branch entries share matching chain products.",
+    "The featured-menu gate passes: Fresh Kitchen 35/35, Hawkers 49/49, Taco Bell 116/116. These are the complete imported food inventories, not a live branch availability claim.",
+    "Expo iOS, Android and web exports passed. Every platform contains all 332 source images with matching SHA-256 hashes.",
+    "Four new generated illustrations were viewed after WebP optimization; the private-facing text list now contains 53 approved generated images.",
+    "Fresh browser/device runtime checks were unavailable because the browser connection was closed. No new iPhone test is claimed.",
+    "Ingredient and allergen completeness is not claimed. The wider catalog has 1066 entries still lacking an approved local image or validated chain alias.",
+    "Snack save returned snapshot MZCalF1nWbpzdRvSsllH0; remote ZIP verification is unconfirmed because the download API returned HTTP 503."
   ]
 }

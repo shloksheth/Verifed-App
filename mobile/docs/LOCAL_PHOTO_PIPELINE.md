@@ -6,7 +6,17 @@ This migration is in progress. `research/local-photo-coverage.json` is the curre
 
 Where restaurants omit full ingredients or serving quantities, generate a realistic illustration from the published dish description. A reasonable illustrative portion is permitted; do not invent restaurant-confirmed weights or recipe details. `GENERATED_FOOD_IMAGES.txt` is the user's simple list of approved generated images. Existing internal provenance is retained.
 
-Food chains have one shared product menu, with locations selected separately. An identical chain product can share one local image across its locations; this is an intentional reuse, unlike assigning the same photo to different dishes. Each chain should retain its own menu layout and visual styling. The current asset builder and duplicate checks still need implementation changes for this shared-product exception. Do not count another location as covered until the shared registry mapping and checks actually work. The existing V15 app has not implemented these clarifications yet.
+Food chains have one shared product menu, with locations selected separately. An identical chain product can share one local image across its locations; this is an intentional reuse, unlike assigning the same photo to different dishes. Each chain should retain its own menu layout and visual styling. V16 implements shared Taco Bell product photographs, while retaining each branch's own location record. Different dishes still cannot reuse a final image.
+
+## Three-menu demonstration
+
+The user reduced the immediate goal to three complete food-image menus for a video demonstration. `mobile/src/featured-menus.js` selects Fresh Kitchen Waterford Lakes, Hawkers Orlando and Taco Bell South Orange. Home uses their stable slugs, so database UUIDs cannot reorder or break these links. The rest of the catalog remains available and unfinished image coverage is still reported honestly.
+
+`mobile/src/local-photo-key.js` maps identical Taco Bell products at East Colonial and Orlando West to the South Orange product's reviewed image. It compares name, description, ingredient list and item kind. If a live product's recipe or name changes, it returns that product's original key and refuses the shared image. Both menu renderers use this resolver. `build-local-food-assets.mjs` records `sharedPhotoFrom` only when the source image is actually approved; it does not fabricate another visual review or copy another WebP file. The verifier reports individually approved images and shared menu entries separately. The original duplicate-image check still applies to different products.
+
+`research/verify-featured-menus.mjs` checks that every imported entry in the three selected menus has an approved local image file. It writes `research/featured-menu-readiness.json`, which also reports published ingredient-text coverage and unconfirmed major-allergen coverage. Photo completeness is separate from ingredient completeness. `mobile/tests/featured-menus.test.js` checks all 200 featured entries, all 232 chain aliases, refusal of changed recipes/names and stable navigation when database IDs change.
+
+Four new generated illustrations complete the Diablo Ranch slider, steak curry, shrimp curry and fried egg. Two Hawkers Lo Mein images use the named national chain product photographed at another branch, with the source branch retained in provenance. The small official Taco Bell jalapeno cup is shown at its native quality rather than enlarged and presented as new detail. All seven final WebPs were viewed before approval. `GENERATED_FOOD_IMAGES.txt` lists all 53 currently approved generated illustrations.
 
 ## How an image reaches the app
 

@@ -14,6 +14,8 @@ import TacoBellMenu, { isTacoBell } from "./TacoBellMenu";
 import { menuPhotoFor, restaurantFoodPhoto } from "../src/menu-photos";
 import { localFoodAssets } from "../src/local-food-assets";
 import { localFoodPhotoMetadata } from "../src/local-food-photo-metadata";
+import { localPhotoKeyFor } from "../src/local-photo-key";
+import { featuredRestaurants } from "../src/featured-menus";
 import { dietaryMenuStatus, groupMenu } from "../src/menu-filter";
 import { colors, s } from "../styles";
 import AllergenIcons, {
@@ -250,8 +252,9 @@ export function Assessment({ dish, state, detailed = false }) {
 // representative image from that restaurant. Imagery never influences allergies.
 function DishPhoto({ dish, restaurant, large = false }) {
   const [failedUrl, setFailedUrl] = useState(null);
-  const localAsset = localFoodAssets[dish.catalogKey];
-  const localMetadata = localFoodPhotoMetadata[dish.catalogKey];
+  const photoKey = localPhotoKeyFor(dish);
+  const localAsset = localFoodAssets[photoKey];
+  const localMetadata = localFoodPhotoMetadata[photoKey];
   const photo = localMetadata
     ? { ...localMetadata, url: localMetadata.path, exact: !localMetadata.generated }
     : menuPhotoFor(dish, restaurant);
@@ -504,10 +507,8 @@ export function RequestRow({ request, navigate, staff = false }) {
 
 export function Home({ state, navigate }) {
   const restaurants = state.restaurants.filter(isLocal);
-  const cover =
-    restaurants.find(
-      (restaurant) => restaurant.slug === "black-rooster-mills",
-    ) || restaurants[0];
+  const featured = featuredRestaurants(restaurants);
+  const cover = featured[0] || restaurants[0];
   const needs = [...state.profile.allergies, ...state.profile.restrictions];
   const totalItems = state.dishes.filter((dish) =>
     restaurants.some((restaurant) => restaurant.id === dish.restaurantId),
@@ -568,7 +569,7 @@ export function Home({ state, navigate }) {
         <Icon name="chevron-forward" size={18} color={colors.green} />
       </Pressable>
       <Section
-        title="Around your table"
+        title="Start with these menus"
         action="See all"
         onPress={() => navigate("explore")}
       >
@@ -577,7 +578,7 @@ export function Home({ state, navigate }) {
           showsHorizontalScrollIndicator={false}
           contentContainerStyle={s.featuredRail}
         >
-          {restaurants.slice(0, 5).map((restaurant) => (
+          {featured.map((restaurant) => (
             <RestaurantRow
               key={restaurant.id}
               {...{ restaurant, state, navigate }}
