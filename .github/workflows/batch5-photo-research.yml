@@ -1,0 +1,19 @@
+name: Batch 5 First-Party Photo Discovery
+on:
+  pull_request:
+    paths:
+      - 'research/batch5-image-probe.mjs'
+      - '.github/workflows/batch5-photo-research.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: node research/batch5-image-probe.mjs
