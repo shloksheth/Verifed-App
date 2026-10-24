@@ -1,5 +1,5 @@
-// Menu-item and representative food photography, with item-level sources and identity caveats.
-// Photos do not certify ingredients, allergens, or usage permissions.
+// Dish-keyed menu and explicitly labeled representative photos with verified source attribution.
+// No food photo is evidence of allergen safety, current menu details, or reuse permission.
 export const verifiedDishPhotos = {
   "loving-hut-orlando": {
     "spring-rolls-4-rolls-cha-gio": {
@@ -1680,13 +1680,14 @@ export const verifiedDishPhotos = {
       "needsPermissionReview": true
     },
     "wpbc-burger": {
-      "url": "https://deliverlogic-common-assets.s3.amazonaws.com/editable/images/delivr/menuitems/44595.png",
-      "alt": "Representative Impossible Burger on a brioche-style bun with lettuce, tomato and red onion, with waffle fries and an IMPOSSIBLE flag. WPBC's own American cheese, pickles and house sauce are not verified or visible, and this was photographed for another restaurant.",
-      "credit": "Stubby's · Impossible Burger ordering photograph (not Winter Park Biscuit Company)",
-      "sourceUrl": "https://www.delivery.com/cities/nantucket-ma/categories/restaurant/stubbys-menu-2",
-      "kind": "representative-dish",
+      "url": "https://i0.wp.com/www.orlandoweekly.com/wp-content/uploads/2020/11/wpbco2.webp?ssl=1",
+      "alt": "Winter Park Biscuit Company's own Impossible Burger with vegan American cheese, lettuce, tomato, pickles and house sauce, photographed by Faiyaz Kara in 2020. Historical photo shows a potato bun, while the current menu specifies brioche; exact current plating differs.",
+      "credit": "Orlando Weekly · Faiyaz Kara photograph of Winter Park Biscuit Company's Impossible Burger",
+      "sourceUrl": "https://www.orlandoweekly.com/food-drink/brace-yourself-winter-park-biscuit-co-slated-to-open-thanksgiving-week-inside-east-end-market-28271078/",
+      "kind": "editorial-context",
       "reviewedAt": "2026-10-24",
-      "matchMethod": "Visual comparison with WPBC Impossible patty, lettuce, tomato, onion and brioche menu description; incomplete match disclosed",
+      "matchMethod": "Directly extracted photo URL from article HTML adjacent to explicit 'Impossible Burger' caption naming the dish and ingredients; historical bun difference disclosed",
+      "photoIdentityNote": "Authentic WPBC burger photo from November 2020, NOT guaranteed to show current version. Photo reuse permission unconfirmed.",
       "needsPermissionReview": true
     },
     "nugget-combo": {
