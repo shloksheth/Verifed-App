@@ -1,6 +1,5 @@
-// Restaurant-specific menu photography with credit; images never certify allergen safety.
-// Offsite representative photos are distinguished from officially photographed items.
-// Third-party reuse and commercial rights require permission review.
+// Individually matched food photos, with explicit distinctions for representative illustrations.
+// Photo presentation is not evidence for ingredient, allergen, or restaurant availability claims.
 export const verifiedDishPhotos = {
   "loving-hut-orlando": {
     "spring-rolls-4-rolls-cha-gio": {
@@ -521,6 +520,76 @@ export const verifiedDishPhotos = {
       "reviewedAt": "2026-10-23",
       "matchMethod": "Compared multiple retrieved search images with the published component name",
       "photoIdentityNote": "Illustrative or contextual image; not evidence this is the restaurant's exact plating",
+      "needsPermissionReview": true
+    },
+    "barbacoa": {
+      "url": "https://www.chipotle.co.uk/content/dam/chipotle/pages/ingredients/uk/2019/barbacoa.png",
+      "alt": "Chipotle official standalone barbacoa shredded braised beef on white background; UK photography, recipe may differ from US",
+      "credit": "Chipotle UK · official ingredients",
+      "sourceUrl": "https://www.chipotle.co.uk/ingredients",
+      "kind": "official-uk-ingredient",
+      "reviewedAt": "2026-10-23",
+      "matchMethod": "Visual and published ingredient comparison",
+      "needsPermissionReview": false
+    },
+    "romaine": {
+      "url": "https://www.chipotle.com/content/dam/chipotle/menu/menu-items/cmg-5351-romaine-lettuce/web-mobile/order.png",
+      "alt": "Chipotle shredded romaine lettuce alone on white background",
+      "credit": "Chipotle official ingredient photo",
+      "sourceUrl": "https://www.chipotle.com/ingredients/romaine-lettuce",
+      "kind": "official-ingredient",
+      "reviewedAt": "2026-10-23",
+      "matchMethod": "Visual and published ingredient comparison",
+      "needsPermissionReview": false
+    },
+    "cheese": {
+      "url": "https://www.chipotle.co.uk/content/dam/chipotle/pages/ingredients/uk/2019/cheese.png",
+      "alt": "Chipotle shredded Monterey Jack cheese pile on white background; official UK ingredient image",
+      "credit": "Chipotle UK · official ingredient photo",
+      "sourceUrl": "https://www.chipotle.co.uk/ingredients",
+      "kind": "official-uk-ingredient",
+      "reviewedAt": "2026-10-23",
+      "matchMethod": "Visual and published ingredient comparison",
+      "needsPermissionReview": false
+    },
+    "pinto-beans": {
+      "url": "https://www.chipotle.com/content/dam/chipotle/menu/menu-items/cmg-5052-pinto-beans/web-mobile/order.png",
+      "alt": "Chipotle cooked pinto beans on white background, full ingredient pile",
+      "credit": "Chipotle official ingredients",
+      "sourceUrl": "https://www.chipotle.com/ingredients/pinto-beans",
+      "kind": "official-ingredient",
+      "reviewedAt": "2026-10-23",
+      "matchMethod": "Visual and published ingredient comparison",
+      "needsPermissionReview": false
+    },
+    "white-rice": {
+      "url": "https://www.chipotle.com/content/dam/chipotle/menu/menu-items/cmg-5001-white-rice/web-mobile/order.png",
+      "alt": "Chipotle white cilantro lime rice in standalone white-background ingredient photograph",
+      "credit": "Chipotle official ingredients",
+      "sourceUrl": "https://www.chipotle.com/ingredients/white-rice",
+      "kind": "official-ingredient",
+      "reviewedAt": "2026-10-23",
+      "matchMethod": "Visual and published ingredient comparison",
+      "needsPermissionReview": false
+    },
+    "red-chimichurri": {
+      "url": "https://publish.purewow.net/wp-content/uploads/sites/2/2025/10/chipotle-red-chimichurri-review_cat.jpg",
+      "alt": "Chipotle red chimichurri sauce served in a clear plastic side cup, photographed at restaurant with chips in background",
+      "credit": "PureWow · Chipotle Red Chimichurri review",
+      "sourceUrl": "https://www.purewow.com/food/chipotle-red-chimichurri-review",
+      "kind": "editorial-product",
+      "reviewedAt": "2026-10-23",
+      "matchMethod": "Visual and published ingredient comparison",
+      "needsPermissionReview": true
+    },
+    "crispy-corn-tortilla": {
+      "url": "https://image.chipotlenutrition.org/tacos/crispy-corn-tortilla.webp",
+      "alt": "Representative crispy folded corn taco tortilla shell on white background, visually matches shell form but not authenticated restaurant photo",
+      "credit": "Chipotle Nutrition · independent visual illustration",
+      "sourceUrl": "https://chipotlenutrition.org/menu/tacos",
+      "kind": "representative-ingredient",
+      "reviewedAt": "2026-10-23",
+      "matchMethod": "Visual and published ingredient comparison",
       "needsPermissionReview": true
     }
   },
