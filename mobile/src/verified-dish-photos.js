@@ -1,5 +1,5 @@
-// Photos keyed individually, source details and labels distinguish real restaurant products from representative food illustrations.
-// Images do not establish allergen safety or commercial photo usage rights.
+// Individually keyed dish photographs; third-party source and representative status explicitly disclosed.
+// These images are not food safety claims. Third-party editorial photographs require reproduction rights review.
 export const verifiedDishPhotos = {
   "loving-hut-orlando": {
     "spring-rolls-4-rolls-cha-gio": {
@@ -1077,6 +1077,105 @@ export const verifiedDishPhotos = {
       "reviewedAt": "2026-10-23",
       "needsPermissionReview": true,
       "photoIdentityNote": "Representative or contextual dish. Not an authenticated exact restaurant item."
+    },
+    "achiote-pork-salad-add-on": {
+      "url": "https://assets.cardamomo.news/__export/1773175572027/sites/debate/img/2026/03/10/cochinita_pibil_jugosa.png_2062789929.png",
+      "alt": "Representative achiote-seasoned shredded pork in a bowl lined with banana leaf, topped with pickled red onion and habanero. Only the optional pork protein, NOT the completed Black Rooster salad.",
+      "credit": "Cardamomo · cochinita pibil illustrated preparation",
+      "sourceUrl": "https://www.cardamomo.news/comida/cochinita-pibil-jugosa-paso-a-paso-con-sabor-100-mexicano-20260310-0001.html",
+      "kind": "representative-dish",
+      "reviewedAt": "2026-10-23",
+      "matchMethod": "Compared menu name, ingredient description and available image subjects; different restaurant or recipe explicitly noted",
+      "needsPermissionReview": true,
+      "photoIdentityNote": "This is an illustration of the named dish or ingredient and not the actual Black Rooster product or serving."
+    },
+    "chicken-tinga-salad-add-on": {
+      "url": "https://www.slenderkitchen.com/sites/default/files/styles/gws_sq_1440/public/recipe_images/chicken-tinga.jpg",
+      "alt": "Representative cooked pulled chicken mixed in red chile chipotle-tomato sauce in a full bowl, cilantro visible. Only salad add-on protein; NOT the finished Black Rooster salad.",
+      "credit": "Slender Kitchen · Chicken Tinga recipe photograph",
+      "sourceUrl": "https://www.slenderkitchen.com/web-stories/chicken-tinga-177665760504",
+      "kind": "representative-dish",
+      "reviewedAt": "2026-10-23",
+      "matchMethod": "Compared menu name, ingredient description and available image subjects; different restaurant or recipe explicitly noted",
+      "needsPermissionReview": true,
+      "photoIdentityNote": "This is an illustration of the named dish or ingredient and not the actual Black Rooster product or serving."
+    },
+    "beef-salad-add-on": {
+      "url": "https://eato.health/food-images/feast/act/texas-roadhouse-lil-dillo-steak-bites-18335100-1.webp",
+      "alt": "Representative bite-sized grilled beef pieces on a plate; Black Rooster salad optional protein form and exact preparation are not confirmed. Not a completed salad.",
+      "credit": "Eato · restaurant steak bites reference photography",
+      "sourceUrl": "https://eato.health/food/texas-roadhouse-lil-dillo-steak-bites-18335100-1",
+      "kind": "representative-dish",
+      "reviewedAt": "2026-10-23",
+      "matchMethod": "Compared menu name, ingredient description and available image subjects; different restaurant or recipe explicitly noted",
+      "needsPermissionReview": true,
+      "photoIdentityNote": "This is an illustration of the named dish or ingredient and not the actual Black Rooster product or serving."
+    },
+    "crispy-fish-salad-add-on": {
+      "url": "https://assets-guacamole.radioformula.com.mx/__export/1774053009327/sites/formula/img/2026/03/20/pescado_dorado.jpg_1942733086.jpg",
+      "alt": "Representative golden battered fried fish strips on a dish with fresh lime, only the optional fish protein for salad; not the actual Black Rooster salad.",
+      "credit": "Guacamole · fried fish recipe photograph",
+      "sourceUrl": "https://guacamole.radioformula.com.mx/recetas/el-truco-infalible-de-los-expertos-para-que-tu-pescado-dorado-salga-jugoso-20260320-0009.html",
+      "kind": "representative-dish",
+      "reviewedAt": "2026-10-23",
+      "matchMethod": "Compared menu name, ingredient description and available image subjects; different restaurant or recipe explicitly noted",
+      "needsPermissionReview": true,
+      "photoIdentityNote": "This is an illustration of the named dish or ingredient and not the actual Black Rooster product or serving."
+    },
+    "shrimp-salad-add-on": {
+      "url": "https://yummygusto.com/assets/images/1741483274116-eq371ckw.webp",
+      "alt": "Representative bowl of sautéed chili-lime shrimp with cilantro, photographed fully. Shows only a possible shrimp add-on, not a complete Black Rooster salad.",
+      "credit": "Yummy Gusto · Chili Lime Shrimp recipe photograph",
+      "sourceUrl": "https://yummygusto.com/recipes/zesty-shrimp-lime",
+      "kind": "representative-dish",
+      "reviewedAt": "2026-10-23",
+      "matchMethod": "Compared menu name, ingredient description and available image subjects; different restaurant or recipe explicitly noted",
+      "needsPermissionReview": true,
+      "photoIdentityNote": "This is an illustration of the named dish or ingredient and not the actual Black Rooster product or serving."
+    },
+    "salsa-and-chips-choice-of": {
+      "url": "https://d1w7312wesee68.cloudfront.net/P2x-pOPj4qbSB7wH__axOSt8E_XI0sGXJkNEvXCrQkM/resize%3Afit%3A720%3A720/plain/s3%3A/toasttab/restaurants/restaurant-9718000000000000/menu/items/9/item-300000008274067139_1598881535.jpg",
+      "alt": "Representative chips and three dip bowls: red chili salsa, green tomatillo salsa and an additional white creamy dip. Black Rooster offers a single choice of roasted tomatillo, 3 Chile Tomato OR habanero, not these exact three sauces.",
+      "credit": "Chuy's Short Pump · Chips and Dips Platter on ToastTab",
+      "sourceUrl": "https://order.toasttab.com/online/cdb-shortpump",
+      "kind": "representative-dish",
+      "reviewedAt": "2026-10-23",
+      "matchMethod": "Compared menu name, ingredient description and available image subjects; different restaurant or recipe explicitly noted",
+      "needsPermissionReview": true,
+      "photoIdentityNote": "This is an illustration of the named dish or ingredient and not the actual Black Rooster product or serving."
+    },
+    "br-nachos": {
+      "url": "https://dewhearth.com/cdn-cgi/image/fit%3Dcontain%2Cwidth%3D768%2Cquality%3D80%2Cformat%3Dauto/assets/images/1766522951047-dscaywhz.webp",
+      "alt": "Representative breakfast nachos with fried egg, beans, tortilla chips, cheese sauce, chopped tomato, red onion, cilantro and guacamole. Black Rooster's smoked kale and chipotle cheese are not shown; restaurant plating differs.",
+      "credit": "Dewhearth · Egg Topped Breakfast Nachos photograph",
+      "sourceUrl": "https://dewhearth.com/recipes/egg-topped-breakfast-nachos",
+      "kind": "representative-dish",
+      "reviewedAt": "2026-10-23",
+      "matchMethod": "Compared menu name, ingredient description and available image subjects; different restaurant or recipe explicitly noted",
+      "needsPermissionReview": true,
+      "photoIdentityNote": "This is an illustration of the named dish or ingredient and not the actual Black Rooster product or serving."
+    },
+    "kale-salad": {
+      "url": "https://m1.quebecormedia.com/emp/cl_prod/6fe58dd8d22a074098f315a7288f06dcce864bb1/Coup-de-Pouce-7-8-novembre-202410087Salade-kale-pommes2-1.jpg?height=1500&impolicy=resize&width=1500",
+      "alt": "Representative kale salad with red grapes, feta-style white cheese and roasted pecans. Black Rooster kale salad additionally includes radish, cabbage, carrot, celery, onion and herbs; not official plating.",
+      "credit": "Canadian Living · Kale Salad with Apple Cinnamon Vinaigrette",
+      "sourceUrl": "https://www.canadianliving.com/food/lunch-and-dinner/recipe/kale-salad-with-apple-cinnamon-vinaigrette",
+      "kind": "representative-dish",
+      "reviewedAt": "2026-10-23",
+      "matchMethod": "Compared menu name, ingredient description and available image subjects; different restaurant or recipe explicitly noted",
+      "needsPermissionReview": true,
+      "photoIdentityNote": "This is an illustration of the named dish or ingredient and not the actual Black Rooster product or serving."
+    },
+    "pozole-rojo": {
+      "url": "https://www.muydelish.com/wp-content/uploads/2020/12/Pozole.jpg",
+      "alt": "Representative red chile BEEF pozole with hominy, shredded cabbage, radish and cilantro in a white bowl. Black Rooster uses roasted beef tri-tip and also lists avocado, queso fresco, lime and chips; this is NOT a restaurant-specific product photo.",
+      "credit": "Muy Delish · Ana Frias beef Pozole Rojo recipe image",
+      "sourceUrl": "https://www.muydelish.com/red-beef-pozole/",
+      "kind": "representative-dish",
+      "reviewedAt": "2026-10-23",
+      "matchMethod": "Compared menu name, ingredient description and available image subjects; different restaurant or recipe explicitly noted",
+      "needsPermissionReview": true,
+      "photoIdentityNote": "This is an illustration of the named dish or ingredient and not the actual Black Rooster product or serving."
     }
   },
   "mamak-colonial": {
