@@ -1,4 +1,6 @@
 {
-  "version": 14.2,
-  "reason": "User requested Expo Snack preview of Verifed V14.2 with independently sourced per-dish images"
+  "version": 14.8,
+  "name": "Verifed V14.8",
+  "mode": "preview-latest-main",
+  "reason": "Publish latest main branch code to Snack using the requested V14.8 title."
 }
