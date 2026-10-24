@@ -30,6 +30,8 @@ Use `--latest-candidate` with the review-sheet tool to inspect the most recently
 
 `research/native-tools/assets.mjs` recursively lists supported image assets and their MIME types. `research/native-tools/publish.mjs` uses that list to upload WebP assets to Snack and records their hashes. It previously included only the logo. Publishing is separate from visual approval.
 
+`research/native-tools/dependencies.mjs` preserves existing `~` or `^` ranges when preparing Snack dependencies. Numeric Expo package versions receive the expected compatible range. This avoids turning the installed `~3.0.11` Expo Image version into an invalid `~~3.0.11` range. The publication test covers this regression. Existing framing tests in `batch1-rest-photo-audit`, `official-menu-photo-expansion` and `photo-framing-coverage` now check Expo Image's `contentFit` property.
+
 ## Reproduce the checks
 
 Run from the repository root:
@@ -43,6 +45,12 @@ python research/verify-local-food-images.py --require-complete
 ```
 
 The last command is the completion gate and must fail during an incomplete migration. `mobile/tests/local-food-assets.test.js` checks inventory parity, unchanged approved bytes, provenance, uniqueness, registry consistency and renderer wiring. `mobile/tests/snack-assets.test.js` checks that Snack's upload inventory includes every final asset.
+
+`research/verify-exported-food-assets.py <export-directory>` compares each final source image's SHA-256 with actual Android, iOS and web export files. `research/local-photo-export-validation.json` stores the result and registry hash. This checks packaging correspondence, not physical-phone behavior or unfinished catalog entries.
+
+After saving Snack, `research/verify-snack-snapshot.py` downloads that exact published snapshot and compares every application file and image byte for byte with this checkout. It also checks the publisher's image hashes and writes `research/local-photo-snack-validation.json`. It does not treat a returned Snack URL as proof that all files uploaded correctly.
+
+If Snack's download service is unavailable, the script records the HTTP failure and exits unsuccessfully. V15's download returned HTTP 503 twice; its saved URL is available, but byte-for-byte verification of that remote snapshot remains unconfirmed. Local exports were verified separately.
 
 For a specific review sheet:
 

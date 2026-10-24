@@ -1,14 +1,13 @@
 {
-  "number": 14.9,
-  "name": "Verifed V14.9",
-  "description": "Batch 5 restaurant menu photography. Adds 200 newly keyed product or representative image references across Hawkers Orlando, Loving Hut Orlando, and three Taco Bell branches without disturbing V14.8’s Batch 2/3 changes. Across the five live menus, 458/458 entries now resolve to a per-item image, including 447 brand/product-matched references and 11 explicitly labeled third-party representative photos. All 226 distinct image URLs returned image content during verification. This is a GitHub-only release; the original Expo Snack snapshot is unchanged.",
+  "number": 15,
+  "name": "Verifed V15",
+  "description": "Local menu image migration checkpoint: 325 of 1630 active entries have individually reviewed local WebP assets, including 49 labeled generated illustrations. Adds recipe/hash review guards, source and generation provenance, Expo Image rendering and recursive Snack asset uploads. INCOMPLETE: 1305 entries still require reviewed local replacements; legacy remote images and restaurant banners remain for unfinished content.",
   "verification": [
-    "Batch 5 contains five active menus totaling 458 entries and 458 image references; retired Tako Cheena stays excluded.",
-    "63 Taco Bell item photo references per location are matched to first-party product names and original image URLs.",
-    "Three Hawkers Lo Mein proteins use actual Hawkers-brand dish photos; 11 other entries use disclosed illustrative images.",
-    "226/226 unique image URLs returned image content in a GitHub Actions validation run at check time; this does not certify lasting reachability.",
-    "The app retains full-food contain-mode image framing and differentiates illustrative images from exact dish photographs.",
-    "Third-party rights, accuracy of representative dishes and device-by-device image review remain outstanding. No AI-generated image is claimed in app assets.",
-    "GitHub-only release. No Expo Snack publication requested."
+    "325 approved WebPs decoded with unchanged hashes and no duplicate final pixel content; every selected image has recorded visual review.",
+    "Browser gallery loaded 325/325 approved images without failures; actual Hawkers menu loaded all 44 approved local images through Expo Image.",
+    "136 regression tests passed, including recursive Snack assets and compatible Expo Image dependency ranges.",
+    "iOS, Android and web exports completed; every platform contains all 325 approved images with source-matching SHA-256 hashes.",
+    "The require-complete gate intentionally fails: 1305 of 1630 active entries remain unfinished. No complete image migration or physical iPhone test is claimed.",
+    "Snack save returned its snapshot ID, but remote ZIP correspondence is unconfirmed: the download service returned HTTP 503 twice."
   ]
 }

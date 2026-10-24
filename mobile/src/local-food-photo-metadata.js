@@ -1143,6 +1143,15 @@ export const localFoodPhotoMetadata = {
     "width": 1200,
     "height": 1200
   },
+  "loving-hut-orlando-virgin-island-vegan-fish": {
+    "path": "assets/food/loving-hut-orlando/virgin-island-vegan-fish.webp",
+    "alt": "Menu illustration of Virgin Island – Vegan Fish",
+    "credit": "Verifed generated menu illustration",
+    "generated": true,
+    "sha256": "24216ce770db759f93d8efd4f2f443ab5cb6f2dd04cdd01af8d3d36b9d8f198f",
+    "width": 1200,
+    "height": 1200
+  },
   "loving-hut-orlando-mushroom-spicy-cha-cha": {
     "path": "assets/food/loving-hut-orlando/mushroom-spicy-cha-cha.webp",
     "alt": "Menu illustration of Mushroom Spicy Cha Cha",
@@ -1160,6 +1169,105 @@ export const localFoodPhotoMetadata = {
     "sha256": "842f9d9382c60d8b3fdac5daf3f3d6158de23ba227ee9d6131e21cf99b511397",
     "width": 1200,
     "height": 646
+  },
+  "loving-hut-orlando-tofu-spicy-cha-cha-au-hu-xao": {
+    "path": "assets/food/loving-hut-orlando/tofu-spicy-cha-cha-au-hu-xao.webp",
+    "alt": "Menu illustration of Tofu Spicy Cha Cha - Đậu Hũ Xào",
+    "credit": "Verifed generated menu illustration",
+    "generated": true,
+    "sha256": "2abec7adc3c4257301e2dca6cf4b25721eec2c0b40aafd53fb68036e8ce7d97f",
+    "width": 1200,
+    "height": 800
+  },
+  "loving-hut-orlando-angel-rice-cai-xao": {
+    "path": "assets/food/loving-hut-orlando/angel-rice-cai-xao.webp",
+    "alt": "Menu illustration of Angel Rice - Cải Xào",
+    "credit": "Verifed generated menu illustration",
+    "generated": true,
+    "sha256": "d398334ac454c23d8ee417f50329c052c133887131d8ef967fbd11d555742921",
+    "width": 1200,
+    "height": 800
+  },
+  "loving-hut-orlando-yam-spicy-cha-cha": {
+    "path": "assets/food/loving-hut-orlando/yam-spicy-cha-cha.webp",
+    "alt": "Menu illustration of Yam Spicy Cha Cha",
+    "credit": "Verifed generated menu illustration",
+    "generated": true,
+    "sha256": "dabe25a2ca0d01c435bf1c7eb88f6a1be7eb251e6211d1e2a313559e930e81c1",
+    "width": 1200,
+    "height": 800
+  },
+  "loving-hut-orlando-golden-fried-rice-com-chien": {
+    "path": "assets/food/loving-hut-orlando/golden-fried-rice-com-chien.webp",
+    "alt": "Menu illustration of Golden Fried Rice - Cơm Chiên",
+    "credit": "Verifed generated menu illustration",
+    "generated": true,
+    "sha256": "8cd0ef0630f6f59b717f729af84e72945e7c0923adac1e204b57eadd1a95f625",
+    "width": 1200,
+    "height": 800
+  },
+  "loving-hut-orlando-garlic-sensation": {
+    "path": "assets/food/loving-hut-orlando/garlic-sensation.webp",
+    "alt": "Menu illustration of Garlic Sensation",
+    "credit": "Verifed generated menu illustration",
+    "generated": true,
+    "sha256": "3f4f257570aa0d4407ab08483c6ff289ce92c84a34ce9cf170dd6f64b4d614d4",
+    "width": 1200,
+    "height": 800
+  },
+  "loving-hut-orlando-healthy-rice": {
+    "path": "assets/food/loving-hut-orlando/healthy-rice.webp",
+    "alt": "Menu illustration of Healthy Rice",
+    "credit": "Verifed generated menu illustration",
+    "generated": true,
+    "sha256": "3e211d47ba40d5723d799f37ed791ebc7b0046d0cf6a02bbf4ea3ef6d7f800b9",
+    "width": 1200,
+    "height": 800
+  },
+  "loving-hut-orlando-land-teriyaki": {
+    "path": "assets/food/loving-hut-orlando/land-teriyaki.webp",
+    "alt": "Menu illustration of Land Teriyaki",
+    "credit": "Verifed generated menu illustration",
+    "generated": true,
+    "sha256": "eae3ad6a03985c7a328b6e400393df21ef5776d96fb25569d68bbcb17d375cb8",
+    "width": 1200,
+    "height": 800
+  },
+  "loving-hut-orlando-loving-fried-rice-com-chien-ac-biet": {
+    "path": "assets/food/loving-hut-orlando/loving-fried-rice-com-chien-ac-biet.webp",
+    "alt": "Menu illustration of Loving Fried Rice - Cơm Chiên Đặc Biệt",
+    "credit": "Verifed generated menu illustration",
+    "generated": true,
+    "sha256": "8e315301821eaaa68d691ee1e10b11b9f40e551b18eee48bf818d6a0582005bb",
+    "width": 1200,
+    "height": 1200
+  },
+  "loving-hut-orlando-orange-yogi": {
+    "path": "assets/food/loving-hut-orlando/orange-yogi.webp",
+    "alt": "Menu illustration of Orange Yogi",
+    "credit": "Verifed generated menu illustration",
+    "generated": true,
+    "sha256": "d1c7119171039edef9a2d65f16e0fdc4bac8230e2d5e742382f2d3c28461fb5e",
+    "width": 1200,
+    "height": 1200
+  },
+  "loving-hut-orlando-noble-rice-ga-ca-ri": {
+    "path": "assets/food/loving-hut-orlando/noble-rice-ga-ca-ri.webp",
+    "alt": "Menu illustration of Noble Rice - Gà Cà Ri",
+    "credit": "Verifed generated menu illustration",
+    "generated": true,
+    "sha256": "1f2652b373fb52c9bff4437889c3a52d676c978649df60caebc3aed70b67f45d",
+    "width": 1200,
+    "height": 800
+  },
+  "loving-hut-orlando-sesame-drumsticks-ui-ga-kho": {
+    "path": "assets/food/loving-hut-orlando/sesame-drumsticks-ui-ga-kho.webp",
+    "alt": "Menu illustration of Sesame Drumsticks - Đùi Gà Kho",
+    "credit": "Verifed generated menu illustration",
+    "generated": true,
+    "sha256": "f5b809547e7dc392caca45ac732390f4315edfcf14391ba216a3e0861d13267b",
+    "width": 1200,
+    "height": 800
   },
   "loving-hut-orlando-vegan-flan": {
     "path": "assets/food/loving-hut-orlando/vegan-flan.webp",

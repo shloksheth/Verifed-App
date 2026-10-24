@@ -1,0 +1,22 @@
+{
+  "number": 15,
+  "name": "Verifed V15",
+  "description": "Local menu image migration checkpoint: 325 of 1630 active entries have individually reviewed local WebP assets, including 49 labeled generated illustrations. Adds recipe/hash review guards, source and generation provenance, Expo Image rendering and recursive Snack asset uploads. INCOMPLETE: 1305 entries still require reviewed local replacements; legacy remote images and restaurant banners remain for unfinished content.",
+  "verification": [
+    "325 approved WebPs decoded with unchanged hashes and no duplicate final pixel content; every selected image has recorded visual review.",
+    "Browser gallery loaded 325/325 approved images without failures; actual Hawkers menu loaded all 44 approved local images through Expo Image.",
+    "136 regression tests passed, including recursive Snack assets and compatible Expo Image dependency ranges.",
+    "iOS, Android and web exports completed; every platform contains all 325 approved images with source-matching SHA-256 hashes.",
+    "The require-complete gate intentionally fails: 1305 of 1630 active entries remain unfinished. No complete image migration or physical iPhone test is claimed.",
+    "Snack save returned its snapshot ID, but remote ZIP correspondence is unconfirmed: the download service returned HTTP 503 twice."
+  ],
+  "snack": "https://snack.expo.dev/nVxSAddL6Uy4R1ADM8zre",
+  "snackId": "nVxSAddL6Uy4R1ADM8zre",
+  "snackSourceHash": "b39638ac6562ca6b11360a634f78873847bd2be6575df79781813bfe1dd7355c",
+  "status": "incomplete-checkpoint",
+  "approvedLocalImages": 325,
+  "activeMenuItems": 1630,
+  "remaining": 1305,
+  "generatedImages": 49,
+  "branch": "codex/local-menu-photography"
+}

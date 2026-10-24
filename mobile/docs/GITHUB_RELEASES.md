@@ -1,5 +1,9 @@
 # Publishing a completed numbered release
 
+## V15 image-migration checkpoint
+
+V15 is an incomplete checkpoint on `codex/local-menu-photography`. For this work, the authoritative source is this checkout's `mobile/` directory. Do not run the historical copy-based publisher against the older workspace `verifed-mobile/`, which would replace newer work. The current Snack publisher reads `mobile/` directly. The checkpoint preserves the existing main branch and numbered tags, and its release notes explicitly list unfinished image coverage and unavailable verification.
+
 `research/publish-github.py` copies the completed mobile app into a separate Git checkout, preserves the existing `web/` and `prototype/` projects, then creates a numbered commit, tag and GitHub release. `research/native-tools/publish.mjs` publishes the corresponding Expo Snack first. Both use `verifed-mobile/release.json` as their single version source.
 
 ## Release metadata

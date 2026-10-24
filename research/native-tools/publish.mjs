@@ -4,6 +4,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { createHash } from "node:crypto";
 import { assetMimeTypes, imageAssetPaths } from "./assets.mjs";
+import { snackVersionFor } from "./dependencies.mjs";
 
 const root = path.resolve(
   path.dirname(fileURLToPath(import.meta.url)),
@@ -57,12 +58,7 @@ const dependencies = Object.fromEntries(
     .map(([name, version]) => [
       name,
       {
-        version:
-          name.startsWith("expo-") || name === "react-native-safe-area-context"
-            ? `~${version}`
-            : name === "@expo/vector-icons"
-              ? `^${version}`
-              : version,
+        version: snackVersionFor(name, version),
       },
     ]),
 );

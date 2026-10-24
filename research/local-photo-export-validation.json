@@ -1,0 +1,23 @@
+{
+  "checkedAt": "2026-10-24T09:08:12.193493+00:00",
+  "exportDirectoryName": "verifed-local-photos-325",
+  "registrySha256": "5bc2841f66c713e71eb61c991b6925b8eaa48581c83add192a07389b8d40b035",
+  "platforms": {
+    "android": {
+      "expected": 325,
+      "matched": 325,
+      "missing": []
+    },
+    "ios": {
+      "expected": 325,
+      "matched": 325,
+      "missing": []
+    },
+    "web": {
+      "expected": 325,
+      "matched": 325,
+      "missing": []
+    }
+  },
+  "passed": true
+}

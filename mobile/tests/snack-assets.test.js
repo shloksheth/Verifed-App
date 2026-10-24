@@ -1,4 +1,5 @@
 import test from "node:test";
+import { snackVersionFor } from "../../research/native-tools/dependencies.mjs";
 import assert from "node:assert/strict";
 import { fileURLToPath } from "node:url";
 import { imageAssetPaths, assetMimeTypes } from "../../research/native-tools/assets.mjs";
@@ -11,4 +12,12 @@ test("Snack's asset inventory includes every bundled food image and the logo", a
   assert.equal(paths.filter((path) => path.startsWith("assets/food/")).length, Object.keys(localFoodPhotoMetadata).length);
   assert.equal(assetMimeTypes[".webp"], "image/webp");
   assert.equal(paths.some((path) => path.includes("node_modules") || /\.env/.test(path)), false);
+});
+
+test("Snack publication preserves existing Expo-compatible dependency ranges", () => {
+  assert.equal(snackVersionFor("expo-image", "~3.0.11"), "~3.0.11");
+  assert.equal(snackVersionFor("expo-crypto", "15.0.9"), "~15.0.9");
+  assert.equal(snackVersionFor("@expo/vector-icons", "^15.0.3"), "^15.0.3");
+  assert.equal(snackVersionFor("@expo/vector-icons", "15.0.3"), "^15.0.3");
+  assert.equal(snackVersionFor("@supabase/supabase-js", "2.118.0"), "2.118.0");
 });

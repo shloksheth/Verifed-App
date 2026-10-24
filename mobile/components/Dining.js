@@ -889,8 +889,8 @@ export function Restaurant({ id, state, navigate }) {
       </View>
       <AllergenLegend accent={theme.accent} />
       <Text style={s.menuCaption}>
-        Only verified item photographs appear beside dishes; some dishes have
-        no photo yet. Menu banners may use general restaurant photography.
+        Menu cards include photographs and labeled illustrations; some dishes
+        have no photo yet. Menu banners show a restaurant menu example.
         Images do not establish ingredient or allergen safety.
       </Text>
       {mode === "full" ? (

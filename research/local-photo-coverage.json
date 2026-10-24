@@ -1,7 +1,7 @@
 {
   "activeItems": 1630,
-  "approvedLocalImages": 313,
-  "remaining": 1317,
+  "approvedLocalImages": 325,
+  "remaining": 1305,
   "errors": [],
   "duplicateFinalImages": [],
   "restaurants": {
@@ -32,8 +32,8 @@
     },
     "loving-hut-orlando": {
       "active": 61,
-      "approved": 37,
-      "generated": 37
+      "approved": 49,
+      "generated": 49
     },
     "the-strand-mills": {
       "active": 20,

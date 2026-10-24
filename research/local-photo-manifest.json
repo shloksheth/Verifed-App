@@ -11669,15 +11669,48 @@
           "width": 150,
           "height": 150,
           "bytes": 7064
+        },
+        {
+          "id": "generated-4d1eb6ab0bfb689c",
+          "origin": "generated",
+          "kind": "generated-illustration",
+          "path": "mobile/assets/food/loving-hut-orlando/virgin-island-vegan-fish.webp",
+          "sha256": "24216ce770db759f93d8efd4f2f443ab5cb6f2dd04cdd01af8d3d36b9d8f198f",
+          "pixelHash": "eb788879da69ab72bba65139f36dbb27b4fe5eb4b46895d7cb3379e87ae2b6c7",
+          "width": 1200,
+          "height": 1200,
+          "bytes": 236294,
+          "status": "generated-awaiting-visual-review",
+          "generation": {
+            "tool": "image_gen.imagegen built-in",
+            "prompt": "Improve this tiny official Loving Hut Orlando Virgin Island Vegan Fish photo into sharp photorealistic menu photography. Preserve a single white plate with browned bean-curd pieces wrapped in dark nori seaweed, cut into thick elongated slices, on lettuce with cucumber slices and tomato wedges, beside the plain white rice mound visible in the official Rice Dishes photo. Menu entree ingredients: bean curd wrapped in seaweed paper, cucumber, lettuce, tomato. Do not depict actual fish, fish skin/scales, real meat, sesame seeds, peanuts, breading or extra sauces. Keep the brown-and-dark-nori tofu texture and simple original serving arrangement. Rice portion follows reference; no invented weight. Soft natural daylight, realistic textures, neutral pale tabletop. Entire serving, all rice and every dish visible with clear empty margin on every side. No text, logos, hands, flowers or utensils.",
+            "createdAt": "2026-10-24T08:47:32.023379+00:00",
+            "originalSha256": "4d1eb6ab0bfb689c28464364308031720325d93bb4fb2ca69f849a7912a89647",
+            "operation": "reference-guided reconstruction",
+            "reference": {
+              "sha256": "2f0703ebb1a637d6cf152669bf807dac61b399da324371ac34f3394da4be3436",
+              "candidateId": "1678d8698db36ee0",
+              "sourceUrl": "https://lovinghut.us/orlando/"
+            }
+          },
+          "alt": "Menu illustration of Virgin Island – Vegan Fish",
+          "credit": "Verifed generated menu illustration"
         }
       ],
       "searchLog": [],
       "review": {
-        "status": "needs-replacement",
-        "selectedCandidateId": null,
-        "inspectedAt": "2026-10-24T07:33:31.048543+00:00",
+        "status": "approved",
+        "selectedCandidateId": "generated-4d1eb6ab0bfb689c",
+        "inspectedAt": "2026-10-24T08:49:35.664598+00:00",
         "reviewer": "Codex visual inspection",
-        "notes": "Visually inspected official candidate against its ingredient description. Current source is low-resolution, poorly lit, tightly framed, or needs a portion check; requires improvement before final approval."
+        "notes": "Inspected optimized WebP: browned bean-curd slices wrapped in dark nori with lettuce, cucumber, tomato and the plain rice pictured in official Rice Dishes reference. No real fish anatomy or extra sauces. All food visible, varied bean-curd texture. Count/weight not published, arrangement follows reference.",
+        "checks": {
+          "identity": "pass",
+          "ingredients": "pass",
+          "portion": "pass",
+          "framing": "pass",
+          "quality": "pass"
+        }
       }
     },
     {
@@ -11878,15 +11911,48 @@
           "width": 300,
           "height": 200,
           "bytes": 11460
+        },
+        {
+          "id": "generated-854e5504bbdf4883",
+          "origin": "generated",
+          "kind": "generated-illustration",
+          "path": "mobile/assets/food/loving-hut-orlando/tofu-spicy-cha-cha-au-hu-xao.webp",
+          "sha256": "2abec7adc3c4257301e2dca6cf4b25721eec2c0b40aafd53fb68036e8ce7d97f",
+          "pixelHash": "76cc816783787167b911a5722bd62a8e059afb51eb61d0577579358cb727e715",
+          "width": 1200,
+          "height": 800,
+          "bytes": 212768,
+          "status": "generated-awaiting-visual-review",
+          "generation": {
+            "tool": "image_gen.imagegen built-in",
+            "prompt": "Reconstruct this tiny official Loving Hut Orlando Tofu Spicy Cha Cha photo as sharp photorealistic menu photography. One white plate of golden-brown crisp tofu cubes, red and green bell pepper strips, celery, onion, broccoli and crushed red pepper, topped with cilantro, matching the reference's colored vegetables and browned tofu. Exact menu ingredients tofu, red/green bell pepper, celery, onion, broccoli, crushed red pepper, cilantro. No real meat, seafood, mushrooms, sesame, nuts, rice or new sauce cup. Natural varied tofu shapes and fine crisp texture, fresh vegetable details. Soft natural daylight, realistic textures, neutral pale tabletop. Entire serving, all rice and every dish visible with clear empty margin on every side. No text, logos, hands, flowers or utensils.",
+            "createdAt": "2026-10-24T08:47:59.008110+00:00",
+            "originalSha256": "854e5504bbdf4883d60812c319086ad14dbbefd92b8e0480504214dd1a0af243",
+            "operation": "reference-guided reconstruction",
+            "reference": {
+              "sha256": "c86a0f79e107223d4cece9920dc0c9cfc6ee24a0479b82d7a50626e6b20e12e6",
+              "candidateId": "5d1546c45e171f57",
+              "sourceUrl": "https://lovinghut.us/orlando/"
+            }
+          },
+          "alt": "Menu illustration of Tofu Spicy Cha Cha - Đậu Hũ Xào",
+          "credit": "Verifed generated menu illustration"
         }
       ],
       "searchLog": [],
       "review": {
-        "status": "needs-replacement",
-        "selectedCandidateId": null,
-        "inspectedAt": "2026-10-24T07:33:31.048543+00:00",
+        "status": "approved",
+        "selectedCandidateId": "generated-854e5504bbdf4883",
+        "inspectedAt": "2026-10-24T08:49:35.664598+00:00",
         "reviewer": "Codex visual inspection",
-        "notes": "Visually inspected official candidate against its ingredient description. Current source is low-resolution, poorly lit, tightly framed, or needs a portion check; requires improvement before final approval."
+        "notes": "Inspected optimized WebP: golden-brown tofu pieces with red/green peppers, celery, onion, broccoli, red pepper flakes and cilantro. No sesame/nuts or other proteins introduced. Complete plate and food visible with realistic crisp texture.",
+        "checks": {
+          "identity": "pass",
+          "ingredients": "pass",
+          "portion": "pass",
+          "framing": "pass",
+          "quality": "pass"
+        }
       }
     },
     {
@@ -11927,15 +11993,48 @@
           "width": 300,
           "height": 200,
           "bytes": 8534
+        },
+        {
+          "id": "generated-8d24c87b8522a784",
+          "origin": "generated",
+          "kind": "generated-illustration",
+          "path": "mobile/assets/food/loving-hut-orlando/angel-rice-cai-xao.webp",
+          "sha256": "d398334ac454c23d8ee417f50329c052c133887131d8ef967fbd11d555742921",
+          "pixelHash": "078736713a02a7847df50190065425b3b0e0055194145ad0c8007e9996ca87f1",
+          "width": 1200,
+          "height": 800,
+          "bytes": 128050,
+          "status": "generated-awaiting-visual-review",
+          "generation": {
+            "tool": "image_gen.imagegen built-in",
+            "prompt": "Reconstruct this low-resolution official Loving Hut Orlando Angel Rice (Cai Xao) photo clearly. Preserve one white plate with a stir-fry mixture of golden tofu, browned TVP, mushrooms, celery and onion with the green leafy vegetables, carrot and green beans visible in the reference, lightly coated in chef's sauce. Exact description says vegetables, tofu, TVP, mushroom, celery, onion cooked with chef's sauce. Preserve the reference's separate modest mound of plain white rice on the same plate. No real meat, egg, seafood, nuts, sesame seed garnish or additional sides. Sauce formula unspecified: no visible invented new ingredients. Natural varied vegetable and tofu textures. Soft natural daylight, realistic textures, neutral pale tabletop. Entire serving, all rice and every dish visible with clear empty margin on every side. No text, logos, hands, flowers or utensils.",
+            "createdAt": "2026-10-24T08:48:20.222151+00:00",
+            "originalSha256": "8d24c87b8522a7842ac76c627bfcb1dba763b106573a6170f409a26fa130e649",
+            "operation": "reference-guided reconstruction",
+            "reference": {
+              "sha256": "80ef086e5bc49ef6579e13dbdedc806ab822c3ab4349d720394f44d15fde2c45",
+              "candidateId": "5ddfd07bc4d9062c",
+              "sourceUrl": "https://lovinghut.us/orlando/"
+            }
+          },
+          "alt": "Menu illustration of Angel Rice - Cải Xào",
+          "credit": "Verifed generated menu illustration"
         }
       ],
       "searchLog": [],
       "review": {
-        "status": "needs-replacement",
-        "selectedCandidateId": null,
-        "inspectedAt": "2026-10-24T07:33:31.048543+00:00",
+        "status": "approved",
+        "selectedCandidateId": "generated-8d24c87b8522a784",
+        "inspectedAt": "2026-10-24T08:49:35.664598+00:00",
         "reviewer": "Codex visual inspection",
-        "notes": "Visually inspected official candidate against its ingredient description. Current source is low-resolution, poorly lit, tightly framed, or needs a portion check; requires improvement before final approval."
+        "notes": "Inspected optimized WebP: tofu, TVP, mushrooms, celery, onion, leafy greens, carrots and green beans matching the menu's vegetables and official reference, in light sauce with separate rice mound on same plate. No unlisted sesame garnish. Whole food visible; chef's sauce formula and serving weight remain unspecified.",
+        "checks": {
+          "identity": "pass",
+          "ingredients": "pass",
+          "portion": "pass",
+          "framing": "pass",
+          "quality": "pass"
+        }
       }
     },
     {
@@ -11976,15 +12075,48 @@
           "width": 167,
           "height": 120,
           "bytes": 5232
+        },
+        {
+          "id": "generated-58aa28c0f1df3e15",
+          "origin": "generated",
+          "kind": "generated-illustration",
+          "path": "mobile/assets/food/loving-hut-orlando/yam-spicy-cha-cha.webp",
+          "sha256": "dabe25a2ca0d01c435bf1c7eb88f6a1be7eb251e6211d1e2a313559e930e81c1",
+          "pixelHash": "a02f745e920ef4d3fd80750b2011d7fe495d461035fa3ec8e87baef85ec76578",
+          "width": 1200,
+          "height": 800,
+          "bytes": 105862,
+          "status": "generated-awaiting-visual-review",
+          "generation": {
+            "tool": "image_gen.imagegen built-in",
+            "prompt": "Reconstruct this tiny official Loving Hut Orlando Yam Spicy Cha Cha photo clearly. Preserve one white plate with golden C-shaped vegan shrimp-style yam-protein pieces, stir-fried onion, celery, red and green bell pepper, garlic, cilantro and crushed red pepper. Modest plain white rice mound behind them as pictured in official Rice Dishes photo. These are vegan yam-protein pieces, not actual shrimp: no shells or tails. No sesame seed garnish, peanuts, tofu, meat, egg, orange fruit, broccoli or additional sauces. Preserve the reference's golden curved pieces over colorful pepper strips and rice; natural irregular textures. Soft diffused daylight, neutral pale tabletop, realistic natural food textures. Entire serving, all rice, vegetables and plate fully inside image with a wide clear margin. No text, logo, flowers, hands, utensils or extra dishes.",
+            "createdAt": "2026-10-24T08:57:21.270420+00:00",
+            "originalSha256": "58aa28c0f1df3e157274e7d7bc41d3a53fcd05e59157a043b542e63243ec18d5",
+            "operation": "reference-guided reconstruction",
+            "reference": {
+              "sha256": "e5c0c710247668e5f9c363d49cd34581934bc158a43aeb7310040bc7e9a32e8a",
+              "candidateId": "dda703ccf7d8f374",
+              "sourceUrl": "https://lovinghut.us/orlando/"
+            }
+          },
+          "alt": "Menu illustration of Yam Spicy Cha Cha",
+          "credit": "Verifed generated menu illustration"
         }
       ],
       "searchLog": [],
       "review": {
-        "status": "needs-replacement",
-        "selectedCandidateId": null,
-        "inspectedAt": "2026-10-24T07:33:31.048543+00:00",
+        "status": "approved",
+        "selectedCandidateId": "generated-58aa28c0f1df3e15",
+        "inspectedAt": "2026-10-24T09:00:34.973628+00:00",
         "reviewer": "Codex visual inspection",
-        "notes": "Visually inspected official candidate against its ingredient description. Current source is low-resolution, poorly lit, tightly framed, or needs a portion check; requires improvement before final approval."
+        "notes": "Inspected optimized WebP: golden curved yam-protein pieces with onion, celery, red/green peppers, garlic, cilantro and crushed red pepper, plus official reference's rice mound. No real shell/tail anatomy, sesame or nuts. Full-food framing and natural crisp textures pass; count/weight not published.",
+        "checks": {
+          "identity": "pass",
+          "ingredients": "pass",
+          "portion": "pass",
+          "framing": "pass",
+          "quality": "pass"
+        }
       }
     },
     {
@@ -12025,15 +12157,48 @@
           "width": 300,
           "height": 200,
           "bytes": 11228
+        },
+        {
+          "id": "generated-528c02415343ce61",
+          "origin": "generated",
+          "kind": "generated-illustration",
+          "path": "mobile/assets/food/loving-hut-orlando/golden-fried-rice-com-chien.webp",
+          "sha256": "8cd0ef0630f6f59b717f729af84e72945e7c0923adac1e204b57eadd1a95f625",
+          "pixelHash": "80f220d5d525a4f6f4de0ac1ec25b37ee4932e7d946f76441363ec00784978f5",
+          "width": 1200,
+          "height": 800,
+          "bytes": 143176,
+          "status": "generated-awaiting-visual-review",
+          "generation": {
+            "tool": "image_gen.imagegen built-in",
+            "prompt": "Reconstruct this tiny official Loving Hut Orlando Golden Fried Rice photograph sharply. One generous irregular mound of YELLOW fried rice with small golden tofu cubes, diced carrot, green sweet peas, onion, cilantro and garlic. Exact menu ingredients: yellow rice, tofu, carrot, sweet peas, onion, cilantro, garlic. This is vegan: NO egg or yellow egg curds, no meat, seafood, corn, nuts, sesame, peppers, broccoli or green beans. Preserve the reference's golden rice and small orange-green accents, while clearly showing natural tofu cubes distinct from egg. One white plate on a pale neutral tabletop, soft daylight and realistic separated rice grains and vegetable textures. Entire serving and plate fit comfortably within the image with generous clear margins. No text, logo, utensils, hands, flowers or side dishes.",
+            "createdAt": "2026-10-24T08:50:13.511726+00:00",
+            "originalSha256": "528c02415343ce6113342714ca52cad8beec63942fc996d19ee8db348f7babbc",
+            "operation": "reference-guided reconstruction",
+            "reference": {
+              "sha256": "123607cc3589b83a4665d0cc620c27673add630564b98695b3384db709986aec",
+              "candidateId": "3ac45ad58e3aff7b",
+              "sourceUrl": "https://lovinghut.us/orlando/"
+            }
+          },
+          "alt": "Menu illustration of Golden Fried Rice - Cơm Chiên",
+          "credit": "Verifed generated menu illustration"
         }
       ],
       "searchLog": [],
       "review": {
-        "status": "needs-replacement",
-        "selectedCandidateId": null,
-        "inspectedAt": "2026-10-24T07:33:31.048543+00:00",
+        "status": "approved",
+        "selectedCandidateId": "generated-528c02415343ce61",
+        "inspectedAt": "2026-10-24T08:53:39.433500+00:00",
         "reviewer": "Codex visual inspection",
-        "notes": "Visually inspected official candidate against its ingredient description. Current source is low-resolution, poorly lit, tightly framed, or needs a portion check; requires improvement before final approval."
+        "notes": "Inspected optimized WebP: golden yellow rice with distinguishable tofu cubes, carrot, peas, onion, cilantro and garlic; no meat, seafood or obvious egg pieces. Whole mound visible with realistic grains. Recipe/portion follows official photo and published description, no weight claim.",
+        "checks": {
+          "identity": "pass",
+          "ingredients": "pass",
+          "portion": "pass",
+          "framing": "pass",
+          "quality": "pass"
+        }
       }
     },
     {
@@ -12073,15 +12238,48 @@
           "width": 300,
           "height": 200,
           "bytes": 9402
+        },
+        {
+          "id": "generated-7a6a3a6c2ab85789",
+          "origin": "generated",
+          "kind": "generated-illustration",
+          "path": "mobile/assets/food/loving-hut-orlando/garlic-sensation.webp",
+          "sha256": "3f4f257570aa0d4407ab08483c6ff289ce92c84a34ce9cf170dd6f64b4d614d4",
+          "pixelHash": "872417b52d572111beaad690c740dcb10d7dcf0a8101923f124d192ec39577aa",
+          "width": 1200,
+          "height": 800,
+          "bytes": 128952,
+          "status": "generated-awaiting-visual-review",
+          "generation": {
+            "tool": "image_gen.imagegen built-in",
+            "prompt": "Improve this tiny official Loving Hut Orlando Garlic Sensation photo sharply. Preserve three sections on one white plate: browned irregular soy-protein pieces sautéed with garlic and onion; simple shredded cabbage, carrot and onion salad; and plain white rice mound as shown in official Rice Dishes reference. Choose the named garlic soy-protein preparation, not optional ginger. No sesame seeds, peanuts, lettuce, cucumber, cilantro, real meat, egg or extra dressing cup. Natural wok browning and irregular soy texture, lightly glossy food, realistic shredded salad. No unlisted spice garnish. Soft natural daylight, realistic varied textures. One white plate on neutral pale tabletop with every piece of food, all rice and all vegetables fully visible and generous clear margin on every side. No text, logos, hands, flowers, utensils or additional dishes.",
+            "createdAt": "2026-10-24T08:54:18.996166+00:00",
+            "originalSha256": "7a6a3a6c2ab857892944cdce9b341fc5a607c2d5e3dd4348fd64cbc6b67ac3c9",
+            "operation": "reference-guided reconstruction",
+            "reference": {
+              "sha256": "35016d9e26728680a4bc89630157f5204f0928bdf6f8e78d16a78f70701d7b13",
+              "candidateId": "3136b67807ddb6f5",
+              "sourceUrl": "https://lovinghut.us/orlando/"
+            }
+          },
+          "alt": "Menu illustration of Garlic Sensation",
+          "credit": "Verifed generated menu illustration"
         }
       ],
       "searchLog": [],
       "review": {
-        "status": "needs-replacement",
-        "selectedCandidateId": null,
-        "inspectedAt": "2026-10-24T07:33:31.048543+00:00",
+        "status": "approved",
+        "selectedCandidateId": "generated-7a6a3a6c2ab85789",
+        "inspectedAt": "2026-10-24T08:56:47.079722+00:00",
         "reviewer": "Codex visual inspection",
-        "notes": "Visually inspected official candidate against its ingredient description. Current source is low-resolution, poorly lit, tightly framed, or needs a portion check; requires improvement before final approval."
+        "notes": "Inspected optimized WebP: garlic/onion soy protein, cabbage-carrot-onion salad and the official reference's plain rice mound. Base garlic preparation depicted, optional ginger variation excluded. No seeds/nut garnish. Full food visible and realistic varied soy/salad texture.",
+        "checks": {
+          "identity": "pass",
+          "ingredients": "pass",
+          "portion": "pass",
+          "framing": "pass",
+          "quality": "pass"
+        }
       }
     },
     {
@@ -12123,15 +12321,48 @@
           "width": 300,
           "height": 200,
           "bytes": 12282
+        },
+        {
+          "id": "generated-833b34b800e6f815",
+          "origin": "generated",
+          "kind": "generated-illustration",
+          "path": "mobile/assets/food/loving-hut-orlando/healthy-rice.webp",
+          "sha256": "3e211d47ba40d5723d799f37ed791ebc7b0046d0cf6a02bbf4ea3ef6d7f800b9",
+          "pixelHash": "85f88a24dc03c38d082a140a157d1970fb9587130e6f73b68bab7d80bb844ae9",
+          "width": 1200,
+          "height": 800,
+          "bytes": 144518,
+          "status": "generated-awaiting-visual-review",
+          "generation": {
+            "tool": "image_gen.imagegen built-in",
+            "prompt": "Reconstruct this tiny official Loving Hut Orlando Healthy Rice photograph clearly. One generous irregular mound of BROWN rice (brown per current menu, not bright yellow), stir-fried with mushroom slices, golden tofu cubes, browned TVP crumbles, sweet peas, diced carrot, small broccoli florets and onion. Exact ingredients brown rice, mushroom, tofu, TVP, sweet peas, carrot, broccoli, onion. Vegan dish: NO egg, real meat, seafood, sesame, peanuts, corn, cilantro garnish or extra sauces. Preserve the reference's rice-with-small-vegetables presentation and natural mixed colors, but make the brown rice grains recognizable. One white plate on a pale neutral tabletop, soft daylight and realistic separated rice grains and vegetable textures. Entire serving and plate fit comfortably within the image with generous clear margins. No text, logo, utensils, hands, flowers or side dishes.",
+            "createdAt": "2026-10-24T08:50:38.921290+00:00",
+            "originalSha256": "833b34b800e6f815e912b91a105f5589f6709b5f59ba0f773fa3a62a951b25d2",
+            "operation": "reference-guided reconstruction",
+            "reference": {
+              "sha256": "4bed901c7cb419de78072b8b4c499c688beb9b41cbec65c0ec20fbdb150b1a82",
+              "candidateId": "7aac90202ad4bde4",
+              "sourceUrl": "https://lovinghut.us/orlando/"
+            }
+          },
+          "alt": "Menu illustration of Healthy Rice",
+          "credit": "Verifed generated menu illustration"
         }
       ],
       "searchLog": [],
       "review": {
-        "status": "needs-replacement",
-        "selectedCandidateId": null,
-        "inspectedAt": "2026-10-24T07:33:31.048543+00:00",
+        "status": "approved",
+        "selectedCandidateId": "generated-833b34b800e6f815",
+        "inspectedAt": "2026-10-24T08:53:39.433500+00:00",
         "reviewer": "Codex visual inspection",
-        "notes": "Visually inspected official candidate against its ingredient description. Current source is low-resolution, poorly lit, tightly framed, or needs a portion check; requires improvement before final approval."
+        "notes": "Inspected optimized WebP: brown rice with mushroom slices, tofu, TVP crumbles, peas, carrot, broccoli and onion. No cilantro/nut garnish or egg added. Complete serving framed, natural varied grains and vegetable textures. Brown rice follows current menu rather than ambiguous yellow cast in the source.",
+        "checks": {
+          "identity": "pass",
+          "ingredients": "pass",
+          "portion": "pass",
+          "framing": "pass",
+          "quality": "pass"
+        }
       }
     },
     {
@@ -12168,15 +12399,48 @@
           "width": 300,
           "height": 200,
           "bytes": 15314
+        },
+        {
+          "id": "generated-a24530966782242e",
+          "origin": "generated",
+          "kind": "generated-illustration",
+          "path": "mobile/assets/food/loving-hut-orlando/land-teriyaki.webp",
+          "sha256": "eae3ad6a03985c7a328b6e400393df21ef5776d96fb25569d68bbcb17d375cb8",
+          "pixelHash": "f43dcbc499394c6f08385b0b74b989e004a962f3bfd75debd2efe7c226691aa3",
+          "width": 1200,
+          "height": 800,
+          "bytes": 149520,
+          "status": "generated-awaiting-visual-review",
+          "generation": {
+            "tool": "image_gen.imagegen built-in",
+            "prompt": "Reconstruct this tiny official Loving Hut Orlando Land Teriyaki photo as sharp realistic menu photography. Preserve browned elongated soy-protein pieces arranged together in glossy dark teriyaki sauce with a modest white sesame seed topping. Beside them on the same plate, plain white rice and steamed broccoli, cauliflower, carrot and green beans matching the reference. Current menu: soy protein in teriyaki sauce topped with sesame seed, steamed vegetables. Rice included visually from official Rice Dishes photo; no weight invented. No actual chicken/meat, onion, mushrooms, nuts or new garnish. Sauce should be naturally glossy, not plastic. Soft natural daylight, realistic varied textures. One white plate on neutral pale tabletop with every piece of food, all rice and all vegetables fully visible and generous clear margin on every side. No text, logos, hands, flowers, utensils or additional dishes.",
+            "createdAt": "2026-10-24T08:54:38.788743+00:00",
+            "originalSha256": "a24530966782242e89a46f12822f3486e10a52e03ff90658eee21d7a8f457ea4",
+            "operation": "reference-guided reconstruction",
+            "reference": {
+              "sha256": "928dfcc1df844b08b4c8cb65518fa3954507be8382ae68c618707c90526631d8",
+              "candidateId": "feee1e6090affe97",
+              "sourceUrl": "https://lovinghut.us/orlando/"
+            }
+          },
+          "alt": "Menu illustration of Land Teriyaki",
+          "credit": "Verifed generated menu illustration"
         }
       ],
       "searchLog": [],
       "review": {
-        "status": "needs-replacement",
-        "selectedCandidateId": null,
-        "inspectedAt": "2026-10-24T07:33:31.048543+00:00",
+        "status": "approved",
+        "selectedCandidateId": "generated-a24530966782242e",
+        "inspectedAt": "2026-10-24T08:56:47.079722+00:00",
         "reviewer": "Codex visual inspection",
-        "notes": "Visually inspected official candidate against its ingredient description. Current source is low-resolution, poorly lit, tightly framed, or needs a portion check; requires improvement before final approval."
+        "notes": "Inspected optimized WebP: elongated soy-protein pieces in dark teriyaki sauce with sesame seeds, steamed broccoli/cauliflower/carrot/green beans and plain rice as in official reference. No extra proteins/garnishes. All food visible and realistic sauce/vegetable texture; rice weight unspecified.",
+        "checks": {
+          "identity": "pass",
+          "ingredients": "pass",
+          "portion": "pass",
+          "framing": "pass",
+          "quality": "pass"
+        }
       }
     },
     {
@@ -12220,15 +12484,48 @@
           "width": 350,
           "height": 350,
           "bytes": 26866
+        },
+        {
+          "id": "generated-112c21767b943891",
+          "origin": "generated",
+          "kind": "generated-illustration",
+          "path": "mobile/assets/food/loving-hut-orlando/loving-fried-rice-com-chien-ac-biet.webp",
+          "sha256": "8e315301821eaaa68d691ee1e10b11b9f40e551b18eee48bf818d6a0582005bb",
+          "pixelHash": "8280c80ad0b603d23627a9ae2263ec8538e07395aa2aaf0a5ba6f7b944d271d3",
+          "width": 1200,
+          "height": 1200,
+          "bytes": 284026,
+          "status": "generated-awaiting-visual-review",
+          "generation": {
+            "tool": "image_gen.imagegen built-in",
+            "prompt": "Improve this low-resolution official Loving Hut Orlando Loving Fried Rice photograph sharply. One plate of yellow rice with golden tofu cubes, substantial browned TVP pieces, bean sprouts, mushroom slices, onion, carrot cubes, sweet peas, cilantro and chopped green onion. These are the exact current menu ingredients. Keep the photographed abundance of sprouts and soy-protein/tofu pieces; rice is golden yellow with a little natural wok browning, not white rice or noodles. NO eggs, real meat, seafood, corn, sesame, nuts, broccoli or unlisted garnish. Realistic uneven mound rather than a perfect cylinder. One white plate on a pale neutral tabletop, soft daylight and realistic separated rice grains and vegetable textures. Entire serving and plate fit comfortably within the image with generous clear margins. No text, logo, utensils, hands, flowers or side dishes.",
+            "createdAt": "2026-10-24T08:51:11.418512+00:00",
+            "originalSha256": "112c21767b943891078c7aba59fedff0cdbce6f58b36d07d2bfab487a518ac49",
+            "operation": "reference-guided reconstruction",
+            "reference": {
+              "sha256": "e6d6204b9bbbc4d121ff0ca5a607a2633a25ec956df5232426085e4a659ff2b3",
+              "candidateId": "45502ef65dc5fb17",
+              "sourceUrl": "https://lovinghut.us/orlando/"
+            }
+          },
+          "alt": "Menu illustration of Loving Fried Rice - Cơm Chiên Đặc Biệt",
+          "credit": "Verifed generated menu illustration"
         }
       ],
       "searchLog": [],
       "review": {
-        "status": "needs-replacement",
-        "selectedCandidateId": null,
-        "inspectedAt": "2026-10-24T07:33:31.048543+00:00",
+        "status": "approved",
+        "selectedCandidateId": "generated-112c21767b943891",
+        "inspectedAt": "2026-10-24T08:53:39.433500+00:00",
         "reviewer": "Codex visual inspection",
-        "notes": "Visually inspected official candidate against its ingredient description. Current source is low-resolution, poorly lit, tightly framed, or needs a portion check; requires improvement before final approval."
+        "notes": "Inspected optimized WebP: yellow fried rice with substantial browned TVP, tofu, bean sprouts, mushroom, onion, carrot, peas, cilantro and green onion. No meat, shellfish or egg shapes introduced. Entire food surface visible and detailed; weight unpublished.",
+        "checks": {
+          "identity": "pass",
+          "ingredients": "pass",
+          "portion": "pass",
+          "framing": "pass",
+          "quality": "pass"
+        }
       }
     },
     {
@@ -12264,15 +12561,48 @@
           "width": 350,
           "height": 350,
           "bytes": 18602
+        },
+        {
+          "id": "generated-3a4afa4624506dc6",
+          "origin": "generated",
+          "kind": "generated-illustration",
+          "path": "mobile/assets/food/loving-hut-orlando/orange-yogi.webp",
+          "sha256": "d1c7119171039edef9a2d65f16e0fdc4bac8230e2d5e742382f2d3c28461fb5e",
+          "pixelHash": "950a3a697d57fc33bbcf7d3df1c6d0e65de33b961e2221c47624ed67379c990c",
+          "width": 1200,
+          "height": 1200,
+          "bytes": 184904,
+          "status": "generated-awaiting-visual-review",
+          "generation": {
+            "tool": "image_gen.imagegen built-in",
+            "prompt": "Improve this low-resolution official Loving Hut Orlando Orange Yogi photo into sharp photorealistic menu photography. One white plate with irregular golden tempura soy-protein bites in glossy light orange sauce, a plain white rice mound and a fan of thin cucumber slices following the official Rice Dishes reference. Current menu ingredients: tempura soy protein in orange sauce, cucumber. Exclude the green-onion garnish in the low-quality reference because it is not listed. No actual chicken/meat, sesame seeds, peanuts, broccoli, carrots, orange slices or other fruit/vegetables. Natural crisp edges and thin orange-sauce coating, not heavy syrup or candy. Soft natural daylight, realistic varied textures. One white plate on neutral pale tabletop with every piece of food, all rice and all vegetables fully visible and generous clear margin on every side. No text, logos, hands, flowers, utensils or additional dishes.",
+            "createdAt": "2026-10-24T08:55:15.506646+00:00",
+            "originalSha256": "3a4afa4624506dc6c913a602fcac9b4be5c84ab0d9d25b74dbad965fc6d470d0",
+            "operation": "reference-guided reconstruction",
+            "reference": {
+              "sha256": "9bf7331c585195b86db98b0e98c5a9d10a5de411b0dc9db04860b5b62f42b3d0",
+              "candidateId": "19b2d848360a35e8",
+              "sourceUrl": "https://lovinghut.us/orlando/"
+            }
+          },
+          "alt": "Menu illustration of Orange Yogi",
+          "credit": "Verifed generated menu illustration"
         }
       ],
       "searchLog": [],
       "review": {
-        "status": "needs-replacement",
-        "selectedCandidateId": null,
-        "inspectedAt": "2026-10-24T07:33:31.048543+00:00",
+        "status": "approved",
+        "selectedCandidateId": "generated-3a4afa4624506dc6",
+        "inspectedAt": "2026-10-24T08:56:47.079722+00:00",
         "reviewer": "Codex visual inspection",
-        "notes": "Visually inspected official candidate against its ingredient description. Current source is low-resolution, poorly lit, tightly framed, or needs a portion check; requires improvement before final approval."
+        "notes": "Inspected optimized WebP: irregular golden tempura soy bites coated in orange sauce, fan of cucumber and pictured rice mound. Removed green-onion garnish from reference because not listed; no sesame, citrus slices, broccoli or meat. Entire food visible with detailed texture.",
+        "checks": {
+          "identity": "pass",
+          "ingredients": "pass",
+          "portion": "pass",
+          "framing": "pass",
+          "quality": "pass"
+        }
       }
     },
     {
@@ -12312,15 +12642,48 @@
           "width": 300,
           "height": 200,
           "bytes": 9212
+        },
+        {
+          "id": "generated-9d92e8788d38a419",
+          "origin": "generated",
+          "kind": "generated-illustration",
+          "path": "mobile/assets/food/loving-hut-orlando/noble-rice-ga-ca-ri.webp",
+          "sha256": "1f2652b373fb52c9bff4437889c3a52d676c978649df60caebc3aed70b67f45d",
+          "pixelHash": "678e677c0f98b8b4d185610b6933c9985122d2c0d03f6ede48727fa893adc844",
+          "width": 1200,
+          "height": 800,
+          "bytes": 109974,
+          "status": "generated-awaiting-visual-review",
+          "generation": {
+            "tool": "image_gen.imagegen built-in",
+            "prompt": "Reconstruct this tiny official Loving Hut Orlando Noble Rice (Ga Ca Ri) photo sharply. Preserve one white plate with irregular golden soy-protein pieces cooked with curry, lemongrass, garlic and onion. Beside them, a modest plain white rice mound and steamed vegetable strips/florets: green beans, carrots and a little broccoli/cauliflower consistent with the menu's steamed vegetable accompaniment. No real chicken, sesame seeds, nuts, cilantro garnish, egg, peas, potatoes or extra sauce cup. Warm yellow curry coating should be thin with realistic browned soy texture, not a soupy bowl. Exact recipe soy protein, curry, lemongrass, garlic, onion, steamed vegetable, with rice pictured in official reference. Soft diffused daylight, neutral pale tabletop, realistic natural food textures. Entire serving, all rice, vegetables and plate fully inside image with a wide clear margin. No text, logo, flowers, hands, utensils or extra dishes.",
+            "createdAt": "2026-10-24T08:57:52.923039+00:00",
+            "originalSha256": "9d92e8788d38a419488212bdf91a98652fd96694c8c760d51741b4255357610f",
+            "operation": "reference-guided reconstruction",
+            "reference": {
+              "sha256": "ce342174d673ad9c3917ebae3838d6452c26979c2fd43b49e0b643e3a005b9c6",
+              "candidateId": "a527252fda65bcff",
+              "sourceUrl": "https://lovinghut.us/orlando/"
+            }
+          },
+          "alt": "Menu illustration of Noble Rice - Gà Cà Ri",
+          "credit": "Verifed generated menu illustration"
         }
       ],
       "searchLog": [],
       "review": {
-        "status": "needs-replacement",
-        "selectedCandidateId": null,
-        "inspectedAt": "2026-10-24T07:33:31.048543+00:00",
+        "status": "approved",
+        "selectedCandidateId": "generated-9d92e8788d38a419",
+        "inspectedAt": "2026-10-24T09:00:34.973628+00:00",
         "reviewer": "Codex visual inspection",
-        "notes": "Visually inspected official candidate against its ingredient description. Current source is low-resolution, poorly lit, tightly framed, or needs a portion check; requires improvement before final approval."
+        "notes": "Inspected optimized WebP: golden curry soy-protein pieces with lemongrass, garlic and onion, steamed green beans/carrot/broccoli/cauliflower and the pictured plain rice mound. No real chicken, sesame garnish, nuts or extra sides. All food visible with realistic textures.",
+        "checks": {
+          "identity": "pass",
+          "ingredients": "pass",
+          "portion": "pass",
+          "framing": "pass",
+          "quality": "pass"
+        }
       }
     },
     {
@@ -12356,15 +12719,48 @@
           "width": 300,
           "height": 200,
           "bytes": 9056
+        },
+        {
+          "id": "generated-74353bbac11eddbf",
+          "origin": "generated",
+          "kind": "generated-illustration",
+          "path": "mobile/assets/food/loving-hut-orlando/sesame-drumsticks-ui-ga-kho.webp",
+          "sha256": "f5b809547e7dc392caca45ac732390f4315edfcf14391ba216a3e0861d13267b",
+          "pixelHash": "8cb1a1791ed4091ab0796f45fb2fcaa1629efe284118698a03428e7f8967e221",
+          "width": 1200,
+          "height": 800,
+          "bytes": 121546,
+          "status": "generated-awaiting-visual-review",
+          "generation": {
+            "tool": "image_gen.imagegen built-in",
+            "prompt": "Reconstruct this tiny official Loving Hut Orlando Sesame Drumsticks photo clearly. One white plate with FOUR compact browned vegan soy-protein drumstick-shaped pieces glazed in dark teriyaki sauce, matching the reference's rounded pieces with short narrow ends. No real chicken skin, real bones, feathers or exposed meat fibers. Preserve the plain white rice mound and steamed broccoli, carrot and cauliflower shown on the same plate. Exact menu says vegan drumsticks cooked with teriyaki sauce, steamed vegetables. Keep the reference's plain sauce surface without adding visible seeds, nuts, herbs, green onion, sesame garnish or other ingredients. The name is Sesame Drumsticks, but no visible seed garnish is established in the reference. Natural irregular plant-protein texture. Soft diffused daylight, neutral pale tabletop, realistic natural food textures. Entire serving, all rice, vegetables and plate fully inside image with a wide clear margin. No text, logo, flowers, hands, utensils or extra dishes.",
+            "createdAt": "2026-10-24T08:58:15.643262+00:00",
+            "originalSha256": "74353bbac11eddbff3a6bd46bcf037a95ecd4d411ba4b9de0b0738bcb47f4ed8",
+            "operation": "reference-guided reconstruction",
+            "reference": {
+              "sha256": "42ac1f79e73b918a24b4eb878fb1cd2de306361a9a9bce56f7dc247aa6456317",
+              "candidateId": "fe53727715481bab",
+              "sourceUrl": "https://lovinghut.us/orlando/"
+            }
+          },
+          "alt": "Menu illustration of Sesame Drumsticks - Đùi Gà Kho",
+          "credit": "Verifed generated menu illustration"
         }
       ],
       "searchLog": [],
       "review": {
-        "status": "needs-replacement",
-        "selectedCandidateId": null,
-        "inspectedAt": "2026-10-24T07:33:31.048543+00:00",
+        "status": "approved",
+        "selectedCandidateId": "generated-74353bbac11eddbf",
+        "inspectedAt": "2026-10-24T09:00:34.973628+00:00",
         "reviewer": "Codex visual inspection",
-        "notes": "Visually inspected official candidate against its ingredient description. Current source is low-resolution, poorly lit, tightly framed, or needs a portion check; requires improvement before final approval."
+        "notes": "Inspected optimized WebP: four compact plant-protein drumstick forms in teriyaki glaze, rice and steamed broccoli/carrot/cauliflower matching the official reference. No exposed real bones, meat fibers or invented seed garnish. Four visible forms follow reference photo, not a published count; full-food framing passes.",
+        "checks": {
+          "identity": "pass",
+          "ingredients": "pass",
+          "portion": "pass",
+          "framing": "pass",
+          "quality": "pass"
+        }
       }
     },
     {
