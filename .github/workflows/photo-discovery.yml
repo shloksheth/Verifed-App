@@ -1,0 +1,20 @@
+name: Find image URLs in official restaurant menus
+on:
+  pull_request:
+    paths:
+      - 'research/image-source-discovery.mjs'
+      - '.github/workflows/photo-discovery.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 9
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Inspect restaurant source pages for item imagery
+        run: node research/image-source-discovery.mjs
