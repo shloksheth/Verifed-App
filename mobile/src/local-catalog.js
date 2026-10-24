@@ -44,6 +44,11 @@ export const localDishes = activeMenus.flatMap((menu) =>
     imageUrl: item.imageUrl || verifiedDishPhotos[menu.key]?.[item.key]?.url || null,
     imageAlt: item.imageAlt || verifiedDishPhotos[menu.key]?.[item.key]?.alt || null,
     imageCredit: item.imageCredit || verifiedDishPhotos[menu.key]?.[item.key]?.credit || null,
+    imageSourceUrl: item.imageSourceUrl ||
+      verifiedDishPhotos[menu.key]?.[item.key]?.sourceUrl ||
+      item.menuUrl || menu.menuUrl || null,
+    imageKind: item.imageKind || verifiedDishPhotos[menu.key]?.[item.key]?.kind || "published",
+    imageGenerated: Boolean(item.imageGenerated || verifiedDishPhotos[menu.key]?.[item.key]?.generated),
     revision: 1,
     ingredients: item.ingredients || [],
     allergens: item.allergens || [],
@@ -119,6 +124,9 @@ export function mergeLocalCatalog(
         imageUrl: local.imageUrl || null,
         imageAlt: local.imageAlt || null,
         imageCredit: local.imageCredit || null,
+        imageSourceUrl: local.imageSourceUrl || null,
+        imageKind: local.imageKind || "published",
+        imageGenerated: Boolean(local.imageGenerated),
         cloudBacked: true,
       };
     // Device-saved demo facts are a cache, not a source. Refresh them from this
