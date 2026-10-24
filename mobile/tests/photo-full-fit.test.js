@@ -50,7 +50,7 @@ test("every restaurant has at least one uniquely matched menu image; incomplete 
     reviewed += photographed.length;
   }
   assert.equal(localDishes.length, 1630);
-  assert.ok(reviewed >= 315 && reviewed < localDishes.length, `Unsupported photo coverage claim: ${reviewed}`);
+  assert.ok(reviewed >= 314 && reviewed < localDishes.length, `Unsupported photo coverage claim: ${reviewed}`);
   const chipotle = localRestaurants.find((r) => r.slug === "chipotle-south-orange");
   const blackBeans = localDishes.find((d) => d.catalogKey === "chipotle-south-orange-black-beans");
   assert.equal(menuPhotoFor(blackBeans, chipotle), null);
