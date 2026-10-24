@@ -4045,6 +4045,26 @@ export const verifiedDishPhotos = {
     }
   },
   "pig-floyds-mills": {
+    "spicy-sausage-rigatoni": {
+      "url": "https://www.theorlandoreal.com/uploads/agent-1/Life%20In%20Orlando/Piggza/IMG_8716.jpg",
+      "alt": "Spicy sausage rigatoni at Pigzza with vodka tomato cream sauce, parmesan and basil in a shallow white bowl; editorial photograph",
+      "credit": "The Orlando Real · Pigzza Mills/50 editorial coverage",
+      "sourceUrl": "https://www.theorlandoreal.com/piggza-serves-up-modern-italianish-dishes-in-mills-50/",
+      "kind": "editorial-context",
+      "matchMethod": "Named Pigzza pasta food photo matched to item and restaurant in independent dining coverage; review recipe details and rights before reuse",
+      "needsPermissionReview": true,
+      "reviewedAt": "2026-10-24"
+    },
+    "pepperoni": {
+      "url": "https://media.timeout.com/images/106362611/image.jpg",
+      "alt": "Pepperoni pizza photographed at Pigzza in January 2026 with sourdough crust, pepperoni and herbs; editorial image, reproduction permissions pending",
+      "credit": "Time Out · Megan duBois (Jan 2026)",
+      "sourceUrl": "https://www.timeout.com/orlando/restaurants/pigzza",
+      "kind": "editorial-context",
+      "matchMethod": "Direct Pigzza review image explicitly titled pepperoni pizza; restaurant match, exact recipe/plating verification and publication permission pending",
+      "needsPermissionReview": true,
+      "reviewedAt": "2026-10-24"
+    },
     "the-big-floyd": {
       "url": "https://scottjosephorlando.com/wp-content/uploads/Pig_Floyd_sandwich.jpg",
       "alt": "The Big Floyd brisket, pulled pork and sausage sandwich, photographed at Pig Floyd's in Orlando in 2014; plating and location may have changed",
