@@ -1,4 +1,6 @@
-// Individually sourced photographs keyed by reviewed menu item; image content is not dietary evidence.
+// Source-matched menu photographs. Some editorial photos depict historic presentations or only part of a combo.
+// Photos are independent of dietary, allergen, and ingredient assessments.
+// Ensure image-use rights before commercial distribution.
 export const verifiedDishPhotos = {
   "loving-hut-orlando": {
     "spring-rolls-4-rolls-cha-gio": {
@@ -844,6 +846,12 @@ export const verifiedDishPhotos = {
       "alt": "Tuna Tostada served at Reyes Mezcaleria, pictured with a cocktail in Orlando Magazine",
       "credit": "Orlando Magazine · Reyes Mezcaleria food photograph",
       "sourceUrl": "https://www.orlandomagazine.com/reyes-mezcaleria-third-time-another-charm/"
+    },
+    "guacamole": {
+      "url": "https://theemptynesterstravels.com/wp-content/uploads/2023/01/37946A8C-A534-4578-9A31-3BA4F6ED4939-1024x772.webp",
+      "alt": "Reyes Mezcaleria guacamole with pickled red onions and tortilla chips; menu presentation can change",
+      "credit": "The Empty Nesters Travels · Reyes Mezcaleria food photograph",
+      "sourceUrl": "https://www.theemptynesterstravels.com/eat-at-reyes-mezcaleria/"
     }
   },
   "the-monroe": {
@@ -908,6 +916,12 @@ export const verifiedDishPhotos = {
       "alt": "The OG vegan chicken on an oat buttermilk biscuit, photographed at Winter Park Biscuit Company; older presentation",
       "credit": "Orlando Magazine · Winter Park Biscuit Company OG biscuit",
       "sourceUrl": "https://www.orlandomagazine.com/orlandos-best-breakfasts-and-brunch-too-breakfast-part-2/"
+    },
+    "wpbc-box": {
+      "url": "https://pub-ba1a74be17d7442a9f2541946eb9510e.r2.dev/shops/23e2d6ab-23e6-4093-a551-170af7e22b77/2.jpg",
+      "alt": "Winter Park Biscuit Company box showing Chik Strips, a biscuit and sauce; the side of fries is not visible",
+      "credit": "Joe Coffee · Winter Park Biscuit Company food photograph",
+      "sourceUrl": "https://joe.coffee/locations/fl/orlando/winter-park-biscuit-company-orlando/"
     }
   },
   "bombay-street-kitchen": {
@@ -932,6 +946,22 @@ export const verifiedDishPhotos = {
       "alt": "Spaghetti alle Vongole with clams photographed at Osteria Ester",
       "credit": "MICHELIN Guide · Osteria Ester food photograph",
       "sourceUrl": "https://guide.michelin.com/us/en/florida/orlando/restaurant/osteria-ester"
+    }
+  },
+  "seito-baldwin-park": {
+    "hand-made-dumplings": {
+      "url": "https://visitorlando.widen.net/content/cokivjjtrl/jpeg/186360-SeitoSushiBaldwinPark-2025-2.jpg?color=ffffffff&crop=true&h=640&position=c&q=65&u=4159p7&w=640",
+      "alt": "Two versions of Seito Sushi Baldwin Park hand-made dumplings, pan-fried and served in chili sauce",
+      "credit": "Visit Orlando · Seito Sushi Baldwin Park menu photo",
+      "sourceUrl": "https://www.magicaldining.com/listing/seito-sushi-baldwin-park/47630/"
+    }
+  },
+  "sparrow-orlando": {
+    "say-cheese": {
+      "url": "https://media2.orlandoweekly.com/orlando/imager/new-eurocentric-wine-bar-sparrow-now-in-soft-opening-mode-in-orlando/u/slideshow/39612251/497849498_122113345562841817_2899701369617009397_n.webp?cb=1748379546",
+      "alt": "Sparrow cheese board with honeycomb, cheeses, grapes and accompaniments; other table dishes also pictured",
+      "credit": "Orlando Weekly · Sparrow food photography",
+      "sourceUrl": "https://www.orlandoweekly.com/food-drink/new-eurocentric-wine-bar-sparrow-now-in-soft-opening-mode-in-orlando-39612193"
     }
   }
 };
