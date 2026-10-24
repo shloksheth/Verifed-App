@@ -4,6 +4,7 @@ on:
     paths:
       - 'research/batch5-image-probe.mjs'
       - 'research/batch5-tacobell-exact-menu-scrape.mjs'
+      - 'research/batch5-missing-exact-photo-search.mjs'
       - '.github/workflows/batch5-photo-research.yml'
   workflow_dispatch:
 permissions:
@@ -17,4 +18,4 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
-      - run: node research/batch5-tacobell-exact-menu-scrape.mjs
+      - run: node research/batch5-missing-exact-photo-search.mjs
