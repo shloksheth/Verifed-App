@@ -3137,6 +3137,36 @@ export const verifiedDishPhotos = {
     }
   },
   "mamak-colonial": {
+    "ginger-scallion-fish": {
+      "url": "https://tastychomps.com/wp-content/uploads/2020/11/mamak-east-orlando-ucf-university-new-49.jpg",
+      "alt": "Historical Mamak Ginger and Scallion Fish photograph featured in a 2020 article about Mamak's UCF location; not confirmed as current Colonial Drive presentation",
+      "credit": "Tasty Chomps · Mamak Orlando food photography (2020)",
+      "sourceUrl": "https://tastychomps.com/2020/11/first-look-mamak-asian-street-food-opens-new-2nd-location-in-ucf-east-orlando-area-for-take-out-delivery-dine-in-to-come-plus-7-must-try-dishes-at-mamak.html",
+      "kind": "editorial-context",
+      "matchMethod": "Image appears directly beneath a matching named dish heading in a dated Mamak location review; image pixels, live URL, current recipe and reuse rights require separate validation",
+      "needsPermissionReview": true,
+      "reviewedAt": "2026-10-24"
+    },
+    "ageta-shokushu-3": {
+      "url": "https://tastychomps.com/wp-content/uploads/2020/11/mamak-east-orlando-ucf-university-new-46.jpg",
+      "alt": "Historical Mamak Ageta Shokushu photograph featured in a 2020 article about Mamak's UCF location; not confirmed as current Colonial Drive presentation",
+      "credit": "Tasty Chomps · Mamak Orlando food photography (2020)",
+      "sourceUrl": "https://tastychomps.com/2020/11/first-look-mamak-asian-street-food-opens-new-2nd-location-in-ucf-east-orlando-area-for-take-out-delivery-dine-in-to-come-plus-7-must-try-dishes-at-mamak.html",
+      "kind": "editorial-context",
+      "matchMethod": "Image appears directly beneath a matching named dish heading in a dated Mamak location review; image pixels, live URL, current recipe and reuse rights require separate validation",
+      "needsPermissionReview": true,
+      "reviewedAt": "2026-10-24"
+    },
+    "pot-stickers-5": {
+      "url": "https://tastychomps.com/wp-content/uploads/2020/11/PB202008-800x533.jpg",
+      "alt": "Historical Mamak House-Made Potstickers photograph featured in a 2020 article about Mamak's UCF location; not confirmed as current Colonial Drive presentation",
+      "credit": "Tasty Chomps · Mamak Orlando food photography (2020)",
+      "sourceUrl": "https://tastychomps.com/2020/11/first-look-mamak-asian-street-food-opens-new-2nd-location-in-ucf-east-orlando-area-for-take-out-delivery-dine-in-to-come-plus-7-must-try-dishes-at-mamak.html",
+      "kind": "editorial-context",
+      "matchMethod": "Image appears directly beneath a matching named dish heading in a dated Mamak location review; image pixels, live URL, current recipe and reuse rights require separate validation",
+      "needsPermissionReview": true,
+      "reviewedAt": "2026-10-24"
+    },
     "roti-canai": {
       "url": "https://static.spotapps.co/spots/ac/85155c065644d3b364b025c61c1ff2/full",
       "alt": "Roti Canai flatbread with curry at Mamak Asian Street Food",
