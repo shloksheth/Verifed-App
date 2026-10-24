@@ -1,0 +1,23 @@
+name: Verify Batch 5 dish photography
+on:
+  pull_request:
+    paths:
+      - 'mobile/src/verified-dish-photos.js'
+      - 'mobile/scripts/verify-batch5-photos.mjs'
+      - '.github/workflows/verify-batch5-photos.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  batch5:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+          cache-dependency-path: mobile/package-lock.json
+      - run: npm ci --prefix mobile
+      - run: node mobile/scripts/verify-batch5-photos.mjs
