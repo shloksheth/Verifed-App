@@ -1,14 +1,14 @@
 {
-  "number": 14.8,
-  "name": "Verifed V14.8",
-  "description": "Batch 2 restaurant photography sourcing and quality audit for Tin & Taco, Mamak, The Stubborn Mule, Pig Floyd’s & Pigzza, and Lazy Moon. This release adds 61 individually keyed sourced image references, prioritizing named product photographs linked from Mamak's first-party menu and several distinct restaurant/ordering photographs from the other menus. The full 413-item inventory now records source evidence, item descriptions, candidate research queries, and missing or contextual photos. This is an interim GitHub-only photography update, NOT completion of all 413 photos.",
+  "number": 14.9,
+  "name": "Verifed V14.9",
+  "description": "Batch 5 restaurant menu photography. Adds 200 newly keyed product or representative image references across Hawkers Orlando, Loving Hut Orlando, and three Taco Bell branches without disturbing V14.8’s Batch 2/3 changes. Across the five live menus, 458/458 entries now resolve to a per-item image, including 447 brand/product-matched references and 11 explicitly labeled third-party representative photos. All 226 distinct image URLs returned image content during verification. This is a GitHub-only release; the original Expo Snack snapshot is unchanged.",
   "verification": [
-    "All 413 Batch 2 items are explicitly indexed in research/batch2-photo-audit.json.",
-    "The registry currently has 61 individual item photo references across Batch 2; 352 records are still missing images.",
-    "Known restaurant-photo and contextual images are distinguished, and menu tiles never fill missing items with generic restaurant images.",
-    "URL checks indicate most image hosts serve image content; Pig Floyd's editorial image server can intermittently return HTML instead of an image.",
-    "Full visual checks, accurate alternatives for unmatched dishes, and third-party usage rights require further work. No AI-generated pictures or photo retouches are claimed.",
-    "Existing mobile contain-mode framing preserves whole-food images without cropping.",
-    "GitHub-only release; no new Expo Snack publication."
+    "Batch 5 contains five active menus totaling 458 entries and 458 image references; retired Tako Cheena stays excluded.",
+    "63 Taco Bell item photo references per location are matched to first-party product names and original image URLs.",
+    "Three Hawkers Lo Mein proteins use actual Hawkers-brand dish photos; 11 other entries use disclosed illustrative images.",
+    "226/226 unique image URLs returned image content in a GitHub Actions validation run at check time; this does not certify lasting reachability.",
+    "The app retains full-food contain-mode image framing and differentiates illustrative images from exact dish photographs.",
+    "Third-party rights, accuracy of representative dishes and device-by-device image review remain outstanding. No AI-generated image is claimed in app assets.",
+    "GitHub-only release. No Expo Snack publication requested."
   ]
 }
