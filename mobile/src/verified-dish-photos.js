@@ -1540,6 +1540,16 @@ export const verifiedDishPhotos = {
       "matchMethod": "Direct image-title correspondence on restaurant's first-party menu; visual/plating QA pending",
       "needsPermissionReview": true,
       "reviewedAt": "2026-10-24"
+    },
+    "satay-skewers-6": {
+      "url": "https://static.spotapps.co/spots/a3/c23611539b4872a94695bac4eb597b/full",
+      "alt": "Six Mamak grilled satay skewers on a dark blue oval plate, cilantro and shredded vegetables underneath; sauce not visible on the plate.",
+      "credit": "Mamak Asian Street Food · official restaurant photography",
+      "sourceUrl": "https://www.mamakeats.com/",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Visually compared the named dish and ingredient description with the retrieved source image and credited publication",
+      "needsPermissionReview": true
     }
   },
   "yellow-dog-eats-gotha": {
@@ -1824,6 +1834,26 @@ export const verifiedDishPhotos = {
       "alt": "The Stubborn Mule Burger served with a copper mug; photo from restaurant ordering page",
       "credit": "The Stubborn Mule · restaurant ordering photograph",
       "sourceUrl": "https://order.toasttab.com/online/the-stubborn-mule-100-s-eola-drive"
+    },
+    "smash-burger": {
+      "url": "https://d1w7312wesee68.cloudfront.net/Pw11k2wpQScgVju0nZBycDj2cfn1v3-kcwDI7-iO_dQ/resize%3Afit%3A720%3A720/plain/s3%3A/toasttab/menu_service/restaurants/1f97c7fa-92b6-4da3-aff4-29e3b7f7fc92/MenuItem/1d053f2b-1953-4de0-8242-6b14e6d94d04.jpg",
+      "alt": "Official Stubborn Mule Smash Burger with double beef patty, melted American cheese, charred onions, arugula and tomato on brioche bun, centered on white plate.",
+      "credit": "The Stubborn Mule · official Toast ordering image",
+      "sourceUrl": "https://order.toasttab.com/online/the-stubborn-mule-100-s-eola-drive/item-smash-burger_56b7f012-dbb7-4bfe-85a4-28f2a92439d5",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Visually compared the named dish and ingredient description with the retrieved source image and credited publication",
+      "needsPermissionReview": true
+    },
+    "shrimp-and-grits": {
+      "url": "https://d1w7312wesee68.cloudfront.net/BWXksfpd00oOjp4L5t6GfaYInZQOV207o3Zb6XkGHx8/resize%3Afit%3A720%3A720/plain/s3%3A/toasttab/menu_service/restaurants/1f97c7fa-92b6-4da3-aff4-29e3b7f7fc92/MenuItem/9f2372da-cbb0-4067-94a2-ec53f9e463df.jpg",
+      "alt": "Official Stubborn Mule Shrimp and Grits with seared shrimp, andouille sausage, smoked gouda grits, peppers and onions in a white bowl.",
+      "credit": "The Stubborn Mule · official Toast ordering image",
+      "sourceUrl": "https://order.toasttab.com/online/the-stubborn-mule-100-s-eola-drive/item-shrimp-and-grits_8abb93e4-1dd6-4167-b4e6-e2565c7758c1",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Visually compared the named dish and ingredient description with the retrieved source image and credited publication",
+      "needsPermissionReview": true
     }
   },
   "lazy-moon-mills": {
@@ -1838,6 +1868,46 @@ export const verifiedDishPhotos = {
       "alt": "Slice of Garden Grazer pizza from Lazy Moon with broccoli, spinach, artichokes and mozzarella on a metal serving tray",
       "credit": "Lazy Moon Pizza · Mills 50 official ordering image",
       "sourceUrl": "https://order.lazymoonpizza.com/menu/lazy-moon-mills-50-1011-east-colonial-drive/group_eabef8e9-372a-40c0-b7e5-1be9616d3375/item-slice-garden-grazer-pizza_2ad479c0-c1ff-41db-bb53-2be78d1b782a"
+    },
+    "slice-tomato-base-includes-mozzarella": {
+      "url": "https://assets-global.website-files.com/630bc362e064f47bd1baf171/6626b74351eb7af3df2bdbe6_IMG-7780%20adobe.jpg",
+      "alt": "Lazy Moon plain tomato sauce mozzarella cheese pizza slice on a metal tray, with a glass of beer behind it. Source is restaurant's official site, not verified as the specific customizable base.",
+      "credit": "Lazy Moon · official restaurant food photo",
+      "sourceUrl": "https://www.lazymoonpizza.com/",
+      "kind": "official-menu-variant",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Visually compared the named dish and ingredient description with the retrieved source image and credited publication",
+      "needsPermissionReview": true
+    },
+    "slice-meaty-mcmeatface-pizza": {
+      "url": "https://d1w7312wesee68.cloudfront.net/jwbHw-3r_xCgok8nqtPzwU_aZY5fHh7dmBcQGtkQXhs/resize%3Afit%3A1080%3A1080/plain/s3%3A/toasttab/restaurants/restaurant-136153000000000000/menu/items/4/item-800000004396409534_1719670045.jpg",
+      "alt": "Actual Lazy Moon Mills/50 Meaty McMeatface pizza slice with birria beef, ground beef, bacon, pepperoni and mozzarella, whole slice visible on metal tray.",
+      "credit": "Lazy Moon Mills/50 · official Toast ordering photo",
+      "sourceUrl": "https://order.lazymoonpizza.com/menu/lazy-moon-mills-50-1011-east-colonial-drive/group_eabef8e9-372a-40c0-b7e5-1be9616d3375/item-slice-meaty-mcmeatface-pizza_222c4662-eab7-48ba-8bf7-4c2077abf79b",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Visually compared the named dish and ingredient description with the retrieved source image and credited publication",
+      "needsPermissionReview": true
+    },
+    "slice-jason-s-mom-s-pizza": {
+      "url": "https://wpcdn.us-east-1.vip.tn-cloud.net/www.orlandomagazine.com/content/uploads/2020/10/RG33007_LazyMoon.jpg?etag=%225f92f3cd-10b2a%22",
+      "alt": "Lazy Moon oversized Jason's Mom's pizza slice with chicken, mushrooms, tomatoes, melted mozzarella and brown ranch sauce, whole slice on a small white plate.",
+      "credit": "Orlando Magazine · Lazy Moon pizza slice photograph",
+      "sourceUrl": "https://www.orlandomagazine.com/pizza-bracket-results-meet-the-other-two-in-the-fabulous-4/",
+      "kind": "editorial-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Visually compared the named dish and ingredient description with the retrieved source image and credited publication",
+      "needsPermissionReview": true
+    },
+    "classic-calzone": {
+      "url": "https://wpcdn.us-east-1.vip.tn-cloud.net/www.orlandomagazine.com/content/uploads/2023/07/x/x/lazymoon.jpg",
+      "alt": "Lazy Moon calzone cut in half with mozzarella and ricotta, sausage and mushrooms selected as toppings; a ranch cup is visible. Example topping combination only.",
+      "credit": "Orlando Magazine · Lazy Moon calzone photograph",
+      "sourceUrl": "https://www.orlandomagazine.com/delicious-dishes-in-mills-50/",
+      "kind": "editorial-context",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Visually compared the named dish and ingredient description with the retrieved source image and credited publication",
+      "needsPermissionReview": true
     }
   },
   "pig-floyds-mills": {
@@ -1846,6 +1916,46 @@ export const verifiedDishPhotos = {
       "alt": "The Big Floyd brisket, pulled pork and sausage sandwich, photographed at Pig Floyd's in Orlando in 2014; plating and location may have changed",
       "credit": "Scott Joseph's Food & Travel · Big Floyd sandwich photograph",
       "sourceUrl": "https://scottjosephorlando.com/pig-floyd-s-urban-barbakoa/"
+    },
+    "mexican-street-corn-fries": {
+      "url": "https://cdn.prod.website-files.com/61e04feb6d15de516ae40221/621f9cba8dad23820457fa6a_61e70c4679bef7be3890c949_Street-Corn-Fries-Plate-e1638283620771-1013x1024-1.png",
+      "alt": "Pig Floyd's Mexican Street Corn Fries on white plate, topped with corn, cotija, cilantro aioli and chives; whole serving visible.",
+      "credit": "Pig Floyd's · former official menu photograph",
+      "sourceUrl": "https://www.pigfloyds.com/menu",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Visually compared the named dish and ingredient description with the retrieved source image and credited publication",
+      "needsPermissionReview": true
+    },
+    "sticky-ribs": {
+      "url": "https://static.wixstatic.com/media/2c91de_beaa209a59da4a9ab1ce6957220d2480~mv2.jpg/v1/fill/w_980%2Ch_653%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/2c91de_beaa209a59da4a9ab1ce6957220d2480~mv2.jpg",
+      "alt": "Glossy reddish Pig Floyd's sticky pork ribs with scallion garnish photographed for coverage of the restaurant's Winter Park expansion. Presentation may differ at Mills/50.",
+      "credit": "Gotta Go Orlando · Pig Floyd's glazed rib photograph",
+      "sourceUrl": "https://www.gottagoorlando.com/post/3-years-on-and-pig-floyd-s-urban-bbq-almost-ready-to-open-in-winter-park",
+      "kind": "editorial-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Visually compared the named dish and ingredient description with the retrieved source image and credited publication",
+      "needsPermissionReview": true
+    },
+    "butter-chicken": {
+      "url": "https://burgerbeast.com/wp-content/uploads/2014/09/Pig-Floyds-BBQ-Butter-Chicken-Taco.jpg",
+      "alt": "Pig Floyd's Butter Chicken Taco with tikka masala-dressed chicken, jasmine rice, yogurt, jalapeño and pepitas in a flour tortilla; close cropped rather than a full taco.",
+      "credit": "Burger Beast · Pig Floyd's Butter Chicken Taco",
+      "sourceUrl": "https://burgerbeast.com/pig-floyds-orlando/",
+      "kind": "editorial-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Visually compared the named dish and ingredient description with the retrieved source image and credited publication",
+      "needsPermissionReview": true
+    },
+    "banh-mi": {
+      "url": "https://tb-static.uber.com/prod/image-proc/processed_images/a3ad60464ca89078489b3a2b284f9d60/7f4ae9ca0446cbc23e71d8d395a98428.jpeg",
+      "alt": "Pig Floyd's glazed BBQ pork bánh mì-style sandwich with pickled vegetables, jalapeño and creamy dressing. Actual selected meat can vary; pictured pork variation.",
+      "credit": "Pig Floyd's delivery menu · Uber Eats",
+      "sourceUrl": "https://www.ubereats.com/store/pig-floyds-urban-bbq-orlando/xmRoSfELWz2Il6CW2h-1xQ",
+      "kind": "official-menu-variant",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Visually compared the named dish and ingredient description with the retrieved source image and credited publication",
+      "needsPermissionReview": true
     }
   },
   "woodlands-orlando": {
