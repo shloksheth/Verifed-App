@@ -1,4 +1,4 @@
-// Exact official menu photos plus transparent representative food photos. Photos do not prove allergen safety.
+// Item-specific credited menu photos, plus explicitly labeled representative food photos; not allergen evidence.
 export const verifiedDishPhotos = {
   "loving-hut-orlando": {
     "spring-rolls-4-rolls-cha-gio": {
@@ -962,6 +962,15 @@ export const verifiedDishPhotos = {
       "kind": "official-product",
       "reviewedAt": "2026-10-24",
       "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "paris-hilton-s-usual": {
+      "url": "https://www.tacobell.com/images/28943_hilton_usual_750x340.jpg",
+      "alt": "Paris Hilton’s Usual combo: Diablo Ranch Crispy Chicken Crunchwrap Slider, Crunchy Taco and medium fountain drink, pictured together in Taco Bell's official menu photo",
+      "credit": "Taco Bell · official product combo",
+      "sourceUrl": "https://www.tacobell.com/food/deals-and-combos/paris-hiltons-usual",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Matched official Taco Bell JSON product record and productImageUrl for the specific named combo."
     }
   },
   "taco-bell-east-colonial": {
@@ -1519,6 +1528,15 @@ export const verifiedDishPhotos = {
       "kind": "official-product",
       "reviewedAt": "2026-10-24",
       "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "paris-hilton-s-usual": {
+      "url": "https://www.tacobell.com/images/28943_hilton_usual_750x340.jpg",
+      "alt": "Paris Hilton’s Usual combo: Diablo Ranch Crispy Chicken Crunchwrap Slider, Crunchy Taco and medium fountain drink, pictured together in Taco Bell's official menu photo",
+      "credit": "Taco Bell · official product combo",
+      "sourceUrl": "https://www.tacobell.com/food/deals-and-combos/paris-hiltons-usual",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Matched official Taco Bell JSON product record and productImageUrl for the specific named combo."
     }
   },
   "taco-bell-orlando-west": {
@@ -2076,6 +2094,15 @@ export const verifiedDishPhotos = {
       "kind": "official-product",
       "reviewedAt": "2026-10-24",
       "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "paris-hilton-s-usual": {
+      "url": "https://www.tacobell.com/images/28943_hilton_usual_750x340.jpg",
+      "alt": "Paris Hilton’s Usual combo: Diablo Ranch Crispy Chicken Crunchwrap Slider, Crunchy Taco and medium fountain drink, pictured together in Taco Bell's official menu photo",
+      "credit": "Taco Bell · official product combo",
+      "sourceUrl": "https://www.tacobell.com/food/deals-and-combos/paris-hiltons-usual",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Matched official Taco Bell JSON product record and productImageUrl for the specific named combo."
     }
   },
   "chipotle-south-orange": {
