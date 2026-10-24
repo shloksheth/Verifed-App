@@ -1,5 +1,5 @@
-// Reviewed menu food-photo sources, with representative food images clearly separated from exact products.
-// Images are not a food-allergen or restaurant-partnership certification; reuse rights must be independently cleared.
+// Dish-keyed photography. Unverified or other-branch images are labeled representative/contextual.
+// Never derive allergen claims from photographs; confirm third-party commercial reproduction permissions.
 export const verifiedDishPhotos = {
   "loving-hut-orlando": {
     "spring-rolls-4-rolls-cha-gio": {
@@ -942,6 +942,46 @@ export const verifiedDishPhotos = {
       "reviewedAt": "2026-10-24",
       "matchMethod": "Visually reviewed the image and identified differences from the dish description; not restaurant-exact",
       "needsPermissionReview": true
+    },
+    "chopped-salad": {
+      "url": "https://d1w7312wesee68.cloudfront.net/a_OwgesvS_WOviX8O00456Cew_iYtMTsETkqL5CubAY/resize%3Afit%3A720%3A720/plain/s3%3A/toasttab/restaurants/restaurant-105028000000000000/menu/items/5/item-200000017617363485_1719600632.jpg",
+      "alt": "Pizza Bruno Curry Ford Chopped Salad in wooden bowl with aqua greens, cucumber, red onion, cheese and vinaigrette; individual menu photograph",
+      "credit": "Pizza Bruno Curry Ford · official Toast product photograph",
+      "sourceUrl": "https://pizzabrunofl.com/order/pizza-bruno-curry-ford-3990-curry-ford-road/item-chopped-salad_dc4965d0-f5fe-4d37-a82a-e979a763a171",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Visual comparison with published menu ingredients and image context; differences disclosed",
+      "needsPermissionReview": false
+    },
+    "kale-salad": {
+      "url": "https://d2s742iet3d3t1.cloudfront.net/restaurants/restaurant-218144000000000000/menu/items/1/item-200000042910888131_1721421064.jpg?size=medium",
+      "alt": "Pizza Bruno kale salad with Pecorino, golden raisins, candied pecans and kale under Emperor's dressing. Photographed at the Pizza Bruno Maitland location, not verified as the Curry Ford plating.",
+      "credit": "Pizza Bruno Maitland · official ordering image",
+      "sourceUrl": "https://order.toasttab.com/online/pizza-bruno-maitland-360-e-horatio-ave-suite-500/item-kale_2833de7f-0c46-480b-be8b-37bb565b6bfe",
+      "kind": "representative-branch",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Visual comparison with published menu ingredients and image context; differences disclosed",
+      "needsPermissionReview": true
+    },
+    "6-wings": {
+      "url": "https://d1w7312wesee68.cloudfront.net/-pjuHmy73_IptqcFdpEt79XjfOjWum4_raks5C8sAqw/resize%3Afit%3A720%3A720/plain/s3%3A/toasttab/restaurants/restaurant-126675000000000000/menu/items/5/item-200000037151922185_1724798679.jpg",
+      "alt": "Pizza Bruno plate of Calabrian Buffalo wings coated in orange spicy sauce with white creamy dip and grated cheese. This photo is from its College Park restaurant, not Curry Ford; serving count may differ.",
+      "credit": "Pizza Bruno College Park · official wings ordering photo",
+      "sourceUrl": "https://pizzabrunofl.com/order/pizza-bruno-college-park-2429-edgewater-dr/item-wings_49b4fda1-1bf2-4b88-8c61-7219e9754b53",
+      "kind": "representative-branch",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Visual comparison with published menu ingredients and image context; differences disclosed",
+      "needsPermissionReview": true
+    },
+    "roni": {
+      "url": "https://axwwgrkdco.cloudimg.io/v7/__gmpics__/417180887a9b422888cdb9f015d96d57?width=1000",
+      "alt": "Pizza Bruno Curry Ford wood-fired pepperoni pie topped generously with pepperoni and Pecorino on a charred crust. Calabrian chili and oregano are not distinguishable, so this might not be the exact Roni version.",
+      "credit": "MICHELIN Guide · Pizza Bruno restaurant pepperoni pie",
+      "sourceUrl": "https://guide.michelin.com/us/en/florida/orlando/restaurant/pizza-bruno",
+      "kind": "editorial-context",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Visual comparison with published menu ingredients and image context; differences disclosed",
+      "needsPermissionReview": true
     }
   },
   "black-rooster-mills": {
@@ -1596,13 +1636,13 @@ export const verifiedDishPhotos = {
       "needsPermissionReview": true
     },
     "wpbc-burger": {
-      "url": "https://unforked.com/pluto-otter/menu-photos/6192c5a8-c4ea-483f-807a-0dad3918bb7f.jpeg?fit=cover&h=768&w=768",
-      "alt": "Representative Impossible Burger with cheese, lettuce and tomato on brioche; DOES NOT depict Winter Park Biscuit Company's house sauce or exact serving",
-      "credit": "Unforked · Impossible burger photograph (different restaurant)",
-      "sourceUrl": "https://unforked.com/tags/wagyu-burger",
+      "url": "https://deliverlogic-common-assets.s3.amazonaws.com/editable/images/delivr/menuitems/44595.png",
+      "alt": "Representative Impossible Burger on a brioche-style bun with lettuce, tomato and red onion, with waffle fries and an IMPOSSIBLE flag. WPBC's own American cheese, pickles and house sauce are not verified or visible, and this was photographed for another restaurant.",
+      "credit": "Stubby's · Impossible Burger ordering photograph (not Winter Park Biscuit Company)",
+      "sourceUrl": "https://www.delivery.com/cities/nantucket-ma/categories/restaurant/stubbys-menu-2",
       "kind": "representative-dish",
       "reviewedAt": "2026-10-24",
-      "matchMethod": "Visually reviewed the image and identified differences from the dish description; not restaurant-exact",
+      "matchMethod": "Visual comparison with WPBC Impossible patty, lettuce, tomato, onion and brioche menu description; incomplete match disclosed",
       "needsPermissionReview": true
     },
     "nugget-combo": {
@@ -1633,6 +1673,16 @@ export const verifiedDishPhotos = {
       "kind": "representative-dish",
       "reviewedAt": "2026-10-24",
       "matchMethod": "Visually reviewed the image and identified differences from the dish description; not restaurant-exact",
+      "needsPermissionReview": true
+    },
+    "death-valley-chik-sandwich": {
+      "url": "https://images.squarespace-cdn.com/content/v1/5911d92a3a0411f8aed6f89b/e3206e12-0c7a-4e92-a083-4a5e9504c2f9/winter%2Bpark%2Bbiscuit%2Bcompany%2Bvegan%2Borlando.jpg",
+      "alt": "Winter Park Biscuit Company official photograph of a crisp breaded vegan chicken sandwich with spicy dry seasoning and green jalapeño slices near the bun, shown on branded takeout paper. Mayo not visible; recipe presentation may change.",
+      "credit": "Winter Park Biscuit Company · official website photograph",
+      "sourceUrl": "https://www.winterparkbiscuitco.com/",
+      "kind": "official-context",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Visual comparison with published menu ingredients and image context; differences disclosed",
       "needsPermissionReview": true
     }
   },
