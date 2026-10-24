@@ -1,5 +1,5 @@
-// Menu-item images with distinct identities, source and representative labels; not allergen claims.
-// Third-party image redistribution rights are not presumed.
+// Menu item photography with credit and explicit labels for other-branch/representative images.
+// Images do not certify allergy safety or grant reproduction rights.
 export const verifiedDishPhotos = {
   "loving-hut-orlando": {
     "spring-rolls-4-rolls-cha-gio": {
@@ -892,6 +892,140 @@ export const verifiedDishPhotos = {
       "alt": "Pizza Bruno wood-fired Margherita in Orlando",
       "credit": "Condé Nast Traveler · Pizza Bruno Margherita",
       "sourceUrl": "https://www.cntraveler.com/gallery/best-restaurants-in-orlando-florida"
+    },
+    "big-rig": {
+      "url": "https://d1w7312wesee68.cloudfront.net/TaAymNFXfLVOkevlPcD2HV2gARpGuMRXJlhsdGYabMQ/resize%3Afit%3A720%3A720/plain/s3%3A/toasttab/restaurants/restaurant-105028000000000000/menu/items/6/item-200000018150235506_1719599935.jpg",
+      "alt": "A full round wood-fired Pizza Bruno pizza topped with pepperoni, sausage pieces, cheese and jalapeño rings; presentation from the restaurant's Curry Ford online menu",
+      "credit": "Pizza Bruno · Curry Ford ordering photograph",
+      "sourceUrl": "https://pizzabrunofl.com/order/pizza-bruno-curry-ford-3990-curry-ford-road",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Compared visible ingredients with the published restaurant menu and photographer/source information",
+      "needsPermissionReview": true
+    },
+    "kbar": {
+      "url": "https://d1w7312wesee68.cloudfront.net/WywfSYNR9mRy7fWw58ZWk7kGWWKvXLtc-n-hEsHzPBs/resize%3Afit%3A720%3A720/plain/s3%3A/toasttab/restaurants/restaurant-105028000000000000/menu/items/1/item-200000017617363741_1719600768.jpg",
+      "alt": "Whole Pizza Bruno Kbar-style pizza with browned Italian sausage, roasted mushroom slices and tomato sauce swirl; rosemary not separately distinguishable",
+      "credit": "Pizza Bruno · Curry Ford ordering photograph",
+      "sourceUrl": "https://pizzabrunofl.com/order/pizza-bruno-curry-ford-3990-curry-ford-road",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Compared visible ingredients with the published restaurant menu and photographer/source information",
+      "needsPermissionReview": true
+    },
+    "lover-boy-blue": {
+      "url": "https://d1w7312wesee68.cloudfront.net/PHzOVn0d90T-fcF2KPZDDpuNCYK1c8ZXOjeLnF4n-SM/resize%3Afit%3A720%3A720/plain/s3%3A/toasttab/restaurants/restaurant-105028000000000000/menu/items/6/item-200000025118152576_1719600068.jpg",
+      "alt": "Full Pizza Bruno white pizza topped with bursting blueberries, browned bacon pieces and central burrata ball; matches distinctive Lover Boy Blue ingredients",
+      "credit": "Pizza Bruno · Curry Ford ordering photograph",
+      "sourceUrl": "https://pizzabrunofl.com/order/pizza-bruno-curry-ford-3990-curry-ford-road",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Compared visible ingredients with the published restaurant menu and photographer/source information",
+      "needsPermissionReview": true
+    },
+    "viva-verde-vg": {
+      "url": "https://d1w7312wesee68.cloudfront.net/s7H5m3mVmSAUMJUf4fAF2ouo-8s-WS1bEvzoLyXD8o0/resize%3Afit%3A720%3A720/plain/s3%3A/toasttab/restaurants/restaurant-105028000000000000/menu/items/7/item-200000017617363737_1730220361.jpg",
+      "alt": "Full green vegetarian Pizza Bruno pie with kale, mushrooms and artichoke hearts; branded image, though precise caper and balsamic garnishes not visible",
+      "credit": "Pizza Bruno · Curry Ford menu product photograph",
+      "sourceUrl": "https://pizzabrunofl.com/order/pizza-bruno-curry-ford-3990-curry-ford-road",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Compared visible ingredients with the published restaurant menu and photographer/source information",
+      "needsPermissionReview": true
+    },
+    "nyc-pepperoni": {
+      "url": "https://d1w7312wesee68.cloudfront.net/bmA4BbZVqY2TzlKIy1-m_1FSNrPcLjucAm7C4qXgNMw/resize%3Afit%3A720%3A720/plain/s3%3A/toasttab/restaurants/restaurant-126675000000000000/menu/items/7/item-200000037148731437_1724782864.jpg",
+      "alt": "Full pepperoni pizza served by Pizza Bruno College Park; representative Pizza Bruno pepperoni pizza, not proven to be Curry Ford's 16-inch NYC version",
+      "credit": "Pizza Bruno College Park · ordering photo",
+      "sourceUrl": "https://pizzabrunofl.com/order/pizza-bruno-college-park-2429-edgewater-dr",
+      "kind": "representative-branch",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Visually reviewed the image and identified differences from the dish description; not restaurant-exact",
+      "needsPermissionReview": true
+    },
+    "chopped-salad": {
+      "url": "https://d1w7312wesee68.cloudfront.net/a_OwgesvS_WOviX8O00456Cew_iYtMTsETkqL5CubAY/resize%3Afit%3A720%3A720/plain/s3%3A/toasttab/restaurants/restaurant-105028000000000000/menu/items/5/item-200000017617363485_1719600632.jpg",
+      "alt": "Pizza Bruno Curry Ford Chopped Salad in wooden bowl with aqua greens, cucumber, red onion, cheese and vinaigrette; individual menu photograph",
+      "credit": "Pizza Bruno Curry Ford · official Toast product photograph",
+      "sourceUrl": "https://pizzabrunofl.com/order/pizza-bruno-curry-ford-3990-curry-ford-road/item-chopped-salad_dc4965d0-f5fe-4d37-a82a-e979a763a171",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Visual comparison with published menu ingredients and image context; differences disclosed",
+      "needsPermissionReview": false
+    },
+    "kale-salad": {
+      "url": "https://d2s742iet3d3t1.cloudfront.net/restaurants/restaurant-218144000000000000/menu/items/1/item-200000042910888131_1721421064.jpg?size=medium",
+      "alt": "Pizza Bruno kale salad with Pecorino, golden raisins, candied pecans and kale under Emperor's dressing. Photographed at the Pizza Bruno Maitland location, not verified as the Curry Ford plating.",
+      "credit": "Pizza Bruno Maitland · official ordering image",
+      "sourceUrl": "https://order.toasttab.com/online/pizza-bruno-maitland-360-e-horatio-ave-suite-500/item-kale_2833de7f-0c46-480b-be8b-37bb565b6bfe",
+      "kind": "representative-branch",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Visual comparison with published menu ingredients and image context; differences disclosed",
+      "needsPermissionReview": true
+    },
+    "6-wings": {
+      "url": "https://d1w7312wesee68.cloudfront.net/-pjuHmy73_IptqcFdpEt79XjfOjWum4_raks5C8sAqw/resize%3Afit%3A720%3A720/plain/s3%3A/toasttab/restaurants/restaurant-126675000000000000/menu/items/5/item-200000037151922185_1724798679.jpg",
+      "alt": "Pizza Bruno plate of Calabrian Buffalo wings coated in orange spicy sauce with white creamy dip and grated cheese. This photo is from its College Park restaurant, not Curry Ford; serving count may differ.",
+      "credit": "Pizza Bruno College Park · official wings ordering photo",
+      "sourceUrl": "https://pizzabrunofl.com/order/pizza-bruno-college-park-2429-edgewater-dr/item-wings_49b4fda1-1bf2-4b88-8c61-7219e9754b53",
+      "kind": "representative-branch",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Visual comparison with published menu ingredients and image context; differences disclosed",
+      "needsPermissionReview": true
+    },
+    "roni": {
+      "url": "https://axwwgrkdco.cloudimg.io/v7/__gmpics__/417180887a9b422888cdb9f015d96d57?width=1000",
+      "alt": "Pizza Bruno Curry Ford wood-fired pepperoni pie topped generously with pepperoni and Pecorino on a charred crust. Calabrian chili and oregano are not distinguishable, so this might not be the exact Roni version.",
+      "credit": "MICHELIN Guide · Pizza Bruno restaurant pepperoni pie",
+      "sourceUrl": "https://guide.michelin.com/us/en/florida/orlando/restaurant/pizza-bruno",
+      "kind": "editorial-context",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Visual comparison with published menu ingredients and image context; differences disclosed",
+      "needsPermissionReview": true
+    },
+    "marinara-vg": {
+      "url": "https://151673875.cdn6.editmysite.com/uploads/1/5/1/6/151673875/GNTBVW43YRTDBNQIKAQKTXDN.jpeg",
+      "alt": "Representative whole cheeseless wood-fired marinara pizza with tomato sauce, roasted garlic and dried oregano; Pizza Bruno additionally uses capers, not visibly present in this photo.",
+      "credit": "Matilda Park City · Marinara Tomato Pie (different restaurant)",
+      "sourceUrl": "https://order.matildaparkcity.com/product/marinara-pizza-tomato-pie/19",
+      "kind": "representative-dish",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Compared dish ingredients, plating, and multiple web image candidates; documented visible differences from named restaurant's dish",
+      "needsPermissionReview": true,
+      "photoIdentityNote": "Not a verified photo of this restaurant's actual dish; do not use to infer dietary compliance."
+    },
+    "rigatoni-vodka": {
+      "url": "https://merchant-cdn.streamorders.com/980ef883-0c2b-4cb6-95ec-2dd0862e06ea/restaurant/1726767117651.jpeg?fit=crop&h=160&w=160",
+      "alt": "Representative rigatoni in creamy red-orange vodka sauce with a big dollop of burrata cheese; Pizza Bruno's topping is stracciatella instead, and this photo is another restaurant's serving.",
+      "credit": "Patricia's of Morris Park · rigatoni vodka image (different restaurant)",
+      "sourceUrl": "https://slicelife.com/restaurants/ny/the-bronx/10461/patricia-s-of-morris-park/menu",
+      "kind": "representative-dish",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Compared dish ingredients, plating, and multiple web image candidates; documented visible differences from named restaurant's dish",
+      "needsPermissionReview": true,
+      "photoIdentityNote": "Not a verified photo of this restaurant's actual dish; do not use to infer dietary compliance."
+    },
+    "cauliflower-roasted": {
+      "url": "https://images.squarespace-cdn.com/content/v1/630d0de1b56cf7627002c56e/c8f0e619-6634-495e-871f-3a6cf705f89e/GUFO%2BCAMBRIDGE_BRIAN%2BSAMUELS%2BPHOTOGRAPHY_JULY%2B2023-IMG_2144%2Bcopy%2B%281%29.jpg?format=2500w",
+      "alt": "Representative whole dish of oven-roasted golden cauliflower florets over reddish Romesco sauce topped with hazelnuts; Pizza Bruno's golden-raisin agrodolce, basil and mint are not shown.",
+      "credit": "Gufo Cambridge · roasted cauliflower photograph (different restaurant)",
+      "sourceUrl": "https://www.gufocambridge.com/menu-basil",
+      "kind": "representative-dish",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Compared dish ingredients, plating, and multiple web image candidates; documented visible differences from named restaurant's dish",
+      "needsPermissionReview": true,
+      "photoIdentityNote": "Not a verified photo of this restaurant's actual dish; do not use to infer dietary compliance."
+    },
+    "tiramisu-togo": {
+      "url": "https://tb-static.uber.com/prod/image-proc/processed_images/9e4800f39be2703ac97edd9d34512d17/7f4ae9ca0446cbc23e71d8d395a98428.jpeg",
+      "alt": "Representative portion of layered cocoa-dusted tiramisu in clear takeout packaging. Image belongs to Sunday's Bakery, not Pizza Bruno; house-made texture, portion, and packaging may differ.",
+      "credit": "Sunday's Bakery & Juice Bar · packaged tiramisu photograph (different restaurant)",
+      "sourceUrl": "https://www.ubereats.com/store/sundays-bakery-%26-juice-bar/UjkP77cOU_WMe5F_DEsM9Q",
+      "kind": "representative-dish",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Compared dish ingredients, plating, and multiple web image candidates; documented visible differences from named restaurant's dish",
+      "needsPermissionReview": true,
+      "photoIdentityNote": "Not a verified photo of this restaurant's actual dish; do not use to infer dietary compliance."
     }
   },
   "black-rooster-mills": {
@@ -1524,6 +1658,100 @@ export const verifiedDishPhotos = {
       "alt": "Winter Park Biscuit Company box showing Chik Strips, a biscuit and sauce; the side of fries is not visible",
       "credit": "Joe Coffee · Winter Park Biscuit Company food photograph",
       "sourceUrl": "https://joe.coffee/locations/fl/orlando/winter-park-biscuit-company-orlando/"
+    },
+    "crispy-chik-sandwich": {
+      "url": "https://media2.orlandoweekly.com/orlando/imager/winter-park-biscuit-co-brings-a-meatless-mix-of-southern-comfort-to-east-end-market/u/magnum/29591247/winter_park_biscuit_co_2.webp?cb=1738523262",
+      "alt": "Winter Park Biscuit Co crispy plant-based cutlet sandwich on brioche with shredded lettuce, tomato, pickles and sauce, in branded paper",
+      "credit": "Orlando Weekly · Winter Park Biscuit restaurant photograph",
+      "sourceUrl": "https://www.orlandoweekly.com/food-drink/winter-park-biscuit-co-brings-a-meatless-mix-of-southern-comfort-to-east-end-market-29591249",
+      "kind": "editorial-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Compared visible ingredients with the published restaurant menu and photographer/source information",
+      "needsPermissionReview": true
+    },
+    "loaded-fries": {
+      "url": "https://images.happycow.net/venues/1024/22/12/hcmp221206_2642306.jpeg",
+      "alt": "Winter Park Biscuit Co loaded fries in takeout box, with plant-based crumbles, melted vegan-style cheese sauce and scallions",
+      "credit": "HappyCow · Winter Park Biscuit Co customer photograph",
+      "sourceUrl": "https://www.happycow.net/reviews/winter-park-biscuit-company-orlando-221206",
+      "kind": "editorial-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Compared visible ingredients with the published restaurant menu and photographer/source information",
+      "needsPermissionReview": true
+    },
+    "wpbc-burger": {
+      "url": "https://i0.wp.com/www.orlandoweekly.com/wp-content/uploads/2020/11/wpbco2.webp?ssl=1",
+      "alt": "Authentic Winter Park Biscuit Company Impossible Burger with vegan American cheese, lettuce, tomato, pickles, and house sauce, photographed by Faiyaz Kara in 2020. This is NOT the current verified plating: historical potato bun differs from today's brioche-bun menu description.",
+      "credit": "Orlando Weekly · Faiyaz Kara photograph of Winter Park Biscuit Company's Impossible Burger",
+      "sourceUrl": "https://www.orlandoweekly.com/food-drink/brace-yourself-winter-park-biscuit-co-slated-to-open-thanksgiving-week-inside-east-end-market-28271078/",
+      "kind": "editorial-context",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Directly extracted photo URL from article HTML adjacent to explicit 'Impossible Burger' caption naming the dish and ingredients; historical bun difference disclosed",
+      "photoIdentityNote": "Authentic WPBC burger photo from November 2020, NOT guaranteed to show current version. Photo reuse permission unconfirmed.",
+      "needsPermissionReview": true
+    },
+    "nugget-combo": {
+      "url": "https://cloverstatic.com/menu-assets/items/FYPXW34CY9V6E.jpeg",
+      "alt": "Representative vegan chicken nuggets, fries and dark dipping sauce in takeout basket from a DIFFERENT vegan restaurant; not the actual WPBC Impossible Nugget Combo",
+      "credit": "Romeo's Vegan Burgers · menu photo (different restaurant)",
+      "sourceUrl": "https://romeosveganburgers.com/tags/chicken-nuggets",
+      "kind": "representative-dish",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Visually reviewed the image and identified differences from the dish description; not restaurant-exact",
+      "needsPermissionReview": true
+    },
+    "biscuits-gravy": {
+      "url": "https://134366779.cdn6.editmysite.com/uploads/1/3/4/3/134366779/ZVKLMDP6B2E72WBUUSBBPD25.png",
+      "alt": "Representative vegan biscuit covered in pale cream country gravy and chives; WPBC menu uses chopped oat buttermilk biscuits, so portion/presentation differs",
+      "credit": "Nice Biscuit · vegan biscuit with gravy (different restaurant)",
+      "sourceUrl": "https://www.nice-biscuit.com/product/one-biscuit-gravy/110",
+      "kind": "representative-dish",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Visually reviewed the image and identified differences from the dish description; not restaurant-exact",
+      "needsPermissionReview": true
+    },
+    "chickpea-salad-sandwich": {
+      "url": "https://d1w7312wesee68.cloudfront.net/9DEwPmeHZbIfswHCFr9oiYks4Mx4GPoouwNPDTTclQk/resize%3Afit%3A720%3A720/plain/s3%3A/toasttab/restaurants/restaurant-259105000000000000/menu/items/8/item-1300000008380576138_1771001078.png",
+      "alt": "Representative chickpea salad sandwich with leafy greens, served on sliced seeded toast at a different restaurant; WPBC serves theirs on a toasted hoagie with tomato/pickles/vinaigrette",
+      "credit": "Native Nectar · ChickPea Smash photograph (different restaurant)",
+      "sourceUrl": "https://www.toasttab.com/local/order/native-nectar-llc-3079-chaires-cross-rd/item-chickpea-smash_5c349fc2-9941-4338-85fc-007419cc130d",
+      "kind": "representative-dish",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Visually reviewed the image and identified differences from the dish description; not restaurant-exact",
+      "needsPermissionReview": true
+    },
+    "death-valley-chik-sandwich": {
+      "url": "https://images.squarespace-cdn.com/content/v1/5911d92a3a0411f8aed6f89b/e3206e12-0c7a-4e92-a083-4a5e9504c2f9/winter%2Bpark%2Bbiscuit%2Bcompany%2Bvegan%2Borlando.jpg",
+      "alt": "Winter Park Biscuit Company official photograph of a crisp breaded vegan chicken sandwich with spicy dry seasoning and green jalapeño slices near the bun, shown on branded takeout paper. Mayo not visible; recipe presentation may change.",
+      "credit": "Winter Park Biscuit Company · official website photograph",
+      "sourceUrl": "https://www.winterparkbiscuitco.com/",
+      "kind": "menu-context",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Visual comparison with published menu ingredients and image context; differences disclosed",
+      "needsPermissionReview": true,
+      "photoIdentityNote": "Official restaurant photograph of spicy chik sandwich, but specific Death Valley recipe identity and exact garnish configuration are not established by the source."
+    },
+    "the-sec": {
+      "url": "https://vegnews.com/media/W1siZiIsIjM1MDg4L1ZlZ05ld3MuNy1FbGV2ZW5TYW5kd2ljaC5DYW5hZGEtMS5qcGciXSxbInAiLCJjcm9wX3Jlc2l6ZWQiLCI5NDR4OTQ0KzQzNCswIiwiOTQ2eDk0Nl4iLHsiZm9ybWF0IjoianBnIn1dLFsicCIsIm9wdGltaXplIl1d/VegNews.7-ElevenSandwich.Canada-1.jpg?sha=165e61daa766c4ea",
+      "alt": "Representative vegan sandwich with JUST Egg folded patty, Impossible sausage and plant-based cheddar, but pictured on an English muffin instead of Winter Park Biscuit Company's oat buttermilk biscuit. Cholula side not shown.",
+      "credit": "VegNews · 7-Eleven Canada plant-based breakfast sandwich (different restaurant)",
+      "sourceUrl": "https://vegnews.com/7-eleven-vegan-breakfast-sandwich-canada",
+      "kind": "representative-dish",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Compared dish ingredients, plating, and multiple web image candidates; documented visible differences from named restaurant's dish",
+      "needsPermissionReview": true,
+      "photoIdentityNote": "Not a verified photo of this restaurant's actual dish; do not use to infer dietary compliance."
+    },
+    "chopped-cheese": {
+      "url": "https://yummygusto.com/assets/images/1749326906593-js7tm1t1.webp",
+      "alt": "Representative plant-based chopped burger patty and melted vegan cheese on a toasted hoagie with chopped tomatoes and spring onion. WPBC uses lettuce, tomato, onions and mayo; exact house sandwich not photographed.",
+      "credit": "Yummy Gusto · Vegan Chopped Cheese Sandwich recipe (not WPBC)",
+      "sourceUrl": "https://yummygusto.com/recipes/vegan-chopped-cheese-sandwich",
+      "kind": "representative-dish",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Compared dish ingredients, plating, and multiple web image candidates; documented visible differences from named restaurant's dish",
+      "needsPermissionReview": true,
+      "photoIdentityNote": "Not a verified photo of this restaurant's actual dish; do not use to infer dietary compliance."
     }
   },
   "bombay-street-kitchen": {
