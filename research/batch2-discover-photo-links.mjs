@@ -2,6 +2,7 @@
 // Print title/alt/image URL for human review; does not mutate catalog.
 const sites = [
   ...["","menu/asian-street-food","menu/dine-in","menu/lunch","menu/curry","menu/fried-rice","menu/dinner","menu/malaysian","menu/takeout","menu/vegetarian","location/orlando","menu/noodles","menu/rice","menu/soup","food-menu"].map(x=>({id:"mamak:"+x,url:"https://www.mamakeats.com/"+x})),
+  {id:"mamak:store",url:"https://www.mamakeats.com/store/24331"},
   {id:"pigfloyds",url:"https://www.pigfloyds.com/"},
   {id:"pigfloyds-menu",url:"https://www.pigfloyds.com/menu"},
   {id:"lazy",url:"https://www.lazymoonpizza.com/menu"},
@@ -13,7 +14,7 @@ const attr=(tag,k)=>{const r=tag.match(new RegExp("(?:^|\\s)"+k+"\\s*=\\s*(?:\"(
 function run(s,id) {
  const arr = [...s.matchAll(/<img\b[^>]*>/gi)].map(m=>({index:m.index,tag:m[0]}));
  const out=[];
- for(const item of arr){const a=attr(item.tag,"alt"),src=attr(item.tag,"src")||attr(item.tag,"data-src"),set=attr(item.tag,"srcset"); const before=s.slice(Math.max(0,item.index-500),item.index).replace(/<[^>]*>/g," ").replace(/\s+/g," ").slice(-120);if(src||set){out.push({alt:a,src:src.slice(0,500),srcset:set.slice(0,150),before:before.slice(-85)});}}
+ for(const item of arr){const a=attr(item.tag,"alt"),src=attr(item.tag,"src")||attr(item.tag,"data-src"),set=attr(item.tag,"srcset"); const before=s.slice(Math.max(0,item.index-1200),item.index).replace(/<[^>]*>/g," ").replace(/\s+/g," ").slice(-120);if(src||set){out.push({alt:a,src:src.slice(0,500),srcset:set.slice(0,150),before:before.slice(-85)});}}
  console.log("SITE_IMAGES",JSON.stringify({site:id,count:out.length,images:out.slice(0,150)}));
 }
 for(const site of sites){
