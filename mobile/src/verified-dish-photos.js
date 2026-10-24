@@ -1,5 +1,4 @@
-// Restaurant menu images are keyed to items; photos may be official or clearly labeled representative.
-// No image certifies dietary safety. Third-party images require publication-rights verification.
+// Official product photos and distinctly labeled representative food imagery; images do not certify ingredient or allergen safety.
 export const verifiedDishPhotos = {
   "loving-hut-orlando": {
     "spring-rolls-4-rolls-cha-gio": {
@@ -365,10 +364,10 @@ export const verifiedDishPhotos = {
       "photoIdentityNote": "Third-party representative food photography, not the actual Loving Hut product"
     },
     "french-fries": {
-      "url": "https://cdn.freshplantpowered.com/static_images/fresh2x/1024x768/10050015d1frl.jpg?impolicy=imgopt&imwidth=720",
-      "alt": "Representative side bowl of golden French fries, full food visible. Not a Loving Hut Orlando serving.",
-      "credit": "Fresh Plant Powered · side fries photo",
-      "sourceUrl": "https://www.freshkitchens.ca/en/menu/lunch-dinner/i111133/side-fries.html",
+      "url": "https://storage.emenu.delivery/product/images/d9/pp/d9ppg-66llsetfallitgkwrbcixoohiu.jpg",
+      "alt": "Representative bowl of plain golden French fries on white background, fully visible; not an actual Loving Hut Orlando side.",
+      "credit": "More Vkusa · restaurant side fries photography",
+      "sourceUrl": "https://emenu.delivery/karaganda/restoran/more_vkusa_krg",
       "kind": "representative-food",
       "reviewedAt": "2026-10-24",
       "matchMethod": "Visually checked photographed food type against named side; not authenticated Loving Hut product",
@@ -2676,10 +2675,10 @@ export const verifiedDishPhotos = {
       "photoIdentityNote": "Illustrative photograph from another restaurant or editorial source. Not a genuine Hawkers product photo."
     },
     "curry-shrimp": {
-      "url": "https://c.ndtvimg.com/2023-10/qp9poet8_fatty-bao_625x300_23_October_23.jpg",
-      "alt": "Representative whole prawns in golden curry sauce with lemongrass and bell pepper. This is NOT Hawkers Po Po Lo's Shrimp Curry and does not show its jasmine rice.",
-      "credit": "NDTV Food · Fatty Bao prawn curry photograph",
-      "sourceUrl": "https://food.ndtv.com/food-drinks/these-are-the-best-restaurants-on-lavelle-road-bengaluru-4507376",
+      "url": "https://www.lolaakinmade.com/wp-content/uploads/2015/10/Mauritius_0818.jpg",
+      "alt": "Representative bowl of shrimp curry garnished with cilantro and green onions; reddish gravy and shrimp visible. NOT a photograph of Hawkers Po Po Lo's Shrimp Curry. The sauce, vegetables and plating differ.",
+      "credit": "Lola Akinmade · Mauritius shrimp curry photography",
+      "sourceUrl": "https://www.lolaakinmade.com/phototips/environmental-portraits-of-food/",
       "kind": "representative-food",
       "reviewedAt": "2026-10-24",
       "matchMethod": "Visually compared food type and primary protein with menu variant, differences explicitly disclosed; no authentic restaurant item photo available.",
