@@ -2031,10 +2031,10 @@ export const verifiedDishPhotos = {
     },
     "slice-tomato-base-includes-mozzarella": {
       "url": "https://assets-global.website-files.com/630bc362e064f47bd1baf171/6626b74351eb7af3df2bdbe6_IMG-7780%20adobe.jpg",
-      "alt": "Lazy Moon plain tomato sauce mozzarella cheese pizza slice on a metal tray, with a glass of beer behind it. Source is restaurant's official site, not verified as the specific customizable base.",
+      "alt": "Lazy Moon plain tomato sauce mozzarella cheese pizza slice on a metal tray, with a glass of beer behind it. Source is restaurant's official site, not verified as the specific customizable base. Not the precise customizable menu item configuration.",
       "credit": "Lazy Moon · official restaurant food photo",
       "sourceUrl": "https://www.lazymoonpizza.com/",
-      "kind": "official-menu-variant",
+      "kind": "menu-context",
       "reviewedAt": "2026-10-24",
       "matchMethod": "Visually compared the named dish and ingredient description with the retrieved source image and credited publication",
       "needsPermissionReview": true
@@ -2098,24 +2098,33 @@ export const verifiedDishPhotos = {
       "needsPermissionReview": true
     },
     "butter-chicken": {
-      "url": "https://burgerbeast.com/wp-content/uploads/2014/09/Pig-Floyds-BBQ-Butter-Chicken-Taco.jpg",
-      "alt": "Pig Floyd's Butter Chicken Taco with tikka masala-dressed chicken, jasmine rice, yogurt, jalapeño and pepitas in a flour tortilla; close cropped rather than a full taco.",
-      "credit": "Burger Beast · Pig Floyd's Butter Chicken Taco",
+      "url": "https://burgerbeast.com/wp-content/uploads/2014/09/pig-floyds-butter-chicken-tacos-orlando.jpg",
+      "alt": "Pig Floyd's Butter Chicken Tacos shown by Burger Beast, with chicken, tikka masala, jasmine rice, pepitas, yogurt drizzle, jalapeño and cilantro. Historically photographed at the original Pig Floyd's location, serving may differ at current Pigzza location.",
+      "credit": "Burger Beast · Pig Floyd's Butter Chicken Tacos image",
       "sourceUrl": "https://burgerbeast.com/pig-floyds-orlando/",
       "kind": "editorial-product",
       "reviewedAt": "2026-10-24",
-      "matchMethod": "Visually compared the named dish and ingredient description with the retrieved source image and credited publication",
+      "matchMethod": "Exact named dish photo in 2026 restaurant review; prior URL was a 404 and replaced with the source page image.",
       "needsPermissionReview": true
     },
     "banh-mi": {
       "url": "https://tb-static.uber.com/prod/image-proc/processed_images/a3ad60464ca89078489b3a2b284f9d60/7f4ae9ca0446cbc23e71d8d395a98428.jpeg",
-      "alt": "Pig Floyd's glazed BBQ pork bánh mì-style sandwich with pickled vegetables, jalapeño and creamy dressing. Actual selected meat can vary; pictured pork variation.",
+      "alt": "Pig Floyd's glazed BBQ pork bánh mì-style sandwich with pickled vegetables, jalapeño and creamy dressing. Actual selected meat can vary; pictured pork variation. Not the precise customizable menu item configuration.",
       "credit": "Pig Floyd's delivery menu · Uber Eats",
       "sourceUrl": "https://www.ubereats.com/store/pig-floyds-urban-bbq-orlando/xmRoSfELWz2Il6CW2h-1xQ",
-      "kind": "official-menu-variant",
+      "kind": "menu-context",
       "reviewedAt": "2026-10-24",
       "matchMethod": "Visually compared the named dish and ingredient description with the retrieved source image and credited publication",
       "needsPermissionReview": true
+    },
+    "plain-jane-brisket": {
+      "url": "https://burgerbeast.com/wp-content/uploads/2014/09/pig-floyds-plain-jane-sliced-brisket-sandwich.jpg",
+      "sourceUrl": "https://burgerbeast.com/pig-floyds-orlando/",
+      "alt": "Pig Floyd's original Plain Jane Sliced Brisket Sandwich, slices of smoked brisket on a lightly sweetened bun. This is the older presentation of the current Plain Jane Brisket.",
+      "credit": "Burger Beast · original Plain Jane Sliced Brisket photograph",
+      "kind": "editorial-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Explicit image caption identifies the exact named product; historical presentation."
     }
   },
   "woodlands-orlando": {
