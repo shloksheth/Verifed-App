@@ -256,7 +256,7 @@ function DishPhoto({ dish, restaurant, large = false }) {
       <Image
         source={{ uri: photo.url }}
         accessibilityLabel={photo.exact ? photo.alt : `${photo.alt}. Restaurant photography, not this specific menu item.`}
-        resizeMode={photo.exact ? "contain" : "cover"}
+        resizeMode="contain"
         style={dimensions}
         onError={() => setFailed(true)}
       />
