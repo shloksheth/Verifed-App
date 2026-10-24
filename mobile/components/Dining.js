@@ -12,6 +12,8 @@ import { assessDish } from "../src/domain";
 import { chainBrand } from "../src/chain-brand";
 import TacoBellMenu, { isTacoBell } from "./TacoBellMenu";
 import { menuPhotoFor, restaurantFoodPhoto } from "../src/menu-photos";
+import { localFoodAssets } from "../src/local-food-assets";
+import { localFoodPhotoMetadata } from "../src/local-food-photo-metadata";
 import { dietaryMenuStatus, groupMenu } from "../src/menu-filter";
 import { colors, s } from "../styles";
 import AllergenIcons, {
@@ -248,15 +250,19 @@ export function Assessment({ dish, state, detailed = false }) {
 // representative image from that restaurant. Imagery never influences allergies.
 function DishPhoto({ dish, restaurant, large = false }) {
   const [failedUrl, setFailedUrl] = useState(null);
-  const photo = menuPhotoFor(dish, restaurant);
+  const localAsset = localFoodAssets[dish.catalogKey];
+  const localMetadata = localFoodPhotoMetadata[dish.catalogKey];
+  const photo = localMetadata
+    ? { ...localMetadata, url: localMetadata.path, exact: !localMetadata.generated }
+    : menuPhotoFor(dish, restaurant);
   // Preserve each dish's entire photo; no aspect-ratio crop or stretching.
   if (!photo || failedUrl === photo.url) return null;
   return (
     <View style={large ? s.menuDishPhotoLargeFrame : s.menuDishPhotoFrame}>
       <View style={large ? s.menuDishPhotoLargeCanvas : s.menuDishPhotoCanvas}>
         <Image
-          source={{ uri: photo.url }}
-          accessibilityLabel={photo.alt || `Menu photo for ${dish.name}`}
+          source={localAsset || { uri: photo.url }}
+          accessibilityLabel={localMetadata?.alt || photo.alt || `Menu photo for ${dish.name}`}
           resizeMode="contain"
           style={large ? s.menuDishPhotoLarge : s.menuDishPhoto}
           onError={() => setFailedUrl(photo.url)}

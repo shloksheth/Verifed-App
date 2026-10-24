@@ -6,6 +6,8 @@ import {
 import { api } from "../src/api";
 import { dietaryMenuStatus, groupMenu } from "../src/menu-filter";
 import { menuPhotoFor } from "../src/menu-photos";
+import { localFoodAssets } from "../src/local-food-assets";
+import { localFoodPhotoMetadata } from "../src/local-food-photo-metadata";
 import AllergenIcons from "./AllergenIcons";
 
 const purple = "#6821B7";
@@ -25,16 +27,20 @@ export { isTacoBell };
 // URL has been positively matched to its own menu name and source.
 function FoodPhoto({ dish, restaurant, wide = false }) {
   const [failed, setFailed] = useState(false);
-  const photo = menuPhotoFor(dish, restaurant);
-  const valid = photo?.exact === true && !failed;
+  const localAsset = localFoodAssets[dish.catalogKey];
+  const localMetadata = localFoodPhotoMetadata[dish.catalogKey];
+  const photo = localMetadata
+    ? { ...localMetadata, exact: !localMetadata.generated }
+    : menuPhotoFor(dish, restaurant);
+  const valid = Boolean(localAsset || photo?.exact === true) && !failed;
   return (
     <View style={[look.photo, wide && look.photoWide]}>
       {valid ? (
         <Image
-          source={{ uri: photo.url }}
+          source={localAsset || { uri: photo.url }}
           style={look.photoFill}
           resizeMode="contain"
-          accessibilityLabel={photo.alt || dish.name}
+          accessibilityLabel={localMetadata?.alt || photo.alt || dish.name}
           onError={() => setFailed(true)}
         />
       ) : (

@@ -6,3 +6,6 @@ __pycache__/
 *.pyc
 web/dist/
 mobile/dist*/
+tmp/
+research/photo-candidates/
+research/generated-photo-candidates/

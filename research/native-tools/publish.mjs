@@ -3,6 +3,7 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { createHash } from "node:crypto";
+import { assetMimeTypes, imageAssetPaths } from "./assets.mjs";
 
 const root = path.resolve(
   path.dirname(fileURLToPath(import.meta.url)),
@@ -13,13 +14,16 @@ const manifest = JSON.parse(
 );
 const release = JSON.parse(await fs.readFile(path.join(root, "release.json"), "utf8"));
 const files = {};
+const assetHashes = {};
 async function addFile(relative) {
   const bytes = await fs.readFile(path.join(root, relative));
-  if (relative.endsWith(".png")) {
+  const mimeType = assetMimeTypes[path.extname(relative).toLowerCase()];
+  if (mimeType) {
     files[relative] = {
       type: "ASSET",
-      contents: new Blob([bytes], { type: "image/png" }),
+      contents: new Blob([bytes], { type: mimeType }),
     };
+    assetHashes[relative] = createHash("sha256").update(bytes).digest("hex");
     return;
   }
   const contents = bytes.toString("utf8");
@@ -35,7 +39,7 @@ for (const directory of ["components", "src"]) {
   for (const name of (await fs.readdir(path.join(root, directory))).sort())
     if (name.endsWith(".js") && !(directory === "components" && ["Scanner.js", "Workspace.js", "Requests.js"].includes(name))) await addFile(`${directory}/${name}`);
 }
-await addFile("assets/verifed-mark.png");
+for (const relative of await imageAssetPaths(root)) await addFile(relative);
 const dependencies = Object.fromEntries(
   Object.entries(manifest.dependencies)
     .filter(
@@ -106,6 +110,7 @@ try {
     publishedAt: new Date().toISOString(),
     sdkVersion: state.sdkVersion,
     files: Object.keys(files),
+    assetHashes,
     sourceHash: createHash("sha256")
       .update(
         JSON.stringify({
@@ -113,11 +118,7 @@ try {
             Object.entries(files).filter(([, value]) => value.type === "CODE"),
           ),
           dependencies: state.dependencies,
-          logo: createHash("sha256")
-            .update(
-              await fs.readFile(path.join(root, "assets/verifed-mark.png")),
-            )
-            .digest("hex"),
+          assets: assetHashes,
         }),
       )
       .digest("hex"),
