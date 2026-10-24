@@ -1,5 +1,4 @@
-// Menu item photography with credit and explicit labels for other-branch/representative images.
-// Images do not certify allergy safety or grant reproduction rights.
+// First-party product images are keyed to each location and food item. Photo not allergen advice.
 export const verifiedDishPhotos = {
   "loving-hut-orlando": {
     "spring-rolls-4-rolls-cha-gio": {
@@ -327,6 +326,123 @@ export const verifiedDishPhotos = {
       "alt": "Official Taco Bell Cantina Chicken Bowl product photo",
       "credit": "Taco Bell · official menu",
       "sourceUrl": "https://www.tacobell.com/food/bowls"
+    },
+    "cheesy-toasted-breakfast-burrito-bacon": {
+      "url": "https://www.tacobell.com/images/30179_cheesy_toasted_burrito_bacon_269x269.jpg",
+      "alt": "Taco Bell Cheesy Toasted Breakfast Burrito Bacon, official Taco Bell menu product image, complete product in frame",
+      "credit": "Taco Bell · official online product menu",
+      "sourceUrl": "https://www.tacobell.com/food/breakfast",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Matched product name to image alt text and direct image src on official product category menu."
+    },
+    "cheesy-toasted-breakfast-burrito-potato": {
+      "url": "https://www.tacobell.com/images/30181_cheesy_toasted_burrito_fiesta_potato_269x269.jpg",
+      "alt": "Taco Bell Cheesy Toasted Breakfast Burrito Potato, official Taco Bell menu product image, complete product in frame",
+      "credit": "Taco Bell · official online product menu",
+      "sourceUrl": "https://www.tacobell.com/food/breakfast",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Matched product name to image alt text and direct image src on official product category menu."
+    },
+    "grande-toasted-breakfast-burrito-steak": {
+      "url": "https://www.tacobell.com/images/30187_grande_toasted_burrito_steak_269x269.jpg",
+      "alt": "Taco Bell Grande Toasted Breakfast Burrito Steak, official Taco Bell menu product image, complete product in frame",
+      "credit": "Taco Bell · official online product menu",
+      "sourceUrl": "https://www.tacobell.com/food/breakfast",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Matched product name to image alt text and direct image src on official product category menu."
+    },
+    "grande-toasted-breakfast-burrito-bacon": {
+      "url": "https://www.tacobell.com/images/30185_grande_toasted_burrito_bacon_269x269.jpg",
+      "alt": "Taco Bell Grande Toasted Breakfast Burrito Bacon, official Taco Bell menu product image, complete product in frame",
+      "credit": "Taco Bell · official online product menu",
+      "sourceUrl": "https://www.tacobell.com/food/breakfast",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Matched product name to image alt text and direct image src on official product category menu."
+    },
+    "breakfast-quesadilla-bacon": {
+      "url": "https://www.tacobell.com/images/30151_breakfast_quesadilla_269x269.jpg",
+      "alt": "Taco Bell Breakfast Quesadilla Bacon, official Taco Bell menu product image, complete product in frame",
+      "credit": "Taco Bell · official online product menu",
+      "sourceUrl": "https://www.tacobell.com/food/breakfast",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Matched product name to image alt text and direct image src on official product category menu."
+    },
+    "breakfast-quesadilla-steak": {
+      "url": "https://www.tacobell.com/images/30153_breakfast_quesadilla_steak_269x269.jpg",
+      "alt": "Taco Bell Breakfast Quesadilla Steak, official Taco Bell menu product image, complete product in frame",
+      "credit": "Taco Bell · official online product menu",
+      "sourceUrl": "https://www.tacobell.com/food/breakfast",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Matched product name to image alt text and direct image src on official product category menu."
+    },
+    "breakfast-california-crunchwrap": {
+      "url": "https://www.tacobell.com/images/30093_breakfast_crunchwrap_california_269x269.jpg",
+      "alt": "Taco Bell Breakfast California Crunchwrap, official Taco Bell menu product image, complete product in frame",
+      "credit": "Taco Bell · official online product menu",
+      "sourceUrl": "https://www.tacobell.com/food/breakfast",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Matched product name to image alt text and direct image src on official product category menu."
+    },
+    "breakfast-crunchwrap-bacon": {
+      "url": "https://www.tacobell.com/images/30029_breakfast_crunchwrap_269x269.jpg",
+      "alt": "Taco Bell Breakfast Crunchwrap Bacon, official Taco Bell menu product image, complete product in frame",
+      "credit": "Taco Bell · official online product menu",
+      "sourceUrl": "https://www.tacobell.com/food/breakfast",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Matched product name to image alt text and direct image src on official product category menu."
+    },
+    "breakfast-crunchwrap-combo": {
+      "url": "https://www.tacobell.com/images/32031_breakfast_crunchwrap_combo_269x269.jpg",
+      "alt": "Taco Bell Breakfast Crunchwrap Combo, official Taco Bell menu product image, complete product in frame",
+      "credit": "Taco Bell · official online product menu",
+      "sourceUrl": "https://www.tacobell.com/food/breakfast",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Matched product name to image alt text and direct image src on official product category menu."
+    },
+    "hash-brown": {
+      "url": "https://www.tacobell.com/images/30017_hash_brown_269x269.jpg",
+      "alt": "Taco Bell Hash Brown, official Taco Bell menu product image, complete product in frame",
+      "credit": "Taco Bell · official online product menu",
+      "sourceUrl": "https://www.tacobell.com/food/breakfast",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Matched product name to image alt text and direct image src on official product category menu."
+    },
+    "breakfast-salsa": {
+      "url": "https://www.tacobell.com/images/2633_breakfast_salsa_269x269.jpg",
+      "alt": "Taco Bell Breakfast Salsa, official Taco Bell menu product image, complete product in frame",
+      "credit": "Taco Bell · official online product menu",
+      "sourceUrl": "https://www.tacobell.com/food/breakfast",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Matched product name to image alt text and direct image src on official product category menu."
+    },
+    "nachos-bellgrande": {
+      "url": "https://www.tacobell.com/images/22502_nachos_bellgrande_269x269.jpg",
+      "alt": "Taco Bell Nachos BellGrande, official Taco Bell menu product image, complete product in frame",
+      "credit": "Taco Bell · official online product menu",
+      "sourceUrl": "https://www.tacobell.com/food/nachos",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Matched product name to image alt text and direct image src on official product category menu."
+    },
+    "chips-and-nacho-supreme-dip": {
+      "url": "https://www.tacobell.com/images/25509_chips_and_nacho_supreme_dip_new_269x269.jpg",
+      "alt": "Taco Bell Chips and Nacho Supreme Dip, official Taco Bell menu product image, complete product in frame",
+      "credit": "Taco Bell · official online product menu",
+      "sourceUrl": "https://www.tacobell.com/food/nachos",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Matched product name to image alt text and direct image src on official product category menu."
     }
   },
   "taco-bell-east-colonial": {
@@ -335,6 +451,123 @@ export const verifiedDishPhotos = {
       "alt": "Official Taco Bell Cantina Chicken Bowl product photo",
       "credit": "Taco Bell · official menu",
       "sourceUrl": "https://www.tacobell.com/food/bowls"
+    },
+    "cheesy-toasted-breakfast-burrito-bacon": {
+      "url": "https://www.tacobell.com/images/30179_cheesy_toasted_burrito_bacon_269x269.jpg",
+      "alt": "Taco Bell Cheesy Toasted Breakfast Burrito Bacon, official Taco Bell menu product image, complete product in frame",
+      "credit": "Taco Bell · official online product menu",
+      "sourceUrl": "https://www.tacobell.com/food/breakfast",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Matched product name to image alt text and direct image src on official product category menu."
+    },
+    "cheesy-toasted-breakfast-burrito-potato": {
+      "url": "https://www.tacobell.com/images/30181_cheesy_toasted_burrito_fiesta_potato_269x269.jpg",
+      "alt": "Taco Bell Cheesy Toasted Breakfast Burrito Potato, official Taco Bell menu product image, complete product in frame",
+      "credit": "Taco Bell · official online product menu",
+      "sourceUrl": "https://www.tacobell.com/food/breakfast",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Matched product name to image alt text and direct image src on official product category menu."
+    },
+    "grande-toasted-breakfast-burrito-steak": {
+      "url": "https://www.tacobell.com/images/30187_grande_toasted_burrito_steak_269x269.jpg",
+      "alt": "Taco Bell Grande Toasted Breakfast Burrito Steak, official Taco Bell menu product image, complete product in frame",
+      "credit": "Taco Bell · official online product menu",
+      "sourceUrl": "https://www.tacobell.com/food/breakfast",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Matched product name to image alt text and direct image src on official product category menu."
+    },
+    "grande-toasted-breakfast-burrito-bacon": {
+      "url": "https://www.tacobell.com/images/30185_grande_toasted_burrito_bacon_269x269.jpg",
+      "alt": "Taco Bell Grande Toasted Breakfast Burrito Bacon, official Taco Bell menu product image, complete product in frame",
+      "credit": "Taco Bell · official online product menu",
+      "sourceUrl": "https://www.tacobell.com/food/breakfast",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Matched product name to image alt text and direct image src on official product category menu."
+    },
+    "breakfast-quesadilla-bacon": {
+      "url": "https://www.tacobell.com/images/30151_breakfast_quesadilla_269x269.jpg",
+      "alt": "Taco Bell Breakfast Quesadilla Bacon, official Taco Bell menu product image, complete product in frame",
+      "credit": "Taco Bell · official online product menu",
+      "sourceUrl": "https://www.tacobell.com/food/breakfast",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Matched product name to image alt text and direct image src on official product category menu."
+    },
+    "breakfast-quesadilla-steak": {
+      "url": "https://www.tacobell.com/images/30153_breakfast_quesadilla_steak_269x269.jpg",
+      "alt": "Taco Bell Breakfast Quesadilla Steak, official Taco Bell menu product image, complete product in frame",
+      "credit": "Taco Bell · official online product menu",
+      "sourceUrl": "https://www.tacobell.com/food/breakfast",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Matched product name to image alt text and direct image src on official product category menu."
+    },
+    "breakfast-california-crunchwrap": {
+      "url": "https://www.tacobell.com/images/30093_breakfast_crunchwrap_california_269x269.jpg",
+      "alt": "Taco Bell Breakfast California Crunchwrap, official Taco Bell menu product image, complete product in frame",
+      "credit": "Taco Bell · official online product menu",
+      "sourceUrl": "https://www.tacobell.com/food/breakfast",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Matched product name to image alt text and direct image src on official product category menu."
+    },
+    "breakfast-crunchwrap-bacon": {
+      "url": "https://www.tacobell.com/images/30029_breakfast_crunchwrap_269x269.jpg",
+      "alt": "Taco Bell Breakfast Crunchwrap Bacon, official Taco Bell menu product image, complete product in frame",
+      "credit": "Taco Bell · official online product menu",
+      "sourceUrl": "https://www.tacobell.com/food/breakfast",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Matched product name to image alt text and direct image src on official product category menu."
+    },
+    "breakfast-crunchwrap-combo": {
+      "url": "https://www.tacobell.com/images/32031_breakfast_crunchwrap_combo_269x269.jpg",
+      "alt": "Taco Bell Breakfast Crunchwrap Combo, official Taco Bell menu product image, complete product in frame",
+      "credit": "Taco Bell · official online product menu",
+      "sourceUrl": "https://www.tacobell.com/food/breakfast",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Matched product name to image alt text and direct image src on official product category menu."
+    },
+    "hash-brown": {
+      "url": "https://www.tacobell.com/images/30017_hash_brown_269x269.jpg",
+      "alt": "Taco Bell Hash Brown, official Taco Bell menu product image, complete product in frame",
+      "credit": "Taco Bell · official online product menu",
+      "sourceUrl": "https://www.tacobell.com/food/breakfast",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Matched product name to image alt text and direct image src on official product category menu."
+    },
+    "breakfast-salsa": {
+      "url": "https://www.tacobell.com/images/2633_breakfast_salsa_269x269.jpg",
+      "alt": "Taco Bell Breakfast Salsa, official Taco Bell menu product image, complete product in frame",
+      "credit": "Taco Bell · official online product menu",
+      "sourceUrl": "https://www.tacobell.com/food/breakfast",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Matched product name to image alt text and direct image src on official product category menu."
+    },
+    "nachos-bellgrande": {
+      "url": "https://www.tacobell.com/images/22502_nachos_bellgrande_269x269.jpg",
+      "alt": "Taco Bell Nachos BellGrande, official Taco Bell menu product image, complete product in frame",
+      "credit": "Taco Bell · official online product menu",
+      "sourceUrl": "https://www.tacobell.com/food/nachos",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Matched product name to image alt text and direct image src on official product category menu."
+    },
+    "chips-and-nacho-supreme-dip": {
+      "url": "https://www.tacobell.com/images/25509_chips_and_nacho_supreme_dip_new_269x269.jpg",
+      "alt": "Taco Bell Chips and Nacho Supreme Dip, official Taco Bell menu product image, complete product in frame",
+      "credit": "Taco Bell · official online product menu",
+      "sourceUrl": "https://www.tacobell.com/food/nachos",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Matched product name to image alt text and direct image src on official product category menu."
     }
   },
   "taco-bell-orlando-west": {
@@ -343,6 +576,123 @@ export const verifiedDishPhotos = {
       "alt": "Official Taco Bell Cantina Chicken Bowl product photo",
       "credit": "Taco Bell · official menu",
       "sourceUrl": "https://www.tacobell.com/food/bowls"
+    },
+    "cheesy-toasted-breakfast-burrito-bacon": {
+      "url": "https://www.tacobell.com/images/30179_cheesy_toasted_burrito_bacon_269x269.jpg",
+      "alt": "Taco Bell Cheesy Toasted Breakfast Burrito Bacon, official Taco Bell menu product image, complete product in frame",
+      "credit": "Taco Bell · official online product menu",
+      "sourceUrl": "https://www.tacobell.com/food/breakfast",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Matched product name to image alt text and direct image src on official product category menu."
+    },
+    "cheesy-toasted-breakfast-burrito-potato": {
+      "url": "https://www.tacobell.com/images/30181_cheesy_toasted_burrito_fiesta_potato_269x269.jpg",
+      "alt": "Taco Bell Cheesy Toasted Breakfast Burrito Potato, official Taco Bell menu product image, complete product in frame",
+      "credit": "Taco Bell · official online product menu",
+      "sourceUrl": "https://www.tacobell.com/food/breakfast",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Matched product name to image alt text and direct image src on official product category menu."
+    },
+    "grande-toasted-breakfast-burrito-steak": {
+      "url": "https://www.tacobell.com/images/30187_grande_toasted_burrito_steak_269x269.jpg",
+      "alt": "Taco Bell Grande Toasted Breakfast Burrito Steak, official Taco Bell menu product image, complete product in frame",
+      "credit": "Taco Bell · official online product menu",
+      "sourceUrl": "https://www.tacobell.com/food/breakfast",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Matched product name to image alt text and direct image src on official product category menu."
+    },
+    "grande-toasted-breakfast-burrito-bacon": {
+      "url": "https://www.tacobell.com/images/30185_grande_toasted_burrito_bacon_269x269.jpg",
+      "alt": "Taco Bell Grande Toasted Breakfast Burrito Bacon, official Taco Bell menu product image, complete product in frame",
+      "credit": "Taco Bell · official online product menu",
+      "sourceUrl": "https://www.tacobell.com/food/breakfast",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Matched product name to image alt text and direct image src on official product category menu."
+    },
+    "breakfast-quesadilla-bacon": {
+      "url": "https://www.tacobell.com/images/30151_breakfast_quesadilla_269x269.jpg",
+      "alt": "Taco Bell Breakfast Quesadilla Bacon, official Taco Bell menu product image, complete product in frame",
+      "credit": "Taco Bell · official online product menu",
+      "sourceUrl": "https://www.tacobell.com/food/breakfast",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Matched product name to image alt text and direct image src on official product category menu."
+    },
+    "breakfast-quesadilla-steak": {
+      "url": "https://www.tacobell.com/images/30153_breakfast_quesadilla_steak_269x269.jpg",
+      "alt": "Taco Bell Breakfast Quesadilla Steak, official Taco Bell menu product image, complete product in frame",
+      "credit": "Taco Bell · official online product menu",
+      "sourceUrl": "https://www.tacobell.com/food/breakfast",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Matched product name to image alt text and direct image src on official product category menu."
+    },
+    "breakfast-california-crunchwrap": {
+      "url": "https://www.tacobell.com/images/30093_breakfast_crunchwrap_california_269x269.jpg",
+      "alt": "Taco Bell Breakfast California Crunchwrap, official Taco Bell menu product image, complete product in frame",
+      "credit": "Taco Bell · official online product menu",
+      "sourceUrl": "https://www.tacobell.com/food/breakfast",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Matched product name to image alt text and direct image src on official product category menu."
+    },
+    "breakfast-crunchwrap-bacon": {
+      "url": "https://www.tacobell.com/images/30029_breakfast_crunchwrap_269x269.jpg",
+      "alt": "Taco Bell Breakfast Crunchwrap Bacon, official Taco Bell menu product image, complete product in frame",
+      "credit": "Taco Bell · official online product menu",
+      "sourceUrl": "https://www.tacobell.com/food/breakfast",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Matched product name to image alt text and direct image src on official product category menu."
+    },
+    "breakfast-crunchwrap-combo": {
+      "url": "https://www.tacobell.com/images/32031_breakfast_crunchwrap_combo_269x269.jpg",
+      "alt": "Taco Bell Breakfast Crunchwrap Combo, official Taco Bell menu product image, complete product in frame",
+      "credit": "Taco Bell · official online product menu",
+      "sourceUrl": "https://www.tacobell.com/food/breakfast",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Matched product name to image alt text and direct image src on official product category menu."
+    },
+    "hash-brown": {
+      "url": "https://www.tacobell.com/images/30017_hash_brown_269x269.jpg",
+      "alt": "Taco Bell Hash Brown, official Taco Bell menu product image, complete product in frame",
+      "credit": "Taco Bell · official online product menu",
+      "sourceUrl": "https://www.tacobell.com/food/breakfast",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Matched product name to image alt text and direct image src on official product category menu."
+    },
+    "breakfast-salsa": {
+      "url": "https://www.tacobell.com/images/2633_breakfast_salsa_269x269.jpg",
+      "alt": "Taco Bell Breakfast Salsa, official Taco Bell menu product image, complete product in frame",
+      "credit": "Taco Bell · official online product menu",
+      "sourceUrl": "https://www.tacobell.com/food/breakfast",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Matched product name to image alt text and direct image src on official product category menu."
+    },
+    "nachos-bellgrande": {
+      "url": "https://www.tacobell.com/images/22502_nachos_bellgrande_269x269.jpg",
+      "alt": "Taco Bell Nachos BellGrande, official Taco Bell menu product image, complete product in frame",
+      "credit": "Taco Bell · official online product menu",
+      "sourceUrl": "https://www.tacobell.com/food/nachos",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Matched product name to image alt text and direct image src on official product category menu."
+    },
+    "chips-and-nacho-supreme-dip": {
+      "url": "https://www.tacobell.com/images/25509_chips_and_nacho_supreme_dip_new_269x269.jpg",
+      "alt": "Taco Bell Chips and Nacho Supreme Dip, official Taco Bell menu product image, complete product in frame",
+      "credit": "Taco Bell · official online product menu",
+      "sourceUrl": "https://www.tacobell.com/food/nachos",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Matched product name to image alt text and direct image src on official product category menu."
     }
   },
   "chipotle-south-orange": {
