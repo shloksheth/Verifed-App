@@ -660,6 +660,12 @@ export const verifiedDishPhotos = {
       "alt": "Nasi Goreng Indonesia at Mamak: seasoned fried rice with shrimp, shallots and a fried egg",
       "credit": "Mamak Asian Street Food · official website image",
       "sourceUrl": "https://mamakeats.com/"
+    },
+    "pad-thai": {
+      "url": "https://static.spotapps.co/spots/1e/9e098b7fae4f298627739a6e6bc908/full",
+      "alt": "Mamak Pad Thai with shrimp, rice noodles, bean sprouts, crushed peanuts and lime, from its official restaurant photograph",
+      "credit": "Mamak Asian Street Food · official website",
+      "sourceUrl": "https://mamakeats.com/"
     }
   },
   "yellow-dog-eats-gotha": {
