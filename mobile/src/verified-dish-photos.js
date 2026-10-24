@@ -1550,6 +1550,166 @@ export const verifiedDishPhotos = {
       "reviewedAt": "2026-10-24",
       "matchMethod": "Visually compared the named dish and ingredient description with the retrieved source image and credited publication",
       "needsPermissionReview": true
+    },
+    "malaysian-coconut-kari-w-chicken-potatoes": {
+      "url": "https://image-cdn.chowlyinc.com/650%2Cfit/https%3A%2F%2Fs3.amazonaws.com%2Ftoasttab%2Fmenu_service%2Frestaurants%2Fed8b95f2-d641-4127-a0c9-772fbe849c54%2FMenuItem%2Fff6c072c-e9c8-4ede-aaa6-35627f6dc2a0.jpg",
+      "alt": "Malaysian Coconut Kari w/ chicken + potatoes as pictured on the Mamak Asian Street Food official menu",
+      "credit": "Mamak Asian Street Food · official ordering menu photograph",
+      "sourceUrl": "https://www.mamakeats.com/menu/malaysian",
+      "kind": "official-product",
+      "matchMethod": "Explicit matching menu title and corresponding image alt on the first-party Mamak ordering page; visual verification and permission review outstanding",
+      "reviewedAt": "2026-10-24",
+      "needsPermissionReview": true
+    },
+    "yangzhou-fried-rice": {
+      "url": "https://image-cdn.chowlyinc.com/650%2Cfit/https%3A%2F%2Fs3.amazonaws.com%2Ftoasttab%2Fmenu_service%2Frestaurants%2Fed8b95f2-d641-4127-a0c9-772fbe849c54%2FMenuItem%2Fccf48e05-f4b6-4398-9d6b-f11064d2b495.jpg",
+      "alt": "Yangzhou Fried Rice as pictured on the Mamak Asian Street Food official menu",
+      "credit": "Mamak Asian Street Food · official ordering menu photograph",
+      "sourceUrl": "https://www.mamakeats.com/menu/malaysian",
+      "kind": "official-product",
+      "matchMethod": "Explicit matching menu title and corresponding image alt on the first-party Mamak ordering page; visual verification and permission review outstanding",
+      "reviewedAt": "2026-10-24",
+      "needsPermissionReview": true
+    },
+    "mamak-nasi-goreng": {
+      "url": "https://image-cdn.chowlyinc.com/650%2Cfit/https%3A%2F%2Fs3.amazonaws.com%2Ftoasttab%2Fmenu_service%2Frestaurants%2Fed8b95f2-d641-4127-a0c9-772fbe849c54%2FMenuItem%2F9d1c2647-436a-4191-a1e5-5662acc4d8d8.jpg",
+      "alt": "Mamak Nasi Goreng as pictured on the Mamak Asian Street Food official menu",
+      "credit": "Mamak Asian Street Food · official ordering menu photograph",
+      "sourceUrl": "https://www.mamakeats.com/menu/malaysian",
+      "kind": "official-product",
+      "matchMethod": "Explicit matching menu title and corresponding image alt on the first-party Mamak ordering page; visual verification and permission review outstanding",
+      "reviewedAt": "2026-10-24",
+      "needsPermissionReview": true
+    },
+    "basil-fried-rice": {
+      "url": "https://image-cdn.chowlyinc.com/650%2Cfit/https%3A%2F%2Fs3.amazonaws.com%2Ftoasttab%2Fmenu_service%2Frestaurants%2Fed8b95f2-d641-4127-a0c9-772fbe849c54%2FMenuItem%2Ffb865728-8f12-40bd-bb01-6cbd4d5785bd.jpg",
+      "alt": "Basil Fried Rice as pictured on the Mamak Asian Street Food official menu",
+      "credit": "Mamak Asian Street Food · official ordering menu photograph",
+      "sourceUrl": "https://www.mamakeats.com/menu/malaysian",
+      "kind": "official-product",
+      "matchMethod": "Explicit matching menu title and corresponding image alt on the first-party Mamak ordering page; visual verification and permission review outstanding",
+      "reviewedAt": "2026-10-24",
+      "needsPermissionReview": true
+    },
+    "malaysian-coconut-kari-w-tofu-veggies": {
+      "url": "https://image-cdn.chowlyinc.com/650%2Cfit/https%3A%2F%2Fs3.amazonaws.com%2Ftoasttab%2Fmenu_service%2Frestaurants%2Fed8b95f2-d641-4127-a0c9-772fbe849c54%2FMenuItem%2F211ebb99-5464-40dc-88eb-f4fc66d1810a.jpg",
+      "alt": "Malaysian Coconut Kari w/ tofu + veggies as pictured on the Mamak Asian Street Food official menu",
+      "credit": "Mamak Asian Street Food · official ordering menu photograph",
+      "sourceUrl": "https://www.mamakeats.com/menu/malaysian",
+      "kind": "official-product",
+      "matchMethod": "Explicit matching menu title and corresponding image alt on the first-party Mamak ordering page; visual verification and permission review outstanding",
+      "reviewedAt": "2026-10-24",
+      "needsPermissionReview": true
+    },
+    "roast-duck-fried-rice": {
+      "url": "https://image-cdn.chowlyinc.com/650%2Cfit/https%3A%2F%2Fs3.amazonaws.com%2Ftoasttab%2Fmenu_service%2Frestaurants%2Fed8b95f2-d641-4127-a0c9-772fbe849c54%2FMenuItem%2Ff6815dd8-dbe2-4734-93b2-64987d696088.jpg",
+      "alt": "Roast Duck Fried Rice as pictured on the Mamak Asian Street Food official menu",
+      "credit": "Mamak Asian Street Food · official ordering menu photograph",
+      "sourceUrl": "https://www.mamakeats.com/menu/malaysian",
+      "kind": "official-product",
+      "matchMethod": "Explicit matching menu title and corresponding image alt on the first-party Mamak ordering page; visual verification and permission review outstanding",
+      "reviewedAt": "2026-10-24",
+      "needsPermissionReview": true
+    },
+    "mamak-wings-5": {
+      "url": "https://image-cdn.chowlyinc.com/650%2Cfit/https%3A%2F%2Fs3.amazonaws.com%2Ftoasttab%2Fmenu_service%2Frestaurants%2Fed8b95f2-d641-4127-a0c9-772fbe849c54%2FMenuItem%2F97de2100-e38b-4506-b579-244254304e26.jpg",
+      "alt": "Mamak Wings (5) as pictured on the Mamak Asian Street Food official menu",
+      "credit": "Mamak Asian Street Food · official ordering menu photograph",
+      "sourceUrl": "https://www.mamakeats.com/menu/dinner",
+      "kind": "official-product",
+      "matchMethod": "Explicit matching menu title and corresponding image alt on the first-party Mamak ordering page; visual verification and permission review outstanding",
+      "reviewedAt": "2026-10-24",
+      "needsPermissionReview": true
+    },
+    "satay-skewers-3": {
+      "url": "https://image-cdn.chowlyinc.com/650%2Cfit/https%3A%2F%2Fs3.amazonaws.com%2Ftoasttab%2Fmenu_service%2Frestaurants%2Fed8b95f2-d641-4127-a0c9-772fbe849c54%2FMenuItem%2F5ca751d6-80fa-43f5-9fdd-e2e46ed5cf49.jpg",
+      "alt": "Satay Skewers (3) as pictured on the Mamak Asian Street Food official menu",
+      "credit": "Mamak Asian Street Food · official ordering menu photograph",
+      "sourceUrl": "https://www.mamakeats.com/menu/dinner",
+      "kind": "official-product",
+      "matchMethod": "Explicit matching menu title and corresponding image alt on the first-party Mamak ordering page; visual verification and permission review outstanding",
+      "reviewedAt": "2026-10-24",
+      "needsPermissionReview": true
+    },
+    "mamak-wings-10": {
+      "url": "https://image-cdn.chowlyinc.com/650%2Cfit/https%3A%2F%2Fs3.amazonaws.com%2Ftoasttab%2Fmenu_service%2Frestaurants%2Fed8b95f2-d641-4127-a0c9-772fbe849c54%2FMenuItem%2Fb0a992a8-872b-4dc4-ac60-ab6f5228324e.jpg",
+      "alt": "Mamak Wings (10) as pictured on the Mamak Asian Street Food official menu",
+      "credit": "Mamak Asian Street Food · official ordering menu photograph",
+      "sourceUrl": "https://www.mamakeats.com/menu/dinner",
+      "kind": "official-product",
+      "matchMethod": "Explicit matching menu title and corresponding image alt on the first-party Mamak ordering page; visual verification and permission review outstanding",
+      "reviewedAt": "2026-10-24",
+      "needsPermissionReview": true
+    },
+    "bulgogi-skewers-3": {
+      "url": "https://image-cdn.chowlyinc.com/650%2Cfit/https%3A%2F%2Fs3.amazonaws.com%2Ftoasttab%2Fmenu_service%2Frestaurants%2Fed8b95f2-d641-4127-a0c9-772fbe849c54%2FMenuItem%2Fdb9903b4-2bc1-46de-8bd9-bd817ee37dcb.jpg",
+      "alt": "Bulgogi Skewers (3) as pictured on the Mamak Asian Street Food official menu",
+      "credit": "Mamak Asian Street Food · official ordering menu photograph",
+      "sourceUrl": "https://www.mamakeats.com/menu/dinner",
+      "kind": "official-product",
+      "matchMethod": "Explicit matching menu title and corresponding image alt on the first-party Mamak ordering page; visual verification and permission review outstanding",
+      "reviewedAt": "2026-10-24",
+      "needsPermissionReview": true
+    },
+    "bulgogi-skewers-6": {
+      "url": "https://image-cdn.chowlyinc.com/650%2Cfit/https%3A%2F%2Fs3.amazonaws.com%2Ftoasttab%2Fmenu_service%2Frestaurants%2Fed8b95f2-d641-4127-a0c9-772fbe849c54%2FMenuItem%2F8f049e4c-8296-47ff-8f00-f66811eb2e96.jpg",
+      "alt": "Bulgogi Skewers (6) as pictured on the Mamak Asian Street Food official menu",
+      "credit": "Mamak Asian Street Food · official ordering menu photograph",
+      "sourceUrl": "https://www.mamakeats.com/menu/dinner",
+      "kind": "official-product",
+      "matchMethod": "Explicit matching menu title and corresponding image alt on the first-party Mamak ordering page; visual verification and permission review outstanding",
+      "reviewedAt": "2026-10-24",
+      "needsPermissionReview": true
+    },
+    "wonton-mee": {
+      "url": "https://image-cdn.chowlyinc.com/650%2Cfit/https%3A%2F%2Fs3.amazonaws.com%2Ftoasttab%2Fmenu_service%2Frestaurants%2Fed8b95f2-d641-4127-a0c9-772fbe849c54%2FMenuItem%2F7dea95b2-e915-4935-a691-77d52bb866e2.jpg",
+      "alt": "Wonton Mee as pictured on the Mamak Asian Street Food official menu",
+      "credit": "Mamak Asian Street Food · official ordering menu photograph",
+      "sourceUrl": "https://www.mamakeats.com/location/orlando",
+      "kind": "official-product",
+      "matchMethod": "Explicit matching menu title and corresponding image alt on the first-party Mamak ordering page; visual verification and permission review outstanding",
+      "reviewedAt": "2026-10-24",
+      "needsPermissionReview": true
+    },
+    "prawn-mee": {
+      "url": "https://image-cdn.chowlyinc.com/650%2Cfit/https%3A%2F%2Fs3.amazonaws.com%2Ftoasttab%2Fmenu_service%2Frestaurants%2Fed8b95f2-d641-4127-a0c9-772fbe849c54%2FMenuItem%2F589068e3-810b-406f-9b7f-87d330d15260.jpg",
+      "alt": "Prawn Mee as pictured on the Mamak Asian Street Food official menu",
+      "credit": "Mamak Asian Street Food · official ordering menu photograph",
+      "sourceUrl": "https://www.mamakeats.com/location/orlando",
+      "kind": "official-product",
+      "matchMethod": "Explicit matching menu title and corresponding image alt on the first-party Mamak ordering page; visual verification and permission review outstanding",
+      "reviewedAt": "2026-10-24",
+      "needsPermissionReview": true
+    },
+    "roast-duck-noodle-soup": {
+      "url": "https://image-cdn.chowlyinc.com/650%2Cfit/https%3A%2F%2Fs3.amazonaws.com%2Ftoasttab%2Fmenu_service%2Frestaurants%2Fed8b95f2-d641-4127-a0c9-772fbe849c54%2FMenuItem%2F364e503d-dcb8-4f70-8f05-09aa5a7ca2b2.jpg",
+      "alt": "Roast Duck Noodle Soup as pictured on the Mamak Asian Street Food official menu",
+      "credit": "Mamak Asian Street Food · official ordering menu photograph",
+      "sourceUrl": "https://www.mamakeats.com/location/orlando",
+      "kind": "official-product",
+      "matchMethod": "Explicit matching menu title and corresponding image alt on the first-party Mamak ordering page; visual verification and permission review outstanding",
+      "reviewedAt": "2026-10-24",
+      "needsPermissionReview": true
+    },
+    "tom-yum-mee": {
+      "url": "https://image-cdn.chowlyinc.com/650%2Cfit/https%3A%2F%2Fs3.amazonaws.com%2Ftoasttab%2Fmenu_service%2Frestaurants%2Fed8b95f2-d641-4127-a0c9-772fbe849c54%2FMenuItem%2Fe8561263-7275-4700-ad33-2c254a8976e7.jpg",
+      "alt": "Tom Yum Mee as pictured on the Mamak Asian Street Food official menu",
+      "credit": "Mamak Asian Street Food · official ordering menu photograph",
+      "sourceUrl": "https://www.mamakeats.com/location/orlando",
+      "kind": "official-product",
+      "matchMethod": "Explicit matching menu title and corresponding image alt on the first-party Mamak ordering page; visual verification and permission review outstanding",
+      "reviewedAt": "2026-10-24",
+      "needsPermissionReview": true
+    },
+    "kari-mee": {
+      "url": "https://image-cdn.chowlyinc.com/650%2Cfit/https%3A%2F%2Fs3.amazonaws.com%2Ftoasttab%2Fmenu_service%2Frestaurants%2Fed8b95f2-d641-4127-a0c9-772fbe849c54%2FMenuItem%2F1dcc72bb-5f8d-4081-8889-880112f04209.jpg",
+      "alt": "Kari Mee as pictured on the Mamak Asian Street Food official menu",
+      "credit": "Mamak Asian Street Food · official ordering menu photograph",
+      "sourceUrl": "https://www.mamakeats.com/location/orlando",
+      "kind": "official-product",
+      "matchMethod": "Explicit matching menu title and corresponding image alt on the first-party Mamak ordering page; visual verification and permission review outstanding",
+      "reviewedAt": "2026-10-24",
+      "needsPermissionReview": true
     }
   },
   "yellow-dog-eats-gotha": {
