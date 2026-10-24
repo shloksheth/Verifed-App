@@ -1,12 +1,13 @@
 {
-  "number": 14.6,
-  "name": "Verifed V14.6",
-  "description": "Added 88 dish-specific food image references across the first three Batch 1 restaurants: Chipotle 26, Fresh Kitchen 35, Black Rooster Taqueria 27. Fresh Kitchen uses the restaurant's official menu assets throughout. Chipotle combines official ingredient/product photos with marked representative imagery; Black Rooster includes restaurant/editorial product photos and clearly labeled third-party representatives. Menu UI uses full-food contain framing, original source attribution, error fallbacks and photo-kind labels. Does not claim all 88 are exact restaurant photographs or licensed assets. GitHub-only release.",
+  "number": 14.7,
+  "name": "Verifed V14.7",
+  "description": "Partial completion of the remaining Batch 1 restaurant-food-photo work. Pizza Bruno Curry Ford now has 16 individually keyed source photo references for 68 menu entries, and Winter Park Biscuit Company has 11 for 41. Replaced a broken generic WPBC Burger URL with the restaurant's actual 2020 Impossible Burger photograph, noting its older potato bun. Added source-specific Pizza Bruno pizza, wing and salad images and clearly marked representative food photography where exact images were unavailable. Full 109-record QA and regression tests; menu image framing remains uncropped. 82 records still require photos and final visual/rights review. GitHub-only release; no new Expo Snack snapshot.",
   "verification": [
-    "Every one of the 88 menu entries now has an individually keyed photo record and image source attribution.",
-    "Representative photos remain labeled representative and are not treated as proof of plating, ingredients or dietary safety.",
-    "External image URL checks verify current load status but do not establish photo permission or identity.",
-    "Third-party images require rights clearance before commercial publication; 88 full visual inspection and generation are not claimed.",
-    "No Expo Snack publication requested."
+    "109 menu records audited across Pizza Bruno (68) and Winter Park Biscuit (41); 27 source image references and 82 missing.",
+    "Images that come from another restaurant, another branch, or an older menu version are explicitly labeled contextual or representative.",
+    "27 linked images returned image content before the final WPBC Burger replacement; the replacement and all assets are checked again in pull-request CI.",
+    "No image-generation tool was available, so no original/generated images were produced. This version is not complete visual QA for a final contest submission.",
+    "No allergen, dietary or cross-contact conclusions are inferred from photographs.",
+    "GitHub only: Expo Snack remains at its previously published version."
   ]
 }
