@@ -349,8 +349,9 @@ const look = StyleSheet.create({
   grid: { flexDirection: "row", flexWrap: "wrap", gap: 12, alignItems: "stretch" },
   cell: { width: "48.2%" },
   itemCard: { backgroundColor: "#FFFFFF", borderRadius: 13, borderWidth: 1, borderColor: border, padding: 9, gap: 9, justifyContent: "space-between" },
-  photo: { height: 126, backgroundColor: "#F7F5F8", alignItems: "center", justifyContent: "center", borderRadius: 9, overflow: "hidden" },
-  photoWide: { height: 175, width: "100%" },
+  // Preserve the complete official item photo even for tall or wide products.
+  photo: { height: 150, backgroundColor: "#FFFFFF", alignItems: "center", justifyContent: "center", borderRadius: 11, overflow: "hidden", padding: 5 },
+  photoWide: { height: 250, width: "100%", padding: 10 },
   photoFill: { width: "100%", height: "100%" },
   photoMissing: { alignItems: "center", justifyContent: "center", padding: 9, gap: 3 },
   missingSymbol: { color: "#D2C3E2", fontSize: 28 },
