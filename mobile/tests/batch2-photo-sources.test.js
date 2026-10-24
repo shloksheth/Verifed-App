@@ -100,3 +100,34 @@ test("new Batch 2 sourced item photos have individual credits and proper identit
     if (kind === "editorial-context") assert.equal(menuPhotoFor(dish, restaurant)?.exact, false);
   }
 });
+
+test("new Lazy Moon soups, pizza and salad photo sources remain item-specific", () => {
+  const expected = [
+  {
+    "slug": "lazy-moon-mills",
+    "key": "tomato-bisque-soup",
+    "kind": "official-product"
+  },
+  {
+    "slug": "lazy-moon-mills",
+    "key": "gluten-free-pizza-contains-egg-dairy",
+    "kind": "official-product"
+  },
+  {
+    "slug": "lazy-moon-mills",
+    "key": "large-caesar-salad",
+    "kind": "editorial-context"
+  }
+];
+  for (const item of expected) {
+    const image = verifiedDishPhotos[item.slug]?.[item.key];
+    assert.ok(image?.url && image?.sourceUrl, item.key);
+    assert.equal(image.kind, item.kind);
+    assert.equal(image.needsPermissionReview, true);
+    const dish = localDishes.find(x => x.catalogKey === item.slug + "-" + item.key);
+    assert.ok(dish, item.key);
+    const restaurant = localRestaurants.find(x => x.slug === item.slug);
+    assert.equal(menuPhotoFor(dish, restaurant)?.url, image.url);
+    if (item.kind === "editorial-context") assert.equal(menuPhotoFor(dish, restaurant)?.exact, false);
+  }
+});
