@@ -654,6 +654,12 @@ export const verifiedDishPhotos = {
       "alt": "Roti Canai flatbread with curry at Mamak Asian Street Food",
       "credit": "Mamak Asian Street Food · official website photo",
       "sourceUrl": "https://mamakeats.com/"
+    },
+    "nasi-goreng-indonesia": {
+      "url": "https://static.spotapps.co/spots/68/8ee4a1f1c54237a46151a4e03b8a18/full",
+      "alt": "Nasi Goreng Indonesia at Mamak: seasoned fried rice with shrimp, shallots and a fried egg",
+      "credit": "Mamak Asian Street Food · official website image",
+      "sourceUrl": "https://mamakeats.com/"
     }
   },
   "yellow-dog-eats-gotha": {
@@ -892,6 +898,12 @@ export const verifiedDishPhotos = {
       "alt": "Twenty-inch tomato-base pizza with mozzarella at Lazy Moon; photo from Maitland menu, branch preparation may vary",
       "credit": "Lazy Moon · official menu item photograph",
       "sourceUrl": "https://order.lazymoonpizza.com/menu/lazy-moon-pizza-maitland/group_6e9318a3-2312-4926-89db-c95baf610be5/item-20-tomato-base-includes-mozzarella_139be63b-1510-4107-b7a0-19a964582dea"
+    },
+    "slice-garden-grazer-pizza": {
+      "url": "https://d1w7312wesee68.cloudfront.net/aVtxQXEV7YnypkbRuzhEAs_Heyz5P34L5FLRJkIXk30/resize%3Afit%3A720%3A720/plain/s3%3A/toasttab/restaurants/restaurant-194032000000000000/menu/items/8/item-800000004396409708_1722461472.jpg",
+      "alt": "Slice of Garden Grazer pizza from Lazy Moon with broccoli, spinach, artichokes and mozzarella on a metal serving tray",
+      "credit": "Lazy Moon Pizza · Mills 50 official ordering image",
+      "sourceUrl": "https://order.lazymoonpizza.com/menu/lazy-moon-mills-50-1011-east-colonial-drive/group_eabef8e9-372a-40c0-b7e5-1be9616d3375/item-slice-garden-grazer-pizza_2ad479c0-c1ff-41db-bb53-2be78d1b782a"
     }
   },
   "pig-floyds-mills": {
