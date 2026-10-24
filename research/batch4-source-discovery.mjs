@@ -21,3 +21,15 @@ for(const [key,url] of Object.entries(urls)) {
  console.log("SRCSET",key,JSON.stringify([...new Set([...html.matchAll(/https?:[^"'\s<>\\]+?\.(?:webp|jpg|jpeg|png)(?:\?[^"'\s<>\\]{0,120})?/gi)].map(x=>x[0]))].slice(0,35)));
  }catch(e){console.log("ERROR",key,String(e))}
 }
+const queries=["vegetable samosa","masala dosa","tuna crispy rice sushi","pappardelle bolognese","pulled pork sandwich"];
+for (const q of queries){
+ const urls=[
+  "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch="+encodeURIComponent(q)+"&gsrnamespace=6&gsrlimit=5&prop=imageinfo&iiprop=url%7Cextmetadata&iiurlwidth=800&format=json",
+  "https://www.google.com/search?tbm=isch&q="+encodeURIComponent(q)+"&num=5",
+  "https://www.bing.com/images/search?q="+encodeURIComponent(q)+"&first=1"
+ ];
+ for(const [idx,url] of urls.entries()){
+ try{let r=await fetch(url,{headers:{"User-Agent":"VerifedStudentResearch/1.0 (images sourced with attribution; contact via Github)","Accept":"application/json,text/html,*/*"},signal:AbortSignal.timeout(10000)});let t=await r.text();if(idx===0){const j=JSON.parse(t);console.log("MEDIAWIKI",q,r.status,JSON.stringify(Object.values(j.query?.pages||{}).map(z=>({title:z.title,src:z.imageinfo?.[0]?.thumburl,description:z.imageinfo?.[0]?.extmetadata?.ImageDescription?.value?.slice(0,80),license:z.imageinfo?.[0]?.extmetadata?.LicenseShortName?.value}))))}else{console.log("SEARCHENGINE",idx,q,r.status,t.length,t.slice(0,140));}
+ }catch(e){console.log("ERR_EXTERNAL",idx,q,String(e))}
+ }
+}
