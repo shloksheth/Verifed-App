@@ -1,5 +1,5 @@
-// Sourced menu-specific and clearly labeled representative photos; food photo != allergen assurance.
-// Third-party image credits do not imply permission for redistribution.
+// Menu-item and representative food photography, with item-level sources and identity caveats.
+// Photos do not certify ingredients, allergens, or usage permissions.
 export const verifiedDishPhotos = {
   "loving-hut-orlando": {
     "spring-rolls-4-rolls-cha-gio": {
@@ -1724,10 +1724,11 @@ export const verifiedDishPhotos = {
       "alt": "Winter Park Biscuit Company official photograph of a crisp breaded vegan chicken sandwich with spicy dry seasoning and green jalapeño slices near the bun, shown on branded takeout paper. Mayo not visible; recipe presentation may change.",
       "credit": "Winter Park Biscuit Company · official website photograph",
       "sourceUrl": "https://www.winterparkbiscuitco.com/",
-      "kind": "official-context",
+      "kind": "menu-context",
       "reviewedAt": "2026-10-24",
       "matchMethod": "Visual comparison with published menu ingredients and image context; differences disclosed",
-      "needsPermissionReview": true
+      "needsPermissionReview": true,
+      "photoIdentityNote": "Official restaurant photograph of spicy chik sandwich, but specific Death Valley recipe identity and exact garnish configuration are not established by the source."
     },
     "the-sec": {
       "url": "https://vegnews.com/media/W1siZiIsIjM1MDg4L1ZlZ05ld3MuNy1FbGV2ZW5TYW5kd2ljaC5DYW5hZGEtMS5qcGciXSxbInAiLCJjcm9wX3Jlc2l6ZWQiLCI5NDR4OTQ0KzQzNCswIiwiOTQ2eDk0Nl4iLHsiZm9ybWF0IjoianBnIn1dLFsicCIsIm9wdGltaXplIl1d/VegNews.7-ElevenSandwich.Canada-1.jpg?sha=165e61daa766c4ea",
