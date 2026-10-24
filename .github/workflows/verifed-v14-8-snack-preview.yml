@@ -1,0 +1,50 @@
+name: Publish Verifed V14.8 Snack preview
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/workflows/verifed-v14-8-snack-preview.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  snack-preview:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+          cache-dependency-path: |
+            mobile/package-lock.json
+            research/native-tools/package-lock.json
+      - name: Install and test latest main
+        run: |
+          npm ci --prefix mobile
+          npm test --prefix mobile
+      - name: Install Snack publisher
+        run: npm ci --prefix research/native-tools
+      - name: Set requested Snack title for this run only
+        run: |
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+          const path = 'mobile/release.json';
+          const release = JSON.parse(fs.readFileSync(path, 'utf8'));
+          const original = release.name;
+          release.number = 14.8;
+          release.name = 'Verifed V14.8';
+          release.description = 'Latest GitHub main source preview (' + original + '), published under the requested V14.8 Snack title. ' + release.description;
+          fs.writeFileSync(path, JSON.stringify(release, null, 2) + '\n');
+          NODE
+      - name: Publish latest app to Expo Snack
+        run: npm run publish:snack --prefix mobile
+      - name: Upload Snack publication record
+        uses: actions/upload-artifact@v4
+        with:
+          name: verifed-v14-8-snack-publication
+          path: mobile/publication.json
