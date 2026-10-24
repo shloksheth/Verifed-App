@@ -143,3 +143,25 @@ test("Pigzza editorial photos remain correctly contextual", () => {
     assert.equal(menuPhotoFor(dish, localRestaurants.find(r => r.slug === "pig-floyds-mills"))?.exact, false);
   }
 });
+
+test("Batch 2 audit totals agree with 413 actual item photo records", () => {
+  const audit = JSON.parse(readFileSync(new URL("../../research/batch2-photo-audit.json", import.meta.url), "utf8"));
+  assert.equal(audit.entries.length, 413);
+  for (const restaurant of audit.restaurants) {
+    const rows = audit.entries.filter(row => row.restaurantSlug === restaurant.slug);
+    const mapped = verifiedDishPhotos[restaurant.slug] || {};
+    assert.equal(rows.length, restaurant.total, restaurant.slug);
+    const withPhotos = rows.filter(row => Boolean(row.photo?.url));
+    assert.equal(restaurant.total - restaurant.missing, withPhotos.length, restaurant.slug);
+    assert.equal(Object.keys(mapped).length, withPhotos.length, restaurant.slug);
+    for (const row of rows) {
+      const key = row.catalogKey.slice(restaurant.slug.length + 1);
+      if (row.photo?.url) {
+        assert.equal(mapped[key]?.url, row.photo.url, row.catalogKey);
+        assert.ok(mapped[key]?.credit && mapped[key]?.sourceUrl, row.catalogKey);
+      } else {
+        assert.equal(mapped[key], undefined, row.catalogKey);
+      }
+    }
+  }
+});
