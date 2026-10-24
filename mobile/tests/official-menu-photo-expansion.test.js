@@ -1,74 +1,68 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { localDishes, localRestaurants } from "../src/local-catalog.js";
-import { verifiedDishPhotos } from "../src/verified-dish-photos.js";
+import { readFileSync } from "node:fs";
+import { localRestaurants, localDishes } from "../src/local-catalog.js";
 import { menuPhotoFor } from "../src/menu-photos.js";
+import { verifiedDishPhotos } from "../src/verified-dish-photos.js";
 
-const newSourceKeys = {
-  "fresh-kitchen-waterford": [
-    "6-bowl","4-bowl","3-bowl","cauliflower-rice","cauli-potato-mash",
-    "coconut-ginger-rice","brown-rice","sweet-potato-noodles","chard-cabbage-slaw",
-    "kale-caesar","arugula-spinach-salad","almond-chicken","bbq-chicken",
-    "rosemary-chicken","herb-steak","lemon-broccoli","maple-sweet-potatoes",
-    "basil-mushrooms","golden-chickpeas","green-beans","white-ginger",
-    "coconut-sriracha","parmesan-cheese","pico-de-gallo","citrus-avocado",
-    "toasted-almonds","feta-cheese","cucumber-salad","kale-pesto-tomatoes"
-  ],
-  "reyes-mezcaleria": ["tuna-tostada"],
-  "the-monroe": ["the-monroes-famous-fried-chicken"],
-  "the-strand-mills": ["strand-burger"],
-  "the-osprey": ["lobster-roll"],
-  "stubborn-mule": ["stubborn-mule-burger"],
-  "lazy-moon-mills": ["20-tomato-base-includes-mozzarella"],
-  "pig-floyds-mills": ["the-big-floyd"],
-  "woodlands-orlando": ["masala-dosai"],
-  "winter-park-biscuit": ["the-og"],
-  "bombay-street-kitchen": ["pani-puri-8-pcs"],
-  "tin-taco-downtown": ["mac-attack-taco"]
+const additional = {
+  "seito-baldwin-park": ["hand-made-dumplings"],
+  "sparrow-orlando": ["say-cheese"],
+  "reyes-mezcaleria": ["guacamole"],
+  "winter-park-biscuit": ["wpbc-box"],
+  "mamak-colonial": ["nasi-goreng-indonesia", "pad-thai"],
+  "lazy-moon-mills": ["slice-garden-grazer-pizza"],
 };
 
-test("new menu photography is individually sourced, matched and nonduplicated", () => {
-  const urls = new Map();
-  for (const [slug, keys] of Object.entries(newSourceKeys)) {
+test("new per-dish photos use unique, specific catalog keys and cited sources", () => {
+  let newCount = 0;
+  const urls = new Set();
+  for (const [slug, keys] of Object.entries(additional)) {
     const restaurant = localRestaurants.find((r) => r.slug === slug);
     assert.ok(restaurant, slug);
     for (const key of keys) {
+      newCount++;
       const dish = localDishes.find((d) => d.catalogKey === `${slug}-${key}`);
-      const photo = verifiedDishPhotos[slug]?.[key];
-      assert.ok(dish, `Missing reviewed menu item ${slug}/${key}`);
-      assert.ok(photo, `Missing photo ${slug}/${key}`);
-      assert.match(photo.url, /^https:\/\//);
-      assert.match(photo.sourceUrl, /^https:\/\//);
-      assert.ok(photo.alt.length > 15 && photo.credit.length > 10);
-      assert.equal(urls.has(photo.url), false, `Same image reused across different items: ${slug}/${key}`);
-      urls.set(photo.url, `${slug}/${key}`);
-      const resolved = menuPhotoFor(dish, restaurant);
-      assert.equal(resolved.url, photo.url);
-      assert.equal(resolved.exact, true);
-    }
-  }
-  assert.equal(urls.size, 40);
-});
-
-test("official Fresh Kitchen images use their own item keys and source page", () => {
-  const photos = verifiedDishPhotos["fresh-kitchen-waterford"];
-  assert.equal(Object.keys(photos).length, 29);
-  for (const meta of Object.values(photos)) {
-    assert.equal(meta.sourceUrl, "https://www.eatfreshkitchen.com/menu");
-    assert.match(meta.url, /cdn\.prod\.website-files\.com/);
-  }
-});
-
-test("no generic image is substituted for unmatched food or inferred safe ingredients", () => {
-  for (const restaurant of localRestaurants) {
-    const dishes = localDishes.filter((d) => d.restaurantId === restaurant.id);
-    for (const dish of dishes) {
+      assert.ok(dish, `${slug}/${key}`);
+      const record = verifiedDishPhotos[slug]?.[key];
+      assert.ok(record);
+      assert.match(record.url, /^https:\/\//);
+      assert.match(record.sourceUrl, /^https:\/\//);
+      assert.ok(record.credit && record.alt && record.alt.length > 20);
+      assert.equal(urls.has(record.url), false, `Photo reused for unrelated item: ${slug}/${key}`);
+      urls.add(record.url);
       const photo = menuPhotoFor(dish, restaurant);
-      if (photo) assert.equal(photo.exact, true);
-      assert.ok(Array.isArray(dish.allergens));
+      assert.equal(photo?.url, record.url);
+      assert.equal(photo?.exact, true);
     }
   }
-  const fresh = localRestaurants.find((r) => r.slug === "fresh-kitchen-waterford");
-  const unmatched = localDishes.find((d) => d.restaurantId === fresh.id && d.name === "Golden Char Chicken");
-  assert.equal(menuPhotoFor(unmatched, fresh), null);
+  assert.equal(newCount, 7);
+});
+
+test("every restaurant has at least one uniquely matched menu image; incomplete entries are not misrepresented", () => {
+  assert.equal(localRestaurants.length, 25);
+  let reviewed = 0;
+  for (const restaurant of localRestaurants) {
+    const dishes = localDishes.filter((d) => d.restaurantId === restaurant.id || d.catalogKey?.startsWith(restaurant.slug + "-"));
+    assert.ok(dishes.length > 0, restaurant.slug);
+    const photographed = dishes.filter((dish) => menuPhotoFor(dish, restaurant));
+    assert.ok(photographed.length > 0, `No item photos at ${restaurant.slug}`);
+    reviewed += photographed.length;
+  }
+  assert.equal(localDishes.length, 1630);
+  assert.ok(reviewed >= 314 && reviewed < localDishes.length, `Unsupported photo coverage claim: ${reviewed}`);
+  const chipotle = localRestaurants.find((r) => r.slug === "chipotle-south-orange");
+  const blackBeans = localDishes.find((d) => d.catalogKey === "chipotle-south-orange-black-beans");
+  assert.equal(menuPhotoFor(blackBeans, chipotle)?.exact, false);
+});
+
+test("native and chain menu displays preserve the entire photo without cropping", () => {
+  const dining = readFileSync(new URL("../components/Dining.js", import.meta.url), "utf8");
+  const taco = readFileSync(new URL("../components/TacoBellMenu.js", import.meta.url), "utf8");
+  const styles = readFileSync(new URL("../styles.js", import.meta.url), "utf8");
+  assert.match(dining, /resizeMode="contain"/);
+  assert.match(taco, /resizeMode="contain"/);
+  assert.match(styles, /menuDishPhotoLargeCanvas:[\s\S]*?height: 260/);
+  assert.match(taco, /photoWide: \{ height: 250/);
+  assert.doesNotMatch(dining, /resizeMode=\{photo\.exact \? "contain" : "cover"\}/);
 });

@@ -1,12 +1,12 @@
 {
-  "number": 14.5,
-  "name": "Verifed V14.5",
-  "description": "Improved individual restaurant menu photography with seven additional dish-specific sources, full-product photo fitting for every shared-menu image and Taco Bell, and a source-tracked audit of all 1,630 active food records. All 25 restaurants have individually sourced imagery, but only 314 dishes currently have a photo, leaving 1,316 unmatched entries. No generic dish images were reused. GitHub-only incremental release.",
+  "number": 14.6,
+  "name": "Verifed V14.6",
+  "description": "Added 88 dish-specific food image references across the first three Batch 1 restaurants: Chipotle 26, Fresh Kitchen 35, Black Rooster Taqueria 27. Fresh Kitchen uses the restaurant's official menu assets throughout. Chipotle combines official ingredient/product photos with marked representative imagery; Black Rooster includes restaurant/editorial product photos and clearly labeled third-party representatives. Menu UI uses full-food contain framing, original source attribution, error fallbacks and photo-kind labels. Does not claim all 88 are exact restaurant photographs or licensed assets. GitHub-only release.",
   "verification": [
-    "The full menu-photo audit is at research/menu-image-coverage-v14.5.csv.",
-    "Newly sourced menu photos include item-specific descriptive text and source URLs.",
-    "React Native item photos use contain instead of cover so full items remain visible; larger frames accommodate tall and wide products.",
-    "Tests check real restaurant coverage, source metadata and absence of unrelated image fallbacks.",
-    "The catalog is not fully illustrated; external asset availability and usage rights require additional verification."
+    "Every one of the 88 menu entries now has an individually keyed photo record and image source attribution.",
+    "Representative photos remain labeled representative and are not treated as proof of plating, ingredients or dietary safety.",
+    "External image URL checks verify current load status but do not establish photo permission or identity.",
+    "Third-party images require rights clearance before commercial publication; 88 full visual inspection and generation are not claimed.",
+    "No Expo Snack publication requested."
   ]
 }

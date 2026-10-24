@@ -15,7 +15,8 @@ test("photo audit covers every published dish with stable identifiers", () => {
     const photo = menuPhotoFor(dish, restaurant);
     if (!photo) missing.push(dish);
     else {
-      assert.equal(photo.exact, true);
+      assert.equal(photo.exact,
+        !/^(representative|menu-context|editorial-context)/.test(dish.imageKind || "") && !dish.imageGenerated);
       assert.ok(photo.sourceUrl);
       assert.ok(photo.url.startsWith("https://"));
     }

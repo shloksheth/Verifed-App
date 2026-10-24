@@ -1,6 +1,5 @@
-// Source-matched menu photographs. Some editorial photos depict historic presentations or only part of a combo.
-// Photos are independent of dietary, allergen, and ingredient assessments.
-// Ensure image-use rights before commercial distribution.
+// Menu-item images with distinct identities, source and representative labels; not allergen claims.
+// Third-party image redistribution rights are not presumed.
 export const verifiedDishPhotos = {
   "loving-hut-orlando": {
     "spring-rolls-4-rolls-cha-gio": {
@@ -352,6 +351,267 @@ export const verifiedDishPhotos = {
       "alt": "Tortilla chips photographed for Chipotle's ingredients page",
       "credit": "Chipotle · official menu",
       "sourceUrl": "https://www.chipotle.com/ingredients/corn-masa-flour"
+    },
+    "chicken": {
+      "url": "https://www.chipotle.com/content/dam/chipotle/menu/menu-items/cmg-1125-side-of-chicken/web-mobile/order.png",
+      "alt": "Chipotle grilled chicken chunks in an official Chipotle side cup, fully visible",
+      "credit": "Chipotle · official ordering menu",
+      "sourceUrl": "https://www.chipotle.com/order/build/burrito-bowl",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-23",
+      "matchMethod": "Visual comparison with the menu item and its published description",
+      "needsPermissionReview": false
+    },
+    "steak": {
+      "url": "https://www.chipotle.com/content/dam/chipotle/menu/menu-items/cmg-1126-side-of-steak/web-mobile/order.png",
+      "alt": "Chipotle grilled marinated steak in an official Chipotle side cup",
+      "credit": "Chipotle · official ordering menu",
+      "sourceUrl": "https://www.chipotle.com/order/build/burrito-bowl",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-23",
+      "matchMethod": "Visual comparison with the menu item and its published description",
+      "needsPermissionReview": false
+    },
+    "carnitas": {
+      "url": "https://www.chipotle.com/content/dam/chipotle/menu/menu-items/cmg-6603-carnitas/web-mobile/order.png",
+      "alt": "Chipotle shredded braised pork carnitas on white background, standalone ingredient",
+      "credit": "Chipotle · official restaurant image",
+      "sourceUrl": "https://www.chipotle.com/order/build/burrito-bowl",
+      "kind": "official-ingredient",
+      "reviewedAt": "2026-10-23",
+      "matchMethod": "Visual comparison with the menu item and its published description",
+      "needsPermissionReview": false
+    },
+    "queso": {
+      "url": "https://i.insider.com/5d94ec76695b5816c06ca667?auto=webp&format=jpeg&width=800",
+      "alt": "Chipotle Queso Blanco in a red Chipotle-branded paper cup, from historical restaurant coverage",
+      "credit": "Business Insider · Chipotle Queso Blanco product photograph",
+      "sourceUrl": "https://www.businessinsider.com/chipotle-new-queso-blaco-beats-current-queso-recipe-2019-10",
+      "kind": "editorial-product",
+      "reviewedAt": "2026-10-23",
+      "matchMethod": "Visual comparison with the menu item and its published description",
+      "needsPermissionReview": true
+    },
+    "fajita-vegetables": {
+      "url": "https://diatribe.org/sites/default/files/legacy/article/chipotle-fajita-vegetables1.jpeg",
+      "alt": "Chipotle fajita vegetables with sautéed strips of red onions and bell peppers; restaurant ingredient image",
+      "credit": "diaTribe · Chipotle fast food guide",
+      "sourceUrl": "https://diatribe.org/diet-and-nutrition/diabetes-fast-food-guide-what-order-chipotle",
+      "kind": "editorial-product",
+      "reviewedAt": "2026-10-23",
+      "matchMethod": "Visual comparison with the menu item and its published description",
+      "needsPermissionReview": true
+    },
+    "guacamole": {
+      "url": "https://www.chipotle.com/content/dam/chipotle/menu/menu-items/cmg-1025-large-side-of-guac/web-mobile/order.png",
+      "alt": "Chipotle side of hand-mashed guacamole photographed on the official menu",
+      "credit": "Chipotle · official ordering menu",
+      "sourceUrl": "https://www.chipotle.com/order/build/chips-%26-sides",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-23",
+      "matchMethod": "Visual comparison with the menu item and its published description",
+      "needsPermissionReview": false
+    },
+    "burrito-tortilla": {
+      "url": "https://www.chipotle.com/content/dam/chipotle/menu/menu-items/cmg-5501-flour-tortilla-burrito-size/web-mobile/order.png",
+      "alt": "Chipotle full burrito-size flour tortilla, white background",
+      "credit": "Chipotle official build your order",
+      "sourceUrl": "https://www.chipotle.com/order/build/burrito-bowl",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-23",
+      "matchMethod": "Compared multiple retrieved search images with the published component name",
+      "photoIdentityNote": null,
+      "needsPermissionReview": false
+    },
+    "honey-vinaigrette": {
+      "url": "https://www.chipotle.com/content/dam/chipotle/menu/menu-items/cmg-5353--chipotle-honey-vinaigrette/web-mobile/order.png",
+      "alt": "Chipotle honey vinaigrette with orange-brown spices in a white ceramic bowl",
+      "credit": "Chipotle official ingredients",
+      "sourceUrl": "https://www.chipotle.com/ingredients/honey",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-23",
+      "matchMethod": "Compared multiple retrieved search images with the published component name",
+      "photoIdentityNote": null,
+      "needsPermissionReview": false
+    },
+    "green-chili-salsa": {
+      "url": "https://tb-static.uber.com/prod/image-proc/processed_images/1323d33f3f70030ce13953fb887439a7/c67fc65e9b4e16a553eb7574fba090f1.jpeg",
+      "alt": "Chipotle Tomatillo-Green Chili Salsa in an individual sauce cup, official menu product photo through delivery listing",
+      "credit": "Chipotle menu photo · Uber Eats",
+      "sourceUrl": "https://www.ubereats.com/brand-city/normal-il/chipotle",
+      "kind": "menu-delivery-photo",
+      "reviewedAt": "2026-10-23",
+      "matchMethod": "Compared multiple retrieved search images with the published component name",
+      "photoIdentityNote": null,
+      "needsPermissionReview": true
+    },
+    "red-chili-salsa": {
+      "url": "https://www.chipotle.com/content/dam/chipotle/menu/menu-items/cmg-1007-chips-tomatillo-red-chili-salsa/web-mobile/order.png",
+      "alt": "Chipotle red tomatillo-chili salsa served in a white ramekin with several tortilla chips; salsa is the named item",
+      "credit": "Chipotle official ordering image (chips + salsa)",
+      "sourceUrl": "https://www.chipotle.com/order/build/burrito-bowl",
+      "kind": "official-combo-context",
+      "reviewedAt": "2026-10-23",
+      "matchMethod": "Compared multiple retrieved search images with the published component name",
+      "photoIdentityNote": null,
+      "needsPermissionReview": false
+    },
+    "black-beans": {
+      "url": "https://eato.health/food-images/feast/act/chipotle-black-beans-8689428-1.webp",
+      "alt": "Representative bowl of glossy cooked black beans, visually consistent with Chipotle black beans; third-party illustrative photo, not official restaurant photo",
+      "credit": "Eato · representative ingredient illustration",
+      "sourceUrl": "https://eato.health/food/chipotle-black-beans-8689428-1",
+      "kind": "representative-ingredient",
+      "reviewedAt": "2026-10-23",
+      "matchMethod": "Compared multiple retrieved search images with the published component name",
+      "photoIdentityNote": "Illustrative or contextual image; not evidence this is the restaurant's exact plating",
+      "needsPermissionReview": true
+    },
+    "brown-rice": {
+      "url": "https://snapcalorie-webflow-website.s3.us-east-2.amazonaws.com/media/food_pics_v2/medium/chipotle_brown_rice.jpg",
+      "alt": "Representative cilantro-lime brown rice with fresh cilantro; independent nutrition-site image, not a verified Chipotle serving",
+      "credit": "SnapCalorie · representative brown rice image",
+      "sourceUrl": "https://www.snapcalorie.com/nutrition/chipotle_brown_rice_nutrition.html",
+      "kind": "representative-ingredient",
+      "reviewedAt": "2026-10-23",
+      "matchMethod": "Compared multiple retrieved search images with the published component name",
+      "photoIdentityNote": "Illustrative or contextual image; not evidence this is the restaurant's exact plating",
+      "needsPermissionReview": true
+    },
+    "roasted-corn-salsa": {
+      "url": "https://www.chipotlenutrition.us/images/ingredients/roasted_corn.webp",
+      "alt": "Representative roasted chili-corn salsa with sweet corn diced peppers and cilantro; independent illustrative preparation, not official Chipotle dish",
+      "credit": "Chipotle Nutrition US · illustrative ingredient image",
+      "sourceUrl": "https://www.chipotlenutrition.us/chipotle-quesadilla-calories",
+      "kind": "representative-ingredient",
+      "reviewedAt": "2026-10-23",
+      "matchMethod": "Compared multiple retrieved search images with the published component name",
+      "photoIdentityNote": "Illustrative or contextual image; not evidence this is the restaurant's exact plating",
+      "needsPermissionReview": true
+    },
+    "fresh-tomato-salsa": {
+      "url": "https://www.chipotle.com/content/dam/chipotle/menu/menu-items/cmg-1005-chips-and-salsa/web-mobile/order.png",
+      "alt": "Chipotle fresh tomato salsa in a white ramekin, surrounded by official tortilla chips; image represents a chips-and-salsa combo, not a standalone salsa serving",
+      "credit": "Chipotle · official chips and tomato salsa menu photo",
+      "sourceUrl": "https://www.chipotle.com/order/build/burrito-bowl",
+      "kind": "menu-context",
+      "reviewedAt": "2026-10-23",
+      "matchMethod": "Compared multiple retrieved search images with the published component name",
+      "photoIdentityNote": "Illustrative or contextual image; not evidence this is the restaurant's exact plating",
+      "needsPermissionReview": false
+    },
+    "sofritas": {
+      "url": "https://art.whisk.com/image/upload/fl_progressive%2Ch_560%2Cw_560%2Cc_fill%2Cdpr_2/v1686031948/recipe/0e0cf0d35b878eaa0a147faceca33ab8.jpg",
+      "alt": "Illustrative copycat sofritas tofu, reddish-brown braised crumbled tofu on spoon; not Chipotle restaurant serving",
+      "credit": "Samsung Food · copycat sofritas recipe photography",
+      "sourceUrl": "https://app.samsungfood.com/recipes/10146bdb6483cd99b4ee05653df03c79e0db8637c95",
+      "kind": "representative-ingredient",
+      "reviewedAt": "2026-10-23",
+      "matchMethod": "Compared multiple retrieved search images with the published component name",
+      "photoIdentityNote": "Illustrative or contextual image; not evidence this is the restaurant's exact plating",
+      "needsPermissionReview": true
+    },
+    "supergreens": {
+      "url": "https://1.bp.blogspot.com/-S4VFU17Igug/XhNGYMx1HrI/AAAAAAABJVY/SocUcCIWgiczbX0-e6Urz1rx3TsxFdM-wCLcBGAsYHQ/s1600/chipotle-new-supergreen-salad-blend.png",
+      "alt": "Actual Chipotle Supergreens leafy base visible under a composed salad bowl with toppings; the photographed item is a completed salad, not a standalone salad mix",
+      "credit": "Brand Eating · Chipotle Supergreens launch photograph",
+      "sourceUrl": "https://www.brandeating.com/2020/01/chipotle-rolls-out-new-supergreens-salad-mix.html",
+      "kind": "menu-context",
+      "reviewedAt": "2026-10-23",
+      "matchMethod": "Compared multiple retrieved search images with the published component name",
+      "photoIdentityNote": "Illustrative or contextual image; not evidence this is the restaurant's exact plating",
+      "needsPermissionReview": true
+    },
+    "barbacoa": {
+      "url": "https://www.chipotle.co.uk/content/dam/chipotle/pages/ingredients/uk/2019/barbacoa.png",
+      "alt": "Chipotle official standalone barbacoa shredded braised beef on white background; UK photography, recipe may differ from US",
+      "credit": "Chipotle UK · official ingredients",
+      "sourceUrl": "https://www.chipotle.co.uk/ingredients",
+      "kind": "official-uk-ingredient",
+      "reviewedAt": "2026-10-23",
+      "matchMethod": "Visual and published ingredient comparison",
+      "needsPermissionReview": false
+    },
+    "romaine": {
+      "url": "https://www.chipotle.com/content/dam/chipotle/menu/menu-items/cmg-5351-romaine-lettuce/web-mobile/order.png",
+      "alt": "Chipotle shredded romaine lettuce alone on white background",
+      "credit": "Chipotle official ingredient photo",
+      "sourceUrl": "https://www.chipotle.com/ingredients/romaine-lettuce",
+      "kind": "official-ingredient",
+      "reviewedAt": "2026-10-23",
+      "matchMethod": "Visual and published ingredient comparison",
+      "needsPermissionReview": false
+    },
+    "cheese": {
+      "url": "https://www.chipotle.co.uk/content/dam/chipotle/pages/ingredients/uk/2019/cheese.png",
+      "alt": "Chipotle shredded Monterey Jack cheese pile on white background; official UK ingredient image",
+      "credit": "Chipotle UK · official ingredient photo",
+      "sourceUrl": "https://www.chipotle.co.uk/ingredients",
+      "kind": "official-uk-ingredient",
+      "reviewedAt": "2026-10-23",
+      "matchMethod": "Visual and published ingredient comparison",
+      "needsPermissionReview": false
+    },
+    "pinto-beans": {
+      "url": "https://www.chipotle.com/content/dam/chipotle/menu/menu-items/cmg-5052-pinto-beans/web-mobile/order.png",
+      "alt": "Chipotle cooked pinto beans on white background, full ingredient pile",
+      "credit": "Chipotle official ingredients",
+      "sourceUrl": "https://www.chipotle.com/ingredients/pinto-beans",
+      "kind": "official-ingredient",
+      "reviewedAt": "2026-10-23",
+      "matchMethod": "Visual and published ingredient comparison",
+      "needsPermissionReview": false
+    },
+    "white-rice": {
+      "url": "https://www.chipotle.com/content/dam/chipotle/menu/menu-items/cmg-5001-white-rice/web-mobile/order.png",
+      "alt": "Chipotle white cilantro lime rice in standalone white-background ingredient photograph",
+      "credit": "Chipotle official ingredients",
+      "sourceUrl": "https://www.chipotle.com/ingredients/white-rice",
+      "kind": "official-ingredient",
+      "reviewedAt": "2026-10-23",
+      "matchMethod": "Visual and published ingredient comparison",
+      "needsPermissionReview": false
+    },
+    "red-chimichurri": {
+      "url": "https://www.chipotle.com/content/dam/chipotle/menu/menu-items/cmg-5410-red-chimichurri/web-mobile/order.png",
+      "alt": "Red Chimichurri sauce in a white ramekin on white background, exact Chipotle ordering image with diced garlic chilies and green herbs",
+      "credit": "Chipotle · official ordering product photo",
+      "sourceUrl": "https://www.chipotle.com/order/build/burrito-bowl",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-23",
+      "matchMethod": "Visual and published ingredient comparison",
+      "needsPermissionReview": false
+    },
+    "crispy-corn-tortilla": {
+      "url": "https://images.unsplash.com/photo-1757774551171-91143e145b0a?auto=format&fit=contain&fm=jpg&q=80&w=900",
+      "alt": "Photograph of crispy golden folded corn taco shells in close-up with textured surface, illustrative rather than an official Chipotle serving",
+      "credit": "Sebastian Schuster · Unsplash food photograph",
+      "sourceUrl": "https://unsplash.com/photos/crispy-corn-taco-shells-arranged-in-a-row-LZLmnoI2OZ0",
+      "kind": "representative-ingredient",
+      "reviewedAt": "2026-10-23",
+      "matchMethod": "Visual and published ingredient comparison",
+      "needsPermissionReview": false,
+      "photoIdentityNote": "Free-to-use photo of real corn shells, not restaurant-specific. Original framing is a close-up."
+    },
+    "taco-tortilla": {
+      "url": "https://d2j6dbq0eux0bg.cloudfront.net/images/15100469/4533727335.png",
+      "alt": "Representative small, single flour taco tortilla on white background. This is NOT Chipotle's actual photographed product.",
+      "credit": "Burrito Bros · representative small flour tortilla",
+      "sourceUrl": "https://carryout.burritobroskc.com/products/SMALL-TORTILLA-p691209382",
+      "kind": "representative-ingredient",
+      "reviewedAt": "2026-10-23",
+      "matchMethod": "Photo visually compared to exact item description; third-party images explicitly differentiated",
+      "needsPermissionReview": true
+    },
+    "sour-cream": {
+      "url": "https://129861524.cdn6.editmysite.com/uploads/1/2/9/8/129861524/ILQS6LNOQGB6QCR3G4HCPPE3.jpeg",
+      "alt": "Representative single cup of smooth white sour cream. It is from another restaurant and not Chipotle's official photography.",
+      "credit": "Fuego · representative sour cream cup",
+      "sourceUrl": "https://www.fuegotime.com/product/sour-cream/40",
+      "kind": "representative-ingredient",
+      "reviewedAt": "2026-10-23",
+      "matchMethod": "Photo visually compared to exact item description; third-party images explicitly differentiated",
+      "needsPermissionReview": true
     }
   },
   "hawkers-orlando": {
@@ -646,6 +906,276 @@ export const verifiedDishPhotos = {
       "alt": "Achiote pork taco at Black Rooster Taqueria",
       "credit": "Visit Orlando · Black Rooster Achiote Pork Taco",
       "sourceUrl": "https://www.visitorlando.com/listing/black-rooster-taqueria/53404/"
+    },
+    "crispy-fish": {
+      "url": "https://media.cntraveler.com/photos/5cbe3aa5b2d77fb2876832a9/16%3A9/w_2560%2Cc_limit/Black-Rooster-Taqueria_2019_Crispy-Fish-Taco.jpg",
+      "alt": "Black Rooster crispy white fish taco on a corn tortilla, with pickled red cabbage, avocado and creamy topping, original restaurant dish image",
+      "credit": "Condé Nast Traveler · Black Rooster Crispy Fish Taco",
+      "sourceUrl": "https://www.cntraveler.com/restaurants/orlando/orlando/black-rooster-taqueria",
+      "kind": "editorial-product",
+      "reviewedAt": "2026-10-23",
+      "matchMethod": "Visual comparison with the menu item and its published description",
+      "needsPermissionReview": true
+    },
+    "carne-asada": {
+      "url": "https://media2.orlandoweekly.com/orlando/imager/u/original/2466780/brt1.jpg",
+      "alt": "Black Rooster Carne Asada beef taco with onions and cilantro, pictured at the restaurant",
+      "credit": "Orlando Weekly · Black Rooster taco review",
+      "sourceUrl": "https://www.orlandoweekly.com/food-drink/black-rooster-taqueria-ready-to-crow-2466765",
+      "kind": "editorial-product",
+      "reviewedAt": "2026-10-23",
+      "matchMethod": "Visual comparison with the menu item and its published description",
+      "needsPermissionReview": true
+    },
+    "chocolate-chipotle-flan": {
+      "url": "https://visitorlando.widen.net/content/eu9uqmscw6/jpeg/201128-dessert.jpg?color=ffffffff&crop=true&h=640&position=c&q=65&u=c4dqed&w=640",
+      "alt": "Black Rooster chocolate-chipotle flan topped with whipped cream and berry sauce, restaurant dessert",
+      "credit": "Visit Orlando · Black Rooster Chocolate Flan",
+      "sourceUrl": "https://www.visitorlando.com/listing/black-rooster-taqueria/53404/",
+      "kind": "editorial-product",
+      "reviewedAt": "2026-10-23",
+      "matchMethod": "Visual comparison with the menu item and its published description",
+      "needsPermissionReview": true
+    },
+    "chicken-tinga": {
+      "url": "https://media2.orlandoweekly.com/orlando/imager/u/original/28277049/bartlettimage-black-rooster-5288.jpg",
+      "alt": "Black Rooster chicken taco with shredded chicken, lettuce and crema; published older presentation may vary from current Chicken Tinga recipe",
+      "credit": "Orlando Weekly · Black Rooster chicken taco coverage",
+      "sourceUrl": "https://www.orlandoweekly.com/food-drink/orlandos-black-rooster-taqueria-is-opening-another-location-in-curry-ford-west-28276087",
+      "kind": "editorial-context",
+      "reviewedAt": "2026-10-23",
+      "matchMethod": "Visual comparison with the menu item and its published description",
+      "needsPermissionReview": true
+    },
+    "shrimp-and-chorizo": {
+      "url": "https://wpcdn.us-east-1.vip.tn-cloud.net/www.orlandomagazine.com/content/uploads/2023/05/j/g/orlando-does-tacos-balckrooster.jpg?amp=1&etag=%22646c1a81-4a262%22",
+      "alt": "Black Rooster Taqueria Shrimp and Chorizo taco with grilled shrimp and chorizo, tomatillo-avocado salsa, pico de gallo and lime; includes a magazine award graphic overlay.",
+      "credit": "Orlando Magazine · Black Rooster Shrimp & Chorizo taco",
+      "sourceUrl": "https://www.orlandomagazine.com/30-central-florida-taco-spots/",
+      "kind": "editorial-product",
+      "reviewedAt": "2026-10-23",
+      "matchMethod": "Photo visually compared to exact item description; third-party images explicitly differentiated",
+      "needsPermissionReview": true
+    },
+    "ahi-tuna-ceviche": {
+      "url": "https://waivio.nyc3.digitaloceanspaces.com/c8b3cdf947e8d12b1fa491c2f48eff9030e34a136900de6f8803da547f962784_contain",
+      "alt": "Representative tuna ceviche with pink diced tuna, ripe mango, cilantro and sliced red onion in a pale citrus coconut sauce. This appears digitally styled and is NOT the actual Black Rooster serving; tortilla chip and pico de gallo details differ.",
+      "credit": "Waivio · Tropical Tuna and Mango Ceviche illustrative image",
+      "sourceUrl": "https://www.waivio.com/object/qxk-tropical-tuna-and-mango-ceviche",
+      "kind": "representative-dish",
+      "reviewedAt": "2026-10-23",
+      "matchMethod": "Compared alternative visual results with the ingredient-level menu description; visibly disclosed differences",
+      "photoIdentityNote": "May be digitally generated. Unverified as a natural photograph and NOT an exact restaurant menu photo.",
+      "needsPermissionReview": true
+    },
+    "tamale": {
+      "url": "https://www.mashed.com/img/gallery/the-absolute-best-tamales-in-the-us/tamale-co-mexican-street-food-orlando-fl-1645623421.jpg",
+      "alt": "Representative tamale in a corn husk with green tomatillo sauce, crema and cilantro; separate Orlando restaurant, filling unconfirmed",
+      "credit": "Mashed · Tamale Co Orlando photograph",
+      "sourceUrl": "https://www.mashed.com/776999/the-absolute-best-tamales-in-the-us/",
+      "kind": "representative-dish",
+      "reviewedAt": "2026-10-23",
+      "matchMethod": "Compared alternative visual results with the ingredient-level menu description; visibly disclosed differences",
+      "photoIdentityNote": "Illustrative real photo from another restaurant or recipe, not the official Black Rooster dish.",
+      "needsPermissionReview": true
+    },
+    "kale-caesar": {
+      "url": "https://static.wixstatic.com/media/42f651_892d4b29f47a488a80da79b7b61a993f~mv2.jpg/v1/fill/w_800%2Ch_600%2Cal_c%2Cq_85%2Cenc_avif%2Cquality_auto/42f651_892d4b29f47a488a80da79b7b61a993f~mv2.jpg",
+      "alt": "Representative kale Caesar salad with avocado, halved eggs, greens, dressing and croutons; missing the restaurant's distinctive kalamata olives and cotija cheese",
+      "credit": "Mastic Lifestyle · Kale Caesar recipe photograph",
+      "sourceUrl": "https://www.mastic-lifestyle.com/post/caesar-salade",
+      "kind": "representative-dish",
+      "reviewedAt": "2026-10-23",
+      "matchMethod": "Compared alternative visual results with the ingredient-level menu description; visibly disclosed differences",
+      "photoIdentityNote": "Illustrative real photo from another restaurant or recipe, not the official Black Rooster dish.",
+      "needsPermissionReview": true
+    },
+    "vegetarian-black-beans": {
+      "url": "https://images.squarespace-cdn.com/content/v1/5dc0d87d4b9363400fbca6cf/02e87c41-a9e2-4e93-bdce-3103b32e0b1c/vegetarian%2Bblack%2Bbean%2Bburritos.JPG",
+      "alt": "Representative pan of vegetarian black beans with red and yellow bell peppers, onions, garlic and cilantro; home-cooked filling, not a Black Rooster side dish",
+      "credit": "Vegetarian black bean recipe photograph · Squarespace",
+      "sourceUrl": "https://storage.googleapis.com/dcbzqsxgzehare/skyline-vegetarian-black-bean-burrito-nutrition.html",
+      "kind": "representative-dish",
+      "reviewedAt": "2026-10-23",
+      "matchMethod": "Compared alternative visual results with the ingredient-level menu description; visibly disclosed differences",
+      "photoIdentityNote": "Illustrative real photo from another restaurant or recipe, not the official Black Rooster dish.",
+      "needsPermissionReview": true
+    },
+    "sweet-plantains": {
+      "url": "https://popmenucloud.com/cdn-cgi/image/width%3D1200%2Cheight%3D1200%2Cfit%3Dscale-down%2Cformat%3Dauto%2Cquality%3D60/kgruzapj/31da5142-f004-4e18-bcaa-092444bff878.jpg",
+      "alt": "Representative side plate of fried golden sweet plantains, full plate visible; photographed at a different restaurant",
+      "credit": "El Pollo Inka · fried plantains photo",
+      "sourceUrl": "https://www.elpolloinkarhe.com/items/platano-fried-plantains",
+      "kind": "representative-dish",
+      "reviewedAt": "2026-10-23",
+      "matchMethod": "Compared alternative visual results with the ingredient-level menu description; visibly disclosed differences",
+      "photoIdentityNote": "Illustrative real photo from another restaurant or recipe, not the official Black Rooster dish.",
+      "needsPermissionReview": true
+    },
+    "cilantro-poblano-rice": {
+      "url": "https://forktionary.s3.us-east-2.amazonaws.com/prod/images/recipe-image-8696.png",
+      "alt": "Representative full bowl of green cilantro rice with fresh lime and sliced green chili; green poblanos and the actual Black Rooster rice preparation are not confirmed.",
+      "credit": "Forktionary · Arroz Verde Mexican Green Rice recipe photograph",
+      "sourceUrl": "https://forktionary.com/recipe/arroz-verde-mexican-green-rice",
+      "kind": "representative-dish",
+      "reviewedAt": "2026-10-23",
+      "matchMethod": "Compared alternative visual results with the ingredient-level menu description; visibly disclosed differences",
+      "photoIdentityNote": "Illustrative real photo from another restaurant or recipe, not the official Black Rooster dish.",
+      "needsPermissionReview": true
+    },
+    "tres-leches-cake": {
+      "url": "https://popmenucloud.com/cdn-cgi/image/width%3D1920%2Cheight%3D1920%2Cformat%3Dauto%2Cfit%3Dscale-down/anywfglv/78c7a650-9caf-4023-8e7e-d4c5a8f4a986.jpg",
+      "alt": "Representative three-milk soaked sponge cake with cream topping, different Mexican restaurant and not Black Rooster's own dessert photo",
+      "credit": "Flora Mexican Kitchen · Tres Leches cake photograph",
+      "sourceUrl": "https://www.florahouston.com/menus/dessert",
+      "kind": "representative-dish",
+      "reviewedAt": "2026-10-23",
+      "matchMethod": "Compared alternative visual results with the ingredient-level menu description; visibly disclosed differences",
+      "photoIdentityNote": "Illustrative real photo from another restaurant or recipe, not the official Black Rooster dish.",
+      "needsPermissionReview": true
+    },
+    "black-rooster-asada": {
+      "url": "https://axwwgrkdco.cloudimg.io/v7/__gmpics__/a630a823cb544b288f841a8ec2d94532",
+      "alt": "Black Rooster restaurant taco with charred meat and melted white cheese on corn tortilla and cilantro. Photograph is from the restaurant but the dish name was not independently confirmed as Black Rooster Asada.",
+      "credit": "MICHELIN Guide · Black Rooster Taqueria taco",
+      "sourceUrl": "https://guide.michelin.com/us/en/florida/orlando/restaurant/black-rooster-taqueria",
+      "kind": "editorial-context",
+      "matchMethod": "Menu description compared with multiple candidate photos; differing ingredients noted explicitly",
+      "reviewedAt": "2026-10-23",
+      "needsPermissionReview": true,
+      "photoIdentityNote": "Representative or contextual dish. Not an authenticated exact restaurant item."
+    },
+    "pork-belly": {
+      "url": "https://d1w7312wesee68.cloudfront.net/Y3tvJduTOonhG0LNsjETicAVye-Pg2NUxMqTV7iNc9w/resize%3Afit%3A720%3A720/plain/s3%3A/toasttab/menu_service/restaurants/0678c592-39c7-4805-9060-d927c7f52e99/MenuItem/d24f8e29-67f5-496f-8414-b93a47d034c4.jpg",
+      "alt": "Representative pork belly taco with crispy pork chunks, green salsa verde, onion, cilantro and radish-colored pickled onion, fully visible; dish from another restaurant.",
+      "credit": "Copita Willow Glen · Pork Belly tacos ordering photo",
+      "sourceUrl": "https://order.toasttab.com/online/copita-willow-glen/item-pork-belly-tacos_8df16483-f0c3-4325-85fb-5668737d2d15",
+      "kind": "representative-dish",
+      "matchMethod": "Menu description compared with multiple candidate photos; differing ingredients noted explicitly",
+      "reviewedAt": "2026-10-23",
+      "needsPermissionReview": true,
+      "photoIdentityNote": "Representative or contextual dish. Not an authenticated exact restaurant item."
+    },
+    "smoked-greens": {
+      "url": "https://s3.us-east-2.amazonaws.com/pfimg1/013/bd/ef/bdef832da8276458c5663dc8738c4b63_1280m.jpg",
+      "alt": "Representative vegetarian corn tacos with sautéed mushrooms and kale, fresh herbs and white cheese; does not show Black Rooster's plantain and ricotta recipe.",
+      "credit": "Punchfork · Half Baked Harvest Poblano Mushroom and Kale tacos",
+      "sourceUrl": "https://www.punchfork.com/recipe/Poblano-Mushroom-Tacos-with-Cilantro-Yogurt-Sauce-Half-Baked-Harvest",
+      "kind": "representative-dish",
+      "matchMethod": "Menu description compared with multiple candidate photos; differing ingredients noted explicitly",
+      "reviewedAt": "2026-10-23",
+      "needsPermissionReview": true,
+      "photoIdentityNote": "Representative or contextual dish. Not an authenticated exact restaurant item."
+    },
+    "smoked-beef-brisket": {
+      "url": "https://static.spotapps.co/spots/88/bb2a7e732148ba9096eef8d2a6051b/full",
+      "alt": "Representative smoked beef brisket tacos with shredded lettuce, diced pico de gallo, white crema and chips; restaurant recipe's chimichurri and cotija aren't visible.",
+      "credit": "Conroe Lake House · brisket taco photograph",
+      "sourceUrl": "https://conroelakehouse.com/montgomery-lake-conroe-conroe-lake-house-food-menu",
+      "kind": "representative-dish",
+      "matchMethod": "Menu description compared with multiple candidate photos; differing ingredients noted explicitly",
+      "reviewedAt": "2026-10-23",
+      "needsPermissionReview": true,
+      "photoIdentityNote": "Representative or contextual dish. Not an authenticated exact restaurant item."
+    },
+    "achiote-pork-salad-add-on": {
+      "url": "https://assets.cardamomo.news/__export/1773175572027/sites/debate/img/2026/03/10/cochinita_pibil_jugosa.png_2062789929.png",
+      "alt": "Representative achiote-seasoned shredded pork in a bowl lined with banana leaf, topped with pickled red onion and habanero. Only the optional pork protein, NOT the completed Black Rooster salad.",
+      "credit": "Cardamomo · cochinita pibil illustrated preparation",
+      "sourceUrl": "https://www.cardamomo.news/comida/cochinita-pibil-jugosa-paso-a-paso-con-sabor-100-mexicano-20260310-0001.html",
+      "kind": "representative-dish",
+      "reviewedAt": "2026-10-23",
+      "matchMethod": "Compared menu name, ingredient description and available image subjects; different restaurant or recipe explicitly noted",
+      "needsPermissionReview": true,
+      "photoIdentityNote": "This is an illustration of the named dish or ingredient and not the actual Black Rooster product or serving."
+    },
+    "chicken-tinga-salad-add-on": {
+      "url": "https://www.slenderkitchen.com/sites/default/files/styles/gws_sq_1440/public/recipe_images/chicken-tinga.jpg",
+      "alt": "Representative cooked pulled chicken mixed in red chile chipotle-tomato sauce in a full bowl, cilantro visible. Only salad add-on protein; NOT the finished Black Rooster salad.",
+      "credit": "Slender Kitchen · Chicken Tinga recipe photograph",
+      "sourceUrl": "https://www.slenderkitchen.com/web-stories/chicken-tinga-177665760504",
+      "kind": "representative-dish",
+      "reviewedAt": "2026-10-23",
+      "matchMethod": "Compared menu name, ingredient description and available image subjects; different restaurant or recipe explicitly noted",
+      "needsPermissionReview": true,
+      "photoIdentityNote": "This is an illustration of the named dish or ingredient and not the actual Black Rooster product or serving."
+    },
+    "beef-salad-add-on": {
+      "url": "https://eato.health/food-images/feast/act/texas-roadhouse-lil-dillo-steak-bites-18335100-1.webp",
+      "alt": "Representative bite-sized grilled beef pieces on a plate; Black Rooster salad optional protein form and exact preparation are not confirmed. Not a completed salad.",
+      "credit": "Eato · restaurant steak bites reference photography",
+      "sourceUrl": "https://eato.health/food/texas-roadhouse-lil-dillo-steak-bites-18335100-1",
+      "kind": "representative-dish",
+      "reviewedAt": "2026-10-23",
+      "matchMethod": "Compared menu name, ingredient description and available image subjects; different restaurant or recipe explicitly noted",
+      "needsPermissionReview": true,
+      "photoIdentityNote": "This is an illustration of the named dish or ingredient and not the actual Black Rooster product or serving."
+    },
+    "crispy-fish-salad-add-on": {
+      "url": "https://assets-guacamole.radioformula.com.mx/__export/1774053009327/sites/formula/img/2026/03/20/pescado_dorado.jpg_1942733086.jpg",
+      "alt": "Representative golden battered fried fish strips on a dish with fresh lime, only the optional fish protein for salad; not the actual Black Rooster salad.",
+      "credit": "Guacamole · fried fish recipe photograph",
+      "sourceUrl": "https://guacamole.radioformula.com.mx/recetas/el-truco-infalible-de-los-expertos-para-que-tu-pescado-dorado-salga-jugoso-20260320-0009.html",
+      "kind": "representative-dish",
+      "reviewedAt": "2026-10-23",
+      "matchMethod": "Compared menu name, ingredient description and available image subjects; different restaurant or recipe explicitly noted",
+      "needsPermissionReview": true,
+      "photoIdentityNote": "This is an illustration of the named dish or ingredient and not the actual Black Rooster product or serving."
+    },
+    "shrimp-salad-add-on": {
+      "url": "https://yummygusto.com/assets/images/1741483274116-eq371ckw.webp",
+      "alt": "Representative bowl of sautéed chili-lime shrimp with cilantro, photographed fully. Shows only a possible shrimp add-on, not a complete Black Rooster salad.",
+      "credit": "Yummy Gusto · Chili Lime Shrimp recipe photograph",
+      "sourceUrl": "https://yummygusto.com/recipes/zesty-shrimp-lime",
+      "kind": "representative-dish",
+      "reviewedAt": "2026-10-23",
+      "matchMethod": "Compared menu name, ingredient description and available image subjects; different restaurant or recipe explicitly noted",
+      "needsPermissionReview": true,
+      "photoIdentityNote": "This is an illustration of the named dish or ingredient and not the actual Black Rooster product or serving."
+    },
+    "salsa-and-chips-choice-of": {
+      "url": "https://d1w7312wesee68.cloudfront.net/P2x-pOPj4qbSB7wH__axOSt8E_XI0sGXJkNEvXCrQkM/resize%3Afit%3A720%3A720/plain/s3%3A/toasttab/restaurants/restaurant-9718000000000000/menu/items/9/item-300000008274067139_1598881535.jpg",
+      "alt": "Representative chips and three dip bowls: red chili salsa, green tomatillo salsa and an additional white creamy dip. Black Rooster offers a single choice of roasted tomatillo, 3 Chile Tomato OR habanero, not these exact three sauces.",
+      "credit": "Chuy's Short Pump · Chips and Dips Platter on ToastTab",
+      "sourceUrl": "https://order.toasttab.com/online/cdb-shortpump",
+      "kind": "representative-dish",
+      "reviewedAt": "2026-10-23",
+      "matchMethod": "Compared menu name, ingredient description and available image subjects; different restaurant or recipe explicitly noted",
+      "needsPermissionReview": true,
+      "photoIdentityNote": "This is an illustration of the named dish or ingredient and not the actual Black Rooster product or serving."
+    },
+    "br-nachos": {
+      "url": "https://dewhearth.com/cdn-cgi/image/fit%3Dcontain%2Cwidth%3D768%2Cquality%3D80%2Cformat%3Dauto/assets/images/1766522951047-dscaywhz.webp",
+      "alt": "Representative breakfast nachos with fried egg, beans, tortilla chips, cheese sauce, chopped tomato, red onion, cilantro and guacamole. Black Rooster's smoked kale and chipotle cheese are not shown; restaurant plating differs.",
+      "credit": "Dewhearth · Egg Topped Breakfast Nachos photograph",
+      "sourceUrl": "https://dewhearth.com/recipes/egg-topped-breakfast-nachos",
+      "kind": "representative-dish",
+      "reviewedAt": "2026-10-23",
+      "matchMethod": "Compared menu name, ingredient description and available image subjects; different restaurant or recipe explicitly noted",
+      "needsPermissionReview": true,
+      "photoIdentityNote": "This is an illustration of the named dish or ingredient and not the actual Black Rooster product or serving."
+    },
+    "kale-salad": {
+      "url": "https://m1.quebecormedia.com/emp/cl_prod/6fe58dd8d22a074098f315a7288f06dcce864bb1/Coup-de-Pouce-7-8-novembre-202410087Salade-kale-pommes2-1.jpg?height=1500&impolicy=resize&width=1500",
+      "alt": "Representative kale salad with red grapes, feta-style white cheese and roasted pecans. Black Rooster kale salad additionally includes radish, cabbage, carrot, celery, onion and herbs; not official plating.",
+      "credit": "Canadian Living · Kale Salad with Apple Cinnamon Vinaigrette",
+      "sourceUrl": "https://www.canadianliving.com/food/lunch-and-dinner/recipe/kale-salad-with-apple-cinnamon-vinaigrette",
+      "kind": "representative-dish",
+      "reviewedAt": "2026-10-23",
+      "matchMethod": "Compared menu name, ingredient description and available image subjects; different restaurant or recipe explicitly noted",
+      "needsPermissionReview": true,
+      "photoIdentityNote": "This is an illustration of the named dish or ingredient and not the actual Black Rooster product or serving."
+    },
+    "pozole-rojo": {
+      "url": "https://www.muydelish.com/wp-content/uploads/2020/12/Pozole.jpg",
+      "alt": "Representative red chile BEEF pozole with hominy, shredded cabbage, radish and cilantro in a white bowl. Black Rooster uses roasted beef tri-tip and also lists avocado, queso fresco, lime and chips; this is NOT a restaurant-specific product photo.",
+      "credit": "Muy Delish · Ana Frias beef Pozole Rojo recipe image",
+      "sourceUrl": "https://www.muydelish.com/red-beef-pozole/",
+      "kind": "representative-dish",
+      "reviewedAt": "2026-10-23",
+      "matchMethod": "Compared menu name, ingredient description and available image subjects; different restaurant or recipe explicitly noted",
+      "needsPermissionReview": true,
+      "photoIdentityNote": "This is an illustration of the named dish or ingredient and not the actual Black Rooster product or serving."
     }
   },
   "mamak-colonial": {
@@ -850,6 +1380,60 @@ export const verifiedDishPhotos = {
       "alt": "Kale Pesto Tomatoes photographed on Fresh Kitchen's official menu",
       "credit": "Fresh Kitchen · official food menu",
       "sourceUrl": "https://www.eatfreshkitchen.com/menu"
+    },
+    "teriyaki-salmon": {
+      "url": "https://cdn.prod.website-files.com/693842c5467272494a7d47f2/6a4fbccc1322057d836a877f_teriyaki-salmon%20(1).png",
+      "alt": "Fresh Kitchen Teriyaki Salmon pictured on restaurant official menu; product only",
+      "credit": "Fresh Kitchen · official menu photograph",
+      "sourceUrl": "https://www.eatfreshkitchen.com/menu",
+      "kind": "official-product",
+      "matchMethod": "Linked directly from the exact named menu card in Fresh Kitchen's HTML",
+      "reviewedAt": "2026-10-23"
+    },
+    "golden-char-chicken": {
+      "url": "https://cdn.prod.website-files.com/693842c5467272494a7d47f2/6a4fbde75bdf7ccde0e1442b_Golden-Char-Chicken.png",
+      "alt": "Fresh Kitchen Golden Char Chicken official protein product photograph",
+      "credit": "Fresh Kitchen · official menu photograph",
+      "sourceUrl": "https://www.eatfreshkitchen.com/menu",
+      "kind": "official-product",
+      "matchMethod": "Linked directly from the exact named menu card in Fresh Kitchen's HTML",
+      "reviewedAt": "2026-10-23"
+    },
+    "buffalo": {
+      "url": "https://cdn.prod.website-files.com/693842c5467272494a7d47f2/6aa934befc47183798b35f3b_buffalo%20sauce.avif",
+      "alt": "Fresh Kitchen Buffalo sauce as pictured on the brand menu, individual sauce",
+      "credit": "Fresh Kitchen · official menu photograph",
+      "sourceUrl": "https://www.eatfreshkitchen.com/menu",
+      "kind": "official-product",
+      "matchMethod": "Linked directly from the exact named menu card in Fresh Kitchen's HTML",
+      "reviewedAt": "2026-10-23"
+    },
+    "green-goodness": {
+      "url": "https://cdn.prod.website-files.com/693842c5467272494a7d47f2/69a2f7ac95e0bd2bc5b1b8fc_6958a2613202b977fd857e8f_Mask%20group%20(27).avif",
+      "alt": "Fresh Kitchen Green Goodness sauce product illustration from official menu",
+      "credit": "Fresh Kitchen · official menu photograph",
+      "sourceUrl": "https://www.eatfreshkitchen.com/menu",
+      "kind": "official-product",
+      "matchMethod": "Linked directly from the exact named menu card in Fresh Kitchen's HTML",
+      "reviewedAt": "2026-10-23"
+    },
+    "chocolate-chip-cookies": {
+      "url": "https://cdn.prod.website-files.com/693842c5467272494a7d47f2/69a2ff62b6c236e0112157d3_695901cbf876bb7021a10d0e_Mask%20group%20(51).avif",
+      "alt": "Fresh Kitchen Really Good Chocolate Chip Cookies shown on the restaurant's official menu",
+      "credit": "Fresh Kitchen · official menu photograph",
+      "sourceUrl": "https://www.eatfreshkitchen.com/menu",
+      "kind": "official-product",
+      "matchMethod": "Linked directly from the exact named menu card in Fresh Kitchen's HTML",
+      "reviewedAt": "2026-10-23"
+    },
+    "peanut-butter-chip-cookies": {
+      "url": "https://cdn.prod.website-files.com/693842c5467272494a7d47f2/6aa931c60933d2af876acba9_Peanut%20Butter%20Chip%20Cookies%20Mobile%20.avif",
+      "alt": "Fresh Kitchen Really Good Peanut Butter Chip Cookies photographed for the official menu",
+      "credit": "Fresh Kitchen · official menu photograph",
+      "sourceUrl": "https://www.eatfreshkitchen.com/menu",
+      "kind": "official-product",
+      "matchMethod": "Linked directly from the exact named menu card in Fresh Kitchen's HTML",
+      "reviewedAt": "2026-10-23"
     }
   },
   "reyes-mezcaleria": {
