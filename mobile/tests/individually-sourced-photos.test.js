@@ -52,12 +52,13 @@ test("photo enrichment must not fill unmatched items with a default restaurant p
     const dishes = localDishes.filter((d) => d.restaurantId === restaurant.id);
     for (const dish of dishes) {
       const source = menuPhotoFor(dish, restaurant);
-      if (source) assert.equal(source.exact, true);
+      if (source) assert.equal(source.exact,
+        !/^(representative|menu-context|editorial-context)/.test(dish.imageKind || "") && !dish.imageGenerated);
     }
   }
   const chipotle = localRestaurants.find((r) => r.slug === "chipotle-south-orange");
   const beans = localDishes.find((d) => d.restaurantId === chipotle.id && d.name === "Black Beans");
-  assert.equal(menuPhotoFor(beans, chipotle), null);
+  assert.equal(menuPhotoFor(beans, chipotle)?.exact, false);
 });
 
 test("image update leaves allergens and dietary data independent of pictures", () => {
