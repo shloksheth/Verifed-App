@@ -43,8 +43,8 @@
       "total": 43,
       "officialMenu": 1,
       "editorialNamed": 4,
-      "contextual": 1,
-      "missing": 37
+      "contextual": 3,
+      "missing": 35
     },
     {
       "restaurant": "Lazy Moon · Mills/50",
@@ -65,7 +65,8 @@
     "Current menu images use padded contain fit; actual image sharpness and framing still require on-device review.",
     "2026-10-24 follow-up: three additional historical article-matched Mamak image references are contextual and require URL and visual inspection plus copyright permission; not approved as exact Colonial Drive servings.",
     "2026-10-24: Added four original Lazy Moon official ordering-menu images and one historical Mamak image with item-level source and cross-location caveats. Reproduction rights and on-device framing still unapproved.",
-    "2026-10-24: More Lazy Moon same-brand product/menu photos and clearly classified editorial Caesar salad context added, not cleared for redistribution."
+    "2026-10-24: More Lazy Moon same-brand product/menu photos and clearly classified editorial Caesar salad context added, not cleared for redistribution.",
+    "2026-10-24: Added two item-matched Pigzza editorial dish photographs with source provenance, contextual label and pending reuse rights."
   ],
   "entries": [
     {
@@ -5620,10 +5621,19 @@
       "restaurantSlug": "pig-floyds-mills",
       "itemName": "Pepperoni",
       "description": "Pigzza sauce, smoked mozz, parmesan & fresh oregano. Add: Brisket +4 · Sausage +4 · Pepperoni +3 · Vegan Cheese +3 · Vegan Pepperoni +3 · Truffle Oil +5 · Make it gluten-free +3.5",
-      "photoStatus": "missing",
-      "photo": null,
+      "photoStatus": "editorial-context",
+      "photo": {
+        "url": "https://media.timeout.com/images/106362611/image.jpg",
+        "alt": "Pepperoni pizza photographed at Pigzza in January 2026 with sourdough crust, pepperoni and herbs; editorial image, reproduction permissions pending",
+        "credit": "Time Out · Megan duBois (Jan 2026)",
+        "sourceUrl": "https://www.timeout.com/orlando/restaurants/pigzza",
+        "photoKind": "editorial-context",
+        "identityMethod": "Direct Pigzza review image explicitly titled pepperoni pizza; restaurant match, exact recipe/plating verification and publication permission pending",
+        "rights": "permission-review-needed",
+        "fullFoodFit": "contain"
+      },
       "reviewStatus": "needs-manual-visual-approval",
-      "nextStep": "Find a photograph of Pepperoni matching the menu description; otherwise create and label an illustrative reconstruction",
+      "nextStep": "Visually approve specific preparation, check image URL and copyright permission before release.",
       "imageCandidateQueries": [
         "Pig Floyd’s & Pigzza Pepperoni photo",
         "Pig Floyd’s & Pigzza Pepperoni menu order",
@@ -5705,10 +5715,19 @@
       "restaurantSlug": "pig-floyds-mills",
       "itemName": "Spicy Sausage Rigatoni",
       "description": "Rigatoni with house spicy Italian sausage & vodka sauce, freshly shaved parmesan, topped with fresh basil. Made with fresh pasta. Gluten-free pasta +4",
-      "photoStatus": "missing",
-      "photo": null,
+      "photoStatus": "editorial-context",
+      "photo": {
+        "url": "https://www.theorlandoreal.com/uploads/agent-1/Life%20In%20Orlando/Piggza/IMG_8716.jpg",
+        "alt": "Spicy sausage rigatoni at Pigzza with vodka tomato cream sauce, parmesan and basil in a shallow white bowl; editorial photograph",
+        "credit": "The Orlando Real · Pigzza Mills/50 editorial coverage",
+        "sourceUrl": "https://www.theorlandoreal.com/piggza-serves-up-modern-italianish-dishes-in-mills-50/",
+        "photoKind": "editorial-context",
+        "identityMethod": "Named Pigzza pasta food photo matched to item and restaurant in independent dining coverage; review recipe details and rights before reuse",
+        "rights": "permission-review-needed",
+        "fullFoodFit": "contain"
+      },
       "reviewStatus": "needs-manual-visual-approval",
-      "nextStep": "Find a photograph of Spicy Sausage Rigatoni matching the menu description; otherwise create and label an illustrative reconstruction",
+      "nextStep": "Visually approve specific preparation, check image URL and copyright permission before release.",
       "imageCandidateQueries": [
         "Pig Floyd’s & Pigzza Spicy Sausage Rigatoni photo",
         "Pig Floyd’s & Pigzza Spicy Sausage Rigatoni menu order",
