@@ -1,7 +1,7 @@
 // Discovery-only diagnostics. Never assign photos based on text proximity alone.
 // Print title/alt/image URL for human review; does not mutate catalog.
 const sites = [
-  ...["","menu/asian-street-food","menu/dine-in","menu/lunch","menu/curry","menu/fried-rice","menu/dinner","menu/malaysian","menu/takeout","menu/vegetarian","location/orlando","menu/noodles","menu/rice","menu/soup","food-menu"].map(x=>({id:"mamak:"+x,url:"https://www.mamakeats.com/"+x})),
+  ...["","menu/asian-street-food","menu/dine-in","menu/lunch","menu/curry","menu/fried-rice","menu/dinner","menu/malaysian","menu/takeout","menu/vegetarian","menu/indonesian","food-menu","menu/tapas","menu/charcoal-grill","menu/dessert","location/orlando","menu/noodles","menu/rice","menu/soup","food-menu"].map(x=>({id:"mamak:"+x,url:"https://www.mamakeats.com/"+x})),
   {id:"mamak:store",url:"https://www.mamakeats.com/store/24331"},
   {id:"pigfloyds",url:"https://www.pigfloyds.com/"},
   {id:"pigfloyds-menu",url:"https://www.pigfloyds.com/menu"},
