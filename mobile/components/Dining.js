@@ -6,7 +6,7 @@ import {
   Text,
   View,
 } from "react-native";
-import { Image } from "expo-image";
+import { Image } from "./MenuImage";
 import { api } from "../src/api";
 import { assessDish } from "../src/domain";
 import { chainBrand } from "../src/chain-brand";
@@ -15,7 +15,7 @@ import { menuPhotoFor, restaurantFoodPhoto } from "../src/menu-photos";
 import { localFoodAssets } from "../src/local-food-assets";
 import { localFoodPhotoMetadata } from "../src/local-food-photo-metadata";
 import { localPhotoKeyFor } from "../src/local-photo-key";
-import { featuredRestaurants } from "../src/featured-menus";
+import { featuredRestaurants, featuredMenuCoverKeys } from "../src/featured-menus";
 import { dietaryMenuStatus, groupMenu } from "../src/menu-filter";
 import { colors, s } from "../styles";
 import AllergenIcons, {
@@ -360,8 +360,20 @@ function RestaurantPhoto({ restaurant, style, credit = false }) {
   const [usingOriginal, setUsingOriginal] = useState(false);
   const task = useTask();
   const preferred = restaurantFoodPhoto(restaurant);
+  const coverKey = featuredMenuCoverKeys[restaurant.slug];
+  const localCoverAsset = localFoodAssets[coverKey];
+  const localCoverMetadata = localFoodPhotoMetadata[coverKey];
   const hasBackup = !!restaurant.imageUrl && restaurant.imageUrl !== preferred?.url;
-  const displayed = !usingOriginal && preferred
+  const displayed = localCoverAsset && localCoverMetadata
+    ? {
+        ...restaurant,
+        imageAlt: `${localCoverMetadata.alt}. One example from the restaurant menu.`,
+        imageCredit: {
+          label: localCoverMetadata.generated ? "Verifed menu illustration" : localCoverMetadata.credit,
+          url: localCoverMetadata.generated ? null : restaurant.menuUrl,
+        },
+      }
+    : !usingOriginal && preferred
     ? {
         ...restaurant,
         imageUrl: preferred.url,
@@ -377,11 +389,11 @@ function RestaurantPhoto({ restaurant, style, credit = false }) {
   const creditUrl = displayed.imageCredit?.url;
   return (
     <View style={[s.restaurantPhoto, style]}>
-      {displayed.imageUrl && !failed ? (
+      {(localCoverAsset || displayed.imageUrl) && !failed ? (
         <Image
-          source={{ uri: displayed.imageUrl }}
+          source={localCoverAsset || { uri: displayed.imageUrl }}
           contentFit={
-            displayed.imageKind === "brand-art" ? "contain" : "cover"
+            localCoverAsset || displayed.imageKind === "brand-art" ? "contain" : "cover"
           }
           style={[
             s.photoFill,
@@ -393,7 +405,7 @@ function RestaurantPhoto({ restaurant, style, credit = false }) {
             displayed.imageAlt || `${restaurant.name} restaurant photography`
           }
           onError={() => {
-            if (!usingOriginal && preferred && hasBackup) setUsingOriginal(true);
+            if (!localCoverAsset && !usingOriginal && preferred && hasBackup) setUsingOriginal(true);
             else setFailed(true);
           }}
         />
@@ -1134,6 +1146,9 @@ export function DishDetail({ id, state, navigate, openSheet }) {
                 url={dish.provenance?.allergenUrl || restaurant.allergenUrl}
               >
                 Open allergen source
+              </SourceLink>
+              <SourceLink url={dish.provenance?.ingredientUrl}>
+                Open ingredient source
               </SourceLink>
             </View>
           )}

@@ -1,0 +1,21 @@
+{
+  "version": 17,
+  "attempts": [
+    {
+      "snackId": "ja6m1rsqCECCTdtpWBjXn",
+      "outcome": "Superseded: upload completion was not checked; download returned HTTP 500. Retained as an immutable earlier snapshot."
+    },
+    {
+      "snackId": null,
+      "outcome": "After all image hashes were verified, the save request failed with ECONNRESET. No saved ID returned."
+    },
+    {
+      "snackId": "C7L0s40mduOk3YkF32yT9",
+      "outcome": "Saved; 357 remote image hashes matched. Download HTTP 503 twice. Web runtime later exposed Expo Image registerAsset initialization error; superseded by compatibility fix."
+    },
+    {
+      "snackId": "xoqR-YOqjOb1zGRZlCfwU",
+      "outcome": "Saved; 357 remote image hashes matched. Home and Loving Hut menu rendered with No errors after MenuImage fix. All 287 images loaded in final local web export. Remote ZIP HTTP 503; no physical iPhone test."
+    }
+  ]
+}

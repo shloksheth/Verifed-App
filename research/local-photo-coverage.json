@@ -1,9 +1,9 @@
 {
   "activeItems": 1630,
-  "approvedLocalImages": 332,
+  "approvedLocalImages": 356,
   "sharedLocalEntries": 232,
-  "coveredLocalEntries": 564,
-  "remaining": 1066,
+  "coveredLocalEntries": 588,
+  "remaining": 1042,
   "errors": [],
   "duplicateFinalImages": [],
   "restaurants": {
@@ -21,9 +21,9 @@
     },
     "chipotle-south-orange": {
       "active": 26,
-      "approved": 14,
+      "approved": 26,
       "shared": 0,
-      "generated": 0
+      "generated": 11
     },
     "black-rooster-mills": {
       "active": 27,
@@ -39,9 +39,9 @@
     },
     "loving-hut-orlando": {
       "active": 61,
-      "approved": 49,
+      "approved": 61,
       "shared": 0,
-      "generated": 49
+      "generated": 61
     },
     "the-strand-mills": {
       "active": 20,

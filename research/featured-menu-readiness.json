@@ -1,10 +1,11 @@
 {
-  "checkedAt": "2026-10-24T16:13:42.715Z",
-  "scope": "Three featured imported food menus; not a claim of live restaurant availability or complete allergy information",
+  "checkedAt": "2026-10-24T17:28:34.769Z",
+  "scope": "Five featured imported food menus; the preferred three are listed first. Not a claim of live restaurant availability or complete allergy information",
   "menus": [
     {
       "restaurant": "fresh-kitchen-waterford",
       "name": "Fresh Kitchen · Waterford Lakes",
+      "primaryDemo": true,
       "menuEntries": 35,
       "localImages": 35,
       "missingImages": [],
@@ -13,26 +14,51 @@
       "itemsWithUnconfirmedMajorAllergens": 35
     },
     {
-      "restaurant": "hawkers-orlando",
-      "name": "Hawkers Orlando",
-      "menuEntries": 49,
-      "localImages": 49,
+      "restaurant": "chipotle-south-orange",
+      "name": "Chipotle · South Orange",
+      "primaryDemo": true,
+      "menuEntries": 26,
+      "localImages": 26,
       "missingImages": [],
-      "generatedIllustrations": 3,
-      "itemsWithPublishedIngredientText": 0,
-      "itemsWithUnconfirmedMajorAllergens": 49
+      "generatedIllustrations": 11,
+      "itemsWithPublishedIngredientText": 2,
+      "itemsWithUnconfirmedMajorAllergens": 26
+    },
+    {
+      "restaurant": "loving-hut-orlando",
+      "name": "Loving Hut Orlando",
+      "primaryDemo": true,
+      "menuEntries": 61,
+      "localImages": 61,
+      "missingImages": [],
+      "generatedIllustrations": 61,
+      "itemsWithPublishedIngredientText": 54,
+      "itemsWithUnconfirmedMajorAllergens": 61
     },
     {
       "restaurant": "taco-bell-south-orange",
       "name": "Taco Bell · South Orange",
+      "primaryDemo": false,
       "menuEntries": 116,
       "localImages": 116,
       "missingImages": [],
       "generatedIllustrations": 1,
       "itemsWithPublishedIngredientText": 68,
       "itemsWithUnconfirmedMajorAllergens": 116
+    },
+    {
+      "restaurant": "hawkers-orlando",
+      "name": "Hawkers Orlando",
+      "primaryDemo": false,
+      "menuEntries": 49,
+      "localImages": 49,
+      "missingImages": [],
+      "generatedIllustrations": 3,
+      "itemsWithPublishedIngredientText": 0,
+      "itemsWithUnconfirmedMajorAllergens": 49
     }
   ],
-  "totalMenuEntries": 200,
+  "totalMenuEntries": 287,
+  "primaryDemoMenuEntries": 122,
   "allFeaturedImagesLocal": true
 }

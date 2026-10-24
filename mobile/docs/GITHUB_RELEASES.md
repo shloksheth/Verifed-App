@@ -25,6 +25,8 @@ Use the next sequential number and the exact name `Verifed V<number>`. The descr
 
 ## Commands
 
+Current local-image work lives directly in `tmp/version-recovery/repository/mobile/` on `codex/local-menu-photography`. Do not run the historical root-to-checkout copying workflow below over this newer source. For V17, run the checkout's `research/native-tools/publish.mjs`, verify its image hashes and exported/browser results, and record the exact Snack ID and any failed remote checks. Commit the reviewed checkout, create the next unused numbered tag, and push normally. Main may advance only by a fast-forward after fetching and checking ancestry. Never replace previous release tags or invent a successful remote ZIP comparison.
+
 From the CAC workspace root, after the implementation and checks are complete:
 
 ```powershell

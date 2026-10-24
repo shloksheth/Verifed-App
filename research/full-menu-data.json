@@ -3344,8 +3344,10 @@
           "tags": [
             "Vegetarian"
           ],
-          "ingredients": [],
-          "evidenceNote": "US matrix standard component. Explicit global statement: eggs, fish, shellfish, peanuts, tree nuts and sesame are not used as ingredients; this does not guarantee absence or cover limited-time/test recipes. Milk/soy/wheat blanks are not free-from claims.",
+          "ingredients": [
+            "Cultured cream"
+          ],
+          "evidenceNote": "US matrix standard component. Explicit global statement: eggs, fish, shellfish, peanuts, tree nuts and sesame are not used as ingredients; this does not guarantee absence or cover limited-time/test recipes. Milk/soy/wheat blanks are not free-from claims. Published ingredient detail: Chipotle's current special-diets text identifies sour cream as entirely cultured cream. Milk is already declared in the component record.",
           "otherDeclaredAllergens": [],
           "freeFromClaims": [
             "Chain states these allergens are not ingredients; cross-contact remains possible"
@@ -3358,7 +3360,10 @@
           "menuUrl": "https://www.chipotle.com/content/chipotle/us/en/allergens.html",
           "allergenUrl": "https://www.chipotle.com/content/chipotle/us/en/allergens.html",
           "reviewedAt": "2026-10-21",
-          "informationComplete": false
+          "informationComplete": false,
+          "description": "Cultured cream, served as a menu component.",
+          "ingredientSourceUrl": "https://www.chipotle.com/content/chipotle/us/en/allergens.html",
+          "ingredientEvidenceNote": "Chipotle's current special-diets text identifies sour cream as entirely cultured cream. Milk is already declared in the component record."
         },
         {
           "key": "steak",
@@ -3409,8 +3414,12 @@
             "Vegan",
             "Vegetarian"
           ],
-          "ingredients": [],
-          "evidenceNote": "US matrix standard component. Explicit global statement: eggs, fish, shellfish, peanuts, tree nuts and sesame are not used as ingredients; this does not guarantee absence or cover limited-time/test recipes. Milk/soy/wheat blanks are not free-from claims.",
+          "ingredients": [
+            "Romaine lettuce",
+            "Baby kale",
+            "Baby spinach"
+          ],
+          "evidenceNote": "US matrix standard component. Explicit global statement: eggs, fish, shellfish, peanuts, tree nuts and sesame are not used as ingredients; this does not guarantee absence or cover limited-time/test recipes. Milk/soy/wheat blanks are not free-from claims. Published ingredient detail: The U.S. brand's Supergreens announcement names these three greens. This records the published mix, not a supplier-specific sub-ingredient or cross-contact guarantee.",
           "otherDeclaredAllergens": [],
           "freeFromClaims": [
             "Chain states these allergens are not ingredients; cross-contact remains possible"
@@ -3423,7 +3432,10 @@
           "menuUrl": "https://www.chipotle.com/content/chipotle/us/en/allergens.html",
           "allergenUrl": "https://www.chipotle.com/content/chipotle/us/en/allergens.html",
           "reviewedAt": "2026-10-21",
-          "informationComplete": false
+          "informationComplete": false,
+          "description": "A leafy salad base of romaine lettuce, baby kale and baby spinach.",
+          "ingredientSourceUrl": "https://newsroom.chipotle.com/2020-01-02-Chipotle-Innovates-Lifestyle-Bowls-By-Adding-Supergreens-Salad-Mix-And-Whole30-R-Compliant-Chicken",
+          "ingredientEvidenceNote": "The U.S. brand's Supergreens announcement names these three greens. This records the published mix, not a supplier-specific sub-ingredient or cross-contact guarantee."
         },
         {
           "key": "green-chili-salsa",

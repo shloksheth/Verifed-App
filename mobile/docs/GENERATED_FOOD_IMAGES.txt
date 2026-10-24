@@ -1,8 +1,41 @@
 VERIFED GENERATED FOOD IMAGES
 
-53 approved generated illustrations in the current image checkpoint.
+76 approved generated illustrations in the current image checkpoint.
 These images illustrate menu items; they are not restaurant photographs.
 This list does not imply that the full image migration is complete.
+
+Chipotle · South Orange - Black Beans
+mobile/assets/food/chipotle-south-orange/black-beans.webp
+
+Chipotle · South Orange - Brown Rice
+mobile/assets/food/chipotle-south-orange/brown-rice.webp
+
+Chipotle · South Orange - Crispy Corn Tortilla
+mobile/assets/food/chipotle-south-orange/crispy-corn-tortilla.webp
+
+Chipotle · South Orange - Fajita Vegetables
+mobile/assets/food/chipotle-south-orange/fajita-vegetables.webp
+
+Chipotle · South Orange - Flour Tortilla (Taco)
+mobile/assets/food/chipotle-south-orange/taco-tortilla.webp
+
+Chipotle · South Orange - Fresh Tomato Salsa
+mobile/assets/food/chipotle-south-orange/fresh-tomato-salsa.webp
+
+Chipotle · South Orange - Roasted Chili-Corn Salsa
+mobile/assets/food/chipotle-south-orange/roasted-corn-salsa.webp
+
+Chipotle · South Orange - Sofritas
+mobile/assets/food/chipotle-south-orange/sofritas.webp
+
+Chipotle · South Orange - Sour Cream
+mobile/assets/food/chipotle-south-orange/sour-cream.webp
+
+Chipotle · South Orange - Supergreens Lettuce Blend
+mobile/assets/food/chipotle-south-orange/supergreens.webp
+
+Chipotle · South Orange - Tomatillo Red-Chili Salsa
+mobile/assets/food/chipotle-south-orange/red-chili-salsa.webp
 
 Hawkers Orlando - Po Po Lo’s Curry — Shrimp
 mobile/assets/food/hawkers-orlando/curry-shrimp.webp
@@ -22,8 +55,14 @@ mobile/assets/food/loving-hut-orlando/avocado-rolls-2-rolls.webp
 Loving Hut Orlando - Avocado Salad
 mobile/assets/food/loving-hut-orlando/avocado-salad.webp
 
+Loving Hut Orlando - Avocado Sushi
+mobile/assets/food/loving-hut-orlando/avocado-sushi.webp
+
 Loving Hut Orlando - BBQ Rolls (2 Rolls)
 mobile/assets/food/loving-hut-orlando/bbq-rolls-2-rolls.webp
+
+Loving Hut Orlando - Brown Rice
+mobile/assets/food/loving-hut-orlando/brown-rice.webp
 
 Loving Hut Orlando - Bun Hue
 mobile/assets/food/loving-hut-orlando/bun-hue.webp
@@ -52,8 +91,14 @@ mobile/assets/food/loving-hut-orlando/crispy-tofu-4-pieces.webp
 Loving Hut Orlando - Curled Island (5 Pieces)
 mobile/assets/food/loving-hut-orlando/curled-island-5-pieces.webp
 
+Loving Hut Orlando - Dumpling (steamed or fried)
+mobile/assets/food/loving-hut-orlando/dumpling-steamed-or-fried.webp
+
 Loving Hut Orlando - Eggplant Tofu
 mobile/assets/food/loving-hut-orlando/eggplant-tofu.webp
+
+Loving Hut Orlando - French Fries
+mobile/assets/food/loving-hut-orlando/french-fries.webp
 
 Loving Hut Orlando - Garlic Sensation
 mobile/assets/food/loving-hut-orlando/garlic-sensation.webp
@@ -94,6 +139,9 @@ mobile/assets/food/loving-hut-orlando/noble-rice-ga-ca-ri.webp
 Loving Hut Orlando - Ocean Filet Burger
 mobile/assets/food/loving-hut-orlando/ocean-filet-burger.webp
 
+Loving Hut Orlando - Ocean Sushi
+mobile/assets/food/loving-hut-orlando/ocean-sushi.webp
+
 Loving Hut Orlando - Ocean Wonder (5 Pieces)
 mobile/assets/food/loving-hut-orlando/ocean-wonder-5-pieces.webp
 
@@ -112,6 +160,9 @@ mobile/assets/food/loving-hut-orlando/potsticker-4-pieces.webp
 Loving Hut Orlando - Red Beans Bun
 mobile/assets/food/loving-hut-orlando/red-beans-bun.webp
 
+Loving Hut Orlando - Rice Noodle
+mobile/assets/food/loving-hut-orlando/rice-noodle.webp
+
 Loving Hut Orlando - Saigon Noodle - Bún Chả Giò
 mobile/assets/food/loving-hut-orlando/saigon-noodle-bun-cha-gio.webp
 
@@ -120,6 +171,9 @@ mobile/assets/food/loving-hut-orlando/sesame-drumsticks-ui-ga-kho.webp
 
 Loving Hut Orlando - Singapore Curry Noodle
 mobile/assets/food/loving-hut-orlando/singapore-curry-noodle.webp
+
+Loving Hut Orlando - Small Cabbage Salad
+mobile/assets/food/loving-hut-orlando/small-cabbage-salad.webp
 
 Loving Hut Orlando - Small Seaweed Soup
 mobile/assets/food/loving-hut-orlando/small-seaweed-soup.webp
@@ -133,11 +187,20 @@ mobile/assets/food/loving-hut-orlando/small-wonton-soup.webp
 Loving Hut Orlando - Spring Rolls (4 Rolls) - Chả Giò
 mobile/assets/food/loving-hut-orlando/spring-rolls-4-rolls-cha-gio.webp
 
+Loving Hut Orlando - Steamed Broccoli
+mobile/assets/food/loving-hut-orlando/steamed-broccoli.webp
+
+Loving Hut Orlando - Steamed Vegetables
+mobile/assets/food/loving-hut-orlando/steamed-vegetables.webp
+
 Loving Hut Orlando - Stir-Fry Veggie
 mobile/assets/food/loving-hut-orlando/stir-fry-veggie.webp
 
 Loving Hut Orlando - Summer Rolls (2 Rolls) - Bò Bía
 mobile/assets/food/loving-hut-orlando/summer-rolls-2-rolls-bo-bia.webp
+
+Loving Hut Orlando - Sushi Delight
+mobile/assets/food/loving-hut-orlando/sushi-delight.webp
 
 Loving Hut Orlando - Taro Bun
 mobile/assets/food/loving-hut-orlando/taro-bun.webp
@@ -154,8 +217,14 @@ mobile/assets/food/loving-hut-orlando/vegan-flan.webp
 Loving Hut Orlando - Virgin Island – Vegan Fish
 mobile/assets/food/loving-hut-orlando/virgin-island-vegan-fish.webp
 
+Loving Hut Orlando - White Rice
+mobile/assets/food/loving-hut-orlando/white-rice.webp
+
 Loving Hut Orlando - Yam Spicy Cha Cha
 mobile/assets/food/loving-hut-orlando/yam-spicy-cha-cha.webp
+
+Loving Hut Orlando - Yellow Rice
+mobile/assets/food/loving-hut-orlando/yellow-rice.webp
 
 Loving Hut Orlando - Yogi Rice Noodle Soup - Hủ Tiếu
 mobile/assets/food/loving-hut-orlando/yogi-rice-noodle-soup-hu-tieu.webp

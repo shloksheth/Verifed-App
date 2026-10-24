@@ -5,6 +5,7 @@ import { fileURLToPath } from "node:url";
 import { createHash } from "node:crypto";
 import { assetMimeTypes, imageAssetPaths } from "./assets.mjs";
 import { snackVersionFor } from "./dependencies.mjs";
+import { assertSnackFilesUploaded, findUploadedSnackAsset } from "./uploads.mjs";
 
 const root = path.resolve(
   path.dirname(fileURLToPath(import.meta.url)),
@@ -22,7 +23,7 @@ async function addFile(relative) {
   if (mimeType) {
     files[relative] = {
       type: "ASSET",
-      contents: new Blob([bytes], { type: mimeType }),
+      contents: new File([bytes], path.basename(relative), { type: mimeType }),
     };
     assetHashes[relative] = createHash("sha256").update(bytes).digest("hex");
     return;
@@ -62,15 +63,49 @@ const dependencies = Object.fromEntries(
       },
     ]),
 );
+const assetEntries = Object.entries(files).filter(([, file]) => file.type === "ASSET");
+const verifiedRemoteUrls = {};
+for (let start = 0; start < assetEntries.length; start += 8) {
+  await Promise.all(assetEntries.slice(start, start + 8).map(async ([name, file]) => {
+    const bytes = new Uint8Array(await file.contents.arrayBuffer());
+    const url = await findUploadedSnackAsset(bytes, assetHashes[name]);
+    if (url) verifiedRemoteUrls[name] = url;
+  }));
+}
+console.log(`Reused ${Object.keys(verifiedRemoteUrls).length}/${assetEntries.length} byte-verified uploaded images`);
 const snack = new Snack({
   name: release.name,
   description: release.description,
   sdkVersion: "54.0.0",
-  files,
+  files: {
+    ...Object.fromEntries(Object.entries(files).filter(([, file]) => file.type === "CODE")),
+    ...Object.fromEntries(Object.entries(verifiedRemoteUrls).map(([name, url]) => [name, { type: "ASSET", contents: url }])),
+  },
   dependencies,
 });
 try {
   let state = await snack.getStateAsync();
+  const pendingAssets = assetEntries.filter(([name]) => !verifiedRemoteUrls[name]);
+  // A bounded batch avoids hundreds of simultaneous multipart requests.
+  for (let start = 0; start < pendingAssets.length; start += 8) {
+    const batch = pendingAssets.slice(start, start + 8);
+    for (let attempt = 0; attempt < 3; attempt++) {
+      const retryFiles = await Promise.all(batch.map(async ([name, file]) => [name, {
+        type: "ASSET", contents: new File([await file.contents.arrayBuffer()], path.basename(name), { type: file.contents.type }),
+      }]));
+      snack.updateFiles(Object.fromEntries(retryFiles));
+      state = await snack.getStateAsync();
+      try {
+        assertSnackFilesUploaded(Object.fromEntries(batch.map(([name]) => [name, state.files[name]])));
+        break;
+      } catch (error) {
+        if (attempt === 2) throw error;
+        console.log(`Retrying ${batch.length} image uploads after an incomplete batch`);
+        await new Promise((resolve) => setTimeout(resolve, 1000 * (attempt + 1)));
+      }
+    }
+    console.log(`Uploaded ${Math.min(start + 8, pendingAssets.length)}/${pendingAssets.length} new assets`);
+  }
   if (Object.keys(state.missingDependencies).length) {
     console.log(
       "Resolving peer dependencies:",
@@ -97,6 +132,24 @@ try {
     throw new Error(
       `Unresolved peers: ${Object.keys(state.missingDependencies).join(", ")}`,
     );
+  assertSnackFilesUploaded(state.files);
+  // Verify the actual uploaded bytes as well as the SDK's success response.
+  for (let start = 0; start < assetEntries.length; start += 8) {
+    await Promise.all(assetEntries.slice(start, start + 8).map(async ([name]) => {
+      if (state.files[name].contents === verifiedRemoteUrls[name]) return;
+      const url = new URL(state.files[name].contents);
+      if (url.hostname !== "snack-code-uploads.s3.us-west-1.amazonaws.com") {
+        throw new Error(`Unexpected upload destination for ${name}`);
+      }
+      const response = await fetch(url, { signal: AbortSignal.timeout(30000) });
+      if (!response.ok) throw new Error(`Uploaded image unavailable: ${name} (HTTP ${response.status})`);
+      const bytes = new Uint8Array(await response.arrayBuffer());
+      if (createHash("sha256").update(bytes).digest("hex") !== assetHashes[name]) {
+        throw new Error(`Uploaded image bytes differ: ${name}`);
+      }
+    }));
+  }
+  console.log(`Verified ${assetEntries.length} uploaded image hashes`);
   const saved = await snack.saveAsync({ ignoreUser: true });
   const publication = {
     version: release.number,
@@ -107,6 +160,7 @@ try {
     sdkVersion: state.sdkVersion,
     files: Object.keys(files),
     assetHashes,
+    uploadVerification: { images: assetEntries.length, allSourceHashesMatch: true },
     sourceHash: createHash("sha256")
       .update(
         JSON.stringify({

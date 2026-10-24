@@ -64,6 +64,6 @@ test("both menu renderers prefer the local asset over the legacy remote referenc
     assert.match(source, /localFoodAssets\[photoKey\]/);
     assert.match(source, /source=\{localAsset \|\| \{ uri: photo\.url \}\}/);
     assert.match(source, /contentFit="contain"/);
-    assert.match(source, /import \{ Image \} from "expo-image"/);
+    assert.match(source, /import \{ Image \} from "\.\/MenuImage"/);
   }
 });

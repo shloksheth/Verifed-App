@@ -63,6 +63,24 @@ test("published empty allergen cells never become an allergen-free recommendatio
   assert.equal(rice.price, null);
 });
 
+test("empty cloud ingredient lists do not hide reviewed facts or overwrite nonempty updates", () => {
+  const local = localDishes.find((dish) => dish.catalogKey === "chipotle-south-orange-sour-cream");
+  const stale = { ...local, id: "cloud-cream", ingredients: [], description: "One component; review the complete order.",
+    provenance: { ...local.provenance, ingredientUrl: null, evidenceNote: "Older menu row" } };
+  const merged = mergeLocalCatalog([], [stale]).dishes.find((dish) => dish.id === "cloud-cream");
+  assert.deepEqual(merged.ingredients, ["Cultured cream"]);
+  assert.equal(merged.provenance.ingredientUrl, local.provenance.ingredientUrl);
+  assert.equal(merged.description, local.description);
+  assert.equal(merged.cloudBacked, true);
+  assert.equal(assessDish(merged, { allergies: ["Milk"] }).level, "conflict");
+
+  const updated = { ...stale, ingredients: ["Restaurant-supplied updated ingredient"], description: "Updated restaurant detail" };
+  const kept = mergeLocalCatalog([], [updated]).dishes.find((dish) => dish.id === "cloud-cream");
+  assert.deepEqual(kept.ingredients, updated.ingredients);
+  assert.equal(kept.description, updated.description);
+  assert.equal(kept.provenance.ingredientUrl, null);
+});
+
 test("Hawkers missing wheat coverage stays unknown; positive milk evidence conflicts", () => {
   const bao = localDishes.find((dish) =>
     dish.catalogKey.endsWith("seoul-chicken-bao"),

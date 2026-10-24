@@ -63,6 +63,7 @@ export const localDishes = activeMenus.flatMap((menu) =>
     provenance: {
       menuUrl: item.menuUrl || menu.menuUrl,
       allergenUrl: item.allergenUrl || menu.allergenUrl,
+      ingredientUrl: item.ingredientSourceUrl || null,
       reviewedAt: item.reviewedAt || reviewedAt,
       scope:
         item.scope ||
@@ -115,10 +116,25 @@ export function mergeLocalCatalog(
     const restaurant = mergedRestaurants.find(
       (row) => row.slug === local.restaurantId,
     );
-    if (live && !preferBundled)
-      return {
+    if (live && !preferBundled) {
+      // An older public row may have an empty ingredient list. Fill that gap
+      // from reviewed bundled facts, while preserving nonempty cloud updates.
+      const useLocalIngredients = !live.ingredients?.length && local.ingredients.length > 0;
+      const mergedDish = {
         ...live,
-        ingredientHints: ingredientHints(live),
+        ...(useLocalIngredients ? { ingredients: local.ingredients } : {}),
+        ...(useLocalIngredients && local.provenance.ingredientUrl ? {
+          description: local.description,
+          provenance: {
+            ...live.provenance,
+            ingredientUrl: local.provenance.ingredientUrl,
+            evidenceNote: local.provenance.evidenceNote,
+          },
+        } : {}),
+      };
+      return {
+        ...mergedDish,
+        ingredientHints: ingredientHints(mergedDish),
         // Only reviewed source records can supply exact dish photos. Older
         // cloud rows might contain unverified or restaurant-wide images.
         imageUrl: local.imageUrl || null,
@@ -129,6 +145,7 @@ export function mergeLocalCatalog(
         imageGenerated: Boolean(local.imageGenerated),
         cloudBacked: true,
       };
+    }
     // Device-saved demo facts are a cache, not a source. Refresh them from this
     // release while keeping stable IDs for favorites and historical references.
     return {

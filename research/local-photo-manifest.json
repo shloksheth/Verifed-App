@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-24T06:55:23.699Z",
+  "updatedAt": "2026-10-24T17:15:19.699Z",
   "completionStatus": "incomplete",
   "policy": {
     "storage": "Local optimized WebP only for final assets; source URLs are internal provenance.",
@@ -4912,6 +4912,27 @@
           "width": 720,
           "height": 720,
           "bytes": 54152
+        },
+        {
+          "id": "generated-00aa88dbf97d882b",
+          "origin": "generated",
+          "kind": "generated-illustration",
+          "path": "mobile/assets/food/chipotle-south-orange/black-beans.webp",
+          "sha256": "e5e81186801d50fec2f6ff9c1b76b49b7f792762903b27f97a025163851beb67",
+          "pixelHash": "74995d54a4e3141ec2feb2880225f67cef3238dc671a7fb9b6e6436c3f615ffc",
+          "width": 1200,
+          "height": 800,
+          "bytes": 56820,
+          "status": "approved-after-visual-review",
+          "generation": {
+            "tool": "image_gen.imagegen built-in",
+            "prompt": "Photorealistic professional fast-casual Mexican restaurant menu image illustrating one Chipotle COMPONENT, not a completed entree. Soft studio daylight, seamless warm white background, gentle real shadow, three-quarter overhead view. Whole food and serving vessel fully framed with ample margins. No logos, text, utensils, other dishes, hands or decorative ingredients. Natural appetizing textures. A small plain white ceramic side cup holding roughly one standard four-ounce component serving of cooked BLACK beans in a modest amount of their dark cooking broth. Plump glossy black beans, slight natural variations, no rice, herbs, onion garnish, peppers, cheese, sour cream or other toppings. Not pinto beans, no soup-large bowl. Distinct original composition, illustrative portion.",
+            "createdAt": "2026-10-24T17:08:02.563129+00:00",
+            "originalSha256": "00aa88dbf97d882b6700297b0c14595d8ca54f34bbfe7e06b763ebefc0d8c402",
+            "operation": "from-scratch"
+          },
+          "alt": "Menu illustration of Black Beans",
+          "credit": "Verifed generated menu illustration"
         }
       ],
       "searchLog": [
@@ -4924,11 +4945,19 @@
         }
       ],
       "review": {
-        "status": "needs-replacement",
-        "selectedCandidateId": null,
-        "inspectedAt": "2026-10-24T07:33:31.048543+00:00",
+        "status": "approved",
+        "selectedCandidateId": "generated-00aa88dbf97d882b",
+        "inspectedAt": "2026-10-24T17:16:39.902334+00:00",
         "reviewer": "Codex visual inspection",
-        "notes": "Visually inspected existing candidate from another restaurant or recipe. This does not establish an accurate image of the specified menu entry; obtain four suitable candidates or a documented reconstruction."
+        "method": "Viewed the final optimized WebP. Description-based illustrative quantities authorized by the user on 2026-10-24; no allergy absence inferred from pictures.",
+        "notes": "Plump glossy black beans in a little dark broth in a small whole side cup, with no extra toppings. Realistic bean texture, full-food framing, illustrative standard-component portion.",
+        "checks": {
+          "identity": "pass",
+          "ingredients": "pass",
+          "portion": "pass",
+          "framing": "pass",
+          "quality": "pass"
+        }
       }
     },
     {
@@ -4961,15 +4990,44 @@
           "width": 400,
           "height": 400,
           "bytes": 36794
+        },
+        {
+          "id": "generated-08af6350a1b9963f",
+          "origin": "generated",
+          "kind": "generated-illustration",
+          "path": "mobile/assets/food/chipotle-south-orange/brown-rice.webp",
+          "sha256": "9b0f0f9154e103fad0e5313d136ba50f3a030a06257cf4c7ac9decd8663c4276",
+          "pixelHash": "5133b8b6ae7360475eaf95464bf916f902c817504285b03cd520b4a2c9379f1c",
+          "width": 1200,
+          "height": 800,
+          "bytes": 66482,
+          "status": "approved-after-visual-review",
+          "generation": {
+            "tool": "image_gen.imagegen built-in",
+            "prompt": "Photorealistic professional fast-casual Mexican restaurant menu image illustrating one Chipotle COMPONENT, not a completed entree. Soft studio daylight, seamless warm white background, gentle real shadow, three-quarter overhead view. Whole food and serving vessel fully framed with ample margins. No logos, text, utensils, other dishes, hands or decorative ingredients. Natural appetizing textures. A small plain white ceramic bowl holding approximately four ounces of cilantro-lime BROWN rice, cooked tan long-grain rice with visible bran, lightly and naturally mixed with tiny chopped cilantro flecks. No white rice, lime wedge, butter, corn, onion pieces, meat, beans, sauce or other toppings. A modest component serving, not a giant entree. Real individual grains, original photograph.",
+            "createdAt": "2026-10-24T17:08:31.918046+00:00",
+            "originalSha256": "08af6350a1b9963f66e3d3fbdbc716aea4d48114f9514e4cb4e832bab940a419",
+            "operation": "from-scratch"
+          },
+          "alt": "Menu illustration of Brown Rice",
+          "credit": "Verifed generated menu illustration"
         }
       ],
       "searchLog": [],
       "review": {
-        "status": "needs-replacement",
-        "selectedCandidateId": null,
-        "inspectedAt": "2026-10-24T07:33:31.048543+00:00",
+        "status": "approved",
+        "selectedCandidateId": "generated-08af6350a1b9963f",
+        "inspectedAt": "2026-10-24T17:16:39.902334+00:00",
         "reviewer": "Codex visual inspection",
-        "notes": "Visually inspected existing candidate from another restaurant or recipe. This does not establish an accurate image of the specified menu entry; obtain four suitable candidates or a documented reconstruction."
+        "method": "Viewed the final optimized WebP. Description-based illustrative quantities authorized by the user on 2026-10-24; no allergy absence inferred from pictures.",
+        "notes": "Tan cilantro-lime brown rice with small green cilantro flecks in a small whole bowl. No lime wedge, extra toppings or white rice. Plausible component portion and grain texture; photo cannot establish measured weight.",
+        "checks": {
+          "identity": "pass",
+          "ingredients": "pass",
+          "portion": "pass",
+          "framing": "pass",
+          "quality": "pass"
+        }
       }
     },
     {
@@ -5166,15 +5224,44 @@
           "width": 900,
           "height": 900,
           "bytes": 189998
+        },
+        {
+          "id": "generated-80a6b31d77bb6531",
+          "origin": "generated",
+          "kind": "generated-illustration",
+          "path": "mobile/assets/food/chipotle-south-orange/crispy-corn-tortilla.webp",
+          "sha256": "a8179b4a7bea6c902882f1f06af4434e4382673ffced293b21c43a0739fcd923",
+          "pixelHash": "a936cf07669b46a5a61deffc44972fbcebb81518eaee44aae9c0111d3efe4263",
+          "width": 1200,
+          "height": 800,
+          "bytes": 64592,
+          "status": "approved-after-visual-review",
+          "generation": {
+            "tool": "image_gen.imagegen built-in",
+            "prompt": "Photorealistic professional fast-casual Mexican restaurant menu image illustrating one Chipotle COMPONENT, not a completed entree. Soft studio daylight, seamless warm white background, gentle real shadow, three-quarter overhead view. Whole food and serving vessel fully framed with ample margins. No logos, text, utensils, other dishes, hands or decorative ingredients. Natural appetizing textures. Exactly ONE empty golden-yellow crispy CORN taco shell, folded into the familiar hard-shell U shape, standing naturally on a small plain white plate. Thin bubbled crunchy corn texture and lightly toasted color, the whole shell including both ends visible. No filling, flat tortilla chips, stack, taco toppings, sauces, seasoning garnish or additional food. One shell is the published component portion.",
+            "createdAt": "2026-10-24T17:08:45.903708+00:00",
+            "originalSha256": "80a6b31d77bb65315cc4117fc739fa3795e04d81522e3ece83728a338d859b32",
+            "operation": "from-scratch"
+          },
+          "alt": "Menu illustration of Crispy Corn Tortilla",
+          "credit": "Verifed generated menu illustration"
         }
       ],
       "searchLog": [],
       "review": {
-        "status": "needs-replacement",
-        "selectedCandidateId": null,
-        "inspectedAt": "2026-10-24T07:33:31.048543+00:00",
+        "status": "approved",
+        "selectedCandidateId": "generated-80a6b31d77bb6531",
+        "inspectedAt": "2026-10-24T17:16:39.902334+00:00",
         "reviewer": "Codex visual inspection",
-        "notes": "Visually inspected existing candidate from another restaurant or recipe. This does not establish an accurate image of the specified menu entry; obtain four suitable candidates or a documented reconstruction."
+        "method": "Viewed the final optimized WebP. Description-based illustrative quantities authorized by the user on 2026-10-24; no allergy absence inferred from pictures.",
+        "notes": "Exactly one empty crispy golden U-shaped corn taco shell on a whole plate, no filling or chips. Entire shell visible with natural bubbled corn texture; one component matches the published portion unit.",
+        "checks": {
+          "identity": "pass",
+          "ingredients": "pass",
+          "portion": "pass",
+          "framing": "pass",
+          "quality": "pass"
+        }
       }
     },
     {
@@ -5207,15 +5294,44 @@
           "width": 1200,
           "height": 725,
           "bytes": 109794
+        },
+        {
+          "id": "generated-8655c26e69624a78",
+          "origin": "generated",
+          "kind": "generated-illustration",
+          "path": "mobile/assets/food/chipotle-south-orange/fajita-vegetables.webp",
+          "sha256": "f5b0a91884e67e8d2d643a6c98c4c36d612413a1c81b8d9c2aa402827a2bd091",
+          "pixelHash": "9123fe7ae7986c780fbd591b69fff431761ff1a22ae50a67bd6d4e7979c9871e",
+          "width": 1200,
+          "height": 800,
+          "bytes": 85536,
+          "status": "approved-after-visual-review",
+          "generation": {
+            "tool": "image_gen.imagegen built-in",
+            "prompt": "Photorealistic professional fast-casual Mexican restaurant menu image illustrating one Chipotle COMPONENT, not a completed entree. Soft studio daylight, seamless warm white background, gentle real shadow, three-quarter overhead view. Whole food and serving vessel fully framed with ample margins. No logos, text, utensils, other dishes, hands or decorative ingredients. Natural appetizing textures. A small component portion of fajita vegetables, approximately two ounces: sautéed strips of GREEN bell pepper and RED onion, lightly caramelized at edges, with tiny oregano flecks. In a small white ceramic side bowl, natural modest sheen. No orange pepper, meat, rice, beans, mushrooms, zucchini, tomato or other toppings. Vegetable slices remain recognizable with realistic cooked tenderness. Entire serving framed.",
+            "createdAt": "2026-10-24T17:09:22.845303+00:00",
+            "originalSha256": "8655c26e69624a78fdb7b62c54a1587df81d6d695901b80d0c1f39de89d7bb1b",
+            "operation": "from-scratch"
+          },
+          "alt": "Menu illustration of Fajita Vegetables",
+          "credit": "Verifed generated menu illustration"
         }
       ],
       "searchLog": [],
       "review": {
-        "status": "needs-replacement",
-        "selectedCandidateId": null,
-        "inspectedAt": "2026-10-24T07:33:31.048543+00:00",
+        "status": "approved",
+        "selectedCandidateId": "generated-8655c26e69624a78",
+        "inspectedAt": "2026-10-24T17:16:39.902334+00:00",
         "reviewer": "Codex visual inspection",
-        "notes": "Visually inspected existing candidate. Requires closer source/recipe/portion confirmation or a better isolated full-food image before approval."
+        "method": "Viewed the final optimized WebP. Description-based illustrative quantities authorized by the user on 2026-10-24; no allergy absence inferred from pictures.",
+        "notes": "Sauteed green bell pepper and red onion strips with small herb flecks, modest side bowl, no meat or other toppings. Natural browning, whole food framed; component portion illustrative.",
+        "checks": {
+          "identity": "pass",
+          "ingredients": "pass",
+          "portion": "pass",
+          "framing": "pass",
+          "quality": "pass"
+        }
       }
     },
     {
@@ -5297,15 +5413,44 @@
           "width": 800,
           "height": 800,
           "bytes": 13966
+        },
+        {
+          "id": "generated-51e59e24e28812c5",
+          "origin": "generated",
+          "kind": "generated-illustration",
+          "path": "mobile/assets/food/chipotle-south-orange/taco-tortilla.webp",
+          "sha256": "549b6589e77f11e9dcbafad61539fe01d1d93638bab5af7f2a0505fac4e7449c",
+          "pixelHash": "54424dfcaa3eb02d52e45985ab89f0791f6f68434d0f35d749b902bd45628936",
+          "width": 1200,
+          "height": 800,
+          "bytes": 75306,
+          "status": "approved-after-visual-review",
+          "generation": {
+            "tool": "image_gen.imagegen built-in",
+            "prompt": "Photorealistic professional fast-casual Mexican restaurant menu image illustrating one Chipotle COMPONENT, not a completed entree. Soft studio daylight, seamless warm white background, gentle real shadow, three-quarter overhead view. Whole food and serving vessel fully framed with ample margins. No logos, text, utensils, other dishes, hands or decorative ingredients. Natural appetizing textures. Exactly ONE small soft flour TACO tortilla, roughly six-inch size, lying flat on a simple white plate. Thin round off-white tortilla with irregular natural toasted tan speckles and soft slightly wavy edge. Entire circular edge visible, no folds hiding half the tortilla. No filling, toppings, stack, corn chips, sauces or garnish. Original composition, realistic bread texture.",
+            "createdAt": "2026-10-24T17:09:02.561964+00:00",
+            "originalSha256": "51e59e24e28812c51f31a420c494615af9e88d8894f9e5caba51d94d7c16b7e8",
+            "operation": "from-scratch"
+          },
+          "alt": "Menu illustration of Flour Tortilla (Taco)",
+          "credit": "Verifed generated menu illustration"
         }
       ],
       "searchLog": [],
       "review": {
-        "status": "needs-replacement",
-        "selectedCandidateId": null,
-        "inspectedAt": "2026-10-24T07:33:31.048543+00:00",
+        "status": "approved",
+        "selectedCandidateId": "generated-51e59e24e28812c5",
+        "inspectedAt": "2026-10-24T17:16:39.902334+00:00",
         "reviewer": "Codex visual inspection",
-        "notes": "Visually inspected existing candidate from another restaurant or recipe. This does not establish an accurate image of the specified menu entry; obtain four suitable candidates or a documented reconstruction."
+        "method": "Viewed the final optimized WebP. Description-based illustrative quantities authorized by the user on 2026-10-24; no allergy absence inferred from pictures.",
+        "notes": "Exactly one small flat flour tortilla with irregular tan toasted spots, entire circular edge visible on a plate. No filling or stack. Realistic bread texture; one component matches published portion unit.",
+        "checks": {
+          "identity": "pass",
+          "ingredients": "pass",
+          "portion": "pass",
+          "framing": "pass",
+          "quality": "pass"
+        }
       }
     },
     {
@@ -5338,15 +5483,44 @@
           "width": 510,
           "height": 510,
           "bytes": 20810
+        },
+        {
+          "id": "generated-c5a5bcab2c9ae518",
+          "origin": "generated",
+          "kind": "generated-illustration",
+          "path": "mobile/assets/food/chipotle-south-orange/fresh-tomato-salsa.webp",
+          "sha256": "f9a3b1c29a299dee0a4dfbba5ae16ea4b27c3cc324f6376c642d681becb3548f",
+          "pixelHash": "b0fca00a02599db0ad9e3474184edf64e8a94aa612ae01658cf9edf179c333d8",
+          "width": 1200,
+          "height": 1000,
+          "bytes": 99972,
+          "status": "approved-after-visual-review",
+          "generation": {
+            "tool": "image_gen.imagegen built-in",
+            "prompt": "Photorealistic professional fast-casual Mexican restaurant menu image illustrating one Chipotle COMPONENT, not a completed entree. Soft studio daylight, seamless warm white background, gentle real shadow, three-quarter overhead view. Whole food and serving vessel fully framed with ample margins. No logos, text, utensils, other dishes, hands or decorative ingredients. Natural appetizing textures. A small side cup of freshly chopped tomato salsa (pico de gallo), a modest component serving: juicy diced red tomato dominates, with smaller red-onion dice, tiny green jalapeno and chopped cilantro flecks, lightly moist with citrus. Plain small white ceramic ramekin, no chips, sour cream, avocado, corn, black beans, lime wedge or decorative garnish. Salsa looks chunky and fresh rather than smooth red sauce. Whole cup visible.",
+            "createdAt": "2026-10-24T17:09:52.423805+00:00",
+            "originalSha256": "c5a5bcab2c9ae518c45e0af9522a96ce02d1d2e38077b401c29aca6983f40dc0",
+            "operation": "from-scratch"
+          },
+          "alt": "Menu illustration of Fresh Tomato Salsa",
+          "credit": "Verifed generated menu illustration"
         }
       ],
       "searchLog": [],
       "review": {
-        "status": "needs-replacement",
-        "selectedCandidateId": null,
-        "inspectedAt": "2026-10-24T07:33:31.048543+00:00",
+        "status": "approved",
+        "selectedCandidateId": "generated-c5a5bcab2c9ae518",
+        "inspectedAt": "2026-10-24T17:16:39.902334+00:00",
         "reviewer": "Codex visual inspection",
-        "notes": "Visually inspected existing candidate. Requires closer source/recipe/portion confirmation or a better isolated full-food image before approval."
+        "method": "Viewed the final optimized WebP. Description-based illustrative quantities authorized by the user on 2026-10-24; no allergy absence inferred from pictures.",
+        "notes": "Chunky red tomato, red onion, green chili and cilantro salsa in a whole side ramekin. No chips or unrelated sides. Realistic fresh vegetable texture and natural moisture; illustration is not a complete ingredient declaration.",
+        "checks": {
+          "identity": "pass",
+          "ingredients": "pass",
+          "portion": "pass",
+          "framing": "pass",
+          "quality": "pass"
+        }
       }
     },
     {
@@ -5670,14 +5844,44 @@
           "kind": "representative-ingredient",
           "status": "download-failed",
           "error": "URLError: <urlopen error [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1006)>"
+        },
+        {
+          "id": "generated-c16e8f0439f5935e",
+          "origin": "generated",
+          "kind": "generated-illustration",
+          "path": "mobile/assets/food/chipotle-south-orange/roasted-corn-salsa.webp",
+          "sha256": "d29867fea8caef81c62a307cc6b88d29a57ad1ca6a7f731be2633fd0b99b8133",
+          "pixelHash": "87fba0a50c7cf98d06a8b30103aedfddb3681ecf2f5941aa770cb75c0b59f8e2",
+          "width": 1200,
+          "height": 1000,
+          "bytes": 95744,
+          "status": "approved-after-visual-review",
+          "generation": {
+            "tool": "image_gen.imagegen built-in",
+            "prompt": "Create a distinct photorealistic fast-casual Mexican restaurant menu component image. Natural soft studio light, warm white seamless background and realistic subtle shadow, three-quarter overhead camera. Entire food and vessel fully inside frame with clear margins. No logo, text, utensils, hands or other dishes. This is an illustrative component serving, not a finished entree or a measured claim of exact restaurant weight. A small plain white ceramic side cup of roasted chili-corn salsa, roughly one standard four-ounce component: mostly off-white sweet corn kernels, small green roasted poblano and jalapeno pieces, small red onion dice and chopped cilantro, lightly moist with citrus. Realistic tender corn kernels, only a few lightly browned roasted flecks. No tortilla chips, red tomato, avocado, black beans, meat, cheese, butter or lime wedge. Appetizing fresh chunky salsa.",
+            "createdAt": "2026-10-24T17:11:27.750702+00:00",
+            "originalSha256": "c16e8f0439f5935e072a2de0e97386f9c2e1a66e6c4a78ab5283f8e5414dd0e2",
+            "operation": "from-scratch"
+          },
+          "alt": "Menu illustration of Roasted Chili-Corn Salsa",
+          "credit": "Verifed generated menu illustration"
         }
       ],
       "searchLog": [],
       "review": {
-        "status": "pending",
-        "selectedCandidateId": null,
-        "inspectedAt": null,
-        "notes": "Name, ingredients, portion, source identity and full-food framing require visual review."
+        "status": "approved",
+        "selectedCandidateId": "generated-c16e8f0439f5935e",
+        "inspectedAt": "2026-10-24T17:16:39.902334+00:00",
+        "reviewer": "Codex visual inspection",
+        "method": "Viewed the final optimized WebP. Description-based illustrative quantities authorized by the user on 2026-10-24; no allergy absence inferred from pictures.",
+        "notes": "Off-white corn kernels with green chili/poblano, red onion and cilantro in a small whole cup, no chips or unrelated toppings. Natural roasted flecks, recognizable corn texture; standard-component quantity illustrative.",
+        "checks": {
+          "identity": "pass",
+          "ingredients": "pass",
+          "portion": "pass",
+          "framing": "pass",
+          "quality": "pass"
+        }
       }
     },
     {
@@ -5776,15 +5980,44 @@
           "width": 1120,
           "height": 1120,
           "bytes": 105850
+        },
+        {
+          "id": "generated-a241f78d836aa3e1",
+          "origin": "generated",
+          "kind": "generated-illustration",
+          "path": "mobile/assets/food/chipotle-south-orange/sofritas.webp",
+          "sha256": "383829d933e716b1cd2d6b0bf4873628e2299d5c9abf32b8f35c4681ed123b9d",
+          "pixelHash": "f62f7c48411f6d5616a1ef902c0745af6b1cb0af0daca24ace6ce3ea2f8ad1fd",
+          "width": 1200,
+          "height": 800,
+          "bytes": 91312,
+          "status": "approved-after-visual-review",
+          "generation": {
+            "tool": "image_gen.imagegen built-in",
+            "prompt": "Create a distinct photorealistic fast-casual Mexican restaurant menu component image. Natural soft studio light, warm white seamless background and realistic subtle shadow, three-quarter overhead camera. Entire food and vessel fully inside frame with clear margins. No logo, text, utensils, hands or other dishes. This is an illustrative component serving, not a finished entree or a measured claim of exact restaurant weight. A small white ceramic side bowl holding a modest approximately four-ounce component portion of vegan SOFRITAS: irregular crumbled firm tofu, braised in a reddish-orange chipotle, poblano and tomato sauce, with tiny soft onion and pepper bits. Tofu crumb texture visibly plant-based and moist, not minced meat, not large paneer cubes. No rice, beans, corn, avocado, herbs on top, sour cream, cheese, sesame or other toppings. No giant soup bowl or loose watery broth.",
+            "createdAt": "2026-10-24T17:11:47.206326+00:00",
+            "originalSha256": "a241f78d836aa3e1ad65d4ad43c25e3cfa5c4bcfa848fded9ad9341928bcf10c",
+            "operation": "from-scratch"
+          },
+          "alt": "Menu illustration of Sofritas",
+          "credit": "Verifed generated menu illustration"
         }
       ],
       "searchLog": [],
       "review": {
-        "status": "needs-replacement",
-        "selectedCandidateId": null,
-        "inspectedAt": "2026-10-24T07:33:31.048543+00:00",
+        "status": "approved",
+        "selectedCandidateId": "generated-a241f78d836aa3e1",
+        "inspectedAt": "2026-10-24T17:16:39.902334+00:00",
         "reviewer": "Codex visual inspection",
-        "notes": "Visually inspected existing candidate from another restaurant or recipe. This does not establish an accurate image of the specified menu entry; obtain four suitable candidates or a documented reconstruction."
+        "method": "Viewed the final optimized WebP. Description-based illustrative quantities authorized by the user on 2026-10-24; no allergy absence inferred from pictures.",
+        "notes": "Irregular braised tofu crumbles with reddish-orange sauce and small pepper/onion pieces, no rice, meat or entree toppings. Whole bowl visible, plausible moist plant-protein texture; quantity illustrative.",
+        "checks": {
+          "identity": "pass",
+          "ingredients": "pass",
+          "portion": "pass",
+          "framing": "pass",
+          "quality": "pass"
+        }
       }
     },
     {
@@ -5794,13 +6027,15 @@
       "itemKey": "sour-cream",
       "specification": {
         "name": "Sour Cream",
-        "description": "One component; review the complete order.",
-        "ingredients": [],
+        "description": "Cultured cream, served as a menu component.",
+        "ingredients": [
+          "Cultured cream"
+        ],
         "servingSize": null,
         "menuUrl": "https://www.chipotle.com/content/chipotle/us/en/allergens.html",
         "kind": "component"
       },
-      "specificationHash": "b85cd585bb18087d5a66d1cd24878057f8f6605268890124daca37f20d0b03d8",
+      "specificationHash": "110955441f997dcd9eb829581b16167bff3e423c833786593d255d6be46ed092",
       "candidates": [
         {
           "id": "cb76379be66ce063",
@@ -5817,15 +6052,44 @@
           "width": 600,
           "height": 600,
           "bytes": 11702
+        },
+        {
+          "id": "generated-d1a2a9a46a3fbcb7",
+          "origin": "generated",
+          "kind": "generated-illustration",
+          "path": "mobile/assets/food/chipotle-south-orange/sour-cream.webp",
+          "sha256": "985e8739d8ff719e99725dc581f7bdd6551138b530de9b3a5b216087bfde0e15",
+          "pixelHash": "35b2af048c39e8b8d2bcc7b940ef55abe4953b91d602658cc77d2380a7d8f988",
+          "width": 1200,
+          "height": 800,
+          "bytes": 16628,
+          "status": "approved-after-visual-review",
+          "generation": {
+            "tool": "image_gen.imagegen built-in",
+            "prompt": "Create a distinct photorealistic fast-casual Mexican restaurant menu component image. Natural soft studio light, warm white seamless background and realistic subtle shadow, three-quarter overhead camera. Entire food and vessel fully inside frame with clear margins. No logo, text, utensils, hands or other dishes. This is an illustrative component serving, not a finished entree or a measured claim of exact restaurant weight. A small white ceramic side ramekin containing about two ounces of plain cultured SOUR CREAM, thick smooth opaque white cream with one soft natural spooned swirl. Not whipped cream: no tall piped peak, bubbles or sugary decorations. No herbs, seeds, sauce, pepper, chips or any garnish. Whole small cup shown, plausible dairy texture and soft lighting.",
+            "createdAt": "2026-10-24T17:12:01.178394+00:00",
+            "originalSha256": "d1a2a9a46a3fbcb7c78d34e9c5d3905143c9bc6ba6f8b16c8b3f0750e5cd5674",
+            "operation": "from-scratch"
+          },
+          "alt": "Menu illustration of Sour Cream",
+          "credit": "Verifed generated menu illustration"
         }
       ],
       "searchLog": [],
       "review": {
-        "status": "needs-replacement",
-        "selectedCandidateId": null,
-        "inspectedAt": "2026-10-24T07:33:31.048543+00:00",
+        "status": "approved",
+        "selectedCandidateId": "generated-d1a2a9a46a3fbcb7",
+        "inspectedAt": "2026-10-24T17:16:39.902334+00:00",
         "reviewer": "Codex visual inspection",
-        "notes": "Visually inspected existing candidate from another restaurant or recipe. This does not establish an accurate image of the specified menu entry; obtain four suitable candidates or a documented reconstruction."
+        "method": "Viewed the final optimized WebP. Description-based illustrative quantities authorized by the user on 2026-10-24; no allergy absence inferred from pictures.",
+        "notes": "Plain smooth white cultured cream with a low natural spooned swirl in a small whole ramekin. No whipped peak, garnish or other food; matches the brand's explicit cultured-cream description. Quantity illustrative.",
+        "checks": {
+          "identity": "pass",
+          "ingredients": "pass",
+          "portion": "pass",
+          "framing": "pass",
+          "quality": "pass"
+        }
       }
     },
     {
@@ -5884,13 +6148,17 @@
       "itemKey": "supergreens",
       "specification": {
         "name": "Supergreens Lettuce Blend",
-        "description": "One component; review the complete order.",
-        "ingredients": [],
+        "description": "A leafy salad base of romaine lettuce, baby kale and baby spinach.",
+        "ingredients": [
+          "Romaine lettuce",
+          "Baby kale",
+          "Baby spinach"
+        ],
         "servingSize": null,
         "menuUrl": "https://www.chipotle.com/content/chipotle/us/en/allergens.html",
         "kind": "component"
       },
-      "specificationHash": "67b6194c474fd2fcfd25e0613bee7315dd379715484317ad0d4813325c547998",
+      "specificationHash": "6af8c5893ccaa0c33fcd210162446440f5cc77018f99505d35ffd1eefe056753",
       "candidates": [
         {
           "id": "0fc7d70c26eeb668",
@@ -5907,15 +6175,44 @@
           "width": 640,
           "height": 421,
           "bytes": 40022
+        },
+        {
+          "id": "generated-ac572ae7130772c1",
+          "origin": "generated",
+          "kind": "generated-illustration",
+          "path": "mobile/assets/food/chipotle-south-orange/supergreens.webp",
+          "sha256": "ceed0099f96b9f254db05c574829788228cce458b5a007947a9f9101089046f4",
+          "pixelHash": "682f098e8bcc57679bf1be9febfdcef396938d6bea3597b1843b3b4526d568c3",
+          "width": 1200,
+          "height": 800,
+          "bytes": 114076,
+          "status": "approved-after-visual-review",
+          "generation": {
+            "tool": "image_gen.imagegen built-in",
+            "prompt": "Create a distinct photorealistic fast-casual Mexican restaurant menu component image. Natural soft studio light, warm white seamless background and realistic subtle shadow, three-quarter overhead camera. Entire food and vessel fully inside frame with clear margins. No logo, text, utensils, hands or other dishes. This is an illustrative component serving, not a finished entree or a measured claim of exact restaurant weight. A modest plain Supergreens salad BASE, approximately three ounces, in an unbranded shallow oval brown compostable fiber bowl. Only leafy greens: chopped green romaine lettuce with pale crisp ribs, small curly dark-green baby kale leaves, and smooth tender baby spinach leaves. Fresh natural leaf variation and realistically layered bowl. No meat, tofu, rice, beans, avocado, cheese, salsa, dressing, nuts, seeds, croutons or any other topping. This is the leafy component only, not a completed salad.",
+            "createdAt": "2026-10-24T17:12:16.993651+00:00",
+            "originalSha256": "ac572ae7130772c1a27092867432db5198007ce1730bfcad801372ebe36be498",
+            "operation": "from-scratch"
+          },
+          "alt": "Menu illustration of Supergreens Lettuce Blend",
+          "credit": "Verifed generated menu illustration"
         }
       ],
       "searchLog": [],
       "review": {
-        "status": "needs-replacement",
-        "selectedCandidateId": null,
-        "inspectedAt": "2026-10-24T07:33:31.048543+00:00",
+        "status": "approved",
+        "selectedCandidateId": "generated-ac572ae7130772c1",
+        "inspectedAt": "2026-10-24T17:16:39.902334+00:00",
         "reviewer": "Codex visual inspection",
-        "notes": "Visually inspected existing candidate. Requires closer source/recipe/portion confirmation or a better isolated full-food image before approval."
+        "method": "Viewed the final optimized WebP. Description-based illustrative quantities authorized by the user on 2026-10-24; no allergy absence inferred from pictures.",
+        "notes": "Plain romaine, curly baby kale and smooth baby spinach in a whole oval fiber bowl, without toppings or dressing. The three greens match the brand's named mix; natural crisp leaf textures, illustrative portion.",
+        "checks": {
+          "identity": "pass",
+          "ingredients": "pass",
+          "portion": "pass",
+          "framing": "pass",
+          "quality": "pass"
+        }
       }
     },
     {
@@ -5941,8 +6238,8 @@
           "credit": "Chipotle menu photo · Uber Eats",
           "alt": "Chipotle Tomatillo-Green Chili Salsa in an individual sauce cup, official menu product photo through delivery listing",
           "kind": "menu-delivery-photo",
-          "status": "downloaded-unreviewed",
-          "path": "research/photo-candidates/4d51600018d0c5ac3c9a11124b809b2fbb7b49682c47952c61c93ab8082145b6.webp",
+          "status": "approved-after-visual-review",
+          "path": "mobile/assets/food/chipotle-south-orange/green-chili-salsa.webp",
           "sha256": "e3b41147048a88d4cb66e32ce4b4122554e306e359a005d31b68342786e12209",
           "pixelHash": "178e8489af07c93cd1d60a2ddb5ad1112a5401e537efec459034b93476aa1226",
           "width": 510,
@@ -5952,11 +6249,19 @@
       ],
       "searchLog": [],
       "review": {
-        "status": "needs-replacement",
-        "selectedCandidateId": null,
-        "inspectedAt": "2026-10-24T07:33:31.048543+00:00",
+        "status": "approved",
+        "selectedCandidateId": "4d51600018d0c5ac",
+        "inspectedAt": "2026-10-24T17:16:39.902334+00:00",
         "reviewer": "Codex visual inspection",
-        "notes": "Visually inspected existing candidate. Requires closer source/recipe/portion confirmation or a better isolated full-food image before approval."
+        "method": "Viewed the final optimized WebP. Description-based illustrative quantities authorized by the user on 2026-10-24; no allergy absence inferred from pictures.",
+        "notes": "Viewed optimized 510px actual named Chipotle delivery-menu image: green tomatillo-chili salsa with visible fine seeds and cooked vegetable texture in a complete small white side cup. No chips or extra food; clear resolution and full-food framing. National chain product source is recorded; no local-branch plating or measured portion is inferred.",
+        "checks": {
+          "identity": "pass",
+          "ingredients": "pass",
+          "portion": "pass",
+          "framing": "pass",
+          "quality": "pass"
+        }
       }
     },
     {
@@ -5989,15 +6294,44 @@
           "width": 510,
           "height": 510,
           "bytes": 17076
+        },
+        {
+          "id": "generated-918693ddc13ca496",
+          "origin": "generated",
+          "kind": "generated-illustration",
+          "path": "mobile/assets/food/chipotle-south-orange/red-chili-salsa.webp",
+          "sha256": "785153d7699078cbf3cbf99d328d9404e95217eda97ed33c7fde041a7abd8c77",
+          "pixelHash": "618e1e59abac7b460b93735bc4d0ddb197abc95356ae27f743871aa997d5cf9c",
+          "width": 1200,
+          "height": 800,
+          "bytes": 46248,
+          "status": "approved-after-visual-review",
+          "generation": {
+            "tool": "image_gen.imagegen built-in",
+            "prompt": "Create a distinct photorealistic fast-casual Mexican restaurant menu component image. Natural soft studio light, warm white seamless background and realistic subtle shadow, three-quarter overhead camera. Entire food and vessel fully inside frame with clear margins. No logo, text, utensils, hands or other dishes. This is an illustrative component serving, not a finished entree or a measured claim of exact restaurant weight. One small plain white ceramic dipping ramekin holding approximately two fluid ounces of Tomatillo RED-Chili Salsa. Smooth-to-finely textured deep warm red chili sauce, slight natural seed and spice flecks, light glossy surface. No chunky pico-de-gallo vegetables, no green salsa, cream, cheese, chips, garnish, lime wedge or other food. Entire ramekin and sauce visible. Original composition distinct from other salsa photographs.",
+            "createdAt": "2026-10-24T17:12:32.064065+00:00",
+            "originalSha256": "918693ddc13ca496e0035b5860d067062ce8d905b1f698560ae7499152e701ce",
+            "operation": "from-scratch"
+          },
+          "alt": "Menu illustration of Tomatillo Red-Chili Salsa",
+          "credit": "Verifed generated menu illustration"
         }
       ],
       "searchLog": [],
       "review": {
-        "status": "needs-replacement",
-        "selectedCandidateId": null,
-        "inspectedAt": "2026-10-24T07:33:31.048543+00:00",
+        "status": "approved",
+        "selectedCandidateId": "generated-918693ddc13ca496",
+        "inspectedAt": "2026-10-24T17:16:39.902334+00:00",
         "reviewer": "Codex visual inspection",
-        "notes": "Visually inspected existing candidate. Requires closer source/recipe/portion confirmation or a better isolated full-food image before approval."
+        "method": "Viewed the final optimized WebP. Description-based illustrative quantities authorized by the user on 2026-10-24; no allergy absence inferred from pictures.",
+        "notes": "Finely textured deep red chili/tomatillo salsa in a small whole ramekin, light natural spice/seed flecks and sheen. No chips, cream, pico chunks or garnish. Full food framed; quantity illustrative.",
+        "checks": {
+          "identity": "pass",
+          "ingredients": "pass",
+          "portion": "pass",
+          "framing": "pass",
+          "quality": "pass"
+        }
       }
     },
     {
@@ -9371,15 +9705,49 @@
           "width": 168,
           "height": 118,
           "bytes": 5028
+        },
+        {
+          "id": "generated-6d65a76fe2f0c0c6",
+          "origin": "generated",
+          "kind": "generated-illustration",
+          "path": "mobile/assets/food/loving-hut-orlando/sushi-delight.webp",
+          "sha256": "08d962b0d552a1c4ada519a5a218b1995c0217a3a0216d7beddb09ad6b18bb41",
+          "pixelHash": "4a21d1f96344bf412cb5d43161f58b2de93b92924bb5158cf8cbf3297d6c6350",
+          "width": 1200,
+          "height": 843,
+          "bytes": 114274,
+          "status": "approved-after-visual-review",
+          "generation": {
+            "tool": "image_gen.imagegen built-in",
+            "prompt": "Photorealistic professional vegan restaurant menu photograph. Soft natural daylight, realistic edible textures, three-quarter overhead view on a light neutral tabletop, no text, logos or utensils. Entire serving and plate/bowl fully within frame with generous margin. A distinct original illustration, no claim of exact restaurant serving weight. Illustrate Sushi Delight from Loving Hut Orlando. Eight neat thick maki sushi pieces in a loose ring on a white ceramic plate around a small dark dipping-sauce cup, guided by the low-resolution reference's food identity. Each piece has a thin black nori seaweed outer layer, white sushi rice, and clear small strips of carrot, pale tofu, plant-based pink vegan ham, and green avocado in the center. No real fish, seafood, egg, sesame topping, mayonnaise, cucumber, other garnish or side. Vegan ham has smooth plant-protein texture, not real meat fibers. Eight pieces are a reasonable illustrative portion, not a published count.",
+            "createdAt": "2026-10-24T17:01:17.606220+00:00",
+            "originalSha256": "6d65a76fe2f0c0c68e99176492e802aed2dcfe61a4675d8c1a36824ef5ee5361",
+            "operation": "reference-guided reconstruction",
+            "reference": {
+              "sha256": "1f0145c39e2b4a7e857f3f72fd5d96c28a834fb9c3ffa15756267a430e61efb6",
+              "candidateId": "71b0b79ee13e613b",
+              "sourceUrl": "https://lovinghut.us/orlando/"
+            }
+          },
+          "alt": "Menu illustration of Sushi Delight",
+          "credit": "Verifed generated menu illustration"
         }
       ],
       "searchLog": [],
       "review": {
-        "status": "needs-replacement",
-        "selectedCandidateId": null,
-        "inspectedAt": "2026-10-24T07:33:31.048543+00:00",
+        "status": "approved",
+        "selectedCandidateId": "generated-6d65a76fe2f0c0c6",
+        "inspectedAt": "2026-10-24T17:16:39.902334+00:00",
         "reviewer": "Codex visual inspection",
-        "notes": "Visually inspected official candidate against its ingredient description. Current source is low-resolution, poorly lit, tightly framed, or needs a portion check; requires improvement before final approval."
+        "method": "Viewed the final optimized WebP. Description-based illustrative quantities authorized by the user on 2026-10-24; no allergy absence inferred from pictures.",
+        "notes": "Eight nori maki with white rice, carrot, tofu, smooth plant-based pink ham and avocado around a dark dipping cup. All food visible, realistic rice/wrapper textures. Eight is an illustrative count, not a published serving quantity.",
+        "checks": {
+          "identity": "pass",
+          "ingredients": "pass",
+          "portion": "pass",
+          "framing": "pass",
+          "quality": "pass"
+        }
       }
     },
     {
@@ -9416,15 +9784,49 @@
           "width": 191,
           "height": 131,
           "bytes": 4816
+        },
+        {
+          "id": "generated-24b74e07fecff94e",
+          "origin": "generated",
+          "kind": "generated-illustration",
+          "path": "mobile/assets/food/loving-hut-orlando/avocado-sushi.webp",
+          "sha256": "5326f53eab9b16609ccfa93f527c4beb2743617b5433388d1c0a54befa9aad02",
+          "pixelHash": "a8b50617197a75d1ea46ce6f3ad4051fe4b40d2249212deee5ec6ccca60f8dff",
+          "width": 1200,
+          "height": 824,
+          "bytes": 100168,
+          "status": "approved-after-visual-review",
+          "generation": {
+            "tool": "image_gen.imagegen built-in",
+            "prompt": "Photorealistic professional vegan restaurant menu photograph. Soft natural daylight, realistic edible textures, three-quarter overhead view on a light neutral tabletop, no text, logos or utensils. Entire serving and plate/bowl fully within frame with generous margin. A distinct original illustration, no claim of exact restaurant serving weight. Illustrate Loving Hut Orlando Avocado Sushi using the reference only for the basic maki arrangement. Eight individual round maki pieces on a plain white plate. Black nori seaweed outer wrap, white sushi rice ring, ripe green avocado strips and thin orange carrot in each center. A separate small cup of dark dipping sauce near the edge of the plate. No fish, tofu, vegan ham, egg, cream cheese, cucumber, sesame, sauce drizzle or additional sides. Published ingredient description is rice, avocado and carrot; nori wrapping follows the named photo. Eight pieces are an illustrative portion.",
+            "createdAt": "2026-10-24T17:01:40.618946+00:00",
+            "originalSha256": "24b74e07fecff94e47258cfba36ff58c536d908fbab519c91230d0f4320abf2f",
+            "operation": "reference-guided reconstruction",
+            "reference": {
+              "sha256": "1b1570dc829b9073acb94ac5b7e89ab1596eaa217d5da9311b7e7d94c9900d65",
+              "candidateId": "ed348700d1440780",
+              "sourceUrl": "https://lovinghut.us/orlando/"
+            }
+          },
+          "alt": "Menu illustration of Avocado Sushi",
+          "credit": "Verifed generated menu illustration"
         }
       ],
       "searchLog": [],
       "review": {
-        "status": "needs-replacement",
-        "selectedCandidateId": null,
-        "inspectedAt": "2026-10-24T07:33:31.048543+00:00",
+        "status": "approved",
+        "selectedCandidateId": "generated-24b74e07fecff94e",
+        "inspectedAt": "2026-10-24T17:16:39.902334+00:00",
         "reviewer": "Codex visual inspection",
-        "notes": "Visually inspected official candidate against its ingredient description. Current source is low-resolution, poorly lit, tightly framed, or needs a portion check; requires improvement before final approval."
+        "method": "Viewed the final optimized WebP. Description-based illustrative quantities authorized by the user on 2026-10-24; no allergy absence inferred from pictures.",
+        "notes": "Eight nori/rice maki with avocado and carrot, with separate dark sauce cup. No tofu, ham, fish, sesame or other fillings. Entire serving framed and natural food textures; count illustrative.",
+        "checks": {
+          "identity": "pass",
+          "ingredients": "pass",
+          "portion": "pass",
+          "framing": "pass",
+          "quality": "pass"
+        }
       }
     },
     {
@@ -9463,15 +9865,49 @@
           "width": 195,
           "height": 147,
           "bytes": 5926
+        },
+        {
+          "id": "generated-296109d428d7b3d6",
+          "origin": "generated",
+          "kind": "generated-illustration",
+          "path": "mobile/assets/food/loving-hut-orlando/ocean-sushi.webp",
+          "sha256": "44e80aee8c86901bca4abcc776799852e85447e0b1ff6aa588d44f108cce2b3f",
+          "pixelHash": "4646f12e791ce2ae360b9e8005fe935fb59716e2caaf6c8d6178199eeac15bd4",
+          "width": 1200,
+          "height": 800,
+          "bytes": 112962,
+          "status": "approved-after-visual-review",
+          "generation": {
+            "tool": "image_gen.imagegen built-in",
+            "prompt": "Photorealistic professional vegan restaurant menu photograph. Soft natural daylight, realistic edible textures, three-quarter overhead view on a light neutral tabletop, no text, logos or utensils. Entire serving and plate/bowl fully within frame with generous margin. A distinct original illustration, no claim of exact restaurant serving weight. Illustrate Loving Hut Orlando Ocean Sushi. Eight maki pieces in two staggered rows, black nori outer wrap and white sushi rice around a center of pale plant-based vegan ocean-filet strips, thin orange carrot and green avocado. Modest ribbons of creamy pale orange VEGAN thousand-island dressing across the tops. Plain white rectangular plate, no red onion garnish or extra side dishes. No real fish or seafood, no fish skin, roe, sesame seeds, egg or cream cheese. Follow the low-resolution reference for dish identity but make an original full-food composition. Eight pieces are an illustrative count.",
+            "createdAt": "2026-10-24T17:02:00.183614+00:00",
+            "originalSha256": "296109d428d7b3d67dd8c8c8c4db7f691a72552578acee0a89f519d90301e184",
+            "operation": "reference-guided reconstruction",
+            "reference": {
+              "sha256": "ada52c70c0a6179c4dbc2939baf99a70c9d26122c5093d8abaafec5ad895cde4",
+              "candidateId": "f2659332b49248bb",
+              "sourceUrl": "https://lovinghut.us/orlando/"
+            }
+          },
+          "alt": "Menu illustration of Ocean Sushi",
+          "credit": "Verifed generated menu illustration"
         }
       ],
       "searchLog": [],
       "review": {
-        "status": "needs-replacement",
-        "selectedCandidateId": null,
-        "inspectedAt": "2026-10-24T07:33:31.048543+00:00",
+        "status": "approved",
+        "selectedCandidateId": "generated-296109d428d7b3d6",
+        "inspectedAt": "2026-10-24T17:16:39.902334+00:00",
         "reviewer": "Codex visual inspection",
-        "notes": "Visually inspected official candidate against its ingredient description. Current source is low-resolution, poorly lit, tightly framed, or needs a portion check; requires improvement before final approval."
+        "method": "Viewed the final optimized WebP. Description-based illustrative quantities authorized by the user on 2026-10-24; no allergy absence inferred from pictures.",
+        "notes": "Eight nori/rice maki with pale vegan ocean-filet strips, carrot and avocado, topped with pale orange vegan thousand-island ribbons. No real fish, extra garnishes or sides. Full food visible; count and portion illustrative.",
+        "checks": {
+          "identity": "pass",
+          "ingredients": "pass",
+          "portion": "pass",
+          "framing": "pass",
+          "quality": "pass"
+        }
       }
     },
     {
@@ -9587,15 +10023,49 @@
           "width": 202,
           "height": 143,
           "bytes": 4920
+        },
+        {
+          "id": "generated-380d3e571ef7e8ce",
+          "origin": "generated",
+          "kind": "generated-illustration",
+          "path": "mobile/assets/food/loving-hut-orlando/dumpling-steamed-or-fried.webp",
+          "sha256": "e210767d0196ffc90f3eb1e07ced4bcccc2686bd3206b3c09421f815ca87853c",
+          "pixelHash": "7f85adf6c1b3e26cd30cb9ec7352cb85a71ea5b8f384fc0f744bd8db86202adb",
+          "width": 1200,
+          "height": 850,
+          "bytes": 106840,
+          "status": "approved-after-visual-review",
+          "generation": {
+            "tool": "image_gen.imagegen built-in",
+            "prompt": "Photorealistic professional vegan restaurant menu photograph. Soft natural daylight, realistic edible textures, three-quarter overhead view on a light neutral tabletop, no text, logos or utensils. Entire serving and plate/bowl fully within frame with generous margin. A distinct original illustration, no claim of exact restaurant serving weight. Illustrate the fried preparation option of Loving Hut Orlando's vegan Dumpling (steamed or fried). Five plump crescent potstickers with lightly golden pan-fried wrappers and realistic folded seams, arranged on a white plate with a small separate cup of dark dumpling dipping sauce. Filling is plant-based soy protein, vegetables and onion, with sesame oil, fully enclosed. No real meat, no egg, no visible sesame-seed garnish, no chili garnish or extra vegetables as sides. Entire dumplings, sauce and plate visible. Reference shows the actual menu's dumpling type but improve lighting and detail. Count five is illustrative, not a verified menu quantity.",
+            "createdAt": "2026-10-24T17:02:24.064379+00:00",
+            "originalSha256": "380d3e571ef7e8ceb82ee5513b45d38ee616bc518b11e6a8bc6c1a1cb1c7dfe2",
+            "operation": "reference-guided reconstruction",
+            "reference": {
+              "sha256": "0ddec1e0a90bc4fc7d9d86da8bff8f0a1f16cfca0c602dabd4b21720b056bdcb",
+              "candidateId": "0fb4ba65257b6a40",
+              "sourceUrl": "https://lovinghut.us/orlando/"
+            }
+          },
+          "alt": "Menu illustration of Dumpling (steamed or fried)",
+          "credit": "Verifed generated menu illustration"
         }
       ],
       "searchLog": [],
       "review": {
-        "status": "needs-replacement",
-        "selectedCandidateId": null,
-        "inspectedAt": "2026-10-24T07:33:31.048543+00:00",
+        "status": "approved",
+        "selectedCandidateId": "generated-380d3e571ef7e8ce",
+        "inspectedAt": "2026-10-24T17:16:39.902334+00:00",
         "reviewer": "Codex visual inspection",
-        "notes": "Visually inspected official candidate against its ingredient description. Current source is low-resolution, poorly lit, tightly framed, or needs a portion check; requires improvement before final approval."
+        "method": "Viewed the final optimized WebP. Description-based illustrative quantities authorized by the user on 2026-10-24; no allergy absence inferred from pictures.",
+        "notes": "Five golden pan-fried crescent vegan dumplings with sealed pleats and dark dipping sauce. This depicts the published fried option with enclosed soy-protein/vegetable/onion filling; sesame oil is not misrepresented as seeds. Full food framed; five is illustrative.",
+        "checks": {
+          "identity": "pass",
+          "ingredients": "pass",
+          "portion": "pass",
+          "framing": "pass",
+          "quality": "pass"
+        }
       }
     },
     {
@@ -10288,15 +10758,44 @@
           "width": 1200,
           "height": 1200,
           "bytes": 250980
+        },
+        {
+          "id": "generated-9c5aa8e957a1f9f5",
+          "origin": "generated",
+          "kind": "generated-illustration",
+          "path": "mobile/assets/food/loving-hut-orlando/small-cabbage-salad.webp",
+          "sha256": "6fa1197187c65fc819803c9da9638fc3767ff2f48880ed2b8df22207b62d4baa",
+          "pixelHash": "a2971f278276915a20f2081c7f9ffc1e09e3106b1426d5928a21bde6ee811f29",
+          "width": 1200,
+          "height": 1097,
+          "bytes": 114548,
+          "status": "approved-after-visual-review",
+          "generation": {
+            "tool": "image_gen.imagegen built-in",
+            "prompt": "Photorealistic professional vegan restaurant menu photograph. Soft natural daylight, realistic edible textures, three-quarter overhead view on a light neutral tabletop, no text, logos or utensils. Entire serving and plate/bowl fully within frame with generous margin. A distinct original illustration, no claim of exact restaurant serving weight. A SMALL side cabbage salad for Loving Hut Orlando: loosely shredded pale green cabbage, small pieces of fresh green lettuce, thin orange carrot shreds, a few thin white onion slivers and fresh cilantro leaves. A modest single side serving in a small simple white ceramic bowl, not a giant entree salad. No purple cabbage, cucumber, tomato, nuts, seeds, croutons, cheese, meat or visible thick dressing. Natural crisp vegetable textures, no extra food or garnish. Only the five published ingredients are depicted.",
+            "createdAt": "2026-10-24T17:02:50.465904+00:00",
+            "originalSha256": "9c5aa8e957a1f9f55dfbe53543d768e4c734eb8958c79083d78108bc362534e6",
+            "operation": "from-scratch"
+          },
+          "alt": "Menu illustration of Small Cabbage Salad",
+          "credit": "Verifed generated menu illustration"
         }
       ],
       "searchLog": [],
       "review": {
-        "status": "needs-replacement",
-        "selectedCandidateId": null,
-        "inspectedAt": "2026-10-24T07:33:31.048543+00:00",
+        "status": "approved",
+        "selectedCandidateId": "generated-9c5aa8e957a1f9f5",
+        "inspectedAt": "2026-10-24T17:16:39.902334+00:00",
         "reviewer": "Codex visual inspection",
-        "notes": "Visually inspected official candidate against its ingredient description. Current source is low-resolution, poorly lit, tightly framed, or needs a portion check; requires improvement before final approval."
+        "method": "Viewed the final optimized WebP. Description-based illustrative quantities authorized by the user on 2026-10-24; no allergy absence inferred from pictures.",
+        "notes": "Small white side bowl of shredded cabbage, lettuce, carrot, white onion and cilantro. No unrelated vegetables, nuts, cheese or thick dressing. Whole food framed with crisp natural textures; portion illustrative.",
+        "checks": {
+          "identity": "pass",
+          "ingredients": "pass",
+          "portion": "pass",
+          "framing": "pass",
+          "quality": "pass"
+        }
       }
     },
     {
@@ -12964,15 +13463,44 @@
           "width": 800,
           "height": 550,
           "bytes": 14714
+        },
+        {
+          "id": "generated-4ff6cab11fd33b14",
+          "origin": "generated",
+          "kind": "generated-illustration",
+          "path": "mobile/assets/food/loving-hut-orlando/white-rice.webp",
+          "sha256": "5b703f322e38c1a489269b143888e85ee7c5d399cabe84fb4321ec3ef43cb202",
+          "pixelHash": "00809782705f0873042f91c7789f284bdfb9f6654bf7307606b877b44c60900e",
+          "width": 1200,
+          "height": 800,
+          "bytes": 57876,
+          "status": "approved-after-visual-review",
+          "generation": {
+            "tool": "image_gen.imagegen built-in",
+            "prompt": "Photorealistic professional vegan restaurant menu photograph. Soft natural daylight, realistic edible textures, three-quarter overhead view on a light neutral tabletop, no text, logos or utensils. Entire serving and plate/bowl fully within frame with generous margin. A distinct original illustration, no claim of exact restaurant serving weight. One small restaurant side bowl of plain steamed white long-grain rice, softly mounded in a small white ceramic bowl. Clean, distinct but naturally clinging rice grains and a slight fresh-steamed sheen. No herbs, sesame, butter, oil puddles, pepper, sauce, meat, vegetables or other objects. Just plain white rice, representing the menu item White Rice. Different original composition from all other rice images.",
+            "createdAt": "2026-10-24T17:03:13.466136+00:00",
+            "originalSha256": "4ff6cab11fd33b145d7019122133a0e9484b777f5d47c5879aa21ee476ceda75",
+            "operation": "from-scratch"
+          },
+          "alt": "Menu illustration of White Rice",
+          "credit": "Verifed generated menu illustration"
         }
       ],
       "searchLog": [],
       "review": {
-        "status": "needs-replacement",
-        "selectedCandidateId": null,
-        "inspectedAt": "2026-10-24T07:33:31.048543+00:00",
+        "status": "approved",
+        "selectedCandidateId": "generated-4ff6cab11fd33b14",
+        "inspectedAt": "2026-10-24T17:16:39.902334+00:00",
         "reviewer": "Codex visual inspection",
-        "notes": "Visually inspected official candidate against its ingredient description. Current source is low-resolution, poorly lit, tightly framed, or needs a portion check; requires improvement before final approval."
+        "method": "Viewed the final optimized WebP. Description-based illustrative quantities authorized by the user on 2026-10-24; no allergy absence inferred from pictures.",
+        "notes": "Small whole bowl of plain steamed white rice, with natural separate/clinging grains and no added visible food or garnish. Full bowl and food framed. Illustrative side portion from menu name; hidden preparation ingredients are not inferred.",
+        "checks": {
+          "identity": "pass",
+          "ingredients": "pass",
+          "portion": "pass",
+          "framing": "pass",
+          "quality": "pass"
+        }
       }
     },
     {
@@ -13005,15 +13533,44 @@
           "width": 1200,
           "height": 1200,
           "bytes": 28404
+        },
+        {
+          "id": "generated-2956dbc34aebfa5b",
+          "origin": "generated",
+          "kind": "generated-illustration",
+          "path": "mobile/assets/food/loving-hut-orlando/brown-rice.webp",
+          "sha256": "6f6ea65935dccd0908398d2e6161d0ef0c10070fd245205291ef7ec363ce0abb",
+          "pixelHash": "ef1835c025d36b1404d523e58656392a2fb23394a1b1fedf6e9344de2383c52d",
+          "width": 1200,
+          "height": 800,
+          "bytes": 72310,
+          "status": "approved-after-visual-review",
+          "generation": {
+            "tool": "image_gen.imagegen built-in",
+            "prompt": "Create one distinct photorealistic professional vegan restaurant menu photograph, three-quarter overhead view, natural soft daylight, pale neutral tabletop. Whole food and its small white ceramic serving bowl/plate fully within frame with generous margin. No text, logos, utensils, other dishes or additional garnish. Serving quantity is illustrative because the menu does not publish a weight. A modest side serving of plain steamed brown rice in a small white ceramic bowl. Tan brown long-grain rice with the bran visible, realistic slightly chewy separate cooked grains, a little natural moisture. No herbs, cilantro, sesame, butter, sauce, colored vegetables or white rice. Simple plain Brown Rice, original composition different from the white rice photograph.",
+            "createdAt": "2026-10-24T17:04:38.094504+00:00",
+            "originalSha256": "2956dbc34aebfa5b6b9834cd767af8c44f03d46760e90658aebfac8e4fe3988d",
+            "operation": "from-scratch"
+          },
+          "alt": "Menu illustration of Brown Rice",
+          "credit": "Verifed generated menu illustration"
         }
       ],
       "searchLog": [],
       "review": {
-        "status": "needs-replacement",
-        "selectedCandidateId": null,
-        "inspectedAt": "2026-10-24T07:33:31.048543+00:00",
+        "status": "approved",
+        "selectedCandidateId": "generated-2956dbc34aebfa5b",
+        "inspectedAt": "2026-10-24T17:16:39.902334+00:00",
         "reviewer": "Codex visual inspection",
-        "notes": "Visually inspected official candidate against its ingredient description. Current source is low-resolution, poorly lit, tightly framed, or needs a portion check; requires improvement before final approval."
+        "method": "Viewed the final optimized WebP. Description-based illustrative quantities authorized by the user on 2026-10-24; no allergy absence inferred from pictures.",
+        "notes": "Plain tan brown rice with visible bran/grain texture in a small whole bowl; no herbs or other foods. Full serving framed, soft realistic light, illustrative side quantity.",
+        "checks": {
+          "identity": "pass",
+          "ingredients": "pass",
+          "portion": "pass",
+          "framing": "pass",
+          "quality": "pass"
+        }
       }
     },
     {
@@ -13046,15 +13603,44 @@
           "width": 900,
           "height": 1200,
           "bytes": 150066
+        },
+        {
+          "id": "generated-086a4feed18e966f",
+          "origin": "generated",
+          "kind": "generated-illustration",
+          "path": "mobile/assets/food/loving-hut-orlando/yellow-rice.webp",
+          "sha256": "349922e3c2104b8118b7e963f2fb1065c9c7105b560dc07593f77f46dff326a4",
+          "pixelHash": "ae4fe1ef90bcf01133c42b755b8933d639eeefedf2aac1187a09e161a8b6e427",
+          "width": 1200,
+          "height": 800,
+          "bytes": 69372,
+          "status": "approved-after-visual-review",
+          "generation": {
+            "tool": "image_gen.imagegen built-in",
+            "prompt": "Create one distinct photorealistic professional vegan restaurant menu photograph, three-quarter overhead view, natural soft daylight, pale neutral tabletop. Whole food and its small white ceramic serving bowl/plate fully within frame with generous margin. No text, logos, utensils, other dishes or additional garnish. Serving quantity is illustrative because the menu does not publish a weight. A side serving of plain golden-yellow long-grain rice in a small white ceramic bowl. Consistent warm yellow color throughout, fluffy cooked grains with realistic texture, neatly but naturally mounded. No biryani toppings, raisins, fried onions, nuts, peas, peppers, herbs, chili, meat or other food. Illustrate menu item Yellow Rice without inventing visible extra ingredients or claiming its exact seasoning recipe.",
+            "createdAt": "2026-10-24T17:04:56.482332+00:00",
+            "originalSha256": "086a4feed18e966f75b7219607664d62a10dbce65fa73336467ebbeef7c7066f",
+            "operation": "from-scratch"
+          },
+          "alt": "Menu illustration of Yellow Rice",
+          "credit": "Verifed generated menu illustration"
         }
       ],
       "searchLog": [],
       "review": {
-        "status": "needs-replacement",
-        "selectedCandidateId": null,
-        "inspectedAt": "2026-10-24T07:33:31.048543+00:00",
+        "status": "approved",
+        "selectedCandidateId": "generated-086a4feed18e966f",
+        "inspectedAt": "2026-10-24T17:16:39.902334+00:00",
         "reviewer": "Codex visual inspection",
-        "notes": "Visually inspected official candidate against its ingredient description. Current source is low-resolution, poorly lit, tightly framed, or needs a portion check; requires improvement before final approval."
+        "method": "Viewed the final optimized WebP. Description-based illustrative quantities authorized by the user on 2026-10-24; no allergy absence inferred from pictures.",
+        "notes": "Plain uniformly golden yellow rice in a small whole bowl. No invented raisins, fried onions, peas or garnish. Natural grains and full-food framing; seasoning recipe and quantity remain unspecified.",
+        "checks": {
+          "identity": "pass",
+          "ingredients": "pass",
+          "portion": "pass",
+          "framing": "pass",
+          "quality": "pass"
+        }
       }
     },
     {
@@ -13087,15 +13673,44 @@
           "width": 1024,
           "height": 1024,
           "bytes": 34640
+        },
+        {
+          "id": "generated-0b58ec9b3dd16cc9",
+          "origin": "generated",
+          "kind": "generated-illustration",
+          "path": "mobile/assets/food/loving-hut-orlando/rice-noodle.webp",
+          "sha256": "b99dde724b17943057f992435c4cd7790852e6c651ec72b40334af9a5158c814",
+          "pixelHash": "254122b00d048189a309b5ae24ad5cab305bae29991344b8bce1e36d8c1934bf",
+          "width": 1200,
+          "height": 800,
+          "bytes": 45552,
+          "status": "approved-after-visual-review",
+          "generation": {
+            "tool": "image_gen.imagegen built-in",
+            "prompt": "Create one distinct photorealistic professional vegan restaurant menu photograph, three-quarter overhead view, natural soft daylight, pale neutral tabletop. Whole food and its small white ceramic serving bowl/plate fully within frame with generous margin. No text, logos, utensils, other dishes or additional garnish. Serving quantity is illustrative because the menu does not publish a weight. A modest side portion of plain freshly cooked thin WHITE rice vermicelli noodles, loosely nested in a small shallow white ceramic bowl. Soft slender strands with subtle natural sheen, visibly rice noodles rather than spaghetti or brown egg noodles. No broth, sauce, herbs, sesame, vegetables, proteins, lime wedge or other food. Simple restaurant side Rice Noodle, no plastic or impossible tangles.",
+            "createdAt": "2026-10-24T17:05:18.422793+00:00",
+            "originalSha256": "0b58ec9b3dd16cc9ae55953ce11c9aa16e6978b6964907d719e511c14d0d396e",
+            "operation": "from-scratch"
+          },
+          "alt": "Menu illustration of Rice Noodle",
+          "credit": "Verifed generated menu illustration"
         }
       ],
       "searchLog": [],
       "review": {
-        "status": "needs-replacement",
-        "selectedCandidateId": null,
-        "inspectedAt": "2026-10-24T07:33:31.048543+00:00",
+        "status": "approved",
+        "selectedCandidateId": "generated-0b58ec9b3dd16cc9",
+        "inspectedAt": "2026-10-24T17:16:39.902334+00:00",
         "reviewer": "Codex visual inspection",
-        "notes": "Visually inspected official candidate against its ingredient description. Current source is low-resolution, poorly lit, tightly framed, or needs a portion check; requires improvement before final approval."
+        "method": "Viewed the final optimized WebP. Description-based illustrative quantities authorized by the user on 2026-10-24; no allergy absence inferred from pictures.",
+        "notes": "Plain white thin cooked rice vermicelli in a small bowl. No broth, sauce, vegetables or garnish. Full food visible with plausible strands; quantity illustrative.",
+        "checks": {
+          "identity": "pass",
+          "ingredients": "pass",
+          "portion": "pass",
+          "framing": "pass",
+          "quality": "pass"
+        }
       }
     },
     {
@@ -13128,15 +13743,44 @@
           "width": 600,
           "height": 600,
           "bytes": 18192
+        },
+        {
+          "id": "generated-cfde57f3181353c9",
+          "origin": "generated",
+          "kind": "generated-illustration",
+          "path": "mobile/assets/food/loving-hut-orlando/french-fries.webp",
+          "sha256": "525442db33b7f7047614a497ac2a5f4cd302990724b63fb4e3e9eecfd659804c",
+          "pixelHash": "382e2bbb30bbc1ef84614ed5cae39270de225835b950143aa56f825019ff1514",
+          "width": 1200,
+          "height": 800,
+          "bytes": 95226,
+          "status": "approved-after-visual-review",
+          "generation": {
+            "tool": "image_gen.imagegen built-in",
+            "prompt": "Create one distinct photorealistic professional vegan restaurant menu photograph, three-quarter overhead view, natural soft daylight, pale neutral tabletop. Whole food and its small white ceramic serving bowl/plate fully within frame with generous margin. No text, logos, utensils, other dishes or additional garnish. Serving quantity is illustrative because the menu does not publish a weight. A small side portion of golden straight-cut French fries in a shallow white ceramic bowl, naturally jumbled, crisp browned edges, soft potato centers visible on an occasional end, tiny light salt grains. Not shoestring or curly fries. No cheese, ketchup, herbs, black pepper, sauce cup, loaded toppings, meat or other food. Realistic individual potato shapes and gentle variation in browning.",
+            "createdAt": "2026-10-24T17:05:37.856978+00:00",
+            "originalSha256": "cfde57f3181353c9564733b836e92eceb11172d8785633d7d5ab93255a8b789c",
+            "operation": "from-scratch"
+          },
+          "alt": "Menu illustration of French Fries",
+          "credit": "Verifed generated menu illustration"
         }
       ],
       "searchLog": [],
       "review": {
-        "status": "needs-replacement",
-        "selectedCandidateId": null,
-        "inspectedAt": "2026-10-24T07:33:31.048543+00:00",
+        "status": "approved",
+        "selectedCandidateId": "generated-cfde57f3181353c9",
+        "inspectedAt": "2026-10-24T17:16:39.902334+00:00",
         "reviewer": "Codex visual inspection",
-        "notes": "Visually inspected official candidate against its ingredient description. Current source is low-resolution, poorly lit, tightly framed, or needs a portion check; requires improvement before final approval."
+        "method": "Viewed the final optimized WebP. Description-based illustrative quantities authorized by the user on 2026-10-24; no allergy absence inferred from pictures.",
+        "notes": "Golden straight-cut potato fries with natural irregular browning in a small bowl. No toppings, sauce or herbs; full food and bowl framed, realistic crisp texture. Portion illustrative.",
+        "checks": {
+          "identity": "pass",
+          "ingredients": "pass",
+          "portion": "pass",
+          "framing": "pass",
+          "quality": "pass"
+        }
       }
     },
     {
@@ -13169,15 +13813,44 @@
           "width": 1200,
           "height": 675,
           "bytes": 124272
+        },
+        {
+          "id": "generated-b72a3e880554bd6f",
+          "origin": "generated",
+          "kind": "generated-illustration",
+          "path": "mobile/assets/food/loving-hut-orlando/steamed-broccoli.webp",
+          "sha256": "d6fcef4cd6e9ee8539a738b537252a726453f416434d7f26a414446dc9215f33",
+          "pixelHash": "67ee42a543e63285e8cc0b6a1bed8aeec0e2c21bcb8051ae6ab9c6ecf4f50f4e",
+          "width": 1200,
+          "height": 800,
+          "bytes": 106460,
+          "status": "approved-after-visual-review",
+          "generation": {
+            "tool": "image_gen.imagegen built-in",
+            "prompt": "Create one distinct photorealistic professional vegan restaurant menu photograph, three-quarter overhead view, natural soft daylight, pale neutral tabletop. Whole food and its small white ceramic serving bowl/plate fully within frame with generous margin. No text, logos, utensils, other dishes or additional garnish. Serving quantity is illustrative because the menu does not publish a weight. A small side serving consisting solely of freshly steamed broccoli florets and short stems, vivid natural green with realistic tiny bud texture, tender moist surface but no oil puddles. Five to seven irregular florets loosely placed in a small white ceramic bowl. No butter, cheese, sauce, garlic pieces, sesame, pepper or other vegetables. No char or roasting marks. Portion illustrative, not a declared count.",
+            "createdAt": "2026-10-24T17:05:54.906888+00:00",
+            "originalSha256": "b72a3e880554bd6fb3e341e915097fc0c209755aa718114c6064433b65e69db3",
+            "operation": "from-scratch"
+          },
+          "alt": "Menu illustration of Steamed Broccoli",
+          "credit": "Verifed generated menu illustration"
         }
       ],
       "searchLog": [],
       "review": {
-        "status": "needs-replacement",
-        "selectedCandidateId": null,
-        "inspectedAt": "2026-10-24T07:33:31.048543+00:00",
+        "status": "approved",
+        "selectedCandidateId": "generated-b72a3e880554bd6f",
+        "inspectedAt": "2026-10-24T17:16:39.902334+00:00",
         "reviewer": "Codex visual inspection",
-        "notes": "Visually inspected official candidate against its ingredient description. Current source is low-resolution, poorly lit, tightly framed, or needs a portion check; requires improvement before final approval."
+        "method": "Viewed the final optimized WebP. Description-based illustrative quantities authorized by the user on 2026-10-24; no allergy absence inferred from pictures.",
+        "notes": "Green steamed broccoli florets and short stems without sauce, char or garnish, in a small whole bowl. Natural buds and moisture texture; side quantity illustrative.",
+        "checks": {
+          "identity": "pass",
+          "ingredients": "pass",
+          "portion": "pass",
+          "framing": "pass",
+          "quality": "pass"
+        }
       }
     },
     {
@@ -13210,15 +13883,44 @@
           "width": 1200,
           "height": 669,
           "bytes": 96484
+        },
+        {
+          "id": "generated-7c6758b018cdb47a",
+          "origin": "generated",
+          "kind": "generated-illustration",
+          "path": "mobile/assets/food/loving-hut-orlando/steamed-vegetables.webp",
+          "sha256": "ffa282fd806e99fe87ef26df13feba61a3f7a03648bd7cc81644fe177deacf01",
+          "pixelHash": "d0e52fde4ae70e7664c6d27599848622113fbe3fab2ebd414c6612495ac227c8",
+          "width": 1200,
+          "height": 800,
+          "bytes": 87202,
+          "status": "approved-after-visual-review",
+          "generation": {
+            "tool": "image_gen.imagegen built-in",
+            "prompt": "Create one distinct photorealistic professional vegan restaurant menu photograph, three-quarter overhead view, natural soft daylight, pale neutral tabletop. Whole food and its small white ceramic serving bowl/plate fully within frame with generous margin. No text, logos, utensils, other dishes or additional garnish. Serving quantity is illustrative because the menu does not publish a weight. A modest side serving of simply steamed vegetables in a small white ceramic bowl: green broccoli florets, white cauliflower florets and orange carrot slices. Use a natural mixed ratio consistent with Loving Hut's photographed steamed vegetable sides. Slight steam-moisture sheen, fresh tender textures, not roasted. No butter, sauce, onion, peppers, herbs, seeds, nuts, garlic pieces or other food. Exact mix/quantity is an illustrative interpretation of the menu name Steamed Vegetables, not a complete confirmed recipe.",
+            "createdAt": "2026-10-24T17:06:14.723764+00:00",
+            "originalSha256": "7c6758b018cdb47ab4a89cc8ba7810525b1d23af9344b812d429c37ccd4cc508",
+            "operation": "from-scratch"
+          },
+          "alt": "Menu illustration of Steamed Vegetables",
+          "credit": "Verifed generated menu illustration"
         }
       ],
       "searchLog": [],
       "review": {
-        "status": "needs-replacement",
-        "selectedCandidateId": null,
-        "inspectedAt": "2026-10-24T07:33:31.048543+00:00",
+        "status": "approved",
+        "selectedCandidateId": "generated-7c6758b018cdb47a",
+        "inspectedAt": "2026-10-24T17:16:39.902334+00:00",
         "reviewer": "Codex visual inspection",
-        "notes": "Visually inspected official candidate against its ingredient description. Current source is low-resolution, poorly lit, tightly framed, or needs a portion check; requires improvement before final approval."
+        "method": "Viewed the final optimized WebP. Description-based illustrative quantities authorized by the user on 2026-10-24; no allergy absence inferred from pictures.",
+        "notes": "Simply steamed broccoli, cauliflower and carrot in a small whole bowl, matching vegetables seen in the restaurant's other menu photography. No sauce/garnish; the exact side mix and quantity are illustrative interpretations, not restaurant-confirmed ingredient details.",
+        "checks": {
+          "identity": "pass",
+          "ingredients": "pass",
+          "portion": "pass",
+          "framing": "pass",
+          "quality": "pass"
+        }
       }
     },
     {

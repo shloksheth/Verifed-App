@@ -765,6 +765,24 @@ export const localFoodPhotoMetadata = {
     "width": 510,
     "height": 510
   },
+  "chipotle-south-orange-black-beans": {
+    "path": "assets/food/chipotle-south-orange/black-beans.webp",
+    "alt": "Menu illustration of Black Beans",
+    "credit": "Verifed generated menu illustration",
+    "generated": true,
+    "sha256": "e5e81186801d50fec2f6ff9c1b76b49b7f792762903b27f97a025163851beb67",
+    "width": 1200,
+    "height": 800
+  },
+  "chipotle-south-orange-brown-rice": {
+    "path": "assets/food/chipotle-south-orange/brown-rice.webp",
+    "alt": "Menu illustration of Brown Rice",
+    "credit": "Verifed generated menu illustration",
+    "generated": true,
+    "sha256": "9b0f0f9154e103fad0e5313d136ba50f3a030a06257cf4c7ac9decd8663c4276",
+    "width": 1200,
+    "height": 800
+  },
   "chipotle-south-orange-carnitas": {
     "path": "assets/food/chipotle-south-orange/carnitas.webp",
     "alt": "Chipotle shredded braised pork carnitas on white background, standalone ingredient",
@@ -792,6 +810,24 @@ export const localFoodPhotoMetadata = {
     "width": 510,
     "height": 510
   },
+  "chipotle-south-orange-crispy-corn-tortilla": {
+    "path": "assets/food/chipotle-south-orange/crispy-corn-tortilla.webp",
+    "alt": "Menu illustration of Crispy Corn Tortilla",
+    "credit": "Verifed generated menu illustration",
+    "generated": true,
+    "sha256": "a8179b4a7bea6c902882f1f06af4434e4382673ffced293b21c43a0739fcd923",
+    "width": 1200,
+    "height": 800
+  },
+  "chipotle-south-orange-fajita-vegetables": {
+    "path": "assets/food/chipotle-south-orange/fajita-vegetables.webp",
+    "alt": "Menu illustration of Fajita Vegetables",
+    "credit": "Verifed generated menu illustration",
+    "generated": true,
+    "sha256": "f5b0a91884e67e8d2d643a6c98c4c36d612413a1c81b8d9c2aa402827a2bd091",
+    "width": 1200,
+    "height": 800
+  },
   "chipotle-south-orange-burrito-tortilla": {
     "path": "assets/food/chipotle-south-orange/burrito-tortilla.webp",
     "alt": "Chipotle full burrito-size flour tortilla, white background",
@@ -800,6 +836,24 @@ export const localFoodPhotoMetadata = {
     "sha256": "297b11b7d1bde5552ede8a286f5b3722cfd403a14b800ba455e9e53c101abb82",
     "width": 510,
     "height": 510
+  },
+  "chipotle-south-orange-taco-tortilla": {
+    "path": "assets/food/chipotle-south-orange/taco-tortilla.webp",
+    "alt": "Menu illustration of Flour Tortilla (Taco)",
+    "credit": "Verifed generated menu illustration",
+    "generated": true,
+    "sha256": "549b6589e77f11e9dcbafad61539fe01d1d93638bab5af7f2a0505fac4e7449c",
+    "width": 1200,
+    "height": 800
+  },
+  "chipotle-south-orange-fresh-tomato-salsa": {
+    "path": "assets/food/chipotle-south-orange/fresh-tomato-salsa.webp",
+    "alt": "Menu illustration of Fresh Tomato Salsa",
+    "credit": "Verifed generated menu illustration",
+    "generated": true,
+    "sha256": "f9a3b1c29a299dee0a4dfbba5ae16ea4b27c3cc324f6376c642d681becb3548f",
+    "width": 1200,
+    "height": 1000
   },
   "chipotle-south-orange-guacamole": {
     "path": "assets/food/chipotle-south-orange/guacamole.webp",
@@ -846,6 +900,15 @@ export const localFoodPhotoMetadata = {
     "width": 510,
     "height": 510
   },
+  "chipotle-south-orange-roasted-corn-salsa": {
+    "path": "assets/food/chipotle-south-orange/roasted-corn-salsa.webp",
+    "alt": "Menu illustration of Roasted Chili-Corn Salsa",
+    "credit": "Verifed generated menu illustration",
+    "generated": true,
+    "sha256": "d29867fea8caef81c62a307cc6b88d29a57ad1ca6a7f731be2633fd0b99b8133",
+    "width": 1200,
+    "height": 1000
+  },
   "chipotle-south-orange-romaine": {
     "path": "assets/food/chipotle-south-orange/romaine.webp",
     "alt": "Chipotle shredded romaine lettuce alone on white background",
@@ -855,6 +918,24 @@ export const localFoodPhotoMetadata = {
     "width": 510,
     "height": 510
   },
+  "chipotle-south-orange-sofritas": {
+    "path": "assets/food/chipotle-south-orange/sofritas.webp",
+    "alt": "Menu illustration of Sofritas",
+    "credit": "Verifed generated menu illustration",
+    "generated": true,
+    "sha256": "383829d933e716b1cd2d6b0bf4873628e2299d5c9abf32b8f35c4681ed123b9d",
+    "width": 1200,
+    "height": 800
+  },
+  "chipotle-south-orange-sour-cream": {
+    "path": "assets/food/chipotle-south-orange/sour-cream.webp",
+    "alt": "Menu illustration of Sour Cream",
+    "credit": "Verifed generated menu illustration",
+    "generated": true,
+    "sha256": "985e8739d8ff719e99725dc581f7bdd6551138b530de9b3a5b216087bfde0e15",
+    "width": 1200,
+    "height": 800
+  },
   "chipotle-south-orange-steak": {
     "path": "assets/food/chipotle-south-orange/steak.webp",
     "alt": "Chipotle grilled marinated steak in an official Chipotle side cup",
@@ -863,6 +944,33 @@ export const localFoodPhotoMetadata = {
     "sha256": "a72a9c89a3819d215842c9faca0b9fccbb81f493400c7d651f947684faaad0ba",
     "width": 510,
     "height": 510
+  },
+  "chipotle-south-orange-supergreens": {
+    "path": "assets/food/chipotle-south-orange/supergreens.webp",
+    "alt": "Menu illustration of Supergreens Lettuce Blend",
+    "credit": "Verifed generated menu illustration",
+    "generated": true,
+    "sha256": "ceed0099f96b9f254db05c574829788228cce458b5a007947a9f9101089046f4",
+    "width": 1200,
+    "height": 800
+  },
+  "chipotle-south-orange-green-chili-salsa": {
+    "path": "assets/food/chipotle-south-orange/green-chili-salsa.webp",
+    "alt": "Chipotle Tomatillo-Green Chili Salsa in an individual sauce cup, official menu product photo through delivery listing",
+    "credit": "Chipotle menu photo · Uber Eats",
+    "generated": false,
+    "sha256": "e3b41147048a88d4cb66e32ce4b4122554e306e359a005d31b68342786e12209",
+    "width": 510,
+    "height": 510
+  },
+  "chipotle-south-orange-red-chili-salsa": {
+    "path": "assets/food/chipotle-south-orange/red-chili-salsa.webp",
+    "alt": "Menu illustration of Tomatillo Red-Chili Salsa",
+    "credit": "Verifed generated menu illustration",
+    "generated": true,
+    "sha256": "785153d7699078cbf3cbf99d328d9404e95217eda97ed33c7fde041a7abd8c77",
+    "width": 1200,
+    "height": 800
   },
   "chipotle-south-orange-tortilla-chips": {
     "path": "assets/food/chipotle-south-orange/tortilla-chips.webp",
@@ -972,6 +1080,33 @@ export const localFoodPhotoMetadata = {
     "width": 1200,
     "height": 1200
   },
+  "loving-hut-orlando-sushi-delight": {
+    "path": "assets/food/loving-hut-orlando/sushi-delight.webp",
+    "alt": "Menu illustration of Sushi Delight",
+    "credit": "Verifed generated menu illustration",
+    "generated": true,
+    "sha256": "08d962b0d552a1c4ada519a5a218b1995c0217a3a0216d7beddb09ad6b18bb41",
+    "width": 1200,
+    "height": 843
+  },
+  "loving-hut-orlando-avocado-sushi": {
+    "path": "assets/food/loving-hut-orlando/avocado-sushi.webp",
+    "alt": "Menu illustration of Avocado Sushi",
+    "credit": "Verifed generated menu illustration",
+    "generated": true,
+    "sha256": "5326f53eab9b16609ccfa93f527c4beb2743617b5433388d1c0a54befa9aad02",
+    "width": 1200,
+    "height": 824
+  },
+  "loving-hut-orlando-ocean-sushi": {
+    "path": "assets/food/loving-hut-orlando/ocean-sushi.webp",
+    "alt": "Menu illustration of Ocean Sushi",
+    "credit": "Verifed generated menu illustration",
+    "generated": true,
+    "sha256": "44e80aee8c86901bca4abcc776799852e85447e0b1ff6aa588d44f108cce2b3f",
+    "width": 1200,
+    "height": 800
+  },
   "loving-hut-orlando-crispy-tofu-4-pieces": {
     "path": "assets/food/loving-hut-orlando/crispy-tofu-4-pieces.webp",
     "alt": "Menu illustration of Crispy Tofu (4 Pieces)",
@@ -980,6 +1115,15 @@ export const localFoodPhotoMetadata = {
     "sha256": "e34cbdcea578c6ae17ec0461acb30c3baf4f218d2e0857601f40308ad6a25385",
     "width": 1200,
     "height": 800
+  },
+  "loving-hut-orlando-dumpling-steamed-or-fried": {
+    "path": "assets/food/loving-hut-orlando/dumpling-steamed-or-fried.webp",
+    "alt": "Menu illustration of Dumpling (steamed or fried)",
+    "credit": "Verifed generated menu illustration",
+    "generated": true,
+    "sha256": "e210767d0196ffc90f3eb1e07ced4bcccc2686bd3206b3c09421f815ca87853c",
+    "width": 1200,
+    "height": 850
   },
   "loving-hut-orlando-ocean-wonder-5-pieces": {
     "path": "assets/food/loving-hut-orlando/ocean-wonder-5-pieces.webp",
@@ -1043,6 +1187,15 @@ export const localFoodPhotoMetadata = {
     "sha256": "901a39d8b4c632fcd77549d6f823f8fc63997a1f711ed1c16be6cbc25fcb5b4d",
     "width": 1200,
     "height": 1200
+  },
+  "loving-hut-orlando-small-cabbage-salad": {
+    "path": "assets/food/loving-hut-orlando/small-cabbage-salad.webp",
+    "alt": "Menu illustration of Small Cabbage Salad",
+    "credit": "Verifed generated menu illustration",
+    "generated": true,
+    "sha256": "6fa1197187c65fc819803c9da9638fc3767ff2f48880ed2b8df22207b62d4baa",
+    "width": 1200,
+    "height": 1097
   },
   "loving-hut-orlando-pho": {
     "path": "assets/food/loving-hut-orlando/pho.webp",
@@ -1311,6 +1464,69 @@ export const localFoodPhotoMetadata = {
     "credit": "Verifed generated menu illustration",
     "generated": true,
     "sha256": "f5b809547e7dc392caca45ac732390f4315edfcf14391ba216a3e0861d13267b",
+    "width": 1200,
+    "height": 800
+  },
+  "loving-hut-orlando-white-rice": {
+    "path": "assets/food/loving-hut-orlando/white-rice.webp",
+    "alt": "Menu illustration of White Rice",
+    "credit": "Verifed generated menu illustration",
+    "generated": true,
+    "sha256": "5b703f322e38c1a489269b143888e85ee7c5d399cabe84fb4321ec3ef43cb202",
+    "width": 1200,
+    "height": 800
+  },
+  "loving-hut-orlando-brown-rice": {
+    "path": "assets/food/loving-hut-orlando/brown-rice.webp",
+    "alt": "Menu illustration of Brown Rice",
+    "credit": "Verifed generated menu illustration",
+    "generated": true,
+    "sha256": "6f6ea65935dccd0908398d2e6161d0ef0c10070fd245205291ef7ec363ce0abb",
+    "width": 1200,
+    "height": 800
+  },
+  "loving-hut-orlando-yellow-rice": {
+    "path": "assets/food/loving-hut-orlando/yellow-rice.webp",
+    "alt": "Menu illustration of Yellow Rice",
+    "credit": "Verifed generated menu illustration",
+    "generated": true,
+    "sha256": "349922e3c2104b8118b7e963f2fb1065c9c7105b560dc07593f77f46dff326a4",
+    "width": 1200,
+    "height": 800
+  },
+  "loving-hut-orlando-rice-noodle": {
+    "path": "assets/food/loving-hut-orlando/rice-noodle.webp",
+    "alt": "Menu illustration of Rice Noodle",
+    "credit": "Verifed generated menu illustration",
+    "generated": true,
+    "sha256": "b99dde724b17943057f992435c4cd7790852e6c651ec72b40334af9a5158c814",
+    "width": 1200,
+    "height": 800
+  },
+  "loving-hut-orlando-french-fries": {
+    "path": "assets/food/loving-hut-orlando/french-fries.webp",
+    "alt": "Menu illustration of French Fries",
+    "credit": "Verifed generated menu illustration",
+    "generated": true,
+    "sha256": "525442db33b7f7047614a497ac2a5f4cd302990724b63fb4e3e9eecfd659804c",
+    "width": 1200,
+    "height": 800
+  },
+  "loving-hut-orlando-steamed-broccoli": {
+    "path": "assets/food/loving-hut-orlando/steamed-broccoli.webp",
+    "alt": "Menu illustration of Steamed Broccoli",
+    "credit": "Verifed generated menu illustration",
+    "generated": true,
+    "sha256": "d6fcef4cd6e9ee8539a738b537252a726453f416434d7f26a414446dc9215f33",
+    "width": 1200,
+    "height": 800
+  },
+  "loving-hut-orlando-steamed-vegetables": {
+    "path": "assets/food/loving-hut-orlando/steamed-vegetables.webp",
+    "alt": "Menu illustration of Steamed Vegetables",
+    "credit": "Verifed generated menu illustration",
+    "generated": true,
+    "sha256": "ffa282fd806e99fe87ef26df13feba61a3f7a03648bd7cc81644fe177deacf01",
     "width": 1200,
     "height": 800
   },

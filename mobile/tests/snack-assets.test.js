@@ -1,9 +1,26 @@
 import test from "node:test";
 import { snackVersionFor } from "../../research/native-tools/dependencies.mjs";
+import { assertSnackFilesUploaded, findUploadedSnackAsset } from "../../research/native-tools/uploads.mjs";
+import { createHash } from "node:crypto";
 import assert from "node:assert/strict";
 import { fileURLToPath } from "node:url";
 import { imageAssetPaths, assetMimeTypes } from "../../research/native-tools/assets.mjs";
 import { localFoodPhotoMetadata } from "../src/local-food-photo-metadata.js";
+
+test("reused Snack assets must match the local bytes rather than merely return HTTP 200", async () => {
+  const bytes = new TextEncoder().encode("test-image-content");
+  const hash = createHash("sha256").update(bytes).digest("hex");
+  const url = await findUploadedSnackAsset(bytes, hash, async () => new Response(bytes));
+  assert.match(url, /^https:\/\/snack-code-uploads\.s3\.us-west-1\.amazonaws\.com\/~asset\//);
+  assert.equal(await findUploadedSnackAsset(bytes, hash, async () => new Response(null, { status: 404 })), null);
+  await assert.rejects(findUploadedSnackAsset(bytes, hash, async () => new Response("wrong image")), /bytes do not match/);
+});
+
+test("Snack refuses failed or unfinished image uploads before saving", () => {
+  assert.throws(() => assertSnackFilesUploaded({ "food.webp": { type: "ASSET", contents: new Blob(["unfinished"]) } }), /food\.webp/);
+  assert.throws(() => assertSnackFilesUploaded({ "food.webp": { type: "ASSET", contents: "https://example.test/photo", error: new Error("upload failed") } }), /food\.webp/);
+  assert.doesNotThrow(() => assertSnackFilesUploaded({ "food.webp": { type: "ASSET", contents: "https://example.test/photo" }, "App.js": { type: "CODE", contents: "export default App;" } }));
+});
 
 test("Snack's asset inventory includes every bundled food image and the logo", async () => {
   const paths = await imageAssetPaths(fileURLToPath(new URL("../", import.meta.url)));

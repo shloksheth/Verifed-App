@@ -1,0 +1,20 @@
+{
+  "reviewedAt": "2026-10-24",
+  "scope": "U.S. standard components; these two records do not establish complete ingredient coverage for the whole menu",
+  "items": [
+    {
+      "key": "sour-cream",
+      "sourceUrl": "https://www.chipotle.com/content/chipotle/us/en/allergens.html",
+      "ingredients": ["Cultured cream"],
+      "description": "Cultured cream, served as a menu component.",
+      "note": "Chipotle's current special-diets text identifies sour cream as entirely cultured cream. Milk is already declared in the component record."
+    },
+    {
+      "key": "supergreens",
+      "sourceUrl": "https://newsroom.chipotle.com/2020-01-02-Chipotle-Innovates-Lifestyle-Bowls-By-Adding-Supergreens-Salad-Mix-And-Whole30-R-Compliant-Chicken",
+      "ingredients": ["Romaine lettuce", "Baby kale", "Baby spinach"],
+      "description": "A leafy salad base of romaine lettuce, baby kale and baby spinach.",
+      "note": "The U.S. brand's Supergreens announcement names these three greens. This records the published mix, not a supplier-specific sub-ingredient or cross-contact guarantee."
+    }
+  ]
+}

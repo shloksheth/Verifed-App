@@ -1,0 +1,127 @@
+{
+  "checkedAt": "2026-10-24T17:39:23.893Z",
+  "build": "verifed-v17-ready",
+  "platform": "React Native Web browser export; no physical iPhone test claimed",
+  "menus": [
+    {
+      "expected": 26,
+      "failed": [],
+      "loaded": 26,
+      "localImages": 26,
+      "menu": "Chipotle",
+      "remoteImages": 0
+    },
+    {
+      "expected": 61,
+      "failed": [],
+      "loaded": 61,
+      "localImages": 61,
+      "menu": "Loving Hut",
+      "remoteImages": 0
+    },
+    {
+      "expected": 35,
+      "failed": [],
+      "loaded": 35,
+      "localImages": 35,
+      "menu": "Fresh Kitchen",
+      "remoteImages": 0
+    },
+    {
+      "expected": 116,
+      "failed": [],
+      "loaded": 116,
+      "localImages": 116,
+      "menu": "Taco Bell",
+      "remoteImages": 0
+    },
+    {
+      "expected": 49,
+      "failed": [],
+      "loaded": 49,
+      "localImages": 49,
+      "menu": "Hawkers",
+      "remoteImages": 0
+    }
+  ],
+  "homeRemoteFoodImages": 0,
+  "ingredientFix": {
+    "culturedCreamVisible": true,
+    "ingredientSourceButtonVisible": true
+  },
+  "freshMilkCheck": {
+    "rosemaryLabel": "View Grilled Rosemary Chicken. Reported: Milk-free.",
+    "parmesanHidden": true,
+    "fetaHidden": true
+  },
+  "savedDishVisible": true,
+  "lovingVeganCheck": {
+    "matchSummary": "61 items explicitly support every selected need.",
+    "selectedTabs": [
+      "For my diet",
+      "Explore"
+    ]
+  },
+  "chipotleVeganCheck": {
+    "matchSummary": "17 items explicitly support every selected need.",
+    "sourCreamHidden": true,
+    "visibleLocalFoodImages": 18
+  },
+  "chainBranchCheck": {
+    "expected": 116,
+    "loaded": 116,
+    "localImages": 116,
+    "location": "Taco Bell East Colonial",
+    "remoteImages": 0
+  },
+  "passed": true,
+  "finalCompatibilityCheck": {
+    "checkedAt": "2026-10-24T18:06:49.371Z",
+    "build": "verifed-v17-final",
+    "menus": [
+      {
+        "name": "Fresh Kitchen · Waterford Lakes, Waterford Lakes · Orlando, 35 menu entries",
+        "expected": 35,
+        "external": 0,
+        "failures": [],
+        "images": 35,
+        "loaded": 35
+      },
+      {
+        "name": "Chipotle · South Orange, South Orange · Orlando, 26 menu entries",
+        "expected": 26,
+        "external": 0,
+        "failures": [],
+        "images": 26,
+        "loaded": 26
+      },
+      {
+        "name": "Loving Hut Orlando, Colonialtown · Orlando, 61 menu entries",
+        "expected": 61,
+        "external": 0,
+        "failures": [],
+        "images": 61,
+        "loaded": 61
+      },
+      {
+        "name": "Taco Bell · South Orange, South Orange · Orlando, 116 menu entries",
+        "expected": 116,
+        "external": 0,
+        "failures": [],
+        "images": 116,
+        "loaded": 116
+      },
+      {
+        "name": "Hawkers Orlando, Mills 50 · Orlando, 49 menu entries",
+        "expected": 49,
+        "external": 0,
+        "failures": [],
+        "images": 49,
+        "loaded": 49
+      }
+    ],
+    "snackId": "xoqR-YOqjOb1zGRZlCfwU",
+    "snackRuntime": "Home and Loving Hut menu rendered in saved Snack after MenuImage web compatibility fix; No errors indicator visible",
+    "physicalIPhoneTested": false
+  }
+}

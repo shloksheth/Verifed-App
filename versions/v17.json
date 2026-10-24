@@ -1,0 +1,25 @@
+{
+  "number": 17,
+  "name": "Verifed V17",
+  "description": "Five image-complete imported menus for the CAC video: Fresh Kitchen (35 entries), Chipotle (26 standard components), Loving Hut Orlando (61), Taco Bell (116), and Hawkers (49). Home prioritizes Fresh Kitchen, Chipotle and Loving Hut. All 287 entries and featured food banners use reviewed local WebPs. Adds 23 generated illustrations and one matching real image, source-linked Chipotle ingredient facts, and an empty-cloud-ingredient fallback that preserves nonempty cloud updates. Ingredient/allergen coverage remains source-limited; Chipotle is a standard-component inventory, not its entire ordering catalog. Fixes Snack web startup by loading Expo Image only on native platforms; browsers use React Native Image with the same full-food framing.",
+  "verification": [
+    "143 regression tests passed, including five complete image inventories, shared chain products, source facts, stale empty-cloud ingredient fallback and preservation of nonempty updates.",
+    "Browser screen checks loaded all 287 food images across the five menus with zero failures and zero external image requests; Home banners were local too.",
+    "A second Taco Bell branch loaded the same 116 reviewed local product images. Distinct dishes still cannot share duplicate final pixel content.",
+    "Fresh Kitchen Milk filtering kept the sourced Rosemary Chicken match and excluded Parmesan/Feta; Saved worked. Loving Hut reported 61 vegan matches and Chipotle 17; sour cream was excluded from the vegan view.",
+    "The actual sour-cream screen displayed cultured cream and its ingredient-source control after fixing the stale cloud-row merge. No database data was overwritten.",
+    "356 unique individually reviewed WebPs decoded with unchanged hashes and no duplicate final pixels. All 356 images match the iOS, Android and web export assets byte for byte.",
+    "The generated-image list contains 76 illustrations with internal provenance. Twenty-three new illustrations were individually viewed after WebP optimization.",
+    "No physical iPhone runtime test is claimed. The broader catalog remains unfinished: 1042 other entries lack a reviewed local image or validated chain alias. No blanket complete-ingredient or allergy-safety claim is made.",
+    "Saved Snack xoqR-YOqjOb1zGRZlCfwU verifies all 357 uploaded image hashes. Its Home and Loving Hut menu rendered with No errors after adding a lazy native Expo Image/browser Image wrapper. All 287 local menu images loaded again in the final web export. Snack remote ZIP download still returned HTTP 503; ZIP source comparison remains unconfirmed."
+  ],
+  "snack": "https://snack.expo.dev/xoqR-YOqjOb1zGRZlCfwU",
+  "snackId": "xoqR-YOqjOb1zGRZlCfwU",
+  "snackSourceHash": "65c8d4a02fb17046083eeceb8d2ed9bcd8cda0f2f1a349405233ecff12754c30",
+  "status": "five-photo-complete-menus-snack-web-verified-zip-unconfirmed",
+  "approvedLocalImages": 356,
+  "sharedChainEntries": 232,
+  "featuredEntries": 287,
+  "preferredDemoEntries": 122,
+  "branch": "codex/local-menu-photography"
+}
