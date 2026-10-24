@@ -1,5 +1,5 @@
-// Dish-keyed photography. Unverified or other-branch images are labeled representative/contextual.
-// Never derive allergen claims from photographs; confirm third-party commercial reproduction permissions.
+// Sourced menu-specific and clearly labeled representative photos; food photo != allergen assurance.
+// Third-party image credits do not imply permission for redistribution.
 export const verifiedDishPhotos = {
   "loving-hut-orlando": {
     "spring-rolls-4-rolls-cha-gio": {
@@ -982,6 +982,50 @@ export const verifiedDishPhotos = {
       "reviewedAt": "2026-10-24",
       "matchMethod": "Visual comparison with published menu ingredients and image context; differences disclosed",
       "needsPermissionReview": true
+    },
+    "marinara-vg": {
+      "url": "https://151673875.cdn6.editmysite.com/uploads/1/5/1/6/151673875/GNTBVW43YRTDBNQIKAQKTXDN.jpeg",
+      "alt": "Representative whole cheeseless wood-fired marinara pizza with tomato sauce, roasted garlic and dried oregano; Pizza Bruno additionally uses capers, not visibly present in this photo.",
+      "credit": "Matilda Park City · Marinara Tomato Pie (different restaurant)",
+      "sourceUrl": "https://order.matildaparkcity.com/product/marinara-pizza-tomato-pie/19",
+      "kind": "representative-dish",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Compared dish ingredients, plating, and multiple web image candidates; documented visible differences from named restaurant's dish",
+      "needsPermissionReview": true,
+      "photoIdentityNote": "Not a verified photo of this restaurant's actual dish; do not use to infer dietary compliance."
+    },
+    "rigatoni-vodka": {
+      "url": "https://merchant-cdn.streamorders.com/980ef883-0c2b-4cb6-95ec-2dd0862e06ea/restaurant/1726767117651.jpeg?fit=crop&h=160&w=160",
+      "alt": "Representative rigatoni in creamy red-orange vodka sauce with a big dollop of burrata cheese; Pizza Bruno's topping is stracciatella instead, and this photo is another restaurant's serving.",
+      "credit": "Patricia's of Morris Park · rigatoni vodka image (different restaurant)",
+      "sourceUrl": "https://slicelife.com/restaurants/ny/the-bronx/10461/patricia-s-of-morris-park/menu",
+      "kind": "representative-dish",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Compared dish ingredients, plating, and multiple web image candidates; documented visible differences from named restaurant's dish",
+      "needsPermissionReview": true,
+      "photoIdentityNote": "Not a verified photo of this restaurant's actual dish; do not use to infer dietary compliance."
+    },
+    "cauliflower-roasted": {
+      "url": "https://images.squarespace-cdn.com/content/v1/630d0de1b56cf7627002c56e/c8f0e619-6634-495e-871f-3a6cf705f89e/GUFO%2BCAMBRIDGE_BRIAN%2BSAMUELS%2BPHOTOGRAPHY_JULY%2B2023-IMG_2144%2Bcopy%2B%281%29.jpg?format=2500w",
+      "alt": "Representative whole dish of oven-roasted golden cauliflower florets over reddish Romesco sauce topped with hazelnuts; Pizza Bruno's golden-raisin agrodolce, basil and mint are not shown.",
+      "credit": "Gufo Cambridge · roasted cauliflower photograph (different restaurant)",
+      "sourceUrl": "https://www.gufocambridge.com/menu-basil",
+      "kind": "representative-dish",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Compared dish ingredients, plating, and multiple web image candidates; documented visible differences from named restaurant's dish",
+      "needsPermissionReview": true,
+      "photoIdentityNote": "Not a verified photo of this restaurant's actual dish; do not use to infer dietary compliance."
+    },
+    "tiramisu-togo": {
+      "url": "https://tb-static.uber.com/prod/image-proc/processed_images/9e4800f39be2703ac97edd9d34512d17/7f4ae9ca0446cbc23e71d8d395a98428.jpeg",
+      "alt": "Representative portion of layered cocoa-dusted tiramisu in clear takeout packaging. Image belongs to Sunday's Bakery, not Pizza Bruno; house-made texture, portion, and packaging may differ.",
+      "credit": "Sunday's Bakery & Juice Bar · packaged tiramisu photograph (different restaurant)",
+      "sourceUrl": "https://www.ubereats.com/store/sundays-bakery-%26-juice-bar/UjkP77cOU_WMe5F_DEsM9Q",
+      "kind": "representative-dish",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Compared dish ingredients, plating, and multiple web image candidates; documented visible differences from named restaurant's dish",
+      "needsPermissionReview": true,
+      "photoIdentityNote": "Not a verified photo of this restaurant's actual dish; do not use to infer dietary compliance."
     }
   },
   "black-rooster-mills": {
@@ -1684,6 +1728,28 @@ export const verifiedDishPhotos = {
       "reviewedAt": "2026-10-24",
       "matchMethod": "Visual comparison with published menu ingredients and image context; differences disclosed",
       "needsPermissionReview": true
+    },
+    "the-sec": {
+      "url": "https://vegnews.com/media/W1siZiIsIjM1MDg4L1ZlZ05ld3MuNy1FbGV2ZW5TYW5kd2ljaC5DYW5hZGEtMS5qcGciXSxbInAiLCJjcm9wX3Jlc2l6ZWQiLCI5NDR4OTQ0KzQzNCswIiwiOTQ2eDk0Nl4iLHsiZm9ybWF0IjoianBnIn1dLFsicCIsIm9wdGltaXplIl1d/VegNews.7-ElevenSandwich.Canada-1.jpg?sha=165e61daa766c4ea",
+      "alt": "Representative vegan sandwich with JUST Egg folded patty, Impossible sausage and plant-based cheddar, but pictured on an English muffin instead of Winter Park Biscuit Company's oat buttermilk biscuit. Cholula side not shown.",
+      "credit": "VegNews · 7-Eleven Canada plant-based breakfast sandwich (different restaurant)",
+      "sourceUrl": "https://vegnews.com/7-eleven-vegan-breakfast-sandwich-canada",
+      "kind": "representative-dish",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Compared dish ingredients, plating, and multiple web image candidates; documented visible differences from named restaurant's dish",
+      "needsPermissionReview": true,
+      "photoIdentityNote": "Not a verified photo of this restaurant's actual dish; do not use to infer dietary compliance."
+    },
+    "chopped-cheese": {
+      "url": "https://yummygusto.com/assets/images/1749326906593-js7tm1t1.webp",
+      "alt": "Representative plant-based chopped burger patty and melted vegan cheese on a toasted hoagie with chopped tomatoes and spring onion. WPBC uses lettuce, tomato, onions and mayo; exact house sandwich not photographed.",
+      "credit": "Yummy Gusto · Vegan Chopped Cheese Sandwich recipe (not WPBC)",
+      "sourceUrl": "https://yummygusto.com/recipes/vegan-chopped-cheese-sandwich",
+      "kind": "representative-dish",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Compared dish ingredients, plating, and multiple web image candidates; documented visible differences from named restaurant's dish",
+      "needsPermissionReview": true,
+      "photoIdentityNote": "Not a verified photo of this restaurant's actual dish; do not use to infer dietary compliance."
     }
   },
   "bombay-street-kitchen": {
