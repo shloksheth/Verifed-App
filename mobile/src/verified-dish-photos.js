@@ -1,5 +1,5 @@
-// Matched restaurant item photos with their original source URL and provenance.
-// Restaurant food images are not proof of allergen or dietary safety.
+// Each image references its own dish and source; representative images remain labeled as such.
+// Photo imagery does not establish allergen safety or licensed reuse permissions.
 export const verifiedDishPhotos = {
   "loving-hut-orlando": {
     "spring-rolls-4-rolls-cha-gio": {
@@ -591,6 +591,26 @@ export const verifiedDishPhotos = {
       "reviewedAt": "2026-10-23",
       "matchMethod": "Visual and published ingredient comparison",
       "needsPermissionReview": true
+    },
+    "taco-tortilla": {
+      "url": "https://d2j6dbq0eux0bg.cloudfront.net/images/15100469/4533727335.png",
+      "alt": "Representative small, single flour taco tortilla on white background. This is NOT Chipotle's actual photographed product.",
+      "credit": "Burrito Bros · representative small flour tortilla",
+      "sourceUrl": "https://carryout.burritobroskc.com/products/SMALL-TORTILLA-p691209382",
+      "kind": "representative-ingredient",
+      "reviewedAt": "2026-10-23",
+      "matchMethod": "Photo visually compared to exact item description; third-party images explicitly differentiated",
+      "needsPermissionReview": true
+    },
+    "sour-cream": {
+      "url": "https://129861524.cdn6.editmysite.com/uploads/1/2/9/8/129861524/ILQS6LNOQGB6QCR3G4HCPPE3.jpeg",
+      "alt": "Representative single cup of smooth white sour cream. It is from another restaurant and not Chipotle's official photography.",
+      "credit": "Fuego · representative sour cream cup",
+      "sourceUrl": "https://www.fuegotime.com/product/sour-cream/40",
+      "kind": "representative-ingredient",
+      "reviewedAt": "2026-10-23",
+      "matchMethod": "Photo visually compared to exact item description; third-party images explicitly differentiated",
+      "needsPermissionReview": true
     }
   },
   "hawkers-orlando": {
@@ -924,6 +944,16 @@ export const verifiedDishPhotos = {
       "kind": "editorial-context",
       "reviewedAt": "2026-10-23",
       "matchMethod": "Visual comparison with the menu item and its published description",
+      "needsPermissionReview": true
+    },
+    "shrimp-and-chorizo": {
+      "url": "https://wpcdn.us-east-1.vip.tn-cloud.net/www.orlandomagazine.com/content/uploads/2023/05/j/g/orlando-does-tacos-balckrooster.jpg?amp=1&etag=%22646c1a81-4a262%22",
+      "alt": "Black Rooster Taqueria Shrimp and Chorizo taco with grilled shrimp and chorizo, tomatillo-avocado salsa, pico de gallo and lime; includes a magazine award graphic overlay.",
+      "credit": "Orlando Magazine · Black Rooster Shrimp & Chorizo taco",
+      "sourceUrl": "https://www.orlandomagazine.com/30-central-florida-taco-spots/",
+      "kind": "editorial-product",
+      "reviewedAt": "2026-10-23",
+      "matchMethod": "Photo visually compared to exact item description; third-party images explicitly differentiated",
       "needsPermissionReview": true
     }
   },
