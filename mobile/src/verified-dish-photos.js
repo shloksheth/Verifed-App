@@ -1,4 +1,4 @@
-// Exact restaurant and clearly labeled representative dish photos; photo is not dietary/allergen evidence.
+// Exact official menu photos plus transparent representative food photos. Photos do not prove allergen safety.
 export const verifiedDishPhotos = {
   "loving-hut-orlando": {
     "spring-rolls-4-rolls-cha-gio": {
@@ -395,6 +395,16 @@ export const verifiedDishPhotos = {
       "matchMethod": "Visually checked photographed food type against named side; not authenticated Loving Hut product",
       "needsPermissionReview": true,
       "photoIdentityNote": "Third-party representative food photography, not the actual Loving Hut product"
+    },
+    "yellow-rice": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Yellow_rice.jpg",
+      "alt": "Representative photograph of yellow rice, not an official Loving Hut side or proof of the recipe",
+      "credit": "ReshmaNazeerhussain · Wikimedia Commons CC0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Yellow_rice.jpg",
+      "kind": "representative-food",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Matched publicly licensed food subject to named rice side; actual plating not confirmed.",
+      "needsPermissionReview": false
     }
   },
   "taco-bell-south-orange": {
