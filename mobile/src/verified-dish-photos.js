@@ -1,5 +1,5 @@
-// Each photo is keyed to a menu dish, with source attribution and identification of representatives.
-// Ingredient images are never food allergy certifications. Some editorial sources require reuse permission.
+// Sourced exact or representative dish photos. Not evidence of allergy safety or restaurant ownership.
+// Source attribution is not commercial reproduction permission.
 export const verifiedDishPhotos = {
   "loving-hut-orlando": {
     "spring-rolls-4-rolls-cha-gio": {
@@ -955,6 +955,83 @@ export const verifiedDishPhotos = {
       "kind": "editorial-product",
       "reviewedAt": "2026-10-23",
       "matchMethod": "Photo visually compared to exact item description; third-party images explicitly differentiated",
+      "needsPermissionReview": true
+    },
+    "ahi-tuna-ceviche": {
+      "url": "https://www.awayinstyle.com/wp-content/uploads/2025/11/Ceviche-de-Atun-Large.jpeg",
+      "alt": "Representative tuna ceviche showing raw diced tuna, mango, avocado, coconut-based white sauce, onion and cilantro; NOT Black Rooster's actual serving, and tortilla chips are absent",
+      "credit": "Awayinstyle · DAVA tuna ceviche photograph",
+      "sourceUrl": "https://www.awayinstyle.com/ayana-bali-unveils-a-modern-argentine-grill-experience-at-dava/",
+      "kind": "representative-dish",
+      "reviewedAt": "2026-10-23",
+      "matchMethod": "Compared alternative visual results with the ingredient-level menu description; visibly disclosed differences",
+      "photoIdentityNote": "Illustrative real photo from another restaurant or recipe, not the official Black Rooster dish.",
+      "needsPermissionReview": true
+    },
+    "tamale": {
+      "url": "https://www.mashed.com/img/gallery/the-absolute-best-tamales-in-the-us/tamale-co-mexican-street-food-orlando-fl-1645623421.jpg",
+      "alt": "Representative tamale in a corn husk with green tomatillo sauce, crema and cilantro; separate Orlando restaurant, filling unconfirmed",
+      "credit": "Mashed · Tamale Co Orlando photograph",
+      "sourceUrl": "https://www.mashed.com/776999/the-absolute-best-tamales-in-the-us/",
+      "kind": "representative-dish",
+      "reviewedAt": "2026-10-23",
+      "matchMethod": "Compared alternative visual results with the ingredient-level menu description; visibly disclosed differences",
+      "photoIdentityNote": "Illustrative real photo from another restaurant or recipe, not the official Black Rooster dish.",
+      "needsPermissionReview": true
+    },
+    "kale-caesar": {
+      "url": "https://static.wixstatic.com/media/42f651_892d4b29f47a488a80da79b7b61a993f~mv2.jpg/v1/fill/w_800%2Ch_600%2Cal_c%2Cq_85%2Cenc_avif%2Cquality_auto/42f651_892d4b29f47a488a80da79b7b61a993f~mv2.jpg",
+      "alt": "Representative kale Caesar salad with avocado, halved eggs, greens, dressing and croutons; missing the restaurant's distinctive kalamata olives and cotija cheese",
+      "credit": "Mastic Lifestyle · Kale Caesar recipe photograph",
+      "sourceUrl": "https://www.mastic-lifestyle.com/post/caesar-salade",
+      "kind": "representative-dish",
+      "reviewedAt": "2026-10-23",
+      "matchMethod": "Compared alternative visual results with the ingredient-level menu description; visibly disclosed differences",
+      "photoIdentityNote": "Illustrative real photo from another restaurant or recipe, not the official Black Rooster dish.",
+      "needsPermissionReview": true
+    },
+    "vegetarian-black-beans": {
+      "url": "https://images.squarespace-cdn.com/content/v1/5dc0d87d4b9363400fbca6cf/02e87c41-a9e2-4e93-bdce-3103b32e0b1c/vegetarian%2Bblack%2Bbean%2Bburritos.JPG",
+      "alt": "Representative pan of vegetarian black beans with red and yellow bell peppers, onions, garlic and cilantro; home-cooked filling, not a Black Rooster side dish",
+      "credit": "Vegetarian black bean recipe photograph · Squarespace",
+      "sourceUrl": "https://storage.googleapis.com/dcbzqsxgzehare/skyline-vegetarian-black-bean-burrito-nutrition.html",
+      "kind": "representative-dish",
+      "reviewedAt": "2026-10-23",
+      "matchMethod": "Compared alternative visual results with the ingredient-level menu description; visibly disclosed differences",
+      "photoIdentityNote": "Illustrative real photo from another restaurant or recipe, not the official Black Rooster dish.",
+      "needsPermissionReview": true
+    },
+    "sweet-plantains": {
+      "url": "https://popmenucloud.com/cdn-cgi/image/width%3D1200%2Cheight%3D1200%2Cfit%3Dscale-down%2Cformat%3Dauto%2Cquality%3D60/kgruzapj/31da5142-f004-4e18-bcaa-092444bff878.jpg",
+      "alt": "Representative side plate of fried golden sweet plantains, full plate visible; photographed at a different restaurant",
+      "credit": "El Pollo Inka · fried plantains photo",
+      "sourceUrl": "https://www.elpolloinkarhe.com/items/platano-fried-plantains",
+      "kind": "representative-dish",
+      "reviewedAt": "2026-10-23",
+      "matchMethod": "Compared alternative visual results with the ingredient-level menu description; visibly disclosed differences",
+      "photoIdentityNote": "Illustrative real photo from another restaurant or recipe, not the official Black Rooster dish.",
+      "needsPermissionReview": true
+    },
+    "cilantro-poblano-rice": {
+      "url": "https://cookbylara.com/assets/images/1760720095476-vp01rvcc.jpg",
+      "alt": "Representative side of white rice with poblano-green chile and cilantro, matching the described cilantro poblano rice ingredient category but not the restaurant serving",
+      "credit": "Cook By Lara · Green Poblano Rice recipe photography",
+      "sourceUrl": "https://cookbylara.com/recipes/green-poblano-rice-dish",
+      "kind": "representative-dish",
+      "reviewedAt": "2026-10-23",
+      "matchMethod": "Compared alternative visual results with the ingredient-level menu description; visibly disclosed differences",
+      "photoIdentityNote": "Illustrative real photo from another restaurant or recipe, not the official Black Rooster dish.",
+      "needsPermissionReview": true
+    },
+    "tres-leches-cake": {
+      "url": "https://popmenucloud.com/cdn-cgi/image/width%3D1920%2Cheight%3D1920%2Cformat%3Dauto%2Cfit%3Dscale-down/anywfglv/78c7a650-9caf-4023-8e7e-d4c5a8f4a986.jpg",
+      "alt": "Representative three-milk soaked sponge cake with cream topping, different Mexican restaurant and not Black Rooster's own dessert photo",
+      "credit": "Flora Mexican Kitchen · Tres Leches cake photograph",
+      "sourceUrl": "https://www.florahouston.com/menus/dessert",
+      "kind": "representative-dish",
+      "reviewedAt": "2026-10-23",
+      "matchMethod": "Compared alternative visual results with the ingredient-level menu description; visibly disclosed differences",
+      "photoIdentityNote": "Illustrative real photo from another restaurant or recipe, not the official Black Rooster dish.",
       "needsPermissionReview": true
     }
   },
