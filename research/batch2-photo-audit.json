@@ -25,8 +25,8 @@
       "total": 70,
       "officialMenu": 42,
       "editorialNamed": 3,
-      "contextual": 0,
-      "missing": 25
+      "contextual": 3,
+      "missing": 22
     },
     {
       "restaurant": "The Stubborn Mule",
@@ -62,7 +62,8 @@
     "Do not reuse restaurant hero images as menu products.",
     "Generated imagery was not available and is not claimed.",
     "Third-party photo reuse rights must be confirmed before public release.",
-    "Current menu images use padded contain fit; actual image sharpness and framing still require on-device review."
+    "Current menu images use padded contain fit; actual image sharpness and framing still require on-device review.",
+    "2026-10-24 follow-up: three additional historical article-matched Mamak image references are contextual and require URL and visual inspection plus copyright permission; not approved as exact Colonial Drive servings."
   ],
   "entries": [
     {
@@ -2103,10 +2104,19 @@
       "restaurantSlug": "mamak-colonial",
       "itemName": "Ageta Shokushu(3)",
       "description": "lightly battered octopus skewers fried until golden brown, with signature spicy honey mustard sauce",
-      "photoStatus": "missing",
-      "photo": null,
+      "photoStatus": "editorial-context",
+      "photo": {
+        "url": "https://tastychomps.com/wp-content/uploads/2020/11/mamak-east-orlando-ucf-university-new-46.jpg",
+        "sourceUrl": "https://tastychomps.com/2020/11/first-look-mamak-asian-street-food-opens-new-2nd-location-in-ucf-east-orlando-area-for-take-out-delivery-dine-in-to-come-plus-7-must-try-dishes-at-mamak.html",
+        "credit": "Tasty Chomps · Mamak Orlando review (2020)",
+        "alt": "Historic Ageta Shokushu at Mamak UCF; not confirmed current Mills 50 preparation",
+        "photoKind": "editorial-context",
+        "identityMethod": "Dish name matches direct surrounding article heading, not yet visually inspected",
+        "rights": "permission-review-needed",
+        "fullFoodFit": "contain"
+      },
       "reviewStatus": "needs-manual-visual-approval",
-      "nextStep": "Find a photograph of Ageta Shokushu(3) matching the menu description; otherwise create and label an illustrative reconstruction",
+      "nextStep": "Validate image URL, visually inspect food and exact ingredients against current menu, obtain reuse rights or replace with permitted original/AI illustration",
       "imageCandidateQueries": [
         "Mamak Asian Street Food Ageta Shokushu(3) photo",
         "Mamak Asian Street Food Ageta Shokushu(3) menu order",
@@ -2283,10 +2293,19 @@
       "restaurantSlug": "mamak-colonial",
       "itemName": "Ginger & Scallion Fish",
       "description": "seasoned fillet, lightly battered, with onions, carrots, scallions, stir-fried in a ginger and scallion sauce",
-      "photoStatus": "missing",
-      "photo": null,
+      "photoStatus": "editorial-context",
+      "photo": {
+        "url": "https://tastychomps.com/wp-content/uploads/2020/11/mamak-east-orlando-ucf-university-new-49.jpg",
+        "sourceUrl": "https://tastychomps.com/2020/11/first-look-mamak-asian-street-food-opens-new-2nd-location-in-ucf-east-orlando-area-for-take-out-delivery-dine-in-to-come-plus-7-must-try-dishes-at-mamak.html",
+        "credit": "Tasty Chomps · Mamak Orlando review (2020)",
+        "alt": "Historic Ginger and Scallion Fish at Mamak UCF; not confirmed current Mills 50 preparation",
+        "photoKind": "editorial-context",
+        "identityMethod": "Dish name matches direct surrounding article heading, not yet visually inspected",
+        "rights": "permission-review-needed",
+        "fullFoodFit": "contain"
+      },
       "reviewStatus": "needs-manual-visual-approval",
-      "nextStep": "Find a photograph of Ginger & Scallion Fish matching the menu description; otherwise create and label an illustrative reconstruction",
+      "nextStep": "Validate image URL, visually inspect food and exact ingredients against current menu, obtain reuse rights or replace with permitted original/AI illustration",
       "imageCandidateQueries": [
         "Mamak Asian Street Food Ginger & Scallion Fish photo",
         "Mamak Asian Street Food Ginger & Scallion Fish menu order",
@@ -2497,10 +2516,19 @@
       "restaurantSlug": "mamak-colonial",
       "itemName": "Pot Stickers(5)",
       "description": "chicken pot stickers served with a side of spicy brown sauce: steamed or pan-fried",
-      "photoStatus": "missing",
-      "photo": null,
+      "photoStatus": "editorial-context",
+      "photo": {
+        "url": "https://tastychomps.com/wp-content/uploads/2020/11/PB202008-800x533.jpg",
+        "sourceUrl": "https://tastychomps.com/2020/11/first-look-mamak-asian-street-food-opens-new-2nd-location-in-ucf-east-orlando-area-for-take-out-delivery-dine-in-to-come-plus-7-must-try-dishes-at-mamak.html",
+        "credit": "Tasty Chomps · Mamak Orlando review (2020)",
+        "alt": "Historic House-Made Potstickers at Mamak UCF; not confirmed current Mills 50 preparation",
+        "photoKind": "editorial-context",
+        "identityMethod": "Dish name matches direct surrounding article heading, not yet visually inspected",
+        "rights": "permission-review-needed",
+        "fullFoodFit": "contain"
+      },
       "reviewStatus": "needs-manual-visual-approval",
-      "nextStep": "Find a photograph of Pot Stickers(5) matching the menu description; otherwise create and label an illustrative reconstruction",
+      "nextStep": "Validate image URL, visually inspect food and exact ingredients against current menu, obtain reuse rights or replace with permitted original/AI illustration",
       "imageCandidateQueries": [
         "Mamak Asian Street Food Pot Stickers(5) photo",
         "Mamak Asian Street Food Pot Stickers(5) menu order",
