@@ -33,3 +33,11 @@ for (const q of queries){
  }catch(e){console.log("ERR_EXTERNAL",idx,q,String(e))}
  }
 }
+
+for(const q of ['"Yellow Dog Eats" "The Rufus" sandwich','"Bombay Street Kitchen" "Kale Chaat" Orlando','"Seito Sushi Baldwin Park" "tuna crispy rice"']){
+ let r=await fetch("https://www.bing.com/images/search?q="+encodeURIComponent(q)+"&first=1",{headers:{"User-Agent":"Mozilla/5.0 Chrome/131.0.0.0"},signal:AbortSignal.timeout(18000)});
+ let t=await r.text();
+ console.log("BINGQUERY",q,r.status,t.length,JSON.stringify([...t.matchAll(/murl&quot;:&quot;(.*?)&quot;/g)].map(m=>m[1]).slice(0,10)));
+ console.log("BINGALT",q,JSON.stringify([...t.matchAll(/class="iusc"[^>]*m="([^"]{0,4000})"/g)].slice(0,3).map(m=>m[1].slice(0,600))));
+ console.log("BINGMURL",q,t.indexOf("murl"),JSON.stringify(t.slice(t.indexOf("murl")-300,t.indexOf("murl")+1000)));
+}
