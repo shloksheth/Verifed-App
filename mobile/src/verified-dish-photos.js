@@ -1,5 +1,5 @@
-// Sourced exact or representative dish photos. Not evidence of allergy safety or restaurant ownership.
-// Source attribution is not commercial reproduction permission.
+// Photos keyed individually, source details and labels distinguish real restaurant products from representative food illustrations.
+// Images do not establish allergen safety or commercial photo usage rights.
 export const verifiedDishPhotos = {
   "loving-hut-orlando": {
     "spring-rolls-4-rolls-cha-gio": {
@@ -1033,6 +1033,50 @@ export const verifiedDishPhotos = {
       "matchMethod": "Compared alternative visual results with the ingredient-level menu description; visibly disclosed differences",
       "photoIdentityNote": "Illustrative real photo from another restaurant or recipe, not the official Black Rooster dish.",
       "needsPermissionReview": true
+    },
+    "black-rooster-asada": {
+      "url": "https://axwwgrkdco.cloudimg.io/v7/__gmpics__/a630a823cb544b288f841a8ec2d94532",
+      "alt": "Black Rooster restaurant taco with charred meat and melted white cheese on corn tortilla and cilantro. Photograph is from the restaurant but the dish name was not independently confirmed as Black Rooster Asada.",
+      "credit": "MICHELIN Guide · Black Rooster Taqueria taco",
+      "sourceUrl": "https://guide.michelin.com/us/en/florida/orlando/restaurant/black-rooster-taqueria",
+      "kind": "editorial-context",
+      "matchMethod": "Menu description compared with multiple candidate photos; differing ingredients noted explicitly",
+      "reviewedAt": "2026-10-23",
+      "needsPermissionReview": true,
+      "photoIdentityNote": "Representative or contextual dish. Not an authenticated exact restaurant item."
+    },
+    "pork-belly": {
+      "url": "https://d1w7312wesee68.cloudfront.net/Y3tvJduTOonhG0LNsjETicAVye-Pg2NUxMqTV7iNc9w/resize%3Afit%3A720%3A720/plain/s3%3A/toasttab/menu_service/restaurants/0678c592-39c7-4805-9060-d927c7f52e99/MenuItem/d24f8e29-67f5-496f-8414-b93a47d034c4.jpg",
+      "alt": "Representative pork belly taco with crispy pork chunks, green salsa verde, onion, cilantro and radish-colored pickled onion, fully visible; dish from another restaurant.",
+      "credit": "Copita Willow Glen · Pork Belly tacos ordering photo",
+      "sourceUrl": "https://order.toasttab.com/online/copita-willow-glen/item-pork-belly-tacos_8df16483-f0c3-4325-85fb-5668737d2d15",
+      "kind": "representative-dish",
+      "matchMethod": "Menu description compared with multiple candidate photos; differing ingredients noted explicitly",
+      "reviewedAt": "2026-10-23",
+      "needsPermissionReview": true,
+      "photoIdentityNote": "Representative or contextual dish. Not an authenticated exact restaurant item."
+    },
+    "smoked-greens": {
+      "url": "https://s3.us-east-2.amazonaws.com/pfimg1/013/bd/ef/bdef832da8276458c5663dc8738c4b63_1280m.jpg",
+      "alt": "Representative vegetarian corn tacos with sautéed mushrooms and kale, fresh herbs and white cheese; does not show Black Rooster's plantain and ricotta recipe.",
+      "credit": "Punchfork · Half Baked Harvest Poblano Mushroom and Kale tacos",
+      "sourceUrl": "https://www.punchfork.com/recipe/Poblano-Mushroom-Tacos-with-Cilantro-Yogurt-Sauce-Half-Baked-Harvest",
+      "kind": "representative-dish",
+      "matchMethod": "Menu description compared with multiple candidate photos; differing ingredients noted explicitly",
+      "reviewedAt": "2026-10-23",
+      "needsPermissionReview": true,
+      "photoIdentityNote": "Representative or contextual dish. Not an authenticated exact restaurant item."
+    },
+    "smoked-beef-brisket": {
+      "url": "https://static.spotapps.co/spots/88/bb2a7e732148ba9096eef8d2a6051b/full",
+      "alt": "Representative smoked beef brisket tacos with shredded lettuce, diced pico de gallo, white crema and chips; restaurant recipe's chimichurri and cotija aren't visible.",
+      "credit": "Conroe Lake House · brisket taco photograph",
+      "sourceUrl": "https://conroelakehouse.com/montgomery-lake-conroe-conroe-lake-house-food-menu",
+      "kind": "representative-dish",
+      "matchMethod": "Menu description compared with multiple candidate photos; differing ingredients noted explicitly",
+      "reviewedAt": "2026-10-23",
+      "needsPermissionReview": true,
+      "photoIdentityNote": "Representative or contextual dish. Not an authenticated exact restaurant item."
     }
   },
   "mamak-colonial": {
