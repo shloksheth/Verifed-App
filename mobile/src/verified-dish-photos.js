@@ -1330,6 +1330,426 @@ export const verifiedDishPhotos = {
       "alt": "Mamak Pad Thai with shrimp, rice noodles, bean sprouts, crushed peanuts and lime, from its official restaurant photograph",
       "credit": "Mamak Asian Street Food · official website",
       "sourceUrl": "https://mamakeats.com/"
+    },
+    "wonton-with-hot-sauce": {
+      "url": "https://image-cdn.chowlyinc.com/650%2Cfit/https%3A%2F%2Fs3.amazonaws.com%2Ftoasttab%2Fmenu_service%2Frestaurants%2Fed8b95f2-d641-4127-a0c9-772fbe849c54%2FMenuItem%2Fa929ce88-ef8d-434b-a26f-0773bf9b729c.jpg",
+      "alt": "Wonton with Hot Sauce photographed for Mamak Asian Street Food's named menu listing",
+      "credit": "Mamak Asian Street Food · official ordering-menu photograph",
+      "sourceUrl": "https://www.mamakeats.com/menu/asian-street-food",
+      "kind": "official-product",
+      "matchMethod": "Direct image-title correspondence on restaurant's first-party menu; visual/plating QA pending",
+      "needsPermissionReview": true,
+      "reviewedAt": "2026-10-24"
+    },
+    "tofu-bites": {
+      "url": "https://image-cdn.chowlyinc.com/650%2Cfit/https%3A%2F%2Fs3.amazonaws.com%2Ftoasttab%2Fmenu_service%2Frestaurants%2Fed8b95f2-d641-4127-a0c9-772fbe849c54%2FMenuItem%2F3465c6f4-2d8a-4a7f-9ac8-26af2fbb3ad0.jpg",
+      "alt": "Tofu Bites photographed for Mamak Asian Street Food's named menu listing",
+      "credit": "Mamak Asian Street Food · official ordering-menu photograph",
+      "sourceUrl": "https://www.mamakeats.com/menu/asian-street-food",
+      "kind": "official-product",
+      "matchMethod": "Direct image-title correspondence on restaurant's first-party menu; visual/plating QA pending",
+      "needsPermissionReview": true,
+      "reviewedAt": "2026-10-24"
+    },
+    "lettuce-wrap-w-tofu": {
+      "url": "https://image-cdn.chowlyinc.com/650%2Cfit/https%3A%2F%2Fs3.amazonaws.com%2Ftoasttab%2Fmenu_service%2Frestaurants%2Fed8b95f2-d641-4127-a0c9-772fbe849c54%2FMenuItem%2F76584375-b0ee-4aa7-bef8-aa269d8d377d.jpg",
+      "alt": "Lettuce Wrap w/ Tofu photographed for Mamak Asian Street Food's named menu listing",
+      "credit": "Mamak Asian Street Food · official ordering-menu photograph",
+      "sourceUrl": "https://www.mamakeats.com/menu/asian-street-food",
+      "kind": "official-product",
+      "matchMethod": "Direct image-title correspondence on restaurant's first-party menu; visual/plating QA pending",
+      "needsPermissionReview": true,
+      "reviewedAt": "2026-10-24"
+    },
+    "summer-rolls-2": {
+      "url": "https://image-cdn.chowlyinc.com/650%2Cfit/https%3A%2F%2Fs3.amazonaws.com%2Ftoasttab%2Fmenu_service%2Frestaurants%2Fed8b95f2-d641-4127-a0c9-772fbe849c54%2FMenuItem%2Fe948f67c-ed3b-493c-b1de-ad4761f14293.jpg",
+      "alt": "Summer Rolls photographed for Mamak Asian Street Food's named menu listing",
+      "credit": "Mamak Asian Street Food · official ordering-menu photograph",
+      "sourceUrl": "https://www.mamakeats.com/menu/asian-street-food",
+      "kind": "official-product",
+      "matchMethod": "Direct image-title correspondence on restaurant's first-party menu; visual/plating QA pending",
+      "needsPermissionReview": true,
+      "reviewedAt": "2026-10-24"
+    },
+    "veggie-spring-rolls-2": {
+      "url": "https://image-cdn.chowlyinc.com/650%2Cfit/https%3A%2F%2Fs3.amazonaws.com%2Ftoasttab%2Fmenu_service%2Frestaurants%2Fed8b95f2-d641-4127-a0c9-772fbe849c54%2FMenuItem%2F331696ae-2951-410d-b267-99707ffb0c0b.jpg",
+      "alt": "Veggie Spring Rolls photographed for Mamak Asian Street Food's named menu listing",
+      "credit": "Mamak Asian Street Food · official ordering-menu photograph",
+      "sourceUrl": "https://www.mamakeats.com/menu/asian-street-food",
+      "kind": "official-product",
+      "matchMethod": "Direct image-title correspondence on restaurant's first-party menu; visual/plating QA pending",
+      "needsPermissionReview": true,
+      "reviewedAt": "2026-10-24"
+    },
+    "veggie-egg-rolls-2": {
+      "url": "https://image-cdn.chowlyinc.com/650%2Cfit/https%3A%2F%2Fs3.amazonaws.com%2Ftoasttab%2Fmenu_service%2Frestaurants%2Fed8b95f2-d641-4127-a0c9-772fbe849c54%2FMenuItem%2Fb3b37850-4842-4343-ada8-bae7d1b667fd.jpg",
+      "alt": "Veggie Egg Rolls photographed for Mamak Asian Street Food's named menu listing",
+      "credit": "Mamak Asian Street Food · official ordering-menu photograph",
+      "sourceUrl": "https://www.mamakeats.com/menu/asian-street-food",
+      "kind": "official-product",
+      "matchMethod": "Direct image-title correspondence on restaurant's first-party menu; visual/plating QA pending",
+      "needsPermissionReview": true,
+      "reviewedAt": "2026-10-24"
+    },
+    "chinese-vegetable-yow-choy": {
+      "url": "https://image-cdn.chowlyinc.com/650%2Cfit/https%3A%2F%2Fs3.amazonaws.com%2Ftoasttab%2Fmenu_service%2Frestaurants%2Fed8b95f2-d641-4127-a0c9-772fbe849c54%2FMenuItem%2Ff3538594-efdd-49e2-95bd-891d29e00c30.jpg",
+      "alt": "Chinese Vegetable: Yow Choy photographed for Mamak Asian Street Food's named menu listing",
+      "credit": "Mamak Asian Street Food · official ordering-menu photograph",
+      "sourceUrl": "https://www.mamakeats.com/menu/asian-street-food",
+      "kind": "official-product",
+      "matchMethod": "Direct image-title correspondence on restaurant's first-party menu; visual/plating QA pending",
+      "needsPermissionReview": true,
+      "reviewedAt": "2026-10-24"
+    },
+    "lettuce-wrap-w-bulgogi-beef": {
+      "url": "https://image-cdn.chowlyinc.com/650%2Cfit/https%3A%2F%2Fs3.amazonaws.com%2Ftoasttab%2Fmenu_service%2Frestaurants%2Fed8b95f2-d641-4127-a0c9-772fbe849c54%2FMenuItem%2F432572b4-48ec-489e-8382-8d0a17e2a368.jpg",
+      "alt": "Lettuce Wrap w/ Bulgogi Beef photographed for Mamak Asian Street Food's named menu listing",
+      "credit": "Mamak Asian Street Food · official ordering-menu photograph",
+      "sourceUrl": "https://www.mamakeats.com/menu/asian-street-food",
+      "kind": "official-product",
+      "matchMethod": "Direct image-title correspondence on restaurant's first-party menu; visual/plating QA pending",
+      "needsPermissionReview": true,
+      "reviewedAt": "2026-10-24"
+    },
+    "edamame": {
+      "url": "https://image-cdn.chowlyinc.com/650%2Cfit/https%3A%2F%2Fs3.amazonaws.com%2Ftoasttab%2Fmenu_service%2Frestaurants%2Fed8b95f2-d641-4127-a0c9-772fbe849c54%2FMenuItem%2Fdbe89ce7-c3b5-4b45-b5db-931429224618.jpg",
+      "alt": "Edamame photographed for Mamak Asian Street Food's named menu listing",
+      "credit": "Mamak Asian Street Food · official ordering-menu photograph",
+      "sourceUrl": "https://www.mamakeats.com/menu/asian-street-food",
+      "kind": "official-product",
+      "matchMethod": "Direct image-title correspondence on restaurant's first-party menu; visual/plating QA pending",
+      "needsPermissionReview": true,
+      "reviewedAt": "2026-10-24"
+    },
+    "indian-mee-goreng": {
+      "url": "https://image-cdn.chowlyinc.com/650%2Cfit/https%3A%2F%2Fs3.amazonaws.com%2Ftoasttab%2Fmenu_service%2Frestaurants%2Fed8b95f2-d641-4127-a0c9-772fbe849c54%2FMenuItem%2F5863c589-1c56-4eac-97b5-608c4ad597e8.jpg",
+      "alt": "Indian Mee Goreng photographed for Mamak Asian Street Food's named menu listing",
+      "credit": "Mamak Asian Street Food · official ordering-menu photograph",
+      "sourceUrl": "https://www.mamakeats.com/menu/curry",
+      "kind": "official-product",
+      "matchMethod": "Direct image-title correspondence on restaurant's first-party menu; visual/plating QA pending",
+      "needsPermissionReview": true,
+      "reviewedAt": "2026-10-24"
+    },
+    "maggi-goreng": {
+      "url": "https://image-cdn.chowlyinc.com/650%2Cfit/https%3A%2F%2Fs3.amazonaws.com%2Ftoasttab%2Fmenu_service%2Frestaurants%2Fed8b95f2-d641-4127-a0c9-772fbe849c54%2FMenuItem%2F38bbf2ec-3f07-49d2-a839-985a38d2baf7.jpg",
+      "alt": "Maggi Goreng photographed for Mamak Asian Street Food's named menu listing",
+      "credit": "Mamak Asian Street Food · official ordering-menu photograph",
+      "sourceUrl": "https://www.mamakeats.com/menu/lunch",
+      "kind": "official-product",
+      "matchMethod": "Direct image-title correspondence on restaurant's first-party menu; visual/plating QA pending",
+      "needsPermissionReview": true,
+      "reviewedAt": "2026-10-24"
+    },
+    "shrimp-lo-mein": {
+      "url": "https://image-cdn.chowlyinc.com/650%2Cfit/https%3A%2F%2Fs3.amazonaws.com%2Ftoasttab%2Fmenu_service%2Frestaurants%2Fed8b95f2-d641-4127-a0c9-772fbe849c54%2FMenuItem%2F74a96d0d-8140-4c62-ae24-26eea47b307a.jpg",
+      "alt": "Shrimp Lo Mein photographed for Mamak Asian Street Food's named menu listing",
+      "credit": "Mamak Asian Street Food · official ordering-menu photograph",
+      "sourceUrl": "https://www.mamakeats.com/menu/curry",
+      "kind": "official-product",
+      "matchMethod": "Direct image-title correspondence on restaurant's first-party menu; visual/plating QA pending",
+      "needsPermissionReview": true,
+      "reviewedAt": "2026-10-24"
+    },
+    "pan-fried-noodles": {
+      "url": "https://image-cdn.chowlyinc.com/650%2Cfit/https%3A%2F%2Fs3.amazonaws.com%2Ftoasttab%2Fmenu_service%2Frestaurants%2Fed8b95f2-d641-4127-a0c9-772fbe849c54%2FMenuItem%2F67f984e7-dccb-4323-8efc-21b3a60e1755.jpg",
+      "alt": "Pan Fried Noodles photographed for Mamak Asian Street Food's named menu listing",
+      "credit": "Mamak Asian Street Food · official ordering-menu photograph",
+      "sourceUrl": "https://www.mamakeats.com/menu/curry",
+      "kind": "official-product",
+      "matchMethod": "Direct image-title correspondence on restaurant's first-party menu; visual/plating QA pending",
+      "needsPermissionReview": true,
+      "reviewedAt": "2026-10-24"
+    },
+    "beef-lo-mein": {
+      "url": "https://image-cdn.chowlyinc.com/650%2Cfit/https%3A%2F%2Fs3.amazonaws.com%2Ftoasttab%2Fmenu_service%2Frestaurants%2Fed8b95f2-d641-4127-a0c9-772fbe849c54%2FMenuItem%2F0998b4aa-d9a2-400e-a2ca-7e1ba46810f6.jpg",
+      "alt": "Beef Lo Mein photographed for Mamak Asian Street Food's named menu listing",
+      "credit": "Mamak Asian Street Food · official ordering-menu photograph",
+      "sourceUrl": "https://www.mamakeats.com/menu/curry",
+      "kind": "official-product",
+      "matchMethod": "Direct image-title correspondence on restaurant's first-party menu; visual/plating QA pending",
+      "needsPermissionReview": true,
+      "reviewedAt": "2026-10-24"
+    },
+    "tofu-lo-mein": {
+      "url": "https://image-cdn.chowlyinc.com/650%2Cfit/https%3A%2F%2Fs3.amazonaws.com%2Ftoasttab%2Fmenu_service%2Frestaurants%2Fed8b95f2-d641-4127-a0c9-772fbe849c54%2FMenuItem%2Fe7421656-e9ac-44ad-9c50-042c5a8c6145.jpg",
+      "alt": "Tofu Lo Mein photographed for Mamak Asian Street Food's named menu listing",
+      "credit": "Mamak Asian Street Food · official ordering-menu photograph",
+      "sourceUrl": "https://www.mamakeats.com/menu/curry",
+      "kind": "official-product",
+      "matchMethod": "Direct image-title correspondence on restaurant's first-party menu; visual/plating QA pending",
+      "needsPermissionReview": true,
+      "reviewedAt": "2026-10-24"
+    },
+    "bbq-pork-lo-mein": {
+      "url": "https://image-cdn.chowlyinc.com/650%2Cfit/https%3A%2F%2Fs3.amazonaws.com%2Ftoasttab%2Fmenu_service%2Frestaurants%2Fed8b95f2-d641-4127-a0c9-772fbe849c54%2FMenuItem%2Fbb411f21-1b6e-4dd7-897e-51bd939d4412.jpg",
+      "alt": "BBQ Pork Lo Mein photographed for Mamak Asian Street Food's named menu listing",
+      "credit": "Mamak Asian Street Food · official ordering-menu photograph",
+      "sourceUrl": "https://www.mamakeats.com/menu/curry",
+      "kind": "official-product",
+      "matchMethod": "Direct image-title correspondence on restaurant's first-party menu; visual/plating QA pending",
+      "needsPermissionReview": true,
+      "reviewedAt": "2026-10-24"
+    },
+    "chicken-lo-mein": {
+      "url": "https://image-cdn.chowlyinc.com/650%2Cfit/https%3A%2F%2Fs3.amazonaws.com%2Ftoasttab%2Fmenu_service%2Frestaurants%2Fed8b95f2-d641-4127-a0c9-772fbe849c54%2FMenuItem%2F6bb075d0-85da-4ca1-ab21-e0786baacd8c.jpg",
+      "alt": "Chicken Lo Mein photographed for Mamak Asian Street Food's named menu listing",
+      "credit": "Mamak Asian Street Food · official ordering-menu photograph",
+      "sourceUrl": "https://www.mamakeats.com/menu/lunch",
+      "kind": "official-product",
+      "matchMethod": "Direct image-title correspondence on restaurant's first-party menu; visual/plating QA pending",
+      "needsPermissionReview": true,
+      "reviewedAt": "2026-10-24"
+    },
+    "beef-haw-fun": {
+      "url": "https://image-cdn.chowlyinc.com/650%2Cfit/https%3A%2F%2Fs3.amazonaws.com%2Ftoasttab%2Fmenu_service%2Frestaurants%2Fed8b95f2-d641-4127-a0c9-772fbe849c54%2FMenuItem%2F1b48d2ea-71f3-4491-b37f-1aa92e8d1e8d.jpg",
+      "alt": "Beef Haw Fun photographed for Mamak Asian Street Food's named menu listing",
+      "credit": "Mamak Asian Street Food · official ordering-menu photograph",
+      "sourceUrl": "https://www.mamakeats.com/menu/lunch",
+      "kind": "official-product",
+      "matchMethod": "Direct image-title correspondence on restaurant's first-party menu; visual/plating QA pending",
+      "needsPermissionReview": true,
+      "reviewedAt": "2026-10-24"
+    },
+    "hokkien-char-mee": {
+      "url": "https://image-cdn.chowlyinc.com/650%2Cfit/https%3A%2F%2Fs3.amazonaws.com%2Ftoasttab%2Fmenu_service%2Frestaurants%2Fed8b95f2-d641-4127-a0c9-772fbe849c54%2FMenuItem%2Fbbb441cf-0237-49be-8121-a231481d1839.jpg",
+      "alt": "Hokkien Char Mee photographed for Mamak Asian Street Food's named menu listing",
+      "credit": "Mamak Asian Street Food · official ordering-menu photograph",
+      "sourceUrl": "https://www.mamakeats.com/menu/lunch",
+      "kind": "official-product",
+      "matchMethod": "Direct image-title correspondence on restaurant's first-party menu; visual/plating QA pending",
+      "needsPermissionReview": true,
+      "reviewedAt": "2026-10-24"
+    },
+    "veggie-lo-mein": {
+      "url": "https://image-cdn.chowlyinc.com/650%2Cfit/https%3A%2F%2Fs3.amazonaws.com%2Ftoasttab%2Fmenu_service%2Frestaurants%2Fed8b95f2-d641-4127-a0c9-772fbe849c54%2FMenuItem%2Fa0d90592-4ade-4221-a946-11c74b9a289a.jpg",
+      "alt": "Veggie Lo Mein photographed for Mamak Asian Street Food's named menu listing",
+      "credit": "Mamak Asian Street Food · official ordering-menu photograph",
+      "sourceUrl": "https://www.mamakeats.com/menu/curry",
+      "kind": "official-product",
+      "matchMethod": "Direct image-title correspondence on restaurant's first-party menu; visual/plating QA pending",
+      "needsPermissionReview": true,
+      "reviewedAt": "2026-10-24"
+    },
+    "singapore-mei-fun": {
+      "url": "https://image-cdn.chowlyinc.com/650%2Cfit/https%3A%2F%2Fs3.amazonaws.com%2Ftoasttab%2Fmenu_service%2Frestaurants%2Fed8b95f2-d641-4127-a0c9-772fbe849c54%2FMenuItem%2F0ddca707-8a3b-4b57-ae82-84d18b52cd27.jpg",
+      "alt": "Singapore Mei Fun photographed for Mamak Asian Street Food's named menu listing",
+      "credit": "Mamak Asian Street Food · official ordering-menu photograph",
+      "sourceUrl": "https://www.mamakeats.com/menu/curry",
+      "kind": "official-product",
+      "matchMethod": "Direct image-title correspondence on restaurant's first-party menu; visual/plating QA pending",
+      "needsPermissionReview": true,
+      "reviewedAt": "2026-10-24"
+    },
+    "satay-skewers-6": {
+      "url": "https://static.spotapps.co/spots/a3/c23611539b4872a94695bac4eb597b/full",
+      "alt": "Six Mamak grilled satay skewers on a dark blue oval plate, cilantro and shredded vegetables underneath; sauce not visible on the plate.",
+      "credit": "Mamak Asian Street Food · official restaurant photography",
+      "sourceUrl": "https://www.mamakeats.com/",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Visually compared the named dish and ingredient description with the retrieved source image and credited publication",
+      "needsPermissionReview": true
+    },
+    "malaysian-coconut-kari-w-chicken-potatoes": {
+      "url": "https://image-cdn.chowlyinc.com/650%2Cfit/https%3A%2F%2Fs3.amazonaws.com%2Ftoasttab%2Fmenu_service%2Frestaurants%2Fed8b95f2-d641-4127-a0c9-772fbe849c54%2FMenuItem%2Fff6c072c-e9c8-4ede-aaa6-35627f6dc2a0.jpg",
+      "alt": "Malaysian Coconut Kari w/ chicken + potatoes as pictured on the Mamak Asian Street Food official menu",
+      "credit": "Mamak Asian Street Food · official ordering menu photograph",
+      "sourceUrl": "https://www.mamakeats.com/menu/malaysian",
+      "kind": "official-product",
+      "matchMethod": "Explicit matching menu title and corresponding image alt on the first-party Mamak ordering page; visual verification and permission review outstanding",
+      "reviewedAt": "2026-10-24",
+      "needsPermissionReview": true
+    },
+    "yangzhou-fried-rice": {
+      "url": "https://image-cdn.chowlyinc.com/650%2Cfit/https%3A%2F%2Fs3.amazonaws.com%2Ftoasttab%2Fmenu_service%2Frestaurants%2Fed8b95f2-d641-4127-a0c9-772fbe849c54%2FMenuItem%2Fccf48e05-f4b6-4398-9d6b-f11064d2b495.jpg",
+      "alt": "Yangzhou Fried Rice as pictured on the Mamak Asian Street Food official menu",
+      "credit": "Mamak Asian Street Food · official ordering menu photograph",
+      "sourceUrl": "https://www.mamakeats.com/menu/malaysian",
+      "kind": "official-product",
+      "matchMethod": "Explicit matching menu title and corresponding image alt on the first-party Mamak ordering page; visual verification and permission review outstanding",
+      "reviewedAt": "2026-10-24",
+      "needsPermissionReview": true
+    },
+    "mamak-nasi-goreng": {
+      "url": "https://image-cdn.chowlyinc.com/650%2Cfit/https%3A%2F%2Fs3.amazonaws.com%2Ftoasttab%2Fmenu_service%2Frestaurants%2Fed8b95f2-d641-4127-a0c9-772fbe849c54%2FMenuItem%2F9d1c2647-436a-4191-a1e5-5662acc4d8d8.jpg",
+      "alt": "Mamak Nasi Goreng as pictured on the Mamak Asian Street Food official menu",
+      "credit": "Mamak Asian Street Food · official ordering menu photograph",
+      "sourceUrl": "https://www.mamakeats.com/menu/malaysian",
+      "kind": "official-product",
+      "matchMethod": "Explicit matching menu title and corresponding image alt on the first-party Mamak ordering page; visual verification and permission review outstanding",
+      "reviewedAt": "2026-10-24",
+      "needsPermissionReview": true
+    },
+    "basil-fried-rice": {
+      "url": "https://image-cdn.chowlyinc.com/650%2Cfit/https%3A%2F%2Fs3.amazonaws.com%2Ftoasttab%2Fmenu_service%2Frestaurants%2Fed8b95f2-d641-4127-a0c9-772fbe849c54%2FMenuItem%2Ffb865728-8f12-40bd-bb01-6cbd4d5785bd.jpg",
+      "alt": "Basil Fried Rice as pictured on the Mamak Asian Street Food official menu",
+      "credit": "Mamak Asian Street Food · official ordering menu photograph",
+      "sourceUrl": "https://www.mamakeats.com/menu/malaysian",
+      "kind": "official-product",
+      "matchMethod": "Explicit matching menu title and corresponding image alt on the first-party Mamak ordering page; visual verification and permission review outstanding",
+      "reviewedAt": "2026-10-24",
+      "needsPermissionReview": true
+    },
+    "malaysian-coconut-kari-w-tofu-veggies": {
+      "url": "https://image-cdn.chowlyinc.com/650%2Cfit/https%3A%2F%2Fs3.amazonaws.com%2Ftoasttab%2Fmenu_service%2Frestaurants%2Fed8b95f2-d641-4127-a0c9-772fbe849c54%2FMenuItem%2F211ebb99-5464-40dc-88eb-f4fc66d1810a.jpg",
+      "alt": "Malaysian Coconut Kari w/ tofu + veggies as pictured on the Mamak Asian Street Food official menu",
+      "credit": "Mamak Asian Street Food · official ordering menu photograph",
+      "sourceUrl": "https://www.mamakeats.com/menu/malaysian",
+      "kind": "official-product",
+      "matchMethod": "Explicit matching menu title and corresponding image alt on the first-party Mamak ordering page; visual verification and permission review outstanding",
+      "reviewedAt": "2026-10-24",
+      "needsPermissionReview": true
+    },
+    "roast-duck-fried-rice": {
+      "url": "https://image-cdn.chowlyinc.com/650%2Cfit/https%3A%2F%2Fs3.amazonaws.com%2Ftoasttab%2Fmenu_service%2Frestaurants%2Fed8b95f2-d641-4127-a0c9-772fbe849c54%2FMenuItem%2Ff6815dd8-dbe2-4734-93b2-64987d696088.jpg",
+      "alt": "Roast Duck Fried Rice as pictured on the Mamak Asian Street Food official menu",
+      "credit": "Mamak Asian Street Food · official ordering menu photograph",
+      "sourceUrl": "https://www.mamakeats.com/menu/malaysian",
+      "kind": "official-product",
+      "matchMethod": "Explicit matching menu title and corresponding image alt on the first-party Mamak ordering page; visual verification and permission review outstanding",
+      "reviewedAt": "2026-10-24",
+      "needsPermissionReview": true
+    },
+    "mamak-wings-5": {
+      "url": "https://image-cdn.chowlyinc.com/650%2Cfit/https%3A%2F%2Fs3.amazonaws.com%2Ftoasttab%2Fmenu_service%2Frestaurants%2Fed8b95f2-d641-4127-a0c9-772fbe849c54%2FMenuItem%2F97de2100-e38b-4506-b579-244254304e26.jpg",
+      "alt": "Mamak Wings (5) as pictured on the Mamak Asian Street Food official menu",
+      "credit": "Mamak Asian Street Food · official ordering menu photograph",
+      "sourceUrl": "https://www.mamakeats.com/menu/dinner",
+      "kind": "official-product",
+      "matchMethod": "Explicit matching menu title and corresponding image alt on the first-party Mamak ordering page; visual verification and permission review outstanding",
+      "reviewedAt": "2026-10-24",
+      "needsPermissionReview": true
+    },
+    "satay-skewers-3": {
+      "url": "https://image-cdn.chowlyinc.com/650%2Cfit/https%3A%2F%2Fs3.amazonaws.com%2Ftoasttab%2Fmenu_service%2Frestaurants%2Fed8b95f2-d641-4127-a0c9-772fbe849c54%2FMenuItem%2F5ca751d6-80fa-43f5-9fdd-e2e46ed5cf49.jpg",
+      "alt": "Satay Skewers (3) as pictured on the Mamak Asian Street Food official menu",
+      "credit": "Mamak Asian Street Food · official ordering menu photograph",
+      "sourceUrl": "https://www.mamakeats.com/menu/dinner",
+      "kind": "official-product",
+      "matchMethod": "Explicit matching menu title and corresponding image alt on the first-party Mamak ordering page; visual verification and permission review outstanding",
+      "reviewedAt": "2026-10-24",
+      "needsPermissionReview": true
+    },
+    "mamak-wings-10": {
+      "url": "https://image-cdn.chowlyinc.com/650%2Cfit/https%3A%2F%2Fs3.amazonaws.com%2Ftoasttab%2Fmenu_service%2Frestaurants%2Fed8b95f2-d641-4127-a0c9-772fbe849c54%2FMenuItem%2Fb0a992a8-872b-4dc4-ac60-ab6f5228324e.jpg",
+      "alt": "Mamak Wings (10) as pictured on the Mamak Asian Street Food official menu",
+      "credit": "Mamak Asian Street Food · official ordering menu photograph",
+      "sourceUrl": "https://www.mamakeats.com/menu/dinner",
+      "kind": "official-product",
+      "matchMethod": "Explicit matching menu title and corresponding image alt on the first-party Mamak ordering page; visual verification and permission review outstanding",
+      "reviewedAt": "2026-10-24",
+      "needsPermissionReview": true
+    },
+    "bulgogi-skewers-3": {
+      "url": "https://image-cdn.chowlyinc.com/650%2Cfit/https%3A%2F%2Fs3.amazonaws.com%2Ftoasttab%2Fmenu_service%2Frestaurants%2Fed8b95f2-d641-4127-a0c9-772fbe849c54%2FMenuItem%2Fdb9903b4-2bc1-46de-8bd9-bd817ee37dcb.jpg",
+      "alt": "Bulgogi Skewers (3) as pictured on the Mamak Asian Street Food official menu",
+      "credit": "Mamak Asian Street Food · official ordering menu photograph",
+      "sourceUrl": "https://www.mamakeats.com/menu/dinner",
+      "kind": "official-product",
+      "matchMethod": "Explicit matching menu title and corresponding image alt on the first-party Mamak ordering page; visual verification and permission review outstanding",
+      "reviewedAt": "2026-10-24",
+      "needsPermissionReview": true
+    },
+    "bulgogi-skewers-6": {
+      "url": "https://image-cdn.chowlyinc.com/650%2Cfit/https%3A%2F%2Fs3.amazonaws.com%2Ftoasttab%2Fmenu_service%2Frestaurants%2Fed8b95f2-d641-4127-a0c9-772fbe849c54%2FMenuItem%2F8f049e4c-8296-47ff-8f00-f66811eb2e96.jpg",
+      "alt": "Bulgogi Skewers (6) as pictured on the Mamak Asian Street Food official menu",
+      "credit": "Mamak Asian Street Food · official ordering menu photograph",
+      "sourceUrl": "https://www.mamakeats.com/menu/dinner",
+      "kind": "official-product",
+      "matchMethod": "Explicit matching menu title and corresponding image alt on the first-party Mamak ordering page; visual verification and permission review outstanding",
+      "reviewedAt": "2026-10-24",
+      "needsPermissionReview": true
+    },
+    "wonton-mee": {
+      "url": "https://image-cdn.chowlyinc.com/650%2Cfit/https%3A%2F%2Fs3.amazonaws.com%2Ftoasttab%2Fmenu_service%2Frestaurants%2Fed8b95f2-d641-4127-a0c9-772fbe849c54%2FMenuItem%2F7dea95b2-e915-4935-a691-77d52bb866e2.jpg",
+      "alt": "Wonton Mee as pictured on the Mamak Asian Street Food official menu",
+      "credit": "Mamak Asian Street Food · official ordering menu photograph",
+      "sourceUrl": "https://www.mamakeats.com/location/orlando",
+      "kind": "official-product",
+      "matchMethod": "Explicit matching menu title and corresponding image alt on the first-party Mamak ordering page; visual verification and permission review outstanding",
+      "reviewedAt": "2026-10-24",
+      "needsPermissionReview": true
+    },
+    "prawn-mee": {
+      "url": "https://image-cdn.chowlyinc.com/650%2Cfit/https%3A%2F%2Fs3.amazonaws.com%2Ftoasttab%2Fmenu_service%2Frestaurants%2Fed8b95f2-d641-4127-a0c9-772fbe849c54%2FMenuItem%2F589068e3-810b-406f-9b7f-87d330d15260.jpg",
+      "alt": "Prawn Mee as pictured on the Mamak Asian Street Food official menu",
+      "credit": "Mamak Asian Street Food · official ordering menu photograph",
+      "sourceUrl": "https://www.mamakeats.com/location/orlando",
+      "kind": "official-product",
+      "matchMethod": "Explicit matching menu title and corresponding image alt on the first-party Mamak ordering page; visual verification and permission review outstanding",
+      "reviewedAt": "2026-10-24",
+      "needsPermissionReview": true
+    },
+    "roast-duck-noodle-soup": {
+      "url": "https://image-cdn.chowlyinc.com/650%2Cfit/https%3A%2F%2Fs3.amazonaws.com%2Ftoasttab%2Fmenu_service%2Frestaurants%2Fed8b95f2-d641-4127-a0c9-772fbe849c54%2FMenuItem%2F364e503d-dcb8-4f70-8f05-09aa5a7ca2b2.jpg",
+      "alt": "Roast Duck Noodle Soup as pictured on the Mamak Asian Street Food official menu",
+      "credit": "Mamak Asian Street Food · official ordering menu photograph",
+      "sourceUrl": "https://www.mamakeats.com/location/orlando",
+      "kind": "official-product",
+      "matchMethod": "Explicit matching menu title and corresponding image alt on the first-party Mamak ordering page; visual verification and permission review outstanding",
+      "reviewedAt": "2026-10-24",
+      "needsPermissionReview": true
+    },
+    "tom-yum-mee": {
+      "url": "https://image-cdn.chowlyinc.com/650%2Cfit/https%3A%2F%2Fs3.amazonaws.com%2Ftoasttab%2Fmenu_service%2Frestaurants%2Fed8b95f2-d641-4127-a0c9-772fbe849c54%2FMenuItem%2Fe8561263-7275-4700-ad33-2c254a8976e7.jpg",
+      "alt": "Tom Yum Mee as pictured on the Mamak Asian Street Food official menu",
+      "credit": "Mamak Asian Street Food · official ordering menu photograph",
+      "sourceUrl": "https://www.mamakeats.com/location/orlando",
+      "kind": "official-product",
+      "matchMethod": "Explicit matching menu title and corresponding image alt on the first-party Mamak ordering page; visual verification and permission review outstanding",
+      "reviewedAt": "2026-10-24",
+      "needsPermissionReview": true
+    },
+    "kari-mee": {
+      "url": "https://image-cdn.chowlyinc.com/650%2Cfit/https%3A%2F%2Fs3.amazonaws.com%2Ftoasttab%2Fmenu_service%2Frestaurants%2Fed8b95f2-d641-4127-a0c9-772fbe849c54%2FMenuItem%2F1dcc72bb-5f8d-4081-8889-880112f04209.jpg",
+      "alt": "Kari Mee as pictured on the Mamak Asian Street Food official menu",
+      "credit": "Mamak Asian Street Food · official ordering menu photograph",
+      "sourceUrl": "https://www.mamakeats.com/location/orlando",
+      "kind": "official-product",
+      "matchMethod": "Explicit matching menu title and corresponding image alt on the first-party Mamak ordering page; visual verification and permission review outstanding",
+      "reviewedAt": "2026-10-24",
+      "needsPermissionReview": true
+    },
+    "roast-duck": {
+      "url": "https://image-cdn.chowlyinc.com/650%2Cfit/https%3A%2F%2Fs3.amazonaws.com%2Ftoasttab%2Fmenu_service%2Frestaurants%2Fed8b95f2-d641-4127-a0c9-772fbe849c54%2FMenuItem%2F09d2402e-9667-4593-97ba-128cd0bee742.jpg",
+      "alt": "Mamak Roast Duck pictured in Mamak's official online menu; prepared serving or appearance can change",
+      "credit": "Mamak Asian Street Food · official item image",
+      "sourceUrl": "https://www.mamakeats.com/menu/indonesian",
+      "kind": "official-product",
+      "matchMethod": "The menu page directly identifies this exact named item next to its image; full visual approval remains pending.",
+      "needsPermissionReview": true,
+      "reviewedAt": "2026-10-24"
+    },
+    "black-bean-fish": {
+      "url": "https://image-cdn.chowlyinc.com/650%2Cfit/https%3A%2F%2Fs3.amazonaws.com%2Ftoasttab%2Fmenu_service%2Frestaurants%2Fed8b95f2-d641-4127-a0c9-772fbe849c54%2FMenuItem%2F911e2870-2e71-4511-8a0f-4342f9a3296e.jpg",
+      "alt": "Mamak Black Bean Fish pictured in Mamak's official online menu; prepared serving or appearance can change",
+      "credit": "Mamak Asian Street Food · official item image",
+      "sourceUrl": "https://www.mamakeats.com/menu/indonesian",
+      "kind": "official-product",
+      "matchMethod": "The menu page directly identifies this exact named item next to its image; full visual approval remains pending.",
+      "needsPermissionReview": true,
+      "reviewedAt": "2026-10-24"
+    },
+    "stir-fried-green-beans": {
+      "url": "https://image-cdn.chowlyinc.com/650%2Cfit/https%3A%2F%2Fs3.amazonaws.com%2Ftoasttab%2Fmenu_service%2Frestaurants%2Fed8b95f2-d641-4127-a0c9-772fbe849c54%2FMenuItem%2F60c760cc-a5d0-474d-bb13-d154fb14e9d5.jpg",
+      "alt": "Mamak Stir-Fried Green Beans pictured in Mamak's official online menu; prepared serving or appearance can change",
+      "credit": "Mamak Asian Street Food · official item image",
+      "sourceUrl": "https://www.mamakeats.com/menu/indonesian",
+      "kind": "official-product",
+      "matchMethod": "The menu page directly identifies this exact named item next to its image; full visual approval remains pending.",
+      "needsPermissionReview": true,
+      "reviewedAt": "2026-10-24"
+    },
+    "pasembur-salad": {
+      "url": "https://image-cdn.chowlyinc.com/650%2Cfit/https%3A%2F%2Fs3.amazonaws.com%2Ftoasttab%2Fmenu_service%2Frestaurants%2Fed8b95f2-d641-4127-a0c9-772fbe849c54%2FMenuItem%2F57083897-d5ad-46d7-b4cb-1ec7edf51485.jpg",
+      "alt": "Mamak Pasembur Salad pictured in Mamak's official online menu; prepared serving or appearance can change",
+      "credit": "Mamak Asian Street Food · official item image",
+      "sourceUrl": "https://www.mamakeats.com/menu/indonesian",
+      "kind": "official-product",
+      "matchMethod": "The menu page directly identifies this exact named item next to its image; full visual approval remains pending.",
+      "needsPermissionReview": true,
+      "reviewedAt": "2026-10-24"
     }
   },
   "yellow-dog-eats-gotha": {
@@ -1614,6 +2034,26 @@ export const verifiedDishPhotos = {
       "alt": "The Stubborn Mule Burger served with a copper mug; photo from restaurant ordering page",
       "credit": "The Stubborn Mule · restaurant ordering photograph",
       "sourceUrl": "https://order.toasttab.com/online/the-stubborn-mule-100-s-eola-drive"
+    },
+    "smash-burger": {
+      "url": "https://d1w7312wesee68.cloudfront.net/Pw11k2wpQScgVju0nZBycDj2cfn1v3-kcwDI7-iO_dQ/resize%3Afit%3A720%3A720/plain/s3%3A/toasttab/menu_service/restaurants/1f97c7fa-92b6-4da3-aff4-29e3b7f7fc92/MenuItem/1d053f2b-1953-4de0-8242-6b14e6d94d04.jpg",
+      "alt": "Official Stubborn Mule Smash Burger with double beef patty, melted American cheese, charred onions, arugula and tomato on brioche bun, centered on white plate.",
+      "credit": "The Stubborn Mule · official Toast ordering image",
+      "sourceUrl": "https://order.toasttab.com/online/the-stubborn-mule-100-s-eola-drive/item-smash-burger_56b7f012-dbb7-4bfe-85a4-28f2a92439d5",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Visually compared the named dish and ingredient description with the retrieved source image and credited publication",
+      "needsPermissionReview": true
+    },
+    "shrimp-and-grits": {
+      "url": "https://d1w7312wesee68.cloudfront.net/BWXksfpd00oOjp4L5t6GfaYInZQOV207o3Zb6XkGHx8/resize%3Afit%3A720%3A720/plain/s3%3A/toasttab/menu_service/restaurants/1f97c7fa-92b6-4da3-aff4-29e3b7f7fc92/MenuItem/9f2372da-cbb0-4067-94a2-ec53f9e463df.jpg",
+      "alt": "Official Stubborn Mule Shrimp and Grits with seared shrimp, andouille sausage, smoked gouda grits, peppers and onions in a white bowl.",
+      "credit": "The Stubborn Mule · official Toast ordering image",
+      "sourceUrl": "https://order.toasttab.com/online/the-stubborn-mule-100-s-eola-drive/item-shrimp-and-grits_8abb93e4-1dd6-4167-b4e6-e2565c7758c1",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Visually compared the named dish and ingredient description with the retrieved source image and credited publication",
+      "needsPermissionReview": true
     }
   },
   "lazy-moon-mills": {
@@ -1628,6 +2068,46 @@ export const verifiedDishPhotos = {
       "alt": "Slice of Garden Grazer pizza from Lazy Moon with broccoli, spinach, artichokes and mozzarella on a metal serving tray",
       "credit": "Lazy Moon Pizza · Mills 50 official ordering image",
       "sourceUrl": "https://order.lazymoonpizza.com/menu/lazy-moon-mills-50-1011-east-colonial-drive/group_eabef8e9-372a-40c0-b7e5-1be9616d3375/item-slice-garden-grazer-pizza_2ad479c0-c1ff-41db-bb53-2be78d1b782a"
+    },
+    "slice-tomato-base-includes-mozzarella": {
+      "url": "https://assets-global.website-files.com/630bc362e064f47bd1baf171/6626b74351eb7af3df2bdbe6_IMG-7780%20adobe.jpg",
+      "alt": "Lazy Moon plain tomato sauce mozzarella cheese pizza slice on a metal tray, with a glass of beer behind it. Source is restaurant's official site, not verified as the specific customizable base. Not the precise customizable menu item configuration.",
+      "credit": "Lazy Moon · official restaurant food photo",
+      "sourceUrl": "https://www.lazymoonpizza.com/",
+      "kind": "menu-context",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Visually compared the named dish and ingredient description with the retrieved source image and credited publication",
+      "needsPermissionReview": true
+    },
+    "slice-meaty-mcmeatface-pizza": {
+      "url": "https://d1w7312wesee68.cloudfront.net/jwbHw-3r_xCgok8nqtPzwU_aZY5fHh7dmBcQGtkQXhs/resize%3Afit%3A1080%3A1080/plain/s3%3A/toasttab/restaurants/restaurant-136153000000000000/menu/items/4/item-800000004396409534_1719670045.jpg",
+      "alt": "Actual Lazy Moon Mills/50 Meaty McMeatface pizza slice with birria beef, ground beef, bacon, pepperoni and mozzarella, whole slice visible on metal tray.",
+      "credit": "Lazy Moon Mills/50 · official Toast ordering photo",
+      "sourceUrl": "https://order.lazymoonpizza.com/menu/lazy-moon-mills-50-1011-east-colonial-drive/group_eabef8e9-372a-40c0-b7e5-1be9616d3375/item-slice-meaty-mcmeatface-pizza_222c4662-eab7-48ba-8bf7-4c2077abf79b",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Visually compared the named dish and ingredient description with the retrieved source image and credited publication",
+      "needsPermissionReview": true
+    },
+    "slice-jason-s-mom-s-pizza": {
+      "url": "https://wpcdn.us-east-1.vip.tn-cloud.net/www.orlandomagazine.com/content/uploads/2020/10/RG33007_LazyMoon.jpg?etag=%225f92f3cd-10b2a%22",
+      "alt": "Lazy Moon oversized Jason's Mom's pizza slice with chicken, mushrooms, tomatoes, melted mozzarella and brown ranch sauce, whole slice on a small white plate.",
+      "credit": "Orlando Magazine · Lazy Moon pizza slice photograph",
+      "sourceUrl": "https://www.orlandomagazine.com/pizza-bracket-results-meet-the-other-two-in-the-fabulous-4/",
+      "kind": "editorial-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Visually compared the named dish and ingredient description with the retrieved source image and credited publication",
+      "needsPermissionReview": true
+    },
+    "classic-calzone": {
+      "url": "https://wpcdn.us-east-1.vip.tn-cloud.net/www.orlandomagazine.com/content/uploads/2023/07/x/x/lazymoon.jpg",
+      "alt": "Lazy Moon calzone cut in half with mozzarella and ricotta, sausage and mushrooms selected as toppings; a ranch cup is visible. Example topping combination only.",
+      "credit": "Orlando Magazine · Lazy Moon calzone photograph",
+      "sourceUrl": "https://www.orlandomagazine.com/delicious-dishes-in-mills-50/",
+      "kind": "editorial-context",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Visually compared the named dish and ingredient description with the retrieved source image and credited publication",
+      "needsPermissionReview": true
     }
   },
   "pig-floyds-mills": {
@@ -1636,6 +2116,55 @@ export const verifiedDishPhotos = {
       "alt": "The Big Floyd brisket, pulled pork and sausage sandwich, photographed at Pig Floyd's in Orlando in 2014; plating and location may have changed",
       "credit": "Scott Joseph's Food & Travel · Big Floyd sandwich photograph",
       "sourceUrl": "https://scottjosephorlando.com/pig-floyd-s-urban-barbakoa/"
+    },
+    "mexican-street-corn-fries": {
+      "url": "https://cdn.prod.website-files.com/61e04feb6d15de516ae40221/621f9cba8dad23820457fa6a_61e70c4679bef7be3890c949_Street-Corn-Fries-Plate-e1638283620771-1013x1024-1.png",
+      "alt": "Pig Floyd's Mexican Street Corn Fries on white plate, topped with corn, cotija, cilantro aioli and chives; whole serving visible.",
+      "credit": "Pig Floyd's · former official menu photograph",
+      "sourceUrl": "https://www.pigfloyds.com/menu",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Visually compared the named dish and ingredient description with the retrieved source image and credited publication",
+      "needsPermissionReview": true
+    },
+    "sticky-ribs": {
+      "url": "https://static.wixstatic.com/media/2c91de_beaa209a59da4a9ab1ce6957220d2480~mv2.jpg/v1/fill/w_980%2Ch_653%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/2c91de_beaa209a59da4a9ab1ce6957220d2480~mv2.jpg",
+      "alt": "Glossy reddish Pig Floyd's sticky pork ribs with scallion garnish photographed for coverage of the restaurant's Winter Park expansion. Presentation may differ at Mills/50.",
+      "credit": "Gotta Go Orlando · Pig Floyd's glazed rib photograph",
+      "sourceUrl": "https://www.gottagoorlando.com/post/3-years-on-and-pig-floyd-s-urban-bbq-almost-ready-to-open-in-winter-park",
+      "kind": "editorial-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Visually compared the named dish and ingredient description with the retrieved source image and credited publication",
+      "needsPermissionReview": true
+    },
+    "butter-chicken": {
+      "url": "https://burgerbeast.com/wp-content/uploads/2014/09/pig-floyds-butter-chicken-tacos-orlando.jpg",
+      "alt": "Pig Floyd's Butter Chicken Tacos shown by Burger Beast, with chicken, tikka masala, jasmine rice, pepitas, yogurt drizzle, jalapeño and cilantro. Historically photographed at the original Pig Floyd's location, serving may differ at current Pigzza location.",
+      "credit": "Burger Beast · Pig Floyd's Butter Chicken Tacos image",
+      "sourceUrl": "https://burgerbeast.com/pig-floyds-orlando/",
+      "kind": "editorial-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact named dish photo in 2026 restaurant review; prior URL was a 404 and replaced with the source page image.",
+      "needsPermissionReview": true
+    },
+    "banh-mi": {
+      "url": "https://tb-static.uber.com/prod/image-proc/processed_images/a3ad60464ca89078489b3a2b284f9d60/7f4ae9ca0446cbc23e71d8d395a98428.jpeg",
+      "alt": "Pig Floyd's glazed BBQ pork bánh mì-style sandwich with pickled vegetables, jalapeño and creamy dressing. Actual selected meat can vary; pictured pork variation. Not the precise customizable menu item configuration.",
+      "credit": "Pig Floyd's delivery menu · Uber Eats",
+      "sourceUrl": "https://www.ubereats.com/store/pig-floyds-urban-bbq-orlando/xmRoSfELWz2Il6CW2h-1xQ",
+      "kind": "menu-context",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Visually compared the named dish and ingredient description with the retrieved source image and credited publication",
+      "needsPermissionReview": true
+    },
+    "plain-jane-brisket": {
+      "url": "https://burgerbeast.com/wp-content/uploads/2014/09/pig-floyds-plain-jane-sliced-brisket-sandwich.jpg",
+      "sourceUrl": "https://burgerbeast.com/pig-floyds-orlando/",
+      "alt": "Pig Floyd's original Plain Jane Sliced Brisket Sandwich, slices of smoked brisket on a lightly sweetened bun. This is the older presentation of the current Plain Jane Brisket.",
+      "credit": "Burger Beast · original Plain Jane Sliced Brisket photograph",
+      "kind": "editorial-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Explicit image caption identifies the exact named product; historical presentation."
     }
   },
   "woodlands-orlando": {

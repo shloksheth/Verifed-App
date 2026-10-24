@@ -1,13 +1,14 @@
 {
-  "number": 14.7,
-  "name": "Verifed V14.7",
-  "description": "Partial completion of the remaining Batch 1 restaurant-food-photo work. Pizza Bruno Curry Ford now has 16 individually keyed source photo references for 68 menu entries, and Winter Park Biscuit Company has 11 for 41. Replaced a broken generic WPBC Burger URL with the restaurant's actual 2020 Impossible Burger photograph, noting its older potato bun. Added source-specific Pizza Bruno pizza, wing and salad images and clearly marked representative food photography where exact images were unavailable. Full 109-record QA and regression tests; menu image framing remains uncropped. 82 records still require photos and final visual/rights review. GitHub-only release; no new Expo Snack snapshot.",
+  "number": 14.8,
+  "name": "Verifed V14.8",
+  "description": "Batch 2 restaurant photography sourcing and quality audit for Tin & Taco, Mamak, The Stubborn Mule, Pig Floyd’s & Pigzza, and Lazy Moon. This release adds 61 individually keyed sourced image references, prioritizing named product photographs linked from Mamak's first-party menu and several distinct restaurant/ordering photographs from the other menus. The full 413-item inventory now records source evidence, item descriptions, candidate research queries, and missing or contextual photos. This is an interim GitHub-only photography update, NOT completion of all 413 photos.",
   "verification": [
-    "109 menu records audited across Pizza Bruno (68) and Winter Park Biscuit (41); 27 source image references and 82 missing.",
-    "Images that come from another restaurant, another branch, or an older menu version are explicitly labeled contextual or representative.",
-    "27 linked images returned image content before the final WPBC Burger replacement; the replacement and all assets are checked again in pull-request CI.",
-    "No image-generation tool was available, so no original/generated images were produced. This version is not complete visual QA for a final contest submission.",
-    "No allergen, dietary or cross-contact conclusions are inferred from photographs.",
-    "GitHub only: Expo Snack remains at its previously published version."
+    "All 413 Batch 2 items are explicitly indexed in research/batch2-photo-audit.json.",
+    "The registry currently has 61 individual item photo references across Batch 2; 352 records are still missing images.",
+    "Known restaurant-photo and contextual images are distinguished, and menu tiles never fill missing items with generic restaurant images.",
+    "URL checks indicate most image hosts serve image content; Pig Floyd's editorial image server can intermittently return HTML instead of an image.",
+    "Full visual checks, accurate alternatives for unmatched dishes, and third-party usage rights require further work. No AI-generated pictures or photo retouches are claimed.",
+    "Existing mobile contain-mode framing preserves whole-food images without cropping.",
+    "GitHub-only release; no new Expo Snack publication."
   ]
 }
