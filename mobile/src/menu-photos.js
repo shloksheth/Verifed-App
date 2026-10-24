@@ -72,7 +72,10 @@ export function menuPhotoFor(dish, restaurant) {
       alt: dish.imageAlt || `Photograph of ${dish.name}`,
       credit: dish.imageCredit || "Published menu",
       sourceUrl: dish.imageSourceUrl || dish.provenance?.menuUrl || restaurant?.menuUrl || null,
-      exact: true,
+      // A product has an individually matched photo only when sourced from
+      // that menu. Generic/copycat photos stay clearly marked representative.
+      exact: !/^(representative|menu-context|editorial-context)/.test(dish.imageKind || "") &&
+        !dish.imageGenerated,
       generated: Boolean(dish.imageGenerated),
       kind: dish.imageKind || "published",
     };
