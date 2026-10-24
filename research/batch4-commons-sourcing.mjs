@@ -24,19 +24,23 @@ function plans(item,slug){
  const keys=new Set();return alternatives.map(s=>s.trim()).filter(s=>{let k=clean(s);if(k.length<3||keys.has(k))return false;keys.add(k);return true});
 }
 const licenses=["CC0","Public domain","CC BY","CC BY-SA"];
+const apiCooldown={value:0};const memo=new Map();
 let requests=0,errors=0;
 async function search(query){
- for(let attempt=0;attempt<2;attempt++){
+ const ck=query.toLowerCase();if(memo.has(ck))return memo.get(ck);
+ for(let attempt=0;attempt<3;attempt++){
  try{
- const api="https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch="+encodeURIComponent(query)+"&gsrnamespace=6&gsrlimit=12&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize&iiurlwidth=720&format=json";
+ const api="https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch="+encodeURIComponent(query)+"&gsrnamespace=6&gsrlimit=12&prop=imageinfo&iiprop=url%7Cextmetadata%7Csize%7Cmime&iiurlwidth=720&format=json";
+ if(Date.now()<apiCooldown.value)await new Promise(res=>setTimeout(res,apiCooldown.value-Date.now()));
+ await new Promise(res=>setTimeout(res,360));
  const r=await fetch(api,{headers:{"User-Agent":"VerifedEducationMenuPhotoAudit/1.0 (research; Wikimedia Commons attribution)","Accept":"application/json"},signal:AbortSignal.timeout(15000)});requests++;
- if(!r.ok){errors++;await new Promise(res=>setTimeout(res,250*(attempt+1)));continue;}
+ if(!r.ok){errors++;if(errors<20)console.log("API_ERROR",r.status,query,attempt);if(r.status===429)apiCooldown.value=Date.now()+3500;await new Promise(res=>setTimeout(res,800*(attempt+1)));continue;}
  const j=await r.json();
- return Object.values(j.query?.pages||{}).map(p=>{
+ const result=Object.values(j.query?.pages||{}).map(p=>{
  const i=p.imageinfo?.[0]||{},meta=i.extmetadata||{};
  const t=String(p.title||"");
  return {fileTitle:t,title:t.replace(/^File:/,"").replace(/\.[^.]+$/,"").replace(/_/g," "),url:i.thumburl||i.url,sourceUrl:i.descriptionurl||"https://commons.wikimedia.org/wiki/"+encodeURIComponent(t.replaceAll(" ","_")),credit:String(meta.Artist?.value||"Wikimedia Commons contributor").replace(/<[^>]*>/g," ").slice(0,180),license:String(meta.LicenseShortName?.value||""),licenseUrl:String(meta.LicenseUrl?.value||""),description:String(meta.ImageDescription?.value||"").replace(/<[^>]*>/g," ").replace(/\s+/g," ").slice(0,240),mime:i.mime,width:i.thumbwidth||i.width,height:i.thumbheight||i.height};
- }).filter(p=>p.url&&/image\/(jpeg|png|webp)/i.test(p.mime||"")&& licenses.some(x=>(p.license||"").startsWith(x))&&!excluded.test(p.title));
+ }).filter(p=>p.url&&/image\/(jpeg|png|webp)/i.test(p.mime||"")&& licenses.some(x=>(p.license||"").startsWith(x))&&!excluded.test(p.title));memo.set(ck,result);return result;
  }catch(e){errors++;if(attempt===0)await new Promise(res=>setTimeout(res,300));}
  }return [];
 }
@@ -66,7 +70,7 @@ async function worker(){
   for(const q of variants){
    const pics=await search(q);searchLog.push({query:q,found:pics.length});
    for(const p of pics){if(seen.has(p.url))continue;seen.add(p.url);found.push({...p,score:scorePhoto(p,item,slug,q),query:q})}
-   if(found.filter(x=>x.score>=.9).length>=5)break;
+   if(found.filter(x=>x.score>=.6).length>=4)break;
   }
   found.sort((a,b)=>b.score-a.score);
   const choices=found.slice(0,6),best=choices[0]||null;
@@ -74,7 +78,7 @@ async function worker(){
   if(idx%25===0)console.log("SCANNED",idx,jobs.length,"queries",requests,"errors",errors,"sample",slug,item.name,"candidates",choices.length);
  }
 }
-await Promise.all(Array.from({length:6},()=>worker()));
+await Promise.all(Array.from({length:2},()=>worker()));
 const summary={total:jobs.length,withCandidates:rows.filter(x=>x.candidates.length).length,autoSelected:rows.filter(x=>x.selectedCandidate).length,withoutChoices:rows.filter(x=>!x.candidates.length).length,requests,errors,perRestaurant:Object.fromEntries(slugs.map(s=>[s,{total:rows.filter(x=>x.slug===s).length,autoSelected:rows.filter(x=>x.slug===s&&x.selectedCandidate).length}]))};
 fs.writeFileSync("research/batch4-commons-candidates.json",JSON.stringify({generatedAt:"2026-10-24",description:"Up to four independent search formulations per dish; candidates filtered by source description and title, NOT manual visual inspection",summary,entries:rows},null,2)+"\n");
 console.log("BATCH4_DISCOVERY_SUMMARY",JSON.stringify(summary));
