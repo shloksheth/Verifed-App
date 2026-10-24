@@ -1,7 +1,7 @@
 import { publishedMenus } from "../mobile/src/restaurant-menus.js";
 const menu=publishedMenus.find(m=>m.key==="taco-bell-south-orange");
 const candidates=menu.items.filter(d=>!d.imageUrl).map(d=>d);
-const categories=["breakfast","nachos","tacos","burritos","quesadillas","specialties","deals-and-combos","combos","groups","sides-and-sweets","drinks","bowls","veggie-cravings","online-exclusives","cantina-chicken-menu","luxe-value-menu","featured","best-sellers"];
+const categories=["breakfast","nachos","tacos","burritos","quesadillas","specialties","deals-and-combos","combos","groups","snacks-sweets","party-packs","sides-and-sweets","drinks","bowls","veggie-cravings","online-exclusives","cantina-chicken-menu","luxe-value-menu","featured","best-sellers"];
 const seen=new Map();
 const entities=s=>s.replace(/&amp;/g,"&").replace(/&#39;|&apos;/g,"'").replace(/&quot;/g,'"').replace(/&reg;|®/g,"").replace(/&trade;|™/g,"").replace(/\s+/g," ").trim().toLowerCase();
 for(const cat of categories){
