@@ -1,6 +1,6 @@
-// Individually sourced dish photographs, including official and credited third-party images.
-// The photograph is not an allergen-safety or current availability claim.
-// Editorial photo redistribution and commercial rights must be separately confirmed.
+// Restaurant-specific menu photography with credit; images never certify allergen safety.
+// Offsite representative photos are distinguished from officially photographed items.
+// Third-party reuse and commercial rights require permission review.
 export const verifiedDishPhotos = {
   "loving-hut-orlando": {
     "spring-rolls-4-rolls-cha-gio": {
@@ -412,6 +412,116 @@ export const verifiedDishPhotos = {
       "reviewedAt": "2026-10-23",
       "matchMethod": "Visual comparison with the menu item and its published description",
       "needsPermissionReview": false
+    },
+    "burrito-tortilla": {
+      "url": "https://www.chipotle.com/content/dam/chipotle/menu/menu-items/cmg-5501-flour-tortilla-burrito-size/web-mobile/order.png",
+      "alt": "Chipotle full burrito-size flour tortilla, white background",
+      "credit": "Chipotle official build your order",
+      "sourceUrl": "https://www.chipotle.com/order/build/burrito-bowl",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-23",
+      "matchMethod": "Compared multiple retrieved search images with the published component name",
+      "photoIdentityNote": null,
+      "needsPermissionReview": false
+    },
+    "honey-vinaigrette": {
+      "url": "https://www.chipotle.com/content/dam/chipotle/menu/menu-items/cmg-5353--chipotle-honey-vinaigrette/web-mobile/order.png",
+      "alt": "Chipotle honey vinaigrette with orange-brown spices in a white ceramic bowl",
+      "credit": "Chipotle official ingredients",
+      "sourceUrl": "https://www.chipotle.com/ingredients/honey",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-23",
+      "matchMethod": "Compared multiple retrieved search images with the published component name",
+      "photoIdentityNote": null,
+      "needsPermissionReview": false
+    },
+    "green-chili-salsa": {
+      "url": "https://tb-static.uber.com/prod/image-proc/processed_images/1323d33f3f70030ce13953fb887439a7/c67fc65e9b4e16a553eb7574fba090f1.jpeg",
+      "alt": "Chipotle Tomatillo-Green Chili Salsa in an individual sauce cup, official menu product photo through delivery listing",
+      "credit": "Chipotle menu photo · Uber Eats",
+      "sourceUrl": "https://www.ubereats.com/brand-city/normal-il/chipotle",
+      "kind": "menu-delivery-photo",
+      "reviewedAt": "2026-10-23",
+      "matchMethod": "Compared multiple retrieved search images with the published component name",
+      "photoIdentityNote": null,
+      "needsPermissionReview": true
+    },
+    "red-chili-salsa": {
+      "url": "https://www.chipotle.com/content/dam/chipotle/menu/menu-items/cmg-1007-chips-tomatillo-red-chili-salsa/web-mobile/order.png",
+      "alt": "Chipotle red tomatillo-chili salsa served in a white ramekin with several tortilla chips; salsa is the named item",
+      "credit": "Chipotle official ordering image (chips + salsa)",
+      "sourceUrl": "https://www.chipotle.com/order/build/burrito-bowl",
+      "kind": "official-combo-context",
+      "reviewedAt": "2026-10-23",
+      "matchMethod": "Compared multiple retrieved search images with the published component name",
+      "photoIdentityNote": null,
+      "needsPermissionReview": false
+    },
+    "black-beans": {
+      "url": "https://eato.health/food-images/feast/act/chipotle-black-beans-8689428-1.webp",
+      "alt": "Representative bowl of glossy cooked black beans, visually consistent with Chipotle black beans; third-party illustrative photo, not official restaurant photo",
+      "credit": "Eato · representative ingredient illustration",
+      "sourceUrl": "https://eato.health/food/chipotle-black-beans-8689428-1",
+      "kind": "representative-ingredient",
+      "reviewedAt": "2026-10-23",
+      "matchMethod": "Compared multiple retrieved search images with the published component name",
+      "photoIdentityNote": "Illustrative or contextual image; not evidence this is the restaurant's exact plating",
+      "needsPermissionReview": true
+    },
+    "brown-rice": {
+      "url": "https://snapcalorie-webflow-website.s3.us-east-2.amazonaws.com/media/food_pics_v2/medium/chipotle_brown_rice.jpg",
+      "alt": "Representative cilantro-lime brown rice with fresh cilantro; independent nutrition-site image, not a verified Chipotle serving",
+      "credit": "SnapCalorie · representative brown rice image",
+      "sourceUrl": "https://www.snapcalorie.com/nutrition/chipotle_brown_rice_nutrition.html",
+      "kind": "representative-ingredient",
+      "reviewedAt": "2026-10-23",
+      "matchMethod": "Compared multiple retrieved search images with the published component name",
+      "photoIdentityNote": "Illustrative or contextual image; not evidence this is the restaurant's exact plating",
+      "needsPermissionReview": true
+    },
+    "roasted-corn-salsa": {
+      "url": "https://www.chipotlenutrition.us/images/ingredients/roasted_corn.webp",
+      "alt": "Representative roasted chili-corn salsa with sweet corn diced peppers and cilantro; independent illustrative preparation, not official Chipotle dish",
+      "credit": "Chipotle Nutrition US · illustrative ingredient image",
+      "sourceUrl": "https://www.chipotlenutrition.us/chipotle-quesadilla-calories",
+      "kind": "representative-ingredient",
+      "reviewedAt": "2026-10-23",
+      "matchMethod": "Compared multiple retrieved search images with the published component name",
+      "photoIdentityNote": "Illustrative or contextual image; not evidence this is the restaurant's exact plating",
+      "needsPermissionReview": true
+    },
+    "fresh-tomato-salsa": {
+      "url": "https://chipotlecaloriescalculator.com/assets/chipotle-menu-prices-images/Fresh%20Tomato%20Salsa.webp",
+      "alt": "Representative Chipotle-style diced tomato fresh salsa, red onion and cilantro in individual bowl; third party not verified restaurant serving",
+      "credit": "Chipotle Calories Calculator · representative salsa",
+      "sourceUrl": "https://chipotlecaloriescalculator.com/menu-prices/single-sides/large-fresh-tomato-salsa/",
+      "kind": "representative-ingredient",
+      "reviewedAt": "2026-10-23",
+      "matchMethod": "Compared multiple retrieved search images with the published component name",
+      "photoIdentityNote": "Illustrative or contextual image; not evidence this is the restaurant's exact plating",
+      "needsPermissionReview": true
+    },
+    "sofritas": {
+      "url": "https://art.whisk.com/image/upload/fl_progressive%2Ch_560%2Cw_560%2Cc_fill%2Cdpr_2/v1686031948/recipe/0e0cf0d35b878eaa0a147faceca33ab8.jpg",
+      "alt": "Illustrative copycat sofritas tofu, reddish-brown braised crumbled tofu on spoon; not Chipotle restaurant serving",
+      "credit": "Samsung Food · copycat sofritas recipe photography",
+      "sourceUrl": "https://app.samsungfood.com/recipes/10146bdb6483cd99b4ee05653df03c79e0db8637c95",
+      "kind": "representative-ingredient",
+      "reviewedAt": "2026-10-23",
+      "matchMethod": "Compared multiple retrieved search images with the published component name",
+      "photoIdentityNote": "Illustrative or contextual image; not evidence this is the restaurant's exact plating",
+      "needsPermissionReview": true
+    },
+    "supergreens": {
+      "url": "https://1.bp.blogspot.com/-S4VFU17Igug/XhNGYMx1HrI/AAAAAAABJVY/SocUcCIWgiczbX0-e6Urz1rx3TsxFdM-wCLcBGAsYHQ/s1600/chipotle-new-supergreen-salad-blend.png",
+      "alt": "Actual Chipotle Supergreens leafy base visible under a composed salad bowl with toppings; the photographed item is a completed salad, not a standalone salad mix",
+      "credit": "Brand Eating · Chipotle Supergreens launch photograph",
+      "sourceUrl": "https://www.brandeating.com/2020/01/chipotle-rolls-out-new-supergreens-salad-mix.html",
+      "kind": "menu-context",
+      "reviewedAt": "2026-10-23",
+      "matchMethod": "Compared multiple retrieved search images with the published component name",
+      "photoIdentityNote": "Illustrative or contextual image; not evidence this is the restaurant's exact plating",
+      "needsPermissionReview": true
     }
   },
   "hawkers-orlando": {
