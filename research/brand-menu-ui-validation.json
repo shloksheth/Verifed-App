@@ -1,0 +1,31 @@
+{
+  "checkedAt": "2026-10-24T22:25:37.895Z",
+  "version": "Verifed V17.1",
+  "build": "verifed-v17.1-release",
+  "tacoBell": {
+    "fullTab": "true",
+    "images": 116,
+    "removePressed": "true"
+  },
+  "chipotle": {
+    "restoredSelection": "REVIEW (1)",
+    "fullTab": "true",
+    "images": 26
+  },
+  "additionalFlowChecks": {
+    "chipotleDetailReturn": "REVIEW (2)",
+    "chipotleProfileReturn": "REVIEW (1)",
+    "milkDiet": {
+      "cheese": false,
+      "cream": false,
+      "selectedReview": "REVIEW (1)"
+    },
+    "chipotleSearch": "sour cream returned one component",
+    "tacoSearch": "Soft Taco filtered the menu",
+    "tacoCustomizer": "Opened an actual component list and selected Remove; final release exposes pressed state and a working Close button"
+  },
+  "review": "Independent code review found draft loss; fixed and browser-verified. Final review found no further actionable regressions.",
+  "consoleErrors": [],
+  "physicalIPhoneTested": false,
+  "snackRuntime": "Saved and all360asset hashes verified. Browser selection/navigation timed out; no runtime confirmation for this snapshot."
+}

@@ -6,6 +6,7 @@ export const assetMimeTypes = {
   ".jpg": "image/jpeg",
   ".jpeg": "image/jpeg",
   ".webp": "image/webp",
+  ".ttf": "font/ttf",
 };
 
 export async function imageAssetPaths(root, directory = "assets") {

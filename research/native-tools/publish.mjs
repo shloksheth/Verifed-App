@@ -149,7 +149,7 @@ try {
       }
     }));
   }
-  console.log(`Verified ${assetEntries.length} uploaded image hashes`);
+  console.log(`Verified ${assetEntries.length} uploaded asset hashes`);
   const saved = await snack.saveAsync({ ignoreUser: true });
   const publication = {
     version: release.number,
@@ -160,7 +160,12 @@ try {
     sdkVersion: state.sdkVersion,
     files: Object.keys(files),
     assetHashes,
-    uploadVerification: { images: assetEntries.length, allSourceHashesMatch: true },
+    uploadVerification: {
+      assets: assetEntries.length,
+      images: assetEntries.filter(([name]) => !name.endsWith(".ttf")).length,
+      fonts: assetEntries.filter(([name]) => name.endsWith(".ttf")).length,
+      allSourceHashesMatch: true,
+    },
     sourceHash: createHash("sha256")
       .update(
         JSON.stringify({

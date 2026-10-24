@@ -1,18 +1,20 @@
 {
-  "version": 17,
-  "name": "Verifed V17",
-  "id": "xoqR-YOqjOb1zGRZlCfwU",
-  "url": "exp://u.expo.dev/933fd9c0-1666-11e7-afca-d980795c5824?runtime-version=exposdk%3A54.0.0&channel-name=production&snack=xoqR-YOqjOb1zGRZlCfwU",
-  "hashId": "xoqR-YOqjOb1zGRZlCfwU",
-  "snackId": "4b0e1a1f-c237-4685-bde6-2b6b8bb154c0",
-  "editorUrl": "https://snack.expo.dev/xoqR-YOqjOb1zGRZlCfwU",
-  "publishedAt": "2026-10-24T18:03:20.117Z",
+  "version": 17.1,
+  "name": "Verifed V17.1",
+  "id": "Wy9xyhLMej1ThP8Gco9V-",
+  "url": "exp://u.expo.dev/933fd9c0-1666-11e7-afca-d980795c5824?runtime-version=exposdk%3A54.0.0&channel-name=production&snack=Wy9xyhLMej1ThP8Gco9V-",
+  "hashId": "Wy9xyhLMej1ThP8Gco9V-",
+  "snackId": "390f4919-9167-4e14-b550-29b92e7922df",
+  "editorUrl": "https://snack.expo.dev/Wy9xyhLMej1ThP8Gco9V-",
+  "publishedAt": "2026-10-24T22:21:14.042Z",
   "sdkVersion": "54.0.0",
   "files": [
     "App.js",
     "styles.js",
     "components/Account.js",
     "components/AllergenIcons.js",
+    "components/BrandIdentity.js",
+    "components/ChipotleMenu.js",
     "components/Dining.js",
     "components/Explore.js",
     "components/Journal.js",
@@ -23,7 +25,9 @@
     "components/Welcome.js",
     "src/account-auth.js",
     "src/api.js",
+    "src/brand-assets.js",
     "src/chain-brand.js",
+    "src/chipotle-draft.js",
     "src/config.js",
     "src/data.js",
     "src/discovery.js",
@@ -45,6 +49,9 @@
     "src/storage-queue.js",
     "src/verified-dish-photos.js",
     "src/write-sync.js",
+    "assets/brands/taco-bell-logo.png",
+    "assets/fonts/Anton-Regular.ttf",
+    "assets/fonts/BarlowCondensed-SemiBold.ttf",
     "assets/food/black-rooster-mills/achiote-pork.webp",
     "assets/food/black-rooster-mills/carne-asada.webp",
     "assets/food/black-rooster-mills/crispy-fish.webp",
@@ -404,6 +411,9 @@
     "assets/verifed-mark.png"
   ],
   "assetHashes": {
+    "assets/brands/taco-bell-logo.png": "286803d645aba9dda176a5dd8334573e496e272d167c21e4e3efe5881f7450f8",
+    "assets/fonts/Anton-Regular.ttf": "a4ba3a92350ebb031da0cb47630ac49eb265082ca1bc0450442f4a83ab947cab",
+    "assets/fonts/BarlowCondensed-SemiBold.ttf": "7b619d14bc2327509a9ef32b0890f709626f7ecc9ff61191c2a4314c5499d2d9",
     "assets/food/black-rooster-mills/achiote-pork.webp": "87fb4efd46d3b48c27c389b93f00480a6eadbac58f7dfde21caee36b085fb068",
     "assets/food/black-rooster-mills/carne-asada.webp": "6d859d9fd74afe094c4e4b9d776114183199a9c9eee41207d9501ee049e4cac6",
     "assets/food/black-rooster-mills/crispy-fish.webp": "a1296079ea64d7f94f08ed9cb9b2583278bb1e97a14ce3123b08234aea924770",
@@ -763,8 +773,10 @@
     "assets/verifed-mark.png": "666a1adcb3940ee008ccb5e9544b853fe3fec4ad6d43f5dca5c8697f230b3219"
   },
   "uploadVerification": {
-    "images": 357,
+    "assets": 360,
+    "images": 358,
+    "fonts": 2,
     "allSourceHashesMatch": true
   },
-  "sourceHash": "65c8d4a02fb17046083eeceb8d2ed9bcd8cda0f2f1a349405233ecff12754c30"
+  "sourceHash": "8d1a44bcab98388a927fdaece42931ed828035e6ae42309dc29dddb4416d21d5"
 }

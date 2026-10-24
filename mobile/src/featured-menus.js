@@ -29,3 +29,20 @@ export function featuredRestaurants(restaurants) {
     .map((slug) => restaurants.find((restaurant) => restaurant.slug === slug))
     .filter(Boolean);
 }
+
+// Explore groups chain locations into one card. Rank the whole group so Taco
+// Bell stays featured even when another branch is the displayed location.
+export function prioritizeFeaturedMenus(cards) {
+  const rank = ({ group }) => {
+    let first = featuredMenuSlugs.length;
+    for (const { restaurant } of group) {
+      const index = featuredMenuSlugs.findIndex((slug) =>
+        slug === restaurant.slug ||
+        (restaurant.chainId && slug.startsWith(`${restaurant.chainId}-`)),
+      );
+      if (index >= 0) first = Math.min(first, index);
+    }
+    return first;
+  };
+  return [...cards].sort((a, b) => rank(a) - rank(b));
+}

@@ -1,0 +1,27 @@
+{
+  "checkedAt": "2026-10-24T22:22:26.671188+00:00",
+  "version": "Verifed V17.1",
+  "sourceHashes": {
+    "mobile/assets/brands/taco-bell-logo.png": "286803d645aba9dda176a5dd8334573e496e272d167c21e4e3efe5881f7450f8",
+    "mobile/assets/fonts/Anton-Regular.ttf": "a4ba3a92350ebb031da0cb47630ac49eb265082ca1bc0450442f4a83ab947cab",
+    "mobile/assets/fonts/BarlowCondensed-SemiBold.ttf": "7b619d14bc2327509a9ef32b0890f709626f7ecc9ff61191c2a4314c5499d2d9"
+  },
+  "platforms": {
+    "android": {
+      "mobile/assets/brands/taco-bell-logo.png": true,
+      "mobile/assets/fonts/Anton-Regular.ttf": true,
+      "mobile/assets/fonts/BarlowCondensed-SemiBold.ttf": true
+    },
+    "ios": {
+      "mobile/assets/brands/taco-bell-logo.png": true,
+      "mobile/assets/fonts/Anton-Regular.ttf": true,
+      "mobile/assets/fonts/BarlowCondensed-SemiBold.ttf": true
+    },
+    "web": {
+      "mobile/assets/brands/taco-bell-logo.png": true,
+      "mobile/assets/fonts/Anton-Regular.ttf": true,
+      "mobile/assets/fonts/BarlowCondensed-SemiBold.ttf": true
+    }
+  },
+  "passed": true
+}

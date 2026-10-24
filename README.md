@@ -30,6 +30,8 @@ The import commits were created when the history was recovered. Original saved d
 
 | [Verifed V17](https://github.com/shloksheth/Verifed-App/releases/tag/v17) | Five photo-complete imported menus: Fresh Kitchen 35, Chipotle 26 components, Loving Hut 61, Taco Bell 116, Hawkers 49. Preferred three first on Home; local banners, sourced ingredient additions, 143 tests and verified local exports. Snack asset uploads and web runtime verified; remote ZIP unconfirmed. Ingredient coverage remains partial. | [Verifed V17](https://snack.expo.dev/xoqR-YOqjOb1zGRZlCfwU) |
 
+| [Verifed V17.1](https://github.com/shloksheth/Verifed-App/releases/tag/v17.1) | Featured Explore ordering, official Taco Bell/Chipotle logos, branded product-grid and ingredient-builder screens, bundled open fonts, persistent session drafts, 144 tests and verified iOS/Android/web assets. Saved Snack assets verified; remote runtime/ZIP unconfirmed. | [Verifed V17.1](https://snack.expo.dev/Wy9xyhLMej1ThP8Gco9V-) |
+
 Application directories appear as they are introduced: `prototype/` (original JavaScript web prototype), `web/` (React companion), and `mobile/` (React Native/Expo). Every release preserves the other applications already introduced.
 
 Native V6–V9 are new version-named copies of recovered immutable Snack snapshots. Their original snapshot IDs remain in release notes. Downloaded V6–V8 contain Expo-generated project scaffolding rather than original local lockfiles and tests. V9 also restores the archived local code, tests and documentation.

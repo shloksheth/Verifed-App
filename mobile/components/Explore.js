@@ -2,6 +2,7 @@ import React, { useEffect, useMemo, useRef, useState } from "react";
 import { Linking, Pressable, Text, View } from "react-native";
 import { colors, s } from "../styles";
 import { discoverRestaurants } from "../src/discovery";
+import { prioritizeFeaturedMenus } from "../src/featured-menus";
 import { chainBrand } from "../src/chain-brand";
 import { ORLANDO_CENTER, searchPlaces } from "../src/location-search";
 import { RestaurantRow } from "./Dining";
@@ -118,6 +119,9 @@ export default function Explore({
     group,
     result: group[0],
   }));
+  const orderedCards = filters.sort === "recommended"
+    ? prioritizeFeaturedMenus(cards)
+    : cards;
   const needs = [...state.profile.allergies, ...state.profile.restrictions];
   async function findLocation() {
     request.current?.abort();
@@ -313,7 +317,7 @@ export default function Explore({
         </Text>
         <Text style={s.small}>
           {filters.sort === "recommended"
-            ? "Dietary fit comes first. Your rated meals and preferences help order the results."
+            ? "Featured menus first. Your dietary fit, rated meals and preferences help order the other results."
             : "Distance is straight-line from your selected area, not a driving route."}
         </Text>
         {filters.dietMode !== "all" && (
@@ -350,7 +354,7 @@ export default function Explore({
               : "Try a wider radius, another cuisine, or fewer filters. Our current menus cover the Orlando area."}
         </Empty>
       )}
-      {cards.map(({ group, result }) => (
+      {orderedCards.map(({ group, result }) => (
         <View
           key={result.restaurant.chainId || result.restaurant.id}
           style={s.discoveryResult}

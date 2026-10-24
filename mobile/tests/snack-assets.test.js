@@ -25,6 +25,10 @@ test("Snack refuses failed or unfinished image uploads before saving", () => {
 test("Snack's asset inventory includes every bundled food image and the logo", async () => {
   const paths = await imageAssetPaths(fileURLToPath(new URL("../", import.meta.url)));
   assert.ok(paths.includes("assets/verifed-mark.png"));
+  assert.ok(paths.includes("assets/brands/taco-bell-logo.png"));
+  assert.ok(paths.includes("assets/fonts/Anton-Regular.ttf"));
+  assert.ok(paths.includes("assets/fonts/BarlowCondensed-SemiBold.ttf"));
+  assert.equal(assetMimeTypes[".ttf"], "font/ttf");
   for (const photo of Object.values(localFoodPhotoMetadata)) assert.ok(paths.includes(photo.path), photo.path);
   assert.equal(paths.filter((path) => path.startsWith("assets/food/")).length, Object.keys(localFoodPhotoMetadata).length);
   assert.equal(assetMimeTypes[".webp"], "image/webp");

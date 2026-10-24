@@ -1,0 +1,36 @@
+{
+  "references": [
+    {
+      "brand": "Taco Bell",
+      "menu": "https://www.tacobell.com/food",
+      "logo": "https://www.yum.com/wps/wcm/connect/yumbrands/7c987259-4492-4e67-bcc4-2eb292935969/tb-logo-color-png.png?CACHEID=ROOTWORKSPACE.Z18_4OK424423PQ520667RKLCR3157-7c987259-4492-4e67-bcc4-2eb292935969-oCiodJ.&MOD=AJPERES",
+      "localLogo": "mobile/assets/brands/taco-bell-logo.png",
+      "reference": "User supplied current menu screenshot: horizontal uppercase categories, square white cards on gray, full-food images and paired solid/outline purple buttons. Promotional collage used for visual tone only; its unofficial products are not imported.",
+      "localSha256": "286803d645aba9dda176a5dd8334573e496e272d167c21e4e3efe5881f7450f8"
+    },
+    {
+      "brand": "Chipotle",
+      "menu": "https://www.chipotle.com/",
+      "logo": "https://www.chipotle.com/content/experience-fragments/chipotle/us/en/xf-header/master/_jcr_content/root/container_712714414/image_411084835.coreimg.svg/1689182077517/cmg-medallion-logo.svg",
+      "localLogo": "mobile/src/brand-assets.js",
+      "fonts": "Official CSS uses Trade Gothic and Nunito. Verifed uses licensed open Barlow Condensed as a heading substitute; no claim that it is the proprietary original font.",
+      "localSha256": "ab56be59496861acc8fb2ff04cb0b5121203ad9fdf71867ccffc9608a6d4e36d"
+    }
+  ],
+  "fonts": [
+    {
+      "file": "Anton-Regular.ttf",
+      "source": "https://github.com/google/fonts/tree/main/ofl/anton",
+      "license": "SIL Open Font License; bundled alongside font",
+      "localFile": "mobile/assets/fonts/Anton-Regular.ttf",
+      "sha256": "a4ba3a92350ebb031da0cb47630ac49eb265082ca1bc0450442f4a83ab947cab"
+    },
+    {
+      "file": "BarlowCondensed-SemiBold.ttf",
+      "source": "https://github.com/google/fonts/tree/main/ofl/barlowcondensed",
+      "license": "SIL Open Font License; bundled alongside font",
+      "localFile": "mobile/assets/fonts/BarlowCondensed-SemiBold.ttf",
+      "sha256": "7b619d14bc2327509a9ef32b0890f709626f7ecc9ff61191c2a4314c5499d2d9"
+    }
+  ]
+}

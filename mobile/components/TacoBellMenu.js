@@ -11,8 +11,9 @@ import { localFoodAssets } from "../src/local-food-assets";
 import { localFoodPhotoMetadata } from "../src/local-food-photo-metadata";
 import { localPhotoKeyFor } from "../src/local-photo-key";
 import AllergenIcons from "./AllergenIcons";
+import { BrandHeading, BrandLogo, BrandProvider } from "./BrandIdentity";
 
-const purple = "#6821B7";
+const purple = "#501098";
 const vivid = "#8B20DB";
 const ink = "#241936";
 const muted = "#696076";
@@ -64,10 +65,11 @@ function Tab({ label, active, onPress }) {
     <Pressable
       accessibilityRole="tab"
       accessibilityState={{ selected: active }}
+      aria-selected={active}
       onPress={onPress}
       style={[look.tab, active && look.tabActive]}
     >
-      <Text style={[look.tabText, active && look.tabTextActive]}>{label}</Text>
+      <BrandHeading style={[look.tabText, active && look.tabTextActive]}>{label}</BrandHeading>
     </Pressable>
   );
 }
@@ -105,7 +107,7 @@ function Customizer({ dish, restaurant, onClose, navigate }) {
         <View style={look.modal}>
           <View style={look.modalHeader}>
             <Text style={look.modalHeading}>Customize your item</Text>
-            <Pressable accessibilityLabel="Close customization" onPress={onClose} style={look.close}>
+            <Pressable accessibilityRole="button" accessibilityLabel="Close customization" onPress={onClose} style={look.close}>
               <Text style={look.closeText}>✕</Text>
             </Pressable>
           </View>
@@ -127,6 +129,7 @@ function Customizer({ dish, restaurant, onClose, navigate }) {
                       onPress={() => setChanges((prev) => ({ ...prev, [ingredient]: choice }))}
                       accessibilityRole="button"
                       accessibilityState={{ selected: (changes[ingredient] || "Keep") === choice }}
+                      aria-pressed={(changes[ingredient] || "Keep") === choice}
                       style={[look.choice, (changes[ingredient] || "Keep") === choice && look.choiceSelected]}
                     >
                       <Text style={[look.choiceText, (changes[ingredient] || "Keep") === choice && look.choiceTextSelected]}>
@@ -149,10 +152,10 @@ function Customizer({ dish, restaurant, onClose, navigate }) {
                 is allergen-free. Recipes, shared equipment and availability may vary.
               </Text>
             </View>
-            <Pressable onPress={shareRequest} style={look.primary}>
+            <Pressable accessibilityRole="button" onPress={shareRequest} style={look.primary}>
               <Text style={look.primaryText}>Share request for staff</Text>
             </Pressable>
-            <Pressable onPress={() => { onClose(); navigate(`dish/${dish.id}`); }} style={look.secondary}>
+            <Pressable accessibilityRole="button" onPress={() => { onClose(); navigate(`dish/${dish.id}`); }} style={look.secondary}>
               <Text style={look.secondaryText}>Review allergens and source</Text>
             </Pressable>
           </ScrollView>
@@ -171,9 +174,8 @@ function ItemCard({ dish, restaurant, profile, navigate, onCustomize, favorites 
     : status.level === "match"
       ? "REPORTED MATCH"
       : status.level === "unknown" ? "CHECK DETAILS" : "REVIEW INGREDIENTS";
-  const noLiveSave = false;
   async function save() {
-    if (busy || noLiveSave) return;
+    if (busy) return;
     setBusy(true);
     try { await api.toggleFavorite(dish.id); }
     catch { /* Existing device/cloud data rules can prevent writes; browsing remains usable. */ }
@@ -183,17 +185,21 @@ function ItemCard({ dish, restaurant, profile, navigate, onCustomize, favorites 
     <View style={look.itemCard}>
       <Pressable onPress={() => navigate(`dish/${dish.id}`)} accessibilityRole="button" accessibilityLabel={`View ${dish.name}`}>
         <FoodPhoto dish={dish} restaurant={restaurant} />
-        <Text style={look.itemTitle} numberOfLines={3}>{dish.name}</Text>
+        <BrandHeading style={look.itemTitle} numberOfLines={3}>{dish.name}</BrandHeading>
       </Pressable>
       <View style={look.fitRow}>
         <Text style={[look.fit, status.level === "conflict" && look.fitConflict, status.level === "match" && look.fitMatch]}>
           {statusLabel}
         </Text>
-        <Pressable accessibilityLabel={saved ? "Unsave item" : "Save item"} disabled={busy} onPress={save}>
+        <Pressable accessibilityRole="button" accessibilityLabel={saved ? "Unsave item" : "Save item"} disabled={busy} onPress={save}>
           <Text style={[look.heart, saved && look.heartSaved]}>{saved ? "♥" : "♡"}</Text>
         </Pressable>
       </View>
       <AllergenIcons dish={dish} showEmpty showUnknown />
+      <Pressable onPress={() => navigate(`dish/${dish.id}`)} accessibilityRole="button"
+        accessibilityLabel={`View ingredients for ${dish.name}`} style={look.viewItem}>
+        <Text style={look.viewItemText}>VIEW INGREDIENTS</Text>
+      </Pressable>
       <Pressable onPress={() => onCustomize(dish)} accessibilityRole="button" style={look.customize}>
         <Text style={look.customizeText}>CUSTOMIZE</Text>
       </Pressable>
@@ -206,6 +212,8 @@ export default function TacoBellMenu({ restaurant, dishes, profile, favorites, n
   const [category, setCategory] = useState("All");
   const [term, setTerm] = useState("");
   const [selected, setSelected] = useState(null);
+  const [bodyWidth, setBodyWidth] = useState(0);
+  const columns = bodyWidth >= 620 ? 3 : bodyWidth > 0 && bodyWidth < 320 ? 1 : 2;
   const requirements = [...(profile?.allergies || []), ...(profile?.restrictions || [])];
   const categories = useMemo(() => ["All", ...new Set(dishes.map((dish) => dish.category || "Menu"))], [dishes]);
   const query = term.trim().toLowerCase();
@@ -217,31 +225,25 @@ export default function TacoBellMenu({ restaurant, dishes, profile, favorites, n
   });
   const groups = groupMenu(visible);
   return (
+    <BrandProvider brand="taco-bell">
     <View style={look.page}>
       <View style={look.brandHead}>
         <View style={look.brandBar}>
-          <Text style={look.brandTitle}>TACO BELL</Text>
-          <Text style={look.brandMark}>◈</Text>
+          <View style={look.logoLockup}>
+            <BrandLogo brand="taco-bell" size={53} />
+            <Text style={look.brandTitle}>TACO{"\n"}BELL</Text>
+          </View>
+          <View style={look.verifedBadge}><Text style={look.verifedBadgeText}>VERIFED MENU</Text></View>
         </View>
-        <Text style={look.headSub}>MENU  /  VERIFED DIETARY VIEW</Text>
         <Text style={look.location}>⌖  {restaurant.name} · {restaurant.location}</Text>
       </View>
 
-      <View style={look.mainBody}>
-        <View style={look.promo}>
-          <Text style={look.promoEyebrow}>MAKE YOUR MENU YOURS</Text>
-          <Text style={look.promoHeadline}>Find your next favorite.</Text>
-          <Text style={look.promoCopy}>
-            Browse Taco Bell products with dietary flags, save what you like, and
-            draft customization requests before asking restaurant staff.
-          </Text>
-          <Text style={look.notOfficial}>Verifed is independent of Taco Bell. Ordering is not connected.</Text>
-        </View>
+      <View style={look.mainBody} onLayout={(event) => setBodyWidth(event.nativeEvent.layout.width)}>
         <View style={look.modeRow}>
           <Tab label="FULL MENU" active={mode === "full"} onPress={() => setMode("full")} />
           <Tab label="FOR MY DIET" active={mode === "diet"} onPress={() => setMode("diet")} />
         </View>
-        <Pressable onPress={() => navigate(`edit-profile?returnTo=${encodeURIComponent(`restaurant/${restaurant.id}`)}`)} style={look.profile}>
+        <Pressable accessibilityRole="button" onPress={() => navigate(`edit-profile?returnTo=${encodeURIComponent(`restaurant/${restaurant.id}`)}`)} style={look.profile}>
           <Text style={look.profileText} numberOfLines={2}>
             {requirements.length ? `Dietary preferences: ${requirements.join(" · ")}` : "Add dietary preferences to find relevant items"}
           </Text>
@@ -259,12 +261,11 @@ export default function TacoBellMenu({ restaurant, dishes, profile, favorites, n
             accessibilityLabel="Search Taco Bell menu"
           />
         </View>
-        <Text style={look.categoryHeading}>EXPLORE CATEGORIES</Text>
-        <ScrollView horizontal showsHorizontalScrollIndicator={false} style={look.categoryScroll} contentContainerStyle={look.categoryTrack}>
+        <ScrollView horizontal accessibilityLabel="EXPLORE CATEGORIES" showsHorizontalScrollIndicator={false} style={look.categoryScroll} contentContainerStyle={look.categoryTrack}>
           {categories.map((value) => (
-            <Pressable key={value} accessibilityRole="button" accessibilityState={{ selected: value === category }}
+            <Pressable key={value} accessibilityRole="button" accessibilityState={{ selected: value === category }} aria-pressed={value === category}
               onPress={() => setCategory(value)} style={[look.categoryPill, value === category && look.categoryPillActive]}>
-              <Text style={[look.categoryText, value === category && look.categoryTextActive]}>{value.replace(/ And /g," & ")}</Text>
+              <BrandHeading style={[look.categoryText, value === category && look.categoryTextActive]}>{value.replace(/ And /g," & ").toUpperCase()}</BrandHeading>
             </Pressable>
           ))}
         </ScrollView>
@@ -278,12 +279,12 @@ export default function TacoBellMenu({ restaurant, dishes, profile, favorites, n
         {groups.map((group) => (
           <View key={group.category} style={look.group}>
             <View style={look.groupTitleRow}>
-              <Text style={look.groupTitle}>{group.category}</Text>
+              <BrandHeading accessibilityRole="header" style={look.groupTitle}>{group.category.toUpperCase()}</BrandHeading>
               <Text style={look.groupCount}>{group.dishes.length}</Text>
             </View>
             <View style={look.grid}>
               {group.dishes.map((dish) => (
-                <View key={dish.id} style={look.cell}>
+                <View key={dish.id} style={[look.cell, { width: `${100 / columns - 2}%` }]}>
                   <ItemCard dish={dish} restaurant={restaurant} profile={profile} favorites={favorites}
                     navigate={navigate} onCustomize={setSelected} />
                 </View>
@@ -299,12 +300,7 @@ export default function TacoBellMenu({ restaurant, dishes, profile, favorites, n
             </Pressable>
           </View>
         )}
-        <Text style={look.disclaimer}>
-          Product photos are used only when they match the named menu item.
-          Missing photos are not replaced with an unrelated restaurant photo.
-          Ingredient information is incomplete for some items. Always confirm
-          ingredients, preparation and cross-contact with restaurant staff.
-        </Text>
+        <Text style={look.disclaimer}>Independent Verifed menu. Taco Bell owns its trademarks. Customizations are drafts for discussion with staff; no order is placed.</Text>
         <Pressable onPress={() => Linking.openURL(restaurant.menuUrl || "https://www.tacobell.com/food")} style={look.sourceButton}>
           <Text style={look.sourceText}>VIEW OFFICIAL TACO BELL MENU ↗</Text>
         </Pressable>
@@ -318,66 +314,64 @@ export default function TacoBellMenu({ restaurant, dishes, profile, favorites, n
           onClose={() => setSelected(null)} navigate={navigate} />
       )}
     </View>
+    </BrandProvider>
   );
 }
 
 const look = StyleSheet.create({
-  page: { marginHorizontal: -3, backgroundColor: "#FFFFFF", paddingBottom: 16 },
-  brandHead: { backgroundColor: purple, paddingHorizontal: 16, paddingTop: 21, paddingBottom: 19, gap: 8 },
+  page: { marginHorizontal: -18, backgroundColor: "#F2F2F2", paddingBottom: 16 },
+  brandHead: { backgroundColor: "#FFFFFF", paddingHorizontal: 18, paddingTop: 16, paddingBottom: 15, gap: 15, borderBottomWidth: 1, borderBottomColor: "#DDDDDD" },
   brandBar: { flexDirection: "row", justifyContent: "space-between", alignItems: "center" },
-  brandTitle: { color: "#FFFFFF", fontSize: 29, fontWeight: "900", letterSpacing: 0.2 },
-  brandMark: { color: "#FFFFFF", fontSize: 29 },
-  headSub: { color: "#EAD8FF", fontSize: 10, fontWeight: "800", letterSpacing: 1.5 },
-  location: { color: "#FFFFFF", fontSize: 12, fontWeight: "600" },
-  mainBody: { paddingHorizontal: 12, gap: 17, paddingTop: 17 },
-  promo: { padding: 18, borderRadius: 18, backgroundColor: "#F3EAFB", gap: 7 },
-  promoEyebrow: { color: purple, fontSize: 10, fontWeight: "900", letterSpacing: 1.2 },
-  promoHeadline: { color: ink, fontWeight: "900", fontSize: 27, lineHeight: 32 },
-  promoCopy: { color: ink, fontSize: 12, lineHeight: 19 },
-  notOfficial: { color: muted, fontSize: 10, lineHeight: 15 },
-  modeRow: { flexDirection: "row", gap: 9 },
-  tab: { flex: 1, borderRadius: 24, paddingVertical: 12, paddingHorizontal: 7, alignItems: "center", borderColor: purple, borderWidth: 1 },
-  tabActive: { backgroundColor: purple },
-  tabText: { color: purple, fontSize: 11, fontWeight: "900", letterSpacing: 0.5 },
-  tabTextActive: { color: "#FFFFFF" },
-  profile: { backgroundColor: pale, borderRadius: 12, padding: 12, flexDirection: "row", alignItems: "center", gap: 8 },
+  logoLockup: { flexDirection: "row", alignItems: "center", gap: 9 },
+  brandTitle: { color: "#161616", fontSize: 26, lineHeight: 24, fontWeight: "900", letterSpacing: -1 },
+  verifedBadge: { borderColor: purple, borderWidth: 1, padding: 8 },
+  verifedBadgeText: { color: purple, fontSize: 9, fontWeight: "800", letterSpacing: 0.6 },
+  location: { color: "#444444", fontSize: 11, fontWeight: "600" },
+  mainBody: { paddingHorizontal: 12, gap: 10, paddingTop: 10 },
+  modeRow: { flexDirection: "row", backgroundColor: "#FFFFFF" },
+  tab: { flex: 1, paddingVertical: 10, paddingHorizontal: 7, alignItems: "center", borderBottomWidth: 4, borderColor: "transparent" },
+  tabActive: { borderColor: purple },
+  tabText: { color: "#242424", fontSize: 17, letterSpacing: 0.3 },
+  tabTextActive: { color: purple },
+  profile: { backgroundColor: "#FFFFFF", padding: 9, flexDirection: "row", alignItems: "center", gap: 8 },
   profileText: { color: ink, fontSize: 11, flex: 1 },
   profileEdit: { color: purple, fontSize: 11, fontWeight: "900" },
-  searchWrap: { height: 47, borderColor: border, borderWidth: 1, borderRadius: 10, flexDirection: "row", alignItems: "center", paddingHorizontal: 12, gap: 7 },
+  searchWrap: { height: 47, borderColor: "#B9B9B9", borderWidth: 1, backgroundColor: "#FFFFFF", flexDirection: "row", alignItems: "center", paddingHorizontal: 12, gap: 7 },
   searchIcon: { color: purple, fontSize: 26, lineHeight: 31 },
   search: { flex: 1, fontSize: 14, color: ink, paddingVertical: 0 },
-  categoryHeading: { color: ink, fontWeight: "900", fontSize: 13, letterSpacing: 1 },
   categoryScroll: { marginHorizontal: -12 },
-  categoryTrack: { paddingHorizontal: 12, gap: 9 },
-  categoryPill: { minHeight: 43, justifyContent: "center", borderRadius: 23, backgroundColor: "#F3F1F5", paddingHorizontal: 17, borderWidth: 1, borderColor: "#EDE7F1" },
-  categoryPillActive: { backgroundColor: purple, borderColor: purple },
-  categoryText: { fontSize: 12, fontWeight: "700", color: ink },
-  categoryTextActive: { color: "#FFFFFF" },
+  categoryTrack: { paddingHorizontal: 12, backgroundColor: "#FFFFFF", gap: 8 },
+  categoryPill: { minHeight: 50, justifyContent: "center", paddingHorizontal: 12, borderBottomWidth: 4, borderColor: "transparent" },
+  categoryPillActive: { borderColor: purple },
+  categoryText: { fontSize: 17, color: "#111111" },
+  categoryTextActive: { color: purple },
   count: { color: muted, fontSize: 10 },
   group: { gap: 13 },
-  groupTitleRow: { flexDirection: "row", alignItems: "center", justifyContent: "space-between", borderBottomWidth: 2, borderColor: purple, paddingBottom: 9 },
-  groupTitle: { fontSize: 20, color: ink, fontWeight: "900", flex: 1 },
+  groupTitleRow: { flexDirection: "row", alignItems: "center", justifyContent: "space-between", paddingTop: 4, paddingBottom: 2 },
+  groupTitle: { fontSize: 25, color: "#111111", flex: 1 },
   groupCount: { color: purple, fontWeight: "800", fontSize: 12 },
-  grid: { flexDirection: "row", flexWrap: "wrap", gap: 12, alignItems: "stretch" },
-  cell: { width: "48.2%" },
-  itemCard: { backgroundColor: "#FFFFFF", borderRadius: 13, borderWidth: 1, borderColor: border, padding: 9, gap: 9, justifyContent: "space-between" },
+  grid: { flexDirection: "row", flexWrap: "wrap", gap: 8, alignItems: "stretch" },
+  cell: { alignItems: "stretch" },
+  itemCard: { flex: 1, backgroundColor: "#FFFFFF", padding: 10, gap: 9, justifyContent: "space-between" },
   // Preserve the complete official item photo even for tall or wide products.
-  photo: { height: 150, backgroundColor: "#FFFFFF", alignItems: "center", justifyContent: "center", borderRadius: 11, overflow: "hidden", padding: 5 },
+  photo: { aspectRatio: 1, width: "100%", backgroundColor: "#F7F7F7", alignItems: "center", justifyContent: "center", overflow: "hidden", padding: 2 },
   photoWide: { height: 250, width: "100%", padding: 10 },
   photoFill: { width: "100%", height: "100%" },
   illustrationLabel: { position: "absolute", bottom: 3, right: 6, color: muted, fontSize: 8, backgroundColor: "#FFFFFFE8", paddingHorizontal: 4, borderRadius: 3 },
   photoMissing: { alignItems: "center", justifyContent: "center", padding: 9, gap: 3 },
   missingSymbol: { color: "#D2C3E2", fontSize: 28 },
   missingLabel: { color: "#9B91A6", fontSize: 8, fontWeight: "700", textAlign: "center" },
-  itemTitle: { fontSize: 12, lineHeight: 17, color: ink, fontWeight: "800", marginTop: 10, minHeight: 34 },
+  itemTitle: { fontSize: 18, lineHeight: 24, color: "#111111", marginTop: 9, minHeight: 48 },
   fitRow: { flexDirection: "row", alignItems: "center", gap: 5, justifyContent: "space-between" },
   fit: { fontSize: 8, fontWeight: "800", color: muted, flex: 1 },
   fitMatch: { color: good },
   fitConflict: { color: "#B94339" },
   heart: { color: purple, fontSize: 23 },
   heartSaved: { color: "#AD2F69" },
-  customize: { backgroundColor: "#FFFFFF", borderWidth: 1, borderColor: purple, borderRadius: 4, minHeight: 37, alignItems: "center", justifyContent: "center" },
-  customizeText: { color: purple, fontSize: 10, letterSpacing: 0.5, fontWeight: "900" },
+  viewItem: { backgroundColor: purple, minHeight: 44, paddingHorizontal: 3, alignItems: "center", justifyContent: "center" },
+  viewItemText: { color: "#FFFFFF", fontSize: 11, fontWeight: "900", textAlign: "center" },
+  customize: { backgroundColor: "#FFFFFF", borderWidth: 1.5, borderColor: purple, minHeight: 44, alignItems: "center", justifyContent: "center" },
+  customizeText: { color: purple, fontSize: 12, letterSpacing: 0.5, fontWeight: "900" },
   warning: { backgroundColor: "#FFF2E7", borderRadius: 10, padding: 13, gap: 4 },
   warningTitle: { fontWeight: "800", color: ink, fontSize: 12 },
   note: { fontSize: 12, lineHeight: 18, color: muted },

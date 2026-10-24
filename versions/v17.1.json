@@ -1,0 +1,19 @@
+{
+  "number": 17.1,
+  "name": "Verifed V17.1",
+  "description": "Explore prioritizes the five featured menus. Taco Bell now uses its official bell logo, condensed headings, underlined category navigation, square white product cards and paired purple ingredient/customization buttons. Chipotle gets its official medallion and a dedicated white/brown ingredient-builder layout with local component selections and review. Draft selections survive ingredient/profile navigation, separated by diner and restaurant. Adds bundled licensed open fonts; menu data and allergen evidence are unchanged.",
+  "verification": [
+    "144 regression tests passed, including Chipotle draft restoration and diner/restaurant isolation.",
+    "Featured ordering checks passed, including an alternate Taco Bell branch and preservation of filtered results and explicit Nearest sorting.",
+    "Final browser release loaded all 116 Taco Bell and 26 Chipotle item images; the official Taco Bell logo loaded and the Chipotle medallion rendered. No browser console errors were recorded.",
+    "Chipotle select, detail-return, review, remove, profile-return, search and Milk filtering passed. Taco Bell search, customization opening/removal/closing and selected-state accessibility passed.",
+    "iOS, Android and web exports succeeded. All 356 food WebPs, the Taco Bell logo and both fonts match their local source hashes on all three platforms.",
+    "Independent code review found selection loss across navigation; it was fixed with diner/restaurant-scoped in-memory drafts, regression-tested and browser-verified. Final review found no further actionable regressions.",
+    "Snack saved Wy9xyhLMej1ThP8Gco9V- and verified all 360 uploaded asset hashes (358 images, two fonts). Browser navigation timed out and the remote ZIP API returned HTTP 503, so this saved snapshot runtime and full downloaded-source comparison remain unconfirmed. No physical iPhone test is claimed."
+  ],
+  "snack": "https://snack.expo.dev/Wy9xyhLMej1ThP8Gco9V-",
+  "snackId": "Wy9xyhLMej1ThP8Gco9V-",
+  "snackSourceHash": "8d1a44bcab98388a927fdaece42931ed828035e6ae42309dc29dddb4416d21d5",
+  "status": "branded-chain-menus-local-runtime-verified-remote-runtime-unconfirmed",
+  "branch": "codex/local-menu-photography"
+}

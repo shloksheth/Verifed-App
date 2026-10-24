@@ -1,0 +1,28 @@
+{
+  "checkedAt": "2026-10-24T22:01:57.033Z",
+  "build": "verifed-v18-web",
+  "recommendedOrder": [
+    "Fresh Kitchen \u00b7 Waterford Lakes, Waterford Lakes \u00b7 Orlando, 35 menu entries",
+    "Chipotle \u00b7 South Orange, South Orange \u00b7 Orlando, 26 menu entries",
+    "Loving Hut Orlando, Colonialtown \u00b7 Orlando, 61 menu entries",
+    "Taco Bell \u00b7 South Orange, South Orange \u00b7 Orlando, 116 menu entries",
+    "Hawkers Orlando, Mills 50 \u00b7 Orlando, 49 menu entries"
+  ],
+  "search": "Woodlands returned one place and one location",
+  "nearestOrder": [
+    "Tin & Taco \u00b7 Downtown, Downtown \u00b7 Orlando, 119 menu entries",
+    "The Stubborn Mule, Thornton Park \u00b7 Orlando, 84 menu entries",
+    "Osteria Ester, Thornton Park \u00b7 Orlando, 54 menu entries",
+    "The Monroe, Creative Village \u00b7 Orlando, 69 menu entries",
+    "Sparrow, North Quarter \u00b7 Orlando, 26 menu entries"
+  ],
+  "restoredRecommended": true,
+  "testsPassed": 143,
+  "snackId": "Wy9xyhLMej1ThP8Gco9V-",
+  "snackImageHashesVerified": 357,
+  "snackRuntime": "Final saved snapshot runtime remains unconfirmed after browser timeouts.",
+  "physicalIPhoneTested": false,
+  "preRenameSnapshotId": "SFwNCzuuXy8WfztxK-Oq2",
+  "version": "Verifed V17.1",
+  "note": "Local ordering was tested before the requested version rename; the final release also includes the branded menus."
+}

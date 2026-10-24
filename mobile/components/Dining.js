@@ -11,6 +11,7 @@ import { api } from "../src/api";
 import { assessDish } from "../src/domain";
 import { chainBrand } from "../src/chain-brand";
 import TacoBellMenu, { isTacoBell } from "./TacoBellMenu";
+import ChipotleMenu from "./ChipotleMenu";
 import { menuPhotoFor, restaurantFoodPhoto } from "../src/menu-photos";
 import { localFoodAssets } from "../src/local-food-assets";
 import { localFoodPhotoMetadata } from "../src/local-food-photo-metadata";
@@ -805,6 +806,10 @@ export function Restaurant({ id, state, navigate }) {
         navigate={navigate}
       />
     );
+  }
+  if ((restaurant.slug || restaurant.id).startsWith("chipotle-")) {
+    return <ChipotleMenu restaurant={restaurant} dishes={dishes} profile={state.profile} navigate={navigate}
+      draftOwner={`${state.mode}:${state.user?.id || "guest"}`} />;
   }
   const theme = restaurantTheme(restaurant);
   // RestaurantPhoto selects a food cover with a fallback to venue imagery.
