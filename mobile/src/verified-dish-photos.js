@@ -1,5 +1,5 @@
-// Individually keyed dish photographs; third-party source and representative status explicitly disclosed.
-// These images are not food safety claims. Third-party editorial photographs require reproduction rights review.
+// Menu-item images with distinct identities, source and representative labels; not allergen claims.
+// Third-party image redistribution rights are not presumed.
 export const verifiedDishPhotos = {
   "loving-hut-orlando": {
     "spring-rolls-4-rolls-cha-gio": {
@@ -958,14 +958,14 @@ export const verifiedDishPhotos = {
       "needsPermissionReview": true
     },
     "ahi-tuna-ceviche": {
-      "url": "https://www.awayinstyle.com/wp-content/uploads/2025/11/Ceviche-de-Atun-Large.jpeg",
-      "alt": "Representative tuna ceviche showing raw diced tuna, mango, avocado, coconut-based white sauce, onion and cilantro; NOT Black Rooster's actual serving, and tortilla chips are absent",
-      "credit": "Awayinstyle · DAVA tuna ceviche photograph",
-      "sourceUrl": "https://www.awayinstyle.com/ayana-bali-unveils-a-modern-argentine-grill-experience-at-dava/",
+      "url": "https://waivio.nyc3.digitaloceanspaces.com/c8b3cdf947e8d12b1fa491c2f48eff9030e34a136900de6f8803da547f962784_contain",
+      "alt": "Representative tuna ceviche with pink diced tuna, ripe mango, cilantro and sliced red onion in a pale citrus coconut sauce. This appears digitally styled and is NOT the actual Black Rooster serving; tortilla chip and pico de gallo details differ.",
+      "credit": "Waivio · Tropical Tuna and Mango Ceviche illustrative image",
+      "sourceUrl": "https://www.waivio.com/object/qxk-tropical-tuna-and-mango-ceviche",
       "kind": "representative-dish",
       "reviewedAt": "2026-10-23",
       "matchMethod": "Compared alternative visual results with the ingredient-level menu description; visibly disclosed differences",
-      "photoIdentityNote": "Illustrative real photo from another restaurant or recipe, not the official Black Rooster dish.",
+      "photoIdentityNote": "May be digitally generated. Unverified as a natural photograph and NOT an exact restaurant menu photo.",
       "needsPermissionReview": true
     },
     "tamale": {
@@ -1013,10 +1013,10 @@ export const verifiedDishPhotos = {
       "needsPermissionReview": true
     },
     "cilantro-poblano-rice": {
-      "url": "https://cookbylara.com/assets/images/1760720095476-vp01rvcc.jpg",
-      "alt": "Representative side of white rice with poblano-green chile and cilantro, matching the described cilantro poblano rice ingredient category but not the restaurant serving",
-      "credit": "Cook By Lara · Green Poblano Rice recipe photography",
-      "sourceUrl": "https://cookbylara.com/recipes/green-poblano-rice-dish",
+      "url": "https://forktionary.s3.us-east-2.amazonaws.com/prod/images/recipe-image-8696.png",
+      "alt": "Representative full bowl of green cilantro rice with fresh lime and sliced green chili; green poblanos and the actual Black Rooster rice preparation are not confirmed.",
+      "credit": "Forktionary · Arroz Verde Mexican Green Rice recipe photograph",
+      "sourceUrl": "https://forktionary.com/recipe/arroz-verde-mexican-green-rice",
       "kind": "representative-dish",
       "reviewedAt": "2026-10-23",
       "matchMethod": "Compared alternative visual results with the ingredient-level menu description; visibly disclosed differences",
