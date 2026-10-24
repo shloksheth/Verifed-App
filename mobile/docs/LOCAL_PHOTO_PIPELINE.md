@@ -2,6 +2,12 @@
 
 This migration is in progress. `research/local-photo-coverage.json` is the current count, and `research/local-photo-manifest.json` records one decision for every active menu entry. A successful download is never a visual approval. Unfinished items still use the existing remote-photo behavior; the app is not yet an all-local image release.
 
+## User clarifications, 24 October 2026
+
+Where restaurants omit full ingredients or serving quantities, generate a realistic illustration from the published dish description. A reasonable illustrative portion is permitted; do not invent restaurant-confirmed weights or recipe details. `GENERATED_FOOD_IMAGES.txt` is the user's simple list of approved generated images. Existing internal provenance is retained.
+
+Food chains have one shared product menu, with locations selected separately. An identical chain product can share one local image across its locations; this is an intentional reuse, unlike assigning the same photo to different dishes. Each chain should retain its own menu layout and visual styling. The current asset builder and duplicate checks still need implementation changes for this shared-product exception. Do not count another location as covered until the shared registry mapping and checks actually work. The existing V15 app has not implemented these clarifications yet.
+
 ## How an image reaches the app
 
 1. `research/prepare-local-photo-review.mjs` reads the current catalog and published menu records. It stores each item's name, description, ingredients, explicit serving size, source menu and recipe hash. A changed recipe clears its previous approval.

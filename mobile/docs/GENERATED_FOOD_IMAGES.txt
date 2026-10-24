@@ -1,0 +1,152 @@
+VERIFED GENERATED FOOD IMAGES
+
+49 approved generated illustrations in the current image checkpoint.
+These images illustrate menu items; they are not restaurant photographs.
+This list does not imply that the full image migration is complete.
+
+Loving Hut Orlando - Angel Rice - Cải Xào
+mobile/assets/food/loving-hut-orlando/angel-rice-cai-xao.webp
+
+Loving Hut Orlando - Avocado Rolls (2 Rolls)
+mobile/assets/food/loving-hut-orlando/avocado-rolls-2-rolls.webp
+
+Loving Hut Orlando - Avocado Salad
+mobile/assets/food/loving-hut-orlando/avocado-salad.webp
+
+Loving Hut Orlando - BBQ Rolls (2 Rolls)
+mobile/assets/food/loving-hut-orlando/bbq-rolls-2-rolls.webp
+
+Loving Hut Orlando - Bun Hue
+mobile/assets/food/loving-hut-orlando/bun-hue.webp
+
+Loving Hut Orlando - Cheese Cake
+mobile/assets/food/loving-hut-orlando/cheese-cake.webp
+
+Loving Hut Orlando - Chickun Burger
+mobile/assets/food/loving-hut-orlando/chickun-burger.webp
+
+Loving Hut Orlando - Chocolate Cake
+mobile/assets/food/loving-hut-orlando/chocolate-cake.webp
+
+Loving Hut Orlando - Chocolate Chip Cookie
+mobile/assets/food/loving-hut-orlando/chocolate-chip-cookie.webp
+
+Loving Hut Orlando - Chow Mein - Mì Xào
+mobile/assets/food/loving-hut-orlando/chow-mein-mi-xao.webp
+
+Loving Hut Orlando - Crispy Green Beans
+mobile/assets/food/loving-hut-orlando/crispy-green-beans.webp
+
+Loving Hut Orlando - Crispy Tofu (4 Pieces)
+mobile/assets/food/loving-hut-orlando/crispy-tofu-4-pieces.webp
+
+Loving Hut Orlando - Curled Island (5 Pieces)
+mobile/assets/food/loving-hut-orlando/curled-island-5-pieces.webp
+
+Loving Hut Orlando - Eggplant Tofu
+mobile/assets/food/loving-hut-orlando/eggplant-tofu.webp
+
+Loving Hut Orlando - Garlic Sensation
+mobile/assets/food/loving-hut-orlando/garlic-sensation.webp
+
+Loving Hut Orlando - Golden Fried Rice - Cơm Chiên
+mobile/assets/food/loving-hut-orlando/golden-fried-rice-com-chien.webp
+
+Loving Hut Orlando - Golden Nuggets
+mobile/assets/food/loving-hut-orlando/golden-nuggets.webp
+
+Loving Hut Orlando - Healthy Rice
+mobile/assets/food/loving-hut-orlando/healthy-rice.webp
+
+Loving Hut Orlando - Heavenly Salad
+mobile/assets/food/loving-hut-orlando/heavenly-salad.webp
+
+Loving Hut Orlando - Land Teriyaki
+mobile/assets/food/loving-hut-orlando/land-teriyaki.webp
+
+Loving Hut Orlando - Lemongrass Noodle
+mobile/assets/food/loving-hut-orlando/lemongrass-noodle.webp
+
+Loving Hut Orlando - Loving Burger
+mobile/assets/food/loving-hut-orlando/loving-burger.webp
+
+Loving Hut Orlando - Loving Fried Rice - Cơm Chiên Đặc Biệt
+mobile/assets/food/loving-hut-orlando/loving-fried-rice-com-chien-ac-biet.webp
+
+Loving Hut Orlando - Loving Hut Rolls (2 Rolls) - Gỏi Cuốn
+mobile/assets/food/loving-hut-orlando/loving-hut-rolls-2-rolls-goi-cuon.webp
+
+Loving Hut Orlando - Mushroom Spicy Cha Cha
+mobile/assets/food/loving-hut-orlando/mushroom-spicy-cha-cha.webp
+
+Loving Hut Orlando - Noble Rice - Gà Cà Ri
+mobile/assets/food/loving-hut-orlando/noble-rice-ga-ca-ri.webp
+
+Loving Hut Orlando - Ocean Filet Burger
+mobile/assets/food/loving-hut-orlando/ocean-filet-burger.webp
+
+Loving Hut Orlando - Ocean Wonder (5 Pieces)
+mobile/assets/food/loving-hut-orlando/ocean-wonder-5-pieces.webp
+
+Loving Hut Orlando - Orange Yogi
+mobile/assets/food/loving-hut-orlando/orange-yogi.webp
+
+Loving Hut Orlando - Philly Love
+mobile/assets/food/loving-hut-orlando/philly-love.webp
+
+Loving Hut Orlando - Pho
+mobile/assets/food/loving-hut-orlando/pho.webp
+
+Loving Hut Orlando - Potsticker (4 Pieces)
+mobile/assets/food/loving-hut-orlando/potsticker-4-pieces.webp
+
+Loving Hut Orlando - Red Beans Bun
+mobile/assets/food/loving-hut-orlando/red-beans-bun.webp
+
+Loving Hut Orlando - Saigon Noodle - Bún Chả Giò
+mobile/assets/food/loving-hut-orlando/saigon-noodle-bun-cha-gio.webp
+
+Loving Hut Orlando - Sesame Drumsticks - Đùi Gà Kho
+mobile/assets/food/loving-hut-orlando/sesame-drumsticks-ui-ga-kho.webp
+
+Loving Hut Orlando - Singapore Curry Noodle
+mobile/assets/food/loving-hut-orlando/singapore-curry-noodle.webp
+
+Loving Hut Orlando - Small Seaweed Soup
+mobile/assets/food/loving-hut-orlando/small-seaweed-soup.webp
+
+Loving Hut Orlando - Small Tofu Soup
+mobile/assets/food/loving-hut-orlando/small-tofu-soup.webp
+
+Loving Hut Orlando - Small Wonton Soup
+mobile/assets/food/loving-hut-orlando/small-wonton-soup.webp
+
+Loving Hut Orlando - Spring Rolls (4 Rolls) - Chả Giò
+mobile/assets/food/loving-hut-orlando/spring-rolls-4-rolls-cha-gio.webp
+
+Loving Hut Orlando - Stir-Fry Veggie
+mobile/assets/food/loving-hut-orlando/stir-fry-veggie.webp
+
+Loving Hut Orlando - Summer Rolls (2 Rolls) - Bò Bía
+mobile/assets/food/loving-hut-orlando/summer-rolls-2-rolls-bo-bia.webp
+
+Loving Hut Orlando - Taro Bun
+mobile/assets/food/loving-hut-orlando/taro-bun.webp
+
+Loving Hut Orlando - Tofu Noodle - Bún Xào
+mobile/assets/food/loving-hut-orlando/tofu-noodle-bun-xao.webp
+
+Loving Hut Orlando - Tofu Spicy Cha Cha - Đậu Hũ Xào
+mobile/assets/food/loving-hut-orlando/tofu-spicy-cha-cha-au-hu-xao.webp
+
+Loving Hut Orlando - Vegan Flan
+mobile/assets/food/loving-hut-orlando/vegan-flan.webp
+
+Loving Hut Orlando - Virgin Island – Vegan Fish
+mobile/assets/food/loving-hut-orlando/virgin-island-vegan-fish.webp
+
+Loving Hut Orlando - Yam Spicy Cha Cha
+mobile/assets/food/loving-hut-orlando/yam-spicy-cha-cha.webp
+
+Loving Hut Orlando - Yogi Rice Noodle Soup - Hủ Tiếu
+mobile/assets/food/loving-hut-orlando/yogi-rice-noodle-soup-hu-tieu.webp
