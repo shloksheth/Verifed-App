@@ -1,6 +1,6 @@
-// Source-matched menu photographs. Some editorial photos depict historic presentations or only part of a combo.
-// Photos are independent of dietary, allergen, and ingredient assessments.
-// Ensure image-use rights before commercial distribution.
+// Individually sourced dish photographs, including official and credited third-party images.
+// The photograph is not an allergen-safety or current availability claim.
+// Editorial photo redistribution and commercial rights must be separately confirmed.
 export const verifiedDishPhotos = {
   "loving-hut-orlando": {
     "spring-rolls-4-rolls-cha-gio": {
@@ -352,6 +352,66 @@ export const verifiedDishPhotos = {
       "alt": "Tortilla chips photographed for Chipotle's ingredients page",
       "credit": "Chipotle · official menu",
       "sourceUrl": "https://www.chipotle.com/ingredients/corn-masa-flour"
+    },
+    "chicken": {
+      "url": "https://www.chipotle.com/content/dam/chipotle/menu/menu-items/cmg-1125-side-of-chicken/web-mobile/order.png",
+      "alt": "Chipotle grilled chicken chunks in an official Chipotle side cup, fully visible",
+      "credit": "Chipotle · official ordering menu",
+      "sourceUrl": "https://www.chipotle.com/order/build/burrito-bowl",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-23",
+      "matchMethod": "Visual comparison with the menu item and its published description",
+      "needsPermissionReview": false
+    },
+    "steak": {
+      "url": "https://www.chipotle.com/content/dam/chipotle/menu/menu-items/cmg-1126-side-of-steak/web-mobile/order.png",
+      "alt": "Chipotle grilled marinated steak in an official Chipotle side cup",
+      "credit": "Chipotle · official ordering menu",
+      "sourceUrl": "https://www.chipotle.com/order/build/burrito-bowl",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-23",
+      "matchMethod": "Visual comparison with the menu item and its published description",
+      "needsPermissionReview": false
+    },
+    "carnitas": {
+      "url": "https://www.chipotle.com/content/dam/chipotle/menu/menu-items/cmg-6603-carnitas/web-mobile/order.png",
+      "alt": "Chipotle shredded braised pork carnitas on white background, standalone ingredient",
+      "credit": "Chipotle · official restaurant image",
+      "sourceUrl": "https://www.chipotle.com/order/build/burrito-bowl",
+      "kind": "official-ingredient",
+      "reviewedAt": "2026-10-23",
+      "matchMethod": "Visual comparison with the menu item and its published description",
+      "needsPermissionReview": false
+    },
+    "queso": {
+      "url": "https://i.insider.com/5d94ec76695b5816c06ca667?auto=webp&format=jpeg&width=800",
+      "alt": "Chipotle Queso Blanco in a red Chipotle-branded paper cup, from historical restaurant coverage",
+      "credit": "Business Insider · Chipotle Queso Blanco product photograph",
+      "sourceUrl": "https://www.businessinsider.com/chipotle-new-queso-blaco-beats-current-queso-recipe-2019-10",
+      "kind": "editorial-product",
+      "reviewedAt": "2026-10-23",
+      "matchMethod": "Visual comparison with the menu item and its published description",
+      "needsPermissionReview": true
+    },
+    "fajita-vegetables": {
+      "url": "https://diatribe.org/sites/default/files/legacy/article/chipotle-fajita-vegetables1.jpeg",
+      "alt": "Chipotle fajita vegetables with sautéed strips of red onions and bell peppers; restaurant ingredient image",
+      "credit": "diaTribe · Chipotle fast food guide",
+      "sourceUrl": "https://diatribe.org/diet-and-nutrition/diabetes-fast-food-guide-what-order-chipotle",
+      "kind": "editorial-product",
+      "reviewedAt": "2026-10-23",
+      "matchMethod": "Visual comparison with the menu item and its published description",
+      "needsPermissionReview": true
+    },
+    "guacamole": {
+      "url": "https://www.chipotle.com/content/dam/chipotle/menu/menu-items/cmg-1025-large-side-of-guac/web-mobile/order.png",
+      "alt": "Chipotle side of hand-mashed guacamole photographed on the official menu",
+      "credit": "Chipotle · official ordering menu",
+      "sourceUrl": "https://www.chipotle.com/order/build/chips-%26-sides",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-23",
+      "matchMethod": "Visual comparison with the menu item and its published description",
+      "needsPermissionReview": false
     }
   },
   "hawkers-orlando": {
@@ -646,6 +706,46 @@ export const verifiedDishPhotos = {
       "alt": "Achiote pork taco at Black Rooster Taqueria",
       "credit": "Visit Orlando · Black Rooster Achiote Pork Taco",
       "sourceUrl": "https://www.visitorlando.com/listing/black-rooster-taqueria/53404/"
+    },
+    "crispy-fish": {
+      "url": "https://media.cntraveler.com/photos/5cbe3aa5b2d77fb2876832a9/16%3A9/w_2560%2Cc_limit/Black-Rooster-Taqueria_2019_Crispy-Fish-Taco.jpg",
+      "alt": "Black Rooster crispy white fish taco on a corn tortilla, with pickled red cabbage, avocado and creamy topping, original restaurant dish image",
+      "credit": "Condé Nast Traveler · Black Rooster Crispy Fish Taco",
+      "sourceUrl": "https://www.cntraveler.com/restaurants/orlando/orlando/black-rooster-taqueria",
+      "kind": "editorial-product",
+      "reviewedAt": "2026-10-23",
+      "matchMethod": "Visual comparison with the menu item and its published description",
+      "needsPermissionReview": true
+    },
+    "carne-asada": {
+      "url": "https://media2.orlandoweekly.com/orlando/imager/u/original/2466780/brt1.jpg",
+      "alt": "Black Rooster Carne Asada beef taco with onions and cilantro, pictured at the restaurant",
+      "credit": "Orlando Weekly · Black Rooster taco review",
+      "sourceUrl": "https://www.orlandoweekly.com/food-drink/black-rooster-taqueria-ready-to-crow-2466765",
+      "kind": "editorial-product",
+      "reviewedAt": "2026-10-23",
+      "matchMethod": "Visual comparison with the menu item and its published description",
+      "needsPermissionReview": true
+    },
+    "chocolate-chipotle-flan": {
+      "url": "https://visitorlando.widen.net/content/eu9uqmscw6/jpeg/201128-dessert.jpg?color=ffffffff&crop=true&h=640&position=c&q=65&u=c4dqed&w=640",
+      "alt": "Black Rooster chocolate-chipotle flan topped with whipped cream and berry sauce, restaurant dessert",
+      "credit": "Visit Orlando · Black Rooster Chocolate Flan",
+      "sourceUrl": "https://www.visitorlando.com/listing/black-rooster-taqueria/53404/",
+      "kind": "editorial-product",
+      "reviewedAt": "2026-10-23",
+      "matchMethod": "Visual comparison with the menu item and its published description",
+      "needsPermissionReview": true
+    },
+    "chicken-tinga": {
+      "url": "https://media2.orlandoweekly.com/orlando/imager/u/original/28277049/bartlettimage-black-rooster-5288.jpg",
+      "alt": "Black Rooster chicken taco with shredded chicken, lettuce and crema; published older presentation may vary from current Chicken Tinga recipe",
+      "credit": "Orlando Weekly · Black Rooster chicken taco coverage",
+      "sourceUrl": "https://www.orlandoweekly.com/food-drink/orlandos-black-rooster-taqueria-is-opening-another-location-in-curry-ford-west-28276087",
+      "kind": "editorial-context",
+      "reviewedAt": "2026-10-23",
+      "matchMethod": "Visual comparison with the menu item and its published description",
+      "needsPermissionReview": true
     }
   },
   "mamak-colonial": {
