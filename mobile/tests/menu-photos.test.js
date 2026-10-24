@@ -13,7 +13,8 @@ test("only individually verified images appear on menu item cards", () => {
     for (const dish of dishes) {
       const photo = menuPhotoFor(dish, restaurant);
       if (photo) {
-        assert.equal(photo.exact, true);
+        assert.equal(photo.exact,
+          !/^(representative|menu-context|editorial-context)/.test(dish.imageKind || "") && !dish.imageGenerated);
         assert.ok(photo.alt && photo.credit && /^https?:\/\//.test(photo.url));
       } else {
         assert.equal(dish.imageUrl, null, `Missing item ${dish.name} erroneously has an image`);
@@ -59,7 +60,10 @@ test("Chipotle guacamole is exact but black beans cannot use a general bowl imag
   const beans = localDishes.find((dish) => dish.restaurantId === restaurant.id && dish.name === "Black Beans");
   assert.equal(menuPhotoFor(guac, restaurant).exact, true);
   assert.match(menuPhotoFor(guac, restaurant).url, /chipotle\.com/);
-  assert.equal(menuPhotoFor(beans, restaurant), null);
+  const reference = menuPhotoFor(beans, restaurant);
+  assert.ok(reference);
+  assert.equal(reference.exact, false);
+  assert.match(reference.alt, /representative/i);
 });
 
 test("cloud merging rejects generic dish photos but retains independently verified product photos", () => {
