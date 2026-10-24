@@ -50,10 +50,10 @@
       "restaurant": "Lazy Moon · Mills/50",
       "slug": "lazy-moon-mills",
       "total": 97,
-      "officialMenu": 5,
+      "officialMenu": 7,
       "editorialNamed": 3,
-      "contextual": 2,
-      "missing": 87
+      "contextual": 3,
+      "missing": 84
     }
   ],
   "notes": [
@@ -64,7 +64,8 @@
     "Third-party photo reuse rights must be confirmed before public release.",
     "Current menu images use padded contain fit; actual image sharpness and framing still require on-device review.",
     "2026-10-24 follow-up: three additional historical article-matched Mamak image references are contextual and require URL and visual inspection plus copyright permission; not approved as exact Colonial Drive servings.",
-    "2026-10-24: Added four original Lazy Moon official ordering-menu images and one historical Mamak image with item-level source and cross-location caveats. Reproduction rights and on-device framing still unapproved."
+    "2026-10-24: Added four original Lazy Moon official ordering-menu images and one historical Mamak image with item-level source and cross-location caveats. Reproduction rights and on-device framing still unapproved.",
+    "2026-10-24: More Lazy Moon same-brand product/menu photos and clearly classified editorial Caesar salad context added, not cleared for redistribution."
   ],
   "entries": [
     {
@@ -6729,10 +6730,19 @@
       "restaurantSlug": "lazy-moon-mills",
       "itemName": "Gluten Free Pizza (contains egg & dairy)",
       "description": "12\" Pizza Gluten Free Pizza with Tomato Sauce & Shredded Mozzarella",
-      "photoStatus": "missing",
-      "photo": null,
+      "photoStatus": "official-menu",
+      "photo": {
+        "url": "https://d1w7312wesee68.cloudfront.net/Y5HI6dsdYsS8AsbbbhsLTUHr9x3EJjHwMxzIbhmd3fQ/resize%3Afit%3A720%3A720/plain/s3%3A/toasttab/restaurants/restaurant-136153000000000000/menu/items/4/item-800000004396409724_1726792022.jpg",
+        "alt": "Lazy Moon 12-inch gluten-free tomato sauce and shredded mozzarella pizza pictured at UCF, with no claim of cross-contact safety; Mills/50 may differ",
+        "sourceUrl": "https://order.lazymoonpizza.com/order/lazy-moon-ucf-11551-university-blvd/item-gluten-free-pizza-contains-egg-dairy_7bc5cbb0-c0da-4fbc-bd82-eb808915cfa6",
+        "credit": "Lazy Moon UCF · official ordering menu",
+        "photoKind": "official-product",
+        "identityMethod": "Same branded named menu product; photo cannot verify ingredient or cross-contact safety, different branch, reuse rights pending",
+        "rights": "permission-review-needed",
+        "fullFoodFit": "contain"
+      },
       "reviewStatus": "needs-manual-visual-approval",
-      "nextStep": "Find a photograph of Gluten Free Pizza (contains egg & dairy) matching the menu description; otherwise create and label an illustrative reconstruction",
+      "nextStep": "Verify image host and item match on device, check full-dish framing and obtain photo redistribution permission.",
       "imageCandidateQueries": [
         "Lazy Moon · Mills/50 Gluten Free Pizza (contains egg & dairy) photo",
         "Lazy Moon · Mills/50 Gluten Free Pizza (contains egg & dairy) menu order",
@@ -6763,10 +6773,19 @@
       "restaurantSlug": "lazy-moon-mills",
       "itemName": "Tomato Bisque Soup",
       "description": "Vine-Ripened Tomaotes Simmered in Homemade Broth with Fresh Basil, Parmesan and a Dash of Cream. Includes Saltine Crackers",
-      "photoStatus": "missing",
-      "photo": null,
+      "photoStatus": "official-menu",
+      "photo": {
+        "url": "https://d1w7312wesee68.cloudfront.net/vs-s1jmhlgL8Xw2Ub6tZjrnDiJn47bKabDqh5gMxB34/resize%3Afit%3A720%3A720/plain/s3%3A/toasttab/restaurants/restaurant-194032000000000000/menu/items/2/item-800000005972071082_1722462678.jpg",
+        "alt": "Lazy Moon Tomato Bisque Soup in a white handled bowl with parmesan and crackers, pictured at the UCF location; Mills/50 may differ",
+        "sourceUrl": "https://order.toasttab.com/online/lazy-moon-ucf-11551-university-blvd/item-tomato-bisque-soup_75217d33-d9c2-4c9c-8e4d-9b1f3337aab7",
+        "credit": "Lazy Moon UCF · official ordering menu",
+        "photoKind": "official-product",
+        "identityMethod": "Named item on same-brand official ordering page, product picture and ingredients align; location and reuse rights require review",
+        "rights": "permission-review-needed",
+        "fullFoodFit": "contain"
+      },
       "reviewStatus": "needs-manual-visual-approval",
-      "nextStep": "Find a photograph of Tomato Bisque Soup matching the menu description; otherwise create and label an illustrative reconstruction",
+      "nextStep": "Verify image host and item match on device, check full-dish framing and obtain photo redistribution permission.",
       "imageCandidateQueries": [
         "Lazy Moon · Mills/50 Tomato Bisque Soup photo",
         "Lazy Moon · Mills/50 Tomato Bisque Soup menu order",
@@ -6814,10 +6833,19 @@
       "restaurantSlug": "lazy-moon-mills",
       "itemName": "Large Caesar Salad",
       "description": "Romaine, Fresh Parmesan, Focaccia Breadcrumbs, Tossed with Homemade Caesar Dressing",
-      "photoStatus": "missing",
-      "photo": null,
+      "photoStatus": "editorial-context",
+      "photo": {
+        "url": "https://www.theorlandoreal.com/uploads/agent-1/Life%20In%20Orlando/Lazy%20Moon/IMG_3283.jpg",
+        "alt": "Caesar salad photographed at Lazy Moon Mills/50 with romaine lettuce, Parmesan and croutons; current menu includes focaccia breadcrumbs and plating may differ",
+        "sourceUrl": "https://www.theorlandoreal.com/lazy-moon-in-mills-50/",
+        "credit": "The Orlando Real · Lazy Moon Mills/50 editorial coverage",
+        "photoKind": "editorial-context",
+        "identityMethod": "Same restaurant Caesar salad explicitly photographed in independent restaurant coverage; crouton/breadcrumb details not exact, rights pending",
+        "rights": "permission-review-needed",
+        "fullFoodFit": "contain"
+      },
       "reviewStatus": "needs-manual-visual-approval",
-      "nextStep": "Find a photograph of Large Caesar Salad matching the menu description; otherwise create and label an illustrative reconstruction",
+      "nextStep": "Verify image host and item match on device, check full-dish framing and obtain photo redistribution permission.",
       "imageCandidateQueries": [
         "Lazy Moon · Mills/50 Large Caesar Salad photo",
         "Lazy Moon · Mills/50 Large Caesar Salad menu order",
