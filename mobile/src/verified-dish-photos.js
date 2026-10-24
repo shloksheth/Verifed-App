@@ -1,5 +1,5 @@
-// Each image references its own dish and source; representative images remain labeled as such.
-// Photo imagery does not establish allergen safety or licensed reuse permissions.
+// Each photo is keyed to a menu dish, with source attribution and identification of representatives.
+// Ingredient images are never food allergy certifications. Some editorial sources require reuse permission.
 export const verifiedDishPhotos = {
   "loving-hut-orlando": {
     "spring-rolls-4-rolls-cha-gio": {
@@ -490,15 +490,15 @@ export const verifiedDishPhotos = {
       "needsPermissionReview": true
     },
     "fresh-tomato-salsa": {
-      "url": "https://chipotlecaloriescalculator.com/assets/chipotle-menu-prices-images/Fresh%20Tomato%20Salsa.webp",
-      "alt": "Representative Chipotle-style diced tomato fresh salsa, red onion and cilantro in individual bowl; third party not verified restaurant serving",
-      "credit": "Chipotle Calories Calculator · representative salsa",
-      "sourceUrl": "https://chipotlecaloriescalculator.com/menu-prices/single-sides/large-fresh-tomato-salsa/",
-      "kind": "representative-ingredient",
+      "url": "https://www.chipotle.com/content/dam/chipotle/menu/menu-items/cmg-1005-chips-and-salsa/web-mobile/order.png",
+      "alt": "Chipotle fresh tomato salsa in a white ramekin, surrounded by official tortilla chips; image represents a chips-and-salsa combo, not a standalone salsa serving",
+      "credit": "Chipotle · official chips and tomato salsa menu photo",
+      "sourceUrl": "https://www.chipotle.com/order/build/burrito-bowl",
+      "kind": "menu-context",
       "reviewedAt": "2026-10-23",
       "matchMethod": "Compared multiple retrieved search images with the published component name",
       "photoIdentityNote": "Illustrative or contextual image; not evidence this is the restaurant's exact plating",
-      "needsPermissionReview": true
+      "needsPermissionReview": false
     },
     "sofritas": {
       "url": "https://art.whisk.com/image/upload/fl_progressive%2Ch_560%2Cw_560%2Cc_fill%2Cdpr_2/v1686031948/recipe/0e0cf0d35b878eaa0a147faceca33ab8.jpg",
@@ -573,24 +573,25 @@ export const verifiedDishPhotos = {
       "needsPermissionReview": false
     },
     "red-chimichurri": {
-      "url": "https://publish.purewow.net/wp-content/uploads/sites/2/2025/10/chipotle-red-chimichurri-review_cat.jpg",
-      "alt": "Chipotle red chimichurri sauce served in a clear plastic side cup, photographed at restaurant with chips in background",
-      "credit": "PureWow · Chipotle Red Chimichurri review",
-      "sourceUrl": "https://www.purewow.com/food/chipotle-red-chimichurri-review",
-      "kind": "editorial-product",
+      "url": "https://www.chipotle.com/content/dam/chipotle/menu/menu-items/cmg-5410-red-chimichurri/web-mobile/order.png",
+      "alt": "Red Chimichurri sauce in a white ramekin on white background, exact Chipotle ordering image with diced garlic chilies and green herbs",
+      "credit": "Chipotle · official ordering product photo",
+      "sourceUrl": "https://www.chipotle.com/order/build/burrito-bowl",
+      "kind": "official-product",
       "reviewedAt": "2026-10-23",
       "matchMethod": "Visual and published ingredient comparison",
-      "needsPermissionReview": true
+      "needsPermissionReview": false
     },
     "crispy-corn-tortilla": {
-      "url": "https://image.chipotlenutrition.org/tacos/crispy-corn-tortilla.webp",
-      "alt": "Representative crispy folded corn taco tortilla shell on white background, visually matches shell form but not authenticated restaurant photo",
-      "credit": "Chipotle Nutrition · independent visual illustration",
-      "sourceUrl": "https://chipotlenutrition.org/menu/tacos",
+      "url": "https://images.unsplash.com/photo-1757774551171-91143e145b0a?auto=format&fit=contain&fm=jpg&q=80&w=900",
+      "alt": "Photograph of crispy golden folded corn taco shells in close-up with textured surface, illustrative rather than an official Chipotle serving",
+      "credit": "Sebastian Schuster · Unsplash food photograph",
+      "sourceUrl": "https://unsplash.com/photos/crispy-corn-taco-shells-arranged-in-a-row-LZLmnoI2OZ0",
       "kind": "representative-ingredient",
       "reviewedAt": "2026-10-23",
       "matchMethod": "Visual and published ingredient comparison",
-      "needsPermissionReview": true
+      "needsPermissionReview": false,
+      "photoIdentityNote": "Free-to-use photo of real corn shells, not restaurant-specific. Original framing is a close-up."
     },
     "taco-tortilla": {
       "url": "https://d2j6dbq0eux0bg.cloudfront.net/images/15100469/4533727335.png",
