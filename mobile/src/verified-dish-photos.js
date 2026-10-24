@@ -1710,6 +1710,46 @@ export const verifiedDishPhotos = {
       "matchMethod": "Explicit matching menu title and corresponding image alt on the first-party Mamak ordering page; visual verification and permission review outstanding",
       "reviewedAt": "2026-10-24",
       "needsPermissionReview": true
+    },
+    "roast-duck": {
+      "url": "https://image-cdn.chowlyinc.com/650%2Cfit/https%3A%2F%2Fs3.amazonaws.com%2Ftoasttab%2Fmenu_service%2Frestaurants%2Fed8b95f2-d641-4127-a0c9-772fbe849c54%2FMenuItem%2F09d2402e-9667-4593-97ba-128cd0bee742.jpg",
+      "alt": "Mamak Roast Duck pictured in Mamak's official online menu; prepared serving or appearance can change",
+      "credit": "Mamak Asian Street Food · official item image",
+      "sourceUrl": "https://www.mamakeats.com/menu/indonesian",
+      "kind": "official-product",
+      "matchMethod": "The menu page directly identifies this exact named item next to its image; full visual approval remains pending.",
+      "needsPermissionReview": true,
+      "reviewedAt": "2026-10-24"
+    },
+    "black-bean-fish": {
+      "url": "https://image-cdn.chowlyinc.com/650%2Cfit/https%3A%2F%2Fs3.amazonaws.com%2Ftoasttab%2Fmenu_service%2Frestaurants%2Fed8b95f2-d641-4127-a0c9-772fbe849c54%2FMenuItem%2F911e2870-2e71-4511-8a0f-4342f9a3296e.jpg",
+      "alt": "Mamak Black Bean Fish pictured in Mamak's official online menu; prepared serving or appearance can change",
+      "credit": "Mamak Asian Street Food · official item image",
+      "sourceUrl": "https://www.mamakeats.com/menu/indonesian",
+      "kind": "official-product",
+      "matchMethod": "The menu page directly identifies this exact named item next to its image; full visual approval remains pending.",
+      "needsPermissionReview": true,
+      "reviewedAt": "2026-10-24"
+    },
+    "stir-fried-green-beans": {
+      "url": "https://image-cdn.chowlyinc.com/650%2Cfit/https%3A%2F%2Fs3.amazonaws.com%2Ftoasttab%2Fmenu_service%2Frestaurants%2Fed8b95f2-d641-4127-a0c9-772fbe849c54%2FMenuItem%2F60c760cc-a5d0-474d-bb13-d154fb14e9d5.jpg",
+      "alt": "Mamak Stir-Fried Green Beans pictured in Mamak's official online menu; prepared serving or appearance can change",
+      "credit": "Mamak Asian Street Food · official item image",
+      "sourceUrl": "https://www.mamakeats.com/menu/indonesian",
+      "kind": "official-product",
+      "matchMethod": "The menu page directly identifies this exact named item next to its image; full visual approval remains pending.",
+      "needsPermissionReview": true,
+      "reviewedAt": "2026-10-24"
+    },
+    "pasembur-salad": {
+      "url": "https://image-cdn.chowlyinc.com/650%2Cfit/https%3A%2F%2Fs3.amazonaws.com%2Ftoasttab%2Fmenu_service%2Frestaurants%2Fed8b95f2-d641-4127-a0c9-772fbe849c54%2FMenuItem%2F57083897-d5ad-46d7-b4cb-1ec7edf51485.jpg",
+      "alt": "Mamak Pasembur Salad pictured in Mamak's official online menu; prepared serving or appearance can change",
+      "credit": "Mamak Asian Street Food · official item image",
+      "sourceUrl": "https://www.mamakeats.com/menu/indonesian",
+      "kind": "official-product",
+      "matchMethod": "The menu page directly identifies this exact named item next to its image; full visual approval remains pending.",
+      "needsPermissionReview": true,
+      "reviewedAt": "2026-10-24"
     }
   },
   "yellow-dog-eats-gotha": {
