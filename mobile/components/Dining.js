@@ -263,7 +263,7 @@ function DishPhoto({ dish, restaurant, large = false }) {
         />
       </View>
       <Text style={s.menuPhotoType} numberOfLines={1}>
-        {photo.generated ? "Illustrative image" : photo.exact ? "Dish photo" : "Restaurant photo"}
+        {photo.generated ? "AI illustration" : photo.exact ? "Dish photo" : "Representative food photo"}
       </Text>
     </View>
   );
