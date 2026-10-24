@@ -1,4 +1,4 @@
-# Menu photography and sources — Verifed V14.4
+# Menu photography and sources — Verifed V14.5
 
 Food photography is for visual identification only. It is never used to infer ingredients, allergen absence, preparation methods, or dietary safety.
 
@@ -51,3 +51,12 @@ New item-linked records were researched from Fresh Kitchen's official menu: 29 p
 This increases catalog records with item-specific source images from 267 to **307 of 1,630 active entries**. The remaining **1,323** entries have no independently matched product photograph. All 25 restaurants still have restaurant-level imagery in their menu header, but restaurant-level photography is never automatically assigned to individual items. The three venues currently lacking any verified menu-item photograph remain Seito Sushi Baldwin Park, Sparrow, and Osteria Ester. All three still have restaurant-level hero images.
 
 No automatically generated or generic stock food photograph is represented as an official product. Photo attribution is not a redistribution license; publishing externally hosted editorial photos commercially may require permission. Source URL checks only verify that an image responds, not copyright ownership, exact restaurant branch availability, or whether the product photo still matches the current recipe.
+
+
+## V14.5 — Full-photo framing and menu-item audit
+
+- All individually sourced menu photos now use `resizeMode="contain"` in the shared menu component; Taco Bell also uses it in its custom ordering-style menu. Menu images are displayed on white backgrounds with taller image frames so pizzas, bowls and tall food products remain fully visible rather than being cropped.
+- Seven new dish-photo matches have source URLs and image credits for Seito Sushi Baldwin Park (hand-made dumplings), Sparrow (Say Cheese), Reyes Mezcaleria (guacamole), Winter Park Biscuit Company (WPBC Box, pictured without every part of the combo), Mamak (Nasi Goreng Indonesia and Pad Thai), and Lazy Moon Mills 50 (Garden Grazer slice).
+- `research/menu-image-coverage-v14.5.csv` enumerates **all 1,630 active menu records**, including image status and source page. Only **314 entries currently have individually matched photos**; **1,316 still need their own verified image**. The registry contains at least one per-item image for all 25 active venues. No existing images were duplicated to conceal gaps.
+- Third-party URLs and historical photos remain subject to availability and permission. A network health test probes newly added URLs, but photo matches still require human visual verification before a claim of complete catalog coverage.
+- The source registry has no property or transformation implying that edited/generated photos are official products. Synthetic restaurant depictions must be clearly labeled as illustrations and not used as evidence of exact ingredient combinations.

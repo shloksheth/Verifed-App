@@ -31,6 +31,10 @@ jobs:
         continue-on-error: true
         working-directory: mobile
         run: node scripts/verify-photo-urls.mjs
+      - name: Check newly reviewed product image URLs
+        continue-on-error: true
+        working-directory: mobile
+        run: node scripts/verify-v14-5-photos.mjs
       - name: Check web bundle
         working-directory: mobile
         run: npx expo export --platform web --output-dir /tmp/verifed-web

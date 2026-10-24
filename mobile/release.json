@@ -1,12 +1,12 @@
 {
-  "number": 14.4,
-  "name": "Verifed V14.4",
-  "description": "Food-first restaurant imagery on every active restaurant's discovery card and menu cover. All 25 restaurants now prioritize sourced restaurant-specific food photography over interiors or logos, with a fallback to the original image when needed. Added an exact photographed Osteria Ester Spaghetti alle Vongole. Dish image matching remains strict: 308/1,630 active menu entries have verified per-item images, while other entries do not reuse arbitrary restaurant photos. GitHub-only update.",
+  "number": 14.5,
+  "name": "Verifed V14.5",
+  "description": "Improved individual restaurant menu photography with seven additional dish-specific sources, full-product photo fitting for every shared-menu image and Taco Bell, and a source-tracked audit of all 1,630 active food records. All 25 restaurants have individually sourced imagery, but only 314 dishes currently have a photo, leaving 1,316 unmatched entries. No generic dish images were reused. GitHub-only incremental release.",
   "verification": [
-    "25/25 active restaurants have sourced food cover candidates and retain a venue image fallback.",
-    "Restaurant food covers do not overwrite a dish's photo, ingredients, allergens or dietary assessment.",
-    "MICHELIN Guide restaurant photograph matched to Osteria Ester Spaghetti alle Vongole with source metadata.",
-    "External-image availability may change, and redistribution rights must be confirmed for public commercial use.",
-    "No additional Expo Snack release is requested for this incremental version."
+    "The full menu-photo audit is at research/menu-image-coverage-v14.5.csv.",
+    "Newly sourced menu photos include item-specific descriptive text and source URLs.",
+    "React Native item photos use contain instead of cover so full items remain visible; larger frames accommodate tall and wide products.",
+    "Tests check real restaurant coverage, source metadata and absence of unrelated image fallbacks.",
+    "The catalog is not fully illustrated; external asset availability and usage rights require additional verification."
   ]
 }
