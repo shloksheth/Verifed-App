@@ -1,4 +1,4 @@
-// Individual menu product photography with original source and attribution; not a food-allergen guarantee.
+// Exact restaurant and clearly labeled representative dish photos; photo is not dietary/allergen evidence.
 export const verifiedDishPhotos = {
   "loving-hut-orlando": {
     "spring-rolls-4-rolls-cha-gio": {
@@ -318,6 +318,83 @@ export const verifiedDishPhotos = {
       "alt": "Chocolate Chip Cookie pictured on Loving Hut Orlando's official online menu",
       "credit": "Loving Hut Orlando · official menu",
       "sourceUrl": "https://lovinghut.us/orlando/"
+    },
+    "small-cabbage-salad": {
+      "url": "https://images.heb.com/is/image/HEBGrocery/004426078-3",
+      "alt": "Representative cabbage and lettuce salad with shredded carrot, onion and cilantro in a white bowl. Not Loving Hut's actual plating.",
+      "credit": "H-E-B · photographed cabbage and carrot salad",
+      "sourceUrl": "https://www.heb.com/product-detail/h-e-b-chopped-salad-base-southwest-style/4426078",
+      "kind": "representative-food",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Visually checked photographed food type against named side; not authenticated Loving Hut product",
+      "needsPermissionReview": true,
+      "photoIdentityNote": "Third-party representative food photography, not the actual Loving Hut product"
+    },
+    "white-rice": {
+      "url": "https://nolocdnmsftaznua.azureedge.net/Content?ContentFile=rice_white.png&companyCode=LECH001&designId=1",
+      "alt": "Representative plain steamed white rice in a white bowl. Not a Loving Hut Orlando serving.",
+      "credit": "Leeann Chin · official white rice side photo",
+      "sourceUrl": "https://ordering.leeannchin.com/menu/product/white-rice-1-20004-30015",
+      "kind": "representative-food",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Visually checked photographed food type against named side; not authenticated Loving Hut product",
+      "needsPermissionReview": true,
+      "photoIdentityNote": "Third-party representative food photography, not the actual Loving Hut product"
+    },
+    "brown-rice": {
+      "url": "https://static-content.owner.com/funnel/images/52683b01-0e49-4d88-819b-ce9b07148318?v=5066759955",
+      "alt": "Representative plain steamed brown rice in a white bowl on white background. Not a Loving Hut serving.",
+      "credit": "My Organic Corner · brown rice side photograph",
+      "sourceUrl": "https://myorganiccorner.com/menu",
+      "kind": "representative-food",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Visually checked photographed food type against named side; not authenticated Loving Hut product",
+      "needsPermissionReview": true,
+      "photoIdentityNote": "Third-party representative food photography, not the actual Loving Hut product"
+    },
+    "rice-noodle": {
+      "url": "https://phohoaph.com/cdn/shop/products/ricenoodle_1024x1024.jpg?v=1613024953",
+      "alt": "Representative bowl of plain cooked white rice noodles. Not a Loving Hut Orlando plate.",
+      "credit": "Pho Hoa Vietnamese Noodle House · rice noodle side",
+      "sourceUrl": "https://phohoaph.com/products/19b-rice-noodles",
+      "kind": "representative-food",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Visually checked photographed food type against named side; not authenticated Loving Hut product",
+      "needsPermissionReview": true,
+      "photoIdentityNote": "Third-party representative food photography, not the actual Loving Hut product"
+    },
+    "french-fries": {
+      "url": "https://cdn.freshplantpowered.com/static_images/fresh2x/1024x768/10050015d1frl.jpg?impolicy=imgopt&imwidth=720",
+      "alt": "Representative side bowl of golden French fries, full food visible. Not a Loving Hut Orlando serving.",
+      "credit": "Fresh Plant Powered · side fries photo",
+      "sourceUrl": "https://www.freshkitchens.ca/en/menu/lunch-dinner/i111133/side-fries.html",
+      "kind": "representative-food",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Visually checked photographed food type against named side; not authenticated Loving Hut product",
+      "needsPermissionReview": true,
+      "photoIdentityNote": "Third-party representative food photography, not the actual Loving Hut product"
+    },
+    "steamed-broccoli": {
+      "url": "https://whimsyandspice.com/wp-content/uploads/2022/11/Steamed-Broccoli-.jpg",
+      "alt": "Representative bright green steamed broccoli florets arranged on a small plate. Not a Loving Hut Orlando plate.",
+      "credit": "Whimsy & Spice · steamed broccoli food photograph",
+      "sourceUrl": "https://whimsyandspice.com/vegan-cheesecake-factory-options/",
+      "kind": "representative-food",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Visually checked photographed food type against named side; not authenticated Loving Hut product",
+      "needsPermissionReview": true,
+      "photoIdentityNote": "Third-party representative food photography, not the actual Loving Hut product"
+    },
+    "steamed-vegetables": {
+      "url": "https://bamianrestaurant.com/pluto-images/2fa6f89a-910c-4912-aceb-4f8a669e141f.jpg?fit=cover&w=1920",
+      "alt": "Representative steamed broccoli, cauliflower, carrot and peppers on a white dish. Not a Loving Hut Orlando serving.",
+      "credit": "Bamian Restaurant · steamed vegetable side photograph",
+      "sourceUrl": "https://bamianrestaurant.com/",
+      "kind": "representative-food",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Visually checked photographed food type against named side; not authenticated Loving Hut product",
+      "needsPermissionReview": true,
+      "photoIdentityNote": "Third-party representative food photography, not the actual Loving Hut product"
     }
   },
   "taco-bell-south-orange": {
