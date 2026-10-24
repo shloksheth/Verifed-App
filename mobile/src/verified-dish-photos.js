@@ -1,5 +1,5 @@
-// Individually matched food photos, with explicit distinctions for representative illustrations.
-// Photo presentation is not evidence for ingredient, allergen, or restaurant availability claims.
+// Matched restaurant item photos with their original source URL and provenance.
+// Restaurant food images are not proof of allergen or dietary safety.
 export const verifiedDishPhotos = {
   "loving-hut-orlando": {
     "spring-rolls-4-rolls-cha-gio": {
@@ -1129,6 +1129,60 @@ export const verifiedDishPhotos = {
       "alt": "Kale Pesto Tomatoes photographed on Fresh Kitchen's official menu",
       "credit": "Fresh Kitchen · official food menu",
       "sourceUrl": "https://www.eatfreshkitchen.com/menu"
+    },
+    "teriyaki-salmon": {
+      "url": "https://cdn.prod.website-files.com/693842c5467272494a7d47f2/6a4fbccc1322057d836a877f_teriyaki-salmon%20(1).png",
+      "alt": "Fresh Kitchen Teriyaki Salmon pictured on restaurant official menu; product only",
+      "credit": "Fresh Kitchen · official menu photograph",
+      "sourceUrl": "https://www.eatfreshkitchen.com/menu",
+      "kind": "official-product",
+      "matchMethod": "Linked directly from the exact named menu card in Fresh Kitchen's HTML",
+      "reviewedAt": "2026-10-23"
+    },
+    "golden-char-chicken": {
+      "url": "https://cdn.prod.website-files.com/693842c5467272494a7d47f2/6a4fbde75bdf7ccde0e1442b_Golden-Char-Chicken.png",
+      "alt": "Fresh Kitchen Golden Char Chicken official protein product photograph",
+      "credit": "Fresh Kitchen · official menu photograph",
+      "sourceUrl": "https://www.eatfreshkitchen.com/menu",
+      "kind": "official-product",
+      "matchMethod": "Linked directly from the exact named menu card in Fresh Kitchen's HTML",
+      "reviewedAt": "2026-10-23"
+    },
+    "buffalo": {
+      "url": "https://cdn.prod.website-files.com/693842c5467272494a7d47f2/6aa934befc47183798b35f3b_buffalo%20sauce.avif",
+      "alt": "Fresh Kitchen Buffalo sauce as pictured on the brand menu, individual sauce",
+      "credit": "Fresh Kitchen · official menu photograph",
+      "sourceUrl": "https://www.eatfreshkitchen.com/menu",
+      "kind": "official-product",
+      "matchMethod": "Linked directly from the exact named menu card in Fresh Kitchen's HTML",
+      "reviewedAt": "2026-10-23"
+    },
+    "green-goodness": {
+      "url": "https://cdn.prod.website-files.com/693842c5467272494a7d47f2/69a2f7ac95e0bd2bc5b1b8fc_6958a2613202b977fd857e8f_Mask%20group%20(27).avif",
+      "alt": "Fresh Kitchen Green Goodness sauce product illustration from official menu",
+      "credit": "Fresh Kitchen · official menu photograph",
+      "sourceUrl": "https://www.eatfreshkitchen.com/menu",
+      "kind": "official-product",
+      "matchMethod": "Linked directly from the exact named menu card in Fresh Kitchen's HTML",
+      "reviewedAt": "2026-10-23"
+    },
+    "chocolate-chip-cookies": {
+      "url": "https://cdn.prod.website-files.com/693842c5467272494a7d47f2/69a2ff62b6c236e0112157d3_695901cbf876bb7021a10d0e_Mask%20group%20(51).avif",
+      "alt": "Fresh Kitchen Really Good Chocolate Chip Cookies shown on the restaurant's official menu",
+      "credit": "Fresh Kitchen · official menu photograph",
+      "sourceUrl": "https://www.eatfreshkitchen.com/menu",
+      "kind": "official-product",
+      "matchMethod": "Linked directly from the exact named menu card in Fresh Kitchen's HTML",
+      "reviewedAt": "2026-10-23"
+    },
+    "peanut-butter-chip-cookies": {
+      "url": "https://cdn.prod.website-files.com/693842c5467272494a7d47f2/6aa931c60933d2af876acba9_Peanut%20Butter%20Chip%20Cookies%20Mobile%20.avif",
+      "alt": "Fresh Kitchen Really Good Peanut Butter Chip Cookies photographed for the official menu",
+      "credit": "Fresh Kitchen · official menu photograph",
+      "sourceUrl": "https://www.eatfreshkitchen.com/menu",
+      "kind": "official-product",
+      "matchMethod": "Linked directly from the exact named menu card in Fresh Kitchen's HTML",
+      "reviewedAt": "2026-10-23"
     }
   },
   "reyes-mezcaleria": {
