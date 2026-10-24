@@ -131,3 +131,15 @@ test("new Lazy Moon soups, pizza and salad photo sources remain item-specific", 
     if (item.kind === "editorial-context") assert.equal(menuPhotoFor(dish, restaurant)?.exact, false);
   }
 });
+
+test("Pigzza editorial photos remain correctly contextual", () => {
+  for (const key of ["pepperoni","spicy-sausage-rigatoni"]) {
+    const entry = verifiedDishPhotos["pig-floyds-mills"]?.[key];
+    assert.equal(entry?.kind, "editorial-context", key);
+    assert.ok(entry?.sourceUrl?.startsWith("https://"));
+    assert.equal(entry.needsPermissionReview, true);
+    const dish = localDishes.find(d => d.catalogKey === "pig-floyds-mills-" + key);
+    assert.ok(dish);
+    assert.equal(menuPhotoFor(dish, localRestaurants.find(r => r.slug === "pig-floyds-mills"))?.exact, false);
+  }
+});
