@@ -4749,9 +4749,65 @@
           "width": 400,
           "height": 400,
           "bytes": 19058
+        },
+        {
+          "id": "996ae88967ad013c",
+          "origin": "sourced",
+          "kind": "research-candidate",
+          "url": "https://www.tacobell.com/images/22394_black_beans_1400x800.jpg",
+          "sourceUrl": "https://www.tacobell.com/food/sides-sweets/black-beans",
+          "credit": "Taco Bell official photo; another restaurant",
+          "alt": "Taco Bell black beans, research comparison only",
+          "status": "downloaded-unreviewed",
+          "path": "research/photo-candidates/996ae88967ad013c88fa0a24d0ce764b923758c97fe38e94bf3a8fec054188dc.webp",
+          "sha256": "52b80df1c59dc866c02e7e004c63e8c290b455b7de46788b1d4eb994e371f7f7",
+          "pixelHash": "45136d6ec0556cc2b698d0cd6c5726f2f89cd6959c854a8c05b68f140df99f24",
+          "width": 1200,
+          "height": 686,
+          "bytes": 39288
+        },
+        {
+          "id": "015080762bf21a51",
+          "origin": "sourced",
+          "kind": "research-candidate",
+          "url": "https://doordash-static.s3.amazonaws.com/media/photosV2/c30905dd-988c-439f-bf93-1ea935bdeae7-retina-large.png",
+          "sourceUrl": "https://www.doordash.com/store/moes-southwest-grill-tampa-897193/",
+          "credit": "Moe's Southwest Grill via DoorDash; another restaurant",
+          "alt": "Moe's black beans, research comparison only",
+          "status": "downloaded-unreviewed",
+          "path": "research/photo-candidates/015080762bf21a518136cebbd1a4d8314c5cb53111ac14fbbaa27a7d87348b65.webp",
+          "sha256": "4590d466ebfb97a9d9def4be2860ae72e140dbdfbb721fc2f015a6f228fbd230",
+          "pixelHash": "02db2974b500544032151832542473efdcfcde2571c2245723bb033589cda44b",
+          "width": 1200,
+          "height": 800,
+          "bytes": 97990
+        },
+        {
+          "id": "038c87c0fed503f0",
+          "origin": "sourced",
+          "kind": "research-candidate",
+          "url": "https://d1w7312wesee68.cloudfront.net/WE7zD81ODCVSVC-6AxRbrLPjhAfHmPnWxtFEpyoEMaQ/resize:fit:720:720/plain/s3:/toasttab/restaurants/restaurant-70626000000000000/menu/items/8/item-5740045804487958_1734205701.jpg",
+          "sourceUrl": "https://order.toasttab.com/online/pata-roja-tacos",
+          "credit": "Pata Roja via Toast; another restaurant",
+          "alt": "Pata Roja black beans, research comparison only",
+          "status": "downloaded-unreviewed",
+          "path": "research/photo-candidates/038c87c0fed503f08f8c99c246ba161f7b85d0da2e90ac5204e00ca17247775f.webp",
+          "sha256": "826707668b2f72b30d25464c96b7c00d19937dbea328d53ed6b2bb40520ba2fa",
+          "pixelHash": "ef103d085684739af4ead20aecbbcb279c10dac8f6b78b6861395ff6a026a09b",
+          "width": 720,
+          "height": 720,
+          "bytes": 54152
         }
       ],
-      "searchLog": [],
+      "searchLog": [
+        {
+          "query": "Chipotle black beans side cup",
+          "searchedAt": "2026-10-24T09:18:06.297245+00:00",
+          "candidateCount": 4,
+          "inspectedCandidateCount": 0,
+          "result": "Downloaded candidates await actual visual inspection; no automatic approval."
+        }
+      ],
       "review": {
         "status": "needs-replacement",
         "selectedCandidateId": null,
