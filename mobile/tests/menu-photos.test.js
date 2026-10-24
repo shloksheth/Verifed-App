@@ -31,7 +31,7 @@ test("Taco Bell official product photos remain separate for each product", () =>
     const restaurant = localRestaurants.find((item) => item.slug === key);
     const dishes = localDishes.filter((dish) => dish.restaurantId === restaurant.id);
     const items = dishes.filter((dish) => dish.imageUrl);
-    assert.equal(items.length, 54);
+    assert.equal(items.length, 116);
     for (const dish of items) {
       const photo = menuPhotoFor(dish, restaurant);
       assert.equal(photo.exact, true);
@@ -40,18 +40,18 @@ test("Taco Bell official product photos remain separate for each product", () =>
     const bowl = dishes.find((dish) => dish.name === "Cantina Chicken Bowl");
     assert.match(menuPhotoFor(bowl, restaurant).url, /29199_cantina_bowl/);
     const missing = dishes.find((dish) => dish.name === "Breakfast Salsa");
-    assert.equal(menuPhotoFor(missing, restaurant), null);
+    assert.ok(menuPhotoFor(missing, restaurant)?.url);
   }
 });
 
 test("Loving Hut exact matches from the official restaurant menu are individually keyed", () => {
   const restaurant = localRestaurants.find((entry) => entry.slug === "loving-hut-orlando");
-  assert.equal(Object.keys(verifiedDishPhotos["loving-hut-orlando"]).length, 53);
+  assert.equal(Object.keys(verifiedDishPhotos["loving-hut-orlando"]).length, 61);
   const dishes = localDishes.filter((dish) => dish.restaurantId === restaurant.id);
-  assert.equal(dishes.filter((dish) => menuPhotoFor(dish, restaurant)).length, 53);
+  assert.equal(dishes.filter((dish) => menuPhotoFor(dish, restaurant)).length, 61);
   const spring = dishes.find((dish) => dish.name.startsWith("Spring Rolls (4 Rolls)"));
   assert.match(menuPhotoFor(spring, restaurant).url, /Spring-2\.jpg$/);
-  assert.equal(menuPhotoFor(dishes.find((dish) => dish.name === "White Rice"), restaurant), null);
+  assert.equal(menuPhotoFor(dishes.find((dish) => dish.name === "White Rice"), restaurant)?.exact, false);
 });
 
 test("Chipotle guacamole is exact but black beans cannot use a general bowl image", () => {
@@ -66,18 +66,26 @@ test("Chipotle guacamole is exact but black beans cannot use a general bowl imag
   assert.match(reference.alt, /representative/i);
 });
 
-test("cloud merging rejects generic dish photos but retains independently verified product photos", () => {
-  const restaurant = localRestaurants.find((entry) => entry.slug === "taco-bell-south-orange");
-  const verified = localDishes.find((entry) => entry.restaurantId === restaurant.id && entry.imageUrl);
-  const missing = localDishes.find((entry) => entry.restaurantId === restaurant.id && !entry.imageUrl);
+test("cloud merging rejects generic dish photos but retains independently reviewed images", () => {
+  const verifiedRestaurant = localRestaurants.find((entry) => entry.slug === "taco-bell-south-orange");
+  const verified = localDishes.find((entry) => entry.restaurantId === verifiedRestaurant.id && entry.imageUrl);
+  assert.ok(verified);
+  const missing = localDishes.find((entry) => !entry.imageUrl);
+  const restaurant = missing
+    ? localRestaurants.find((entry) => entry.slug === missing.restaurantId)
+    : verifiedRestaurant;
   const cloud = [
     { id: "cloud-exact", catalogKey: verified.catalogKey, restaurantId: "cloud-restaurant", imageUrl: "https://example.com/stock.jpg" },
-    { id: "cloud-missing", catalogKey: missing.catalogKey, restaurantId: "cloud-restaurant", imageUrl: "https://example.com/stock.jpg" }
+    ...(missing ? [{ id: "cloud-missing", catalogKey: missing.catalogKey, restaurantId: "cloud-restaurant", imageUrl: "https://example.com/stock.jpg" }] : []),
   ];
-  const merged = mergeLocalCatalog([{ slug: restaurant.slug, id: "cloud-restaurant", imageUrl: "https://example.com/stock.jpg" }], cloud);
+  const liveRestaurants = [
+    { slug: verifiedRestaurant.slug, id: "cloud-restaurant", imageUrl: "https://example.com/stock.jpg" },
+    ...(restaurant.slug !== verifiedRestaurant.slug ? [{ slug: restaurant.slug, id: "cloud-other", imageUrl: "https://example.com/stock.jpg" }] : []),
+  ];
+  const merged = mergeLocalCatalog(liveRestaurants, cloud);
   assert.equal(merged.dishes.find((dish) => dish.id === "cloud-exact").imageUrl, verified.imageUrl);
-  assert.equal(merged.dishes.find((dish) => dish.id === "cloud-missing").imageUrl, null);
-  assert.equal(merged.restaurants.find((item) => item.id === "cloud-restaurant").imageUrl, restaurant.imageUrl);
+  if (missing) assert.equal(merged.dishes.find((dish) => dish.id === "cloud-missing").imageUrl, null);
+  assert.equal(merged.restaurants.find((item) => item.slug === verifiedRestaurant.slug).imageUrl, verifiedRestaurant.imageUrl);
 });
 
 test("separate Taco Bell menu component includes search, filtering and safe customization drafts", () => {

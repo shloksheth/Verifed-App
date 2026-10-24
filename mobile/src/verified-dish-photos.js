@@ -1,5 +1,5 @@
-// Menu item photography with credit and explicit labels for other-branch/representative images.
-// Images do not certify allergy safety or grant reproduction rights.
+// Menu item photographs with item-level source credit; representative images are not exact menu photos.
+// Image appearance alone does not establish allergen or dietary safety. Check image rights before public deployment.
 export const verifiedDishPhotos = {
   "loving-hut-orlando": {
     "spring-rolls-4-rolls-cha-gio": {
@@ -319,6 +319,93 @@ export const verifiedDishPhotos = {
       "alt": "Chocolate Chip Cookie pictured on Loving Hut Orlando's official online menu",
       "credit": "Loving Hut Orlando · official menu",
       "sourceUrl": "https://lovinghut.us/orlando/"
+    },
+    "small-cabbage-salad": {
+      "url": "https://images.heb.com/is/image/HEBGrocery/004426078-3",
+      "alt": "Representative cabbage and lettuce salad with shredded carrot, onion and cilantro in a white bowl. Not Loving Hut's actual plating.",
+      "credit": "H-E-B · photographed cabbage and carrot salad",
+      "sourceUrl": "https://www.heb.com/product-detail/h-e-b-chopped-salad-base-southwest-style/4426078",
+      "kind": "representative-food",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Visually checked photographed food type against named side; not authenticated Loving Hut product",
+      "needsPermissionReview": true,
+      "photoIdentityNote": "Third-party representative food photography, not the actual Loving Hut product"
+    },
+    "white-rice": {
+      "url": "https://nolocdnmsftaznua.azureedge.net/Content?ContentFile=rice_white.png&companyCode=LECH001&designId=1",
+      "alt": "Representative plain steamed white rice in a white bowl. Not a Loving Hut Orlando serving.",
+      "credit": "Leeann Chin · official white rice side photo",
+      "sourceUrl": "https://ordering.leeannchin.com/menu/product/white-rice-1-20004-30015",
+      "kind": "representative-food",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Visually checked photographed food type against named side; not authenticated Loving Hut product",
+      "needsPermissionReview": true,
+      "photoIdentityNote": "Third-party representative food photography, not the actual Loving Hut product"
+    },
+    "brown-rice": {
+      "url": "https://static-content.owner.com/funnel/images/52683b01-0e49-4d88-819b-ce9b07148318?v=5066759955",
+      "alt": "Representative plain steamed brown rice in a white bowl on white background. Not a Loving Hut serving.",
+      "credit": "My Organic Corner · brown rice side photograph",
+      "sourceUrl": "https://myorganiccorner.com/menu",
+      "kind": "representative-food",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Visually checked photographed food type against named side; not authenticated Loving Hut product",
+      "needsPermissionReview": true,
+      "photoIdentityNote": "Third-party representative food photography, not the actual Loving Hut product"
+    },
+    "rice-noodle": {
+      "url": "https://phohoaph.com/cdn/shop/products/ricenoodle_1024x1024.jpg?v=1613024953",
+      "alt": "Representative bowl of plain cooked white rice noodles. Not a Loving Hut Orlando plate.",
+      "credit": "Pho Hoa Vietnamese Noodle House · rice noodle side",
+      "sourceUrl": "https://phohoaph.com/products/19b-rice-noodles",
+      "kind": "representative-food",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Visually checked photographed food type against named side; not authenticated Loving Hut product",
+      "needsPermissionReview": true,
+      "photoIdentityNote": "Third-party representative food photography, not the actual Loving Hut product"
+    },
+    "french-fries": {
+      "url": "https://storage.emenu.delivery/product/images/d9/pp/d9ppg-66llsetfallitgkwrbcixoohiu.jpg",
+      "alt": "Representative bowl of plain golden French fries on white background, fully visible; not an actual Loving Hut Orlando side.",
+      "credit": "More Vkusa · restaurant side fries photography",
+      "sourceUrl": "https://emenu.delivery/karaganda/restoran/more_vkusa_krg",
+      "kind": "representative-food",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Visually checked photographed food type against named side; not authenticated Loving Hut product",
+      "needsPermissionReview": true,
+      "photoIdentityNote": "Third-party representative food photography, not the actual Loving Hut product"
+    },
+    "steamed-broccoli": {
+      "url": "https://whimsyandspice.com/wp-content/uploads/2022/11/Steamed-Broccoli-.jpg",
+      "alt": "Representative bright green steamed broccoli florets arranged on a small plate. Not a Loving Hut Orlando plate.",
+      "credit": "Whimsy & Spice · steamed broccoli food photograph",
+      "sourceUrl": "https://whimsyandspice.com/vegan-cheesecake-factory-options/",
+      "kind": "representative-food",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Visually checked photographed food type against named side; not authenticated Loving Hut product",
+      "needsPermissionReview": true,
+      "photoIdentityNote": "Third-party representative food photography, not the actual Loving Hut product"
+    },
+    "steamed-vegetables": {
+      "url": "https://bamianrestaurant.com/pluto-images/2fa6f89a-910c-4912-aceb-4f8a669e141f.jpg?fit=cover&w=1920",
+      "alt": "Representative steamed broccoli, cauliflower, carrot and peppers on a white dish. Not a Loving Hut Orlando serving.",
+      "credit": "Bamian Restaurant · steamed vegetable side photograph",
+      "sourceUrl": "https://bamianrestaurant.com/",
+      "kind": "representative-food",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Visually checked photographed food type against named side; not authenticated Loving Hut product",
+      "needsPermissionReview": true,
+      "photoIdentityNote": "Third-party representative food photography, not the actual Loving Hut product"
+    },
+    "yellow-rice": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Yellow_rice.jpg",
+      "alt": "Representative photograph of yellow rice, not an official Loving Hut side or proof of the recipe",
+      "credit": "ReshmaNazeerhussain · Wikimedia Commons CC0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Yellow_rice.jpg",
+      "kind": "representative-food",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Matched publicly licensed food subject to named rice side; actual plating not confirmed.",
+      "needsPermissionReview": false
     }
   },
   "taco-bell-south-orange": {
@@ -327,6 +414,564 @@ export const verifiedDishPhotos = {
       "alt": "Official Taco Bell Cantina Chicken Bowl product photo",
       "credit": "Taco Bell · official menu",
       "sourceUrl": "https://www.tacobell.com/food/bowls"
+    },
+    "cheesy-toasted-breakfast-burrito-bacon": {
+      "url": "https://www.tacobell.com/images/30179_cheesy_toasted_burrito_bacon_269x269.jpg",
+      "alt": "Taco Bell Cheesy Toasted Breakfast Burrito Bacon, official Taco Bell menu product image, complete product in frame",
+      "credit": "Taco Bell · official online product menu",
+      "sourceUrl": "https://www.tacobell.com/food/breakfast",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Matched product name to image alt text and direct image src on official product category menu."
+    },
+    "cheesy-toasted-breakfast-burrito-potato": {
+      "url": "https://www.tacobell.com/images/30181_cheesy_toasted_burrito_fiesta_potato_269x269.jpg",
+      "alt": "Taco Bell Cheesy Toasted Breakfast Burrito Potato, official Taco Bell menu product image, complete product in frame",
+      "credit": "Taco Bell · official online product menu",
+      "sourceUrl": "https://www.tacobell.com/food/breakfast",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Matched product name to image alt text and direct image src on official product category menu."
+    },
+    "grande-toasted-breakfast-burrito-steak": {
+      "url": "https://www.tacobell.com/images/30187_grande_toasted_burrito_steak_269x269.jpg",
+      "alt": "Taco Bell Grande Toasted Breakfast Burrito Steak, official Taco Bell menu product image, complete product in frame",
+      "credit": "Taco Bell · official online product menu",
+      "sourceUrl": "https://www.tacobell.com/food/breakfast",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Matched product name to image alt text and direct image src on official product category menu."
+    },
+    "grande-toasted-breakfast-burrito-bacon": {
+      "url": "https://www.tacobell.com/images/30185_grande_toasted_burrito_bacon_269x269.jpg",
+      "alt": "Taco Bell Grande Toasted Breakfast Burrito Bacon, official Taco Bell menu product image, complete product in frame",
+      "credit": "Taco Bell · official online product menu",
+      "sourceUrl": "https://www.tacobell.com/food/breakfast",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Matched product name to image alt text and direct image src on official product category menu."
+    },
+    "breakfast-quesadilla-bacon": {
+      "url": "https://www.tacobell.com/images/30151_breakfast_quesadilla_269x269.jpg",
+      "alt": "Taco Bell Breakfast Quesadilla Bacon, official Taco Bell menu product image, complete product in frame",
+      "credit": "Taco Bell · official online product menu",
+      "sourceUrl": "https://www.tacobell.com/food/breakfast",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Matched product name to image alt text and direct image src on official product category menu."
+    },
+    "breakfast-quesadilla-steak": {
+      "url": "https://www.tacobell.com/images/30153_breakfast_quesadilla_steak_269x269.jpg",
+      "alt": "Taco Bell Breakfast Quesadilla Steak, official Taco Bell menu product image, complete product in frame",
+      "credit": "Taco Bell · official online product menu",
+      "sourceUrl": "https://www.tacobell.com/food/breakfast",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Matched product name to image alt text and direct image src on official product category menu."
+    },
+    "breakfast-california-crunchwrap": {
+      "url": "https://www.tacobell.com/images/30093_breakfast_crunchwrap_california_269x269.jpg",
+      "alt": "Taco Bell Breakfast California Crunchwrap, official Taco Bell menu product image, complete product in frame",
+      "credit": "Taco Bell · official online product menu",
+      "sourceUrl": "https://www.tacobell.com/food/breakfast",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Matched product name to image alt text and direct image src on official product category menu."
+    },
+    "breakfast-crunchwrap-bacon": {
+      "url": "https://www.tacobell.com/images/30029_breakfast_crunchwrap_269x269.jpg",
+      "alt": "Taco Bell Breakfast Crunchwrap Bacon, official Taco Bell menu product image, complete product in frame",
+      "credit": "Taco Bell · official online product menu",
+      "sourceUrl": "https://www.tacobell.com/food/breakfast",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Matched product name to image alt text and direct image src on official product category menu."
+    },
+    "breakfast-crunchwrap-combo": {
+      "url": "https://www.tacobell.com/images/32031_breakfast_crunchwrap_combo_269x269.jpg",
+      "alt": "Taco Bell Breakfast Crunchwrap Combo, official Taco Bell menu product image, complete product in frame",
+      "credit": "Taco Bell · official online product menu",
+      "sourceUrl": "https://www.tacobell.com/food/breakfast",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Matched product name to image alt text and direct image src on official product category menu."
+    },
+    "hash-brown": {
+      "url": "https://www.tacobell.com/images/30017_hash_brown_269x269.jpg",
+      "alt": "Taco Bell Hash Brown, official Taco Bell menu product image, complete product in frame",
+      "credit": "Taco Bell · official online product menu",
+      "sourceUrl": "https://www.tacobell.com/food/breakfast",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Matched product name to image alt text and direct image src on official product category menu."
+    },
+    "breakfast-salsa": {
+      "url": "https://www.tacobell.com/images/2633_breakfast_salsa_269x269.jpg",
+      "alt": "Taco Bell Breakfast Salsa, official Taco Bell menu product image, complete product in frame",
+      "credit": "Taco Bell · official online product menu",
+      "sourceUrl": "https://www.tacobell.com/food/breakfast",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Matched product name to image alt text and direct image src on official product category menu."
+    },
+    "nachos-bellgrande": {
+      "url": "https://www.tacobell.com/images/22502_nachos_bellgrande_269x269.jpg",
+      "alt": "Taco Bell Nachos BellGrande, official Taco Bell menu product image, complete product in frame",
+      "credit": "Taco Bell · official online product menu",
+      "sourceUrl": "https://www.tacobell.com/food/nachos",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Matched product name to image alt text and direct image src on official product category menu."
+    },
+    "chips-and-nacho-supreme-dip": {
+      "url": "https://www.tacobell.com/images/25509_chips_and_nacho_supreme_dip_new_269x269.jpg",
+      "alt": "Taco Bell Chips and Nacho Supreme Dip, official Taco Bell menu product image, complete product in frame",
+      "credit": "Taco Bell · official online product menu",
+      "sourceUrl": "https://www.tacobell.com/food/nachos",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Matched product name to image alt text and direct image src on official product category menu."
+    },
+    "cantina-chicken-rolled-quesadilla": {
+      "url": "https://www.tacobell.com/images/29158_new_cantina_chicken_rolled_quesadilla_269x269.jpg",
+      "alt": "Cantina Chicken Rolled Quesadilla, product image from Taco Bell's official quesadillas menu. Food and included sides shown as pictured by Taco Bell.",
+      "credit": "Taco Bell · official online ordering menu",
+      "sourceUrl": "https://www.tacobell.com/food/quesadillas",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact normalized menu item name matched to product image alt and official image URL on Taco Bell category page."
+    },
+    "chicken-quesadilla": {
+      "url": "https://www.tacobell.com/images/22321_quesadilla_269x269.jpg",
+      "alt": "Chicken Quesadilla, product image from Taco Bell's official quesadillas menu. Food and included sides shown as pictured by Taco Bell.",
+      "credit": "Taco Bell · official online ordering menu",
+      "sourceUrl": "https://www.tacobell.com/food/quesadillas",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact normalized menu item name matched to product image alt and official image URL on Taco Bell category page."
+    },
+    "steak-quesadilla": {
+      "url": "https://www.tacobell.com/images/22322_steak_quesadilla_269x269.jpg",
+      "alt": "Steak Quesadilla, product image from Taco Bell's official quesadillas menu. Food and included sides shown as pictured by Taco Bell.",
+      "credit": "Taco Bell · official online ordering menu",
+      "sourceUrl": "https://www.tacobell.com/food/quesadillas",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact normalized menu item name matched to product image alt and official image URL on Taco Bell category page."
+    },
+    "discovery-luxe-box": {
+      "url": "https://www.tacobell.com/images/24589_discovery_luxe_box_269x269.jpg",
+      "alt": "Discovery Luxe Box, product image from Taco Bell's official deals-and-combos menu. Food and included sides shown as pictured by Taco Bell.",
+      "credit": "Taco Bell · official online ordering menu",
+      "sourceUrl": "https://www.tacobell.com/food/deals-and-combos",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact normalized menu item name matched to product image alt and official image URL on Taco Bell category page."
+    },
+    "crispy-chicken-nuggets-deluxe-combo": {
+      "url": "https://www.tacobell.com/images/29393_crispy_new_chicken_nuggets_deluxe_combo_269x269.jpg",
+      "alt": "Crispy Chicken Nuggets Deluxe Combo, product image from Taco Bell's official deals-and-combos menu. Food and included sides shown as pictured by Taco Bell.",
+      "credit": "Taco Bell · official online ordering menu",
+      "sourceUrl": "https://www.tacobell.com/food/deals-and-combos",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact normalized menu item name matched to product image alt and official image URL on Taco Bell category page."
+    },
+    "10-piece-crispy-chicken-nuggets-combo": {
+      "url": "https://www.tacobell.com/images/29409_10_piece_new_crispy_chicken_nuggets_combo_269x269.jpg",
+      "alt": "10 Piece Crispy Chicken Nuggets Combo, product image from Taco Bell's official deals-and-combos menu. Food and included sides shown as pictured by Taco Bell.",
+      "credit": "Taco Bell · official online ordering menu",
+      "sourceUrl": "https://www.tacobell.com/food/deals-and-combos",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact normalized menu item name matched to product image alt and official image URL on Taco Bell category page."
+    },
+    "build-your-own-luxe-cravings-box": {
+      "url": "https://www.tacobell.com/images/23551_build_your_own_luxe_box_new_269x269.jpg",
+      "alt": "Build Your Own Luxe Cravings Box, product image from Taco Bell's official deals-and-combos menu. Food and included sides shown as pictured by Taco Bell.",
+      "credit": "Taco Bell · official online ordering menu",
+      "sourceUrl": "https://www.tacobell.com/food/deals-and-combos",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact normalized menu item name matched to product image alt and official image URL on Taco Bell category page."
+    },
+    "cantina-chicken-crispy-taco-combo": {
+      "url": "https://www.tacobell.com/images/23478_cantina_chicken_crispy_taco_combo_new_269x269.jpg",
+      "alt": "Cantina Chicken Crispy Taco Combo, product image from Taco Bell's official deals-and-combos menu. Food and included sides shown as pictured by Taco Bell.",
+      "credit": "Taco Bell · official online ordering menu",
+      "sourceUrl": "https://www.tacobell.com/food/deals-and-combos",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact normalized menu item name matched to product image alt and official image URL on Taco Bell category page."
+    },
+    "cantina-chicken-burrito-combo": {
+      "url": "https://www.tacobell.com/images/23479_cantina_chicken_burrito_combo_new_269x269.jpg",
+      "alt": "Cantina Chicken Burrito Combo, product image from Taco Bell's official deals-and-combos menu. Food and included sides shown as pictured by Taco Bell.",
+      "credit": "Taco Bell · official online ordering menu",
+      "sourceUrl": "https://www.tacobell.com/food/deals-and-combos",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact normalized menu item name matched to product image alt and official image URL on Taco Bell category page."
+    },
+    "cantina-chicken-rolled-quesadilla-combo": {
+      "url": "https://www.tacobell.com/images/29159_cantina_chicken_rolled_quesadilla_combo_269x269.jpg",
+      "alt": "Cantina Chicken Rolled Quesadilla Combo, product image from Taco Bell's official deals-and-combos menu. Food and included sides shown as pictured by Taco Bell.",
+      "credit": "Taco Bell · official online ordering menu",
+      "sourceUrl": "https://www.tacobell.com/food/deals-and-combos",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact normalized menu item name matched to product image alt and official image URL on Taco Bell category page."
+    },
+    "mexican-pizza-combo": {
+      "url": "https://www.tacobell.com/images/22604_mexican_pizza_combo_269x269.jpg",
+      "alt": "Mexican Pizza Combo, product image from Taco Bell's official deals-and-combos menu. Food and included sides shown as pictured by Taco Bell.",
+      "credit": "Taco Bell · official online ordering menu",
+      "sourceUrl": "https://www.tacobell.com/food/deals-and-combos",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact normalized menu item name matched to product image alt and official image URL on Taco Bell category page."
+    },
+    "chicken-quesadilla-combo": {
+      "url": "https://www.tacobell.com/images/22607_chicken_quesadilla_combo_269x269.jpg",
+      "alt": "Chicken Quesadilla Combo, product image from Taco Bell's official deals-and-combos menu. Food and included sides shown as pictured by Taco Bell.",
+      "credit": "Taco Bell · official online ordering menu",
+      "sourceUrl": "https://www.tacobell.com/food/deals-and-combos",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact normalized menu item name matched to product image alt and official image URL on Taco Bell category page."
+    },
+    "2-chicken-chalupas-supreme-combo": {
+      "url": "https://www.tacobell.com/images/23760_2_chicken_chalupas_supreme_combo_269x269.jpg",
+      "alt": "2 Chicken Chalupas Supreme Combo, product image from Taco Bell's official deals-and-combos menu. Food and included sides shown as pictured by Taco Bell.",
+      "credit": "Taco Bell · official online ordering menu",
+      "sourceUrl": "https://www.tacobell.com/food/deals-and-combos",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact normalized menu item name matched to product image alt and official image URL on Taco Bell category page."
+    },
+    "crunchwrap-supreme-combo": {
+      "url": "https://www.tacobell.com/images/22609_crunchwrap_supreme_combo_269x269.jpg",
+      "alt": "Crunchwrap Supreme Combo, product image from Taco Bell's official deals-and-combos menu. Food and included sides shown as pictured by Taco Bell.",
+      "credit": "Taco Bell · official online ordering menu",
+      "sourceUrl": "https://www.tacobell.com/food/deals-and-combos",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact normalized menu item name matched to product image alt and official image URL on Taco Bell category page."
+    },
+    "3-crunchy-tacos-combo": {
+      "url": "https://www.tacobell.com/images/22608_crunchy_tacos_combo_269x269.jpg",
+      "alt": "3 Crunchy Tacos Combo, product image from Taco Bell's official deals-and-combos menu. Food and included sides shown as pictured by Taco Bell.",
+      "credit": "Taco Bell · official online ordering menu",
+      "sourceUrl": "https://www.tacobell.com/food/deals-and-combos",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact normalized menu item name matched to product image alt and official image URL on Taco Bell category page."
+    },
+    "3-crunchy-tacos-supreme-combo": {
+      "url": "https://www.tacobell.com/images/22603_crunchy_tacos_supreme_combo_269x269.jpg",
+      "alt": "3 Crunchy Tacos Supreme Combo, product image from Taco Bell's official deals-and-combos menu. Food and included sides shown as pictured by Taco Bell.",
+      "credit": "Taco Bell · official online ordering menu",
+      "sourceUrl": "https://www.tacobell.com/food/deals-and-combos",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact normalized menu item name matched to product image alt and official image URL on Taco Bell category page."
+    },
+    "3-doritos-locos-tacos-combo": {
+      "url": "https://www.tacobell.com/images/22637_3_doritos_locos_tacos_combo_new_269x269.jpg",
+      "alt": "3 Doritos Locos Tacos Combo, product image from Taco Bell's official deals-and-combos menu. Food and included sides shown as pictured by Taco Bell.",
+      "credit": "Taco Bell · official online ordering menu",
+      "sourceUrl": "https://www.tacobell.com/food/deals-and-combos",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact normalized menu item name matched to product image alt and official image URL on Taco Bell category page."
+    },
+    "3-doritos-locos-tacos-supreme-combo": {
+      "url": "https://www.tacobell.com/images/22701_3_doritos_locos_tacos_supreme_combo_alt_269x269.jpg",
+      "alt": "3 Doritos Locos Tacos Supreme Combo, product image from Taco Bell's official deals-and-combos menu. Food and included sides shown as pictured by Taco Bell.",
+      "credit": "Taco Bell · official online ordering menu",
+      "sourceUrl": "https://www.tacobell.com/food/deals-and-combos",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact normalized menu item name matched to product image alt and official image URL on Taco Bell category page."
+    },
+    "supreme-luxe-box": {
+      "url": "https://www.tacobell.com/images/27276_supreme_luxe_box_269x269.jpg",
+      "alt": "Supreme Luxe Box, product image from Taco Bell's official deals-and-combos menu. Food and included sides shown as pictured by Taco Bell.",
+      "credit": "Taco Bell · official online ordering menu",
+      "sourceUrl": "https://www.tacobell.com/food/deals-and-combos",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact normalized menu item name matched to product image alt and official image URL on Taco Bell category page."
+    },
+    "classic-luxe-box": {
+      "url": "https://www.tacobell.com/images/27272_classic_luxe_box_269x269.jpg",
+      "alt": "Classic Luxe Box, product image from Taco Bell's official deals-and-combos menu. Food and included sides shown as pictured by Taco Bell.",
+      "credit": "Taco Bell · official online ordering menu",
+      "sourceUrl": "https://www.tacobell.com/food/deals-and-combos",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact normalized menu item name matched to product image alt and official image URL on Taco Bell category page."
+    },
+    "meal-for-2": {
+      "url": "https://www.tacobell.com/images/23218_meal_for_2_750x340.jpg",
+      "alt": "Meal for 2, product image from Taco Bell's official online-exclusives menu. Food and included sides shown as pictured by Taco Bell.",
+      "credit": "Taco Bell · official online ordering menu",
+      "sourceUrl": "https://www.tacobell.com/food/online-exclusives",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact normalized menu item name matched to product image alt and official image URL on Taco Bell category page."
+    },
+    "meal-for-4": {
+      "url": "https://www.tacobell.com/images/23220_variety_cravings_meal_750x340.jpg",
+      "alt": "Meal for 4, product image from Taco Bell's official online-exclusives menu. Food and included sides shown as pictured by Taco Bell.",
+      "credit": "Taco Bell · official online ordering menu",
+      "sourceUrl": "https://www.tacobell.com/food/online-exclusives",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact normalized menu item name matched to product image alt and official image URL on Taco Bell category page."
+    },
+    "avocado-verde-salsa-sauce-packet": {
+      "url": "https://www.tacobell.com/images/23476_new_avocado_verde_salsa_sauce_packet_269x269.jpg",
+      "alt": "Avocado Verde Salsa Sauce Packet, product image from Taco Bell's official cantina-chicken-menu menu. Food and included sides shown as pictured by Taco Bell.",
+      "credit": "Taco Bell · official online ordering menu",
+      "sourceUrl": "https://www.tacobell.com/food/cantina-chicken-menu",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact normalized menu item name matched to product image alt and official image URL on Taco Bell category page."
+    },
+    "doritos-locos-taco-party-pack": {
+      "url": "https://www.tacobell.com/images/25990_doritos_locos_taco_party_pack_750x340.jpg",
+      "alt": "Doritos Locos Taco Party Pack, product image from Taco Bell's official featured menu. Food and included sides shown as pictured by Taco Bell.",
+      "credit": "Taco Bell · official online ordering menu",
+      "sourceUrl": "https://www.tacobell.com/food/featured",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact normalized menu item name matched to product image alt and official image URL on Taco Bell category page."
+    },
+    "supreme-doritos-locos-taco-party-pack": {
+      "url": "https://www.tacobell.com/images/25991_supreme_doritos_locos_party_pack_750x340.jpg",
+      "alt": "Supreme Doritos Locos Taco Party Pack, product image from Taco Bell's official featured menu. Food and included sides shown as pictured by Taco Bell.",
+      "credit": "Taco Bell · official online ordering menu",
+      "sourceUrl": "https://www.tacobell.com/food/featured",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact normalized menu item name matched to product image alt and official image URL on Taco Bell category page."
+    },
+    "chili": {
+      "url": "https://www.tacobell.com/images/2420_chili_269x269.jpg",
+      "alt": "Official Chili menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "mild-sauce-packet": {
+      "url": "https://www.tacobell.com/images/22763_mild_sauce_packet_269x269.jpg",
+      "alt": "Official Mild Sauce Packet menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "hot-sauce-packet": {
+      "url": "https://www.tacobell.com/images/22760_hot_sauce_packet_269x269.jpg",
+      "alt": "Official Hot Sauce Packet menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "fire-sauce-packet": {
+      "url": "https://www.tacobell.com/images/22759_fire_sauce_packet_269x269.jpg",
+      "alt": "Official Fire Sauce Packet menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "diablo-sauce-packet": {
+      "url": "https://www.tacobell.com/images/22765_diablo_sauce_packet_269x269.jpg",
+      "alt": "Official Diablo Sauce Packet menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "creamy-sriracha-sauce": {
+      "url": "https://www.tacobell.com/images/8087_creamy_sriracha_sauce_269x269.jpg",
+      "alt": "Official Creamy Sriracha Sauce menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "jalapeno-peppers": {
+      "url": "https://www.tacobell.com/images/2115_jalapeno_peppers_269x269.jpg",
+      "alt": "Official Jalapeño Peppers menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "nacho-cheese-sauce": {
+      "url": "https://www.tacobell.com/images/2253_nacho_cheese_sauce_269x269.jpg",
+      "alt": "Official Nacho Cheese Sauce menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "reduced-fat-sour-cream": {
+      "url": "https://www.tacobell.com/images/2053_reduced_fat_sour_cream_269x269.jpg",
+      "alt": "Official Reduced-Fat Sour Cream menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "creamy-jalapeno-sauce": {
+      "url": "https://www.tacobell.com/images/2240_creamy_jalapeno_sauce_269x269.jpg",
+      "alt": "Official Creamy Jalapeño Sauce menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "guacamole": {
+      "url": "https://www.tacobell.com/images/2063_guacamole_269x269.jpg",
+      "alt": "Official Guacamole menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "chipotle-sauce": {
+      "url": "https://www.tacobell.com/images/2323_chipotle_sauce_269x269.jpg",
+      "alt": "Official Chipotle Sauce menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "avocado-ranch-sauce": {
+      "url": "https://www.tacobell.com/images/2383_avocado_ranch_sauce_269x269.jpg",
+      "alt": "Official Avocado Ranch Sauce menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "spicy-ranch": {
+      "url": "https://www.tacobell.com/images/2519_spicy_ranch_269x269.jpg",
+      "alt": "Official Spicy Ranch menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "red-sauce": {
+      "url": "https://www.tacobell.com/images/2148_red_sauce_269x269.jpg",
+      "alt": "Official Red Sauce menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "mexican-pizza-sauce": {
+      "url": "https://www.tacobell.com/images/2370_mexican_pizza_sauce_269x269.jpg",
+      "alt": "Official Mexican Pizza Sauce menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "taco-burrito-cravings-pack": {
+      "url": "https://www.tacobell.com/images/60528_taco_and_burrito_pack_750x340.jpg",
+      "alt": "Official Taco & Burrito Cravings Pack menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/party-packs",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "taco-party-pack": {
+      "url": "https://www.tacobell.com/images/22189_taco_12_pack_750x340.jpg",
+      "alt": "Official Taco Party Pack menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/party-packs",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "supreme-taco-party-pack": {
+      "url": "https://www.tacobell.com/images/21200_supreme_taco_party_pack_750x340.jpg",
+      "alt": "Official Supreme Taco Party Pack menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/party-packs",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "soft-taco-party-pack": {
+      "url": "https://www.tacobell.com/images/22187_soft_taco_party_pack_750x340.jpg",
+      "alt": "Official Soft Taco Party Pack menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/party-packs",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "supreme-soft-taco-party-pack": {
+      "url": "https://www.tacobell.com/images/21201_soft_taco_supreme_party_pack_750x340.jpg",
+      "alt": "Official Supreme Soft Taco Party Pack menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/party-packs",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "variety-taco-party-pack": {
+      "url": "https://www.tacobell.com/images/22119_variety_taco_12_pack_750x340.jpg",
+      "alt": "Official Variety Taco Party Pack menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/party-packs",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "supreme-variety-taco-party-pack": {
+      "url": "https://www.tacobell.com/images/21202_supreme_variety_pack_750x340.jpg",
+      "alt": "Official Supreme Variety Taco Party Pack menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/party-packs",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "paris-hilton-s-usual": {
+      "url": "https://www.tacobell.com/images/28943_hilton_usual_750x340.jpg",
+      "alt": "Paris Hilton’s Usual combo: Diablo Ranch Crispy Chicken Crunchwrap Slider, Crunchy Taco and medium fountain drink, pictured together in Taco Bell's official menu photo",
+      "credit": "Taco Bell · official product combo",
+      "sourceUrl": "https://www.tacobell.com/food/deals-and-combos/paris-hiltons-usual",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Matched official Taco Bell JSON product record and productImageUrl for the specific named combo."
     }
   },
   "taco-bell-east-colonial": {
@@ -335,6 +980,564 @@ export const verifiedDishPhotos = {
       "alt": "Official Taco Bell Cantina Chicken Bowl product photo",
       "credit": "Taco Bell · official menu",
       "sourceUrl": "https://www.tacobell.com/food/bowls"
+    },
+    "cheesy-toasted-breakfast-burrito-bacon": {
+      "url": "https://www.tacobell.com/images/30179_cheesy_toasted_burrito_bacon_269x269.jpg",
+      "alt": "Taco Bell Cheesy Toasted Breakfast Burrito Bacon, official Taco Bell menu product image, complete product in frame",
+      "credit": "Taco Bell · official online product menu",
+      "sourceUrl": "https://www.tacobell.com/food/breakfast",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Matched product name to image alt text and direct image src on official product category menu."
+    },
+    "cheesy-toasted-breakfast-burrito-potato": {
+      "url": "https://www.tacobell.com/images/30181_cheesy_toasted_burrito_fiesta_potato_269x269.jpg",
+      "alt": "Taco Bell Cheesy Toasted Breakfast Burrito Potato, official Taco Bell menu product image, complete product in frame",
+      "credit": "Taco Bell · official online product menu",
+      "sourceUrl": "https://www.tacobell.com/food/breakfast",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Matched product name to image alt text and direct image src on official product category menu."
+    },
+    "grande-toasted-breakfast-burrito-steak": {
+      "url": "https://www.tacobell.com/images/30187_grande_toasted_burrito_steak_269x269.jpg",
+      "alt": "Taco Bell Grande Toasted Breakfast Burrito Steak, official Taco Bell menu product image, complete product in frame",
+      "credit": "Taco Bell · official online product menu",
+      "sourceUrl": "https://www.tacobell.com/food/breakfast",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Matched product name to image alt text and direct image src on official product category menu."
+    },
+    "grande-toasted-breakfast-burrito-bacon": {
+      "url": "https://www.tacobell.com/images/30185_grande_toasted_burrito_bacon_269x269.jpg",
+      "alt": "Taco Bell Grande Toasted Breakfast Burrito Bacon, official Taco Bell menu product image, complete product in frame",
+      "credit": "Taco Bell · official online product menu",
+      "sourceUrl": "https://www.tacobell.com/food/breakfast",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Matched product name to image alt text and direct image src on official product category menu."
+    },
+    "breakfast-quesadilla-bacon": {
+      "url": "https://www.tacobell.com/images/30151_breakfast_quesadilla_269x269.jpg",
+      "alt": "Taco Bell Breakfast Quesadilla Bacon, official Taco Bell menu product image, complete product in frame",
+      "credit": "Taco Bell · official online product menu",
+      "sourceUrl": "https://www.tacobell.com/food/breakfast",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Matched product name to image alt text and direct image src on official product category menu."
+    },
+    "breakfast-quesadilla-steak": {
+      "url": "https://www.tacobell.com/images/30153_breakfast_quesadilla_steak_269x269.jpg",
+      "alt": "Taco Bell Breakfast Quesadilla Steak, official Taco Bell menu product image, complete product in frame",
+      "credit": "Taco Bell · official online product menu",
+      "sourceUrl": "https://www.tacobell.com/food/breakfast",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Matched product name to image alt text and direct image src on official product category menu."
+    },
+    "breakfast-california-crunchwrap": {
+      "url": "https://www.tacobell.com/images/30093_breakfast_crunchwrap_california_269x269.jpg",
+      "alt": "Taco Bell Breakfast California Crunchwrap, official Taco Bell menu product image, complete product in frame",
+      "credit": "Taco Bell · official online product menu",
+      "sourceUrl": "https://www.tacobell.com/food/breakfast",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Matched product name to image alt text and direct image src on official product category menu."
+    },
+    "breakfast-crunchwrap-bacon": {
+      "url": "https://www.tacobell.com/images/30029_breakfast_crunchwrap_269x269.jpg",
+      "alt": "Taco Bell Breakfast Crunchwrap Bacon, official Taco Bell menu product image, complete product in frame",
+      "credit": "Taco Bell · official online product menu",
+      "sourceUrl": "https://www.tacobell.com/food/breakfast",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Matched product name to image alt text and direct image src on official product category menu."
+    },
+    "breakfast-crunchwrap-combo": {
+      "url": "https://www.tacobell.com/images/32031_breakfast_crunchwrap_combo_269x269.jpg",
+      "alt": "Taco Bell Breakfast Crunchwrap Combo, official Taco Bell menu product image, complete product in frame",
+      "credit": "Taco Bell · official online product menu",
+      "sourceUrl": "https://www.tacobell.com/food/breakfast",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Matched product name to image alt text and direct image src on official product category menu."
+    },
+    "hash-brown": {
+      "url": "https://www.tacobell.com/images/30017_hash_brown_269x269.jpg",
+      "alt": "Taco Bell Hash Brown, official Taco Bell menu product image, complete product in frame",
+      "credit": "Taco Bell · official online product menu",
+      "sourceUrl": "https://www.tacobell.com/food/breakfast",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Matched product name to image alt text and direct image src on official product category menu."
+    },
+    "breakfast-salsa": {
+      "url": "https://www.tacobell.com/images/2633_breakfast_salsa_269x269.jpg",
+      "alt": "Taco Bell Breakfast Salsa, official Taco Bell menu product image, complete product in frame",
+      "credit": "Taco Bell · official online product menu",
+      "sourceUrl": "https://www.tacobell.com/food/breakfast",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Matched product name to image alt text and direct image src on official product category menu."
+    },
+    "nachos-bellgrande": {
+      "url": "https://www.tacobell.com/images/22502_nachos_bellgrande_269x269.jpg",
+      "alt": "Taco Bell Nachos BellGrande, official Taco Bell menu product image, complete product in frame",
+      "credit": "Taco Bell · official online product menu",
+      "sourceUrl": "https://www.tacobell.com/food/nachos",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Matched product name to image alt text and direct image src on official product category menu."
+    },
+    "chips-and-nacho-supreme-dip": {
+      "url": "https://www.tacobell.com/images/25509_chips_and_nacho_supreme_dip_new_269x269.jpg",
+      "alt": "Taco Bell Chips and Nacho Supreme Dip, official Taco Bell menu product image, complete product in frame",
+      "credit": "Taco Bell · official online product menu",
+      "sourceUrl": "https://www.tacobell.com/food/nachos",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Matched product name to image alt text and direct image src on official product category menu."
+    },
+    "cantina-chicken-rolled-quesadilla": {
+      "url": "https://www.tacobell.com/images/29158_new_cantina_chicken_rolled_quesadilla_269x269.jpg",
+      "alt": "Cantina Chicken Rolled Quesadilla, product image from Taco Bell's official quesadillas menu. Food and included sides shown as pictured by Taco Bell.",
+      "credit": "Taco Bell · official online ordering menu",
+      "sourceUrl": "https://www.tacobell.com/food/quesadillas",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact normalized menu item name matched to product image alt and official image URL on Taco Bell category page."
+    },
+    "chicken-quesadilla": {
+      "url": "https://www.tacobell.com/images/22321_quesadilla_269x269.jpg",
+      "alt": "Chicken Quesadilla, product image from Taco Bell's official quesadillas menu. Food and included sides shown as pictured by Taco Bell.",
+      "credit": "Taco Bell · official online ordering menu",
+      "sourceUrl": "https://www.tacobell.com/food/quesadillas",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact normalized menu item name matched to product image alt and official image URL on Taco Bell category page."
+    },
+    "steak-quesadilla": {
+      "url": "https://www.tacobell.com/images/22322_steak_quesadilla_269x269.jpg",
+      "alt": "Steak Quesadilla, product image from Taco Bell's official quesadillas menu. Food and included sides shown as pictured by Taco Bell.",
+      "credit": "Taco Bell · official online ordering menu",
+      "sourceUrl": "https://www.tacobell.com/food/quesadillas",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact normalized menu item name matched to product image alt and official image URL on Taco Bell category page."
+    },
+    "discovery-luxe-box": {
+      "url": "https://www.tacobell.com/images/24589_discovery_luxe_box_269x269.jpg",
+      "alt": "Discovery Luxe Box, product image from Taco Bell's official deals-and-combos menu. Food and included sides shown as pictured by Taco Bell.",
+      "credit": "Taco Bell · official online ordering menu",
+      "sourceUrl": "https://www.tacobell.com/food/deals-and-combos",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact normalized menu item name matched to product image alt and official image URL on Taco Bell category page."
+    },
+    "crispy-chicken-nuggets-deluxe-combo": {
+      "url": "https://www.tacobell.com/images/29393_crispy_new_chicken_nuggets_deluxe_combo_269x269.jpg",
+      "alt": "Crispy Chicken Nuggets Deluxe Combo, product image from Taco Bell's official deals-and-combos menu. Food and included sides shown as pictured by Taco Bell.",
+      "credit": "Taco Bell · official online ordering menu",
+      "sourceUrl": "https://www.tacobell.com/food/deals-and-combos",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact normalized menu item name matched to product image alt and official image URL on Taco Bell category page."
+    },
+    "10-piece-crispy-chicken-nuggets-combo": {
+      "url": "https://www.tacobell.com/images/29409_10_piece_new_crispy_chicken_nuggets_combo_269x269.jpg",
+      "alt": "10 Piece Crispy Chicken Nuggets Combo, product image from Taco Bell's official deals-and-combos menu. Food and included sides shown as pictured by Taco Bell.",
+      "credit": "Taco Bell · official online ordering menu",
+      "sourceUrl": "https://www.tacobell.com/food/deals-and-combos",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact normalized menu item name matched to product image alt and official image URL on Taco Bell category page."
+    },
+    "build-your-own-luxe-cravings-box": {
+      "url": "https://www.tacobell.com/images/23551_build_your_own_luxe_box_new_269x269.jpg",
+      "alt": "Build Your Own Luxe Cravings Box, product image from Taco Bell's official deals-and-combos menu. Food and included sides shown as pictured by Taco Bell.",
+      "credit": "Taco Bell · official online ordering menu",
+      "sourceUrl": "https://www.tacobell.com/food/deals-and-combos",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact normalized menu item name matched to product image alt and official image URL on Taco Bell category page."
+    },
+    "cantina-chicken-crispy-taco-combo": {
+      "url": "https://www.tacobell.com/images/23478_cantina_chicken_crispy_taco_combo_new_269x269.jpg",
+      "alt": "Cantina Chicken Crispy Taco Combo, product image from Taco Bell's official deals-and-combos menu. Food and included sides shown as pictured by Taco Bell.",
+      "credit": "Taco Bell · official online ordering menu",
+      "sourceUrl": "https://www.tacobell.com/food/deals-and-combos",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact normalized menu item name matched to product image alt and official image URL on Taco Bell category page."
+    },
+    "cantina-chicken-burrito-combo": {
+      "url": "https://www.tacobell.com/images/23479_cantina_chicken_burrito_combo_new_269x269.jpg",
+      "alt": "Cantina Chicken Burrito Combo, product image from Taco Bell's official deals-and-combos menu. Food and included sides shown as pictured by Taco Bell.",
+      "credit": "Taco Bell · official online ordering menu",
+      "sourceUrl": "https://www.tacobell.com/food/deals-and-combos",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact normalized menu item name matched to product image alt and official image URL on Taco Bell category page."
+    },
+    "cantina-chicken-rolled-quesadilla-combo": {
+      "url": "https://www.tacobell.com/images/29159_cantina_chicken_rolled_quesadilla_combo_269x269.jpg",
+      "alt": "Cantina Chicken Rolled Quesadilla Combo, product image from Taco Bell's official deals-and-combos menu. Food and included sides shown as pictured by Taco Bell.",
+      "credit": "Taco Bell · official online ordering menu",
+      "sourceUrl": "https://www.tacobell.com/food/deals-and-combos",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact normalized menu item name matched to product image alt and official image URL on Taco Bell category page."
+    },
+    "mexican-pizza-combo": {
+      "url": "https://www.tacobell.com/images/22604_mexican_pizza_combo_269x269.jpg",
+      "alt": "Mexican Pizza Combo, product image from Taco Bell's official deals-and-combos menu. Food and included sides shown as pictured by Taco Bell.",
+      "credit": "Taco Bell · official online ordering menu",
+      "sourceUrl": "https://www.tacobell.com/food/deals-and-combos",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact normalized menu item name matched to product image alt and official image URL on Taco Bell category page."
+    },
+    "chicken-quesadilla-combo": {
+      "url": "https://www.tacobell.com/images/22607_chicken_quesadilla_combo_269x269.jpg",
+      "alt": "Chicken Quesadilla Combo, product image from Taco Bell's official deals-and-combos menu. Food and included sides shown as pictured by Taco Bell.",
+      "credit": "Taco Bell · official online ordering menu",
+      "sourceUrl": "https://www.tacobell.com/food/deals-and-combos",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact normalized menu item name matched to product image alt and official image URL on Taco Bell category page."
+    },
+    "2-chicken-chalupas-supreme-combo": {
+      "url": "https://www.tacobell.com/images/23760_2_chicken_chalupas_supreme_combo_269x269.jpg",
+      "alt": "2 Chicken Chalupas Supreme Combo, product image from Taco Bell's official deals-and-combos menu. Food and included sides shown as pictured by Taco Bell.",
+      "credit": "Taco Bell · official online ordering menu",
+      "sourceUrl": "https://www.tacobell.com/food/deals-and-combos",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact normalized menu item name matched to product image alt and official image URL on Taco Bell category page."
+    },
+    "crunchwrap-supreme-combo": {
+      "url": "https://www.tacobell.com/images/22609_crunchwrap_supreme_combo_269x269.jpg",
+      "alt": "Crunchwrap Supreme Combo, product image from Taco Bell's official deals-and-combos menu. Food and included sides shown as pictured by Taco Bell.",
+      "credit": "Taco Bell · official online ordering menu",
+      "sourceUrl": "https://www.tacobell.com/food/deals-and-combos",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact normalized menu item name matched to product image alt and official image URL on Taco Bell category page."
+    },
+    "3-crunchy-tacos-combo": {
+      "url": "https://www.tacobell.com/images/22608_crunchy_tacos_combo_269x269.jpg",
+      "alt": "3 Crunchy Tacos Combo, product image from Taco Bell's official deals-and-combos menu. Food and included sides shown as pictured by Taco Bell.",
+      "credit": "Taco Bell · official online ordering menu",
+      "sourceUrl": "https://www.tacobell.com/food/deals-and-combos",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact normalized menu item name matched to product image alt and official image URL on Taco Bell category page."
+    },
+    "3-crunchy-tacos-supreme-combo": {
+      "url": "https://www.tacobell.com/images/22603_crunchy_tacos_supreme_combo_269x269.jpg",
+      "alt": "3 Crunchy Tacos Supreme Combo, product image from Taco Bell's official deals-and-combos menu. Food and included sides shown as pictured by Taco Bell.",
+      "credit": "Taco Bell · official online ordering menu",
+      "sourceUrl": "https://www.tacobell.com/food/deals-and-combos",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact normalized menu item name matched to product image alt and official image URL on Taco Bell category page."
+    },
+    "3-doritos-locos-tacos-combo": {
+      "url": "https://www.tacobell.com/images/22637_3_doritos_locos_tacos_combo_new_269x269.jpg",
+      "alt": "3 Doritos Locos Tacos Combo, product image from Taco Bell's official deals-and-combos menu. Food and included sides shown as pictured by Taco Bell.",
+      "credit": "Taco Bell · official online ordering menu",
+      "sourceUrl": "https://www.tacobell.com/food/deals-and-combos",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact normalized menu item name matched to product image alt and official image URL on Taco Bell category page."
+    },
+    "3-doritos-locos-tacos-supreme-combo": {
+      "url": "https://www.tacobell.com/images/22701_3_doritos_locos_tacos_supreme_combo_alt_269x269.jpg",
+      "alt": "3 Doritos Locos Tacos Supreme Combo, product image from Taco Bell's official deals-and-combos menu. Food and included sides shown as pictured by Taco Bell.",
+      "credit": "Taco Bell · official online ordering menu",
+      "sourceUrl": "https://www.tacobell.com/food/deals-and-combos",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact normalized menu item name matched to product image alt and official image URL on Taco Bell category page."
+    },
+    "supreme-luxe-box": {
+      "url": "https://www.tacobell.com/images/27276_supreme_luxe_box_269x269.jpg",
+      "alt": "Supreme Luxe Box, product image from Taco Bell's official deals-and-combos menu. Food and included sides shown as pictured by Taco Bell.",
+      "credit": "Taco Bell · official online ordering menu",
+      "sourceUrl": "https://www.tacobell.com/food/deals-and-combos",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact normalized menu item name matched to product image alt and official image URL on Taco Bell category page."
+    },
+    "classic-luxe-box": {
+      "url": "https://www.tacobell.com/images/27272_classic_luxe_box_269x269.jpg",
+      "alt": "Classic Luxe Box, product image from Taco Bell's official deals-and-combos menu. Food and included sides shown as pictured by Taco Bell.",
+      "credit": "Taco Bell · official online ordering menu",
+      "sourceUrl": "https://www.tacobell.com/food/deals-and-combos",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact normalized menu item name matched to product image alt and official image URL on Taco Bell category page."
+    },
+    "meal-for-2": {
+      "url": "https://www.tacobell.com/images/23218_meal_for_2_750x340.jpg",
+      "alt": "Meal for 2, product image from Taco Bell's official online-exclusives menu. Food and included sides shown as pictured by Taco Bell.",
+      "credit": "Taco Bell · official online ordering menu",
+      "sourceUrl": "https://www.tacobell.com/food/online-exclusives",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact normalized menu item name matched to product image alt and official image URL on Taco Bell category page."
+    },
+    "meal-for-4": {
+      "url": "https://www.tacobell.com/images/23220_variety_cravings_meal_750x340.jpg",
+      "alt": "Meal for 4, product image from Taco Bell's official online-exclusives menu. Food and included sides shown as pictured by Taco Bell.",
+      "credit": "Taco Bell · official online ordering menu",
+      "sourceUrl": "https://www.tacobell.com/food/online-exclusives",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact normalized menu item name matched to product image alt and official image URL on Taco Bell category page."
+    },
+    "avocado-verde-salsa-sauce-packet": {
+      "url": "https://www.tacobell.com/images/23476_new_avocado_verde_salsa_sauce_packet_269x269.jpg",
+      "alt": "Avocado Verde Salsa Sauce Packet, product image from Taco Bell's official cantina-chicken-menu menu. Food and included sides shown as pictured by Taco Bell.",
+      "credit": "Taco Bell · official online ordering menu",
+      "sourceUrl": "https://www.tacobell.com/food/cantina-chicken-menu",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact normalized menu item name matched to product image alt and official image URL on Taco Bell category page."
+    },
+    "doritos-locos-taco-party-pack": {
+      "url": "https://www.tacobell.com/images/25990_doritos_locos_taco_party_pack_750x340.jpg",
+      "alt": "Doritos Locos Taco Party Pack, product image from Taco Bell's official featured menu. Food and included sides shown as pictured by Taco Bell.",
+      "credit": "Taco Bell · official online ordering menu",
+      "sourceUrl": "https://www.tacobell.com/food/featured",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact normalized menu item name matched to product image alt and official image URL on Taco Bell category page."
+    },
+    "supreme-doritos-locos-taco-party-pack": {
+      "url": "https://www.tacobell.com/images/25991_supreme_doritos_locos_party_pack_750x340.jpg",
+      "alt": "Supreme Doritos Locos Taco Party Pack, product image from Taco Bell's official featured menu. Food and included sides shown as pictured by Taco Bell.",
+      "credit": "Taco Bell · official online ordering menu",
+      "sourceUrl": "https://www.tacobell.com/food/featured",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact normalized menu item name matched to product image alt and official image URL on Taco Bell category page."
+    },
+    "chili": {
+      "url": "https://www.tacobell.com/images/2420_chili_269x269.jpg",
+      "alt": "Official Chili menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "mild-sauce-packet": {
+      "url": "https://www.tacobell.com/images/22763_mild_sauce_packet_269x269.jpg",
+      "alt": "Official Mild Sauce Packet menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "hot-sauce-packet": {
+      "url": "https://www.tacobell.com/images/22760_hot_sauce_packet_269x269.jpg",
+      "alt": "Official Hot Sauce Packet menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "fire-sauce-packet": {
+      "url": "https://www.tacobell.com/images/22759_fire_sauce_packet_269x269.jpg",
+      "alt": "Official Fire Sauce Packet menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "diablo-sauce-packet": {
+      "url": "https://www.tacobell.com/images/22765_diablo_sauce_packet_269x269.jpg",
+      "alt": "Official Diablo Sauce Packet menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "creamy-sriracha-sauce": {
+      "url": "https://www.tacobell.com/images/8087_creamy_sriracha_sauce_269x269.jpg",
+      "alt": "Official Creamy Sriracha Sauce menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "jalapeno-peppers": {
+      "url": "https://www.tacobell.com/images/2115_jalapeno_peppers_269x269.jpg",
+      "alt": "Official Jalapeño Peppers menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "nacho-cheese-sauce": {
+      "url": "https://www.tacobell.com/images/2253_nacho_cheese_sauce_269x269.jpg",
+      "alt": "Official Nacho Cheese Sauce menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "reduced-fat-sour-cream": {
+      "url": "https://www.tacobell.com/images/2053_reduced_fat_sour_cream_269x269.jpg",
+      "alt": "Official Reduced-Fat Sour Cream menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "creamy-jalapeno-sauce": {
+      "url": "https://www.tacobell.com/images/2240_creamy_jalapeno_sauce_269x269.jpg",
+      "alt": "Official Creamy Jalapeño Sauce menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "guacamole": {
+      "url": "https://www.tacobell.com/images/2063_guacamole_269x269.jpg",
+      "alt": "Official Guacamole menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "chipotle-sauce": {
+      "url": "https://www.tacobell.com/images/2323_chipotle_sauce_269x269.jpg",
+      "alt": "Official Chipotle Sauce menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "avocado-ranch-sauce": {
+      "url": "https://www.tacobell.com/images/2383_avocado_ranch_sauce_269x269.jpg",
+      "alt": "Official Avocado Ranch Sauce menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "spicy-ranch": {
+      "url": "https://www.tacobell.com/images/2519_spicy_ranch_269x269.jpg",
+      "alt": "Official Spicy Ranch menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "red-sauce": {
+      "url": "https://www.tacobell.com/images/2148_red_sauce_269x269.jpg",
+      "alt": "Official Red Sauce menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "mexican-pizza-sauce": {
+      "url": "https://www.tacobell.com/images/2370_mexican_pizza_sauce_269x269.jpg",
+      "alt": "Official Mexican Pizza Sauce menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "taco-burrito-cravings-pack": {
+      "url": "https://www.tacobell.com/images/60528_taco_and_burrito_pack_750x340.jpg",
+      "alt": "Official Taco & Burrito Cravings Pack menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/party-packs",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "taco-party-pack": {
+      "url": "https://www.tacobell.com/images/22189_taco_12_pack_750x340.jpg",
+      "alt": "Official Taco Party Pack menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/party-packs",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "supreme-taco-party-pack": {
+      "url": "https://www.tacobell.com/images/21200_supreme_taco_party_pack_750x340.jpg",
+      "alt": "Official Supreme Taco Party Pack menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/party-packs",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "soft-taco-party-pack": {
+      "url": "https://www.tacobell.com/images/22187_soft_taco_party_pack_750x340.jpg",
+      "alt": "Official Soft Taco Party Pack menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/party-packs",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "supreme-soft-taco-party-pack": {
+      "url": "https://www.tacobell.com/images/21201_soft_taco_supreme_party_pack_750x340.jpg",
+      "alt": "Official Supreme Soft Taco Party Pack menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/party-packs",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "variety-taco-party-pack": {
+      "url": "https://www.tacobell.com/images/22119_variety_taco_12_pack_750x340.jpg",
+      "alt": "Official Variety Taco Party Pack menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/party-packs",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "supreme-variety-taco-party-pack": {
+      "url": "https://www.tacobell.com/images/21202_supreme_variety_pack_750x340.jpg",
+      "alt": "Official Supreme Variety Taco Party Pack menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/party-packs",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "paris-hilton-s-usual": {
+      "url": "https://www.tacobell.com/images/28943_hilton_usual_750x340.jpg",
+      "alt": "Paris Hilton’s Usual combo: Diablo Ranch Crispy Chicken Crunchwrap Slider, Crunchy Taco and medium fountain drink, pictured together in Taco Bell's official menu photo",
+      "credit": "Taco Bell · official product combo",
+      "sourceUrl": "https://www.tacobell.com/food/deals-and-combos/paris-hiltons-usual",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Matched official Taco Bell JSON product record and productImageUrl for the specific named combo."
     }
   },
   "taco-bell-orlando-west": {
@@ -343,6 +1546,564 @@ export const verifiedDishPhotos = {
       "alt": "Official Taco Bell Cantina Chicken Bowl product photo",
       "credit": "Taco Bell · official menu",
       "sourceUrl": "https://www.tacobell.com/food/bowls"
+    },
+    "cheesy-toasted-breakfast-burrito-bacon": {
+      "url": "https://www.tacobell.com/images/30179_cheesy_toasted_burrito_bacon_269x269.jpg",
+      "alt": "Taco Bell Cheesy Toasted Breakfast Burrito Bacon, official Taco Bell menu product image, complete product in frame",
+      "credit": "Taco Bell · official online product menu",
+      "sourceUrl": "https://www.tacobell.com/food/breakfast",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Matched product name to image alt text and direct image src on official product category menu."
+    },
+    "cheesy-toasted-breakfast-burrito-potato": {
+      "url": "https://www.tacobell.com/images/30181_cheesy_toasted_burrito_fiesta_potato_269x269.jpg",
+      "alt": "Taco Bell Cheesy Toasted Breakfast Burrito Potato, official Taco Bell menu product image, complete product in frame",
+      "credit": "Taco Bell · official online product menu",
+      "sourceUrl": "https://www.tacobell.com/food/breakfast",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Matched product name to image alt text and direct image src on official product category menu."
+    },
+    "grande-toasted-breakfast-burrito-steak": {
+      "url": "https://www.tacobell.com/images/30187_grande_toasted_burrito_steak_269x269.jpg",
+      "alt": "Taco Bell Grande Toasted Breakfast Burrito Steak, official Taco Bell menu product image, complete product in frame",
+      "credit": "Taco Bell · official online product menu",
+      "sourceUrl": "https://www.tacobell.com/food/breakfast",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Matched product name to image alt text and direct image src on official product category menu."
+    },
+    "grande-toasted-breakfast-burrito-bacon": {
+      "url": "https://www.tacobell.com/images/30185_grande_toasted_burrito_bacon_269x269.jpg",
+      "alt": "Taco Bell Grande Toasted Breakfast Burrito Bacon, official Taco Bell menu product image, complete product in frame",
+      "credit": "Taco Bell · official online product menu",
+      "sourceUrl": "https://www.tacobell.com/food/breakfast",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Matched product name to image alt text and direct image src on official product category menu."
+    },
+    "breakfast-quesadilla-bacon": {
+      "url": "https://www.tacobell.com/images/30151_breakfast_quesadilla_269x269.jpg",
+      "alt": "Taco Bell Breakfast Quesadilla Bacon, official Taco Bell menu product image, complete product in frame",
+      "credit": "Taco Bell · official online product menu",
+      "sourceUrl": "https://www.tacobell.com/food/breakfast",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Matched product name to image alt text and direct image src on official product category menu."
+    },
+    "breakfast-quesadilla-steak": {
+      "url": "https://www.tacobell.com/images/30153_breakfast_quesadilla_steak_269x269.jpg",
+      "alt": "Taco Bell Breakfast Quesadilla Steak, official Taco Bell menu product image, complete product in frame",
+      "credit": "Taco Bell · official online product menu",
+      "sourceUrl": "https://www.tacobell.com/food/breakfast",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Matched product name to image alt text and direct image src on official product category menu."
+    },
+    "breakfast-california-crunchwrap": {
+      "url": "https://www.tacobell.com/images/30093_breakfast_crunchwrap_california_269x269.jpg",
+      "alt": "Taco Bell Breakfast California Crunchwrap, official Taco Bell menu product image, complete product in frame",
+      "credit": "Taco Bell · official online product menu",
+      "sourceUrl": "https://www.tacobell.com/food/breakfast",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Matched product name to image alt text and direct image src on official product category menu."
+    },
+    "breakfast-crunchwrap-bacon": {
+      "url": "https://www.tacobell.com/images/30029_breakfast_crunchwrap_269x269.jpg",
+      "alt": "Taco Bell Breakfast Crunchwrap Bacon, official Taco Bell menu product image, complete product in frame",
+      "credit": "Taco Bell · official online product menu",
+      "sourceUrl": "https://www.tacobell.com/food/breakfast",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Matched product name to image alt text and direct image src on official product category menu."
+    },
+    "breakfast-crunchwrap-combo": {
+      "url": "https://www.tacobell.com/images/32031_breakfast_crunchwrap_combo_269x269.jpg",
+      "alt": "Taco Bell Breakfast Crunchwrap Combo, official Taco Bell menu product image, complete product in frame",
+      "credit": "Taco Bell · official online product menu",
+      "sourceUrl": "https://www.tacobell.com/food/breakfast",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Matched product name to image alt text and direct image src on official product category menu."
+    },
+    "hash-brown": {
+      "url": "https://www.tacobell.com/images/30017_hash_brown_269x269.jpg",
+      "alt": "Taco Bell Hash Brown, official Taco Bell menu product image, complete product in frame",
+      "credit": "Taco Bell · official online product menu",
+      "sourceUrl": "https://www.tacobell.com/food/breakfast",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Matched product name to image alt text and direct image src on official product category menu."
+    },
+    "breakfast-salsa": {
+      "url": "https://www.tacobell.com/images/2633_breakfast_salsa_269x269.jpg",
+      "alt": "Taco Bell Breakfast Salsa, official Taco Bell menu product image, complete product in frame",
+      "credit": "Taco Bell · official online product menu",
+      "sourceUrl": "https://www.tacobell.com/food/breakfast",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Matched product name to image alt text and direct image src on official product category menu."
+    },
+    "nachos-bellgrande": {
+      "url": "https://www.tacobell.com/images/22502_nachos_bellgrande_269x269.jpg",
+      "alt": "Taco Bell Nachos BellGrande, official Taco Bell menu product image, complete product in frame",
+      "credit": "Taco Bell · official online product menu",
+      "sourceUrl": "https://www.tacobell.com/food/nachos",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Matched product name to image alt text and direct image src on official product category menu."
+    },
+    "chips-and-nacho-supreme-dip": {
+      "url": "https://www.tacobell.com/images/25509_chips_and_nacho_supreme_dip_new_269x269.jpg",
+      "alt": "Taco Bell Chips and Nacho Supreme Dip, official Taco Bell menu product image, complete product in frame",
+      "credit": "Taco Bell · official online product menu",
+      "sourceUrl": "https://www.tacobell.com/food/nachos",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Matched product name to image alt text and direct image src on official product category menu."
+    },
+    "cantina-chicken-rolled-quesadilla": {
+      "url": "https://www.tacobell.com/images/29158_new_cantina_chicken_rolled_quesadilla_269x269.jpg",
+      "alt": "Cantina Chicken Rolled Quesadilla, product image from Taco Bell's official quesadillas menu. Food and included sides shown as pictured by Taco Bell.",
+      "credit": "Taco Bell · official online ordering menu",
+      "sourceUrl": "https://www.tacobell.com/food/quesadillas",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact normalized menu item name matched to product image alt and official image URL on Taco Bell category page."
+    },
+    "chicken-quesadilla": {
+      "url": "https://www.tacobell.com/images/22321_quesadilla_269x269.jpg",
+      "alt": "Chicken Quesadilla, product image from Taco Bell's official quesadillas menu. Food and included sides shown as pictured by Taco Bell.",
+      "credit": "Taco Bell · official online ordering menu",
+      "sourceUrl": "https://www.tacobell.com/food/quesadillas",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact normalized menu item name matched to product image alt and official image URL on Taco Bell category page."
+    },
+    "steak-quesadilla": {
+      "url": "https://www.tacobell.com/images/22322_steak_quesadilla_269x269.jpg",
+      "alt": "Steak Quesadilla, product image from Taco Bell's official quesadillas menu. Food and included sides shown as pictured by Taco Bell.",
+      "credit": "Taco Bell · official online ordering menu",
+      "sourceUrl": "https://www.tacobell.com/food/quesadillas",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact normalized menu item name matched to product image alt and official image URL on Taco Bell category page."
+    },
+    "discovery-luxe-box": {
+      "url": "https://www.tacobell.com/images/24589_discovery_luxe_box_269x269.jpg",
+      "alt": "Discovery Luxe Box, product image from Taco Bell's official deals-and-combos menu. Food and included sides shown as pictured by Taco Bell.",
+      "credit": "Taco Bell · official online ordering menu",
+      "sourceUrl": "https://www.tacobell.com/food/deals-and-combos",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact normalized menu item name matched to product image alt and official image URL on Taco Bell category page."
+    },
+    "crispy-chicken-nuggets-deluxe-combo": {
+      "url": "https://www.tacobell.com/images/29393_crispy_new_chicken_nuggets_deluxe_combo_269x269.jpg",
+      "alt": "Crispy Chicken Nuggets Deluxe Combo, product image from Taco Bell's official deals-and-combos menu. Food and included sides shown as pictured by Taco Bell.",
+      "credit": "Taco Bell · official online ordering menu",
+      "sourceUrl": "https://www.tacobell.com/food/deals-and-combos",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact normalized menu item name matched to product image alt and official image URL on Taco Bell category page."
+    },
+    "10-piece-crispy-chicken-nuggets-combo": {
+      "url": "https://www.tacobell.com/images/29409_10_piece_new_crispy_chicken_nuggets_combo_269x269.jpg",
+      "alt": "10 Piece Crispy Chicken Nuggets Combo, product image from Taco Bell's official deals-and-combos menu. Food and included sides shown as pictured by Taco Bell.",
+      "credit": "Taco Bell · official online ordering menu",
+      "sourceUrl": "https://www.tacobell.com/food/deals-and-combos",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact normalized menu item name matched to product image alt and official image URL on Taco Bell category page."
+    },
+    "build-your-own-luxe-cravings-box": {
+      "url": "https://www.tacobell.com/images/23551_build_your_own_luxe_box_new_269x269.jpg",
+      "alt": "Build Your Own Luxe Cravings Box, product image from Taco Bell's official deals-and-combos menu. Food and included sides shown as pictured by Taco Bell.",
+      "credit": "Taco Bell · official online ordering menu",
+      "sourceUrl": "https://www.tacobell.com/food/deals-and-combos",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact normalized menu item name matched to product image alt and official image URL on Taco Bell category page."
+    },
+    "cantina-chicken-crispy-taco-combo": {
+      "url": "https://www.tacobell.com/images/23478_cantina_chicken_crispy_taco_combo_new_269x269.jpg",
+      "alt": "Cantina Chicken Crispy Taco Combo, product image from Taco Bell's official deals-and-combos menu. Food and included sides shown as pictured by Taco Bell.",
+      "credit": "Taco Bell · official online ordering menu",
+      "sourceUrl": "https://www.tacobell.com/food/deals-and-combos",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact normalized menu item name matched to product image alt and official image URL on Taco Bell category page."
+    },
+    "cantina-chicken-burrito-combo": {
+      "url": "https://www.tacobell.com/images/23479_cantina_chicken_burrito_combo_new_269x269.jpg",
+      "alt": "Cantina Chicken Burrito Combo, product image from Taco Bell's official deals-and-combos menu. Food and included sides shown as pictured by Taco Bell.",
+      "credit": "Taco Bell · official online ordering menu",
+      "sourceUrl": "https://www.tacobell.com/food/deals-and-combos",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact normalized menu item name matched to product image alt and official image URL on Taco Bell category page."
+    },
+    "cantina-chicken-rolled-quesadilla-combo": {
+      "url": "https://www.tacobell.com/images/29159_cantina_chicken_rolled_quesadilla_combo_269x269.jpg",
+      "alt": "Cantina Chicken Rolled Quesadilla Combo, product image from Taco Bell's official deals-and-combos menu. Food and included sides shown as pictured by Taco Bell.",
+      "credit": "Taco Bell · official online ordering menu",
+      "sourceUrl": "https://www.tacobell.com/food/deals-and-combos",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact normalized menu item name matched to product image alt and official image URL on Taco Bell category page."
+    },
+    "mexican-pizza-combo": {
+      "url": "https://www.tacobell.com/images/22604_mexican_pizza_combo_269x269.jpg",
+      "alt": "Mexican Pizza Combo, product image from Taco Bell's official deals-and-combos menu. Food and included sides shown as pictured by Taco Bell.",
+      "credit": "Taco Bell · official online ordering menu",
+      "sourceUrl": "https://www.tacobell.com/food/deals-and-combos",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact normalized menu item name matched to product image alt and official image URL on Taco Bell category page."
+    },
+    "chicken-quesadilla-combo": {
+      "url": "https://www.tacobell.com/images/22607_chicken_quesadilla_combo_269x269.jpg",
+      "alt": "Chicken Quesadilla Combo, product image from Taco Bell's official deals-and-combos menu. Food and included sides shown as pictured by Taco Bell.",
+      "credit": "Taco Bell · official online ordering menu",
+      "sourceUrl": "https://www.tacobell.com/food/deals-and-combos",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact normalized menu item name matched to product image alt and official image URL on Taco Bell category page."
+    },
+    "2-chicken-chalupas-supreme-combo": {
+      "url": "https://www.tacobell.com/images/23760_2_chicken_chalupas_supreme_combo_269x269.jpg",
+      "alt": "2 Chicken Chalupas Supreme Combo, product image from Taco Bell's official deals-and-combos menu. Food and included sides shown as pictured by Taco Bell.",
+      "credit": "Taco Bell · official online ordering menu",
+      "sourceUrl": "https://www.tacobell.com/food/deals-and-combos",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact normalized menu item name matched to product image alt and official image URL on Taco Bell category page."
+    },
+    "crunchwrap-supreme-combo": {
+      "url": "https://www.tacobell.com/images/22609_crunchwrap_supreme_combo_269x269.jpg",
+      "alt": "Crunchwrap Supreme Combo, product image from Taco Bell's official deals-and-combos menu. Food and included sides shown as pictured by Taco Bell.",
+      "credit": "Taco Bell · official online ordering menu",
+      "sourceUrl": "https://www.tacobell.com/food/deals-and-combos",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact normalized menu item name matched to product image alt and official image URL on Taco Bell category page."
+    },
+    "3-crunchy-tacos-combo": {
+      "url": "https://www.tacobell.com/images/22608_crunchy_tacos_combo_269x269.jpg",
+      "alt": "3 Crunchy Tacos Combo, product image from Taco Bell's official deals-and-combos menu. Food and included sides shown as pictured by Taco Bell.",
+      "credit": "Taco Bell · official online ordering menu",
+      "sourceUrl": "https://www.tacobell.com/food/deals-and-combos",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact normalized menu item name matched to product image alt and official image URL on Taco Bell category page."
+    },
+    "3-crunchy-tacos-supreme-combo": {
+      "url": "https://www.tacobell.com/images/22603_crunchy_tacos_supreme_combo_269x269.jpg",
+      "alt": "3 Crunchy Tacos Supreme Combo, product image from Taco Bell's official deals-and-combos menu. Food and included sides shown as pictured by Taco Bell.",
+      "credit": "Taco Bell · official online ordering menu",
+      "sourceUrl": "https://www.tacobell.com/food/deals-and-combos",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact normalized menu item name matched to product image alt and official image URL on Taco Bell category page."
+    },
+    "3-doritos-locos-tacos-combo": {
+      "url": "https://www.tacobell.com/images/22637_3_doritos_locos_tacos_combo_new_269x269.jpg",
+      "alt": "3 Doritos Locos Tacos Combo, product image from Taco Bell's official deals-and-combos menu. Food and included sides shown as pictured by Taco Bell.",
+      "credit": "Taco Bell · official online ordering menu",
+      "sourceUrl": "https://www.tacobell.com/food/deals-and-combos",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact normalized menu item name matched to product image alt and official image URL on Taco Bell category page."
+    },
+    "3-doritos-locos-tacos-supreme-combo": {
+      "url": "https://www.tacobell.com/images/22701_3_doritos_locos_tacos_supreme_combo_alt_269x269.jpg",
+      "alt": "3 Doritos Locos Tacos Supreme Combo, product image from Taco Bell's official deals-and-combos menu. Food and included sides shown as pictured by Taco Bell.",
+      "credit": "Taco Bell · official online ordering menu",
+      "sourceUrl": "https://www.tacobell.com/food/deals-and-combos",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact normalized menu item name matched to product image alt and official image URL on Taco Bell category page."
+    },
+    "supreme-luxe-box": {
+      "url": "https://www.tacobell.com/images/27276_supreme_luxe_box_269x269.jpg",
+      "alt": "Supreme Luxe Box, product image from Taco Bell's official deals-and-combos menu. Food and included sides shown as pictured by Taco Bell.",
+      "credit": "Taco Bell · official online ordering menu",
+      "sourceUrl": "https://www.tacobell.com/food/deals-and-combos",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact normalized menu item name matched to product image alt and official image URL on Taco Bell category page."
+    },
+    "classic-luxe-box": {
+      "url": "https://www.tacobell.com/images/27272_classic_luxe_box_269x269.jpg",
+      "alt": "Classic Luxe Box, product image from Taco Bell's official deals-and-combos menu. Food and included sides shown as pictured by Taco Bell.",
+      "credit": "Taco Bell · official online ordering menu",
+      "sourceUrl": "https://www.tacobell.com/food/deals-and-combos",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact normalized menu item name matched to product image alt and official image URL on Taco Bell category page."
+    },
+    "meal-for-2": {
+      "url": "https://www.tacobell.com/images/23218_meal_for_2_750x340.jpg",
+      "alt": "Meal for 2, product image from Taco Bell's official online-exclusives menu. Food and included sides shown as pictured by Taco Bell.",
+      "credit": "Taco Bell · official online ordering menu",
+      "sourceUrl": "https://www.tacobell.com/food/online-exclusives",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact normalized menu item name matched to product image alt and official image URL on Taco Bell category page."
+    },
+    "meal-for-4": {
+      "url": "https://www.tacobell.com/images/23220_variety_cravings_meal_750x340.jpg",
+      "alt": "Meal for 4, product image from Taco Bell's official online-exclusives menu. Food and included sides shown as pictured by Taco Bell.",
+      "credit": "Taco Bell · official online ordering menu",
+      "sourceUrl": "https://www.tacobell.com/food/online-exclusives",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact normalized menu item name matched to product image alt and official image URL on Taco Bell category page."
+    },
+    "avocado-verde-salsa-sauce-packet": {
+      "url": "https://www.tacobell.com/images/23476_new_avocado_verde_salsa_sauce_packet_269x269.jpg",
+      "alt": "Avocado Verde Salsa Sauce Packet, product image from Taco Bell's official cantina-chicken-menu menu. Food and included sides shown as pictured by Taco Bell.",
+      "credit": "Taco Bell · official online ordering menu",
+      "sourceUrl": "https://www.tacobell.com/food/cantina-chicken-menu",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact normalized menu item name matched to product image alt and official image URL on Taco Bell category page."
+    },
+    "doritos-locos-taco-party-pack": {
+      "url": "https://www.tacobell.com/images/25990_doritos_locos_taco_party_pack_750x340.jpg",
+      "alt": "Doritos Locos Taco Party Pack, product image from Taco Bell's official featured menu. Food and included sides shown as pictured by Taco Bell.",
+      "credit": "Taco Bell · official online ordering menu",
+      "sourceUrl": "https://www.tacobell.com/food/featured",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact normalized menu item name matched to product image alt and official image URL on Taco Bell category page."
+    },
+    "supreme-doritos-locos-taco-party-pack": {
+      "url": "https://www.tacobell.com/images/25991_supreme_doritos_locos_party_pack_750x340.jpg",
+      "alt": "Supreme Doritos Locos Taco Party Pack, product image from Taco Bell's official featured menu. Food and included sides shown as pictured by Taco Bell.",
+      "credit": "Taco Bell · official online ordering menu",
+      "sourceUrl": "https://www.tacobell.com/food/featured",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact normalized menu item name matched to product image alt and official image URL on Taco Bell category page."
+    },
+    "chili": {
+      "url": "https://www.tacobell.com/images/2420_chili_269x269.jpg",
+      "alt": "Official Chili menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "mild-sauce-packet": {
+      "url": "https://www.tacobell.com/images/22763_mild_sauce_packet_269x269.jpg",
+      "alt": "Official Mild Sauce Packet menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "hot-sauce-packet": {
+      "url": "https://www.tacobell.com/images/22760_hot_sauce_packet_269x269.jpg",
+      "alt": "Official Hot Sauce Packet menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "fire-sauce-packet": {
+      "url": "https://www.tacobell.com/images/22759_fire_sauce_packet_269x269.jpg",
+      "alt": "Official Fire Sauce Packet menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "diablo-sauce-packet": {
+      "url": "https://www.tacobell.com/images/22765_diablo_sauce_packet_269x269.jpg",
+      "alt": "Official Diablo Sauce Packet menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "creamy-sriracha-sauce": {
+      "url": "https://www.tacobell.com/images/8087_creamy_sriracha_sauce_269x269.jpg",
+      "alt": "Official Creamy Sriracha Sauce menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "jalapeno-peppers": {
+      "url": "https://www.tacobell.com/images/2115_jalapeno_peppers_269x269.jpg",
+      "alt": "Official Jalapeño Peppers menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "nacho-cheese-sauce": {
+      "url": "https://www.tacobell.com/images/2253_nacho_cheese_sauce_269x269.jpg",
+      "alt": "Official Nacho Cheese Sauce menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "reduced-fat-sour-cream": {
+      "url": "https://www.tacobell.com/images/2053_reduced_fat_sour_cream_269x269.jpg",
+      "alt": "Official Reduced-Fat Sour Cream menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "creamy-jalapeno-sauce": {
+      "url": "https://www.tacobell.com/images/2240_creamy_jalapeno_sauce_269x269.jpg",
+      "alt": "Official Creamy Jalapeño Sauce menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "guacamole": {
+      "url": "https://www.tacobell.com/images/2063_guacamole_269x269.jpg",
+      "alt": "Official Guacamole menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "chipotle-sauce": {
+      "url": "https://www.tacobell.com/images/2323_chipotle_sauce_269x269.jpg",
+      "alt": "Official Chipotle Sauce menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "avocado-ranch-sauce": {
+      "url": "https://www.tacobell.com/images/2383_avocado_ranch_sauce_269x269.jpg",
+      "alt": "Official Avocado Ranch Sauce menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "spicy-ranch": {
+      "url": "https://www.tacobell.com/images/2519_spicy_ranch_269x269.jpg",
+      "alt": "Official Spicy Ranch menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "red-sauce": {
+      "url": "https://www.tacobell.com/images/2148_red_sauce_269x269.jpg",
+      "alt": "Official Red Sauce menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "mexican-pizza-sauce": {
+      "url": "https://www.tacobell.com/images/2370_mexican_pizza_sauce_269x269.jpg",
+      "alt": "Official Mexican Pizza Sauce menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/snacks-sweets",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "taco-burrito-cravings-pack": {
+      "url": "https://www.tacobell.com/images/60528_taco_and_burrito_pack_750x340.jpg",
+      "alt": "Official Taco & Burrito Cravings Pack menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/party-packs",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "taco-party-pack": {
+      "url": "https://www.tacobell.com/images/22189_taco_12_pack_750x340.jpg",
+      "alt": "Official Taco Party Pack menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/party-packs",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "supreme-taco-party-pack": {
+      "url": "https://www.tacobell.com/images/21200_supreme_taco_party_pack_750x340.jpg",
+      "alt": "Official Supreme Taco Party Pack menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/party-packs",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "soft-taco-party-pack": {
+      "url": "https://www.tacobell.com/images/22187_soft_taco_party_pack_750x340.jpg",
+      "alt": "Official Soft Taco Party Pack menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/party-packs",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "supreme-soft-taco-party-pack": {
+      "url": "https://www.tacobell.com/images/21201_soft_taco_supreme_party_pack_750x340.jpg",
+      "alt": "Official Supreme Soft Taco Party Pack menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/party-packs",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "variety-taco-party-pack": {
+      "url": "https://www.tacobell.com/images/22119_variety_taco_12_pack_750x340.jpg",
+      "alt": "Official Variety Taco Party Pack menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/party-packs",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "supreme-variety-taco-party-pack": {
+      "url": "https://www.tacobell.com/images/21202_supreme_variety_pack_750x340.jpg",
+      "alt": "Official Supreme Variety Taco Party Pack menu product photo from Taco Bell; product or party pack shown in full",
+      "credit": "Taco Bell · official menu",
+      "sourceUrl": "https://www.tacobell.com/food/party-packs",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Exact name matched to Taco Bell category product image alt text and direct image URL"
+    },
+    "paris-hilton-s-usual": {
+      "url": "https://www.tacobell.com/images/28943_hilton_usual_750x340.jpg",
+      "alt": "Paris Hilton’s Usual combo: Diablo Ranch Crispy Chicken Crunchwrap Slider, Crunchy Taco and medium fountain drink, pictured together in Taco Bell's official menu photo",
+      "credit": "Taco Bell · official product combo",
+      "sourceUrl": "https://www.tacobell.com/food/deals-and-combos/paris-hiltons-usual",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Matched official Taco Bell JSON product record and productImageUrl for the specific named combo."
     }
   },
   "chipotle-south-orange": {
@@ -872,6 +2633,69 @@ export const verifiedDishPhotos = {
       "alt": "Korean Fried Chicken, pictured on the Hawkers official dining menu; presentation may vary by location",
       "credit": "Hawkers · official dining menu",
       "sourceUrl": "https://eathawkers.com/menus/dining/"
+    },
+    "chicken-lo-mein": {
+      "url": "https://eathawkers.com/wp-content/uploads/2020/09/hawkers_88939004.jpg",
+      "alt": "Chicken Lo Mein: full plate of stir-fried egg noodles with diced chicken, bean sprouts and scallions, photographed by Hawkers",
+      "credit": "Hawkers · official Lo Mein photo",
+      "sourceUrl": "https://eathawkers.com/fusion_element/mobile-noods/",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "needsPermissionReview": false,
+      "matchMethod": "Visually compared restaurant photo with protein-specific Lo Mein and menu description."
+    },
+    "steak-lo-mein": {
+      "url": "https://tb-static.uber.com/prod/image-proc/processed_images/f9f7620dc4c354934ef375fb93051fac/a19bb09692310dfd41e49a96c424b3a6.jpeg",
+      "alt": "Hawkers beef lo mein with visible steak slices atop stir-fried egg noodles and scallions, photographed at a Hawkers location other than Orlando",
+      "credit": "Hawkers Charlotte · Postmates menu product photo",
+      "sourceUrl": "https://postmates.com/store/hawkers-asian-street-food-charlotte/1Vh2YAWBRy-2dwUPN0ihWw",
+      "kind": "brand-other-location",
+      "reviewedAt": "2026-10-24",
+      "needsPermissionReview": true,
+      "matchMethod": "Visually compared restaurant photo with protein-specific Lo Mein and menu description."
+    },
+    "shrimp-lo-mein": {
+      "url": "https://tb-static.uber.com/prod/image-proc/processed_images/6ed380e01498f55c0e3110eae1848df7/c67fc65e9b4e16a553eb7574fba090f1.jpeg",
+      "alt": "Hawkers shrimp lo mein with whole shrimp, wok-fried egg noodles and fresh scallions, photographed at the Dallas restaurant; Orlando plating may differ",
+      "credit": "Hawkers Dallas · Postmates menu photograph",
+      "sourceUrl": "https://postmates.com/store/hawkers-asian-street-food-dallas/nB94O0kAUA-YOlgGYKKaCw",
+      "kind": "brand-other-location",
+      "reviewedAt": "2026-10-24",
+      "needsPermissionReview": true,
+      "matchMethod": "Visually compared restaurant photo with protein-specific Lo Mein and menu description."
+    },
+    "curry-steak": {
+      "url": "https://s.yimg.com/ny/api/res/1.2/rhxOZtPqgz_gMRV5QNr86Q--/YXBwaWQ9aGlnaGxhbmRlcjt3PTI0MDA7aD0xODAwO2NmPXdlYnA-/https%3A/media.zenfs.com/en/seattle_eater_760/8120bd8c54796a1ae03eb74ec66c6a62",
+      "alt": "Representative steak in an orange curry sauce, with a separate bowl of white rice. This is NOT Hawkers Po Po Lo's Steak Curry; plating and recipe differ.",
+      "credit": "Eater Seattle · photographed steak with curry at another restaurant",
+      "sourceUrl": "https://www.yahoo.com/lifestyle/articles/save-room-dessert-green-lake-170000795.html",
+      "kind": "representative-food",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Visually compared food type and primary protein with menu variant, differences explicitly disclosed; no authentic restaurant item photo available.",
+      "needsPermissionReview": true,
+      "photoIdentityNote": "Illustrative photograph from another restaurant or editorial source. Not a genuine Hawkers product photo."
+    },
+    "curry-shrimp": {
+      "url": "https://www.lolaakinmade.com/wp-content/uploads/2015/10/Mauritius_0818.jpg",
+      "alt": "Representative bowl of shrimp curry garnished with cilantro and green onions; reddish gravy and shrimp visible. NOT a photograph of Hawkers Po Po Lo's Shrimp Curry. The sauce, vegetables and plating differ.",
+      "credit": "Lola Akinmade · Mauritius shrimp curry photography",
+      "sourceUrl": "https://www.lolaakinmade.com/phototips/environmental-portraits-of-food/",
+      "kind": "representative-food",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Visually compared food type and primary protein with menu variant, differences explicitly disclosed; no authentic restaurant item photo available.",
+      "needsPermissionReview": true,
+      "photoIdentityNote": "Illustrative photograph from another restaurant or editorial source. Not a genuine Hawkers product photo."
+    },
+    "thai-fried-egg": {
+      "url": "https://res.cloudinary.com/the-infatuation/image/upload/c_fill%2Cw_3840%2Car_4%3A3%2Cg_center%2Cf_auto/cms/Plaza_Khao_Gaeng_Fried_Eggs_Aleksandra_Boruch_London2",
+      "alt": "Representative Thai-style crispy fried egg with golden lacy edges and runny yolk, alongside chili dip. This is not Hawkers' actual Thai Fried Egg topping.",
+      "credit": "The Infatuation · Plaza Khao Gaeng Thai fried egg",
+      "sourceUrl": "https://www.theinfatuation.com/london/reviews/plaza-khao-gaeng",
+      "kind": "representative-food",
+      "reviewedAt": "2026-10-24",
+      "matchMethod": "Visually compared food type and primary protein with menu variant, differences explicitly disclosed; no authentic restaurant item photo available.",
+      "needsPermissionReview": true,
+      "photoIdentityNote": "Illustrative photograph from another restaurant or editorial source. Not a genuine Hawkers product photo."
     }
   },
   "pizza-bruno-curry": {
