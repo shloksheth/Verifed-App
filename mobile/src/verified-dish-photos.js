@@ -1,4 +1,4 @@
-// Restaurant product photographs keyed per individual menu item; photo alone is not an allergen-safety claim.
+// Item matched and source credited restaurant food photos, not allergen guarantees.
 export const verifiedDishPhotos = {
   "loving-hut-orlando": {
     "spring-rolls-4-rolls-cha-gio": {
@@ -1897,6 +1897,36 @@ export const verifiedDishPhotos = {
       "alt": "Korean Fried Chicken, pictured on the Hawkers official dining menu; presentation may vary by location",
       "credit": "Hawkers · official dining menu",
       "sourceUrl": "https://eathawkers.com/menus/dining/"
+    },
+    "chicken-lo-mein": {
+      "url": "https://eathawkers.com/wp-content/uploads/2020/09/hawkers_88939004.jpg",
+      "alt": "Chicken Lo Mein: full plate of stir-fried egg noodles with diced chicken, bean sprouts and scallions, photographed by Hawkers",
+      "credit": "Hawkers · official Lo Mein photo",
+      "sourceUrl": "https://eathawkers.com/fusion_element/mobile-noods/",
+      "kind": "official-product",
+      "reviewedAt": "2026-10-24",
+      "needsPermissionReview": false,
+      "matchMethod": "Visually compared restaurant photo with protein-specific Lo Mein and menu description."
+    },
+    "steak-lo-mein": {
+      "url": "https://tb-static.uber.com/prod/image-proc/processed_images/f9f7620dc4c354934ef375fb93051fac/a19bb09692310dfd41e49a96c424b3a6.jpeg",
+      "alt": "Hawkers beef lo mein with visible steak slices atop stir-fried egg noodles and scallions, photographed at a Hawkers location other than Orlando",
+      "credit": "Hawkers Charlotte · Postmates menu product photo",
+      "sourceUrl": "https://postmates.com/store/hawkers-asian-street-food-charlotte/1Vh2YAWBRy-2dwUPN0ihWw",
+      "kind": "brand-other-location",
+      "reviewedAt": "2026-10-24",
+      "needsPermissionReview": true,
+      "matchMethod": "Visually compared restaurant photo with protein-specific Lo Mein and menu description."
+    },
+    "shrimp-lo-mein": {
+      "url": "https://tb-static.uber.com/prod/image-proc/processed_images/6ed380e01498f55c0e3110eae1848df7/c67fc65e9b4e16a553eb7574fba090f1.jpeg",
+      "alt": "Hawkers shrimp lo mein with whole shrimp, wok-fried egg noodles and fresh scallions, photographed at the Dallas restaurant; Orlando plating may differ",
+      "credit": "Hawkers Dallas · Postmates menu photograph",
+      "sourceUrl": "https://postmates.com/store/hawkers-asian-street-food-dallas/nB94O0kAUA-YOlgGYKKaCw",
+      "kind": "brand-other-location",
+      "reviewedAt": "2026-10-24",
+      "needsPermissionReview": true,
+      "matchMethod": "Visually compared restaurant photo with protein-specific Lo Mein and menu description."
     }
   },
   "pizza-bruno-curry": {
