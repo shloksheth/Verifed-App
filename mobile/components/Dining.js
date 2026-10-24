@@ -247,21 +247,23 @@ export function Assessment({ dish, state, detailed = false }) {
 // A menu entry can have an exact official product photo or a clearly labeled
 // representative image from that restaurant. Imagery never influences allergies.
 function DishPhoto({ dish, restaurant, large = false }) {
-  const [failed, setFailed] = useState(false);
+  const [failedUrl, setFailedUrl] = useState(null);
   const photo = menuPhotoFor(dish, restaurant);
-  const dimensions = large ? s.menuDishPhotoLarge : s.menuDishPhoto;
-  if (!photo || failed) return null;
+  // Preserve each dish's entire photo; no aspect-ratio crop or stretching.
+  if (!photo || failedUrl === photo.url) return null;
   return (
     <View style={large ? s.menuDishPhotoLargeFrame : s.menuDishPhotoFrame}>
-      <Image
-        source={{ uri: photo.url }}
-        accessibilityLabel={photo.exact ? photo.alt : `${photo.alt}. Restaurant photography, not this specific menu item.`}
-        resizeMode="contain"
-        style={dimensions}
-        onError={() => setFailed(true)}
-      />
+      <View style={large ? s.menuDishPhotoLargeCanvas : s.menuDishPhotoCanvas}>
+        <Image
+          source={{ uri: photo.url }}
+          accessibilityLabel={photo.alt || `Menu photo for ${dish.name}`}
+          resizeMode="contain"
+          style={large ? s.menuDishPhotoLarge : s.menuDishPhoto}
+          onError={() => setFailedUrl(photo.url)}
+        />
+      </View>
       <Text style={s.menuPhotoType} numberOfLines={1}>
-        {photo.exact ? "Menu item" : "Restaurant photo"}
+        {photo.generated ? "Illustrative image" : photo.exact ? "Dish photo" : "Restaurant photo"}
       </Text>
     </View>
   );

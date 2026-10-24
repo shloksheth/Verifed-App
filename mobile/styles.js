@@ -626,23 +626,27 @@ export const s = StyleSheet.create({
   // round bowls and ultra-wide pizzas displayed in the same menu layout.
   menuDishPhotoFrame: {
     width: 106,
-    gap: 4,
-    backgroundColor: "#FFFFFF",
-    borderRadius: 14,
+    gap: 5,
   },
-  menuDishPhoto: {
+  menuDishPhotoCanvas: {
     width: 106,
-    height: 99,
-    borderRadius: 12,
-    backgroundColor: "#FFFFFF",
+    height: 106,
+    borderRadius: 14,
+    overflow: "hidden",
+    backgroundColor: "#F6F3EE",
+    padding: 4,
   },
-  menuDishPhotoLargeFrame: { width: "100%", gap: 6, backgroundColor: "#FFFFFF", borderRadius: 18 },
-  menuDishPhotoLarge: {
+  menuDishPhoto: { width: "100%", height: "100%" },
+  menuDishPhotoLargeFrame: { width: "100%", gap: 7 },
+  menuDishPhotoLargeCanvas: {
     width: "100%",
-    height: 250,
-    borderRadius: 17,
-    backgroundColor: "#FFFFFF",
+    height: 260,
+    borderRadius: 18,
+    overflow: "hidden",
+    backgroundColor: "#F6F3EE",
+    padding: 9,
   },
+  menuDishPhotoLarge: { width: "100%", height: "100%" },
   menuDishPhotoEmpty: {
     alignItems: "center",
     justifyContent: "center",

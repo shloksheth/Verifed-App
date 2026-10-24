@@ -71,8 +71,10 @@ export function menuPhotoFor(dish, restaurant) {
       url: dish.imageUrl,
       alt: dish.imageAlt || `Photograph of ${dish.name}`,
       credit: dish.imageCredit || "Published menu",
-      sourceUrl: dish.provenance?.menuUrl || restaurant?.menuUrl || null,
+      sourceUrl: dish.imageSourceUrl || dish.provenance?.menuUrl || restaurant?.menuUrl || null,
       exact: true,
+      generated: Boolean(dish.imageGenerated),
+      kind: dish.imageKind || "published",
     };
   }
   const slug = restaurant?.slug || restaurant?.id || dish?.restaurantId;
