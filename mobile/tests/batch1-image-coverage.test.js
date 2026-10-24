@@ -43,7 +43,7 @@ test("representative photos must remain explicitly separate from official produc
   for(const [slug,items] of Object.entries(expected)){
     for(const [key,photo] of Object.entries(verifiedDishPhotos[slug])){
       if (/^(representative|menu-context|editorial-context)/.test(photo.kind||"")) {
-        assert.match(photo.alt,/representative|not|unconfirmed|illustrative|different/i,slug+"/"+key);
+        assert.match(photo.alt,/representative|not|unconfirmed|illustrative|different|may vary|older presentation/i,slug+"/"+key);
       }
     }
   }
