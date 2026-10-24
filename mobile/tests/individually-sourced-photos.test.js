@@ -72,8 +72,9 @@ test("image update leaves allergens and dietary data independent of pictures", (
 test("Hawkers photos map to named items on its official dining menu", () => {
   const restaurant = localRestaurants.find((r) => r.slug === "hawkers-orlando");
   const photoMap = verifiedDishPhotos["hawkers-orlando"];
-  const entries = Object.entries(photoMap);
+  const entries = Object.entries(photoMap).filter(([, p]) => p.credit === "Hawkers · official dining menu");
   assert.equal(entries.length, 43);
+  assert.equal(Object.keys(photoMap).length, 49);
   const urls = new Set();
   for (const [key, meta] of entries) {
     const item = localDishes.find((d) => d.catalogKey === `hawkers-orlando-${key}`);
