@@ -28,6 +28,12 @@ typography:
   button: "15px / 21px, 600"
 ---
 
+# Verifed V29: Warm Forest Home, Explore and Journal
+
+V29 implements the approved three-screen CAC design direction. Use `mobile/src/warm-forest.js` as the **scoped** palette for Home, Explore, Journal and the primary floating navigation, with deep green surfaces, lower-glare warm stone/cream, an independent carrot-orange plus button and actual menu photos. The problem/solution hero communicates Verifed's dietary-communication purpose, without implying guaranteed allergen safety. Journal statistics must be calculated from the current user's meals and must never display illustrative numbers.
+
+Featured complete-photo menus in the default Recommended view are Taco Bell, Loving Hut Orlando, Hawkers Orlando, Fresh Kitchen Waterford and Chipotle South Orange. Restaurant search, filters, nearest sorting and dietary guardrails retain their real behavior. The chain menus retain their independent purple and brown/red visual systems. Do not spread `warm-forest.js` into branded menus, account creation, or Welcome.
+
 # Verifed V28: Independent visual identities
 
 V28 overrides V26's blanket consistency rule. The Verifed Home, Explore, Scan, Journal, and neutral task flows continue using the shared color tokens. Taco Bell and Chipotle intentionally do **not**: their standalone menus must preserve their own restaurant-inspired colors, typography, grid spacing, mode selectors, category tabs and actions. `mobile/components/TacoBellMenu.js` uses the historical purple/white menu styles. `mobile/components/ChipotleMenu.js` uses brown/red/white component-menu styling. Both retain Verifed's independent dietary disclaimers, local photos, and non-ordering behavior.

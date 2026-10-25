@@ -47,7 +47,7 @@ test("all visible shell wordmarks are light and have no orange terminal dot", ()
   const styles = file("styles.js");
   assert.doesNotMatch(app, /verifed<Text style=\{s\.brandDot\}>/);
   assert.doesNotMatch(home, /verifed<Text/);
-  assert.match(home, /fontFamily: "HomeBody"/);
+  assert.match(home, /fontFamily:"HomeMedium"/);
   assert.match(styles, /brand: \{[\s\S]*?fontWeight: "400"/);
   assert.match(welcome, /fontWeight: "400",\s*letterSpacing: -0\.8/);
 });

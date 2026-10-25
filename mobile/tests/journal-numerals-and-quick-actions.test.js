@@ -24,7 +24,7 @@ test("journal summary numerals use a readable tabular medium-weight face and lar
     assert.match(section[1], /fontVariant: \["tabular-nums"\]/);
     return section[1];
   };
-  assert.match(expectStyle("count"), /fontSize: 34/);
+  assert.match(expectStyle("count"), /fontSize: 30/);
   assert.match(expectStyle("filterCount"), /fontSize: 12/);
   assert.match(expectStyle("ratingNumber"), /fontSize: 13/);
   assert.match(expectStyle("detailRatingValue"), /fontSize: 21/);

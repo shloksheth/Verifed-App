@@ -1,3 +1,13 @@
+# V29 Warm Forest implementation scope
+
+The approved Home/Explore/Journal mockup is reflected in `components/Home.js`, `components/Explore.js`, `components/Journal.js` and `components/FloatingNavigation.js` using `src/warm-forest.js`. A near-black forest background grounds highlights, warm stone reduces glare, and the detached orange plus button stays outside the green tab pill. The Home screen keeps Verifed's carrot-check symbol and the capitalized Verifed wordmark.
+
+The CAC hero avoids unproven allergy-safety claims. Home and Explore photo cards use bundled menu item examples for five completely photographed menus, with accurate venue labels and menu links. The mockup's placeholder distances, dietary badges, ratings and recent visits are **not** hardcoded. Explore retains its search, map, location, cuisine, dietary and sorting options. The Journal summary uses real saved records, showing an em dash for average rating when none are available.
+
+The V28 exception remains: Taco Bell and Chipotle menu branding, welcome and account flows keep their separate design language. No restaurant product screens are refactored by this release.
+
+---
+
 # V28 exception to the V26 shared palette
 
 V26 applied the same peach, green and orange appearance across all active screens. That is **superseded for restaurant-chain menus and onboarding/authentication**. V28 restores the independent Taco Bell and Chipotle visual systems from V25 and the dark-green V25 welcome composition. Sign-in/create-account also uses a dedicated dark-green shell. Shared colors continue on Verifed's Home, Explore, Scan, Journal, and neutral support screens. The Verifed wordmark is regular-weight without a trailing orange period.
