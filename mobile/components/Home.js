@@ -14,7 +14,7 @@ import { colors } from "../styles";
 import { homeNeeds, homeRestaurants } from "../src/home-content";
 export { useAppFonts as useHomeFonts } from "../src/use-app-fonts";
 
-export function HomeHeader({ navigate, onInfo }) {
+export function HomeHeader({ navigate, onInfo, onProfile }) {
   return (
     <View style={h.header}>
       <Pressable
@@ -40,6 +40,14 @@ export function HomeHeader({ navigate, onInfo }) {
           style={h.iconButton}
         >
           <Icon name="information-circle-outline" size={24} />
+        </Pressable>
+        <Pressable
+          onPress={onProfile}
+          accessibilityRole="button"
+          accessibilityLabel="Open dietary profile"
+          style={h.iconButton}
+        >
+          <Icon name="person-circle-outline" size={24} />
         </Pressable>
         <Pressable
           onPress={() => navigate("favorites")}

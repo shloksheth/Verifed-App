@@ -1,11 +1,11 @@
 {
-  "number": 26.1,
-  "name": "Verifed V26.1",
-  "description": "Adjusts the Chipotle vegetarian bowl on the welcome and account-entry carousel to use full-image contain framing, avoiding the additional crop caused by cover; retains the existing locally bundled image and all other food slides.",
+  "number": 27,
+  "name": "Verifed V27",
+  "description": "Introduces the approved Home-first floating pill with four tabs and a separate expandable quick-actions button. Adds animated selection and plus rotation, reduced-motion support, keyboard-aware tab visibility, profile access from the header, and page-specific contextual navigation with a working back control.",
   "verification": [
-    "Scoped change to the first welcome carousel image; the original source image itself is tightly photographed and does not contain the complete lower/right bowl rim.",
-    "Automated regression checks ensure Chipotle uses contain and all other dishes keep cover.",
-    "Navigation concepts A and B are comparison prototypes only and not part of this published release.",
-    "Expo Snack publication and full native-screen validation are performed by the GitHub workflow and remain unconfirmed until its run completes."
+    "Navigation-model tests cover Home-first tab order, contextual routing and destinations, plus actions and reduced-motion intent.",
+    "Existing App stack/back behavior retained for restaurant, dish, favorites, meal and profile pages; primary tabs replace the history stack.",
+    "V26.1 Chipotle welcome photo fit is retained.",
+    "Expo Snack publication and iOS/Android/web export depend on subsequent GitHub Actions verification."
   ]
 }

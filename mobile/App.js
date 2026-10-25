@@ -10,6 +10,7 @@ import {
   ActivityIndicator,
   BackHandler,
   Image,
+  Keyboard,
   KeyboardAvoidingView,
   Linking,
   Platform,
@@ -29,7 +30,9 @@ import {
   Settings,
 } from "./components/Account";
 import { DishDetail, Favorites, Restaurant } from "./components/Dining";
-import Home, { HomeHeader, HomeTab, useHomeFonts } from "./components/Home";
+import Home, { HomeHeader, useHomeFonts } from "./components/Home";
+import FloatingNavigation, { ContextualNavigation } from "./components/FloatingNavigation";
+import { bottomNavigationMode, primaryRoutes, tabForPage } from "./src/navigation-model";
 import { Text, TypographyProvider } from "./components/Typography";
 import MenuScanner from "./components/MenuScanner";
 import { scanOwner } from "./src/menu-scan";
@@ -45,42 +48,10 @@ import {
   Notice,
 } from "./components/UI";
 
-const primaryRoutes = ["home", "explore", "scan", "history", "profile"];
-const navigation = [
-  {
-    route: "explore",
-    label: "Explore",
-    icon: "compass-outline",
-    active: "compass",
-  },
-  {
-    route: "scan",
-    label: "Scan",
-    icon: "scan-outline",
-    active: "scan",
-  },
-  { route: "home", label: "Home", icon: "home-outline", active: "home" },
-  {
-    route: "history",
-    label: "Journal",
-    icon: "journal-outline",
-    active: "journal",
-  },
-  { route: "profile", label: "You", icon: "person-outline", active: "person" },
-];
-
 function parseRoute(path) {
   const [pathname, query = ""] = path.split("?");
   const [page, id] = pathname.replace(/^\//, "").split("/");
   return { page: page || "home", id, params: new URLSearchParams(query) };
-}
-
-function activeTab(page) {
-  if (["dish", "restaurant"].includes(page)) return "explore";
-  if (page === "meal") return "history";
-  if (["settings", "help", "edit-profile", "auth"].includes(page))
-    return "profile";
-  return page;
 }
 
 function AppContent() {
@@ -88,10 +59,16 @@ function AppContent() {
   const state = useSyncExternalStore(api.subscribe, api.getState, api.getState);
   const [stack, setStack] = useState(["home"]);
   const [sheet, setSheet] = useState(null);
+  const [keyboardVisible, setKeyboardVisible] = useState(false);
   const [initError, setInitError] = useState("");
   const [welcomeDone, setWelcomeDone] = useState(false);
   const [searchArea, setSearchArea] = useState(null);
   const [scanDraft, setScanDraft] = useState(null);
+  useEffect(() => {
+    const show = Keyboard.addListener("keyboardDidShow", () => setKeyboardVisible(true));
+    const hide = Keyboard.addListener("keyboardDidHide", () => setKeyboardVisible(false));
+    return () => { show.remove(); hide.remove(); };
+  }, []);
   const owner = scanOwner(state);
   useEffect(() => setScanDraft(null), [state.scanResetVersion]);
   const scroll = useRef(null);
@@ -276,6 +253,7 @@ function AppContent() {
             fontsReady={homeFontsReady}
             navigate={navigate}
             onInfo={() => setSheet({ type: "info" })}
+            onProfile={() => navigate("profile")}
           />
         ) : (
           !showWelcome && (
@@ -312,21 +290,14 @@ function AppContent() {
                 </Text>
               </Pressable>
               <View style={s.headerRight}>
-                {!showWelcome && (
+                {route.page !== "profile" && route.page !== "auth" && (
                   <Pressable
                     accessibilityRole="button"
-                    accessibilityLabel="Change location"
-                    onPress={() => navigate("explore?location=1")}
-                    style={{
-                      flexShrink: 1,
-                      minWidth: 0,
-                      minHeight: 44,
-                      justifyContent: "center",
-                    }}
+                    accessibilityLabel="Open dietary profile"
+                    onPress={() => navigate("profile")}
+                    style={s.iconButton}
                   >
-                    <Text style={[s.mode, { maxWidth: 80 }]} numberOfLines={1}>
-                      {searchArea?.label || "ORLANDO"}
-                    </Text>
+                    <Icon name="person-circle-outline" size={23} />
                   </Pressable>
                 )}
                 {route.page === "home" && !showWelcome && (
@@ -400,42 +371,17 @@ function AppContent() {
             </FormScrollContext.Provider>
           </KeyboardAvoidingView>
         )}
-        {!showWelcome && (
-          <View style={s.nav}>
-            {navigation.map((item) => {
-              const selected = activeTab(route.page) === item.route;
-              return (
-                <Pressable
-                  key={item.route}
-                  accessibilityRole="tab"
-                  accessibilityState={{ selected }}
-                  aria-selected={selected}
-                  accessibilityLabel={item.label}
-                  onPress={() => {
-                    if (item.route === "home" && selected)
-                      scroll.current?.scrollTo({ y: 0, animated: true });
-                    navigate(item.route);
-                  }}
-                  style={s.navItem}
-                >
-                  {item.route === "home" ? (
-                    <HomeTab selected={selected} fontsReady={homeFontsReady} />
-                  ) : (
-                    <Icon
-                      name={selected ? item.active : item.icon}
-                      color={selected ? colors.green : colors.muted}
-                      size={23}
-                    />
-                  )}
-                  {item.route !== "home" && (
-                    <Text style={[s.navText, selected && s.navTextActive]}>
-                      {item.label}
-                    </Text>
-                  )}
-                </Pressable>
-              );
-            })}
-          </View>
+        {!showWelcome && !keyboardVisible && state.ready && (
+          bottomNavigationMode(route.page) === "primary" ? (
+            <FloatingNavigation
+              activeRoute={tabForPage(route.page)}
+              navigate={navigate}
+              openSheet={setSheet}
+              onHomeAgain={() => scroll.current?.scrollTo({ y: 0, animated: true })}
+            />
+          ) : bottomNavigationMode(route.page) === "contextual" ? (
+            <ContextualNavigation page={route.page} goBack={goBack} navigate={navigate} />
+          ) : null
         )}
         {sheet?.type === "info" && <HomeInfo onClose={() => setSheet(null)} />}
         {sheet?.type === "meal" && (
