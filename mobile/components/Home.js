@@ -1,4 +1,3 @@
-import { type } from "../src/design-tokens";
 import React, { useState } from "react";
 import {
   Image as NativeImage,
@@ -10,52 +9,32 @@ import {
 import { Image } from "./MenuImage";
 import { Text, TextInput } from "./Typography";
 import { Icon } from "./UI";
-import { colors } from "../styles";
-import { homeNeeds, homeRestaurants } from "../src/home-content";
+import { forest } from "../src/warm-forest";
+import { featuredRestaurants, featuredMenuCoverKeys } from "../src/featured-menus";
+import { localFoodAssets } from "../src/local-food-assets";
+import { homeNeeds } from "../src/home-content";
 export { useAppFonts as useHomeFonts } from "../src/use-app-fonts";
 
 export function HomeHeader({ navigate, onInfo, onProfile }) {
   return (
     <View style={h.header}>
-      <Pressable
-        onPress={() => navigate("home")}
-        accessibilityRole="button"
-        accessibilityLabel="Verifed home"
-        style={h.brandLink}
-      >
-        <NativeImage
-          source={require("../assets/verifed-mark.png")}
-          style={h.brandMark}
-          accessibilityLabel="Verifed carrot checkmark"
-        />
-        <Text style={h.wordmark}>
-          verifed
-        </Text>
+      <Pressable onPress={() => navigate("home")} accessibilityRole="button"
+        accessibilityLabel="Verifed home" style={h.brandLink}>
+        <NativeImage source={require("../assets/verifed-mark.png")}
+          style={h.brandMark} accessibilityLabel="Verifed carrot checkmark" />
+        <Text style={h.wordmark}>Verifed</Text>
       </Pressable>
       <View style={h.headerActions}>
-        <Pressable
-          onPress={onInfo}
-          accessibilityRole="button"
-          accessibilityLabel="About Verifed"
-          style={h.iconButton}
-        >
-          <Icon name="information-circle-outline" size={24} />
+        <Pressable onPress={onInfo} accessibilityRole="button" accessibilityLabel="How Verifed works" style={h.iconButton}>
+          <Icon name="information-circle-outline" size={23} color={forest.ink} />
         </Pressable>
-        <Pressable
-          onPress={onProfile}
-          accessibilityRole="button"
-          accessibilityLabel="Open dietary profile"
-          style={h.iconButton}
-        >
-          <Icon name="person-circle-outline" size={24} />
+        <Pressable onPress={() => navigate("favorites")} accessibilityRole="button"
+          accessibilityLabel="Saved dishes" style={h.iconButton}>
+          <Icon name="heart-outline" size={23} color={forest.ink} />
         </Pressable>
-        <Pressable
-          onPress={() => navigate("favorites")}
-          accessibilityRole="button"
-          accessibilityLabel="Open saved dishes"
-          style={h.iconButton}
-        >
-          <Icon name="heart-outline" size={24} />
+        <Pressable onPress={onProfile} accessibilityRole="button"
+          accessibilityLabel="Open dietary profile" style={h.profileButton}>
+          <Icon name="person" size={22} color={forest.green} />
         </Pressable>
       </View>
     </View>
@@ -65,457 +44,220 @@ export function HomeHeader({ navigate, onInfo, onProfile }) {
 export function HomeTab({ selected }) {
   return (
     <View style={[h.homeTab, selected && h.homeTabSelected]}>
-      <Icon
-        name={selected ? "home" : "home-outline"}
-        size={23}
-        color={selected ? colors.paper : colors.muted}
-      />
-      <Text style={[h.tabLabel, selected && { color: colors.paper }]}>
-        Home
-      </Text>
+      <Icon name={selected ? "home" : "home-outline"} size={23}
+        color={selected ? forest.lightText : forest.muted} />
+      <Text style={[h.tabLabel, selected && { color: forest.lightText }]}>Home</Text>
     </View>
   );
 }
 
-const covers = {
-  "hawkers-orlando": {
-    source: require("../assets/food/hawkers-orlando/roti-canai.webp"),
-    alt: "Hawkers roti canai with curry dip",
-    name: "Hawkers",
-    detail: "Asian street food",
-  },
-  "chipotle-south-orange": {
-    source: require("../assets/home/chipotle-vegetarian-bowl.webp"),
-    alt: "Chipotle bowl with rice, beans, vegetables and guacamole",
-    name: "Chipotle",
-    detail: "Mexican",
-  },
-};
-
 export default function Home({ state, navigate, searchArea }) {
   const [query, setQuery] = useState("");
   const needs = homeNeeds(state.profile);
-  const restaurants = homeRestaurants(state.restaurants);
+  const featured = featuredRestaurants(state.restaurants);
   const location = searchArea?.label || "Orlando, FL";
   function search() {
     navigate(`explore?q=${encodeURIComponent(query.trim())}`);
   }
+  function coverFor(restaurant) {
+    return localFoodAssets[featuredMenuCoverKeys[restaurant.slug]];
+  }
+  function featureTile(restaurant, compact = false) {
+    const source = coverFor(restaurant);
+    return (
+      <Pressable
+        key={restaurant.slug}
+        onPress={() => navigate(`restaurant/${restaurant.id}`)}
+        accessibilityRole="button"
+        accessibilityLabel={`View ${restaurant.name} menu`}
+        style={({ pressed }) => [compact ? h.moreTile : h.featureTile, pressed && h.pressed]}
+      >
+        <View style={compact ? h.morePhotoFrame : h.featurePhotoFrame}>
+          {source ? (
+            <Image source={source} contentFit="contain"
+              accessibilityLabel={`Example menu food from ${restaurant.name}`}
+              style={h.foodPhoto} />
+          ) : <Icon name="restaurant-outline" size={36} color={forest.green} />}
+        </View>
+        <View style={compact ? h.moreCaption : h.featureCaption}>
+          <Text numberOfLines={2} style={compact ? h.moreName : h.featureName}>{restaurant.name}</Text>
+          {!compact && <Icon name="arrow-forward" size={17} color={forest.lightText} />}
+        </View>
+      </Pressable>
+    );
+  }
   return (
     <View style={h.page}>
-      <Pressable
-        onPress={() => navigate("explore?location=1")}
-        accessibilityRole="button"
-        accessibilityLabel={`Change location, currently ${location}`}
-        style={h.location}
-      >
-        <View style={h.locationDot}>
-          <Icon name="location-outline" size={20} color={colors.orange} />
-        </View>
-        <View style={{ flex: 1 }}>
-          <Text style={h.locationLabel}>Browse menus in</Text>
-          <Text style={h.locationText} numberOfLines={2}>
-            {location}
-          </Text>
-        </View>
-        <Icon name="chevron-down" size={18} />
-      </Pressable>
-
-      <Text accessibilityRole="header" style={h.headline}>
-        Find your next meal.
-      </Text>
       <View style={h.search}>
-        <Icon name="search-outline" size={22} color={colors.muted} />
+        <Icon name="search-outline" size={20} color={forest.muted} />
         <TextInput
-          accessibilityLabel="Search restaurants or dishes"
-          placeholder="Restaurant, dish or ingredient"
-          placeholderTextColor={colors.muted}
-          value={query}
-          onChangeText={setQuery}
-          onSubmitEditing={search}
-          returnKeyType="search"
+          accessibilityLabel="Find restaurants, dishes or cuisines"
+          placeholder="Find restaurants, dishes or cuisines..."
+          placeholderTextColor={forest.muted}
+          value={query} onChangeText={setQuery}
+          onSubmitEditing={search} returnKeyType="search"
           clearButtonMode="while-editing"
           style={h.searchInput}
         />
-        <Pressable
-          onPress={search}
-          accessibilityRole="button"
-          accessibilityLabel="Find menus"
-          style={h.searchGo}
-        >
-          <Icon name="arrow-forward" color={colors.paper} size={20} />
+        <Pressable onPress={search} accessibilityRole="button"
+          accessibilityLabel="Search menus" style={h.searchTap}>
+          <Icon name="arrow-forward" color={forest.green} size={19} />
         </Pressable>
       </View>
 
-      <View style={h.cuisineRow}>
-        {[
-          ["Indian", "restaurant-outline"],
-          ["Mexican", "sunny-outline"],
-          ["Vegan", "leaf-outline"],
-        ].map(([label, icon]) => (
-          <Pressable
-            key={label}
-            onPress={() =>
-              navigate(`explore?cuisine=${encodeURIComponent(label)}`)
-            }
-            accessibilityRole="button"
-            accessibilityLabel={`Explore ${label} restaurants`}
-            style={({ pressed }) => [h.cuisine, pressed && h.pressed]}
-          >
-            <View style={h.cuisineIcon}>
-              <Icon name={icon} color={colors.ink} size={25} />
-            </View>
-            <Text style={h.cuisineName}>{label}</Text>
+      <View style={h.hero}>
+        <Image source={require("../assets/home/chipotle-vegetarian-bowl.webp")}
+          contentFit="cover" style={h.heroFood}
+          accessibilityLabel="Vegetarian bowl with rice, beans, vegetables and guacamole" />
+        <View style={h.heroMask} />
+        <View style={h.heroText}>
+          <Text accessibilityRole="header" style={h.heroTitle}>
+            Reduce dietary mix-ups before you order.
+          </Text>
+          <Text style={h.heroSub}>
+            Share your dietary needs with staff and review published menu information.
+          </Text>
+          <Pressable onPress={() => navigate("explore")}
+            accessibilityRole="button" accessibilityLabel="Explore restaurant menus"
+            style={({ pressed }) => [h.heroButton, pressed && h.pressed]}>
+            <Text style={h.heroButtonLabel}>Explore menus</Text>
+            <Icon name="arrow-forward" size={18} color={forest.ink} />
           </Pressable>
-        ))}
+        </View>
       </View>
 
       <View style={h.section}>
         <View style={h.sectionHeading}>
-          <Text accessibilityRole="header" style={h.sectionTitle}>
-            Featured menus
-          </Text>
-          <Pressable
-            onPress={() => navigate("explore")}
-            accessibilityRole="button"
-            accessibilityLabel="See all restaurants"
-            style={h.textButton}
-          >
+          <Text accessibilityRole="header" style={h.sectionTitle}>Featured menus</Text>
+          <Pressable onPress={() => navigate("explore")} accessibilityRole="button"
+            accessibilityLabel="Browse all restaurants" style={h.textButton}>
             <Text style={h.link}>See all</Text>
-            <Icon name="arrow-forward" color={colors.orangeDark} size={17} />
           </Pressable>
         </View>
-        <ScrollView
-          horizontal
-          showsHorizontalScrollIndicator={false}
-          contentContainerStyle={h.restaurantRail}
-        >
-          {restaurants.map((restaurant) => {
-            const cover = covers[restaurant.slug];
-            const count = state.dishes.filter(
-              (dish) => dish.restaurantId === restaurant.id,
-            ).length;
-            return (
-              <Pressable
-                key={restaurant.id}
-                onPress={() => navigate(`restaurant/${restaurant.id}`)}
-                accessibilityRole="button"
-                accessibilityLabel={`View ${cover.name} menu`}
-                style={({ pressed }) => [
-                  h.restaurantCard,
-                  pressed && h.pressed,
-                ]}
-              >
-                <View style={h.foodFrame}>
-                  <Image
-                    source={cover.source}
-                    contentFit="cover"
-                    accessibilityLabel={cover.alt}
-                    style={h.foodPhoto}
-                  />
-                  <View style={h.photoArrow}>
-                    <Icon name="arrow-forward" size={19} />
-                  </View>
-                </View>
-                <View style={h.caption}>
-                  <Text style={h.restaurantName}>{cover.name}</Text>
-                  <Text style={h.meta}>
-                    {cover.detail}
-                    {count ? ` · ${count} items` : ""}
-                  </Text>
-                </View>
-              </Pressable>
-            );
-          })}
+        <ScrollView horizontal showsHorizontalScrollIndicator={false}
+          contentContainerStyle={h.featureRail}>
+          {featured.slice(0, 3).map((restaurant) => featureTile(restaurant))}
         </ScrollView>
-        {!restaurants.length && (
-          <Text style={h.meta}>
-            No featured menus available. Browse all restaurants instead.
-          </Text>
-        )}
+        {!featured.length && <Text style={h.meta}>Browse Explore to see available restaurant menus.</Text>}
       </View>
 
-      <View style={h.needs}>
-        <View style={h.sectionHeading}>
-          <View style={{ flex: 1 }}>
-            <Text style={h.needsTitle}>Your dietary needs</Text>
-            {!needs.length && (
-              <Text style={h.meta}>Add allergies or dietary restrictions.</Text>
-            )}
+      {featured.length > 3 && (
+        <View style={h.section}>
+          <View style={h.sectionHeading}>
+            <Text accessibilityRole="header" style={h.sectionTitle}>More to explore</Text>
+            <Pressable onPress={() => navigate("explore")} style={h.textButton}
+              accessibilityRole="button" accessibilityLabel="Open all restaurant menus">
+              <Text style={h.link}>See all</Text>
+            </Pressable>
           </View>
-          <Pressable
-            onPress={() => navigate("edit-profile?returnTo=home")}
-            accessibilityRole="button"
-            accessibilityLabel="Edit your dietary needs"
-            style={h.textButton}
-          >
-            <Text style={h.link}>{needs.length ? "Edit" : "Set up"}</Text>
-            <Icon name="chevron-forward" size={16} color={colors.orangeDark} />
-          </Pressable>
-        </View>
-        {!!needs.length && (
-          <ScrollView
-            horizontal
-            showsHorizontalScrollIndicator={false}
-            contentContainerStyle={h.needsRail}
-          >
-            {needs.map((need) => (
-              <Pressable
-                key={need.key}
-                onPress={() => navigate("edit-profile?returnTo=home")}
-                accessibilityRole="button"
-                accessibilityLabel={`Edit dietary need: ${need.label}`}
-                style={h.needChip}
-              >
-                <Icon name={need.icon} size={16} color={colors.green} />
-                <Text style={h.needText}>{need.label}</Text>
-              </Pressable>
-            ))}
+          <ScrollView horizontal showsHorizontalScrollIndicator={false}
+            contentContainerStyle={h.moreRail}>
+            {featured.slice(3).map((restaurant) => featureTile(restaurant, true))}
           </ScrollView>
-        )}
-      </View>
+        </View>
+      )}
 
-      <Pressable
-        onPress={() => navigate("scan")}
-        accessibilityRole="button"
-        accessibilityLabel="Scan a menu"
-        style={({ pressed }) => [h.scanPanel, pressed && h.pressed]}
-      >
-        <View style={{ flex: 1, gap: 9 }}>
-          <Text accessibilityRole="header" style={h.scanTitle}>
-            Have a paper menu?
-          </Text>
-          <Text style={h.scanDescription}>
-            Take a photo to view it in English.
-          </Text>
-          <View style={h.scanAction}>
-            <Icon name="camera-outline" size={20} color={colors.orangeDark} />
-            <Text style={h.link}>Scan menu</Text>
-            <Icon name="arrow-forward" size={18} color={colors.orangeDark} />
-          </View>
+      <Pressable style={h.needs} onPress={() => navigate("edit-profile?returnTo=home")}
+        accessibilityRole="button" accessibilityLabel="View or edit dietary needs">
+        <View style={h.needsHeading}>
+          <Icon name="shield-checkmark-outline" color={forest.lightText} size={24} />
+          <Text style={h.needsTitle}>Your dietary needs</Text>
+          <Icon name="chevron-forward" size={19} color={forest.lightText} />
         </View>
-        <View style={h.menuThumbnail}>
-          <Icon name="scan-outline" size={42} color={colors.green} />
-        </View>
+        <Text style={h.needsText}>
+          {needs.length ? needs.map((need) => need.label).join(" · ")
+            : "Add allergies and restrictions to personalize menu comparisons."}
+        </Text>
+        <Text style={h.needsFootnote}>Always confirm ingredients and cross-contact with restaurant staff.</Text>
       </Pressable>
+
+      <View style={h.bottomActions}>
+        <Pressable onPress={() => navigate("explore?location=1")}
+          accessibilityRole="button" accessibilityLabel={`Change search area: ${location}`}
+          style={h.locationButton}>
+          <Icon name="location-outline" size={18} color={forest.green} />
+          <Text style={h.locationText} numberOfLines={1}>{location}</Text>
+          <Icon name="chevron-down" size={16} color={forest.muted} />
+        </Pressable>
+        <Pressable onPress={() => navigate("scan")} accessibilityRole="button"
+          accessibilityLabel="Scan a menu" style={h.scanButton}>
+          <Icon name="scan-outline" size={21} color={forest.green} />
+          <Text style={h.scanText}>Scan menu</Text>
+          <Icon name="arrow-forward" size={16} color={forest.green} />
+        </Pressable>
+      </View>
     </View>
   );
 }
 
 const h = StyleSheet.create({
-  page: { gap: 24, paddingBottom: 8 },
-  header: {
-    width: "100%",
-    maxWidth: 760,
-    alignSelf: "center",
-    flexDirection: "row",
-    alignItems: "center",
-    justifyContent: "space-between",
-    paddingHorizontal: 20,
-    paddingVertical: 8,
-  },
-  brandLink: {
-    flexDirection: "row",
-    alignItems: "center",
-    minHeight: 44,
-    gap: 7,
-  },
-  brandMark: { width: 27, height: 35, resizeMode: "contain" },
-  wordmark: {
-    fontFamily: "HomeBody",
-    fontWeight: "400",
-    fontSize: 25,
-    lineHeight: 34,
-    letterSpacing: -1.1,
-    color: colors.ink,
-  },
-  headerActions: { flexDirection: "row", gap: 4 },
-  iconButton: {
-    width: 44,
-    height: 44,
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  location: {
-    flexDirection: "row",
-    alignItems: "center",
-    gap: 10,
-    minHeight: 48,
-  },
-  locationDot: {
-    width: 42,
-    height: 42,
-    borderRadius: 21,
-    backgroundColor: colors.peach,
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  locationLabel: { color: colors.muted, fontSize: 12, lineHeight: 18 },
-  locationText: {
-    color: colors.ink,
-    fontSize: 15,
-    fontWeight: "700",
-    lineHeight: 22,
-  },
-  headline: { ...type.page, color: colors.ink, maxWidth: 390 },
-  search: {
-    backgroundColor: colors.paper,
-    borderRadius: 28,
-    minHeight: 56,
-    flexDirection: "row",
-    alignItems: "center",
-    paddingLeft: 16,
-    paddingRight: 6,
-    gap: 9,
-    borderWidth: 1,
-    borderColor: colors.line,
-    marginTop: -7,
-  },
-  searchInput: {
-    flex: 1,
-    minWidth: 0,
-    color: colors.ink,
-    fontSize: 14,
-    minHeight: 50,
-    paddingVertical: 8,
-  },
-  searchGo: {
-    width: 44,
-    height: 44,
-    borderRadius: 22,
-    backgroundColor: colors.orange,
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  cuisineRow: { flexDirection: "row", gap: 12 },
-  cuisine: { flex: 1, alignItems: "center", gap: 8 },
-  cuisineIcon: {
-    width: 62,
-    height: 62,
-    borderRadius: 22,
-    backgroundColor: colors.peach,
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  cuisineName: {
-    color: colors.ink,
-    fontSize: 13,
-    fontWeight: "600",
-    lineHeight: 18,
-  },
-  section: { gap: 12 },
-  sectionHeading: {
-    flexDirection: "row",
-    alignItems: "center",
-    justifyContent: "space-between",
-    gap: 12,
-  },
-  sectionTitle: { ...type.section, color: colors.ink, flexShrink: 1 },
-  textButton: {
-    minHeight: 44,
-    flexDirection: "row",
-    gap: 5,
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  link: {
-    color: colors.orangeDark,
-    fontWeight: "700",
-    fontSize: 14,
-    lineHeight: 21,
-  },
-  restaurantRail: { gap: 16, paddingRight: 4 },
-  restaurantCard: { width: 254, gap: 10 },
-  foodFrame: {
-    width: "100%",
-    aspectRatio: 1.5,
-    borderRadius: 18,
-    overflow: "hidden",
-    backgroundColor: colors.line,
-  },
-  foodPhoto: {
-    ...StyleSheet.absoluteFillObject,
-    width: "100%",
-    height: "100%",
-  },
-  photoArrow: {
-    position: "absolute",
-    bottom: 10,
-    right: 10,
-    width: 34,
-    height: 34,
-    borderRadius: 17,
-    backgroundColor: colors.paper,
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  caption: { gap: 3 },
-  restaurantName: { ...type.card, color: colors.ink },
-  meta: { ...type.meta, color: colors.muted },
-  needs: {
-    backgroundColor: colors.paleGreen,
-    paddingHorizontal: 16,
-    borderRadius: 18,
-    paddingVertical: 18,
-    borderTopWidth: 1,
-    borderBottomWidth: 1,
-    borderColor: colors.line,
-    gap: 10,
-  },
-  needsTitle: { ...type.card, color: colors.ink },
-  needsRail: { gap: 8 },
-  needChip: {
-    flexDirection: "row",
-    gap: 6,
-    alignItems: "center",
-    paddingHorizontal: 12,
-    paddingVertical: 10,
-    minHeight: 44,
-    borderRadius: 24,
-    backgroundColor: colors.paleGreen,
-  },
-  needText: { color: colors.green, fontSize: 13, lineHeight: 20 },
-  scanPanel: {
-    backgroundColor: colors.peach,
-    borderRadius: 22,
-    padding: 20,
-    flexDirection: "row",
-    alignItems: "center",
-    gap: 12,
-  },
-  scanTitle: { ...type.section, color: colors.ink },
-  scanDescription: { ...type.body, color: colors.ink },
-  scanAction: {
-    flexDirection: "row",
-    alignItems: "center",
-    gap: 7,
-    minHeight: 44,
-  },
-  menuThumbnail: {
-    alignItems: "center",
-    justifyContent: "center",
-    width: 75,
-    height: 108,
-    backgroundColor: colors.paper,
-    borderRadius: 4,
-    overflow: "hidden",
-    transform: [{ rotate: "8deg" }],
-  },
-  homeTab: {
-    minWidth: 56,
-    minHeight: 52,
-    paddingHorizontal: 10,
-    paddingVertical: 6,
-    borderRadius: 20,
-    alignItems: "center",
-    justifyContent: "center",
-    gap: 3,
-  },
-  homeTabSelected: { backgroundColor: colors.green },
-  tabLabel: {
-    color: colors.muted,
-    fontSize: 11,
-    fontWeight: "600",
-    lineHeight: 15,
-  },
-  pressed: { opacity: 0.72 },
+  header: { width:"100%", maxWidth:760, alignSelf:"center", flexDirection:"row",
+    alignItems:"center", justifyContent:"space-between", paddingHorizontal:20,
+    paddingVertical:9, backgroundColor:forest.background },
+  brandLink: { flexDirection:"row", alignItems:"center", gap:6, minHeight:46 },
+  brandMark: { width:28, height:36, resizeMode:"contain" },
+  wordmark: { fontFamily:"HomeMedium", fontWeight:"500", fontSize:25,
+    lineHeight:34, letterSpacing:-0.8, color:forest.ink },
+  headerActions: { flexDirection:"row", alignItems:"center", gap:2 },
+  iconButton: { width:42, height:44, alignItems:"center", justifyContent:"center" },
+  profileButton: { width:43, height:43, borderRadius:22, backgroundColor:forest.surface,
+    alignItems:"center", justifyContent:"center" },
+  page: { gap:21, paddingBottom:18 },
+  search: { minHeight:48, borderRadius:25, paddingLeft:15, paddingRight:4,
+    backgroundColor:forest.surface, flexDirection:"row", gap:9, alignItems:"center" },
+  searchInput: { flex:1, minWidth:0, fontSize:13, minHeight:47, color:forest.ink },
+  searchTap: { width:44, height:44, alignItems:"center", justifyContent:"center" },
+  hero: { minHeight:275, borderRadius:23, backgroundColor:forest.green, overflow:"hidden",
+    position:"relative", justifyContent:"center" },
+  heroFood: { position:"absolute", right:-39, top:0, bottom:0, height:"100%", width:"64%" },
+  heroMask: { position:"absolute", top:0, bottom:0, left:0, width:"54%",
+    backgroundColor:forest.green },
+  heroText: { maxWidth:"71%", minHeight:268, paddingVertical:20, paddingLeft:19,
+    paddingRight:6, justifyContent:"space-between", gap:11 },
+  heroTitle: { fontFamily:"HomeHeadingStrong", fontSize:29, lineHeight:32,
+    letterSpacing:-0.9, color:forest.lightText },
+  heroSub: { fontSize:12, lineHeight:17, maxWidth:235, color:"#E4EBE2" },
+  heroButton: { flexDirection:"row", gap:9, alignItems:"center", justifyContent:"center",
+    borderRadius:24, minHeight:45, paddingHorizontal:13,
+    backgroundColor:forest.lightText, alignSelf:"flex-start" },
+  heroButtonLabel: { fontSize:13, fontWeight:"700", color:forest.ink },
+  section: { gap:10 },
+  sectionHeading: { flexDirection:"row", alignItems:"center",
+    justifyContent:"space-between", gap:12 },
+  sectionTitle: { color:forest.ink, fontSize:19, lineHeight:25, fontWeight:"700" },
+  textButton: { minHeight:44, paddingHorizontal:4, alignItems:"center", justifyContent:"center" },
+  link: { color:forest.ink, fontSize:13, fontWeight:"600" },
+  featureRail: { gap:10, paddingRight:4 },
+  featureTile: { width:132, backgroundColor:forest.card, borderRadius:17, overflow:"hidden" },
+  featurePhotoFrame: { height:133, width:"100%", backgroundColor:forest.surface,
+    alignItems:"center", justifyContent:"center" },
+  foodPhoto: { width:"100%", height:"100%" },
+  featureCaption: { minHeight:43, flexDirection:"row", gap:3,
+    backgroundColor:forest.green, alignItems:"center", paddingHorizontal:9 },
+  featureName: { flex:1, fontSize:12, lineHeight:16, fontWeight:"600", color:forest.lightText },
+  moreRail: { gap:10, paddingRight:4 },
+  moreTile: { width:168, borderRadius:15, backgroundColor:forest.card, overflow:"hidden" },
+  morePhotoFrame: { height:110, backgroundColor:forest.surface },
+  moreCaption: { paddingHorizontal:10, paddingVertical:9, minHeight:43 },
+  moreName: { color:forest.ink, fontSize:13, fontWeight:"600" },
+  meta: { color:forest.muted, fontSize:13, lineHeight:20 },
+  needs: { backgroundColor:forest.green, borderRadius:18,
+    padding:19, gap:10 },
+  needsHeading: { flexDirection:"row", alignItems:"center", gap:9 },
+  needsTitle: { color:forest.lightText, fontSize:18, flex:1, fontWeight:"700" },
+  needsText: { color:forest.lightText, fontSize:13, lineHeight:20 },
+  needsFootnote: { color:"#CADAD0", fontSize:11, lineHeight:17 },
+  bottomActions: { flexDirection:"row", gap:10, flexWrap:"wrap" },
+  locationButton: { flex:1, minWidth:125, flexDirection:"row", borderRadius:16,
+    backgroundColor:forest.cardMuted, minHeight:50, paddingHorizontal:11,
+    gap:7, alignItems:"center" },
+  locationText: { flex:1, fontSize:12, color:forest.ink, fontWeight:"600" },
+  scanButton: { flexDirection:"row", borderRadius:16, paddingHorizontal:14, minHeight:50,
+    backgroundColor:forest.card, gap:7, alignItems:"center" },
+  scanText: { fontSize:12, fontWeight:"600", color:forest.green },
+  homeTab: { minWidth:56, minHeight:52, borderRadius:26,
+    justifyContent:"center", alignItems:"center", gap:4 },
+  homeTabSelected: { backgroundColor:forest.greenRaised },
+  tabLabel: { color:forest.muted, fontSize:11 },
+  pressed: { opacity:0.8, transform:[{scale:0.985}] },
 });
