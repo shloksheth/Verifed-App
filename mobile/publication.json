@@ -1,12 +1,12 @@
 {
-  "version": 22,
-  "name": "Verifed V22",
-  "id": "wUjeSmbNYY0jNKrtarQN1",
-  "url": "exp://u.expo.dev/933fd9c0-1666-11e7-afca-d980795c5824?runtime-version=exposdk%3A54.0.0&channel-name=production&snack=wUjeSmbNYY0jNKrtarQN1",
-  "hashId": "wUjeSmbNYY0jNKrtarQN1",
-  "snackId": "d599c0a8-388e-45a5-9e70-53a56b2567fa",
-  "editorUrl": "https://snack.expo.dev/wUjeSmbNYY0jNKrtarQN1",
-  "publishedAt": "2026-10-25T17:32:52.090Z",
+  "version": "22.1",
+  "name": "Verifed V22.1",
+  "id": "0RM7DW8olXkCnhCRHkiJ_",
+  "url": "exp://u.expo.dev/933fd9c0-1666-11e7-afca-d980795c5824?runtime-version=exposdk%3A54.0.0&channel-name=production&snack=0RM7DW8olXkCnhCRHkiJ_",
+  "hashId": "0RM7DW8olXkCnhCRHkiJ_",
+  "snackId": "4239b149-7036-4d86-b9ed-0ba1d4ad304f",
+  "editorUrl": "https://snack.expo.dev/0RM7DW8olXkCnhCRHkiJ_",
+  "publishedAt": "2026-10-25T18:01:33.370Z",
   "sdkVersion": "54.0.0",
   "files": [
     "App.js",
@@ -63,6 +63,10 @@
     "assets/brands/taco-bell-logo.png",
     "assets/fonts/Anton-Regular.ttf",
     "assets/fonts/BarlowCondensed-SemiBold.ttf",
+    "assets/fonts/ClashGrotesk-Bold.ttf",
+    "assets/fonts/ClashGrotesk-Medium.ttf",
+    "assets/fonts/ClashGrotesk-Regular.ttf",
+    "assets/fonts/ClashGrotesk-Semibold.ttf",
     "assets/fonts/DMSans-Medium.ttf",
     "assets/fonts/DMSans-Regular.ttf",
     "assets/fonts/PublicSans-Bold.ttf",
@@ -430,18 +434,24 @@
     "assets/home/chipotle-vegetarian-bowl.webp",
     "assets/scan/2cero7-spanish-menu.webp",
     "assets/verifed-mark.png",
+    "assets/fonts/ClashGrotesk-FFL.txt",
     "assets/fonts/DMSans-OFL.txt",
     "assets/fonts/PublicSans-OFL.txt",
     "assets/fonts/Sora-OFL.txt",
     "assets/fonts/SourceSerif4-OFL.txt",
     "assets/fonts/anton-OFL.txt",
     "assets/fonts/barlowcondensed-OFL.txt",
+    "assets/fonts/clash-grotesk-sources.json",
     "assets/fonts/editorial-font-sources.json"
   ],
   "assetHashes": {
     "assets/brands/taco-bell-logo.png": "286803d645aba9dda176a5dd8334573e496e272d167c21e4e3efe5881f7450f8",
     "assets/fonts/Anton-Regular.ttf": "a4ba3a92350ebb031da0cb47630ac49eb265082ca1bc0450442f4a83ab947cab",
     "assets/fonts/BarlowCondensed-SemiBold.ttf": "7b619d14bc2327509a9ef32b0890f709626f7ecc9ff61191c2a4314c5499d2d9",
+    "assets/fonts/ClashGrotesk-Bold.ttf": "ccd488a3b3795f6b6a3ba95d9b01629a7c4a7da1be8d2c01eb729e5d58bd3d21",
+    "assets/fonts/ClashGrotesk-Medium.ttf": "9173a8f2f48d5c7d115b33c86f6edf586a394a1b44411814f3410b2a049573b9",
+    "assets/fonts/ClashGrotesk-Regular.ttf": "07bba315998e2ed3323579bd3e2c5fd13e0aef0d4ba6d58dbe1a532a6dfc9ec2",
+    "assets/fonts/ClashGrotesk-Semibold.ttf": "99555a997a12589b786dcc0b85c0edbb5335d9c9629cb8bbd264db4b1eac5b6d",
     "assets/fonts/DMSans-Medium.ttf": "c14b9f3dc191eb92089473b412e5a25ef6cfe8a8c620a884f9f49d351af43bc0",
     "assets/fonts/DMSans-Regular.ttf": "e94ce4f86d0122b7a1d6d458de133978b559252811c85760b8a331c43e336b53",
     "assets/fonts/PublicSans-Bold.ttf": "200019456af3f8886a0284fc48825bc1f6230dfb9f9610f979b074071329a133",
@@ -811,10 +821,10 @@
     "assets/verifed-mark.png": "666a1adcb3940ee008ccb5e9544b853fe3fec4ad6d43f5dca5c8697f230b3219"
   },
   "uploadVerification": {
-    "assets": 370,
+    "assets": 374,
     "images": 360,
-    "fonts": 10,
+    "fonts": 14,
     "allSourceHashesMatch": true
   },
-  "sourceHash": "3c65750a791955ef1472f0dc49504ea76613b9f1ad4bc5c5a4c7c81d59d5c05d"
+  "sourceHash": "758021b563dd696aac52b0b32b67fb041b4bcef2d3e2768e608f1c9624526b18"
 }

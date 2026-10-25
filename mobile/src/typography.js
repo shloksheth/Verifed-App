@@ -1,8 +1,8 @@
-// Editorial headings use Source Serif 4; reading and controls use Public Sans.
+// Clash Grotesk uses real static weights for headings, reading and controls.
 export function textFont(style = {}, { heading = false, input = false } = {}) {
   const requested = style.fontFamily;
   const strong = style.fontWeight === "bold" || Number(style.fontWeight) >= 700;
-  // Size alone never turns a dish name, number or large control into a serif.
+  // Keep semantic heading roles separate while using the same family throughout.
   if (
     !input &&
     (heading ||

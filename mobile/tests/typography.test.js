@@ -4,7 +4,7 @@ import { readFileSync } from "node:fs";
 import { createHash } from "node:crypto";
 import { textFont, textFontStyle } from "../src/typography.js";
 
-test("semantic headings use Source Serif 4 while body and controls use Public Sans", () => {
+test("headings, body and controls keep their semantic weight aliases", () => {
   assert.equal(textFont({ fontSize: 14 }), "HomeBody");
   assert.equal(textFont({ fontSize: 14, fontWeight: "600" }), "HomeMedium");
   assert.equal(textFont({ fontSize: 14, fontWeight: "bold" }), "HomeStrong");
@@ -81,4 +81,24 @@ test("loading fallback avoids missing font aliases and loaded static fonts avoid
     textFont({ fontFamily: "VerifedAnton", fontSize: 15 }),
     "HomeBody",
   );
+});
+
+
+test("Clash Grotesk loads the four unmodified official static faces", () => {
+  const folder = new URL("../assets/fonts/", import.meta.url);
+  const source = JSON.parse(readFileSync(new URL("clash-grotesk-sources.json", folder), "utf8"));
+  const loader = readFileSync(new URL("../src/use-app-fonts.js", import.meta.url), "utf8");
+  assert.equal(source.family, "Clash Grotesk");
+  assert.equal(source.downloadUrl, "https://api.fontshare.com/v2/fonts/download/clash-grotesk");
+  assert.deepEqual(source.files.map(face => face.weight), [400, 500, 600, 700]);
+  for (const face of source.files) {
+    const bytes = readFileSync(new URL(face.file, folder));
+    assert.equal(bytes.readUInt32BE(0), 0x00010000);
+    assert.equal(createHash("sha256").update(bytes).digest("hex"), face.sha256);
+    assert.ok(loader.includes(face.file));
+  }
+  assert.equal(/SourceSerif4|PublicSans/.test(loader), false);
+  const license = readFileSync(new URL("ClashGrotesk-FFL.txt", folder));
+  assert.equal(createHash("sha256").update(license).digest("hex"), source.licenseSha256);
+  assert.match(license.toString(), /ITF Free Font License/);
 });

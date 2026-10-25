@@ -1,3 +1,15 @@
+# Current typography: Clash Grotesk (V22.1)
+
+V22.1 replaces the active Source Serif 4/Public Sans system below with the requested Clash Grotesk family from [Fontshare](https://www.fontshare.com/fonts/clash-grotesk). The remaining V21 notes document the earlier checkpoint.
+
+`src/use-app-fonts.js` maps HomeBody to Regular (400), HomeMedium to Medium (500), HomeHeading to Semibold (600), and HomeHeadingStrong/HomeStrong to Bold (700). Existing screen aliases therefore update Home, Explore, Scan, Journal, account screens, forms and restaurant controls together. Brand logos and icon fonts keep their own artwork.
+
+The four original static TTF files are copied unchanged from the official Fontshare download. There is no conversion, subsetting or font-data editing. `assets/fonts/ClashGrotesk-FFL.txt` contains the original license; `clash-grotesk-sources.json` records its hash, archive hash, exact archive entries and individual font hashes. The ITF license permits embedding for the app. These fonts are not offered as a user-selectable font library.
+
+`src/typography.js` continues choosing semantic weights and uses normal fontWeight for the already-weighted static faces. `tests/typography.test.js` checks the active loader, font hashes and license alongside the existing role tests. `research/verify-design-assets.py` verifies these four faces plus the two Home photos in every platform export; its report uses the release number, including 22.1. Older licensed fonts remain as historical source assets.
+
+---
+
 # Shared mobile typography
 
 The V21 interface uses two licensed, bundled font families: Source Serif 4 for

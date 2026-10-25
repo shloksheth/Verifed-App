@@ -1,13 +1,12 @@
 {
-  "number": 22,
-  "name": "Verifed V22",
-  "description": "Updates the Expo SDK 54 runtime, font loader and photo picker patches after published Snack compatibility warnings. Retains the V21 design, restaurant menus and fixed Spanish menu presentation.",
+  "number": "22.1",
+  "name": "Verifed V22.1",
+  "description": "Uses the requested Clash Grotesk throughout Verifed, with original locally bundled regular, medium, semibold and bold faces. Preserves restaurant logos and icon artwork.",
   "verification": [
-    "168 automated tests passed after the SDK patch updates; expo install --check reports dependencies up to date.",
-    "Final iOS, Android and web exports succeeded. All 356 food images, the Spanish menu image, five active fonts and two Home photos matched source bytes across the exports.",
-    "Android Expo Go 54.0.8 on Medium_Phone_API_36.1 loaded onboarding and Home, displayed the new fonts and photos, returned five menus for a taco search, opened Chipotle, and saved a four-star guest journal entry with correct meal/place/Loved counts.",
-    "Native Android photo selection opened the fixed 15-dish Spanish menu; the Spanish toggle and scrollable dish text worked, and Save this menu added an entry to My menus.",
-    "Published V22 Snack opened onboarding and guest Home in Android Expo Go. Its web runtime loaded Home and Scan, and the editor reported No errors. Remote browser photo selection could not be completed by automation. The emulator disconnected repeatedly during longer checks; physical iPhone camera/permissions, native enlarged-text behavior and restart persistence remain unverified.",
-    "No live OCR/AI provider or backend deployment is included. The scan remains the requested fixed-menu presentation."
+    "169 automated tests passed, including the active font loader, original font hashes, license hash and semantic weight selection.",
+    "iOS, Android and web exports succeeded. All four active Clash Grotesk faces, both Home photos, 356 food images and the Spanish menu image matched source bytes across exports.",
+    "The 390px Home preview was visually reviewed with Clash Grotesk; phone-specific camera and native rendering were not re-tested for this font-only update.",
+    "All 374 published Snack asset hashes were verified, including 14 font files (four active Clash Grotesk faces and historical assets).",
+    "Snack source ZIP comparison remains unavailable: SNACK_DOWNLOAD_TOO_LARGE. No successful downloaded-source or physical iPhone test is claimed."
   ]
 }

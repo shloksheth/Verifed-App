@@ -4,11 +4,11 @@ import { useFonts } from "expo-font";
 // Keep the established aliases so existing screens share one loading lifecycle.
 export function useAppFonts() {
   const [loaded] = useFonts({
-    HomeHeading: require("../assets/fonts/SourceSerif4-SemiBold.ttf"),
-    HomeHeadingStrong: require("../assets/fonts/SourceSerif4-Bold.ttf"),
-    HomeBody: require("../assets/fonts/PublicSans-Regular.ttf"),
-    HomeMedium: require("../assets/fonts/PublicSans-SemiBold.ttf"),
-    HomeStrong: require("../assets/fonts/PublicSans-Bold.ttf"),
+    HomeHeading: require("../assets/fonts/ClashGrotesk-Semibold.ttf"),
+    HomeHeadingStrong: require("../assets/fonts/ClashGrotesk-Bold.ttf"),
+    HomeBody: require("../assets/fonts/ClashGrotesk-Regular.ttf"),
+    HomeMedium: require("../assets/fonts/ClashGrotesk-Medium.ttf"),
+    HomeStrong: require("../assets/fonts/ClashGrotesk-Bold.ttf"),
   });
   // The app keeps rendering readable system text if font loading fails.
   return loaded;

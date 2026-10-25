@@ -6,7 +6,7 @@ import sys
 
 repo = Path(__file__).resolve().parent.parent
 export = Path(sys.argv[1]).resolve()
-font_sources = json.loads((repo / "mobile/assets/fonts/editorial-font-sources.json").read_text(encoding="utf8"))
+font_sources = json.loads((repo / "mobile/assets/fonts/clash-grotesk-sources.json").read_text(encoding="utf8"))
 expected = {}
 for font in font_sources["files"]:
     name = "assets/fonts/" + font["file"]

@@ -1,0 +1,40 @@
+{
+  "family": "Clash Grotesk",
+  "foundry": "Indian Type Foundry",
+  "page": "https://www.fontshare.com/fonts/clash-grotesk",
+  "downloadUrl": "https://api.fontshare.com/v2/fonts/download/clash-grotesk",
+  "archiveSha256": "1e29c112a3496894544179273631d67bac28d07b131dd3b85c1472ca1fb70f8d",
+  "license": "ITF Free Font License 2.0, 17 Aug 2026",
+  "licenseSha256": "145e7fe2429a3336ba215c070ef722000e01348a3e1baaa127e871bb5012f554",
+  "processing": "Original static TTF files copied byte for byte; no conversion, subsetting or renaming within font data. Embedded for Verifed app typography, not offered as a font selection tool.",
+  "files": [
+    {
+      "file": "ClashGrotesk-Regular.ttf",
+      "weight": 400,
+      "archiveEntry": "ClashGrotesk_Complete/Fonts/WEB/fonts/ClashGrotesk-Regular.ttf",
+      "sha256": "07bba315998e2ed3323579bd3e2c5fd13e0aef0d4ba6d58dbe1a532a6dfc9ec2",
+      "license": "ClashGrotesk-FFL.txt"
+    },
+    {
+      "file": "ClashGrotesk-Medium.ttf",
+      "weight": 500,
+      "archiveEntry": "ClashGrotesk_Complete/Fonts/WEB/fonts/ClashGrotesk-Medium.ttf",
+      "sha256": "9173a8f2f48d5c7d115b33c86f6edf586a394a1b44411814f3410b2a049573b9",
+      "license": "ClashGrotesk-FFL.txt"
+    },
+    {
+      "file": "ClashGrotesk-Semibold.ttf",
+      "weight": 600,
+      "archiveEntry": "ClashGrotesk_Complete/Fonts/WEB/fonts/ClashGrotesk-Semibold.ttf",
+      "sha256": "99555a997a12589b786dcc0b85c0edbb5335d9c9629cb8bbd264db4b1eac5b6d",
+      "license": "ClashGrotesk-FFL.txt"
+    },
+    {
+      "file": "ClashGrotesk-Bold.ttf",
+      "weight": 700,
+      "archiveEntry": "ClashGrotesk_Complete/Fonts/WEB/fonts/ClashGrotesk-Bold.ttf",
+      "sha256": "ccd488a3b3795f6b6a3ba95d9b01629a7c4a7da1be8d2c01eb729e5d58bd3d21",
+      "license": "ClashGrotesk-FFL.txt"
+    }
+  ]
+}

@@ -1,3 +1,5 @@
+V22.1 typography update: the current app uses Clash Grotesk for headings, body and controls. [TYPOGRAPHY.md](TYPOGRAPHY.md) describes the implementation and source. The V21 design research below remains historical.
+
 # Verifed interface redesign
 
 Reviewed 25 October 2026. This is a design rationale and code guide, not evidence of user testing or a claim that the app was designed without AI assistance.
