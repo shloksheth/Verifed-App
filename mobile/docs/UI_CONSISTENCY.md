@@ -1,3 +1,11 @@
+# V28 exception to the V26 shared palette
+
+V26 applied the same peach, green and orange appearance across all active screens. That is **superseded for restaurant-chain menus and onboarding/authentication**. V28 restores the independent Taco Bell and Chipotle visual systems from V25 and the dark-green V25 welcome composition. Sign-in/create-account also uses a dedicated dark-green shell. Shared colors continue on Verifed's Home, Explore, Scan, Journal, and neutral support screens. The Verifed wordmark is regular-weight without a trailing orange period.
+
+Do not propagate global `design-tokens.js` colors into `TacoBellMenu.js`, `ChipotleMenu.js`, or `Welcome.js`; do not force generic cards, gradients, or unified headings over their historic layouts. Distinct brand presentation is a deliberate product requirement, not a styling inconsistency.
+
+---
+
 # Shared UI consistency (V26)
 
 This pass uses one peach canvas, warm paper cards, pale green preference panels, green selection states and carrot-orange primary actions. Restaurant logos, food photography and welcome illustration colors remain source artwork. It supersedes older scoped Scan and brand-interface color instructions.

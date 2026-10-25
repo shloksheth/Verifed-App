@@ -1,3 +1,11 @@
+# V28 design-restoration decision
+
+Taco Bell and Chipotle use the distinct V25-era presentation, restored over the V27 live components. Never apply Verifed's shared green/peach/orange typography and colors globally to these chain menus. The Taco Bell menu uses a purple/white scheme (`#501098`, `#8B20DB`); Chipotle uses deep brown/red/white (`#451400`, `#AC2318`). Retain the older per-menu hierarchy, including capitalization, section sizes and button treatments. The chain-specific top return header and contextual back navigation use the chain accent, while the neutral main tabs still use Verifed's color scheme.
+
+The two menu files keep current item data, local photo registry, allergen/ingredient review, favorites, category filtering and draft behaviors. Only the visual system is historic. Explicitly do not replace the current files wholesale with the old version, since that risks reverting functional and accessibility changes.
+
+---
+
 # Taco Bell and Chipotle menus — V17.1
 
 These screens use the restaurant's recognizable identity inside Verifed. They are independent dietary menus; buttons do not place an order. Menu records, food photos and source-based dietary assessment remain separate from presentation. Prices and calories absent from the imported records are not invented to fill the design.

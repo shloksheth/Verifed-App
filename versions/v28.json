@@ -1,0 +1,21 @@
+{
+  "number": 28,
+  "name": "Verifed V28",
+  "description": "Restores Taco Bell's V25 purple/white menu system and Chipotle's V25 brown/red/white menu styling, typography and uppercase hierarchy without reverting updated menu logic. Returns the dark-green, yellow-card, white-action welcome design from V25; gives authentication its own dark-green composition. Removes the orange period and heavy font weight from the Verifed wordmark throughout the main shell.",
+  "commit": "f5c7b29a65b3519a10f61bb712ac34acfdf87017",
+  "snack": "https://snack.expo.dev/VCRsIKjfy68kXRzNVnAEs",
+  "snackId": "VCRsIKjfy68kXRzNVnAEs",
+  "snackPublishedAt": "2026-10-25T20:24:12.056Z",
+  "uploadVerification": {
+    "assets": 379,
+    "images": 365,
+    "fonts": 14,
+    "allSourceHashesMatch": true
+  },
+  "notes": [
+    "Includes restored V25 Taco Bell and Chipotle visual styling with V27 functional behavior.",
+    "V25 dark-green/white-action welcome and dedicated dark-green authentication.",
+    "App-shell wordmark regular-weight and no orange dot.",
+    "GitHub Actions publish workflow completed after the latest V28 source commit; standalone physical-device inspection not completed."
+  ]
+}

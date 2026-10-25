@@ -1,6 +1,6 @@
 ---
-name: Verifed shared mobile design
-description: One palette and Clash Grotesk type scale across all active screens.
+name: Verifed shell with independent restaurant identities
+description: Shared tools and navigation, with distinct Taco Bell and Chipotle menus and a dark-green onboarding flow.
 colors:
   cream: "#FFF0E2"
   paper: "#FFF9F2"
@@ -28,7 +28,13 @@ typography:
   button: "15px / 21px, 600"
 ---
 
-# Verifed V26
+# Verifed V28: Independent visual identities
+
+V28 overrides V26's blanket consistency rule. The Verifed Home, Explore, Scan, Journal, and neutral task flows continue using the shared color tokens. Taco Bell and Chipotle intentionally do **not**: their standalone menus must preserve their own restaurant-inspired colors, typography, grid spacing, mode selectors, category tabs and actions. `mobile/components/TacoBellMenu.js` uses the historical purple/white menu styles. `mobile/components/ChipotleMenu.js` uses brown/red/white component-menu styling. Both retain Verifed's independent dietary disclaimers, local photos, and non-ordering behavior.
+
+The welcome carousel and account sign-in/create-account flow use their own dark-green composition, not the app-wide peach canvas. The welcome screen retains the yellow and other individually colored food slides, white Get started action, dark-green photo caption, and local images. All visible Verifed wordmarks show `verifed` in regular weight, without the orange trailing period. Future palette and typography cleanups must not restyle these scoped views unless requested.
+
+## Historical V26 baseline
 
 `mobile/src/design-tokens.js` is the implementation source for color and type roles. This shared system supersedes V24's separate brown/gold Scan palette.
 
