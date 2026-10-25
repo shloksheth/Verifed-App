@@ -1,9 +1,12 @@
 import { Text } from "./Typography";
 import React, { useEffect, useMemo, useRef, useState } from "react";
-import { Linking, Pressable, View } from "react-native";
+import { Linking, Pressable, ScrollView, StyleSheet, View } from "react-native";
 import { colors, s } from "../styles";
 import { discoverRestaurants } from "../src/discovery";
-import { prioritizeFeaturedMenus } from "../src/featured-menus";
+import { prioritizeFeaturedMenus, featuredMenuSlugs, featuredMenuCoverKeys } from "../src/featured-menus";
+import { localFoodAssets } from "../src/local-food-assets";
+import { forest } from "../src/warm-forest";
+import { Image } from "./MenuImage";
 import { chainBrand } from "../src/chain-brand";
 import { ORLANDO_CENTER, searchPlaces } from "../src/location-search";
 import { homeCuisine } from "../src/home-content";
@@ -168,6 +171,12 @@ export default function Explore({
   }));
   const orderedCards =
     filters.sort === "recommended" ? prioritizeFeaturedMenus(cards) : cards;
+  const featuredCards = orderedCards.filter(({ group }) =>
+    group.some(({ restaurant }) => featuredMenuSlugs.includes(restaurant.slug))
+  ).slice(0, 5);
+  const showFeatured = filters.sort === "recommended" && !filters.query.trim() &&
+    filters.cuisine === "All" && filters.collection === "all" &&
+    filters.dietMode === "all" && filters.view === "list";
   const needs = [...state.profile.allergies, ...state.profile.restrictions];
   async function findLocation() {
     request.current?.abort();
@@ -201,24 +210,19 @@ export default function Explore({
   }
   return (
     <>
-      <Title title="Explore">
-        Search restaurant menus and compare dietary options.
-      </Title>
-      <Pressable
-        accessibilityRole="button"
-        accessibilityLabel="Change search area"
-        onPress={() => setShowLocation(!showLocation)}
-        style={s.discoveryArea}
-      >
-        <Icon name="location" color={colors.green} />
-        <View style={{ flex: 1 }}>
-          <Text style={s.discoveryAreaLabel}>SEARCH AREA</Text>
-          <Text style={s.h3}>
-            {filters.center?.label || "All Orlando-area locations"}
+      <View style={f.header}>
+        <Text accessibilityRole="header" style={f.heading}>Explore</Text>
+        <Pressable accessibilityRole="button" accessibilityLabel="Change search area"
+          onPress={() => setShowLocation(!showLocation)} style={f.locationPill}>
+          <Icon name="location-outline" color={forest.green} size={16} />
+          <Text numberOfLines={1} style={f.locationText}>
+            {filters.center?.label || "All locations"}
           </Text>
-        </View>
-        <Icon name={showLocation ? "chevron-up" : "chevron-down"} size={18} />
-      </Pressable>
+          <Icon name={showLocation ? "chevron-up" : "chevron-down"} size={15}
+            color={forest.green} />
+        </Pressable>
+      </View>
+      <Text style={f.intro}>Compare restaurant menus and published dietary information.</Text>
       {showLocation && (
         <View style={s.card}>
           <Tabs
@@ -307,22 +311,30 @@ export default function Explore({
           </Button>
         </View>
       )}
-      <Tabs
-        options={[
-          { value: "all", label: "All places" },
-          { value: "restaurants", label: "Restaurants" },
-          { value: "chains", label: "Food Chains" },
-        ]}
-        value={filters.collection}
-        onChange={(collection) => update({ collection, cuisine: "All" })}
-      />
       <Field
-        label="Search restaurants & menus"
+        label="Search menus"
         value={filters.query}
         onChangeText={(query) => update({ query })}
         placeholder="Restaurant, dish or ingredient"
         clearButtonMode="while-editing"
+        style={f.searchInput}
       />
+      <View style={f.collectionBar}>
+        {[
+          { value: "all", label: "All" },
+          { value: "restaurants", label: "Local restaurants" },
+          { value: "chains", label: "Food chains" },
+        ].map((item) => (
+          <Pressable key={item.value} accessibilityRole="tab"
+            accessibilityState={{ selected: filters.collection === item.value }}
+            onPress={() => update({ collection: item.value, cuisine: "All" })}
+            style={[f.collectionPill, filters.collection === item.value && f.collectionSelected]}>
+            <Text style={[f.collectionText, filters.collection === item.value && f.collectionTextSelected]}>
+              {item.label}
+            </Text>
+          </Pressable>
+        ))}
+      </View>
       <Tabs
         options={cuisines.map((value) => ({
           value,
@@ -348,8 +360,45 @@ export default function Explore({
           Filters
         </Button>
       </View>
+      {showFeatured && !!featuredCards.length && (
+        <View style={f.featuredSection}>
+          <View style={f.sectionHead}>
+            <Text accessibilityRole="header" style={f.sectionTitle}>Featured menus</Text>
+            <Text style={f.helpText}>Complete food photos</Text>
+          </View>
+          <ScrollView horizontal showsHorizontalScrollIndicator={false}
+            contentContainerStyle={f.featuredRail}>
+            {featuredCards.map(({ group, result }) => {
+              const matching = group.find(({ restaurant }) =>
+                featuredMenuSlugs.includes(restaurant.slug))?.restaurant || result.restaurant;
+              const photo = localFoodAssets[featuredMenuCoverKeys[matching.slug]];
+              return (
+                <Pressable key={matching.slug} accessibilityRole="button"
+                  accessibilityLabel={`View ${matching.name} featured menu`}
+                  onPress={() => group.length > 1 ? setBranches(group) : navigate(`restaurant/${result.restaurant.id}`)}
+                  style={({ pressed }) => [f.featuredCard, pressed && { opacity: 0.82 }]}>
+                  <View style={f.featuredPhoto}>
+                    {photo ? <Image source={photo} contentFit="contain"
+                      style={f.image} accessibilityLabel={`Menu example from ${matching.name}`} /> :
+                      <Icon name="restaurant-outline" size={26} color={forest.green} />}
+                  </View>
+                  <Text numberOfLines={2} style={f.featuredName}>{matching.name}</Text>
+                </Pressable>
+              );
+            })}
+          </ScrollView>
+        </View>
+      )}
+      <View style={f.sectionHead}>
+        <Text accessibilityRole="header" style={f.sectionTitle}>All restaurants</Text>
+        <Pressable onPress={() => setShowFilters(true)} accessibilityRole="button"
+          accessibilityLabel="Sort and filter restaurants" style={f.sortButton}>
+          <Icon name="options-outline" color={forest.green} size={17} />
+          <Text style={f.sortText}>Sort & filter</Text>
+        </Pressable>
+      </View>
       <View style={s.discoverySummary}>
-        <Text style={s.h2}>
+        <Text style={f.resultsCount}>
           {groups.size} menus · {results.length} locations
         </Text>
         <Text style={s.small}>
@@ -406,12 +455,13 @@ export default function Explore({
       {orderedCards.map(({ group, result }) => (
         <View
           key={result.restaurant.chainId || result.restaurant.id}
-          style={s.discoveryResult}
+          style={[s.discoveryResult, f.resultCard]}
         >
           <RestaurantRow
             restaurant={result.restaurant}
             state={state}
             navigate={navigate}
+            surfaceStyle={f.rowSurface}
             onPress={group.length > 1 ? () => setBranches(group) : undefined}
           />
           <View style={s.discoveryReason}>
@@ -525,3 +575,42 @@ export default function Explore({
     </>
   );
 }
+
+
+const f = StyleSheet.create({
+  header: { flexDirection:"row", alignItems:"center", gap:10, justifyContent:"space-between" },
+  heading: { color:forest.ink, fontSize:31, lineHeight:38, fontWeight:"700", letterSpacing:-0.6 },
+  intro: { color:forest.muted, fontSize:13, lineHeight:19, marginTop:-11 },
+  locationPill: { flexDirection:"row", alignItems:"center", maxWidth:"58%",
+    gap:4, borderRadius:24, paddingHorizontal:10, minHeight:42,
+    backgroundColor:forest.surface },
+  locationText: { color:forest.green, fontSize:11, fontWeight:"600", flexShrink:1 },
+  searchInput: { backgroundColor:forest.cardMuted, borderColor:forest.line,
+    borderRadius:22, fontSize:15, color:forest.ink },
+  collectionBar: { flexDirection:"row", gap:7, flexWrap:"wrap" },
+  collectionPill: { borderRadius:23, paddingHorizontal:12, paddingVertical:10,
+    minHeight:43, justifyContent:"center", backgroundColor:forest.surface },
+  collectionSelected: { backgroundColor:forest.green },
+  collectionText: { color:forest.ink, fontSize:12, fontWeight:"600" },
+  collectionTextSelected: { color:forest.lightText },
+  featuredSection: { gap:9 },
+  sectionHead: { flexDirection:"row", justifyContent:"space-between",
+    alignItems:"center", gap:10 },
+  sectionTitle: { fontWeight:"700", color:forest.ink, fontSize:19, lineHeight:26 },
+  helpText: { color:forest.muted, fontSize:11, flexShrink:1 },
+  featuredRail: { gap:10, paddingRight:4 },
+  featuredCard: { width:123, backgroundColor:forest.card,
+    overflow:"hidden", borderRadius:15, paddingBottom:7 },
+  featuredPhoto: { width:"100%", height:125,
+    backgroundColor:forest.surface, alignItems:"center", justifyContent:"center" },
+  image: { width:"100%", height:"100%" },
+  featuredName: { color:forest.ink, fontSize:12, lineHeight:17,
+    fontWeight:"700", paddingHorizontal:9, paddingTop:7 },
+  sortButton: { flexDirection:"row", alignItems:"center", gap:6,
+    borderRadius:23, backgroundColor:forest.surface, minHeight:44, paddingHorizontal:12 },
+  sortText: { color:forest.green, fontSize:12, fontWeight:"600" },
+  resultsCount: { color:forest.ink, fontSize:13, fontWeight:"700" },
+  resultCard: { backgroundColor:forest.card, borderRadius:17, padding:9, gap:5,
+    marginBottom:1, overflow:"hidden" },
+  rowSurface: { backgroundColor:forest.card },
+});

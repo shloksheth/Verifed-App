@@ -6,10 +6,14 @@ export const primaryDemoMenuSlugs = [
   "loving-hut-orlando",
 ];
 
+// User-approved CAC discovery order. Only these menus have full approved image
+// coverage. Preserve this order after discovery filters and chain grouping.
 export const featuredMenuSlugs = [
-  ...primaryDemoMenuSlugs,
   "taco-bell-south-orange",
+  "loving-hut-orlando",
   "hawkers-orlando",
+  "fresh-kitchen-waterford",
+  "chipotle-south-orange",
 ];
 
 // Each banner is a menu example already reviewed as an item photo. This keeps

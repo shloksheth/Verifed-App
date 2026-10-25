@@ -438,6 +438,7 @@ export function RestaurantRow({
   navigate,
   featured = false,
   onPress,
+  surfaceStyle,
 }) {
   const items = state.dishes.filter(
     (dish) => dish.restaurantId === restaurant.id,
@@ -455,6 +456,7 @@ export function RestaurantRow({
       onPress={onPress || (() => navigate(`restaurant/${restaurant.id}`))}
       style={({ pressed }) => [
         featured ? s.featuredRestaurant : s.restaurantRow,
+        surfaceStyle,
         pressed && { opacity: 0.8 },
       ]}
     >

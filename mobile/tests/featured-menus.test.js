@@ -9,7 +9,7 @@ import { dietaryMenuStatus } from "../src/menu-filter.js";
 test("all five featured menus have local images for their entire imported food inventory", () => {
   const featured = featuredRestaurants(localRestaurants);
   assert.equal(featured.length, 5);
-  const expectedCounts = [35, 26, 61, 116, 49];
+  const expectedCounts = [116, 61, 49, 35, 26];
   featured.forEach((restaurant, index) => {
     assert.ok(localFoodPhotoMetadata[featuredMenuCoverKeys[restaurant.slug]], `Local banner: ${restaurant.slug}`);
     const menu = localDishes.filter((dish) => dish.restaurantId === restaurant.id);
@@ -42,7 +42,7 @@ test("Taco Bell locations share only the same reviewed product, with no extra im
 test("featured menus retain their order when database UUIDs replace bundled IDs", () => {
   const live = localRestaurants.map((restaurant, index) => ({ ...restaurant, id: `live-${index}` })).reverse();
   assert.deepEqual(featuredRestaurants(live).map((restaurant) => restaurant.slug),
-    ["fresh-kitchen-waterford", "chipotle-south-orange", "loving-hut-orlando", "taco-bell-south-orange", "hawkers-orlando"]);
+    ["taco-bell-south-orange", "loving-hut-orlando", "hawkers-orlando", "fresh-kitchen-waterford", "chipotle-south-orange"]);
 });
 
 test("new sourced ingredient details remain traceable without inventing allergen absence", () => {
