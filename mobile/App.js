@@ -22,6 +22,7 @@ import {
 import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
 import { api } from "./src/api";
 import { colors, s } from "./styles";
+import { forest } from "./src/warm-forest";
 import {
   Auth,
   Help,
@@ -83,6 +84,8 @@ function AppContent() {
     : restaurantSlug.startsWith("chipotle-") ? "chipotle" : null;
   const inAccount = route.page === "auth" || !!state.passwordRecovery;
   const darkAccount = "#17281F";
+  const warmScreen = ["home", "explore", "history"].includes(route.page) && !inAccount;
+  
   const chainAccent = chainMenu === "taco-bell" ? "#501098" : "#451400";
 
   const navigate = useCallback((next, { unwind = false } = {}) => {
@@ -252,11 +255,11 @@ function AppContent() {
     <TypographyProvider fontsReady={homeFontsReady}>
       <SafeAreaView
         edges={["top", "bottom"]}
-        style={[s.root, (showWelcome || inAccount) && { backgroundColor: darkAccount }, chainMenu && { backgroundColor: "#FFFFFF" }]}
+        style={[s.root, warmScreen && !showWelcome && { backgroundColor: forest.background }, (showWelcome || inAccount) && { backgroundColor: darkAccount }, chainMenu && { backgroundColor: "#FFFFFF" }]}
       >
         <StatusBar
           barStyle={showWelcome || inAccount ? "light-content" : "dark-content"}
-          backgroundColor={showWelcome || inAccount ? darkAccount : chainMenu ? "#FFFFFF" : colors.cream}
+          backgroundColor={showWelcome || inAccount ? darkAccount : chainMenu ? "#FFFFFF" : warmScreen ? forest.background : colors.cream}
         />
         {chainMenu ? (
           <View style={[s.header, { backgroundColor: "#FFFFFF", borderColor: "#E8E1DB", paddingVertical: 7 }]}>
@@ -280,7 +283,7 @@ function AppContent() {
               <Icon name="heart-outline" color={chainAccent} size={22} />
             </Pressable>
           </View>
-        ) : inAccount || showWelcome ? null : route.page === "home" ? (
+        ) : inAccount || showWelcome || route.page === "explore" || route.page === "history" ? null : route.page === "home" ? (
           <HomeHeader
             fontsReady={homeFontsReady}
             navigate={navigate}
@@ -383,6 +386,7 @@ function AppContent() {
                 keyboardShouldPersistTaps="handled"
                 contentContainerStyle={[
                   s.scroll,
+                  warmScreen && !showWelcome && { backgroundColor: forest.background, paddingHorizontal: 17, paddingTop: 9 },
                   chainMenu && { paddingHorizontal: 18, paddingTop: 0, backgroundColor: "#FFFFFF" },
                   inAccount && { paddingHorizontal: 18, paddingTop: 16, backgroundColor: darkAccount },
                   showWelcome && {

@@ -1,4 +1,5 @@
 import { type } from "../src/design-tokens";
+import { forest } from "../src/warm-forest";
 import { Text } from "./Typography";
 import React, { useState } from "react";
 import { Pressable, StyleSheet, View } from "react-native";
@@ -205,6 +206,10 @@ export function History({ state, navigate, openSheet }) {
       )
       .filter(Boolean),
   ).size;
+  const ratedMeals = state.meals.filter((meal) => Number(meal.rating) >= 1 && Number(meal.rating) <= 5);
+  const averageRating = ratedMeals.length
+    ? (ratedMeals.reduce((total, meal) => total + Number(meal.rating), 0) / ratedMeals.length).toFixed(1)
+    : "—";
   const meals = state.meals
     .filter(
       (meal) =>
@@ -222,32 +227,36 @@ export function History({ state, navigate, openSheet }) {
         <Text accessibilityRole="header" style={j.pageTitle}>
           Journal
         </Text>
-        <Text style={j.intro}>Ratings and notes from your meals.</Text>
+        <Text style={j.intro}>Your meals, ratings and notes in one place.</Text>
       </View>
       <View style={j.summary}>
         <View style={j.summaryCount}>
           <Text style={j.count}>{state.meals.length}</Text>
-          <Text style={j.countLabel}>
-            {state.meals.length === 1 ? "meal logged" : "meals logged"}
-          </Text>
+          <Text style={j.countLabel}>Meals logged</Text>
         </View>
         <View style={j.summaryDivider} />
         <View style={j.summaryCount}>
           <Text style={j.count}>{placeCount}</Text>
-          <Text style={j.countLabel}>
-            {placeCount === 1 ? "place tried" : "places tried"}
-          </Text>
+          <Text style={j.countLabel}>Places tried</Text>
+        </View>
+        <View style={j.summaryDivider} />
+        <View style={j.summaryCount}>
+          <Text style={j.count}>{averageRating}</Text>
+          <Text style={j.countLabel}>Avg. rating</Text>
         </View>
       </View>
-      <Button icon="add-outline" onPress={logMeal}>
-        Save a meal
-      </Button>
+      <Pressable accessibilityRole="button" accessibilityLabel="Save a meal"
+        onPress={logMeal} style={j.saveMealButton}>
+        <Icon name="add" color={forest.lightText} size={22} />
+        <Text style={j.saveMealText}>Save a meal</Text>
+      </Pressable>
       <Field
         label="Search your journal"
         value={query}
         onChangeText={setQuery}
         placeholder="Dish or restaurant"
         clearButtonMode="while-editing"
+        style={j.searchInput}
       />
       <View style={j.filterBar} accessibilityRole="tablist">
         {[
@@ -411,60 +420,65 @@ export function MealDetail({ id, state, navigate, openSheet }) {
 // These styles stay beside the journal rather than adding screen-specific
 // entries to the shared theme. Colors and typography follow the app aliases.
 const j = StyleSheet.create({
-  pageHeader: { gap: 6, paddingTop: 5, paddingBottom: 3 },
-  pageTitle: { ...type.page, color: colors.ink },
-  intro: { ...type.body, color: colors.muted },
+  pageHeader: { gap: 4, paddingTop: 3, paddingBottom: 3 },
+  pageTitle: { ...type.page, color: forest.ink },
+  intro: { ...type.body, color: forest.muted, fontSize:13 },
   summary: {
-    backgroundColor: colors.peach,
-    paddingHorizontal: 16,
-    borderRadius: 18,
+    backgroundColor: forest.green,
+    paddingHorizontal: 11,
+    borderRadius: 19,
     flexDirection: "row",
     alignItems: "center",
-    gap: 22,
-    paddingVertical: 13,
+    gap: 6,
+    paddingVertical: 22,
     marginBottom: 1,
+    minHeight: 126,
   },
-  summaryCount: { gap: 2 },
+  summaryCount: { flex:1, alignItems:"center", gap:3 },
   count: {
     fontFamily: "HomeMedium",
     fontWeight: "500",
     fontVariant: ["tabular-nums"],
-    fontSize: 34,
-    lineHeight: 40,
-    letterSpacing: -1,
-    color: colors.ink,
+    fontSize: 30,
+    lineHeight: 39,
+    letterSpacing: -0.8,
+    color: forest.lightText,
   },
-  countLabel: { fontSize: 12, lineHeight: 18, color: colors.muted },
-  summaryDivider: { width: 1, height: 37, backgroundColor: colors.line },
+  countLabel: { fontSize: 11, lineHeight: 17, color: forest.lightText, textAlign:"center" },
+  summaryDivider: { width: 1, height: 42, backgroundColor: "#446252" },
+  saveMealButton: { flexDirection:"row", alignItems:"center", justifyContent:"center",
+    borderRadius:26, minHeight:50, gap:8, backgroundColor:forest.orange },
+  saveMealText: { color:forest.lightText, fontSize:15, fontWeight:"700" },
+  searchInput: { backgroundColor:forest.cardMuted, borderColor:forest.line,
+    color:forest.ink, borderRadius:19 },
   filterBar: {
     flexDirection: "row",
-    gap: 24,
-    borderBottomWidth: 1,
-    borderColor: colors.line,
+    gap: 8,
     marginTop: 1,
+    flexWrap:"wrap",
   },
   filter: {
     flexDirection: "row",
     alignItems: "center",
     gap: 6,
-    minHeight: 45,
-    borderBottomWidth: 2,
-    borderColor: "transparent",
-    paddingHorizontal: 2,
-    paddingBottom: 5,
+    minHeight: 44,
+    borderRadius:22,
+    backgroundColor:forest.surface,
+    paddingHorizontal:15,
+    paddingVertical:8,
   },
-  filterSelected: { borderBottomColor: colors.green },
-  filterText: { fontSize: 14, fontWeight: "500", color: colors.muted },
-  filterTextSelected: { color: colors.green, fontWeight: "700" },
+  filterSelected: { backgroundColor:forest.green },
+  filterText: { fontSize: 13, fontWeight: "600", color: forest.ink },
+  filterTextSelected: { color: forest.lightText, fontWeight: "700" },
   filterCount: {
     fontFamily: "HomeMedium",
     fontWeight: "500",
     fontVariant: ["tabular-nums"],
     fontSize: 12,
     lineHeight: 18,
-    color: colors.muted,
+    color: forest.muted,
   },
-  list: { gap: 0 },
+  list: { gap: 10 },
   listHeading: {
     flexDirection: "row",
     alignItems: "center",
@@ -482,11 +496,12 @@ const j = StyleSheet.create({
   mealRow: {
     flexDirection: "row",
     alignItems: "center",
-    gap: 13,
-    paddingVertical: 18,
-    borderBottomWidth: 1,
-    borderColor: colors.line,
-    minHeight: 100,
+    gap: 12,
+    paddingVertical: 11,
+    paddingHorizontal:11,
+    borderRadius:15,
+    backgroundColor:forest.card,
+    minHeight: 98,
   },
   pressed: { opacity: 0.65 },
   mealCopy: { flex: 1, minWidth: 0, gap: 4 },
@@ -512,7 +527,7 @@ const j = StyleSheet.create({
   date: { fontSize: 11, lineHeight: 17, color: colors.muted },
   rowNote: { fontSize: 12, lineHeight: 18, color: colors.muted, marginTop: 2 },
   empty: {
-    backgroundColor: colors.paleGreen,
+    backgroundColor: forest.cardMuted,
     borderRadius: 18,
     alignItems: "center",
     gap: 10,
@@ -525,7 +540,7 @@ const j = StyleSheet.create({
     borderRadius: 31,
     alignItems: "center",
     justifyContent: "center",
-    backgroundColor: colors.peach,
+    backgroundColor: forest.sage,
     marginBottom: 3,
   },
   emptyTitle: { ...type.section, color: colors.ink, textAlign: "center" },

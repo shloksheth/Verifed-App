@@ -8,6 +8,7 @@ import {
   View,
 } from "react-native";
 import { colors } from "../src/design-tokens";
+import { forest } from "../src/warm-forest";
 import { contextualPages, navigationItems } from "../src/navigation-model";
 import { Text } from "./Typography";
 import { Icon } from "./UI";
@@ -124,7 +125,8 @@ export default function FloatingNavigation({ activeRoute, navigate, openSheet, o
                 onPress={() => activate(item.route)}
                 style={({ pressed }) => [styles.tab, pressed && styles.pressed]}
               >
-                <Icon name={selected ? item.active : item.icon} size={23} color={selected ? colors.paper : colors.muted} />
+                <Icon name={selected ? item.active : item.icon} size={23}
+                  color={forest.lightText} />
                 <Text style={[styles.tabLabel, selected && styles.tabLabelActive]} numberOfLines={1}>
                   {item.label}
                 </Text>
@@ -140,7 +142,7 @@ export default function FloatingNavigation({ activeRoute, navigate, openSheet, o
           style={({ pressed }) => [styles.plus, pressed && styles.pressed]}
         >
           <Animated.View style={{ transform: [{ rotate: plusRotation }] }}>
-            <Icon name="add" size={35} color={colors.paper} />
+            <Icon name="add" size={35} color={forest.lightText} />
           </Animated.View>
         </Pressable>
         <Animated.View
@@ -235,9 +237,8 @@ const styles = StyleSheet.create({
     alignItems: "stretch",
     padding: 6,
     borderRadius: 38,
-    borderWidth: 1,
-    borderColor: colors.line,
-    backgroundColor: colors.paper,
+    borderWidth: 0,
+    backgroundColor: forest.green,
   },
   selection: {
     position: "absolute",
@@ -245,7 +246,7 @@ const styles = StyleSheet.create({
     bottom: 5,
     left: 6,
     borderRadius: 32,
-    backgroundColor: colors.green,
+    backgroundColor: forest.greenRaised,
   },
   tab: {
     flex: 1,
@@ -261,17 +262,16 @@ const styles = StyleSheet.create({
     fontSize: 10,
     lineHeight: 14,
     fontWeight: "600",
-    color: colors.muted,
+    color: forest.lightText,
   },
-  tabLabelActive: { color: colors.paper, fontWeight: "700" },
+  tabLabelActive: { color: forest.lightText, fontWeight: "700" },
   plus: {
     ...shadow,
     width: 69,
     height: 69,
     borderRadius: 35,
-    backgroundColor: colors.green,
-    borderWidth: 1,
-    borderColor: colors.line,
+    backgroundColor: forest.orange,
+    borderWidth: 0,
     alignItems: "center",
     justifyContent: "center",
   },
@@ -289,10 +289,10 @@ const styles = StyleSheet.create({
     minWidth: 210,
     paddingVertical: 8,
     paddingHorizontal: 8,
-    backgroundColor: colors.paper,
+    backgroundColor: forest.card,
     borderRadius: 24,
     borderWidth: 1,
-    borderColor: colors.line,
+    borderColor: forest.line,
     zIndex: 22,
   },
   quickAction: {
