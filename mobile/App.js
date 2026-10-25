@@ -29,7 +29,8 @@ import {
   ProfileEditor,
   Settings,
 } from "./components/Account";
-import { DishDetail, Favorites, Home, Restaurant } from "./components/Dining";
+import { DishDetail, Favorites, Restaurant } from "./components/Dining";
+import Home, { HomeHeader, HomeTab, useHomeFonts } from "./components/Home";
 import Explore from "./components/Explore";
 import Welcome, { HomeInfo } from "./components/Welcome";
 import { History, MealComposer, MealDetail } from "./components/Journal";
@@ -82,6 +83,7 @@ function activeTab(page) {
 }
 
 function AppContent() {
+  const homeFontsReady = useHomeFonts();
   const state = useSyncExternalStore(api.subscribe, api.getState, api.getState);
   const [stack, setStack] = useState(["home"]);
   const [sheet, setSheet] = useState(null);
@@ -147,13 +149,14 @@ function AppContent() {
     return () => handler.remove();
   }, [goBack]);
 
-  useEffect(() => {
-    scroll.current?.scrollTo({ y: 0, animated: false });
-  }, [path]);
-
   const shared = { state, navigate, openSheet: setSheet };
   const showWelcome =
     state.ready && !state.user && !welcomeDone && !state.passwordRecovery;
+  useEffect(() => {
+    // Welcome and Home share the same route. Reset after leaving onboarding,
+    // including when its account buttons were below the fold on a small phone.
+    scroll.current?.scrollTo({ y: 0, animated: false });
+  }, [path, showWelcome]);
   let screen;
   if (showWelcome)
     screen = (
@@ -183,7 +186,13 @@ function AppContent() {
   else
     switch (route.page) {
       case "home":
-        screen = <Home {...shared} />;
+        screen = (
+          <Home
+            {...shared}
+            searchArea={searchArea}
+            fontsReady={homeFontsReady}
+          />
+        );
         break;
       case "explore":
         screen = (
@@ -191,6 +200,7 @@ function AppContent() {
             {...shared}
             openLocation={route.params.get("location") === "1"}
             onLocationChange={setSearchArea}
+            initialCuisine={route.params.get("cuisine")}
           />
         );
         break;
@@ -236,64 +246,72 @@ function AppContent() {
   return (
     <SafeAreaView edges={["top", "bottom"]} style={s.root}>
       <StatusBar barStyle="dark-content" backgroundColor={colors.cream} />
-      <View style={s.header}>
-        {stack.length > 1 ? (
-          <Pressable
-            accessibilityRole="button"
-            accessibilityLabel="Go back"
-            onPress={goBack}
-            style={s.iconButton}
-          >
-            <Icon name="arrow-back" />
-          </Pressable>
-        ) : (
-          <Image
-            source={require("./assets/verifed-mark.png")}
-            style={s.mark}
-            accessibilityLabel="Verifed carrot checkmark"
-          />
-        )}
-        <Pressable
-          accessibilityRole="button"
-          accessibilityLabel="Verifed home"
-          onPress={() => navigate("home")}
-        >
-          <Text style={s.brand}>
-            verifed<Text style={s.brandDot}>.</Text>
-          </Text>
-        </Pressable>
-        <View style={s.headerRight}>
-          {!showWelcome && (
+      {route.page === "home" && !showWelcome ? (
+        <HomeHeader
+          fontsReady={homeFontsReady}
+          navigate={navigate}
+          onInfo={() => setSheet({ type: "info" })}
+        />
+      ) : (
+        <View style={s.header}>
+          {stack.length > 1 ? (
             <Pressable
               accessibilityRole="button"
-              accessibilityLabel="Change location"
-              onPress={() => navigate("explore?location=1")}
-            >
-              <Text style={[s.mode, { maxWidth: 80 }]} numberOfLines={1}>
-                {searchArea?.label || "ORLANDO"}
-              </Text>
-            </Pressable>
-          )}
-          {route.page === "home" && !showWelcome && (
-            <Pressable
-              accessibilityRole="button"
-              accessibilityLabel="About Verifed"
-              onPress={() => setSheet({ type: "info" })}
+              accessibilityLabel="Go back"
+              onPress={goBack}
               style={s.iconButton}
             >
-              <Icon name="information-circle-outline" />
+              <Icon name="arrow-back" />
             </Pressable>
+          ) : (
+            <Image
+              source={require("./assets/verifed-mark.png")}
+              style={s.mark}
+              accessibilityLabel="Verifed carrot checkmark"
+            />
           )}
           <Pressable
             accessibilityRole="button"
-            accessibilityLabel="Open saved dishes"
-            onPress={() => navigate("favorites")}
-            style={s.iconButton}
+            accessibilityLabel="Verifed home"
+            onPress={() => navigate("home")}
           >
-            <Icon name="heart-outline" />
+            <Text style={s.brand}>
+              verifed<Text style={s.brandDot}>.</Text>
+            </Text>
           </Pressable>
+          <View style={s.headerRight}>
+            {!showWelcome && (
+              <Pressable
+                accessibilityRole="button"
+                accessibilityLabel="Change location"
+                onPress={() => navigate("explore?location=1")}
+              >
+                <Text style={[s.mode, { maxWidth: 80 }]} numberOfLines={1}>
+                  {searchArea?.label || "ORLANDO"}
+                </Text>
+              </Pressable>
+            )}
+            {route.page === "home" && !showWelcome && (
+              <Pressable
+                accessibilityRole="button"
+                accessibilityLabel="About Verifed"
+                onPress={() => setSheet({ type: "info" })}
+                style={s.iconButton}
+              >
+                <Icon name="information-circle-outline" />
+              </Pressable>
+            )}
+            <Pressable
+              accessibilityRole="button"
+              accessibilityLabel="Open saved dishes"
+              onPress={() => navigate("favorites")}
+              style={s.iconButton}
+            >
+              <Icon name="heart-outline" />
+            </Pressable>
+          </View>
         </View>
-      </View>
+      )}
       {!state.ready ? (
         <View
           style={[s.flex, s.empty, { justifyContent: "center", padding: 22 }]}
@@ -346,17 +364,15 @@ function AppContent() {
                 accessibilityState={{ selected }}
                 aria-selected={selected}
                 accessibilityLabel={item.label}
-                onPress={() => navigate(item.route)}
+                onPress={() => {
+                  if (item.route === "home" && selected)
+                    scroll.current?.scrollTo({ y: 0, animated: true });
+                  navigate(item.route);
+                }}
                 style={s.navItem}
               >
                 {item.route === "home" ? (
-                  <View style={s.homeNav}>
-                    <Icon
-                      name={selected ? "home" : "home-outline"}
-                      color={colors.paper}
-                      size={25}
-                    />
-                  </View>
+                  <HomeTab selected={selected} fontsReady={homeFontsReady} />
                 ) : (
                   <Icon
                     name={selected ? item.active : item.icon}
@@ -364,9 +380,11 @@ function AppContent() {
                     size={23}
                   />
                 )}
-                <Text style={[s.navText, selected && s.navTextActive]}>
-                  {item.label}
-                </Text>
+                {item.route !== "home" && (
+                  <Text style={[s.navText, selected && s.navTextActive]}>
+                    {item.label}
+                  </Text>
+                )}
               </Pressable>
             );
           })}

@@ -1,0 +1,22 @@
+{
+  "number": 18,
+  "name": "Verifed V18",
+  "description": "Home-screen redesign based on the approved concept: cream and forest-green layout, bundled Sora/DM Sans fonts, real Hawkers and Chipotle bowl cover photographs, editable dietary chips, typed-location entry, functional cuisine shortcuts, and a solid green selected Home tab. Existing Saved, Journal, restaurant menus and authentication remain. Menu scanning is visibly marked Coming next and opens an explanatory sheet; upload/AI translation is not implemented in this Home-only release.",
+  "verification": [
+    "147 automated tests passed, including cloud-ID Home routing, actual dietary selections and cuisine shortcut validation.",
+    "Browser checks passed for dietary editing and return to Home, both restaurant cards, all three cuisine shortcuts, location selection, information panel, Saved and Journal navigation. No browser console errors were recorded.",
+    "The Home layout was visually reviewed in 390-pixel and 320-pixel browser viewports. This is responsive browser verification, not a native device test.",
+    "iOS, Android and web exports succeeded. Final asset checks and Snack publication details are recorded with this release.",
+    "Independent read-only review identified scan-button contrast; it was fixed to 4.70:1 and rechecked with no remaining actionable findings.",
+    "No physical iPhone or Android emulator runtime test is claimed. AI menu scanning remains unconnected.",
+    "Fixed and browser-rechecked the onboarding scroll reset and intrinsic-image-height issue; both restaurant covers now share a bounded 1.35 aspect-ratio frame.",
+    "All 356 existing food images and the Home photographs/three new fonts match the final iOS, Android and web export bytes.",
+    "Final Snack saved as 6f2SDzuS7UefyexW5xIoU; all 364 uploaded asset hashes verified (359 images, five fonts). Remote ZIP/full downloaded-source comparison and remote app runtime remain unconfirmed because the ZIP service returned HTTP 503 and browser preview navigation timed out. No successful remote runtime test is claimed."
+  ],
+  "snack": "https://snack.expo.dev/6f2SDzuS7UefyexW5xIoU",
+  "snackId": "6f2SDzuS7UefyexW5xIoU",
+  "snackSourceHash": "7f022da575e37e1e3bcf5a837115ccfb0caf0921f8ec73780ed77a9b798d549a",
+  "snackPublishedAt": "2026-10-25T00:43:22.985Z",
+  "status": "home-redesign-local-runtime-verified-remote-runtime-unconfirmed",
+  "branch": "codex/local-menu-photography"
+}

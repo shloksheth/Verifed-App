@@ -1,12 +1,12 @@
 {
-  "version": 17.1,
-  "name": "Verifed V17.1",
-  "id": "Wy9xyhLMej1ThP8Gco9V-",
-  "url": "exp://u.expo.dev/933fd9c0-1666-11e7-afca-d980795c5824?runtime-version=exposdk%3A54.0.0&channel-name=production&snack=Wy9xyhLMej1ThP8Gco9V-",
-  "hashId": "Wy9xyhLMej1ThP8Gco9V-",
-  "snackId": "390f4919-9167-4e14-b550-29b92e7922df",
-  "editorUrl": "https://snack.expo.dev/Wy9xyhLMej1ThP8Gco9V-",
-  "publishedAt": "2026-10-24T22:21:14.042Z",
+  "version": 18,
+  "name": "Verifed V18",
+  "id": "6f2SDzuS7UefyexW5xIoU",
+  "url": "exp://u.expo.dev/933fd9c0-1666-11e7-afca-d980795c5824?runtime-version=exposdk%3A54.0.0&channel-name=production&snack=6f2SDzuS7UefyexW5xIoU",
+  "hashId": "6f2SDzuS7UefyexW5xIoU",
+  "snackId": "289ec137-3d9e-470d-b771-638ed292f566",
+  "editorUrl": "https://snack.expo.dev/6f2SDzuS7UefyexW5xIoU",
+  "publishedAt": "2026-10-25T00:43:22.985Z",
   "sdkVersion": "54.0.0",
   "files": [
     "App.js",
@@ -17,6 +17,7 @@
     "components/ChipotleMenu.js",
     "components/Dining.js",
     "components/Explore.js",
+    "components/Home.js",
     "components/Journal.js",
     "components/MenuImage.js",
     "components/RestaurantMap.js",
@@ -33,6 +34,7 @@
     "src/discovery.js",
     "src/domain.js",
     "src/featured-menus.js",
+    "src/home-content.js",
     "src/ingredient-hints.js",
     "src/local-catalog.js",
     "src/local-food-assets.js",
@@ -52,6 +54,9 @@
     "assets/brands/taco-bell-logo.png",
     "assets/fonts/Anton-Regular.ttf",
     "assets/fonts/BarlowCondensed-SemiBold.ttf",
+    "assets/fonts/DMSans-Medium.ttf",
+    "assets/fonts/DMSans-Regular.ttf",
+    "assets/fonts/Sora-SemiBold.ttf",
     "assets/food/black-rooster-mills/achiote-pork.webp",
     "assets/food/black-rooster-mills/carne-asada.webp",
     "assets/food/black-rooster-mills/crispy-fish.webp",
@@ -408,12 +413,16 @@
     "assets/food/winter-park-biscuit/side-chickpea-salad.webp",
     "assets/food/winter-park-biscuit/side-kale-salad.webp",
     "assets/food/winter-park-biscuit/the-og.webp",
+    "assets/home/chipotle-vegetarian-bowl.webp",
     "assets/verifed-mark.png"
   ],
   "assetHashes": {
     "assets/brands/taco-bell-logo.png": "286803d645aba9dda176a5dd8334573e496e272d167c21e4e3efe5881f7450f8",
     "assets/fonts/Anton-Regular.ttf": "a4ba3a92350ebb031da0cb47630ac49eb265082ca1bc0450442f4a83ab947cab",
     "assets/fonts/BarlowCondensed-SemiBold.ttf": "7b619d14bc2327509a9ef32b0890f709626f7ecc9ff61191c2a4314c5499d2d9",
+    "assets/fonts/DMSans-Medium.ttf": "c14b9f3dc191eb92089473b412e5a25ef6cfe8a8c620a884f9f49d351af43bc0",
+    "assets/fonts/DMSans-Regular.ttf": "e94ce4f86d0122b7a1d6d458de133978b559252811c85760b8a331c43e336b53",
+    "assets/fonts/Sora-SemiBold.ttf": "8aacd3526893aeb283b8a2ff0ff63e7c4a63106c9ab07f70875bef42900339eb",
     "assets/food/black-rooster-mills/achiote-pork.webp": "87fb4efd46d3b48c27c389b93f00480a6eadbac58f7dfde21caee36b085fb068",
     "assets/food/black-rooster-mills/carne-asada.webp": "6d859d9fd74afe094c4e4b9d776114183199a9c9eee41207d9501ee049e4cac6",
     "assets/food/black-rooster-mills/crispy-fish.webp": "a1296079ea64d7f94f08ed9cb9b2583278bb1e97a14ce3123b08234aea924770",
@@ -770,13 +779,14 @@
     "assets/food/winter-park-biscuit/side-chickpea-salad.webp": "c12c3de2b8ed3fa3eb2540574dcd147c6955e765242f2fb696939a5fdb8583f1",
     "assets/food/winter-park-biscuit/side-kale-salad.webp": "2c87421b0b4073d42b7e5b8a685030a70a91b9873759ebb470bf928b09382ea3",
     "assets/food/winter-park-biscuit/the-og.webp": "94aa941b49169d74e9e6babe3c9f369f2bd3549d79b491181a86666645141781",
+    "assets/home/chipotle-vegetarian-bowl.webp": "619ddc443f6471a1301dd0482c78b55d6cecb7df8de33e2f0d5e9f43910f759c",
     "assets/verifed-mark.png": "666a1adcb3940ee008ccb5e9544b853fe3fec4ad6d43f5dca5c8697f230b3219"
   },
   "uploadVerification": {
-    "assets": 360,
-    "images": 358,
-    "fonts": 2,
+    "assets": 364,
+    "images": 359,
+    "fonts": 5,
     "allSourceHashesMatch": true
   },
-  "sourceHash": "8d1a44bcab98388a927fdaece42931ed828035e6ae42309dc29dddb4416d21d5"
+  "sourceHash": "7f022da575e37e1e3bcf5a837115ccfb0caf0921f8ec73780ed77a9b798d549a"
 }

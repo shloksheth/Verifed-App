@@ -276,7 +276,8 @@ export function ProfileEditor({ state, navigate, returnTo }) {
                 : api.saveProfile(draft),
             () =>
               navigate(
-                /^restaurant\/[a-zA-Z0-9-]+$/.test(returnTo || "")
+                returnTo === "home" ||
+                  /^restaurant\/[a-zA-Z0-9-]+$/.test(returnTo || "")
                   ? returnTo
                   : "profile",
                 { unwind: true },

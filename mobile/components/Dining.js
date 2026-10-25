@@ -16,7 +16,7 @@ import { menuPhotoFor, restaurantFoodPhoto } from "../src/menu-photos";
 import { localFoodAssets } from "../src/local-food-assets";
 import { localFoodPhotoMetadata } from "../src/local-food-photo-metadata";
 import { localPhotoKeyFor } from "../src/local-photo-key";
-import { featuredRestaurants, featuredMenuCoverKeys } from "../src/featured-menus";
+import { featuredMenuCoverKeys } from "../src/featured-menus";
 import { dietaryMenuStatus, groupMenu } from "../src/menu-filter";
 import { colors, s } from "../styles";
 import AllergenIcons, {
@@ -515,124 +515,6 @@ export function RequestRow({ request, navigate, staff = false }) {
           : "View the conversation"}
       </Text>
     </Pressable>
-  );
-}
-
-export function Home({ state, navigate }) {
-  const restaurants = state.restaurants.filter(isLocal);
-  const featured = featuredRestaurants(restaurants);
-  const cover = featured[0] || restaurants[0];
-  const needs = [...state.profile.allergies, ...state.profile.restrictions];
-  const totalItems = state.dishes.filter((dish) =>
-    restaurants.some((restaurant) => restaurant.id === dish.restaurantId),
-  ).length;
-  return (
-    <>
-      <View style={s.homeIntro}>
-        <View style={s.locationPill}>
-          <Icon name="location-outline" size={14} color={colors.green} />
-          <Text style={s.locationText}>YOUR ORLANDO TABLE</Text>
-        </View>
-        <Text accessibilityRole="header" style={s.homeHeadline}>
-          A seat for every appetite.
-        </Text>
-        <Text style={s.homeSubtitle}>
-          Local menus. Your dietary needs. A little more clarity before you
-          order.
-        </Text>
-      </View>
-      <Pressable
-        accessibilityRole="button"
-        accessibilityLabel="Explore Orlando restaurant menus"
-        onPress={() => navigate("explore")}
-        style={s.homePhotoCard}
-      >
-        <RestaurantPhoto restaurant={cover || {}} style={s.homePhoto} />
-        <View style={s.homePhotoCaption}>
-          <View style={s.flex}>
-            <Text style={s.homePhotoEyebrow}>
-              {restaurants.length} LOCATIONS · {totalItems} MENU ENTRIES
-            </Text>
-            <Text style={s.homePhotoTitle}>Good food starts here.</Text>
-          </View>
-          <View style={s.roundArrow}>
-            <Icon name="arrow-forward" size={22} color={colors.paper} />
-          </View>
-        </View>
-      </Pressable>
-      <Pressable
-        accessibilityRole="button"
-        accessibilityLabel="Edit your dietary needs"
-        onPress={() => navigate("edit-profile")}
-        style={s.needsCard}
-      >
-        <View style={s.needsIcon}>
-          <Icon name="leaf-outline" color={colors.green} size={22} />
-        </View>
-        <View style={s.flex}>
-          <Text style={s.h3}>
-            {needs.length ? "Made around your needs" : "Make the menu yours"}
-          </Text>
-          <Text style={s.small} numberOfLines={2}>
-            {needs.length
-              ? needs.join(" · ")
-              : "Choose allergies and dietary restrictions"}
-          </Text>
-        </View>
-        <Icon name="chevron-forward" size={18} color={colors.green} />
-      </Pressable>
-      <Section
-        title="Start with these menus"
-        action="See all"
-        onPress={() => navigate("explore")}
-      >
-        <ScrollView
-          horizontal
-          showsHorizontalScrollIndicator={false}
-          contentContainerStyle={s.featuredRail}
-        >
-          {featured.map((restaurant) => (
-            <RestaurantRow
-              key={restaurant.id}
-              {...{ restaurant, state, navigate }}
-              featured
-            />
-          ))}
-        </ScrollView>
-      </Section>
-      <View style={s.howPanel}>
-        <Text style={s.eyebrow}>KNOW BEFORE YOU GO</Text>
-        <Text style={s.h2}>Less guesswork at the table.</Text>
-        {[
-          [
-            "01",
-            "Choose your needs",
-            "Set the allergies and restrictions that matter to you.",
-          ],
-          [
-            "02",
-            "Read your menu",
-            "See the full menu, ingredient clues, and options for your needs.",
-          ],
-          [
-            "03",
-            "Ask one better question",
-            "Open the source or call about ingredients and preparation.",
-          ],
-        ].map(([number, title, text]) => (
-          <View key={number} style={s.howRow}>
-            <Text style={s.howNumber}>{number}</Text>
-            <View style={s.flex}>
-              <Text style={s.h3}>{title}</Text>
-              <Text style={s.small}>{text}</Text>
-            </View>
-          </View>
-        ))}
-      </View>
-      <Text style={s.sourceFootnote}>
-        Explore Orlando-area menus. Save favorites and track meals you enjoy.
-      </Text>
-    </>
   );
 }
 

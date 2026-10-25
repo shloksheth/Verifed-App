@@ -1,14 +1,16 @@
 {
-  "number": 17.1,
-  "name": "Verifed V17.1",
-  "description": "Explore prioritizes the five featured menus. Taco Bell now uses its official bell logo, condensed headings, underlined category navigation, square white product cards and paired purple ingredient/customization buttons. Chipotle gets its official medallion and a dedicated white/brown ingredient-builder layout with local component selections and review. Draft selections survive ingredient/profile navigation, separated by diner and restaurant. Adds bundled licensed open fonts; menu data and allergen evidence are unchanged.",
+  "number": 18,
+  "name": "Verifed V18",
+  "description": "Home-screen redesign based on the approved concept: cream and forest-green layout, bundled Sora/DM Sans fonts, real Hawkers and Chipotle bowl cover photographs, editable dietary chips, typed-location entry, functional cuisine shortcuts, and a solid green selected Home tab. Existing Saved, Journal, restaurant menus and authentication remain. Menu scanning is visibly marked Coming next and opens an explanatory sheet; upload/AI translation is not implemented in this Home-only release.",
   "verification": [
-    "144 regression tests passed, including Chipotle draft restoration and diner/restaurant isolation.",
-    "Featured ordering checks passed, including an alternate Taco Bell branch and preservation of filtered results and explicit Nearest sorting.",
-    "Final browser release loaded all 116 Taco Bell and 26 Chipotle item images; the official Taco Bell logo loaded and the Chipotle medallion rendered. No browser console errors were recorded.",
-    "Chipotle select, detail-return, review, remove, profile-return, search and Milk filtering passed. Taco Bell search, customization opening/removal/closing and selected-state accessibility passed.",
-    "iOS, Android and web exports succeeded. All 356 food WebPs, the Taco Bell logo and both fonts match their local source hashes on all three platforms.",
-    "Independent code review found selection loss across navigation; it was fixed with diner/restaurant-scoped in-memory drafts, regression-tested and browser-verified. Final review found no further actionable regressions.",
-    "Snack saved Wy9xyhLMej1ThP8Gco9V- and verified all 360 uploaded asset hashes (358 images, two fonts). Browser navigation timed out and the remote ZIP API returned HTTP 503, so this saved snapshot runtime and full downloaded-source comparison remain unconfirmed. No physical iPhone test is claimed."
+    "147 automated tests passed, including cloud-ID Home routing, actual dietary selections and cuisine shortcut validation.",
+    "Browser checks passed for dietary editing and return to Home, both restaurant cards, all three cuisine shortcuts, location selection, information panel, Saved and Journal navigation. No browser console errors were recorded.",
+    "The Home layout was visually reviewed in 390-pixel and 320-pixel browser viewports. This is responsive browser verification, not a native device test.",
+    "iOS, Android and web exports succeeded. Final asset checks and Snack publication details are recorded with this release.",
+    "Independent read-only review identified scan-button contrast; it was fixed to 4.70:1 and rechecked with no remaining actionable findings.",
+    "No physical iPhone or Android emulator runtime test is claimed. AI menu scanning remains unconnected.",
+    "Fixed and browser-rechecked the onboarding scroll reset and intrinsic-image-height issue; both restaurant covers now share a bounded 1.35 aspect-ratio frame.",
+    "All 356 existing food images and the Home photographs/three new fonts match the final iOS, Android and web export bytes.",
+    "Final Snack saved as 6f2SDzuS7UefyexW5xIoU; all 364 uploaded asset hashes verified (359 images, five fonts). Remote ZIP/full downloaded-source comparison and remote app runtime remain unconfirmed because the ZIP service returned HTTP 503 and browser preview navigation timed out. No successful remote runtime test is claimed."
   ]
 }

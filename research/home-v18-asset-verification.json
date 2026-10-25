@@ -1,0 +1,41 @@
+{
+  "checkedAt": "2026-10-25T00:43:05.068065+00:00",
+  "exportDirectory": "verifed-v18-release",
+  "sourceHashes": {
+    "assets/food/hawkers-orlando/roti-canai.webp": "fc49f6e0e0d36467c91ee357a9af4ac26033fa4c5dba80082792f9e8a9a4e705",
+    "assets/home/chipotle-vegetarian-bowl.webp": "619ddc443f6471a1301dd0482c78b55d6cecb7df8de33e2f0d5e9f43910f759c",
+    "assets/fonts/Sora-SemiBold.ttf": "8aacd3526893aeb283b8a2ff0ff63e7c4a63106c9ab07f70875bef42900339eb",
+    "assets/fonts/DMSans-Regular.ttf": "e94ce4f86d0122b7a1d6d458de133978b559252811c85760b8a331c43e336b53",
+    "assets/fonts/DMSans-Medium.ttf": "c14b9f3dc191eb92089473b412e5a25ef6cfe8a8c620a884f9f49d351af43bc0"
+  },
+  "platforms": {
+    "android": {
+      "assets/food/hawkers-orlando/roti-canai.webp": true,
+      "assets/home/chipotle-vegetarian-bowl.webp": true,
+      "assets/fonts/Sora-SemiBold.ttf": true,
+      "assets/fonts/DMSans-Regular.ttf": true,
+      "assets/fonts/DMSans-Medium.ttf": true
+    },
+    "ios": {
+      "assets/food/hawkers-orlando/roti-canai.webp": true,
+      "assets/home/chipotle-vegetarian-bowl.webp": true,
+      "assets/fonts/Sora-SemiBold.ttf": true,
+      "assets/fonts/DMSans-Regular.ttf": true,
+      "assets/fonts/DMSans-Medium.ttf": true
+    },
+    "web": {
+      "assets/food/hawkers-orlando/roti-canai.webp": true,
+      "assets/home/chipotle-vegetarian-bowl.webp": true,
+      "assets/fonts/Sora-SemiBold.ttf": true,
+      "assets/fonts/DMSans-Regular.ttf": true,
+      "assets/fonts/DMSans-Medium.ttf": true
+    }
+  },
+  "passed": true,
+  "chipotlePhoto": {
+    "generated": false,
+    "credit": "Chipotle Mexican Grill, Inc. via Food Business News",
+    "source": "https://www.foodbusinessnews.net/articles/13410-chipotle-serving-new-plant-powered-lifestyle-bowls",
+    "use": "Restaurant cover, not an ingredient-specific menu photograph or dietary-suitability claim"
+  }
+}

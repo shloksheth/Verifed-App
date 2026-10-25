@@ -5,6 +5,7 @@ import { discoverRestaurants } from "../src/discovery";
 import { prioritizeFeaturedMenus } from "../src/featured-menus";
 import { chainBrand } from "../src/chain-brand";
 import { ORLANDO_CENTER, searchPlaces } from "../src/location-search";
+import { homeCuisine } from "../src/home-content";
 import { RestaurantRow } from "./Dining";
 import RestaurantMap from "./RestaurantMap";
 import {
@@ -59,6 +60,7 @@ export default function Explore({
   navigate,
   openLocation = false,
   onLocationChange,
+  initialCuisine,
 }) {
   const [filters, setFilters] = useState(remembered);
   const [locationText, setLocationText] = useState("");
@@ -95,10 +97,33 @@ export default function Explore({
     "All",
     ...new Set(restaurants.map((place) => place.cuisine).filter(Boolean)),
   ];
+  useEffect(() => {
+    const cuisine = homeCuisine(
+      [
+        ...new Set(
+          state.restaurants.map((place) => place.cuisine).filter(Boolean),
+        ),
+      ],
+      initialCuisine,
+    );
+    if (cuisine)
+      setFilters((current) => ({
+        ...current,
+        cuisine,
+        query: "",
+        collection: "all",
+      }));
+  }, [initialCuisine, state.restaurants]);
   const results = useMemo(
     () =>
       discoverRestaurants({
-        restaurants: state.restaurants.filter((restaurant) => filters.collection === "chains" ? !!chainBrand(restaurant) : filters.collection === "restaurants" ? !chainBrand(restaurant) : true),
+        restaurants: state.restaurants.filter((restaurant) =>
+          filters.collection === "chains"
+            ? !!chainBrand(restaurant)
+            : filters.collection === "restaurants"
+              ? !chainBrand(restaurant)
+              : true,
+        ),
         dishes: state.dishes,
         profile: state.profile,
         meals: state.meals,
@@ -119,9 +144,8 @@ export default function Explore({
     group,
     result: group[0],
   }));
-  const orderedCards = filters.sort === "recommended"
-    ? prioritizeFeaturedMenus(cards)
-    : cards;
+  const orderedCards =
+    filters.sort === "recommended" ? prioritizeFeaturedMenus(cards) : cards;
   const needs = [...state.profile.allergies, ...state.profile.restrictions];
   async function findLocation() {
     request.current?.abort();
@@ -263,7 +287,11 @@ export default function Explore({
         </View>
       )}
       <Tabs
-        options={[{ value: "all", label: "All places" }, { value: "restaurants", label: "Restaurants" }, { value: "chains", label: "Food Chains" }]}
+        options={[
+          { value: "all", label: "All places" },
+          { value: "restaurants", label: "Restaurants" },
+          { value: "chains", label: "Food Chains" },
+        ]}
         value={filters.collection}
         onChange={(collection) => update({ collection, cuisine: "All" })}
       />
@@ -456,9 +484,7 @@ export default function Explore({
           title="Choose a Taco Bell location"
           onClose={() => setBranches(null)}
         >
-          <Text style={s.small}>
-          Choose a branch to open its menu.
-          </Text>
+          <Text style={s.small}>Choose a branch to open its menu.</Text>
           {branches.map((result) => (
             <Pressable
               key={result.restaurant.id}
