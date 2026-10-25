@@ -1,12 +1,12 @@
 {
-  "version": 26,
-  "name": "Verifed V26",
-  "id": "UZZA1uCI6zRnGqeO20bfY",
-  "url": "exp://u.expo.dev/933fd9c0-1666-11e7-afca-d980795c5824?runtime-version=exposdk%3A54.0.0&channel-name=production&snack=UZZA1uCI6zRnGqeO20bfY",
-  "hashId": "UZZA1uCI6zRnGqeO20bfY",
-  "snackId": "28154a61-4d2b-42ae-9a55-08f454e1c064",
-  "editorUrl": "https://snack.expo.dev/UZZA1uCI6zRnGqeO20bfY",
-  "publishedAt": "2026-10-25T19:38:53.271Z",
+  "version": 27,
+  "name": "Verifed V27",
+  "id": "VS2xolKeyAIsXVuy2S05V",
+  "url": "exp://u.expo.dev/933fd9c0-1666-11e7-afca-d980795c5824?runtime-version=exposdk%3A54.0.0&channel-name=production&snack=VS2xolKeyAIsXVuy2S05V",
+  "hashId": "VS2xolKeyAIsXVuy2S05V",
+  "snackId": "fe7e9e16-02b5-4f93-a20b-18dd5a891057",
+  "editorUrl": "https://snack.expo.dev/VS2xolKeyAIsXVuy2S05V",
+  "publishedAt": "2026-10-25T20:09:47.047Z",
   "sdkVersion": "54.0.0",
   "files": [
     "App.js",
@@ -17,6 +17,7 @@
     "components/ChipotleMenu.js",
     "components/Dining.js",
     "components/Explore.js",
+    "components/FloatingNavigation.js",
     "components/Home.js",
     "components/Journal.js",
     "components/MenuImage.js",
@@ -54,6 +55,7 @@
     "src/menu-scan.js",
     "src/model-utils.js",
     "src/native-globals.js",
+    "src/navigation-model.js",
     "src/restaurant-locations.js",
     "src/restaurant-menus.js",
     "src/sayola-menu-data.js",
@@ -841,5 +843,5 @@
     "fonts": 14,
     "allSourceHashesMatch": true
   },
-  "sourceHash": "9ad077d3fffaefcf05bf4097299a3a550fcceda62d62f4845e4350e6ce788a43"
+  "sourceHash": "893c07b8c9820b3dbfff66ebde8d951e075d8cc74216b0a4682e25fb36e277bf"
 }

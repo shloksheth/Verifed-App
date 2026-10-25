@@ -44,6 +44,7 @@ The import commits were created when the history was recovered. Original saved d
 | [Verifed V25](https://github.com/shloksheth/Verifed-App/releases/tag/v25) | Apple UI readability/touch pass: 11-point small labels, larger targets, caption spacing and stronger missing-photo contrast. 174 tests and platform exports passed; Android checked. Oliur aesthetic proposals await approval. | [Verifed V25](https://snack.expo.dev/wuR91oI__RmwUDFzYLwfr) |
 
 | [Verifed V25.5](https://github.com/shloksheth/Verifed-App/releases/tag/v25.5) | Approved changes 3/4 only: direct Scan slogan and Ionicons for Taco Bell hearts/missing-photo state. Borders and layout unchanged. 174 tests and platform exports passed; fresh UI check blocked by tooling. | [Verifed V25.5](https://snack.expo.dev/aluB7JlrMIqH18TAab0XT) |
+| [Verifed V27](https://github.com/shloksheth/Verifed-App/releases/tag/v27) | Introduces the approved Home-first floating pill with four tabs and a separate expandable quick-actions button. Adds animated selection and plus rotation, reduced-motion support, keyboard-aware tab visibility, profile access from the header, and page-specific contextual navigation with a working back control. | [Verifed V27](https://snack.expo.dev/VS2xolKeyAIsXVuy2S05V) |
 
 Application directories appear as they are introduced: `prototype/` (original JavaScript web prototype), `web/` (React companion), and `mobile/` (React Native/Expo). Every release preserves the other applications already introduced.
 
