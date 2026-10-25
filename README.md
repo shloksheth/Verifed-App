@@ -43,6 +43,8 @@ The import commits were created when the history was recovered. Original saved d
 
 | [Verifed V25](https://github.com/shloksheth/Verifed-App/releases/tag/v25) | Apple UI readability/touch pass: 11-point small labels, larger targets, caption spacing and stronger missing-photo contrast. 174 tests and platform exports passed; Android checked. Oliur aesthetic proposals await approval. | [Verifed V25](https://snack.expo.dev/wuR91oI__RmwUDFzYLwfr) |
 
+| [Verifed V25.5](https://github.com/shloksheth/Verifed-App/releases/tag/v25.5) | Approved changes 3/4 only: direct Scan slogan and Ionicons for Taco Bell hearts/missing-photo state. Borders and layout unchanged. 174 tests and platform exports passed; fresh UI check blocked by tooling. | [Verifed V25.5](https://snack.expo.dev/aluB7JlrMIqH18TAab0XT) |
+
 Application directories appear as they are introduced: `prototype/` (original JavaScript web prototype), `web/` (React companion), and `mobile/` (React Native/Expo). Every release preserves the other applications already introduced.
 
 Native V6–V9 are new version-named copies of recovered immutable Snack snapshots. Their original snapshot IDs remain in release notes. Downloaded V6–V8 contain Expo-generated project scaffolding rather than original local lockfiles and tests. V9 also restores the archived local code, tests and documentation.

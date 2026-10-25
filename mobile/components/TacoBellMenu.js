@@ -9,6 +9,7 @@ import { localFoodAssets } from "../src/local-food-assets";
 import { localFoodPhotoMetadata } from "../src/local-food-photo-metadata";
 import { localPhotoKeyFor } from "../src/local-photo-key";
 import AllergenIcons from "./AllergenIcons";
+import { Icon } from "./UI";
 import { BrandHeading, BrandLogo, BrandProvider } from "./BrandIdentity";
 
 const purple = "#501098";
@@ -47,7 +48,7 @@ function FoodPhoto({ dish, restaurant, wide = false }) {
         />
       ) : (
         <View style={look.photoMissing}>
-          <Text style={look.missingSymbol}>✦</Text>
+          <Icon name="image-outline" size={28} color={muted} />
           <Text style={look.missingLabel}>PHOTO NOT AVAILABLE</Text>
         </View>
       )}
@@ -190,7 +191,7 @@ function ItemCard({ dish, restaurant, profile, navigate, onCustomize, favorites 
           {statusLabel}
         </Text>
         <Pressable accessibilityRole="button" accessibilityLabel={saved ? "Unsave item" : "Save item"} style={look.saveTarget} disabled={busy} onPress={save}>
-          <Text style={[look.heart, saved && look.heartSaved]}>{saved ? "♥" : "♡"}</Text>
+          <Icon name={saved ? "heart" : "heart-outline"} size={23} color={saved ? "#AD2F69" : purple} />
         </Pressable>
       </View>
       <AllergenIcons dish={dish} showEmpty showUnknown />
@@ -357,7 +358,6 @@ const look = StyleSheet.create({
   photoFill: { width: "100%", height: "100%" },
   illustrationLabel: { position: "absolute", bottom: 3, right: 6, color: muted, fontSize: 11, backgroundColor: "#FFFFFFE8", paddingHorizontal: 4, borderRadius: 3 },
   photoMissing: { alignItems: "center", justifyContent: "center", padding: 9, gap: 3 },
-  missingSymbol: { color: "#D2C3E2", fontSize: 28 },
   missingLabel: { color: muted, fontSize: 11, fontWeight: "700", textAlign: "center" },
   itemTitle: { fontSize: 18, lineHeight: 24, color: "#111111", marginTop: 9, minHeight: 48 },
   fitRow: { flexDirection: "row", alignItems: "center", gap: 5, justifyContent: "space-between" },
@@ -365,8 +365,6 @@ const look = StyleSheet.create({
   fitMatch: { color: good },
   fitConflict: { color: "#B94339" },
   saveTarget: { minWidth: 44, minHeight: 44, alignItems: "center", justifyContent: "center" },
-  heart: { color: purple, fontSize: 23 },
-  heartSaved: { color: "#AD2F69" },
   viewItem: { backgroundColor: purple, minHeight: 44, paddingHorizontal: 3, alignItems: "center", justifyContent: "center" },
   viewItemText: { color: "#FFFFFF", fontSize: 11, fontWeight: "900", textAlign: "center" },
   customize: { backgroundColor: "#FFFFFF", borderWidth: 1.5, borderColor: purple, minHeight: 44, alignItems: "center", justifyContent: "center" },

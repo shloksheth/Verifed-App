@@ -1,5 +1,7 @@
 # Verifed mobile frontend
 
+V25.5 applies only the approved slogan and Taco Bell icon changes. [OLIUR_APPROVED_CHANGES.md](OLIUR_APPROVED_CHANGES.md) explains the related files.
+
 V25 applies Apple UI tips to small text, touch targets and a low-contrast menu label. [APPLE_UI_TIPS.md](APPLE_UI_TIPS.md) explains all related files and the separate pending Oliur proposals.
 
 V24 redesigns Scan with the supplied Sayola menu, a capture-first screen and a brown/cream/gold result layout. [MENU_SCANNING.md](MENU_SCANNING.md) explains every related file, the fixed presentation behavior and four generated dish illustrations.

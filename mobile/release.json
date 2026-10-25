@@ -1,14 +1,13 @@
 {
-  "number": 25,
-  "name": "Verifed V25",
-  "description": "Applies Apple UI readability and touch tips: small labels at least 11 points, larger guest/menu/edit/save/source/close targets, more caption line spacing and stronger missing-photo text contrast. Oliur-inspired aesthetic changes remain pending approval.",
+  "number": 25.5,
+  "name": "Verifed V25.5",
+  "description": "Applies only approved changes 3 and 4: replaces the Scan slogan with Read and save menus, and uses existing Ionicons for Taco Bell saved/unsaved hearts and the missing-photo placeholder. Borders and layout grouping are unchanged.",
   "verification": [
-    "174 automated tests passed; iOS, Android and web exports succeeded.",
-    "Source review found and raised 21 text styles below 11 points. Targeted controls use minimum dimensions without disabling native text scaling.",
-    "Taco Bell missing-photo label contrast increased from 2.80:1 to 5.54:1 against its light photo canvas.",
-    "No Oliur-inspired border, spacing, layout or copy redesign is included.",
-    "Physical iPhone and native camera/permission behavior remain unverified.",
-    "Android Expo Go loaded Welcome, guest Home and Chipotle; the dietary Edit action opened profile settings. Screens were inspected with emulator font_scale configured to 1.0 and 1.3; the original setting was restored. This does not establish iOS Dynamic Type compliance.",
-    "All 379 Snack asset hashes were verified; the published editor returned HTTP 200 with the V25 title. Remote Snack runtime was not tested. ZIP comparison remains unavailable: SNACK_DOWNLOAD_TOO_LARGE."
+    "174 automated tests passed. iOS, Android and web exports succeeded.",
+    "All three icon names exist in the installed Ionicons glyph map. The existing favorite handler, accessible labels, colors and 44-point target remain.",
+    "Physical iPhone and fresh native camera behavior remain unverified.",
+    "Snack verified all 379 uploaded asset hashes; published editor HTTP 200 and V25.5 title confirmed. Existing font/Home asset bytes matched all platform exports.",
+    "Fresh live UI verification was blocked: the browser automation timed out, and the Android automation daemon made no startup progress. No new saved/unsaved interaction pass is claimed.",
+    "Downloaded Snack ZIP comparison remains unavailable: SNACK_DOWNLOAD_TOO_LARGE."
   ]
 }

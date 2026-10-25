@@ -1,0 +1,43 @@
+{
+  "version": 25.5,
+  "scope": [
+    "Approved proposal 3: direct Scan slogan",
+    "Approved proposal 4: existing icons for Taco Bell hearts and missing-photo marker"
+  ],
+  "notApplied": [
+    "Proposal 1: removing borders",
+    "Proposal 2: changing Scan grouping/layout"
+  ],
+  "automatedTests": {
+    "passed": 174,
+    "failed": 0
+  },
+  "exports": [
+    "ios",
+    "android",
+    "web"
+  ],
+  "glyphNamesVerified": [
+    "image-outline",
+    "heart",
+    "heart-outline"
+  ],
+  "assetValidation": "design-v25.5-asset-validation.json",
+  "snack": {
+    "url": "https://snack.expo.dev/aluB7JlrMIqH18TAab0XT",
+    "httpStatus": 200,
+    "allSourceAssetHashesMatch": true,
+    "assetCount": 379
+  },
+  "runtimeVerification": {
+    "browser": "Blocked: automation timed out and reset",
+    "android": "Blocked: automation daemon startup stalled for 60 seconds",
+    "favoriteToggle": "Not re-verified in live runtime",
+    "missingPhotoPlaceholder": "Compiled; not visually re-verified"
+  },
+  "notVerified": [
+    "Physical iPhone",
+    "Remote Snack runtime",
+    "Downloaded Snack ZIP (SNACK_DOWNLOAD_TOO_LARGE)"
+  ]
+}

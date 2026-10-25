@@ -205,7 +205,7 @@ export default function MenuScanner({
               size={25}
             />
             <View style={s.flex}>
-              <Text style={look.subheading}>Read it. Compare it. Keep it.</Text>
+              <Text style={look.subheading}>Read and save menus</Text>
               <Text style={look.body}>
                 Switch languages, check ingredients, then save the menu for
                 later.

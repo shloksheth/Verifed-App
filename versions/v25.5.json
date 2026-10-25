@@ -1,0 +1,38 @@
+{
+  "number": 25.5,
+  "name": "Verifed V25.5",
+  "description": "Applies only approved changes 3 and 4: replaces the Scan slogan with Read and save menus, and uses existing Ionicons for Taco Bell saved/unsaved hearts and the missing-photo placeholder. Borders and layout grouping are unchanged.",
+  "verification": [
+    "174 automated tests passed. iOS, Android and web exports succeeded.",
+    "All three icon names exist in the installed Ionicons glyph map. The existing favorite handler, accessible labels, colors and 44-point target remain.",
+    "Physical iPhone and fresh native camera behavior remain unverified.",
+    "Snack verified all 379 uploaded asset hashes; published editor HTTP 200 and V25.5 title confirmed. Existing font/Home asset bytes matched all platform exports.",
+    "Fresh live UI verification was blocked: the browser automation timed out, and the Android automation daemon made no startup progress. No new saved/unsaved interaction pass is claimed.",
+    "Downloaded Snack ZIP comparison remains unavailable: SNACK_DOWNLOAD_TOO_LARGE."
+  ],
+  "snack": "https://snack.expo.dev/aluB7JlrMIqH18TAab0XT",
+  "snackId": "aluB7JlrMIqH18TAab0XT",
+  "snackSourceHash": "85c131f41dc50365b43c1dc35b6ea7aecb2235b95e38d9b6b6c4748d2435e3d5",
+  "snackPublishedAt": "2026-10-25T19:24:19.054Z",
+  "status": "approved-copy-and-icons-tests-and-platform-export-verified",
+  "uploadVerification": {
+    "assets": 379,
+    "images": 365,
+    "fonts": 14,
+    "allSourceHashesMatch": true
+  },
+  "downloadedSourceVerification": {
+    "checkedAt": "2026-10-25T19:25:28.309852+00:00",
+    "name": "Verifed V25.5",
+    "snackId": "aluB7JlrMIqH18TAab0XT",
+    "expectedFiles": 444,
+    "foodImages": 356,
+    "errors": [
+      {
+        "reason": "Snack download unavailable: HTTP 503 (SNACK_DOWNLOAD_TOO_LARGE)"
+      }
+    ],
+    "passed": false
+  },
+  "branch": "codex/local-menu-photography"
+}
