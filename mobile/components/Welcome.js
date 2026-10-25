@@ -126,10 +126,10 @@ export default function Welcome({ onSignIn, onCreateAccount, onContinue }) {
                 >
                   Find your{`\n`}next favorite.
                 </Text>
-                <View style={w.photoFrame}>
+                <View style={[w.photoFrame, index === 0 && w.chipotleFrame]}>
                   <Image
                     source={dish.source}
-                    contentFit="cover"
+                    contentFit={index === 0 ? "contain" : "cover"}
                     style={w.photo}
                     accessibilityLabel={dish.alt}
                   />
@@ -272,6 +272,7 @@ const w = StyleSheet.create({
     letterSpacing: -1.6,
   },
   compactTitle: { fontSize: 36, lineHeight: 37 },
+  chipotleFrame: { backgroundColor: "#E0C8A8" },
   photoFrame: {
     flex: 1,
     minHeight: 130,

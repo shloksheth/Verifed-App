@@ -1,13 +1,11 @@
 {
-  "number": 26,
-  "name": "Verifed V26",
-  "description": "Unifies app colors and Clash Grotesk text roles across Home, Explore, Scan, Journal, profile, authentication and restaurant menus. Adds peach and pale green surfaces, shared orange actions and green selections. Enlarges Sign in and Explore as a guest to 17-point text.",
+  "number": 26.1,
+  "name": "Verifed V26.1",
+  "description": "Adjusts the Chipotle vegetarian bowl on the welcome and account-entry carousel to use full-image contain framing, avoiding the additional crop caused by cover; retains the existing locally bundled image and all other food slides.",
   "verification": [
-    "174 automated tests passed. iOS, Android and web exports succeeded.",
-    "Phone-width browser review covered all five tabs, welcome, authentication, Chipotle and Taco Bell. Native iPhone rendering and camera remain unverified.",
-    "Photo selection opened the authored 23-dish Sayola result; Save this menu changed to Update saved menu and listed Sayola in My menus. This remains scripted, not live OCR.",
-    "Checkpoint published at the configured 5% five-hour remaining-usage threshold. Full compact-screen and physical iPhone verification remain pending.",
-    "Snack editor HTTP 200 with Verifed V26 title; all 379 uploaded asset hashes verified. Font/Home, source-menu, four Scan illustration and 356 food-image export checks passed.",
-    "Downloaded Snack ZIP comparison unavailable: HTTP 503 SNACK_DOWNLOAD_TOO_LARGE."
+    "Scoped change to the first welcome carousel image; the original source image itself is tightly photographed and does not contain the complete lower/right bowl rim.",
+    "Automated regression checks ensure Chipotle uses contain and all other dishes keep cover.",
+    "Navigation concepts A and B are comparison prototypes only and not part of this published release.",
+    "Expo Snack publication and full native-screen validation are performed by the GitHub workflow and remain unconfirmed until its run completes."
   ]
 }
