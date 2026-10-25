@@ -300,7 +300,7 @@ function AppContent() {
                 accessibilityRole="button"
                 accessibilityLabel="Verifed home"
                 onPress={() => navigate("home")}
-                style={{ flexShrink: 1, minWidth: 0 }}
+                style={{ flexShrink: 1, minWidth: 0, minHeight: 44, justifyContent: "center" }}
               >
                 <Text style={s.brand} numberOfLines={1}>
                   verifed<Text style={s.brandDot}>.</Text>

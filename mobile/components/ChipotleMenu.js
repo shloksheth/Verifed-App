@@ -101,7 +101,7 @@ export default function ChipotleMenu({ restaurant, dishes, profile, navigate, dr
             <BrandHeading style={look.preferenceTitle}>YOUR DIETARY NEEDS</BrandHeading>
             <Text style={look.small}>{needs.length ? needs.join(" · ") : "Choose allergies and dietary restrictions"}</Text>
           </View>
-          <Pressable accessibilityRole="button" accessibilityLabel="Edit Chipotle dietary needs"
+          <Pressable accessibilityRole="button" accessibilityLabel="Edit Chipotle dietary needs" style={look.editTarget}
             onPress={() => navigate(`edit-profile?returnTo=${encodeURIComponent(`restaurant/${restaurant.id}`)}`)}>
             <BrandHeading style={look.edit}>EDIT ›</BrandHeading>
           </Pressable>
@@ -154,7 +154,7 @@ export default function ChipotleMenu({ restaurant, dishes, profile, navigate, dr
             </View>
           ))}
           {!visible.length && <Text style={look.empty}>No matching components. Try another category or search.</Text>}
-          <Pressable accessibilityRole="button" onPress={() => Linking.openURL(restaurant.menuUrl || "https://www.chipotle.com/")}>
+          <Pressable accessibilityRole="button" style={look.sourceTarget} onPress={() => Linking.openURL(restaurant.menuUrl || "https://www.chipotle.com/")}>
             <BrandHeading style={look.sourceLink}>OPEN OFFICIAL CHIPOTLE MENU ↗</BrandHeading>
           </Pressable>
           <Text style={look.footer}>Independent Verifed menu. Chipotle owns its trademarks. This is a component selection, not a restaurant order. Published ingredient and allergen coverage remains incomplete.</Text>
@@ -207,16 +207,17 @@ const look = StyleSheet.create({
   preferences: { flexDirection: "row", alignItems: "center", gap: 12, backgroundColor: "#F4F0EB", paddingVertical: 10, paddingHorizontal: 17 },
   preferenceTitle: { color: brown, fontSize: 19, marginBottom: 3 },
   small: { color: "#796659", fontSize: 11, lineHeight: 17 },
+  editTarget: { minWidth: 44, minHeight: 44, alignItems: "center", justifyContent: "center" },
   edit: { color: red, fontSize: 15, padding: 4 },
   controls: { padding: 12, gap: 10 },
   modes: { flexDirection: "row", borderWidth: 1, borderColor: brown },
-  mode: { flex: 1, padding: 10, alignItems: "center" },
+  mode: { flex: 1, minHeight: 44, padding: 10, alignItems: "center" },
   modeActive: { backgroundColor: brown },
   modeText: { color: brown, fontSize: 21 },
   modeTextActive: { color: "#FFFFFF" },
   search: { color: brown, height: 47, borderWidth: 1, borderColor: "#B4A49A", paddingHorizontal: 12, fontSize: 13 },
   categories: { paddingHorizontal: 16, gap: 18, borderBottomWidth: 1, borderColor: "#DED8D2" },
-  category: { paddingVertical: 11, borderBottomWidth: 3, borderColor: "transparent" },
+  category: { minHeight: 44, paddingVertical: 11, borderBottomWidth: 3, borderColor: "transparent" },
   categoryActive: { borderColor: red },
   categoryText: { fontSize: 20, color: brown },
   categoryTextActive: { color: red },
@@ -232,16 +233,17 @@ const look = StyleSheet.create({
   cardSelected: { borderColor: red, borderWidth: 2, padding: 9 },
   photo: { width: "100%", aspectRatio: 1, backgroundColor: "#FFFFFF", position: "relative" },
   photoFill: { width: "100%", height: "100%" },
-  illustration: { position: "absolute", bottom: 3, right: 3, fontSize: 8, color: "#766257", backgroundColor: "#FFFFFFE8", paddingHorizontal: 3 },
+  illustration: { position: "absolute", bottom: 3, right: 3, fontSize: 11, color: "#766257", backgroundColor: "#FFFFFFE8", paddingHorizontal: 3 },
   itemName: { color: brown, fontSize: 25, lineHeight: 27, marginTop: 12, minHeight: 54 },
-  status: { color: "#796659", fontSize: 10, lineHeight: 15 },
+  status: { color: "#796659", fontSize: 11, lineHeight: 15 },
   conflict: { color: "#AD301D" },
   addButton: { minHeight: 44, borderWidth: 1, borderColor: brown, alignItems: "center", justifyContent: "center", marginTop: "auto" },
   addSelected: { backgroundColor: brown },
   addText: { color: brown, fontSize: 20 },
   addSelectedText: { color: "#FFFFFF" },
+  sourceTarget: { minHeight: 44, justifyContent: "center" },
   sourceLink: { color: red, fontSize: 20, textDecorationLine: "underline" },
-  footer: { color: "#796659", fontSize: 10, lineHeight: 16, paddingBottom: 12 },
+  footer: { color: "#796659", fontSize: 11, lineHeight: 16, paddingBottom: 12 },
   empty: { paddingVertical: 20, color: brown, fontSize: 14 },
   shade: { flex: 1, backgroundColor: "#0008", justifyContent: "flex-end" },
   sheet: { backgroundColor: "#FFFFFF", maxHeight: "88%" },

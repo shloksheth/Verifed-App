@@ -22,7 +22,7 @@ export const s = StyleSheet.create({
   },
   discoveryAreaLabel: {
     color: colors.green,
-    fontSize: 10,
+    fontSize: 11,
     letterSpacing: 1.2,
     fontWeight: "800",
     marginBottom: 4,
@@ -73,7 +73,7 @@ export const s = StyleSheet.create({
   },
   mode: {
     color: colors.green,
-    fontSize: 10,
+    fontSize: 11,
     fontWeight: "800",
     letterSpacing: 0.6,
   },
@@ -128,6 +128,7 @@ export const s = StyleSheet.create({
   wrap: { flexDirection: "row", flexWrap: "wrap", gap: 8 },
   stack: { gap: 12 },
   section: { gap: 13 },
+  sectionAction: { minWidth: 44, minHeight: 44, justifyContent: "center", alignItems: "flex-end" },
   card: {
     backgroundColor: colors.paper,
     borderRadius: 18,
@@ -225,7 +226,7 @@ export const s = StyleSheet.create({
     borderRadius: 10,
     alignSelf: "flex-start",
   },
-  badgeText: { fontSize: 10, color: colors.green, fontWeight: "700" },
+  badgeText: { fontSize: 11, color: colors.green, fontWeight: "700" },
   notice: {
     backgroundColor: colors.peach,
     borderRadius: 13,
@@ -291,7 +292,7 @@ export const s = StyleSheet.create({
   },
   locationText: {
     color: colors.green,
-    fontSize: 10,
+    fontSize: 11,
     fontWeight: "800",
     letterSpacing: 1.6,
   },
@@ -326,7 +327,7 @@ export const s = StyleSheet.create({
     alignItems: "center",
   },
   homePhotoEyebrow: {
-    fontSize: 8,
+    fontSize: 11,
     letterSpacing: 1.1,
     fontWeight: "800",
     color: colors.orangeDark,
@@ -384,7 +385,7 @@ export const s = StyleSheet.create({
     minHeight: 44,
     justifyContent: "center",
   },
-  photoCreditText: { color: "#FFFFFF", fontSize: 9, lineHeight: 13 },
+  photoCreditText: { color: "#FFFFFF", fontSize: 11, lineHeight: 16 },
   featuredRail: { gap: 13, paddingBottom: 3, paddingRight: 3 },
   featuredRestaurant: {
     width: 247,
@@ -419,7 +420,7 @@ export const s = StyleSheet.create({
   },
   cuisineRail: { gap: 8, paddingBottom: 3 },
   cuisineChip: {
-    minHeight: 40,
+    minHeight: 44,
     paddingHorizontal: 15,
     paddingVertical: 10,
     borderWidth: 1,
@@ -463,7 +464,7 @@ export const s = StyleSheet.create({
   restaurantMenu: { gap: 16 },
   editorialMenuHeader: { borderTopWidth: 3, paddingTop: 12, gap: 6 },
   menuOverline: {
-    fontSize: 9,
+    fontSize: 11,
     fontWeight: "800",
     letterSpacing: 1.5,
     lineHeight: 14,
@@ -546,7 +547,7 @@ export const s = StyleSheet.create({
     rowGap: 7,
   },
   allergenToken: { flexDirection: "row", alignItems: "center", gap: 4 },
-  allergenLabel: { color: colors.muted, fontSize: 10, lineHeight: 15 },
+  allergenLabel: { color: colors.muted, fontSize: 11, lineHeight: 15 },
   allergenLegendGrid: {
     flexDirection: "row",
     flexWrap: "wrap",
@@ -586,7 +587,7 @@ export const s = StyleSheet.create({
     textTransform: "uppercase",
     flex: 1,
   },
-  menuCategoryCount: { color: colors.muted, fontSize: 10, letterSpacing: 1 },
+  menuCategoryCount: { color: colors.muted, fontSize: 11, letterSpacing: 1 },
   editorialMenuRow: {
     paddingVertical: 16,
     borderBottomWidth: StyleSheet.hairlineWidth,
@@ -629,8 +630,8 @@ export const s = StyleSheet.create({
     justifyContent: "center",
   },
   menuPhotoType: {
-    fontSize: 9,
-    lineHeight: 12,
+    fontSize: 11,
+    lineHeight: 16,
     color: colors.muted,
     textAlign: "center",
   },

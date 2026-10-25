@@ -73,7 +73,7 @@ export function Section({ title, action, onPress, children }) {
           {title}
         </Text>
         {!!action && (
-          <Pressable accessibilityRole="button" onPress={onPress} hitSlop={10}>
+          <Pressable accessibilityRole="button" onPress={onPress} style={s.sectionAction}>
             <Text style={s.link}>{action}</Text>
           </Pressable>
         )}

@@ -1,0 +1,26 @@
+{
+  "source": "https://developer.apple.com/design/tips/",
+  "scope": "Readability and touch-target corrections only. Oliur aesthetic changes await user approval.",
+  "changes": [
+    {
+      "file": "styles.js",
+      "textSizesRaisedTo11": 10
+    },
+    {
+      "file": "components/Welcome.js",
+      "textSizesRaisedTo11": 1
+    },
+    {
+      "file": "components/Journal.js",
+      "textSizesRaisedTo11": 1
+    },
+    {
+      "file": "components/ChipotleMenu.js",
+      "textSizesRaisedTo11": 3
+    },
+    {
+      "file": "components/TacoBellMenu.js",
+      "textSizesRaisedTo11": 6
+    }
+  ]
+}

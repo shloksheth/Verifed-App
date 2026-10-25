@@ -246,7 +246,7 @@ const w = StyleSheet.create({
   },
   badge: {
     color: "#17281F",
-    fontSize: 10,
+    fontSize: 11,
     fontWeight: "500",
     borderWidth: 1,
     borderColor: "#17281F",
@@ -332,7 +332,7 @@ const w = StyleSheet.create({
   secondaryText: { color: "#BACABD", fontSize: 13 },
   signIn: { color: "#FFFFFF", fontWeight: "600" },
   guestAction: {
-    minHeight: 40,
+    minHeight: 44,
     alignItems: "center",
     justifyContent: "center",
   },

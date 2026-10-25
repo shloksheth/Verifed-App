@@ -570,7 +570,7 @@ const j = StyleSheet.create({
     fontWeight: "600",
   },
   kicker: {
-    fontSize: 10,
+    fontSize: 11,
     lineHeight: 17,
     color: colors.orangeDark,
     fontWeight: "700",

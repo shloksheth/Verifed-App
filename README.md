@@ -41,6 +41,8 @@ The import commits were created when the history was recovered. Original saved d
 
 | [Verifed V24](https://github.com/shloksheth/Verifed-App/releases/tag/v24) | Brown/cream/gold Scan redesign, supplied 23-dish Sayola menu, delayed source disclosure, category filters and four local dish illustrations. 174 tests, all platform exports, browser checks and Android Expo Go smoke checks passed. Scripted presentation; physical iPhone and remote Snack runtime unverified. | [Verifed V24](https://snack.expo.dev/zhvlVy09K5S3oE7aZUkmM) |
 
+| [Verifed V25](https://github.com/shloksheth/Verifed-App/releases/tag/v25) | Apple UI readability/touch pass: 11-point small labels, larger targets, caption spacing and stronger missing-photo contrast. 174 tests and platform exports passed; Android checked. Oliur aesthetic proposals await approval. | [Verifed V25](https://snack.expo.dev/wuR91oI__RmwUDFzYLwfr) |
+
 Application directories appear as they are introduced: `prototype/` (original JavaScript web prototype), `web/` (React companion), and `mobile/` (React Native/Expo). Every release preserves the other applications already introduced.
 
 Native V6–V9 are new version-named copies of recovered immutable Snack snapshots. Their original snapshot IDs remain in release notes. Downloaded V6–V8 contain Expo-generated project scaffolding rather than original local lockfiles and tests. V9 also restores the archived local code, tests and documentation.

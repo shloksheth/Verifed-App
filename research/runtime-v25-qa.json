@@ -1,0 +1,55 @@
+{
+  "version": 25,
+  "source": "https://developer.apple.com/design/tips/",
+  "automatedTests": {
+    "passed": 174,
+    "failed": 0
+  },
+  "exports": [
+    "ios",
+    "android",
+    "web"
+  ],
+  "readability": {
+    "smallStylesRaised": 21,
+    "minimumNewTextSize": 11,
+    "missingPhotoContrast": {
+      "before": 2.8,
+      "after": 5.54,
+      "foreground": "#696076",
+      "background": "#F7F7F7"
+    }
+  },
+  "native": {
+    "target": "Medium_Phone_API_36.1 Android emulator",
+    "client": "Expo Go",
+    "source": "Authoritative mobile checkout through local Metro 8125",
+    "observed": [
+      "Welcome to guest Home",
+      "Chipotle menu opens",
+      "Chipotle dietary Edit opens profile settings"
+    ],
+    "fontScaleSettingsInspected": [
+      1.0,
+      1.3
+    ],
+    "settingRestored": true,
+    "evidence": [
+      "research/qa/v25/chipotle-normal-android.png",
+      "research/qa/v25/chipotle-system-font-scale-1.3-android.png"
+    ]
+  },
+  "assetReports": [
+    "local-photo-export-validation.json",
+    "fixed-menu-asset-validation.json",
+    "sayola-illustration-validation.json",
+    "design-v25-asset-validation.json"
+  ],
+  "notVerified": [
+    "Physical iPhone and iOS Dynamic Type",
+    "Full accessibility/HIG compliance",
+    "Remote Snack runtime",
+    "Downloaded Snack ZIP (SNACK_DOWNLOAD_TOO_LARGE)"
+  ],
+  "oliurChanges": "Not implemented. Borders, grouping, slogans and decorative-symbol replacement await user approval."
+}

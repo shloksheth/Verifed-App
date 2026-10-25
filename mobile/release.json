@@ -1,14 +1,14 @@
 {
-  "number": 24,
-  "name": "Verifed V24",
-  "description": "Redesigns Scan in brown, cream and gold; removes the source menu before capture; uses the supplied 23-dish Sayola menu with English/original names, hot/cold category filters, dietary views and four local dish illustrations.",
+  "number": 25,
+  "name": "Verifed V25",
+  "description": "Applies Apple UI readability and touch tips: small labels at least 11 points, larger guest/menu/edit/save/source/close targets, more caption line spacing and stronger missing-photo text contrast. Oliur-inspired aesthetic changes remain pending approval.",
   "verification": [
-    "174 automated tests passed. iOS, Android and web exports succeeded.",
-    "Browser checks at 390x700 and 320x568 verified capture-first disclosure, supplied photo selection, 23-dish result, original names, category filtering, save/reopen/reset and the original-page sheet.",
-    "The design reviewer scored all three requested fixes resolved: bounded food cards, compact capture layout and persisted product context. Verdict scope is the supplied browser evidence.",
-    "Android Expo Go on Medium_Phone_API_36.1 loaded the authoritative local checkout: capture page, supplied-photo selection, 23-dish result, bounded food cards, cold-tapas filtering, original-name switching and save to My menus passed. This is not physical iPhone evidence.",
-    "356 catalog food images, the Sayola source page and four distinct generated dish illustrations match source/provenance hashes in every platform export. Clash Grotesk and Home assets are separately checked.",
-    "Camera capture/permissions on a physical iPhone remain unverified. The scan response is an authored fixed presentation, not live OCR or AI translation.",
-    "Snack verified all 379 uploaded asset hashes; editor HTTP 200/title verified. Downloaded ZIP comparison remains unavailable: SNACK_DOWNLOAD_TOO_LARGE. Remote Snack runtime was not verified."
+    "174 automated tests passed; iOS, Android and web exports succeeded.",
+    "Source review found and raised 21 text styles below 11 points. Targeted controls use minimum dimensions without disabling native text scaling.",
+    "Taco Bell missing-photo label contrast increased from 2.80:1 to 5.54:1 against its light photo canvas.",
+    "No Oliur-inspired border, spacing, layout or copy redesign is included.",
+    "Physical iPhone and native camera/permission behavior remain unverified.",
+    "Android Expo Go loaded Welcome, guest Home and Chipotle; the dietary Edit action opened profile settings. Screens were inspected with emulator font_scale configured to 1.0 and 1.3; the original setting was restored. This does not establish iOS Dynamic Type compliance.",
+    "All 379 Snack asset hashes were verified; the published editor returned HTTP 200 with the V25 title. Remote Snack runtime was not tested. ZIP comparison remains unavailable: SNACK_DOWNLOAD_TOO_LARGE."
   ]
 }
