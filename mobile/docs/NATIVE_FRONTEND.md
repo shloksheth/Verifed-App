@@ -1,10 +1,16 @@
 # Verifed mobile frontend
 
-The active CAC app has five labeled tabs: Explore, Saved, Home, Journal and You. Home is the central action. The app is written in React Native, using real native views and Expo; its web preview uses React Native Web.
+The active CAC app has five labeled tabs: Explore, Scan, Home, Journal and You. Home is the central action. The app is written in React Native, using real native views and Expo; its web preview uses React Native Web.
 
 V18 moves Home into `components/Home.js`, with its scoped Sora/DM Sans typography, local real Hawkers/Chipotle cover photographs and solid green selected Home tab. [HOME_SCREEN.md](HOME_SCREEN.md) explains every related file, navigation change, image/font source and the explicitly planned scanning entry. Other screen designs remain unchanged.
 
-`App.js` subscribes to the API's external store, keeps a small navigation stack, handles Android Back, source menu deep links and the personal meal-composer sheet. Its route switch contains no scanner, restaurant workspace or kitchen-request route. Saved/profile editors return to the right screen; a successful restaurant-specific profile edit unwinds the stack instead of reopening a saved form.
+The scanning update extends the approved Sora/DM Sans typography to every active
+screen, including restaurant menus, sheets and input fields. Shared text wrappers
+preserve readable system fallbacks while fonts load; [TYPOGRAPHY.md](TYPOGRAPHY.md)
+explains the files, face selection, accessibility and tests. Brand logos and
+Ionicons keep their original artwork and symbol fonts.
+
+`App.js` subscribes to the API's external store, keeps a small navigation stack, handles Android Back, source menu deep links and the personal meal-composer sheet. The new MenuScanner route supports photo review and a prepared bilingual example. It does not restore the retired business QR scanner, workspace or kitchen-request routes. Saved dishes remain behind the header heart. Saved/profile editors return to the right screen; a successful restaurant-specific profile edit unwinds the stack instead of reopening a saved form.
 
 `components/UI.js` provides accessible buttons, fields, tabs, chips, sheets, notices and task state. `FormScrollContext` exposes the enclosing scroll view so field focus can keep a keyboard-covered control in view. Tabs and selection controls include explicit ARIA state for the web preview alongside native accessibility state.
 

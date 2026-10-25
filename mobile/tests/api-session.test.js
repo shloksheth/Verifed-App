@@ -24,6 +24,8 @@ import {
 } from "../src/domain.js";
 import { finishCommittedWrite } from "../src/write-sync.js";
 import { passwordSignIn, passwordSignUp } from "../src/account-auth.js";
+import { createScanLibrary } from "../src/scan-library.js";
+import { scanOwner, spanishSample } from "../src/menu-scan.js";
 
 const source = (
   await readFile(new URL("../src/api.js", import.meta.url), "utf8")
@@ -130,6 +132,8 @@ function harness({ onStore, onQuery, onRpc } = {}) {
     passwordSignIn,
     passwordSignUp,
   };
+  adapters.scanLibrary = createScanLibrary(adapters.AsyncStorage);
+  adapters.scanOwner = scanOwner;
   const api = new Function(...Object.keys(adapters), `${source}\nreturn api;`)(
     ...Object.values(adapters),
   );
@@ -387,4 +391,28 @@ test("a delayed device save cannot populate a newly signed-in account", async ()
   assert.deepEqual(api.getState().meals, []);
   await api.signOut();
   assert.equal(api.getState().meals[0].dishName, "Device meal");
+});
+
+
+test("export and deletion include the current owner's local scanned menus", async () => {
+  const { api, stored } = harness();
+  const owner = scanOwner(api.getState());
+  stored.set(`verifed-menu-scans-v1:${owner}`, JSON.stringify([spanishSample()]));
+  stored.set("verifed-menu-scans-v1:account:another-user", JSON.stringify([spanishSample()]));
+  const exported = await api.exportData();
+  assert.equal(exported.scannedMenus.length, 1);
+  await api.deleteMyData();
+  assert.equal((await api.exportData()).scannedMenus.length, 0);
+  assert.equal(api.getState().scanResetVersion, 1);
+  assert.ok(stored.has("verifed-menu-scans-v1:account:another-user"));
+});
+
+test("demo reset clears that demo's scan library and signals draft reset", async () => {
+  const { api, stored } = harness();
+  await api.enterDemo();
+  const owner = scanOwner(api.getState());
+  stored.set(`verifed-menu-scans-v1:${owner}`, JSON.stringify([spanishSample()]));
+  await api.resetDemo();
+  assert.equal((await api.exportData()).scannedMenus.length, 0);
+  assert.equal(api.getState().scanResetVersion, 1);
 });

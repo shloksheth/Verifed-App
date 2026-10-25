@@ -18,6 +18,8 @@ import { supabaseUrl, supabasePublishableKey } from "./config.js";
 import { finishCommittedWrite } from "./write-sync.js";
 import { mergeLocalCatalog } from "./local-catalog.js";
 import { passwordSignIn, passwordSignUp } from "./account-auth.js";
+import { scanLibrary } from "./device-scans.js";
+import { scanOwner } from "./menu-scan.js";
 
 configureIdFactory(Crypto.randomUUID);
 const DEMO_KEY = "verifed-demo-v1";
@@ -106,9 +108,10 @@ let state = empty();
 let initialized = false;
 let generation = 0;
 let refreshSequence = 0;
+let scanResetVersion = 0;
 
 function publish(next) {
-  state = next;
+  state = { ...next, scanResetVersion };
   for (const listener of listeners) listener();
 }
 function requireUser() {
@@ -409,7 +412,14 @@ export const api = {
     return openDemo(false);
   },
   async resetDemo() {
-    return openDemo(true);
+    const owner = scanOwner(state);
+    await openDemo(true);
+    const isCurrent = writeContext();
+    await scanLibrary.clear(owner);
+    if (isCurrent()) {
+      scanResetVersion++;
+      publish(state);
+    }
   },
   async signIn(identifier, password) {
     await passwordSignIn(requireCloud(), identifier, password);
@@ -774,7 +784,8 @@ export const api = {
     return command("createRestaurant", input);
   },
   async exportData() {
-    return clone({
+    const owner = scanOwner(state);
+    const snapshot = clone({
       exportedAt: new Date().toISOString(),
       mode: state.mode,
       profile: state.profile,
@@ -784,24 +795,33 @@ export const api = {
       meals: state.meals,
       favorites: state.favorites,
     });
+    return { ...snapshot, scannedMenus: await scanLibrary.read(owner) };
   },
   async deleteMyData() {
+    const owner = scanOwner(state);
+    const isCurrent = writeContext();
     if (state.mode === "guest") {
       await editDevice((next) => {
         next.favoriteKeys = [];
         next.meals = [];
       });
-      await api.previewProfile(defaultProfile);
-      return;
-    }
-    requireUser();
-    if (state.mode === "demo")
-      return editDemo((next) => {
+      if (isCurrent()) await api.previewProfile(defaultProfile);
+    } else if (state.mode === "demo") {
+      requireUser();
+      await editDemo((next) => {
         next.profile = { ...clone(defaultProfile), id: next.user.id };
         next.requests = [];
         next.meals = [];
         next.favorites = [];
       });
-    await command("deleteMyData");
+    } else {
+      requireUser();
+      await command("deleteMyData");
+    }
+    await scanLibrary.clear(owner);
+    if (isCurrent()) {
+      scanResetVersion++;
+      publish(state);
+    }
   },
 };

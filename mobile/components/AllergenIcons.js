@@ -1,5 +1,6 @@
+import { Text } from "./Typography";
 import React, { useState } from "react";
-import { Pressable, Text, View } from "react-native";
+import { Pressable, View } from "react-native";
 import Svg, { Circle, Ellipse, G, Line, Path, Rect } from "react-native-svg";
 import { ALLERGENS, MAJOR_ALLERGENS } from "../src/data";
 import { colors, s } from "../styles";

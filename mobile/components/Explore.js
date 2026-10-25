@@ -1,5 +1,6 @@
+import { Text } from "./Typography";
 import React, { useEffect, useMemo, useRef, useState } from "react";
-import { Linking, Pressable, Text, View } from "react-native";
+import { Linking, Pressable, View } from "react-native";
 import { colors, s } from "../styles";
 import { discoverRestaurants } from "../src/discovery";
 import { prioritizeFeaturedMenus } from "../src/featured-menus";

@@ -1,11 +1,6 @@
+import { Text } from "./Typography";
 import React, { useState } from "react";
-import {
-  Linking,
-  Pressable,
-  ScrollView,
-  Text,
-  View,
-} from "react-native";
+import { Linking, Pressable, ScrollView, View } from "react-native";
 import { Image } from "./MenuImage";
 import { api } from "../src/api";
 import { assessDish } from "../src/domain";

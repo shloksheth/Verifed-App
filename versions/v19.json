@@ -1,0 +1,26 @@
+{
+  "number": 19,
+  "name": "Verifed V19",
+  "description": "Usage-limit checkpoint: replaces Saved with Scan, keeps saved dishes behind the heart, adds real photo selection/JPEG preview/rotation controls and a clearly labeled authored Spanish-English example with search, dietary-text comparison, corrections and local save/reopen/delete. Applies Sora/DM Sans across active screens and inputs. Personal data export/deletion includes scans. Live AI OCR/translation is not connected; example results are not generated from an uploaded photo. Native-device and remaining interaction QA are unfinished.",
+  "verification": [
+    "160 automated tests passed, including typography, original-text correction review, dietary conflicts, scan ownership, serialization, deletion/export and data-reset integration.",
+    "iOS, Android and web JavaScript exports succeeded. Final permission-description app-config and documentation edits occurred afterward; no native installation/device test is claimed.",
+    "Browser verified Scan navigation, English/Spanish example display, local save, photo chooser and normalized JPEG preview; heading/input computed families are HomeHeading/HomeBody. No browser console errors recorded in these checks.",
+    "Independent review findings were addressed: scans participate in personal data deletion/export; Spanish-only corrections require English review; complete example source text and grouped categories match the eight-item example.",
+    "Stopping at the user-set five-hour usage threshold (5% remaining). Photo rotation, native camera permissions, saved-menu deletion/reopening and profile-return interaction QA remain incomplete. Automated tests cover parts of this behavior, not actual device execution.",
+    "Live AI provider setup remains pending. The Scan screen explicitly marks uploaded photos as unanalyzed and the Spanish example as prepared. No provider key, new backend deployment, external image upload or paid service was created."
+  ],
+  "snack": "https://snack.expo.dev/fnvN8bKlUymkpPsy4Gj4G",
+  "snackId": "fnvN8bKlUymkpPsy4Gj4G",
+  "snackSourceHash": "1ffe0d59caf3fbd5d21ad3e860426f4934ca8839131260c79a1608e60d73bfa1",
+  "snackPublishedAt": "2026-10-25T01:26:42.366Z",
+  "status": "usage-limit-checkpoint-live-ai-and-device-qa-incomplete",
+  "uploadVerification": {
+    "assets": 364,
+    "images": 359,
+    "fonts": 5,
+    "allSourceHashesMatch": true
+  },
+  "remoteRuntimeVerification": "Not performed for this checkpoint",
+  "branch": "codex/local-menu-photography"
+}

@@ -1,4 +1,4 @@
-import { Platform, StyleSheet } from "react-native";
+import { StyleSheet } from "react-native";
 
 export const colors = {
   cream: "#F7F5EF",
@@ -305,11 +305,7 @@ export const s = StyleSheet.create({
     letterSpacing: 1.6,
   },
   homeHeadline: {
-    fontFamily: Platform.select({
-      ios: "Georgia",
-      android: "serif",
-      default: "Georgia",
-    }),
+    fontFamily: "HomeHeading",
     color: colors.green,
     fontSize: 46,
     lineHeight: 49,
@@ -485,11 +481,7 @@ export const s = StyleSheet.create({
   },
   menuEdition: { fontSize: 12, fontWeight: "700", letterSpacing: 1.5 },
   menuWordmark: {
-    fontFamily: Platform.select({
-      ios: "Georgia",
-      android: "serif",
-      default: "Georgia",
-    }),
+    fontFamily: "HomeHeading",
     fontSize: 35,
     lineHeight: 42,
     fontWeight: "700",
@@ -576,11 +568,7 @@ export const s = StyleSheet.create({
   menuListIntro: { gap: 4, marginTop: 3 },
   menuListTitle: {
     color: colors.ink,
-    fontFamily: Platform.select({
-      ios: "Georgia",
-      android: "serif",
-      default: "Georgia",
-    }),
+    fontFamily: "HomeHeading",
     fontSize: 23,
     lineHeight: 29,
     letterSpacing: -0.5,

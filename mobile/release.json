@@ -1,16 +1,13 @@
 {
-  "number": 18,
-  "name": "Verifed V18",
-  "description": "Home-screen redesign based on the approved concept: cream and forest-green layout, bundled Sora/DM Sans fonts, real Hawkers and Chipotle bowl cover photographs, editable dietary chips, typed-location entry, functional cuisine shortcuts, and a solid green selected Home tab. Existing Saved, Journal, restaurant menus and authentication remain. Menu scanning is visibly marked Coming next and opens an explanatory sheet; upload/AI translation is not implemented in this Home-only release.",
+  "number": 19,
+  "name": "Verifed V19",
+  "description": "Usage-limit checkpoint: replaces Saved with Scan, keeps saved dishes behind the heart, adds real photo selection/JPEG preview/rotation controls and a clearly labeled authored Spanish-English example with search, dietary-text comparison, corrections and local save/reopen/delete. Applies Sora/DM Sans across active screens and inputs. Personal data export/deletion includes scans. Live AI OCR/translation is not connected; example results are not generated from an uploaded photo. Native-device and remaining interaction QA are unfinished.",
   "verification": [
-    "147 automated tests passed, including cloud-ID Home routing, actual dietary selections and cuisine shortcut validation.",
-    "Browser checks passed for dietary editing and return to Home, both restaurant cards, all three cuisine shortcuts, location selection, information panel, Saved and Journal navigation. No browser console errors were recorded.",
-    "The Home layout was visually reviewed in 390-pixel and 320-pixel browser viewports. This is responsive browser verification, not a native device test.",
-    "iOS, Android and web exports succeeded. Final asset checks and Snack publication details are recorded with this release.",
-    "Independent read-only review identified scan-button contrast; it was fixed to 4.70:1 and rechecked with no remaining actionable findings.",
-    "No physical iPhone or Android emulator runtime test is claimed. AI menu scanning remains unconnected.",
-    "Fixed and browser-rechecked the onboarding scroll reset and intrinsic-image-height issue; both restaurant covers now share a bounded 1.35 aspect-ratio frame.",
-    "All 356 existing food images and the Home photographs/three new fonts match the final iOS, Android and web export bytes.",
-    "Final Snack saved as 6f2SDzuS7UefyexW5xIoU; all 364 uploaded asset hashes verified (359 images, five fonts). Remote ZIP/full downloaded-source comparison and remote app runtime remain unconfirmed because the ZIP service returned HTTP 503 and browser preview navigation timed out. No successful remote runtime test is claimed."
+    "160 automated tests passed, including typography, original-text correction review, dietary conflicts, scan ownership, serialization, deletion/export and data-reset integration.",
+    "iOS, Android and web JavaScript exports succeeded. Final permission-description app-config and documentation edits occurred afterward; no native installation/device test is claimed.",
+    "Browser verified Scan navigation, English/Spanish example display, local save, photo chooser and normalized JPEG preview; heading/input computed families are HomeHeading/HomeBody. No browser console errors recorded in these checks.",
+    "Independent review findings were addressed: scans participate in personal data deletion/export; Spanish-only corrections require English review; complete example source text and grouped categories match the eight-item example.",
+    "Stopping at the user-set five-hour usage threshold (5% remaining). Photo rotation, native camera permissions, saved-menu deletion/reopening and profile-return interaction QA remain incomplete. Automated tests cover parts of this behavior, not actual device execution.",
+    "Live AI provider setup remains pending. The Scan screen explicitly marks uploaded photos as unanalyzed and the Spanish example as prepared. No provider key, new backend deployment, external image upload or paid service was created."
   ]
 }

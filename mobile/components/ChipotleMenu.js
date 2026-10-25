@@ -1,5 +1,6 @@
+import { Text, TextInput } from "./Typography";
 import React, { useMemo, useState } from "react";
-import { Linking, Modal, Pressable, ScrollView, StyleSheet, Text, TextInput, View } from "react-native";
+import { Linking, Modal, Pressable, ScrollView, StyleSheet, View } from "react-native";
 import { Image } from "./MenuImage";
 import { BrandHeading, BrandLogo, BrandProvider } from "./BrandIdentity";
 import AllergenIcons from "./AllergenIcons";

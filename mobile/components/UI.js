@@ -1,3 +1,4 @@
+import { Text, TextInput } from "./Typography";
 import React, {
   createContext,
   useCallback,
@@ -6,18 +7,7 @@ import React, {
   useRef,
   useState,
 } from "react";
-import {
-  ActivityIndicator,
-  KeyboardAvoidingView,
-  Keyboard,
-  Modal,
-  Platform,
-  Pressable,
-  ScrollView,
-  Text,
-  TextInput,
-  View,
-} from "react-native";
+import { ActivityIndicator, KeyboardAvoidingView, Keyboard, Modal, Platform, Pressable, ScrollView, View } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { colors, s } from "../styles";
 

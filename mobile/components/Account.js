@@ -1,5 +1,6 @@
+import { Text } from "./Typography";
 import React, { useState } from "react";
-import { Pressable, Share, Text, View } from "react-native";
+import { Pressable, Share, View } from "react-native";
 import { api } from "../src/api";
 import { validateLogin, validateSignup } from "../src/account-auth";
 import {
@@ -276,7 +277,7 @@ export function ProfileEditor({ state, navigate, returnTo }) {
                 : api.saveProfile(draft),
             () =>
               navigate(
-                returnTo === "home" ||
+                ["home", "scan"].includes(returnTo) ||
                   /^restaurant\/[a-zA-Z0-9-]+$/.test(returnTo || "")
                   ? returnTo
                   : "profile",

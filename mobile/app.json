@@ -14,7 +14,16 @@
     "android": {
       "package": "com.verifed.dining"
     },
-    "plugins": [],
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Choose a menu photo to review in Verifed.",
+          "cameraPermission": "Photograph a menu to review in Verifed.",
+          "microphonePermission": false
+        }
+      ]
+    ],
     "web": {
       "bundler": "metro"
     }

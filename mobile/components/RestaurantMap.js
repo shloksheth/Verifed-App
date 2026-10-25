@@ -1,12 +1,6 @@
+import { Text } from "./Typography";
 import React, { useEffect, useId, useMemo, useRef, useState } from "react";
-import {
-  ActivityIndicator,
-  Linking,
-  Platform,
-  StyleSheet,
-  Text,
-  View,
-} from "react-native";
+import { ActivityIndicator, Linking, Platform, StyleSheet, View } from "react-native";
 import { colors } from "../styles";
 import { websiteUrl } from "../src/config";
 import { buildMapHtml, validMapCoordinates } from "../src/map-html";

@@ -1,8 +1,6 @@
+import { Text, TextInput } from "./Typography";
 import React, { useMemo, useState } from "react";
-import {
-  Linking, Modal, Pressable, ScrollView, Share, StyleSheet, Text,
-  TextInput, View,
-} from "react-native";
+import { Linking, Modal, Pressable, ScrollView, Share, StyleSheet, View } from "react-native";
 import { Image } from "./MenuImage";
 import { api } from "../src/api";
 import { dietaryMenuStatus, groupMenu } from "../src/menu-filter";

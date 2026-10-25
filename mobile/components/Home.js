@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import {
   Image as NativeImage,
   Pressable,
@@ -10,7 +10,7 @@ import {
 import { useFonts } from "expo-font";
 import Svg, { Path, Rect } from "react-native-svg";
 import { Image } from "./MenuImage";
-import { Button, Icon, Sheet } from "./UI";
+import { Icon } from "./UI";
 import { homeNeeds, homeRestaurants } from "../src/home-content";
 
 export const homeColors = {
@@ -167,7 +167,6 @@ const covers = {
 };
 
 export default function Home({ state, navigate, searchArea, fontsReady }) {
-  const [showScanInfo, setShowScanInfo] = useState(false);
   const needs = homeNeeds(state.profile);
   const restaurants = homeRestaurants(state.restaurants);
   const location = searchArea?.label || "Orlando, FL";
@@ -265,9 +264,9 @@ export default function Home({ state, navigate, searchArea, fontsReady }) {
           <MenuSketch />
         </View>
         <Pressable
-          onPress={() => setShowScanInfo(true)}
+          onPress={() => navigate("scan")}
           accessibilityRole="button"
-          accessibilityLabel="Scan a menu, coming next"
+          accessibilityLabel="Scan a menu"
           style={({ pressed }) => [h.scanButton, pressed && h.pressed]}
         >
           <Icon name="camera-outline" size={24} color="#FFFFFF" />
@@ -276,7 +275,7 @@ export default function Home({ state, navigate, searchArea, fontsReady }) {
           </Copy>
         </Pressable>
         <Copy {...copy} style={h.scanHint}>
-          Coming next · Camera or photo library
+          Camera, photo library or Spanish example
         </Copy>
       </View>
 
@@ -382,27 +381,6 @@ export default function Home({ state, navigate, searchArea, fontsReady }) {
           ))}
         </View>
       </View>
-
-      {showScanInfo && (
-        <Sheet
-          title="Menu scanning is coming next"
-          onClose={() => setShowScanInfo(false)}
-        >
-          <Copy {...copy} style={h.previewDescription}>
-            This Home update introduces the design for photographing a menu and
-            reading it in English. Photo upload and AI translation are not
-            connected in V18.
-          </Copy>
-          <Button
-            onPress={() => {
-              setShowScanInfo(false);
-              navigate("explore");
-            }}
-          >
-            Browse restaurant menus
-          </Button>
-        </Sheet>
-      )}
     </View>
   );
 }
@@ -542,7 +520,11 @@ const h = StyleSheet.create({
   // Own the aspect ratio on a View: React Native Web otherwise applies the
   // bundled image's intrinsic height (450/600px) to the Image itself.
   foodFrame: { width: "100%", aspectRatio: 1.35, overflow: "hidden" },
-  foodPhoto: { ...StyleSheet.absoluteFillObject, width: "100%", height: "100%" },
+  foodPhoto: {
+    ...StyleSheet.absoluteFillObject,
+    width: "100%",
+    height: "100%",
+  },
   restaurantCaption: { padding: 10, gap: 4 },
   restaurantNameRow: { flexDirection: "row", alignItems: "center", gap: 3 },
   restaurantName: {

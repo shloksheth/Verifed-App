@@ -16,7 +16,6 @@ import {
   Pressable,
   ScrollView,
   StatusBar,
-  Text,
   View,
 } from "react-native";
 import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
@@ -31,6 +30,9 @@ import {
 } from "./components/Account";
 import { DishDetail, Favorites, Restaurant } from "./components/Dining";
 import Home, { HomeHeader, HomeTab, useHomeFonts } from "./components/Home";
+import { Text, TypographyProvider } from "./components/Typography";
+import MenuScanner from "./components/MenuScanner";
+import { scanOwner } from "./src/menu-scan";
 import Explore from "./components/Explore";
 import Welcome, { HomeInfo } from "./components/Welcome";
 import { History, MealComposer, MealDetail } from "./components/Journal";
@@ -43,8 +45,7 @@ import {
   Notice,
 } from "./components/UI";
 
-// Keep the community tools one tap away. Home replaces the old scanner action.
-const primaryRoutes = ["home", "explore", "favorites", "history", "profile"];
+const primaryRoutes = ["home", "explore", "scan", "history", "profile"];
 const navigation = [
   {
     route: "explore",
@@ -53,10 +54,10 @@ const navigation = [
     active: "compass",
   },
   {
-    route: "favorites",
-    label: "Saved",
-    icon: "heart-outline",
-    active: "heart",
+    route: "scan",
+    label: "Scan",
+    icon: "scan-outline",
+    active: "scan",
   },
   { route: "home", label: "Home", icon: "home-outline", active: "home" },
   {
@@ -90,6 +91,9 @@ function AppContent() {
   const [initError, setInitError] = useState("");
   const [welcomeDone, setWelcomeDone] = useState(false);
   const [searchArea, setSearchArea] = useState(null);
+  const [scanDraft, setScanDraft] = useState(null);
+  const owner = scanOwner(state);
+  useEffect(() => setScanDraft(null), [state.scanResetVersion]);
   const scroll = useRef(null);
   const path = stack[stack.length - 1];
   const route = parseRoute(path);
@@ -194,6 +198,17 @@ function AppContent() {
           />
         );
         break;
+      case "scan":
+        screen = (
+          <MenuScanner
+            key={owner}
+            {...shared}
+            owner={owner}
+            draft={scanDraft?.owner === owner ? scanDraft : null}
+            setDraft={(next) => setScanDraft(next ? { ...next, owner } : null)}
+          />
+        );
+        break;
       case "explore":
         screen = (
           <Explore
@@ -244,157 +259,159 @@ function AppContent() {
     }
 
   return (
-    <SafeAreaView edges={["top", "bottom"]} style={s.root}>
-      <StatusBar barStyle="dark-content" backgroundColor={colors.cream} />
-      {route.page === "home" && !showWelcome ? (
-        <HomeHeader
-          fontsReady={homeFontsReady}
-          navigate={navigate}
-          onInfo={() => setSheet({ type: "info" })}
-        />
-      ) : (
-        <View style={s.header}>
-          {stack.length > 1 ? (
-            <Pressable
-              accessibilityRole="button"
-              accessibilityLabel="Go back"
-              onPress={goBack}
-              style={s.iconButton}
-            >
-              <Icon name="arrow-back" />
-            </Pressable>
-          ) : (
-            <Image
-              source={require("./assets/verifed-mark.png")}
-              style={s.mark}
-              accessibilityLabel="Verifed carrot checkmark"
-            />
-          )}
-          <Pressable
-            accessibilityRole="button"
-            accessibilityLabel="Verifed home"
-            onPress={() => navigate("home")}
-          >
-            <Text style={s.brand}>
-              verifed<Text style={s.brandDot}>.</Text>
-            </Text>
-          </Pressable>
-          <View style={s.headerRight}>
-            {!showWelcome && (
+    <TypographyProvider fontsReady={homeFontsReady}>
+      <SafeAreaView edges={["top", "bottom"]} style={s.root}>
+        <StatusBar barStyle="dark-content" backgroundColor={colors.cream} />
+        {route.page === "home" && !showWelcome ? (
+          <HomeHeader
+            fontsReady={homeFontsReady}
+            navigate={navigate}
+            onInfo={() => setSheet({ type: "info" })}
+          />
+        ) : (
+          <View style={s.header}>
+            {stack.length > 1 ? (
               <Pressable
                 accessibilityRole="button"
-                accessibilityLabel="Change location"
-                onPress={() => navigate("explore?location=1")}
-              >
-                <Text style={[s.mode, { maxWidth: 80 }]} numberOfLines={1}>
-                  {searchArea?.label || "ORLANDO"}
-                </Text>
-              </Pressable>
-            )}
-            {route.page === "home" && !showWelcome && (
-              <Pressable
-                accessibilityRole="button"
-                accessibilityLabel="About Verifed"
-                onPress={() => setSheet({ type: "info" })}
+                accessibilityLabel="Go back"
+                onPress={goBack}
                 style={s.iconButton}
               >
-                <Icon name="information-circle-outline" />
+                <Icon name="arrow-back" />
               </Pressable>
+            ) : (
+              <Image
+                source={require("./assets/verifed-mark.png")}
+                style={s.mark}
+                accessibilityLabel="Verifed carrot checkmark"
+              />
             )}
             <Pressable
               accessibilityRole="button"
-              accessibilityLabel="Open saved dishes"
-              onPress={() => navigate("favorites")}
-              style={s.iconButton}
+              accessibilityLabel="Verifed home"
+              onPress={() => navigate("home")}
             >
-              <Icon name="heart-outline" />
+              <Text style={s.brand}>
+                verifed<Text style={s.brandDot}>.</Text>
+              </Text>
             </Pressable>
-          </View>
-        </View>
-      )}
-      {!state.ready ? (
-        <View
-          style={[s.flex, s.empty, { justifyContent: "center", padding: 22 }]}
-        >
-          <ActivityIndicator color={colors.orange} size="large" />
-          <Text style={s.h2}>Setting your table…</Text>
-          <ErrorText error={initError} />
-          {!!initError && (
-            <Button
-              onPress={() => {
-                setInitError("");
-                api.init().catch((error) => setInitError(error.message));
-              }}
-            >
-              Try again
-            </Button>
-          )}
-        </View>
-      ) : (
-        <KeyboardAvoidingView
-          style={s.flex}
-          behavior={Platform.OS === "ios" ? "padding" : "height"}
-        >
-          <FormScrollContext.Provider value={scroll}>
-            <ScrollView
-              ref={scroll}
-              keyboardShouldPersistTaps="handled"
-              contentContainerStyle={s.scroll}
-            >
-              <View
-                key={`${state.mode}:${state.user?.id || "guest"}:${path}`}
-                style={s.section}
-              >
-                {!!state.error && <Notice conflict>{state.error}</Notice>}
-                {!!initError && <ErrorText error={initError} />}
-                {screen}
-              </View>
-            </ScrollView>
-          </FormScrollContext.Provider>
-        </KeyboardAvoidingView>
-      )}
-      {!showWelcome && (
-        <View style={s.nav}>
-          {navigation.map((item) => {
-            const selected = activeTab(route.page) === item.route;
-            return (
-              <Pressable
-                key={item.route}
-                accessibilityRole="tab"
-                accessibilityState={{ selected }}
-                aria-selected={selected}
-                accessibilityLabel={item.label}
-                onPress={() => {
-                  if (item.route === "home" && selected)
-                    scroll.current?.scrollTo({ y: 0, animated: true });
-                  navigate(item.route);
-                }}
-                style={s.navItem}
-              >
-                {item.route === "home" ? (
-                  <HomeTab selected={selected} fontsReady={homeFontsReady} />
-                ) : (
-                  <Icon
-                    name={selected ? item.active : item.icon}
-                    color={selected ? colors.orangeDark : colors.muted}
-                    size={23}
-                  />
-                )}
-                {item.route !== "home" && (
-                  <Text style={[s.navText, selected && s.navTextActive]}>
-                    {item.label}
+            <View style={s.headerRight}>
+              {!showWelcome && (
+                <Pressable
+                  accessibilityRole="button"
+                  accessibilityLabel="Change location"
+                  onPress={() => navigate("explore?location=1")}
+                >
+                  <Text style={[s.mode, { maxWidth: 80 }]} numberOfLines={1}>
+                    {searchArea?.label || "ORLANDO"}
                   </Text>
-                )}
+                </Pressable>
+              )}
+              {route.page === "home" && !showWelcome && (
+                <Pressable
+                  accessibilityRole="button"
+                  accessibilityLabel="About Verifed"
+                  onPress={() => setSheet({ type: "info" })}
+                  style={s.iconButton}
+                >
+                  <Icon name="information-circle-outline" />
+                </Pressable>
+              )}
+              <Pressable
+                accessibilityRole="button"
+                accessibilityLabel="Open saved dishes"
+                onPress={() => navigate("favorites")}
+                style={s.iconButton}
+              >
+                <Icon name="heart-outline" />
               </Pressable>
-            );
-          })}
-        </View>
-      )}
-      {sheet?.type === "info" && <HomeInfo onClose={() => setSheet(null)} />}
-      {sheet?.type === "meal" && (
-        <MealComposer {...shared} {...sheet} onClose={() => setSheet(null)} />
-      )}
-    </SafeAreaView>
+            </View>
+          </View>
+        )}
+        {!state.ready ? (
+          <View
+            style={[s.flex, s.empty, { justifyContent: "center", padding: 22 }]}
+          >
+            <ActivityIndicator color={colors.orange} size="large" />
+            <Text style={s.h2}>Setting your table…</Text>
+            <ErrorText error={initError} />
+            {!!initError && (
+              <Button
+                onPress={() => {
+                  setInitError("");
+                  api.init().catch((error) => setInitError(error.message));
+                }}
+              >
+                Try again
+              </Button>
+            )}
+          </View>
+        ) : (
+          <KeyboardAvoidingView
+            style={s.flex}
+            behavior={Platform.OS === "ios" ? "padding" : "height"}
+          >
+            <FormScrollContext.Provider value={scroll}>
+              <ScrollView
+                ref={scroll}
+                keyboardShouldPersistTaps="handled"
+                contentContainerStyle={s.scroll}
+              >
+                <View
+                  key={`${state.mode}:${state.user?.id || "guest"}:${path}`}
+                  style={s.section}
+                >
+                  {!!state.error && <Notice conflict>{state.error}</Notice>}
+                  {!!initError && <ErrorText error={initError} />}
+                  {screen}
+                </View>
+              </ScrollView>
+            </FormScrollContext.Provider>
+          </KeyboardAvoidingView>
+        )}
+        {!showWelcome && (
+          <View style={s.nav}>
+            {navigation.map((item) => {
+              const selected = activeTab(route.page) === item.route;
+              return (
+                <Pressable
+                  key={item.route}
+                  accessibilityRole="tab"
+                  accessibilityState={{ selected }}
+                  aria-selected={selected}
+                  accessibilityLabel={item.label}
+                  onPress={() => {
+                    if (item.route === "home" && selected)
+                      scroll.current?.scrollTo({ y: 0, animated: true });
+                    navigate(item.route);
+                  }}
+                  style={s.navItem}
+                >
+                  {item.route === "home" ? (
+                    <HomeTab selected={selected} fontsReady={homeFontsReady} />
+                  ) : (
+                    <Icon
+                      name={selected ? item.active : item.icon}
+                      color={selected ? colors.orangeDark : colors.muted}
+                      size={23}
+                    />
+                  )}
+                  {item.route !== "home" && (
+                    <Text style={[s.navText, selected && s.navTextActive]}>
+                      {item.label}
+                    </Text>
+                  )}
+                </Pressable>
+              );
+            })}
+          </View>
+        )}
+        {sheet?.type === "info" && <HomeInfo onClose={() => setSheet(null)} />}
+        {sheet?.type === "meal" && (
+          <MealComposer {...shared} {...sheet} onClose={() => setSheet(null)} />
+        )}
+      </SafeAreaView>
+    </TypographyProvider>
   );
 }
 
