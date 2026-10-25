@@ -1,12 +1,12 @@
 {
-  "version": 19,
-  "name": "Verifed V19",
-  "id": "fnvN8bKlUymkpPsy4Gj4G",
-  "url": "exp://u.expo.dev/933fd9c0-1666-11e7-afca-d980795c5824?runtime-version=exposdk%3A54.0.0&channel-name=production&snack=fnvN8bKlUymkpPsy4Gj4G",
-  "hashId": "fnvN8bKlUymkpPsy4Gj4G",
-  "snackId": "4500452b-3078-4d0e-a777-a642e2686387",
-  "editorUrl": "https://snack.expo.dev/fnvN8bKlUymkpPsy4Gj4G",
-  "publishedAt": "2026-10-25T01:26:42.366Z",
+  "version": 20,
+  "name": "Verifed V20",
+  "id": "fV9F3OzxomF3d3Ph02TIp",
+  "url": "exp://u.expo.dev/933fd9c0-1666-11e7-afca-d980795c5824?runtime-version=exposdk%3A54.0.0&channel-name=production&snack=fV9F3OzxomF3d3Ph02TIp",
+  "hashId": "fV9F3OzxomF3d3Ph02TIp",
+  "snackId": "01d39159-feb6-4fec-bed7-bcd7aa32e6e6",
+  "editorUrl": "https://snack.expo.dev/fV9F3OzxomF3d3Ph02TIp",
+  "publishedAt": "2026-10-25T05:38:24.302Z",
   "sdkVersion": "54.0.0",
   "files": [
     "App.js",
@@ -37,6 +37,7 @@
     "src/discovery.js",
     "src/domain.js",
     "src/featured-menus.js",
+    "src/fixed-spanish-menu.js",
     "src/home-content.js",
     "src/ingredient-hints.js",
     "src/local-catalog.js",
@@ -420,6 +421,7 @@
     "assets/food/winter-park-biscuit/side-kale-salad.webp",
     "assets/food/winter-park-biscuit/the-og.webp",
     "assets/home/chipotle-vegetarian-bowl.webp",
+    "assets/scan/2cero7-spanish-menu.webp",
     "assets/verifed-mark.png"
   ],
   "assetHashes": {
@@ -786,13 +788,14 @@
     "assets/food/winter-park-biscuit/side-kale-salad.webp": "2c87421b0b4073d42b7e5b8a685030a70a91b9873759ebb470bf928b09382ea3",
     "assets/food/winter-park-biscuit/the-og.webp": "94aa941b49169d74e9e6babe3c9f369f2bd3549d79b491181a86666645141781",
     "assets/home/chipotle-vegetarian-bowl.webp": "619ddc443f6471a1301dd0482c78b55d6cecb7df8de33e2f0d5e9f43910f759c",
+    "assets/scan/2cero7-spanish-menu.webp": "4a2cb9f3e714632ca5c4856708083b6a6829f92925eb70cb7f089a17a073699a",
     "assets/verifed-mark.png": "666a1adcb3940ee008ccb5e9544b853fe3fec4ad6d43f5dca5c8697f230b3219"
   },
   "uploadVerification": {
-    "assets": 364,
-    "images": 359,
+    "assets": 365,
+    "images": 360,
     "fonts": 5,
     "allSourceHashesMatch": true
   },
-  "sourceHash": "1ffe0d59caf3fbd5d21ad3e860426f4934ca8839131260c79a1608e60d73bfa1"
+  "sourceHash": "51603345f7782d1c36ad1075aa9797a35838758dade9c5856d3ba34a432d1298"
 }

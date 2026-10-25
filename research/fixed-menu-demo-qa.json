@@ -1,0 +1,24 @@
+{
+  "version": 20,
+  "mode": "fixed-menu-demo",
+  "source": "2cero7 published PDF, Spanish page 1",
+  "automatedTests": {"passed": 165, "failed": 0},
+  "exports": ["ios", "android", "web"],
+  "browserChecks": [
+    "Printed black-and-white menu upload opens 15 English dishes",
+    "Unrelated Chipotle bowl photo opens the identical fixed menu",
+    "Original Spanish toggle preserves dish text, prices and notes",
+    "Actual normalized source photo rotates to 2000x1413 pixels",
+    "Save, reopen, delete and persistence after reload",
+    "Dietary settings returns to the retained scan draft",
+    "Milk dietary view excludes named/possible milk clues",
+    "390px layout and saved-menu heading scroll reset",
+    "Original-page WebP loads and fits the phone-width sheet after explicit width/height fix",
+    "No direct-app browser error logs recorded"
+  ],
+  "assetChecks": "See fixed-menu-asset-validation.json and local-photo-export-validation.json",
+  "notVerified": ["Physical iPhone camera permission and capture", "Expo Go", "Remote Snack runtime"],
+  "liveOcrOrAi": false,
+  "fakeProcessingDelay": false,
+  "review": "Independent code and translation review completed; recipe clue, scroll reset, provenance wording and subsequent visual sizing findings addressed"
+}

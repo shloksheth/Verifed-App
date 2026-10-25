@@ -1,0 +1,39 @@
+{
+  "number": 20,
+  "name": "Verifed V20",
+  "description": "Adds the requested fixed Spanish-menu presentation: any successful camera capture or photo selection opens the same 15-dish English translation of 2cero7 Restaurant's printed menu. Includes its real set-menu prices and notes, original Spanish toggle and black-and-white source page, dietary-text filtering, corrections and local saved menus. Removes sample badges from this flow. This is a scripted prototype, not live OCR or AI translation.",
+  "verification": [
+    "165 automated tests passed, including all 15 Spanish dishes against extracted PDF text, independent fixed results for different photos, prices, corrections, allergen-legend separation, recipe clues, ownership and storage.",
+    "Final iOS, Android and web JavaScript exports succeeded. The original-menu WebP and all 356 local food images matched their source bytes in every platform export.",
+    "Browser photo selection verified two different images open the same fixed English menu. Spanish toggling, real JPEG rotation, save/reopen/delete, persistence after reload and return from dietary settings were exercised.",
+    "Phone-width browser review verified the 390px layout, dietary filtering, saved-menu scroll reset and corrected original-page scaling. No browser console errors were recorded in the direct app check.",
+    "Independent review compared the full menu transcription, translations, prices and scan interactions. Found recipe-clue, scroll-position and provenance-wording issues were addressed.",
+    "Physical iPhone camera permissions, Expo Go and the remote Snack runtime have not been device-tested. No AI provider, external photo upload or paid service is used."
+  ],
+  "snack": "https://snack.expo.dev/fV9F3OzxomF3d3Ph02TIp",
+  "snackId": "fV9F3OzxomF3d3Ph02TIp",
+  "snackSourceHash": "51603345f7782d1c36ad1075aa9797a35838758dade9c5856d3ba34a432d1298",
+  "snackPublishedAt": "2026-10-25T05:38:24.302Z",
+  "status": "fixed-menu-prototype-browser-verified-native-runtime-unverified",
+  "uploadVerification": {
+    "assets": 365,
+    "images": 360,
+    "fonts": 5,
+    "allSourceHashesMatch": true
+  },
+  "downloadedSourceVerification": {
+    "checkedAt": "2026-10-25T05:39:06.799480+00:00",
+    "name": "Verifed V20",
+    "snackId": "fV9F3OzxomF3d3Ph02TIp",
+    "expectedFiles": 414,
+    "foodImages": 356,
+    "errors": [
+      {
+        "reason": "Snack download unavailable: HTTP 503"
+      }
+    ],
+    "passed": false
+  },
+  "remoteRuntimeVerification": "Not verified on a physical phone or remote Snack runtime",
+  "branch": "codex/local-menu-photography"
+}

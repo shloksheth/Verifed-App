@@ -1,0 +1,10 @@
+{
+  "asset": "assets/scan/2cero7-spanish-menu.webp",
+  "sha256": "4a2cb9f3e714632ca5c4856708083b6a6829f92925eb70cb7f089a17a073699a",
+  "platforms": {
+    "ios": true,
+    "android": true,
+    "web": true
+  },
+  "passed": true
+}

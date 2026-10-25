@@ -1,4 +1,24 @@
-# Menu scanning screen — V19
+# Menu scanning screen — V20
+
+## Current fixed-menu presentation
+
+At the user's request, any successful camera capture or photo selection opens the same 15-dish English translation of the real 2cero7 Spanish menu. There is no live OCR, AI extraction, image recognition or translation request. The interface has no sample/demo badges; this document and source metadata retain the actual implementation scope. Canceling the picker preserves the existing draft; invalid images and permission failures still produce errors.
+
+`src/fixed-spanish-menu.js` contains the Spanish transcription, reviewed English translation, categories, set-menu offer, drink/bread/coffee notes and general allergen symbol key. `fixedSpanishMenu()` makes a fresh object each time. `menuAfterPhoto(photo)` retains the actual normalized photo alongside that fixed object. These functions never derive text from the photo. A new scan resets search, language and diet view, discards earlier corrections and opens English. Save/reopen keeps corrections. The legacy V19 `spanishSample()` remains for its existing tests and saved data compatibility; the current UI does not open it.
+
+The menu comes from page 1 of [the restaurant's published PDF](https://www.2cero7restaurant.com/wp-content/uploads/cartas/carta-menu-2cero7-restaurant.pdf). Page 2 is Catalan and is not used. `research/menu-sources/2cero7-spanish-page.txt` is extracted source text. `research/fixed-menu-source.json` records the original PDF hash and deterministic rendering/conversion. `assets/scan/2cero7-spanish-menu.webp` is the bundled black-and-white source-page preview. It is not generated artwork. The separate high-resolution PNG in the workspace's `outputs/spanish-menu-print` folder is the printable handout.
+
+The printed prices are a 25€ set menu reduced to 20€ with a promotion, 18€ when selecting a single dish, and a 5€ beef-entrecôte supplement. Individual dish prices are not invented. Language toggling changes the supplement's wording, not its currency or amount. A manual price correction replaces both language versions. The printed “½ water / ½ house wine” drink shorthand stays literal because no unit is specified. The general 14-allergen symbol legend is displayed as a key only; it is never assigned to dishes as an ingredient declaration. Dietary matches use recognizable English text and do not establish unlisted ingredients or cross-contact.
+
+`components/MenuScanner.js` contains the actual photo picker, normalized JPEG preview/rotation sheet, original-page sheet, English/Spanish toggle, category list, search, dietary-profile return path, item corrections, and local save/reopen/delete. The fixed response is immediate after genuine image preparation; there is no fake AI delay. Original-page images use a fixed aspect-ratio container so the web preview and native layout do not expand to the image's intrinsic height. Previously saved V19 menus do not receive the new source-page image.
+
+`tests/fixed-spanish-menu.test.js` checks all 15 Spanish dish lines against the extracted source, category counts, photo-independent fixed results, independent copies, price preservation/corrections, and separation of the general allergen legend from dish assessment. `tests/menu-scan.test.js` retains correction, bilingual search, diet and persistence coverage. [SCAN_LIBRARY.md](SCAN_LIBRARY.md) explains owner-scoped storage, export and deletion; [TYPOGRAPHY.md](TYPOGRAPHY.md) explains the shared Sora/DM Sans system.
+
+`research/verify-fixed-menu-assets.py <export-directory>` verifies the source-page WebP against its provenance hash and checks that the same bytes exist in each native export and the web export. Its output is `research/fixed-menu-asset-validation.json`. The ingredient dictionary adds possible recipe clues for cannelloni, béchamel, vichyssoise, custard and molluscs; the fixed-menu tests verify these dietary exclusions while keeping creamy rice texture from becoming an invented dairy ingredient. Opening saved menus or completing a photo scrolls the enclosing app view back to its heading.
+
+Physical iPhone camera/Expo Go behavior still requires a device check. Browser photo selection and cross-platform JavaScript exports are different checks and do not substitute for it. A future live implementation needs a private authenticated model endpoint, validated extraction and real-photo testing; no provider key belongs in Snack.
+
+## Historical V19 behavior
 
 The Scan tab replaces Saved. Saved dishes remain in the header heart and keep their existing persistence. Home's Scan button opens the same new route. This is a functional photo-review and prepared-example interface; no OCR/model service is connected or claimed in this version.
 

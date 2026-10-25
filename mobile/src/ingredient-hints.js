@@ -24,16 +24,16 @@ const direct = [
 const uncertain = [
   [
     "Milk",
-    /\b(?:cheese|butter|cream|creme|queso|ice cream|gelato|cheesecake|budino|pudding|brownie|blondie|chantilly|trifle|parm|chz|ranch|pesto)\b/i,
+    /\b(?:cheese|butter|cream|creme|b[eé]chamel|vichyssoise|custard|queso|ice cream|gelato|cheesecake|budino|pudding|brownie|blondie|chantilly|trifle|parm|chz|ranch|pesto)\b/i,
   ],
-  ["Shellfish", /\b(?:mussels?|clams?|oysters?|scallops?)\b/i],
+  ["Shellfish", /\b(?:mussels?|clams?|oysters?|scallops?|squid|octopus)\b/i],
   [
     "Egg",
     /\b(?:mayo|mayonnaise|aioli|brioche|custard|meringue|flan|cake|cookies?|cannoli|tiramisu|budino|pudding|brownie|blondie|pastry|trifle)\b/i,
   ],
   [
     "Wheat",
-    /\b(?:bread|breadcrumbs|chapati|roti|paratha|poori|bun|buns|brioche|pasta|pizza|biscuit|biscuits|flour tortilla|flour tortillas|panko|battered|breaded|focaccia|croissant|naan|pita|dumplings?|wontons?|ramen|udon|tempura|flour|cake|cookies?|crackers?|croutons?|tortellini|rigatoni|spaghetti|pappardelle|bucatini|paccheri|gnocchi|fettuccine|macaroni|calzone|pastry|brownie|blondie|pretzel|toast|rye|lavash)\b/i,
+    /\b(?:bread|breadcrumbs|chapati|roti|paratha|poori|bun|buns|brioche|pasta|cannelloni|pizza|biscuit|biscuits|flour tortilla|flour tortillas|panko|battered|breaded|focaccia|croissant|naan|pita|dumplings?|wontons?|ramen|udon|tempura|flour|cake|cookies?|crackers?|croutons?|tortellini|rigatoni|spaghetti|pappardelle|bucatini|paccheri|gnocchi|fettuccine|macaroni|calzone|pastry|brownie|blondie|pretzel|toast|rye|lavash)\b/i,
   ],
 ];
 const meatOrFish =

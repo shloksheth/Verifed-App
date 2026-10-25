@@ -275,7 +275,7 @@ export default function Home({ state, navigate, searchArea, fontsReady }) {
           </Copy>
         </Pressable>
         <Copy {...copy} style={h.scanHint}>
-          Camera, photo library or Spanish example
+          Take a photo or choose from your library
         </Copy>
       </View>
 

@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useContext, useEffect, useRef, useState } from "react";
 import { Platform, Pressable, StyleSheet, View } from "react-native";
 import * as ImagePicker from "expo-image-picker";
 import { manipulateAsync, SaveFormat } from "expo-image-manipulator";
@@ -9,8 +9,8 @@ import {
   Empty,
   ErrorText,
   Field,
+  FormScrollContext,
   Icon,
-  Notice,
   Sheet,
   Tabs,
   Title,
@@ -19,26 +19,20 @@ import {
 import { colors, s } from "../styles";
 import {
   scannedItems,
-  spanishSample,
   updateScannedItem,
 } from "../src/menu-scan";
 import { scanLibrary as library } from "../src/device-scans";
+import { menuAfterPhoto } from "../src/fixed-spanish-menu";
 
-function SamplePaper() {
+function OriginalMenuPage() {
   return (
-    <View style={look.paper}>
-      <Text style={look.paperName}>MESA VERDE</Text>
-      <Text style={look.paperSub}>MENÚ DE EJEMPLO · ESPAÑOL</Text>
-      <View style={look.paperRule} />
-      {scannedItems(spanishSample(), { language: "es" }).map((item) => (
-        <View key={item.id} style={s.stack}>
-          <Text style={s.h3}>
-            {item.name} · {item.price}
-          </Text>
-          <Text style={s.small}>{item.description}</Text>
-        </View>
-      ))}
-      <Text style={look.paperSub}>Prepared sample — not a restaurant menu</Text>
+    <View style={look.originalPage}>
+      <Image
+        source={require("../assets/scan/2cero7-spanish-menu.webp")}
+        contentFit="contain"
+        style={[StyleSheet.absoluteFillObject, look.photo]}
+        accessibilityLabel="Original Spanish 2cero7 menu, 15 dishes and set-menu prices"
+      />
     </View>
   );
 }
@@ -51,6 +45,7 @@ export default function MenuScanner({
   setDraft,
 }) {
   const task = useTask();
+  const scroll = useContext(FormScrollContext);
   const mounted = useRef(true);
   const [saved, setSaved] = useState([]);
   const [libraryReady, setLibraryReady] = useState(false);
@@ -61,6 +56,8 @@ export default function MenuScanner({
   const [selected, setSelected] = useState(null);
   const [editing, setEditing] = useState(null);
   const [remove, setRemove] = useState(null);
+  const [showOriginal, setShowOriginal] = useState(false);
+  const [showPhoto, setShowPhoto] = useState(false);
   const menu = draft?.menu;
   const photo = draft?.photo;
   const items = scannedItems(menu, {
@@ -119,7 +116,17 @@ export default function MenuScanner({
         [{ resize: { width: Math.round(asset.width * scale) } }],
         { compress: 0.85, format: SaveFormat.JPEG },
       );
-      if (mounted.current) setDraft({ photo: prepared, menu: null });
+      if (mounted.current) {
+        setQuery("");
+        setLanguage("en");
+        setView("full");
+        setSelected(null);
+        setEditing(null);
+        setShowPhoto(false);
+        setShowOriginal(false);
+        setDraft(menuAfterPhoto(prepared));
+        scroll?.current?.scrollTo({ y: 0, animated: false });
+      }
     });
   }
 
@@ -128,7 +135,10 @@ export default function MenuScanner({
     setLanguage("en");
     setView("full");
     setSelected(null);
+    setEditing(null);
+    setShowPhoto(false);
     setDraft({ menu: JSON.parse(JSON.stringify(value)), photo: null });
+    scroll?.current?.scrollTo({ y: 0, animated: false });
   }
 
   function saveMenu() {
@@ -146,7 +156,7 @@ export default function MenuScanner({
       >
         {menu
           ? menu.sourceLabel
-          : "Photograph a menu, review the page, and explore a Spanish-to-English example."}
+          : "Take a photo, then explore the menu in English."}
       </Title>
 
       {!menu && !photo && (
@@ -178,30 +188,26 @@ export default function MenuScanner({
             Choose a photo
           </Button>
           <Pressable
-            onPress={() => openMenu(spanishSample())}
+            onPress={() => setShowOriginal(true)}
             disabled={task.busy}
             accessibilityRole="button"
-            accessibilityLabel="Open prepared Spanish menu example"
+            accessibilityLabel="View original Spanish menu"
             style={look.sampleRow}
           >
             <View style={look.sampleIcon}>
               <Icon name="language-outline" size={28} color={colors.green} />
             </View>
             <View style={s.flex}>
-              <Text style={s.h3}>Try a Spanish menu</Text>
-              <Text style={s.small}>Prepared example · Español → English</Text>
+              <Text style={s.h3}>View Spanish menu</Text>
+              <Text style={s.small}>2cero7 Restaurant · Menú del día</Text>
             </View>
             <Icon name="arrow-forward" color={colors.green} />
           </Pressable>
-          <Text style={s.small}>
-            Photos stay on this device in this version. Live AI reading needs a
-            secure provider connection.
-          </Text>
         </>
       )}
 
-      {!!photo && !menu && (
-        <>
+      {!!photo && showPhoto && (
+        <Sheet title="Your menu photo" onClose={() => setShowPhoto(false)}>
           <View style={look.photoFrame}>
             <Image
               source={{ uri: photo.uri }}
@@ -223,7 +229,7 @@ export default function MenuScanner({
                     [{ rotate: 90 }],
                     { compress: 0.9, format: SaveFormat.JPEG },
                   );
-                  if (mounted.current) setDraft({ photo: rotated, menu: null });
+                  if (mounted.current) setDraft({ ...draft, photo: rotated });
                 })
               }
             >
@@ -233,30 +239,20 @@ export default function MenuScanner({
               variant="secondary"
               disabled={task.busy}
               style={s.flex}
-              onPress={() => setDraft(null)}
+              onPress={() => choosePhoto(false)}
             >
               Replace photo
             </Button>
           </View>
-          <Notice>
-            Photo ready. Live AI reading is not connected yet; this photo has
-            not been translated or analyzed.
-          </Notice>
-          <Button disabled icon="sparkles-outline">
-            AI connection required
-          </Button>
-          <Button variant="secondary" onPress={() => openMenu(spanishSample())}>
-            Open the prepared Spanish example
-          </Button>
-        </>
+          <ErrorText error={task.error} />
+        </Sheet>
       )}
 
       {!!menu && (
         <>
           <View style={s.between}>
             <Text style={s.small}>
-              {menu.items.length} dishes ·{" "}
-              {menu.edited ? "Edited by you" : "Prepared example"}
+              {menu.items.length} dishes{menu.edited ? " · Edited by you" : ""}
             </Text>
             <Pressable
               onPress={() => setDraft(null)}
@@ -274,6 +270,21 @@ export default function MenuScanner({
             value={language}
             onChange={setLanguage}
           />
+          {!!menu.priceSummaryEn && (
+            <View style={look.priceSummary}>
+              <Text style={s.eyebrow}>
+                {language === "es" ? menu.headingEs : menu.headingEn}
+              </Text>
+              <Text style={s.h3}>
+                {language === "es" ? menu.priceSummaryEs : menu.priceSummaryEn}
+              </Text>
+            </View>
+          )}
+          {!!photo && (
+            <Button variant="secondary" icon="image-outline" onPress={() => setShowPhoto(true)}>
+              View your photo
+            </Button>
+          )}
           <Tabs
             options={[
               { value: "full", label: "Full menu" },
@@ -339,7 +350,7 @@ export default function MenuScanner({
                     <Text style={[s.h3, s.flex]}>{item.name}</Text>
                     <Text style={s.body}>{item.price}</Text>
                   </View>
-                  <Text style={s.body}>{item.description}</Text>
+                  {!!item.description && <Text style={s.body}>{item.description}</Text>}
                   {item.needsTranslationReview ? (
                     <Text style={look.conflict}>Translation needs review</Text>
                   ) : item.assessment.conflicts.length ? (
@@ -364,7 +375,21 @@ export default function MenuScanner({
               ? "Update saved menu"
               : "Save this menu"}
           </Button>
-          {menu.sample && <SamplePaper />}
+          {!!menu.notesEn && (
+            <View style={look.paper}>
+              <Text style={s.h3}>{language === "es" ? "Incluye" : "Included"}</Text>
+              {(language === "es" ? menu.notesEs : menu.notesEn).map((note) => (
+                <Text key={note} style={s.body}>{note}</Text>
+              ))}
+              <Text style={s.small}>{menu.contact}</Text>
+              <Text style={s.small}>{menu.venue}</Text>
+              <Text style={s.h3}>{language === "es" ? "Leyenda de símbolos del menú" : "Menu symbol key"}</Text>
+              <Text style={s.small}>{language === "es" ? menu.legendEs : menu.legendEn}</Text>
+            </View>
+          )}
+          {menu.id === "2cero7-spanish-fixed" && (
+            <Button variant="secondary" onPress={() => setShowOriginal(true)}>View original menu page</Button>
+          )}
         </>
       )}
 
@@ -389,8 +414,7 @@ export default function MenuScanner({
                 <View style={s.flex}>
                   <Text style={s.h3}>{record.title}</Text>
                   <Text style={s.small}>
-                    {record.items.length} dishes ·{" "}
-                    {record.sample ? "Prepared example" : "Personal menu"}
+                    {record.items.length} dishes · Saved menu
                   </Text>
                 </View>
               </Pressable>
@@ -412,6 +436,12 @@ export default function MenuScanner({
         )}
       </View>
 
+      {showOriginal && (
+        <Sheet title="Original · Español" onClose={() => setShowOriginal(false)}>
+          <OriginalMenuPage />
+        </Sheet>
+      )}
+
       {!!selected && !editing && (
         <Sheet title={selected.name} onClose={() => setSelected(null)}>
           <Text style={s.eyebrow}>ORIGINAL SPANISH</Text>
@@ -428,7 +458,10 @@ export default function MenuScanner({
           </Text>
           <Button
             variant="secondary"
-            onPress={() => setEditing({ ...selected })}
+            onPress={() => setEditing({
+              ...selected,
+              price: menu.items.find((item) => item.id === selected.id).price,
+            })}
           >
             Correct this item
           </Button>
@@ -575,18 +608,6 @@ const look = StyleSheet.create({
     gap: 10,
     marginTop: 10,
   },
-  paperName: {
-    fontSize: 24,
-    fontWeight: "700",
-    textAlign: "center",
-    color: colors.green,
-  },
-  paperSub: {
-    fontSize: 10,
-    lineHeight: 16,
-    color: colors.muted,
-    textAlign: "center",
-    letterSpacing: 1,
-  },
-  paperRule: { height: 1, backgroundColor: colors.line, marginVertical: 8 },
+  originalPage: { width: "100%", aspectRatio: 1190 / 1685, backgroundColor: "white" },
+  priceSummary: { padding: 16, gap: 8, borderRadius: 14, backgroundColor: colors.paleGreen },
 });

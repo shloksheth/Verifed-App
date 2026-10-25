@@ -168,6 +168,7 @@ export function scannedItems(
       name: language === "es" ? item.nameEs : item.nameEn,
       description: language === "es" ? item.descriptionEs : item.descriptionEn,
       category: language === "es" ? item.categoryEs : item.categoryEn,
+      price: (language === "es" ? item.priceEs : item.priceEn) ?? item.price,
     }));
   const categories = [...new Set(results.map((item) => item.category))];
   return categories.flatMap((category) =>
@@ -209,6 +210,10 @@ export function updateScannedItem(menu, id, changes) {
         ? {
             ...item,
             ...cleaned,
+            // A manually corrected price replaces both language variants.
+            ...(cleaned.price !== original.price
+              ? { priceEs: cleaned.price, priceEn: cleaned.price }
+              : {}),
             tags: [],
             needsTranslationReview: englishChanged
               ? false
