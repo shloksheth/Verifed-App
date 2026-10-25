@@ -39,7 +39,7 @@ test("plus menu offers real actions, header keeps profile accessible", () => {
   const app = readFileSync(new URL("../App.js", import.meta.url), "utf8");
   assert.match(nav, /label: "Dietary profile", icon: "person-outline", action: "profile"/);
   assert.match(nav, /label: "Scan a menu", icon: "scan-outline", action: "scan"/);
-  assert.match(nav, /label: "Log a meal", icon: "create-outline", action: "meal"/);
+  assert.match(nav, /label: "Save a meal", icon: "create-outline", action: "meal"/);
   assert.match(home, /accessibilityLabel="Open dietary profile"/);
   assert.match(app, /keyboardDidShow/);
   assert.match(app, /bottomNavigationMode\(route.page\)/);

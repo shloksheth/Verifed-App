@@ -14,7 +14,7 @@ import { Icon } from "./UI";
 
 const quickActions = [
   { label: "Scan a menu", icon: "scan-outline", action: "scan" },
-  { label: "Log a meal", icon: "create-outline", action: "meal" },
+  { label: "Save a meal", icon: "create-outline", action: "meal" },
   { label: "Dietary profile", icon: "person-outline", action: "profile" },
 ];
 

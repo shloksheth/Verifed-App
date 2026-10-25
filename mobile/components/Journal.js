@@ -105,7 +105,7 @@ export function MealComposer({ dish, entry, state, onClose, navigate }) {
     );
   }
   return (
-    <Sheet title={entry ? "Edit meal" : "Log a meal"} onClose={onClose}>
+    <Sheet title={entry ? "Edit meal" : "Save a meal"} onClose={onClose}>
       <Text style={j.composerIntro}>
         Add a rating and any notes you want to keep.
       </Text>
@@ -240,7 +240,7 @@ export function History({ state, navigate, openSheet }) {
         </View>
       </View>
       <Button icon="add-outline" onPress={logMeal}>
-        Log a meal
+        Save a meal
       </Button>
       <Field
         label="Search your journal"
@@ -370,7 +370,7 @@ export function MealDetail({ id, state, navigate, openSheet }) {
         <Text style={j.sectionLabel}>Your taste rating</Text>
         <View style={j.detailRating}>
           <Stars rating={entry.rating} />
-          <Text style={j.ratingLabel}>{entry.rating}/5</Text>
+          <Text style={j.detailRatingValue}>{entry.rating}/5</Text>
         </View>
         <Text style={j.tasteTitle}>{tasteLabels[entry.rating]}</Text>
       </View>
@@ -426,10 +426,12 @@ const j = StyleSheet.create({
   },
   summaryCount: { gap: 2 },
   count: {
-    fontFamily: "HomeStrong",
-    fontWeight: "700",
-    fontSize: 23,
-    lineHeight: 30,
+    fontFamily: "HomeMedium",
+    fontWeight: "500",
+    fontVariant: ["tabular-nums"],
+    fontSize: 34,
+    lineHeight: 40,
+    letterSpacing: -1,
     color: colors.ink,
   },
   countLabel: { fontSize: 12, lineHeight: 18, color: colors.muted },
@@ -454,7 +456,14 @@ const j = StyleSheet.create({
   filterSelected: { borderBottomColor: colors.green },
   filterText: { fontSize: 14, fontWeight: "500", color: colors.muted },
   filterTextSelected: { color: colors.green, fontWeight: "700" },
-  filterCount: { fontSize: 11, lineHeight: 16, color: colors.muted },
+  filterCount: {
+    fontFamily: "HomeMedium",
+    fontWeight: "500",
+    fontVariant: ["tabular-nums"],
+    fontSize: 12,
+    lineHeight: 18,
+    color: colors.muted,
+  },
   list: { gap: 0 },
   listHeading: {
     flexDirection: "row",
@@ -493,10 +502,12 @@ const j = StyleSheet.create({
   },
   ratingSummary: { flexDirection: "row", alignItems: "center", gap: 4 },
   ratingNumber: {
-    fontSize: 12,
-    lineHeight: 18,
+    fontFamily: "HomeMedium",
+    fontWeight: "500",
+    fontVariant: ["tabular-nums"],
+    fontSize: 13,
+    lineHeight: 19,
     color: colors.ink,
-    fontWeight: "600",
   },
   date: { fontSize: 11, lineHeight: 17, color: colors.muted },
   rowNote: { fontSize: 12, lineHeight: 18, color: colors.muted, marginTop: 2 },
@@ -557,6 +568,15 @@ const j = StyleSheet.create({
     lineHeight: 20,
     color: colors.ink,
     fontWeight: "600",
+  },
+  detailRatingValue: {
+    fontFamily: "HomeMedium",
+    fontWeight: "500",
+    fontVariant: ["tabular-nums"],
+    fontSize: 21,
+    lineHeight: 28,
+    letterSpacing: -0.35,
+    color: colors.ink,
   },
   kicker: {
     fontSize: 11,
