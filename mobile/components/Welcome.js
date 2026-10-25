@@ -10,7 +10,6 @@ import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { Text } from "./Typography";
 import { Image } from "./MenuImage";
 import { colors, s } from "../styles";
-import { type } from "../src/design-tokens";
 import { Button, Icon, Sheet } from "./UI";
 
 // Reuse individually sourced local photos; these captions identify the food,
@@ -116,7 +115,7 @@ export default function Welcome({ onSignIn, onCreateAccount, onContinue }) {
                       contentFit="contain"
                       accessibilityLabel="Verifed carrot checkmark"
                     />
-                    <Text style={w.wordmark}>verifed.</Text>
+                    <Text style={w.wordmark}>verifed</Text>
                   </View>
                   <Text style={w.badge}>Find your flavor</Text>
                 </View>
@@ -249,23 +248,23 @@ const w = StyleSheet.create({
   brand: { flexDirection: "row", alignItems: "center", gap: 5 },
   mark: { width: 22, height: 28 },
   wordmark: {
-    color: colors.ink,
+    color: "#17281F",
     fontSize: 23,
-    fontWeight: "700",
+    fontWeight: "400",
     letterSpacing: -0.8,
   },
   badge: {
-    color: colors.ink,
+    color: "#17281F",
     fontSize: 11,
     fontWeight: "500",
     borderWidth: 1,
-    borderColor: colors.ink,
+    borderColor: "#17281F",
     borderRadius: 20,
     paddingHorizontal: 9,
     paddingVertical: 6,
   },
   title: {
-    color: colors.ink,
+    color: "#17281F",
     fontFamily: "HomeHeadingStrong",
     fontSize: 46,
     lineHeight: 46,
@@ -278,7 +277,7 @@ const w = StyleSheet.create({
     minHeight: 130,
     borderRadius: 20,
     overflow: "hidden",
-    backgroundColor: colors.paper,
+    backgroundColor: "#FFFFFF",
   },
   photo: { ...StyleSheet.absoluteFillObject, width: "100%", height: "100%" },
   photoLabel: {
@@ -286,7 +285,7 @@ const w = StyleSheet.create({
     left: 8,
     right: 8,
     bottom: 8,
-    backgroundColor: colors.green,
+    backgroundColor: "#17281F",
     borderRadius: 24,
     paddingLeft: 15,
     paddingRight: 5,
@@ -297,12 +296,12 @@ const w = StyleSheet.create({
   },
   caption: { flex: 1, paddingVertical: 4 },
   dishName: {
-    color: colors.paper,
+    color: "#FFFFFF",
     fontSize: 14,
     fontWeight: "600",
     lineHeight: 18,
   },
-  restaurant: { color: colors.paleGreen, fontSize: 11, lineHeight: 16 },
+  restaurant: { color: "#CCD9CF", fontSize: 11, lineHeight: 16 },
   next: {
     width: 44,
     height: 44,
@@ -325,10 +324,10 @@ const w = StyleSheet.create({
     justifyContent: "center",
   },
   dot: { height: 5, width: 16, borderRadius: 3, backgroundColor: "#73867A" },
-  activeDot: { width: 28, backgroundColor: colors.paleGreen },
+  activeDot: { width: 28, backgroundColor: "#C3E6AE" },
   primary: {
     minHeight: 52,
-    backgroundColor: colors.orange,
+    backgroundColor: "#FFFFFF",
     borderRadius: 28,
     flexDirection: "row",
     gap: 12,
@@ -337,30 +336,15 @@ const w = StyleSheet.create({
     paddingHorizontal: 20,
     paddingVertical: 12,
   },
-  primaryText: { ...type.button, color: colors.paper, fontSize: 16 },
+  primaryText: { color: "#17281F", fontSize: 16, fontWeight: "600" },
   pressed: { opacity: 0.8 },
   textAction: { minHeight: 44, alignItems: "center", justifyContent: "center" },
-  secondaryText: {
-    ...type.body,
-    color: colors.paleGreen,
-    fontSize: 16,
-    lineHeight: 24,
-  },
-  signIn: {
-    color: colors.paper,
-    fontSize: 17,
-    lineHeight: 24,
-    fontWeight: "600",
-  },
+  secondaryText: { color: "#BACABD", fontSize: 15, lineHeight: 23 },
+  signIn: { color: "#FFFFFF", fontWeight: "600", fontSize: 15 },
   guestAction: {
     minHeight: 44,
     alignItems: "center",
     justifyContent: "center",
   },
-  guestText: {
-    ...type.button,
-    color: colors.paper,
-    fontSize: 17,
-    lineHeight: 24,
-  },
+  guestText: { color: "#C3E6AE", fontSize: 15, fontWeight: "500" },
 });

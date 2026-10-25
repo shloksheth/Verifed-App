@@ -4,15 +4,25 @@ import { SvgXml } from "react-native-svg";
 import { Image } from "./MenuImage";
 import { chipotleLogoXml } from "../src/brand-assets";
 
-// Preserve the existing menu composition while using Verifed typography.
+// Chain-specific typography is intentionally distinct from the Verifed shell.
 export function BrandProvider({ children }) {
   return children;
 }
 
 export function BrandHeading({ style, accessibilityRole, ...props }) {
-  // Menu labels use the shared weight scale, just like other app screens.
+  // The wrapper also renders tabs and product names: only true headings use serif.
   return (
-    <Text {...props} accessibilityRole={accessibilityRole} style={style} />
+    <Text
+      {...props}
+      accessibilityRole={accessibilityRole}
+      style={[
+        style,
+        {
+          fontFamily:
+            accessibilityRole === "header" ? "HomeHeadingStrong" : "HomeStrong",
+        },
+      ]}
+    />
   );
 }
 

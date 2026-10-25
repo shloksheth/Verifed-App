@@ -57,9 +57,9 @@ export const s = StyleSheet.create({
   mark: { width: 38, height: 44, resizeMode: "contain" },
   brand: {
     color: colors.ink,
-    fontFamily: "HomeStrong",
+    fontFamily: "HomeBody",
     fontSize: 26,
-    fontWeight: "800",
+    fontWeight: "400",
     letterSpacing: -1.1,
   },
   brandDot: { color: colors.orange },

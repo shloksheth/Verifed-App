@@ -1,4 +1,3 @@
-import { colors, type } from "../src/design-tokens";
 import { Text, TextInput } from "./Typography";
 import React, { useMemo, useState } from "react";
 import {
@@ -21,13 +20,13 @@ import AllergenIcons from "./AllergenIcons";
 import { Icon } from "./UI";
 import { BrandHeading, BrandLogo, BrandProvider } from "./BrandIdentity";
 
-const purple = colors.green;
-const vivid = colors.orange;
-const ink = colors.ink;
-const muted = colors.muted;
-const pale = colors.paleGreen;
-const border = colors.line;
-const good = colors.green;
+const purple = "#501098";
+const vivid = "#8B20DB";
+const ink = "#241936";
+const muted = "#696076";
+const pale = "#F6F0FD";
+const border = "#E5DDED";
+const good = "#31745C";
 
 const isTacoBell = (restaurant) =>
   (restaurant?.slug || restaurant?.id || "").startsWith("taco-bell-");
@@ -240,7 +239,7 @@ function ItemCard({
         ? "REPORTED MATCH"
         : status.level === "unknown"
           ? "CHECK DETAILS"
-          : "Review ingredients";
+          : "REVIEW INGREDIENTS";
   async function save() {
     if (busy) return;
     setBusy(true);
@@ -295,14 +294,14 @@ function ItemCard({
         accessibilityLabel={`View ingredients for ${dish.name}`}
         style={look.viewItem}
       >
-        <Text style={look.viewItemText}>View ingredients</Text>
+        <Text style={look.viewItemText}>VIEW INGREDIENTS</Text>
       </Pressable>
       <Pressable
         onPress={() => onCustomize(dish)}
         accessibilityRole="button"
         style={look.customize}
       >
-        <Text style={look.customizeText}>Customize</Text>
+        <Text style={look.customizeText}>CUSTOMIZE</Text>
       </Pressable>
     </View>
   );
@@ -542,270 +541,84 @@ export default function TacoBellMenu({
 }
 
 const look = StyleSheet.create({
-  page: {
-    marginHorizontal: -18,
-    backgroundColor: colors.peach,
-    paddingBottom: 16,
-  },
-  brandHead: {
-    backgroundColor: colors.paper,
-    paddingHorizontal: 18,
-    paddingTop: 16,
-    paddingBottom: 15,
-    gap: 15,
-    borderBottomWidth: 1,
-    borderBottomColor: colors.line,
-  },
-  brandBar: {
-    flexDirection: "row",
-    justifyContent: "space-between",
-    alignItems: "center",
-  },
+  page: { marginHorizontal: -18, backgroundColor: "#F2F2F2", paddingBottom: 16 },
+  brandHead: { backgroundColor: "#FFFFFF", paddingHorizontal: 18, paddingTop: 16, paddingBottom: 15, gap: 15, borderBottomWidth: 1, borderBottomColor: "#DDDDDD" },
+  brandBar: { flexDirection: "row", justifyContent: "space-between", alignItems: "center" },
   logoLockup: { flexDirection: "row", alignItems: "center", gap: 9 },
-  brandTitle: { ...type.section, color: colors.ink },
+  brandTitle: { color: "#161616", fontSize: 26, lineHeight: 24, fontWeight: "900", letterSpacing: -1 },
   verifedBadge: { borderColor: purple, borderWidth: 1, padding: 8 },
-  verifedBadgeText: {
-    color: purple,
-    fontSize: 11,
-    fontWeight: "800",
-    letterSpacing: 0.6,
-  },
-  location: { color: colors.muted, fontSize: 11, fontWeight: "600" },
+  verifedBadgeText: { color: purple, fontSize: 11, fontWeight: "800", letterSpacing: 0.6 },
+  location: { color: "#444444", fontSize: 11, fontWeight: "600" },
   mainBody: { paddingHorizontal: 12, gap: 10, paddingTop: 10 },
-  modeRow: { flexDirection: "row", backgroundColor: colors.paper },
-  tab: {
-    flex: 1,
-    paddingVertical: 10,
-    paddingHorizontal: 7,
-    alignItems: "center",
-    borderBottomWidth: 4,
-    borderColor: "transparent",
-  },
+  modeRow: { flexDirection: "row", backgroundColor: "#FFFFFF" },
+  tab: { flex: 1, paddingVertical: 10, paddingHorizontal: 7, alignItems: "center", borderBottomWidth: 4, borderColor: "transparent" },
   tabActive: { borderColor: purple },
-  tabText: { ...type.button, color: colors.ink },
+  tabText: { color: "#242424", fontSize: 17, letterSpacing: 0.3 },
   tabTextActive: { color: purple },
-  profile: {
-    backgroundColor: colors.paleGreen,
-    padding: 9,
-    flexDirection: "row",
-    alignItems: "center",
-    gap: 8,
-  },
+  profile: { backgroundColor: "#FFFFFF", padding: 9, flexDirection: "row", alignItems: "center", gap: 8 },
   profileText: { color: ink, fontSize: 11, flex: 1 },
   profileEdit: { color: purple, fontSize: 11, fontWeight: "900" },
-  searchWrap: {
-    height: 47,
-    borderColor: colors.line,
-    borderWidth: 1,
-    backgroundColor: colors.paper,
-    flexDirection: "row",
-    alignItems: "center",
-    paddingHorizontal: 12,
-    gap: 7,
-  },
+  searchWrap: { height: 47, borderColor: "#B9B9B9", borderWidth: 1, backgroundColor: "#FFFFFF", flexDirection: "row", alignItems: "center", paddingHorizontal: 12, gap: 7 },
   searchIcon: { color: purple, fontSize: 26, lineHeight: 31 },
   search: { flex: 1, fontSize: 14, color: ink, paddingVertical: 0 },
   categoryScroll: { marginHorizontal: -12 },
-  categoryTrack: {
-    paddingHorizontal: 12,
-    backgroundColor: colors.paper,
-    gap: 8,
-  },
-  categoryPill: {
-    minHeight: 50,
-    justifyContent: "center",
-    paddingHorizontal: 12,
-    borderBottomWidth: 4,
-    borderColor: "transparent",
-  },
+  categoryTrack: { paddingHorizontal: 12, backgroundColor: "#FFFFFF", gap: 8 },
+  categoryPill: { minHeight: 50, justifyContent: "center", paddingHorizontal: 12, borderBottomWidth: 4, borderColor: "transparent" },
   categoryPillActive: { borderColor: purple },
-  categoryText: { ...type.meta, color: colors.ink },
+  categoryText: { fontSize: 17, color: "#111111" },
   categoryTextActive: { color: purple },
   count: { color: muted, fontSize: 11 },
   group: { gap: 13 },
-  groupTitleRow: {
-    flexDirection: "row",
-    alignItems: "center",
-    justifyContent: "space-between",
-    paddingTop: 4,
-    paddingBottom: 2,
-  },
-  groupTitle: { ...type.section, color: colors.ink, flex: 1 },
+  groupTitleRow: { flexDirection: "row", alignItems: "center", justifyContent: "space-between", paddingTop: 4, paddingBottom: 2 },
+  groupTitle: { fontSize: 25, color: "#111111", flex: 1 },
   groupCount: { color: purple, fontWeight: "800", fontSize: 12 },
-  grid: {
-    flexDirection: "row",
-    flexWrap: "wrap",
-    gap: 8,
-    alignItems: "stretch",
-  },
+  grid: { flexDirection: "row", flexWrap: "wrap", gap: 8, alignItems: "stretch" },
   cell: { alignItems: "stretch" },
-  itemCard: {
-    flex: 1,
-    backgroundColor: colors.paper,
-    padding: 10,
-    gap: 9,
-    justifyContent: "space-between",
-  },
+  itemCard: { flex: 1, backgroundColor: "#FFFFFF", padding: 10, gap: 9, justifyContent: "space-between" },
   // Preserve the complete official item photo even for tall or wide products.
-  photo: {
-    aspectRatio: 1,
-    width: "100%",
-    backgroundColor: colors.paper,
-    alignItems: "center",
-    justifyContent: "center",
-    overflow: "hidden",
-    padding: 2,
-  },
+  photo: { aspectRatio: 1, width: "100%", backgroundColor: "#F7F7F7", alignItems: "center", justifyContent: "center", overflow: "hidden", padding: 2 },
   photoWide: { height: 250, width: "100%", padding: 10 },
   photoFill: { width: "100%", height: "100%" },
-  illustrationLabel: {
-    position: "absolute",
-    bottom: 3,
-    right: 6,
-    color: muted,
-    fontSize: 11,
-    backgroundColor: "#FFFFFFE8",
-    paddingHorizontal: 4,
-    borderRadius: 3,
-  },
-  photoMissing: {
-    alignItems: "center",
-    justifyContent: "center",
-    padding: 9,
-    gap: 3,
-  },
-  missingLabel: {
-    color: muted,
-    fontSize: 11,
-    fontWeight: "700",
-    textAlign: "center",
-  },
-  itemTitle: { ...type.card, color: colors.ink, marginTop: 9, minHeight: 48 },
-  fitRow: {
-    flexDirection: "row",
-    alignItems: "center",
-    gap: 5,
-    justifyContent: "space-between",
-  },
+  illustrationLabel: { position: "absolute", bottom: 3, right: 6, color: muted, fontSize: 11, backgroundColor: "#FFFFFFE8", paddingHorizontal: 4, borderRadius: 3 },
+  photoMissing: { alignItems: "center", justifyContent: "center", padding: 9, gap: 3 },
+  missingSymbol: { color: "#D2C3E2", fontSize: 28 },
+  missingLabel: { color: muted, fontSize: 11, fontWeight: "700", textAlign: "center" },
+  itemTitle: { fontSize: 18, lineHeight: 24, color: "#111111", marginTop: 9, minHeight: 48 },
+  fitRow: { flexDirection: "row", alignItems: "center", gap: 5, justifyContent: "space-between" },
   fit: { fontSize: 11, fontWeight: "800", color: muted, flex: 1 },
   fitMatch: { color: good },
-  fitConflict: { color: colors.red },
-  saveTarget: {
-    minWidth: 44,
-    minHeight: 44,
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  viewItem: {
-    backgroundColor: colors.orange,
-    minHeight: 44,
-    paddingHorizontal: 3,
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  viewItemText: { ...type.button, color: colors.paper, textAlign: "center" },
-  customize: {
-    backgroundColor: colors.paper,
-    borderWidth: 1.5,
-    borderColor: purple,
-    minHeight: 44,
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  customizeText: { ...type.button, color: purple },
-  warning: {
-    backgroundColor: colors.peach,
-    borderRadius: 10,
-    padding: 13,
-    gap: 4,
-  },
+  fitConflict: { color: "#B94339" },
+  saveTarget: { minWidth: 44, minHeight: 44, alignItems: "center", justifyContent: "center" },
+  heart: { color: purple, fontSize: 23 },
+  heartSaved: { color: "#AD2F69" },
+  viewItem: { backgroundColor: purple, minHeight: 44, paddingHorizontal: 3, alignItems: "center", justifyContent: "center" },
+  viewItemText: { color: "#FFFFFF", fontSize: 11, fontWeight: "900", textAlign: "center" },
+  customize: { backgroundColor: "#FFFFFF", borderWidth: 1.5, borderColor: purple, minHeight: 44, alignItems: "center", justifyContent: "center" },
+  customizeText: { color: purple, fontSize: 12, letterSpacing: 0.5, fontWeight: "900" },
+  warning: { backgroundColor: "#FFF2E7", borderRadius: 10, padding: 13, gap: 4 },
   warningTitle: { fontWeight: "800", color: ink, fontSize: 12 },
   note: { fontSize: 12, lineHeight: 18, color: muted },
   disclaimer: { color: muted, fontSize: 11, lineHeight: 18 },
-  sourceButton: {
-    borderRadius: 7,
-    borderWidth: 1,
-    borderColor: purple,
-    minHeight: 44,
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  sourceText: {
-    color: purple,
-    fontWeight: "800",
-    letterSpacing: 0.5,
-    fontSize: 11,
-  },
+  sourceButton: { borderRadius: 7, borderWidth: 1, borderColor: purple, minHeight: 44, alignItems: "center", justifyContent: "center" },
+  sourceText: { color: purple, fontWeight: "800", letterSpacing: 0.5, fontSize: 11 },
   modalShade: { flex: 1, backgroundColor: "#0009", justifyContent: "flex-end" },
-  modal: {
-    backgroundColor: colors.paper,
-    borderTopLeftRadius: 23,
-    borderTopRightRadius: 23,
-    maxHeight: "92%",
-    paddingTop: 12,
-  },
-  modalHeader: {
-    flexDirection: "row",
-    justifyContent: "space-between",
-    alignItems: "center",
-    paddingHorizontal: 18,
-    paddingBottom: 12,
-    borderBottomWidth: 1,
-    borderColor: border,
-  },
-  modalHeading: { ...type.card, color: ink },
-  close: {
-    padding: 7,
-    minWidth: 44,
-    minHeight: 44,
-    justifyContent: "center",
-    alignItems: "center",
-  },
+  modal: { backgroundColor: "#FFFFFF", borderTopLeftRadius: 23, borderTopRightRadius: 23, maxHeight: "92%", paddingTop: 12 },
+  modalHeader: { flexDirection: "row", justifyContent: "space-between", alignItems: "center", paddingHorizontal: 18, paddingBottom: 12, borderBottomWidth: 1, borderColor: border },
+  modalHeading: { fontSize: 17, color: ink, fontWeight: "900" },
+  close: { padding: 7, minWidth: 44, minHeight: 44, justifyContent: "center", alignItems: "center" },
   closeText: { fontSize: 19, color: ink },
   modalScroll: { padding: 19, gap: 14, paddingBottom: 45 },
-  modalName: { ...type.section, color: ink },
-  customHeading: {
-    color: purple,
-    fontSize: 11,
-    letterSpacing: 1,
-    fontWeight: "900",
-  },
-  ingredient: {
-    borderTopColor: border,
-    borderTopWidth: 1,
-    paddingTop: 11,
-    gap: 8,
-  },
+  modalName: { color: ink, fontSize: 21, fontWeight: "900" },
+  customHeading: { color: purple, fontSize: 11, letterSpacing: 1, fontWeight: "900" },
+  ingredient: { borderTopColor: border, borderTopWidth: 1, paddingTop: 11, gap: 8 },
   ingredientText: { fontSize: 13, fontWeight: "700", color: ink },
   choices: { flexDirection: "row", gap: 8 },
-  choice: {
-    flex: 1,
-    borderRadius: 8,
-    alignItems: "center",
-    justifyContent: "center",
-    borderWidth: 1,
-    borderColor: border,
-    minHeight: 44,
-    paddingVertical: 8,
-  },
+  choice: { flex: 1, borderRadius: 8, alignItems: "center", justifyContent: "center", borderWidth: 1, borderColor: border, minHeight: 44, paddingVertical: 8 },
   choiceSelected: { backgroundColor: pale, borderColor: purple },
   choiceText: { color: ink, fontWeight: "700", fontSize: 11 },
   choiceTextSelected: { color: purple },
-  primary: {
-    backgroundColor: colors.orange,
-    minHeight: 46,
-    borderRadius: 8,
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  primaryText: { ...type.button, color: "white" },
-  secondary: {
-    borderColor: purple,
-    borderWidth: 1,
-    minHeight: 46,
-    borderRadius: 8,
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  secondaryText: { ...type.button, color: purple },
+  primary: { backgroundColor: vivid, minHeight: 46, borderRadius: 8, alignItems: "center", justifyContent: "center" },
+  primaryText: { color: "white", fontWeight: "900", fontSize: 13 },
+  secondary: { borderColor: purple, borderWidth: 1, minHeight: 46, borderRadius: 8, alignItems: "center", justifyContent: "center" },
+  secondaryText: { color: purple, fontWeight: "800", fontSize: 13 },
 });

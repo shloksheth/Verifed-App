@@ -74,6 +74,16 @@ function AppContent() {
   const scroll = useRef(null);
   const path = stack[stack.length - 1];
   const route = parseRoute(path);
+  const restaurantOnScreen = route.page === "restaurant"
+    ? state.restaurants?.find((item) => item.id === route.id)
+    : null;
+  const restaurantSlug = restaurantOnScreen?.slug || "";
+  const chainMenu = restaurantSlug.startsWith("taco-bell-")
+    ? "taco-bell"
+    : restaurantSlug.startsWith("chipotle-") ? "chipotle" : null;
+  const inAccount = route.page === "auth" || !!state.passwordRecovery;
+  const darkAccount = "#17281F";
+  const chainAccent = chainMenu === "taco-bell" ? "#501098" : "#451400";
 
   const navigate = useCallback((next, { unwind = false } = {}) => {
     setSheet(null);
@@ -242,13 +252,35 @@ function AppContent() {
     <TypographyProvider fontsReady={homeFontsReady}>
       <SafeAreaView
         edges={["top", "bottom"]}
-        style={[s.root, showWelcome && { backgroundColor: colors.green }]}
+        style={[s.root, (showWelcome || inAccount) && { backgroundColor: darkAccount }, chainMenu && { backgroundColor: "#FFFFFF" }]}
       >
         <StatusBar
-          barStyle={showWelcome ? "light-content" : "dark-content"}
-          backgroundColor={showWelcome ? colors.green : colors.cream}
+          barStyle={showWelcome || inAccount ? "light-content" : "dark-content"}
+          backgroundColor={showWelcome || inAccount ? darkAccount : chainMenu ? "#FFFFFF" : colors.cream}
         />
-        {route.page === "home" && !showWelcome ? (
+        {chainMenu ? (
+          <View style={[s.header, { backgroundColor: "#FFFFFF", borderColor: "#E8E1DB", paddingVertical: 7 }]}>
+            <Pressable
+              accessibilityRole="button"
+              accessibilityLabel="Back to restaurants"
+              onPress={() => { if (!goBack()) navigate("explore"); }}
+              style={s.iconButton}
+            >
+              <Icon name="arrow-back" size={23} color={chainAccent} />
+            </Pressable>
+            <Text style={{ flex: 1, color: chainAccent, fontSize: 15, fontWeight: "600" }}>
+              {chainMenu === "taco-bell" ? "Taco Bell menu" : "Chipotle menu"}
+            </Text>
+            <Pressable
+              accessibilityRole="button"
+              accessibilityLabel="Open saved dishes"
+              onPress={() => navigate("favorites")}
+              style={s.iconButton}
+            >
+              <Icon name="heart-outline" color={chainAccent} size={22} />
+            </Pressable>
+          </View>
+        ) : !inAccount && (
           <HomeHeader
             fontsReady={homeFontsReady}
             navigate={navigate}
@@ -286,7 +318,7 @@ function AppContent() {
                 }}
               >
                 <Text style={s.brand} numberOfLines={1}>
-                  verifed<Text style={s.brandDot}>.</Text>
+                  verifed
                 </Text>
               </Pressable>
               <View style={s.headerRight}>
@@ -321,7 +353,7 @@ function AppContent() {
               </View>
             </View>
           )
-        )}
+        )        )}
         {!state.ready ? (
           <View
             style={[s.flex, s.empty, { justifyContent: "center", padding: 22 }]}
@@ -351,6 +383,8 @@ function AppContent() {
                 keyboardShouldPersistTaps="handled"
                 contentContainerStyle={[
                   s.scroll,
+                  chainMenu && { paddingHorizontal: 18, paddingTop: 0, backgroundColor: "#FFFFFF" },
+                  inAccount && { paddingHorizontal: 18, paddingTop: 16, backgroundColor: darkAccount },
                   showWelcome && {
                     flexGrow: 1,
                     padding: 0,

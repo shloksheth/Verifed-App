@@ -29,7 +29,7 @@ export function HomeHeader({ navigate, onInfo, onProfile }) {
           accessibilityLabel="Verifed carrot checkmark"
         />
         <Text style={h.wordmark}>
-          verifed<Text style={{ color: colors.orange }}>.</Text>
+          verifed
         </Text>
       </Pressable>
       <View style={h.headerActions}>
@@ -321,7 +321,8 @@ const h = StyleSheet.create({
   },
   brandMark: { width: 27, height: 35, resizeMode: "contain" },
   wordmark: {
-    fontFamily: "HomeStrong",
+    fontFamily: "HomeBody",
+    fontWeight: "400",
     fontSize: 25,
     lineHeight: 34,
     letterSpacing: -1.1,

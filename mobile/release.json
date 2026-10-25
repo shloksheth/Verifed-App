@@ -1,11 +1,11 @@
 {
-  "number": 27,
-  "name": "Verifed V27",
-  "description": "Introduces the approved Home-first floating pill with four tabs and a separate expandable quick-actions button. Adds animated selection and plus rotation, reduced-motion support, keyboard-aware tab visibility, profile access from the header, and page-specific contextual navigation with a working back control.",
+  "number": 28,
+  "name": "Verifed V28",
+  "description": "Restores Taco Bell's V25 purple/white menu system and Chipotle's V25 brown/red/white menu styling, typography and uppercase hierarchy without reverting updated menu logic. Returns the dark-green, yellow-card, white-action welcome design from V25; gives authentication its own dark-green composition. Removes the orange period and heavy font weight from the Verifed wordmark throughout the main shell.",
   "verification": [
-    "Navigation-model tests cover Home-first tab order, contextual routing and destinations, plus actions and reduced-motion intent.",
-    "Existing App stack/back behavior retained for restaurant, dish, favorites, meal and profile pages; primary tabs replace the history stack.",
-    "V26.1 Chipotle welcome photo fit is retained.",
-    "Expo Snack publication and iOS/Android/web export depend on subsequent GitHub Actions verification."
+    "Restored brand-specific style definitions from V25 and kept V27 live menu operations, photo assets, saved selections, and accessibility controls.",
+    "Welcome retains V26.1 Chipotle image containment and enlarged account/guest text, while restoring V25 green/yellow/white palette.",
+    "Checks for chain-specific headings, welcome/auth isolation, unbold wordmarks and distinct color tokens included in regression suite.",
+    "iOS/Android/web exports and Expo Snack publish to be run by GitHub Actions; physical-device review not asserted."
   ]
 }

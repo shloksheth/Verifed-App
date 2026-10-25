@@ -1,6 +1,6 @@
 import { Text } from "./Typography";
 import React, { useState } from "react";
-import { Pressable, Share, View } from "react-native";
+import { Image, Pressable, Share, StyleSheet, View } from "react-native";
 import { api } from "../src/api";
 import { validateLogin, validateSignup } from "../src/account-auth";
 import {
@@ -79,26 +79,51 @@ export function Auth({
     recover: "Choose a new password",
   };
   return (
-    <>
-      <Title eyebrow="Account" title={labels[mode]}>
+    <View style={authStyles.page}>
+      <Pressable
+        accessibilityRole="button"
+        accessibilityLabel="Back to Verifed"
+        onPress={() => navigate("home")}
+        style={authStyles.back}
+      >
+        <Icon name="arrow-back" size={19} color="#CCD9CF" />
+        <Text style={authStyles.backText}>Back</Text>
+      </Pressable>
+      <View style={authStyles.wordmarkRow}>
+        <Image source={require("../assets/verifed-mark.png")} style={authStyles.brandMark} />
+        <Text style={authStyles.brandText}>verifed</Text>
+      </View>
+      <Text style={authStyles.eyebrow}>YOUR ACCOUNT</Text>
+      <Text accessibilityRole="header" style={authStyles.headline}>{labels[mode]}</Text>
+      <Text style={authStyles.intro}>
         {{
           signin: "Access your saved items, dietary profile, and meal notes.",
           signup: "Save your dietary profile, menu items, and meal notes to an account.",
           reset: "Enter your account email to request a reset link.",
           recover: "Use at least 8 characters.",
         }[mode]}
-      </Title>
+      </Text>
       {["signin", "signup"].includes(mode) && (
-        <Tabs
-          options={[
+        <View style={authStyles.switcher}>
+          {[
             { value: "signin", label: "Sign in" },
             { value: "signup", label: "Create account" },
-          ]}
-          value={mode}
-          onChange={changeMode}
-        />
+          ].map((item) => (
+            <Pressable
+              key={item.value}
+              accessibilityRole="tab"
+              accessibilityState={{ selected: mode === item.value }}
+              onPress={() => changeMode(item.value)}
+              style={[authStyles.switchButton, mode === item.value && authStyles.switchActive]}
+            >
+              <Text style={[authStyles.switchText, mode === item.value && authStyles.switchTextActive]}>
+                {item.label}
+              </Text>
+            </Pressable>
+          ))}
+        </View>
       )}
-      <View style={s.card}>
+      <View style={authStyles.form}>
         {mode === "signup" && (
           <>
             <Text style={s.small}>
@@ -172,7 +197,7 @@ export function Auth({
         )}
         <ErrorText error={task.error} />
         {!!notice && <Notice>{notice}</Notice>}
-        <Button busy={task.busy} onPress={submit}>
+        <Button busy={task.busy} onPress={submit} style={authStyles.submit}>
           {
             {
               signin: "Sign in",
@@ -189,13 +214,15 @@ export function Auth({
         )}
       </View>
       {mode !== "recover" && (
-        <>
-          <Button variant="quiet" onPress={() => navigate("home")}>
-            Continue without an account
-          </Button>
-        </>
+        <Pressable
+          accessibilityRole="button"
+          onPress={() => navigate("home")}
+          style={authStyles.skip}
+        >
+          <Text style={authStyles.skipText}>Continue without an account</Text>
+        </Pressable>
       )}
-    </>
+    </View>
   );
 }
 
@@ -659,3 +686,27 @@ export function Help({ navigate }) {
     </>
   );
 }
+
+
+// The account flow has its own dark-green editorial surface rather than the
+// universal peach/cream app shell.
+const authStyles = StyleSheet.create({
+  page: { backgroundColor: "#17281F", paddingBottom: 24, gap: 15 },
+  back: { flexDirection: "row", alignItems: "center", minHeight: 44, gap: 7, alignSelf: "flex-start" },
+  backText: { color: "#CCD9CF", fontSize: 14 },
+  wordmarkRow: { flexDirection: "row", alignItems: "center", gap: 8, marginTop: 10 },
+  brandMark: { width: 24, height: 29, resizeMode: "contain" },
+  brandText: { color: "#FFFFFF", fontSize: 24, fontWeight: "400", letterSpacing: -0.7 },
+  eyebrow: { color: "#C3E6AE", fontSize: 11, letterSpacing: 1.5, fontWeight: "600", marginTop: 12 },
+  headline: { color: "#FFFFFF", fontFamily: "HomeHeadingStrong", fontSize: 37, lineHeight: 42, letterSpacing: -0.8 },
+  intro: { color: "#CAD9CD", fontSize: 15, lineHeight: 23 },
+  switcher: { flexDirection: "row", borderRadius: 25, padding: 4, backgroundColor: "#243D30", gap: 5 },
+  switchButton: { flex: 1, minHeight: 44, borderRadius: 22, alignItems: "center", justifyContent: "center", paddingHorizontal: 7 },
+  switchActive: { backgroundColor: "#FFFFFF" },
+  switchText: { fontSize: 14, fontWeight: "600", color: "#CAD9CD" },
+  switchTextActive: { color: "#17281F" },
+  form: { backgroundColor: "#FFFFFF", borderRadius: 23, padding: 18, gap: 13 },
+  submit: { backgroundColor: "#17281F", borderColor: "#17281F" },
+  skip: { minHeight: 48, justifyContent: "center", alignItems: "center", paddingHorizontal: 10 },
+  skipText: { color: "#C3E6AE", fontSize: 15, fontWeight: "500", textAlign: "center" },
+});
