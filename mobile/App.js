@@ -265,11 +265,11 @@ function AppContent() {
     <TypographyProvider fontsReady={homeFontsReady}>
       <SafeAreaView
         edges={["top", "bottom"]}
-        style={[s.root, route.page === "scan" && { backgroundColor: "#EDE1CE" }, showWelcome && { backgroundColor: "#17281F" }]}
+        style={[s.root, showWelcome && { backgroundColor: colors.green }]}
       >
         <StatusBar
           barStyle={showWelcome ? "light-content" : "dark-content"}
-          backgroundColor={showWelcome ? "#17281F" : route.page === "scan" ? "#EDE1CE" : colors.cream}
+          backgroundColor={showWelcome ? colors.green : colors.cream}
         />
         {route.page === "home" && !showWelcome ? (
           <HomeHeader
@@ -279,7 +279,7 @@ function AppContent() {
           />
         ) : (
           !showWelcome && (
-            <View style={[s.header, route.page === "scan" && { backgroundColor: "#EDE1CE" }]}>
+            <View style={s.header}>
               {stack.length > 1 ? (
                 <Pressable
                   accessibilityRole="button"
@@ -300,7 +300,12 @@ function AppContent() {
                 accessibilityRole="button"
                 accessibilityLabel="Verifed home"
                 onPress={() => navigate("home")}
-                style={{ flexShrink: 1, minWidth: 0, minHeight: 44, justifyContent: "center" }}
+                style={{
+                  flexShrink: 1,
+                  minWidth: 0,
+                  minHeight: 44,
+                  justifyContent: "center",
+                }}
               >
                 <Text style={s.brand} numberOfLines={1}>
                   verifed<Text style={s.brandDot}>.</Text>

@@ -1,12 +1,12 @@
 {
-  "version": 25.5,
-  "name": "Verifed V25.5",
-  "id": "aluB7JlrMIqH18TAab0XT",
-  "url": "exp://u.expo.dev/933fd9c0-1666-11e7-afca-d980795c5824?runtime-version=exposdk%3A54.0.0&channel-name=production&snack=aluB7JlrMIqH18TAab0XT",
-  "hashId": "aluB7JlrMIqH18TAab0XT",
-  "snackId": "34643752-d56d-491f-ae7e-063afc5dc4d5",
-  "editorUrl": "https://snack.expo.dev/aluB7JlrMIqH18TAab0XT",
-  "publishedAt": "2026-10-25T19:24:19.054Z",
+  "version": 26,
+  "name": "Verifed V26",
+  "id": "UZZA1uCI6zRnGqeO20bfY",
+  "url": "exp://u.expo.dev/933fd9c0-1666-11e7-afca-d980795c5824?runtime-version=exposdk%3A54.0.0&channel-name=production&snack=UZZA1uCI6zRnGqeO20bfY",
+  "hashId": "UZZA1uCI6zRnGqeO20bfY",
+  "snackId": "28154a61-4d2b-42ae-9a55-08f454e1c064",
+  "editorUrl": "https://snack.expo.dev/UZZA1uCI6zRnGqeO20bfY",
+  "publishedAt": "2026-10-25T19:38:53.271Z",
   "sdkVersion": "54.0.0",
   "files": [
     "App.js",
@@ -841,5 +841,5 @@
     "fonts": 14,
     "allSourceHashesMatch": true
   },
-  "sourceHash": "85c131f41dc50365b43c1dc35b6ea7aecb2235b95e38d9b6b6c4748d2435e3d5"
+  "sourceHash": "9ad077d3fffaefcf05bf4097299a3a550fcceda62d62f4845e4350e6ce788a43"
 }

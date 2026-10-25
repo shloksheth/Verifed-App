@@ -10,6 +10,7 @@ import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { Text } from "./Typography";
 import { Image } from "./MenuImage";
 import { colors, s } from "../styles";
+import { type } from "../src/design-tokens";
 import { Button, Icon, Sheet } from "./UI";
 
 // Reuse individually sourced local photos; these captions identify the food,
@@ -98,9 +99,14 @@ export default function Welcome({ onSignIn, onCreateAccount, onContinue }) {
               <View
                 key={dish.name}
                 accessibilityElementsHidden={active !== index}
-                importantForAccessibility={active === index ? "auto" : "no-hide-descendants"}
+                importantForAccessibility={
+                  active === index ? "auto" : "no-hide-descendants"
+                }
                 aria-hidden={active !== index}
-                style={[w.slide, { width, height: cardHeight, backgroundColor: dish.color }]}
+                style={[
+                  w.slide,
+                  { width, height: cardHeight, backgroundColor: dish.color },
+                ]}
               >
                 <View style={w.brandRow}>
                   <View style={w.brand}>
@@ -138,7 +144,11 @@ export default function Welcome({ onSignIn, onCreateAccount, onContinue }) {
                       onPress={() => select((index + 1) % dishes.length)}
                       style={w.next}
                     >
-                      <Icon name="arrow-forward" size={22} color="#FFFFFF" />
+                      <Icon
+                        name="arrow-forward"
+                        size={22}
+                        color={colors.paper}
+                      />
                     </Pressable>
                   </View>
                 </View>
@@ -167,7 +177,7 @@ export default function Welcome({ onSignIn, onCreateAccount, onContinue }) {
         style={({ pressed }) => [w.primary, pressed && w.pressed]}
       >
         <Text style={w.primaryText}>Get started</Text>
-        <Icon name="arrow-forward" color="#17281F" size={20} />
+        <Icon name="arrow-forward" color={colors.paper} size={20} />
       </Pressable>
       <Pressable
         accessibilityRole="button"
@@ -184,7 +194,7 @@ export default function Welcome({ onSignIn, onCreateAccount, onContinue }) {
         onPress={onContinue}
         style={w.guestAction}
       >
-        <Text style={w.guestText}>Explore as guest</Text>
+        <Text style={w.guestText}>Explore as a guest</Text>
       </Pressable>
     </View>
   );
@@ -239,23 +249,23 @@ const w = StyleSheet.create({
   brand: { flexDirection: "row", alignItems: "center", gap: 5 },
   mark: { width: 22, height: 28 },
   wordmark: {
-    color: "#17281F",
+    color: colors.ink,
     fontSize: 23,
     fontWeight: "700",
     letterSpacing: -0.8,
   },
   badge: {
-    color: "#17281F",
+    color: colors.ink,
     fontSize: 11,
     fontWeight: "500",
     borderWidth: 1,
-    borderColor: "#17281F",
+    borderColor: colors.ink,
     borderRadius: 20,
     paddingHorizontal: 9,
     paddingVertical: 6,
   },
   title: {
-    color: "#17281F",
+    color: colors.ink,
     fontFamily: "HomeHeadingStrong",
     fontSize: 46,
     lineHeight: 46,
@@ -267,7 +277,7 @@ const w = StyleSheet.create({
     minHeight: 130,
     borderRadius: 20,
     overflow: "hidden",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: colors.paper,
   },
   photo: { ...StyleSheet.absoluteFillObject, width: "100%", height: "100%" },
   photoLabel: {
@@ -275,7 +285,7 @@ const w = StyleSheet.create({
     left: 8,
     right: 8,
     bottom: 8,
-    backgroundColor: "#17281F",
+    backgroundColor: colors.green,
     borderRadius: 24,
     paddingLeft: 15,
     paddingRight: 5,
@@ -286,12 +296,12 @@ const w = StyleSheet.create({
   },
   caption: { flex: 1, paddingVertical: 4 },
   dishName: {
-    color: "#FFFFFF",
+    color: colors.paper,
     fontSize: 14,
     fontWeight: "600",
     lineHeight: 18,
   },
-  restaurant: { color: "#CCD9CF", fontSize: 11, lineHeight: 16 },
+  restaurant: { color: colors.paleGreen, fontSize: 11, lineHeight: 16 },
   next: {
     width: 44,
     height: 44,
@@ -314,10 +324,10 @@ const w = StyleSheet.create({
     justifyContent: "center",
   },
   dot: { height: 5, width: 16, borderRadius: 3, backgroundColor: "#73867A" },
-  activeDot: { width: 28, backgroundColor: "#C3E6AE" },
+  activeDot: { width: 28, backgroundColor: colors.paleGreen },
   primary: {
     minHeight: 52,
-    backgroundColor: "#FFFFFF",
+    backgroundColor: colors.orange,
     borderRadius: 28,
     flexDirection: "row",
     gap: 12,
@@ -326,15 +336,30 @@ const w = StyleSheet.create({
     paddingHorizontal: 20,
     paddingVertical: 12,
   },
-  primaryText: { color: "#17281F", fontSize: 16, fontWeight: "600" },
+  primaryText: { ...type.button, color: colors.paper, fontSize: 16 },
   pressed: { opacity: 0.8 },
   textAction: { minHeight: 44, alignItems: "center", justifyContent: "center" },
-  secondaryText: { color: "#BACABD", fontSize: 13 },
-  signIn: { color: "#FFFFFF", fontWeight: "600" },
+  secondaryText: {
+    ...type.body,
+    color: colors.paleGreen,
+    fontSize: 16,
+    lineHeight: 24,
+  },
+  signIn: {
+    color: colors.paper,
+    fontSize: 17,
+    lineHeight: 24,
+    fontWeight: "600",
+  },
   guestAction: {
     minHeight: 44,
     alignItems: "center",
     justifyContent: "center",
   },
-  guestText: { color: "#C3E6AE", fontSize: 13, fontWeight: "500" },
+  guestText: {
+    ...type.button,
+    color: colors.paper,
+    fontSize: 17,
+    lineHeight: 24,
+  },
 });

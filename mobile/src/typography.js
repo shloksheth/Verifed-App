@@ -13,6 +13,7 @@ export function textFont(style = {}, { heading = false, input = false } = {}) {
       ? "HomeHeadingStrong"
       : "HomeHeading";
   if (requested === "HomeStrong" || strong) return "HomeStrong";
+  if (Number(style.fontWeight) >= 600) return "HomeHeading";
   if (requested === "HomeMedium" || Number(style.fontWeight) >= 500)
     return "HomeMedium";
   return "HomeBody";

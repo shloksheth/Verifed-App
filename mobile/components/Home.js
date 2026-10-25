@@ -1,3 +1,4 @@
+import { type } from "../src/design-tokens";
 import React, { useState } from "react";
 import {
   Image as NativeImage,
@@ -346,14 +347,7 @@ const h = StyleSheet.create({
     fontWeight: "700",
     lineHeight: 22,
   },
-  headline: {
-    color: colors.ink,
-    fontFamily: "HomeHeadingStrong",
-    fontSize: 36,
-    lineHeight: 40,
-    letterSpacing: -0.8,
-    maxWidth: 390,
-  },
+  headline: { ...type.page, color: colors.ink, maxWidth: 390 },
   search: {
     backgroundColor: colors.paper,
     borderRadius: 28,
@@ -389,7 +383,7 @@ const h = StyleSheet.create({
     width: 62,
     height: 62,
     borderRadius: 22,
-    backgroundColor: colors.paper,
+    backgroundColor: colors.peach,
     alignItems: "center",
     justifyContent: "center",
   },
@@ -406,13 +400,7 @@ const h = StyleSheet.create({
     justifyContent: "space-between",
     gap: 12,
   },
-  sectionTitle: {
-    fontFamily: "HomeHeadingStrong",
-    color: colors.ink,
-    fontSize: 25,
-    lineHeight: 32,
-    flexShrink: 1,
-  },
+  sectionTitle: { ...type.section, color: colors.ink, flexShrink: 1 },
   textButton: {
     minHeight: 44,
     flexDirection: "row",
@@ -452,26 +440,19 @@ const h = StyleSheet.create({
     justifyContent: "center",
   },
   caption: { gap: 3 },
-  restaurantName: {
-    color: colors.ink,
-    fontSize: 18,
-    fontWeight: "700",
-    lineHeight: 24,
-  },
-  meta: { color: colors.muted, fontSize: 13, lineHeight: 20 },
+  restaurantName: { ...type.card, color: colors.ink },
+  meta: { ...type.meta, color: colors.muted },
   needs: {
+    backgroundColor: colors.paleGreen,
+    paddingHorizontal: 16,
+    borderRadius: 18,
     paddingVertical: 18,
     borderTopWidth: 1,
     borderBottomWidth: 1,
     borderColor: colors.line,
     gap: 10,
   },
-  needsTitle: {
-    color: colors.ink,
-    fontSize: 16,
-    fontWeight: "700",
-    lineHeight: 23,
-  },
+  needsTitle: { ...type.card, color: colors.ink },
   needsRail: { gap: 8 },
   needChip: {
     flexDirection: "row",
@@ -492,14 +473,8 @@ const h = StyleSheet.create({
     alignItems: "center",
     gap: 12,
   },
-  scanTitle: {
-    color: colors.ink,
-    fontFamily: "HomeHeadingStrong",
-    fontSize: 26,
-    lineHeight: 30,
-    letterSpacing: -0.4,
-  },
-  scanDescription: { color: colors.ink, fontSize: 14, lineHeight: 21 },
+  scanTitle: { ...type.section, color: colors.ink },
+  scanDescription: { ...type.body, color: colors.ink },
   scanAction: {
     flexDirection: "row",
     alignItems: "center",

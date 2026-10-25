@@ -1,530 +1,114 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-25T18:54:26.829419+00:00",
+  "generatedAt": "2026-10-25T19:37:54.957667+00:00",
   "title": "Design System: Verifed",
   "extensions": {
     "colorMeta": {
-      "app-cream": {
+      "cream": {
         "role": "neutral",
-        "displayName": "Shared warm canvas",
-        "tonalRamp": [
-          "oklch(15.00% 0.00412 91.45)",
-          "oklch(26.43% 0.00412 91.45)",
-          "oklch(37.86% 0.00412 91.45)",
-          "oklch(49.29% 0.00412 91.45)",
-          "oklch(60.71% 0.00412 91.45)",
-          "oklch(72.14% 0.00412 91.45)",
-          "oklch(83.57% 0.00412 91.45)",
-          "oklch(95.00% 0.00412 91.45)"
-        ]
+        "displayName": "cream",
+        "value": "#FFF0E2"
       },
-      "app-paper": {
+      "paper": {
         "role": "neutral",
-        "displayName": "Shared white working surface",
-        "tonalRamp": [
-          "oklch(15.00% 0.00000 0.00)",
-          "oklch(26.43% 0.00000 0.00)",
-          "oklch(37.86% 0.00000 0.00)",
-          "oklch(49.29% 0.00000 0.00)",
-          "oklch(60.71% 0.00000 0.00)",
-          "oklch(72.14% 0.00000 0.00)",
-          "oklch(83.57% 0.00000 0.00)",
-          "oklch(95.00% 0.00000 0.00)"
-        ]
+        "displayName": "paper",
+        "value": "#FFF9F2"
       },
-      "app-ink": {
+      "ink": {
         "role": "neutral",
-        "displayName": "Shared charcoal",
-        "tonalRamp": [
-          "oklch(15.00% 0.00749 118.35)",
-          "oklch(26.43% 0.00749 118.35)",
-          "oklch(37.86% 0.00749 118.35)",
-          "oklch(49.29% 0.00749 118.35)",
-          "oklch(60.71% 0.00749 118.35)",
-          "oklch(72.14% 0.00749 118.35)",
-          "oklch(83.57% 0.00749 118.35)",
-          "oklch(95.00% 0.00749 118.35)"
-        ]
+        "displayName": "ink",
+        "value": "#292E25"
       },
-      "app-muted": {
+      "muted": {
         "role": "neutral",
-        "displayName": "Shared muted text",
-        "tonalRamp": [
-          "oklch(15.00% 0.00930 106.73)",
-          "oklch(26.43% 0.00930 106.73)",
-          "oklch(37.86% 0.00930 106.73)",
-          "oklch(49.29% 0.00930 106.73)",
-          "oklch(60.71% 0.00930 106.73)",
-          "oklch(72.14% 0.00930 106.73)",
-          "oklch(83.57% 0.00930 106.73)",
-          "oklch(95.00% 0.00930 106.73)"
-        ]
+        "displayName": "muted",
+        "value": "#5E6759"
       },
-      "app-orange": {
+      "orange": {
         "role": "primary",
-        "displayName": "Shared coral action",
-        "tonalRamp": [
-          "oklch(15.00% 0.17190 35.37)",
-          "oklch(26.43% 0.17190 35.37)",
-          "oklch(37.86% 0.17190 35.37)",
-          "oklch(49.29% 0.17190 35.37)",
-          "oklch(60.71% 0.17190 35.37)",
-          "oklch(72.14% 0.17190 35.37)",
-          "oklch(83.57% 0.17190 35.37)",
-          "oklch(95.00% 0.17190 35.37)"
-        ]
+        "displayName": "orange",
+        "value": "#BD4220"
       },
-      "app-orange-dark": {
-        "role": "primary",
-        "displayName": "Shared dark action/link",
-        "tonalRamp": [
-          "oklch(15.00% 0.15886 34.39)",
-          "oklch(26.43% 0.15886 34.39)",
-          "oklch(37.86% 0.15886 34.39)",
-          "oklch(49.29% 0.15886 34.39)",
-          "oklch(60.71% 0.15886 34.39)",
-          "oklch(72.14% 0.15886 34.39)",
-          "oklch(83.57% 0.15886 34.39)",
-          "oklch(95.00% 0.15886 34.39)"
-        ]
-      },
-      "app-coral": {
-        "role": "primary",
-        "displayName": "Shared bright coral accent",
-        "tonalRamp": [
-          "oklch(15.00% 0.17236 33.33)",
-          "oklch(26.43% 0.17236 33.33)",
-          "oklch(37.86% 0.17236 33.33)",
-          "oklch(49.29% 0.17236 33.33)",
-          "oklch(60.71% 0.17236 33.33)",
-          "oklch(72.14% 0.17236 33.33)",
-          "oklch(83.57% 0.17236 33.33)",
-          "oklch(95.00% 0.17236 33.33)"
-        ]
-      },
-      "app-peach": {
+      "orangeDark": {
         "role": "neutral",
-        "displayName": "Shared peach surface",
-        "tonalRamp": [
-          "oklch(15.00% 0.01983 45.26)",
-          "oklch(26.43% 0.01983 45.26)",
-          "oklch(37.86% 0.01983 45.26)",
-          "oklch(49.29% 0.01983 45.26)",
-          "oklch(60.71% 0.01983 45.26)",
-          "oklch(72.14% 0.01983 45.26)",
-          "oklch(83.57% 0.01983 45.26)",
-          "oklch(95.00% 0.01983 45.26)"
-        ]
+        "displayName": "orangeDark",
+        "value": "#AD371B"
       },
-      "app-line": {
+      "coral": {
         "role": "neutral",
-        "displayName": "Shared divider",
-        "tonalRamp": [
-          "oklch(15.00% 0.00870 84.57)",
-          "oklch(26.43% 0.00870 84.57)",
-          "oklch(37.86% 0.00870 84.57)",
-          "oklch(49.29% 0.00870 84.57)",
-          "oklch(60.71% 0.00870 84.57)",
-          "oklch(72.14% 0.00870 84.57)",
-          "oklch(83.57% 0.00870 84.57)",
-          "oklch(95.00% 0.00870 84.57)"
-        ]
+        "displayName": "coral",
+        "value": "#F26B4F"
       },
-      "app-green": {
+      "peach": {
+        "role": "neutral",
+        "displayName": "peach",
+        "value": "#F6D9C4"
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "line",
+        "value": "#E3CAB5"
+      },
+      "green": {
         "role": "secondary",
-        "displayName": "Shared selection green",
-        "tonalRamp": [
-          "oklch(15.00% 0.09090 156.81)",
-          "oklch(26.43% 0.09090 156.81)",
-          "oklch(37.86% 0.09090 156.81)",
-          "oklch(49.29% 0.09090 156.81)",
-          "oklch(60.71% 0.09090 156.81)",
-          "oklch(72.14% 0.09090 156.81)",
-          "oklch(83.57% 0.09090 156.81)",
-          "oklch(95.00% 0.09090 156.81)"
-        ]
+        "displayName": "green",
+        "value": "#216642"
       },
-      "app-pale-green": {
-        "role": "secondary",
-        "displayName": "Shared selection surface",
-        "tonalRamp": [
-          "oklch(15.00% 0.01085 149.86)",
-          "oklch(26.43% 0.01085 149.86)",
-          "oklch(37.86% 0.01085 149.86)",
-          "oklch(49.29% 0.01085 149.86)",
-          "oklch(60.71% 0.01085 149.86)",
-          "oklch(72.14% 0.01085 149.86)",
-          "oklch(83.57% 0.01085 149.86)",
-          "oklch(95.00% 0.01085 149.86)"
-        ]
-      },
-      "app-red": {
-        "role": "secondary",
-        "displayName": "Shared error red",
-        "tonalRamp": [
-          "oklch(15.00% 0.16243 27.10)",
-          "oklch(26.43% 0.16243 27.10)",
-          "oklch(37.86% 0.16243 27.10)",
-          "oklch(49.29% 0.16243 27.10)",
-          "oklch(60.71% 0.16243 27.10)",
-          "oklch(72.14% 0.16243 27.10)",
-          "oklch(83.57% 0.16243 27.10)",
-          "oklch(95.00% 0.16243 27.10)"
-        ]
-      },
-      "app-pale-red": {
-        "role": "secondary",
-        "displayName": "Shared error surface",
-        "tonalRamp": [
-          "oklch(15.00% 0.01764 26.09)",
-          "oklch(26.43% 0.01764 26.09)",
-          "oklch(37.86% 0.01764 26.09)",
-          "oklch(49.29% 0.01764 26.09)",
-          "oklch(60.71% 0.01764 26.09)",
-          "oklch(72.14% 0.01764 26.09)",
-          "oklch(83.57% 0.01764 26.09)",
-          "oklch(95.00% 0.01764 26.09)"
-        ]
-      },
-      "scan-ground": {
+      "paleGreen": {
         "role": "neutral",
-        "displayName": "Scan parchment ground",
-        "tonalRamp": [
-          "oklch(15.00% 0.02854 79.47)",
-          "oklch(26.43% 0.02854 79.47)",
-          "oklch(37.86% 0.02854 79.47)",
-          "oklch(49.29% 0.02854 79.47)",
-          "oklch(60.71% 0.02854 79.47)",
-          "oklch(72.14% 0.02854 79.47)",
-          "oklch(83.57% 0.02854 79.47)",
-          "oklch(95.00% 0.02854 79.47)"
-        ]
+        "displayName": "paleGreen",
+        "value": "#DCEBD8"
       },
-      "scan-brown": {
-        "role": "primary",
-        "displayName": "Scan deep brown",
-        "tonalRamp": [
-          "oklch(15.00% 0.03932 59.49)",
-          "oklch(26.43% 0.03932 59.49)",
-          "oklch(37.86% 0.03932 59.49)",
-          "oklch(49.29% 0.03932 59.49)",
-          "oklch(60.71% 0.03932 59.49)",
-          "oklch(72.14% 0.03932 59.49)",
-          "oklch(83.57% 0.03932 59.49)",
-          "oklch(95.00% 0.03932 59.49)"
-        ]
-      },
-      "scan-cream": {
+      "red": {
         "role": "neutral",
-        "displayName": "Scan cream paper",
-        "tonalRamp": [
-          "oklch(15.00% 0.01869 83.06)",
-          "oklch(26.43% 0.01869 83.06)",
-          "oklch(37.86% 0.01869 83.06)",
-          "oklch(49.29% 0.01869 83.06)",
-          "oklch(60.71% 0.01869 83.06)",
-          "oklch(72.14% 0.01869 83.06)",
-          "oklch(83.57% 0.01869 83.06)",
-          "oklch(95.00% 0.01869 83.06)"
-        ]
+        "displayName": "red",
+        "value": "#AD302B"
       },
-      "scan-gold": {
-        "role": "primary",
-        "displayName": "Scan camera gold",
-        "tonalRamp": [
-          "oklch(15.00% 0.10279 80.97)",
-          "oklch(26.43% 0.10279 80.97)",
-          "oklch(37.86% 0.10279 80.97)",
-          "oklch(49.29% 0.10279 80.97)",
-          "oklch(60.71% 0.10279 80.97)",
-          "oklch(72.14% 0.10279 80.97)",
-          "oklch(83.57% 0.10279 80.97)",
-          "oklch(95.00% 0.10279 80.97)"
-        ]
-      },
-      "scan-muted": {
+      "paleRed": {
         "role": "neutral",
-        "displayName": "Scan muted brown",
-        "tonalRamp": [
-          "oklch(15.00% 0.04021 69.49)",
-          "oklch(26.43% 0.04021 69.49)",
-          "oklch(37.86% 0.04021 69.49)",
-          "oklch(49.29% 0.04021 69.49)",
-          "oklch(60.71% 0.04021 69.49)",
-          "oklch(72.14% 0.04021 69.49)",
-          "oklch(83.57% 0.04021 69.49)",
-          "oklch(95.00% 0.04021 69.49)"
-        ]
+        "displayName": "paleRed",
+        "value": "#FCECEA"
       },
-      "scan-line": {
+      "surface": {
         "role": "neutral",
-        "displayName": "Scan paper divider",
-        "tonalRamp": [
-          "oklch(15.00% 0.04397 79.75)",
-          "oklch(26.43% 0.04397 79.75)",
-          "oklch(37.86% 0.04397 79.75)",
-          "oklch(49.29% 0.04397 79.75)",
-          "oklch(60.71% 0.04397 79.75)",
-          "oklch(72.14% 0.04397 79.75)",
-          "oklch(83.57% 0.04397 79.75)",
-          "oklch(95.00% 0.04397 79.75)"
-        ]
+        "displayName": "surface",
+        "value": "#FAE6D5"
       },
-      "scan-burgundy": {
-        "role": "secondary",
-        "displayName": "Scan burgundy identity/review",
-        "tonalRamp": [
-          "oklch(15.00% 0.09767 20.85)",
-          "oklch(26.43% 0.09767 20.85)",
-          "oklch(37.86% 0.09767 20.85)",
-          "oklch(49.29% 0.09767 20.85)",
-          "oklch(60.71% 0.09767 20.85)",
-          "oklch(72.14% 0.09767 20.85)",
-          "oklch(83.57% 0.09767 20.85)",
-          "oklch(95.00% 0.09767 20.85)"
-        ]
-      },
-      "scan-diet-panel": {
-        "role": "secondary",
-        "displayName": "Scan dietary green surface",
-        "tonalRamp": [
-          "oklch(15.00% 0.03293 120.30)",
-          "oklch(26.43% 0.03293 120.30)",
-          "oklch(37.86% 0.03293 120.30)",
-          "oklch(49.29% 0.03293 120.30)",
-          "oklch(60.71% 0.03293 120.30)",
-          "oklch(72.14% 0.03293 120.30)",
-          "oklch(83.57% 0.03293 120.30)",
-          "oklch(95.00% 0.03293 120.30)"
-        ]
-      },
-      "scan-diet-ink": {
-        "role": "secondary",
-        "displayName": "Scan dietary dark ink",
-        "tonalRamp": [
-          "oklch(15.00% 0.04937 134.44)",
-          "oklch(26.43% 0.04937 134.44)",
-          "oklch(37.86% 0.04937 134.44)",
-          "oklch(49.29% 0.04937 134.44)",
-          "oklch(60.71% 0.04937 134.44)",
-          "oklch(72.14% 0.04937 134.44)",
-          "oklch(83.57% 0.04937 134.44)",
-          "oklch(95.00% 0.04937 134.44)"
-        ]
-      },
-      "scan-diet-secondary": {
-        "role": "secondary",
-        "displayName": "Scan dietary secondary ink",
-        "tonalRamp": [
-          "oklch(15.00% 0.05521 134.91)",
-          "oklch(26.43% 0.05521 134.91)",
-          "oklch(37.86% 0.05521 134.91)",
-          "oklch(49.29% 0.05521 134.91)",
-          "oklch(60.71% 0.05521 134.91)",
-          "oklch(72.14% 0.05521 134.91)",
-          "oklch(83.57% 0.05521 134.91)",
-          "oklch(95.00% 0.05521 134.91)"
-        ]
-      },
-      "scan-capture-copy": {
+      "onGreen": {
         "role": "neutral",
-        "displayName": "Scan light capture copy",
-        "tonalRamp": [
-          "oklch(15.00% 0.03370 77.58)",
-          "oklch(26.43% 0.03370 77.58)",
-          "oklch(37.86% 0.03370 77.58)",
-          "oklch(49.29% 0.03370 77.58)",
-          "oklch(60.71% 0.03370 77.58)",
-          "oklch(72.14% 0.03370 77.58)",
-          "oklch(83.57% 0.03370 77.58)",
-          "oklch(95.00% 0.03370 77.58)"
-        ]
-      },
-      "scan-tab-paper": {
-        "role": "neutral",
-        "displayName": "Scan unselected tab paper",
-        "tonalRamp": [
-          "oklch(15.00% 0.02328 82.12)",
-          "oklch(26.43% 0.02328 82.12)",
-          "oklch(37.86% 0.02328 82.12)",
-          "oklch(49.29% 0.02328 82.12)",
-          "oklch(60.71% 0.02328 82.12)",
-          "oklch(72.14% 0.02328 82.12)",
-          "oklch(83.57% 0.02328 82.12)",
-          "oklch(95.00% 0.02328 82.12)"
-        ]
-      },
-      "scan-gallery-tan": {
-        "role": "neutral",
-        "displayName": "Scan illustration rail tan",
-        "tonalRamp": [
-          "oklch(15.00% 0.06951 79.76)",
-          "oklch(26.43% 0.06951 79.76)",
-          "oklch(37.86% 0.06951 79.76)",
-          "oklch(49.29% 0.06951 79.76)",
-          "oklch(60.71% 0.06951 79.76)",
-          "oklch(72.14% 0.06951 79.76)",
-          "oklch(83.57% 0.06951 79.76)",
-          "oklch(95.00% 0.06951 79.76)"
-        ]
-      },
-      "scan-support-paper": {
-        "role": "neutral",
-        "displayName": "Scan lower support paper",
-        "tonalRamp": [
-          "oklch(15.00% 0.03963 78.55)",
-          "oklch(26.43% 0.03963 78.55)",
-          "oklch(37.86% 0.03963 78.55)",
-          "oklch(49.29% 0.03963 78.55)",
-          "oklch(60.71% 0.03963 78.55)",
-          "oklch(72.14% 0.03963 78.55)",
-          "oklch(83.57% 0.03963 78.55)",
-          "oklch(95.00% 0.03963 78.55)"
-        ]
+        "displayName": "onGreen",
+        "value": "#FFF9F2"
       }
     },
-    "typographyMeta": {
-      "scan-display": {
-        "displayName": "Scan capture headline",
-        "purpose": "Semantic header resolves to the bundled Semibold face."
-      },
-      "scan-dish-title": {
-        "displayName": "Scan dish name",
-        "purpose": "Non-header 600 style resolves to the bundled Medium face; effective weight recorded in frontmatter."
-      },
-      "app-body": {
-        "displayName": "Shared reading text",
-        "purpose": "Existing shared body role remains available in sheets."
-      }
-    },
+    "typographyMeta": {},
     "shadows": [],
-    "motion": [],
-    "breakpoints": [
-      {
-        "name": "scan-capture-compact",
-        "value": "360px"
-      }
-    ]
+    "motion": {},
+    "breakpoints": {}
   },
-  "components": [
-    {
-      "name": "Scan camera action",
-      "kind": "button",
-      "refersTo": "scan-camera-button",
-      "description": "Text-only native-style translation. App includes camera and arrow Ionicons; compact height is handled in the app.",
-      "html": "<button class=\"ds-scan-camera\">Take a photo</button>",
-      "css": ".ds-scan-camera { box-sizing: border-box; background: #E7BE75; color: #443020; border: none; border-radius: 12px; padding: 15px; min-height: 54px; font: 500 16px \"Clash Grotesk\", sans-serif; text-align: left; }.ds-scan-camera:hover { cursor: pointer; } .ds-scan-camera:focus-visible { outline: revert; } .ds-scan-camera:active { opacity: 0.65; }.ds-scan-camera:disabled { opacity: 0.65; }"
-    },
-    {
-      "name": "Scan library action",
-      "kind": "button",
-      "refersTo": "scan-library-button",
-      "description": "Text-only translation of the outlined action on the capture panel; native app includes an images Ionicon.",
-      "html": "<button class=\"ds-scan-library\">Choose a photo</button>",
-      "css": ".ds-scan-library { box-sizing: border-box; background: #443020; color: #FFF8EB; border: 1px solid #897253; border-radius: 12px; min-height: 48px; font: 500 15px \"Clash Grotesk\", sans-serif; }.ds-scan-library:hover { cursor: pointer; } .ds-scan-library:focus-visible { outline: revert; } .ds-scan-library:active { opacity: 0.65; }.ds-scan-library:disabled { opacity: 0.65; }"
-    },
-    {
-      "name": "Scan tab",
-      "kind": "chip",
-      "refersTo": "scan-tab",
-      "description": "Unselected native tab appearance; the specimen does not implement app state changes.",
-      "html": "<button class=\"ds-scan-tab\" role=\"tab\" aria-selected=\"false\">Original</button>",
-      "css": ".ds-scan-tab { box-sizing: border-box; background: #F9F0E0; color: #443020; border: 1px solid #D9C7AA; border-radius: 24px; min-height: 44px; padding: 0 16px; font: 500 14px \"Clash Grotesk\", sans-serif; }.ds-scan-tab:hover { cursor: pointer; } .ds-scan-tab:focus-visible { outline: revert; } .ds-scan-tab:active { opacity: 0.65; }"
-    },
-    {
-      "name": "Scan selected tab",
-      "kind": "chip",
-      "refersTo": "scan-tab-selected",
-      "description": "Selected native tab appearance; language, view and category controls share this treatment.",
-      "html": "<button class=\"ds-scan-selected\" role=\"tab\" aria-selected=\"true\">English</button>",
-      "css": ".ds-scan-selected { box-sizing: border-box; background: #443020; color: #FFF8EB; border: 1px solid #443020; border-radius: 24px; min-height: 44px; padding: 0 16px; font: 500 14px \"Clash Grotesk\", sans-serif; }.ds-scan-selected:hover { cursor: pointer; } .ds-scan-selected:focus-visible { outline: revert; } .ds-scan-selected:active { opacity: 0.65; }"
-    },
-    {
-      "name": "Scan dish card",
-      "kind": "card",
-      "refersTo": "scan-dish-card",
-      "description": "Structure-only specimen with placeholders, not an invented menu record. The app supplies real authored menu data and dietary notes.",
-      "html": "<button class=\"ds-scan-dish\"><span class=\"ds-scan-dish-top\"><span class=\"ds-scan-dish-name\">Dish name</span><span class=\"ds-scan-price\">Price</span></span><span class=\"ds-scan-description\">Written menu description</span><span class=\"ds-scan-note\">Ingredients &amp; dietary notes</span></button>",
-      "css": ".ds-scan-dish { box-sizing: border-box; display: flex; flex-direction: column; gap: 9px; background: #FFF8EB; color: #443020; border: none; border-radius: 12px; padding: 17px; text-align: left; font-family: \"Clash Grotesk\", sans-serif; } .ds-scan-dish-top { display: flex; align-items: flex-start; gap: 12px; } .ds-scan-dish-name { flex: 1; font-size: 19px; font-weight: 500; line-height: 24px; } .ds-scan-price { flex-shrink: 0; font-size: 16px; font-weight: 500; } .ds-scan-description { font-size: 14px; line-height: 21px; color: #624F3B; } .ds-scan-note { font-size: 12px; line-height: 18px; color: #49603C; }.ds-scan-dish:hover { cursor: pointer; } .ds-scan-dish:focus-visible { outline: revert; } .ds-scan-dish:active { opacity: 0.65; }"
-    },
-    {
-      "name": "Scan dietary panel",
-      "kind": "card",
-      "refersTo": "scan-diet-panel",
-      "description": "Text-only structure of the dietary-settings link. The app includes a leaf Ionicon and the current profile.",
-      "html": "<button class=\"ds-scan-diet\"><span class=\"ds-scan-diet-copy\"><span class=\"ds-scan-diet-heading\">Your dietary needs</span><span class=\"ds-scan-diet-text\">Add allergies or dietary restrictions</span></span><span class=\"ds-scan-diet-edit\">Edit</span></button>",
-      "css": ".ds-scan-diet { box-sizing: border-box; display: flex; align-items: center; gap: 10px; padding: 13px; background: #DBE2CA; color: #35462B; border: none; border-radius: 12px; text-align: left; font-family: \"Clash Grotesk\", sans-serif; } .ds-scan-diet-copy { flex: 1; display: flex; flex-direction: column; } .ds-scan-diet-heading { font-size: 14px; font-weight: 500; line-height: 20px; } .ds-scan-diet-text { color: #415536; font-size: 12px; line-height: 18px; } .ds-scan-diet-edit { padding: 10px 0; font-size: 13px; font-weight: 500; } .ds-scan-diet:hover { cursor: pointer; } .ds-scan-diet:focus-visible { outline: revert; }"
-    },
-    {
-      "name": "Shared search field",
-      "kind": "input",
-      "refersTo": "app-search-input",
-      "description": "The existing shared UI.Field retained by Scan; its palette is app-scoped.",
-      "html": "<label class=\"ds-app-field\">Search this menu<input class=\"ds-app-input\" placeholder=\"Dish or ingredient…\"></label>",
-      "css": ".ds-app-field { display: flex; flex-direction: column; gap: 7px; color: #22231F; font: 700 13px \"Clash Grotesk\", sans-serif; } .ds-app-input { box-sizing: border-box; border: 1px solid #E6E3DD; background: #FFFFFF; color: #22231F; border-radius: 12px; padding: 13px 14px; min-height: 52px; font: 400 16px \"Clash Grotesk\", sans-serif; } .ds-app-input::placeholder { color: #65655F; } .ds-app-input:hover { cursor: text; } .ds-app-input:focus-visible { outline: revert; }"
-    },
-    {
-      "name": "Shared primary button",
-      "kind": "button",
-      "refersTo": "app-primary-button",
-      "description": "Retained shared action, represented without the optional icon or busy spinner.",
-      "html": "<button class=\"ds-app-primary\">Apply corrections</button>",
-      "css": ".ds-app-primary { box-sizing: border-box; border: none; background: #CA4826; color: #FFFFFF; border-radius: 28px; padding: 14px 18px; min-height: 52px; font: 700 15px \"Clash Grotesk\", sans-serif; }.ds-app-primary:hover { cursor: pointer; } .ds-app-primary:focus-visible { outline: revert; } .ds-app-primary:active { opacity: 0.45; }.ds-app-primary:disabled { opacity: 0.45; }"
-    },
-    {
-      "name": "Scan save action",
-      "kind": "button",
-      "refersTo": "scan-save-button",
-      "description": "Shared primary button with the implemented Scan brown background override.",
-      "html": "<button class=\"ds-scan-save\">Save this menu</button>",
-      "css": ".ds-scan-save { box-sizing: border-box; border: none; background: #443020; color: #FFFFFF; border-radius: 28px; padding: 14px 18px; min-height: 52px; font: 700 15px \"Clash Grotesk\", sans-serif; }.ds-scan-save:hover { cursor: pointer; } .ds-scan-save:focus-visible { outline: revert; } .ds-scan-save:active { opacity: 0.45; }.ds-scan-save:disabled { opacity: 0.45; }"
-    },
-    {
-      "name": "Retained navigation labels",
-      "kind": "nav",
-      "description": "Text-only label specimen of the retained five-tab navigation. App Ionicons and the central Home artwork are intentionally omitted; this is not a complete navigation replica.",
-      "html": "<nav class=\"ds-app-nav\" aria-label=\"App navigation\"><button>Explore</button><button aria-current=\"page\">Scan</button><button>Home</button><button>Journal</button><button>You</button></nav>",
-      "css": ".ds-app-nav { display: flex; border-top: 1px solid #E6E3DD; background: #FFFFFF; padding: 10px 9px 8px; } .ds-app-nav button { flex: 1; min-height: 48px; border: none; background: transparent; color: #65655F; font: 500 11px \"Clash Grotesk\", sans-serif; } .ds-app-nav button[aria-current] { color: #216642; } .ds-app-nav button:hover { cursor: pointer; } .ds-app-nav button:focus-visible { outline: revert; }"
-    }
-  ],
+  "components": [],
   "narrative": {
-    "northStar": "Warm menu paper",
-    "overview": "This descriptive name records the implemented Scan surface: brown capture material, gold camera action, cream menu paper and a tan illustration rail. Clash Grotesk, native controls and the carrot/check identity connect it to the existing app. The requested brown, cream and gold reference governs Scan alone.\n\nThis is a scoped extension, not a replacement identity. `app-*` tokens record the existing shared palette and primitives; `scan-*` tokens govern the Scan route and its local presentation. Home keeps its existing peach/coral/green treatment, with a neutral scan-icon thumbnail. Shared sheets, fields, errors and bottom navigation retain the app palette even while opened from Scan. The frontmatter records CSS-equivalent lengths; React Native source uses numeric logical units.",
+    "northStar": "Readable restaurant menus with one coherent mobile interface",
+    "overview": "V26 shares peach, warm paper, carrot orange and green across all screens. Source artwork and restaurant logos preserve their original colors. Clash Grotesk uses shared semantic sizes and real bundled weights.",
     "keyCharacteristics": [
-      "Warm tonal layers for Scan capture and menu reading.",
-      "One shared Clash Grotesk family with explicit semantic font selection.",
-      "Full framed dish illustrations alongside readable menu text.",
-      "Existing navigation and shared utility controls remain visually continuous."
+      "Peach canvas with pale green preference panels",
+      "Shared page, section, card and body roles",
+      "Larger sign-in and guest actions",
+      "Original restaurant artwork remains content"
     ],
     "rules": [
       {
-        "name": "The Scoped Palette Rule",
-        "body": "Apply Scan tokens to Scan presentation. Preserve shared tokens for retained app primitives and other screens.",
+        "name": "Shared palette",
+        "body": "Read colors and type roles from mobile/src/design-tokens.js, including Scan.",
         "section": "colors"
-      },
-      {
-        "name": "The Shared Face Rule",
-        "body": "Use the existing typography wrappers and font readiness lifecycle. Restaurant logos and Ionicons retain their own artwork.",
-        "section": "typography"
-      },
-      {
-        "name": "The Tonal Paper Rule",
-        "body": "Use the existing Scan surface colors and borders to separate capture, controls, illustrations and reading text.",
-        "section": "elevation"
       }
     ],
     "dos": [
-      "**Do** keep Scan palette changes scoped to its route and local presentation.",
-      "**Do** use the shared Clash Grotesk wrappers and their native font-loading fallback.",
-      "**Do** contain source pages and dish illustrations so full content remains visible.",
-      "**Do** label generated dish artwork as illustrations and retain readable text for all menu dishes.",
-      "**Do** keep dietary colors tied to preferences and written-menu comparison."
+      "Use green for selection and orange for primary actions.",
+      "Keep text contrast and 44-point touch targets."
     ],
     "donts": [
-      "**Don't** propagate Scan brown/gold tokens across existing screens as a global redesign.",
-      "**Don't** show a preselected restaurant menu or original-page link before a menu exists.",
-      "**Don't** replace absent dish artwork with an unrelated dish image.",
-      "**Don't** infer native rendering, camera behavior or allergy safety from browser captures or token values."
+      "Do not introduce a separate Scan palette.",
+      "Do not claim OCR, device testing or allergy safety based on a web preview."
     ]
   }
 }

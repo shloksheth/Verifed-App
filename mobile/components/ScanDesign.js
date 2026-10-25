@@ -1,3 +1,4 @@
+import { colors, type } from "../src/design-tokens";
 import React from "react";
 import {
   ActivityIndicator,
@@ -11,16 +12,6 @@ import { Image } from "./MenuImage";
 import { Text } from "./Typography";
 import { Icon } from "./UI";
 import { scanDishAssets } from "../src/scan-dish-assets";
-
-export const scanColors = {
-  ground: "#EDE1CE",
-  brown: "#443020",
-  cream: "#FFF8EB",
-  gold: "#E7BE75",
-  muted: "#715E49",
-  line: "#D9C7AA",
-  burgundy: "#732E30",
-};
 
 export function CaptureMenu({ busy, onCamera, onLibrary }) {
   const compact = useWindowDimensions().width < 360;
@@ -46,14 +37,14 @@ export function CaptureMenu({ busy, onCamera, onLibrary }) {
             <Icon
               name="restaurant-outline"
               size={compact ? 18 : 28}
-              color={scanColors.brown}
+              color={colors.ink}
             />
           </View>
           <View style={a.cameraMark}>
             <Icon
               name="scan-outline"
               size={compact ? 22 : 32}
-              color={scanColors.gold}
+              color={colors.onGreen}
             />
           </View>
         </View>
@@ -72,14 +63,14 @@ export function CaptureMenu({ busy, onCamera, onLibrary }) {
         ]}
       >
         {busy ? (
-          <ActivityIndicator color={scanColors.brown} />
+          <ActivityIndicator color={colors.paper} />
         ) : (
-          <Icon name="camera-outline" color={scanColors.brown} size={22} />
+          <Icon name="camera-outline" color={colors.paper} size={22} />
         )}
         <Text style={a.cameraText}>
           {busy ? "Opening photo…" : "Take a photo"}
         </Text>
-        <Icon name="arrow-forward" color={scanColors.brown} />
+        <Icon name="arrow-forward" color={colors.paper} />
       </Pressable>
       <Pressable
         accessibilityRole="button"
@@ -90,11 +81,11 @@ export function CaptureMenu({ busy, onCamera, onLibrary }) {
           (pressed || busy) && a.pressed,
         ]}
       >
-        <Icon name="images-outline" color={scanColors.cream} />
+        <Icon name="images-outline" color={colors.green} />
         <Text style={a.libraryText}>Choose a photo</Text>
       </Pressable>
       <View style={a.captureTip}>
-        <Icon name="sunny-outline" color={scanColors.gold} size={19} />
+        <Icon name="sunny-outline" color={colors.onGreen} size={19} />
         <Text style={a.captureTipText}>Whole page. Even light. No glare.</Text>
       </View>
     </View>
@@ -171,7 +162,7 @@ export function IllustratedDishes({ items, menu, onSelect }) {
                 <Icon
                   name="arrow-forward-circle-outline"
                   size={25}
-                  color={scanColors.brown}
+                  color={colors.ink}
                 />
               </View>
             </View>
@@ -221,7 +212,7 @@ export function ScannedDish({ item, needs, onPress }) {
                   : "Ingredients & dietary notes"}
           </Text>
         </View>
-        <Icon name="chevron-forward" size={18} color={scanColors.muted} />
+        <Icon name="chevron-forward" size={18} color={colors.muted} />
       </View>
     </Pressable>
   );
@@ -229,7 +220,7 @@ export function ScannedDish({ item, needs, onPress }) {
 
 const a = StyleSheet.create({
   capture: {
-    backgroundColor: scanColors.brown,
+    backgroundColor: colors.green,
     borderRadius: 16,
     padding: 22,
     gap: 17,
@@ -247,14 +238,7 @@ const a = StyleSheet.create({
     justifyContent: "space-between",
     gap: 6,
   },
-  captureTitle: {
-    fontSize: 34,
-    lineHeight: 37,
-    color: scanColors.cream,
-    fontWeight: "600",
-    flex: 1,
-    letterSpacing: -0.6,
-  },
+  captureTitle: { ...type.page, color: colors.paper, flex: 1 },
   finder: {
     width: 106,
     height: 128,
@@ -264,54 +248,55 @@ const a = StyleSheet.create({
   paperSketch: {
     width: 76,
     height: 106,
-    backgroundColor: "#F2DCB6",
+    backgroundColor: colors.paper,
     transform: [{ rotate: "9deg" }],
     padding: 12,
     gap: 7,
     alignItems: "center",
   },
-  paperRule: { height: 2, width: "100%", backgroundColor: "#B29B77" },
+  paperRule: { height: 2, width: "100%", backgroundColor: colors.line },
   paperRuleShort: {
     height: 4,
     width: "65%",
-    backgroundColor: scanColors.brown,
+    backgroundColor: colors.ink,
     marginBottom: 5,
   },
   cameraMark: {
     position: "absolute",
     bottom: 0,
     left: 0,
-    backgroundColor: scanColors.brown,
+    backgroundColor: colors.green,
     padding: 5,
     borderRadius: 8,
   },
-  captureCopy: { color: "#EBDCC6", fontSize: 15, lineHeight: 22 },
+  captureCopy: { color: colors.onGreen, fontSize: 15, lineHeight: 22 },
   cameraButton: {
     flexDirection: "row",
     alignItems: "center",
     gap: 10,
-    backgroundColor: scanColors.gold,
+    backgroundColor: colors.orange,
     padding: 15,
     minHeight: 54,
     borderRadius: 12,
   },
   cameraText: {
-    color: scanColors.brown,
+    color: colors.paper,
     fontSize: 16,
     fontWeight: "600",
     flex: 1,
   },
   libraryButton: {
+    backgroundColor: colors.paleGreen,
     minHeight: 48,
     borderWidth: 1,
-    borderColor: "#897253",
+    borderColor: colors.paleGreen,
     borderRadius: 12,
     alignItems: "center",
     justifyContent: "center",
     flexDirection: "row",
     gap: 9,
   },
-  libraryText: { color: scanColors.cream, fontSize: 15, fontWeight: "500" },
+  libraryText: { color: colors.green, fontSize: 15, fontWeight: "500" },
   captureTip: {
     flexDirection: "row",
     gap: 8,
@@ -319,7 +304,7 @@ const a = StyleSheet.create({
     alignItems: "center",
   },
   captureTipText: {
-    color: "#EBDCC6",
+    color: colors.onGreen,
     fontSize: 12,
     flexShrink: 1,
     lineHeight: 18,
@@ -330,19 +315,19 @@ const a = StyleSheet.create({
     paddingHorizontal: 16,
     justifyContent: "center",
     borderRadius: 24,
-    backgroundColor: "#F9F0E0",
+    backgroundColor: colors.paper,
     borderWidth: 1,
-    borderColor: scanColors.line,
+    borderColor: colors.line,
   },
   tabActive: {
-    backgroundColor: scanColors.brown,
-    borderColor: scanColors.brown,
+    backgroundColor: colors.green,
+    borderColor: colors.green,
   },
-  tabText: { color: scanColors.brown, fontSize: 14, fontWeight: "500" },
-  tabActiveText: { color: scanColors.cream },
+  tabText: { color: colors.ink, fontSize: 14, fontWeight: "500" },
+  tabActiveText: { color: colors.paper },
   gallery: {
     marginHorizontal: -12,
-    backgroundColor: "#C8AC7E",
+    backgroundColor: colors.peach,
     borderRadius: 12,
     paddingVertical: 16,
     gap: 12,
@@ -355,24 +340,19 @@ const a = StyleSheet.create({
     paddingHorizontal: 14,
     flexWrap: "wrap",
   },
-  galleryTitle: { color: scanColors.brown, fontSize: 20, fontWeight: "600" },
-  galleryCaption: { color: scanColors.brown, fontSize: 12 },
+  galleryTitle: { ...type.section, color: colors.ink },
+  galleryCaption: { color: colors.ink, fontSize: 12 },
   galleryScroll: { paddingHorizontal: 14, gap: 12 },
   photoCard: {
     width: 192,
-    backgroundColor: scanColors.cream,
+    backgroundColor: colors.paper,
     borderRadius: 12,
     overflow: "hidden",
   },
   foodFrame: { width: 192, height: 160, overflow: "hidden" },
   foodPhoto: { width: "100%", height: "100%" },
   photoCopy: { padding: 12, gap: 8, flex: 1 },
-  photoName: {
-    color: scanColors.brown,
-    fontSize: 17,
-    fontWeight: "600",
-    lineHeight: 21,
-  },
+  photoName: { ...type.card, color: colors.ink },
   photoFooter: {
     flexDirection: "row",
     justifyContent: "space-between",
@@ -380,27 +360,21 @@ const a = StyleSheet.create({
     marginTop: "auto",
   },
   price: {
-    color: scanColors.brown,
+    color: colors.ink,
     fontSize: 16,
     fontWeight: "600",
     flexShrink: 0,
   },
   dish: {
     padding: 17,
-    backgroundColor: scanColors.cream,
+    backgroundColor: colors.paper,
     borderRadius: 12,
     gap: 9,
     marginBottom: 10,
   },
   dishTop: { flexDirection: "row", alignItems: "flex-start", gap: 12 },
-  dishName: {
-    fontSize: 19,
-    lineHeight: 24,
-    color: scanColors.brown,
-    fontWeight: "600",
-    flex: 1,
-  },
-  description: { color: "#624F3B", fontSize: 14, lineHeight: 21 },
+  dishName: { ...type.card, color: colors.ink, flex: 1 },
+  description: { ...type.body, color: colors.muted },
   dishBottom: { flexDirection: "row", alignItems: "center", gap: 8 },
   labels: {
     flexDirection: "row",
@@ -410,13 +384,18 @@ const a = StyleSheet.create({
     alignItems: "center",
   },
   sourceBadge: {
-    backgroundColor: "#E2E9D4",
+    backgroundColor: colors.paleGreen,
     paddingHorizontal: 6,
     paddingVertical: 3,
     borderRadius: 4,
   },
-  sourceBadgeText: { color: "#35462B", fontSize: 11, fontWeight: "600" },
-  dietNote: { fontSize: 12, lineHeight: 18, color: "#49603C", flexShrink: 1 },
-  conflict: { color: scanColors.burgundy },
+  sourceBadgeText: { color: colors.green, fontSize: 11, fontWeight: "600" },
+  dietNote: {
+    fontSize: 12,
+    lineHeight: 18,
+    color: colors.green,
+    flexShrink: 1,
+  },
+  conflict: { color: colors.orangeDark },
   pressed: { opacity: 0.65 },
 });

@@ -10,19 +10,9 @@ export function BrandProvider({ children }) {
 }
 
 export function BrandHeading({ style, accessibilityRole, ...props }) {
-  // The wrapper also renders tabs and product names: only true headings use serif.
+  // Menu labels use the shared weight scale, just like other app screens.
   return (
-    <Text
-      {...props}
-      accessibilityRole={accessibilityRole}
-      style={[
-        style,
-        {
-          fontFamily:
-            accessibilityRole === "header" ? "HomeHeadingStrong" : "HomeStrong",
-        },
-      ]}
-    />
+    <Text {...props} accessibilityRole={accessibilityRole} style={style} />
   );
 }
 

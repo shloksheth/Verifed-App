@@ -1,3 +1,4 @@
+import { type } from "../src/design-tokens";
 import React, { useContext, useEffect, useRef, useState } from "react";
 import { Platform, Pressable, StyleSheet, View } from "react-native";
 import * as ImagePicker from "expo-image-picker";
@@ -28,7 +29,6 @@ import {
   IllustratedDishes,
   ScannedDish,
   ScanTabs,
-  scanColors,
 } from "./ScanDesign";
 
 function OriginalMenuPage({ menu }) {
@@ -199,11 +199,7 @@ export default function MenuScanner({
             onLibrary={() => choosePhoto(false)}
           />
           <View style={look.howItWorks}>
-            <Icon
-              name="language-outline"
-              color={scanColors.burgundy}
-              size={25}
-            />
+            <Icon name="language-outline" color={colors.orangeDark} size={25} />
             <View style={s.flex}>
               <Text style={look.subheading}>Read and save menus</Text>
               <Text style={look.body}>
@@ -268,7 +264,7 @@ export default function MenuScanner({
                 accessibilityRole="button"
                 style={look.smallAction}
               >
-                <Icon name="scan-outline" size={18} color={scanColors.brown} />
+                <Icon name="scan-outline" size={18} color={colors.ink} />
                 <Text style={look.actionText}>New menu</Text>
               </Pressable>
             </View>
@@ -296,7 +292,7 @@ export default function MenuScanner({
                   <Icon
                     name="document-text-outline"
                     size={17}
-                    color={scanColors.burgundy}
+                    color={colors.orangeDark}
                   />
                   <Text style={look.sourceLink}>Original page</Text>
                 </Pressable>
@@ -310,7 +306,7 @@ export default function MenuScanner({
                   <Icon
                     name="image-outline"
                     size={17}
-                    color={scanColors.burgundy}
+                    color={colors.orangeDark}
                   />
                   <Text style={look.sourceLink}>Your photo</Text>
                 </Pressable>
@@ -377,7 +373,7 @@ export default function MenuScanner({
               accessibilityRole="button"
               style={look.profile}
             >
-              <Icon name="leaf-outline" color="#415536" size={21} />
+              <Icon name="leaf-outline" color={colors.green} size={21} />
               <View style={s.flex}>
                 <Text style={look.profileHeading}>Your dietary needs</Text>
                 <Text style={look.profileText}>
@@ -448,7 +444,7 @@ export default function MenuScanner({
             icon="bookmark-outline"
             busy={task.busy}
             onPress={saveMenu}
-            style={{ backgroundColor: scanColors.brown }}
+            style={{ backgroundColor: colors.orange }}
           >
             {saved.some((record) => record.id === menu.id)
               ? "Update saved menu"
@@ -479,7 +475,7 @@ export default function MenuScanner({
           <Text accessibilityRole="header" style={look.category}>
             My menus
           </Text>
-          <Icon name="bookmark-outline" color={scanColors.brown} />
+          <Icon name="bookmark-outline" color={colors.ink} />
         </View>
         {!libraryReady ? (
           <Text style={look.body}>Opening saved menus…</Text>
@@ -493,10 +489,7 @@ export default function MenuScanner({
                 accessibilityLabel={`Open saved menu ${record.title}`}
                 style={[s.flex, look.savedOpen]}
               >
-                <Icon
-                  name="document-text-outline"
-                  color={scanColors.burgundy}
-                />
+                <Icon name="document-text-outline" color={colors.orangeDark} />
                 <View style={s.flex}>
                   <Text style={look.subheading}>{record.title}</Text>
                   <Text style={look.body}>
@@ -510,7 +503,7 @@ export default function MenuScanner({
                 accessibilityLabel={`Delete saved menu ${record.title}`}
                 style={s.iconButton}
               >
-                <Icon name="trash-outline" color={scanColors.muted} />
+                <Icon name="trash-outline" color={colors.muted} />
               </Pressable>
             </View>
           ))
@@ -614,47 +607,29 @@ export default function MenuScanner({
 }
 
 const look = StyleSheet.create({
-  pageTitle: {
-    fontSize: 29,
-    lineHeight: 36,
-    color: scanColors.brown,
-    fontWeight: "600",
-    letterSpacing: -0.5,
-  },
+  pageTitle: { ...type.page, color: colors.ink },
   howItWorks: {
     flexDirection: "row",
     alignItems: "center",
     gap: 13,
     paddingVertical: 8,
   },
-  subheading: {
-    fontSize: 17,
-    lineHeight: 23,
-    fontWeight: "600",
-    color: scanColors.brown,
-  },
-  body: { fontSize: 13, lineHeight: 20, color: "#66523D" },
+  subheading: { ...type.card, color: colors.ink },
+  body: { ...type.meta, color: colors.muted },
   menuPaper: {
-    backgroundColor: scanColors.cream,
+    backgroundColor: colors.paper,
     borderRadius: 12,
     padding: 20,
     gap: 10,
   },
-  restaurant: {
-    fontSize: 30,
-    lineHeight: 38,
-    fontWeight: "600",
-    color: scanColors.burgundy,
-    flex: 1,
-    letterSpacing: -0.5,
-  },
+  restaurant: { ...type.page, color: colors.orangeDark, flex: 1 },
   menuSubtitle: {
     fontSize: 13,
     lineHeight: 20,
     textAlign: "center",
-    color: scanColors.muted,
+    color: colors.muted,
   },
-  menuRule: { height: 1, backgroundColor: scanColors.line, marginVertical: 3 },
+  menuRule: { height: 1, backgroundColor: colors.line, marginVertical: 3 },
   sourceActions: {
     flexDirection: "row",
     justifyContent: "center",
@@ -667,10 +642,10 @@ const look = StyleSheet.create({
     alignItems: "center",
     gap: 6,
   },
-  actionText: { fontSize: 13, color: scanColors.brown, fontWeight: "500" },
+  actionText: { fontSize: 13, color: colors.ink, fontWeight: "500" },
   sourceLink: {
     fontSize: 13,
-    color: scanColors.burgundy,
+    color: colors.orangeDark,
     fontWeight: "500",
     textDecorationLine: "underline",
   },
@@ -679,35 +654,34 @@ const look = StyleSheet.create({
     flexDirection: "row",
     gap: 10,
     alignItems: "center",
-    backgroundColor: "#DBE2CA",
+    backgroundColor: colors.paleGreen,
     borderRadius: 12,
     padding: 13,
   },
   profileHeading: {
     fontSize: 14,
     fontWeight: "600",
-    color: "#35462B",
+    color: colors.green,
     lineHeight: 20,
   },
-  profileText: { fontSize: 12, color: "#415536", lineHeight: 18 },
+  profileText: { fontSize: 12, color: colors.green, lineHeight: 18 },
   profileEdit: {
     fontSize: 13,
     fontWeight: "600",
-    color: "#35462B",
+    color: colors.green,
     paddingVertical: 10,
   },
-  resultCount: { fontSize: 12, lineHeight: 18, color: scanColors.muted },
-  category: {
-    fontSize: 23,
-    lineHeight: 29,
-    fontWeight: "600",
-    color: scanColors.brown,
-    marginBottom: 12,
+  resultCount: { fontSize: 12, lineHeight: 18, color: colors.muted },
+  category: { ...type.section, color: colors.ink, marginBottom: 12 },
+  paper: {
+    padding: 18,
+    backgroundColor: colors.peach,
+    borderRadius: 12,
+    gap: 10,
   },
-  paper: { padding: 18, backgroundColor: "#E3D2B8", borderRadius: 12, gap: 10 },
   library: {
     padding: 18,
-    backgroundColor: "#E3D2B8",
+    backgroundColor: colors.peach,
     borderRadius: 12,
     gap: 4,
     marginTop: 8,
@@ -716,7 +690,7 @@ const look = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     borderTopWidth: 1,
-    borderColor: "#CDB899",
+    borderColor: colors.line,
   },
   savedOpen: {
     flexDirection: "row",
@@ -730,7 +704,7 @@ const look = StyleSheet.create({
     height: 350,
     borderRadius: 12,
     overflow: "hidden",
-    backgroundColor: "#E3D2B8",
+    backgroundColor: colors.peach,
   },
   photo: { width: "100%", height: "100%" },
   originalPage: { width: "100%", backgroundColor: "white" },
@@ -738,7 +712,7 @@ const look = StyleSheet.create({
     padding: 18,
     gap: 6,
     borderRadius: 12,
-    backgroundColor: scanColors.cream,
+    backgroundColor: colors.paper,
   },
   oldPrice: {
     color: colors.muted,

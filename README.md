@@ -52,3 +52,5 @@ Native V6–V9 are new version-named copies of recovered immutable Snack snapsho
 The source progression is known; exact original publication times for native V6–V8 are unavailable. V5/V6 cross-product order is the recovered checkpoint sequence, not a claim of precise wall-clock publication order. V4 changes documentation only.
 
 Historical clients use a shared backend that may contain newer menu data. Replaying a client does not restore an old database or provider configuration. Confirm ingredients and cross-contact with restaurant staff.
+
+| [Verifed V26](https://github.com/shloksheth/Verifed-App/releases/tag/v26) | Shared peach/green/orange palette and Clash Grotesk text roles; larger 17-point guest/sign-in actions. 174 tests and all-platform exports passed; phone-width web review completed. Usage checkpoint; physical iPhone and compact review pending. | [Verifed V26](https://snack.expo.dev/UZZA1uCI6zRnGqeO20bfY) |

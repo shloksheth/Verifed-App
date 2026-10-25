@@ -1,0 +1,38 @@
+{
+  "number": 26,
+  "name": "Verifed V26",
+  "description": "Unifies app colors and Clash Grotesk text roles across Home, Explore, Scan, Journal, profile, authentication and restaurant menus. Adds peach and pale green surfaces, shared orange actions and green selections. Enlarges Sign in and Explore as a guest to 17-point text.",
+  "verification": [
+    "174 automated tests passed. iOS, Android and web exports succeeded.",
+    "Phone-width browser review covered all five tabs, welcome, authentication, Chipotle and Taco Bell. Native iPhone rendering and camera remain unverified.",
+    "Photo selection opened the authored 23-dish Sayola result; Save this menu changed to Update saved menu and listed Sayola in My menus. This remains scripted, not live OCR.",
+    "Checkpoint published at the configured 5% five-hour remaining-usage threshold. Full compact-screen and physical iPhone verification remain pending.",
+    "Snack editor HTTP 200 with Verifed V26 title; all 379 uploaded asset hashes verified. Font/Home, source-menu, four Scan illustration and 356 food-image export checks passed.",
+    "Downloaded Snack ZIP comparison unavailable: HTTP 503 SNACK_DOWNLOAD_TOO_LARGE."
+  ],
+  "snack": "https://snack.expo.dev/UZZA1uCI6zRnGqeO20bfY",
+  "snackId": "UZZA1uCI6zRnGqeO20bfY",
+  "snackSourceHash": "9ad077d3fffaefcf05bf4097299a3a550fcceda62d62f4845e4350e6ce788a43",
+  "snackPublishedAt": "2026-10-25T19:38:53.271Z",
+  "status": "usage-threshold-checkpoint-web-reviewed-tests-and-exports-passed",
+  "uploadVerification": {
+    "assets": 379,
+    "images": 365,
+    "fonts": 14,
+    "allSourceHashesMatch": true
+  },
+  "downloadedSourceVerification": {
+    "checkedAt": "2026-10-25T19:39:31.567685+00:00",
+    "name": "Verifed V26",
+    "snackId": "UZZA1uCI6zRnGqeO20bfY",
+    "expectedFiles": 444,
+    "foodImages": 356,
+    "errors": [
+      {
+        "reason": "Snack download unavailable: HTTP 503 (SNACK_DOWNLOAD_TOO_LARGE)"
+      }
+    ],
+    "passed": false
+  },
+  "branch": "codex/local-menu-photography"
+}

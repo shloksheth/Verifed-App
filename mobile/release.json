@@ -1,13 +1,13 @@
 {
-  "number": 25.5,
-  "name": "Verifed V25.5",
-  "description": "Applies only approved changes 3 and 4: replaces the Scan slogan with Read and save menus, and uses existing Ionicons for Taco Bell saved/unsaved hearts and the missing-photo placeholder. Borders and layout grouping are unchanged.",
+  "number": 26,
+  "name": "Verifed V26",
+  "description": "Unifies app colors and Clash Grotesk text roles across Home, Explore, Scan, Journal, profile, authentication and restaurant menus. Adds peach and pale green surfaces, shared orange actions and green selections. Enlarges Sign in and Explore as a guest to 17-point text.",
   "verification": [
     "174 automated tests passed. iOS, Android and web exports succeeded.",
-    "All three icon names exist in the installed Ionicons glyph map. The existing favorite handler, accessible labels, colors and 44-point target remain.",
-    "Physical iPhone and fresh native camera behavior remain unverified.",
-    "Snack verified all 379 uploaded asset hashes; published editor HTTP 200 and V25.5 title confirmed. Existing font/Home asset bytes matched all platform exports.",
-    "Fresh live UI verification was blocked: the browser automation timed out, and the Android automation daemon made no startup progress. No new saved/unsaved interaction pass is claimed.",
-    "Downloaded Snack ZIP comparison remains unavailable: SNACK_DOWNLOAD_TOO_LARGE."
+    "Phone-width browser review covered all five tabs, welcome, authentication, Chipotle and Taco Bell. Native iPhone rendering and camera remain unverified.",
+    "Photo selection opened the authored 23-dish Sayola result; Save this menu changed to Update saved menu and listed Sayola in My menus. This remains scripted, not live OCR.",
+    "Checkpoint published at the configured 5% five-hour remaining-usage threshold. Full compact-screen and physical iPhone verification remain pending.",
+    "Snack editor HTTP 200 with Verifed V26 title; all 379 uploaded asset hashes verified. Font/Home, source-menu, four Scan illustration and 356 food-image export checks passed.",
+    "Downloaded Snack ZIP comparison unavailable: HTTP 503 SNACK_DOWNLOAD_TOO_LARGE."
   ]
 }

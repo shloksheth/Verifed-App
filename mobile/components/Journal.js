@@ -1,3 +1,4 @@
+import { type } from "../src/design-tokens";
 import { Text } from "./Typography";
 import React, { useState } from "react";
 import { Pressable, StyleSheet, View } from "react-native";
@@ -411,15 +412,12 @@ export function MealDetail({ id, state, navigate, openSheet }) {
 // entries to the shared theme. Colors and typography follow the app aliases.
 const j = StyleSheet.create({
   pageHeader: { gap: 6, paddingTop: 5, paddingBottom: 3 },
-  pageTitle: {
-    fontFamily: "HomeHeading",
-    fontSize: 36,
-    lineHeight: 43,
-    letterSpacing: -0.7,
-    color: colors.ink,
-  },
-  intro: { fontSize: 14, lineHeight: 22, color: colors.muted },
+  pageTitle: { ...type.page, color: colors.ink },
+  intro: { ...type.body, color: colors.muted },
   summary: {
+    backgroundColor: colors.peach,
+    paddingHorizontal: 16,
+    borderRadius: 18,
     flexDirection: "row",
     alignItems: "center",
     gap: 22,
@@ -453,9 +451,9 @@ const j = StyleSheet.create({
     paddingHorizontal: 2,
     paddingBottom: 5,
   },
-  filterSelected: { borderBottomColor: colors.ink },
+  filterSelected: { borderBottomColor: colors.green },
   filterText: { fontSize: 14, fontWeight: "500", color: colors.muted },
-  filterTextSelected: { color: colors.ink, fontWeight: "700" },
+  filterTextSelected: { color: colors.green, fontWeight: "700" },
   filterCount: { fontSize: 11, lineHeight: 16, color: colors.muted },
   list: { gap: 0 },
   listHeading: {
@@ -483,13 +481,8 @@ const j = StyleSheet.create({
   },
   pressed: { opacity: 0.65 },
   mealCopy: { flex: 1, minWidth: 0, gap: 4 },
-  mealName: {
-    fontSize: 16,
-    lineHeight: 22,
-    fontWeight: "700",
-    color: colors.ink,
-  },
-  place: { fontSize: 12, lineHeight: 18, color: colors.muted },
+  mealName: { ...type.card, color: colors.ink },
+  place: { ...type.meta, color: colors.muted },
   rowMeta: {
     flexDirection: "row",
     flexWrap: "wrap",
@@ -508,6 +501,8 @@ const j = StyleSheet.create({
   date: { fontSize: 11, lineHeight: 17, color: colors.muted },
   rowNote: { fontSize: 12, lineHeight: 18, color: colors.muted, marginTop: 2 },
   empty: {
+    backgroundColor: colors.paleGreen,
+    borderRadius: 18,
     alignItems: "center",
     gap: 10,
     paddingVertical: 33,
@@ -522,13 +517,7 @@ const j = StyleSheet.create({
     backgroundColor: colors.peach,
     marginBottom: 3,
   },
-  emptyTitle: {
-    fontSize: 20,
-    lineHeight: 27,
-    fontFamily: "HomeHeading",
-    color: colors.ink,
-    textAlign: "center",
-  },
+  emptyTitle: { ...type.section, color: colors.ink, textAlign: "center" },
   emptyCopy: {
     fontSize: 13,
     lineHeight: 21,
@@ -576,13 +565,7 @@ const j = StyleSheet.create({
     fontWeight: "700",
     letterSpacing: 1,
   },
-  detailTitle: {
-    fontFamily: "HomeHeading",
-    fontSize: 31,
-    lineHeight: 39,
-    color: colors.ink,
-    letterSpacing: -0.5,
-  },
+  detailTitle: { ...type.page, color: colors.ink },
   detailPlace: { fontSize: 14, lineHeight: 22, color: colors.muted },
   detailSection: {
     gap: 10,
@@ -597,12 +580,7 @@ const j = StyleSheet.create({
     flexWrap: "wrap",
     gap: 13,
   },
-  tasteTitle: {
-    fontSize: 20,
-    lineHeight: 28,
-    color: colors.ink,
-    fontFamily: "HomeHeading",
-  },
-  notes: { fontSize: 15, lineHeight: 24, color: colors.ink },
+  tasteTitle: { ...type.section, color: colors.ink },
+  notes: { ...type.body, color: colors.ink },
   flavorNotes: { marginTop: 6, gap: 9 },
 });
