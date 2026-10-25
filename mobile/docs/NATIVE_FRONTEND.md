@@ -1,5 +1,7 @@
 # Verifed mobile frontend
 
+V22 updates SDK 54 patch dependencies and adds Android Expo Go verification. [RUNTIME_VERIFICATION.md](RUNTIME_VERIFICATION.md) explains the related manifest, verifier and device-test files.
+
 The active CAC app has five labeled tabs: Explore, Scan, Home, Journal and You. Home is the central action. The app is written in React Native, using real native views and Expo; its web preview uses React Native Web.
 
 V21 updates the active interface with Source Serif 4/Public Sans, one shared palette, photo-led Home, real Home ingredient search, a clearer Journal and a shorter copy system. [DESIGN_SYSTEM.md](DESIGN_SYSTEM.md) explains every related file and research source; [COPY_REWORK.md](COPY_REWORK.md), [JOURNAL_DESIGN.md](JOURNAL_DESIGN.md) and [TYPOGRAPHY.md](TYPOGRAPHY.md) cover the detailed changes. The V20 fixed-menu scan behavior remains a scripted presentation, with updated styling.

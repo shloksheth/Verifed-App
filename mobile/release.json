@@ -1,13 +1,13 @@
 {
-  "number": 21,
-  "name": "Verifed V21",
-  "description": "Redesigns Verifed with Source Serif 4/Public Sans typography, a shared warm-neutral/coral/green palette, clearer navigation and task-focused copy. Home adds working restaurant/dish/ingredient search and photo-led menus. Journal adds real counts, rating filters and clearer meal rows/editor. Scan keeps the requested fixed 15-dish Spanish translation, with clearer prices and source-page review; it is not live OCR or AI translation. Preserves existing restaurant logos and owner-scoped data. V20 remains unchanged.",
+  "number": 22,
+  "name": "Verifed V22",
+  "description": "Updates the Expo SDK 54 runtime, font loader and photo picker patches after published Snack compatibility warnings. Retains the V21 design, restaurant menus and fixed Spanish menu presentation.",
   "verification": [
-    "168 automated tests passed, including palette contrast, new font provenance/loading, ingredient search, fixed Spanish menu text/prices, dietary filters, ownership and persistence.",
-    "Final iOS, Android and web JavaScript exports succeeded. All 356 food images, the original Spanish menu image, five new font faces and both Home photos matched source bytes in every platform export.",
-    "Browser verified Home search, changing the query then opening a restaurant and returning without resetting it, Chipotle navigation, local meal save/detail and rating-filter action, and the fixed Spanish photo upload/language toggle/save flow.",
-    "Browser screenshots reviewed Home, onboarding and Journal at 390px and 320px. Computed scan heading/input fonts were HomeHeadingStrong/HomeBody. No error logs were recorded in the direct-app check.",
-    "Independent design, typography and copy reviews were completed. Their search-state, ingredient-index, chain-font and compact-header findings were addressed. Research and related-code guides are included.",
-    "Physical iPhone camera/permissions, Expo Go, native text scaling and remote Snack runtime remain unverified. No live AI provider or backend deployment is included."
+    "168 automated tests passed after the SDK patch updates; expo install --check reports dependencies up to date.",
+    "Final iOS, Android and web exports succeeded. All 356 food images, the Spanish menu image, five active fonts and two Home photos matched source bytes across the exports.",
+    "Android Expo Go 54.0.8 on Medium_Phone_API_36.1 loaded onboarding and Home, displayed the new fonts and photos, returned five menus for a taco search, opened Chipotle, and saved a four-star guest journal entry with correct meal/place/Loved counts.",
+    "Native Android photo selection opened the fixed 15-dish Spanish menu; the Spanish toggle and scrollable dish text worked, and Save this menu added an entry to My menus.",
+    "Published V22 Snack opened onboarding and guest Home in Android Expo Go. Its web runtime loaded Home and Scan, and the editor reported No errors. Remote browser photo selection could not be completed by automation. The emulator disconnected repeatedly during longer checks; physical iPhone camera/permissions, native enlarged-text behavior and restart persistence remain unverified.",
+    "No live OCR/AI provider or backend deployment is included. The scan remains the requested fixed-menu presentation."
   ]
 }

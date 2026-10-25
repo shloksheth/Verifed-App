@@ -29,6 +29,16 @@ try:
         data = response.read()
 except (HTTPError, URLError, TimeoutError) as error:
     reason = f'HTTP {error.code}' if isinstance(error, HTTPError) else type(error).__name__
+    # Expo may return a permanent size limit as HTTP 503. Keep the public error
+    # code so a later release does not mistake that for a transient outage.
+    if isinstance(error, HTTPError):
+        try:
+            details = json.loads(error.read(4096)).get('errors', [])
+            code = details[0].get('code') if details else None
+            if isinstance(code, str) and re.fullmatch(r'[A-Z_]+', code):
+                reason += f' ({code})'
+        except (ValueError, AttributeError, TypeError):
+            pass
     report = {'checkedAt': datetime.now(timezone.utc).isoformat(), 'name': publication['name'],
               'snackId': identifier, 'expectedFiles': len(expected),
               'foodImages': sum(n.startswith('assets/food/') for n in expected),

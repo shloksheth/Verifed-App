@@ -23,7 +23,8 @@ for platform, data in metadata["fileMetadata"].items():
     checks[platform] = [name for name, digest in expected.items() if digest not in hashes]
 web_hashes = {sha256(path.read_bytes()).hexdigest() for path in export.rglob("*") if path.is_file() and path.suffix in {".ttf", ".webp"}}
 checks["web"] = [name for name, digest in expected.items() if digest not in web_hashes]
-report = {"version": 21, "expectedAssets": len(expected), "missingByPlatform": checks, "passed": all(not names for names in checks.values())}
-(repo / "research/design-v21-asset-validation.json").write_text(json.dumps(report, indent=2) + "\n", encoding="utf8")
+version = json.loads((repo / "mobile/release.json").read_text(encoding="utf8"))["number"]
+report = {"version": version, "expectedAssets": len(expected), "missingByPlatform": checks, "passed": all(not names for names in checks.values())}
+(repo / f"research/design-v{version}-asset-validation.json").write_text(json.dumps(report, indent=2) + "\n", encoding="utf8")
 print(json.dumps(report, indent=2))
 sys.exit(0 if report["passed"] else 1)

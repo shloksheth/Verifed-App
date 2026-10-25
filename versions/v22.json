@@ -1,0 +1,39 @@
+{
+  "number": 22,
+  "name": "Verifed V22",
+  "description": "Updates the Expo SDK 54 runtime, font loader and photo picker patches after published Snack compatibility warnings. Retains the V21 design, restaurant menus and fixed Spanish menu presentation.",
+  "verification": [
+    "168 automated tests passed after the SDK patch updates; expo install --check reports dependencies up to date.",
+    "Final iOS, Android and web exports succeeded. All 356 food images, the Spanish menu image, five active fonts and two Home photos matched source bytes across the exports.",
+    "Android Expo Go 54.0.8 on Medium_Phone_API_36.1 loaded onboarding and Home, displayed the new fonts and photos, returned five menus for a taco search, opened Chipotle, and saved a four-star guest journal entry with correct meal/place/Loved counts.",
+    "Native Android photo selection opened the fixed 15-dish Spanish menu; the Spanish toggle and scrollable dish text worked, and Save this menu added an entry to My menus.",
+    "Published V22 Snack opened onboarding and guest Home in Android Expo Go. Its web runtime loaded Home and Scan, and the editor reported No errors. Remote browser photo selection could not be completed by automation. The emulator disconnected repeatedly during longer checks; physical iPhone camera/permissions, native enlarged-text behavior and restart persistence remain unverified.",
+    "No live OCR/AI provider or backend deployment is included. The scan remains the requested fixed-menu presentation."
+  ],
+  "snack": "https://snack.expo.dev/wUjeSmbNYY0jNKrtarQN1",
+  "snackId": "wUjeSmbNYY0jNKrtarQN1",
+  "snackSourceHash": "3c65750a791955ef1472f0dc49504ea76613b9f1ad4bc5c5a4c7c81d59d5c05d",
+  "snackPublishedAt": "2026-10-25T17:32:52.090Z",
+  "status": "sdk54-patches-tested-native-smoke-and-published-web-verified",
+  "uploadVerification": {
+    "assets": 370,
+    "images": 360,
+    "fonts": 10,
+    "allSourceHashesMatch": true
+  },
+  "downloadedSourceVerification": {
+    "checkedAt": "2026-10-25T17:33:17.061860+00:00",
+    "name": "Verifed V22",
+    "snackId": "wUjeSmbNYY0jNKrtarQN1",
+    "expectedFiles": 428,
+    "foodImages": 356,
+    "errors": [
+      {
+        "reason": "Snack download unavailable: HTTP 503 (SNACK_DOWNLOAD_TOO_LARGE)"
+      }
+    ],
+    "passed": false
+  },
+  "remoteRuntimeVerification": "Published Snack web Home/Scan and Android Expo Go onboarding/guest Home verified; physical iPhone unverified",
+  "branch": "codex/local-menu-photography"
+}

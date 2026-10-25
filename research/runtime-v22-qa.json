@@ -1,0 +1,55 @@
+{
+  "version": 22,
+  "automatedTests": {
+    "passed": 168,
+    "failed": 0
+  },
+  "dependencyCheck": "expo install --check: Dependencies are up to date",
+  "exports": [
+    "ios",
+    "android",
+    "web"
+  ],
+  "nativeTarget": {
+    "platform": "Android",
+    "avd": "Medium_Phone_API_36.1",
+    "client": "Expo Go 54.0.8",
+    "source": "local Metro, authoritative mobile checkout"
+  },
+  "nativePassed": [
+    "Onboarding to guest Home",
+    "Typography and actual food photos visually reviewed",
+    "Home taco search yields 5 menus",
+    "Chipotle menu opens",
+    "Android photo picker selects supplied Spanish menu image",
+    "Fixed 15-dish menu opens and Spanish text toggles correctly",
+    "Native source text scrolls without clipped dish names",
+    "Save menu creates My menus entry",
+    "Guest journal saves QA native meal with four stars and updates counts to one meal, one place, one Loved"
+  ],
+  "remoteSnack": {
+    "url": "https://snack.expo.dev/wUjeSmbNYY0jNKrtarQN1",
+    "editorHTTPStatus": 200,
+    "runtime": "Home and Scan rendered in published web runtime",
+    "dependencyWarnings": "No errors shown",
+    "photoUpload": "Not completed: filechooser automation timed out",
+    "nativeRuntime": "Published V22 opened onboarding and guest Home in Android Expo Go 54.0.8"
+  },
+  "assetVerification": [
+    "local-photo-export-validation.json",
+    "fixed-menu-asset-validation.json",
+    "design-v22-asset-validation.json"
+  ],
+  "notVerified": [
+    "Physical iPhone and camera/permission handling",
+    "Enlarged native text",
+    "Journal detail and Loved filter after saving",
+    "Native restart persistence"
+  ],
+  "limitations": [
+    "Android emulator disconnected repeatedly during longer checks",
+    "Agent-device managed native log capture failed with incomplete ownership marker",
+    "Snack source ZIP returns SNACK_DOWNLOAD_TOO_LARGE; no downloaded source comparison pass claimed"
+  ],
+  "scope": "SDK 54 dependency patches and verification tooling; no live OCR or backend changes"
+}

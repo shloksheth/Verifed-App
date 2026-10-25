@@ -1,12 +1,12 @@
 {
-  "checkedAt": "2026-10-25T06:08:31.233500+00:00",
-  "name": "Verifed V21",
-  "snackId": "wrhRCvyfEy1dYeocQ_YWL",
+  "checkedAt": "2026-10-25T17:33:17.061860+00:00",
+  "name": "Verifed V22",
+  "snackId": "wUjeSmbNYY0jNKrtarQN1",
   "expectedFiles": 428,
   "foodImages": 356,
   "errors": [
     {
-      "reason": "Snack download unavailable: HTTP 503"
+      "reason": "Snack download unavailable: HTTP 503 (SNACK_DOWNLOAD_TOO_LARGE)"
     }
   ],
   "passed": false
