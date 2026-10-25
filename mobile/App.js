@@ -280,7 +280,7 @@ function AppContent() {
               <Icon name="heart-outline" color={chainAccent} size={22} />
             </Pressable>
           </View>
-        ) : !inAccount && (
+        ) : inAccount || showWelcome ? null : route.page === "home" ? (
           <HomeHeader
             fontsReady={homeFontsReady}
             navigate={navigate}
@@ -353,7 +353,7 @@ function AppContent() {
               </View>
             </View>
           )
-        )        )}
+        )}
         {!state.ready ? (
           <View
             style={[s.flex, s.empty, { justifyContent: "center", padding: 22 }]}
