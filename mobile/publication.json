@@ -1,12 +1,12 @@
 {
-  "version": 28.1,
-  "name": "Verifed V28.1",
-  "id": "07sY5RieweUGjAOhgrd8O",
-  "url": "exp://u.expo.dev/933fd9c0-1666-11e7-afca-d980795c5824?runtime-version=exposdk%3A54.0.0&channel-name=production&snack=07sY5RieweUGjAOhgrd8O",
-  "hashId": "07sY5RieweUGjAOhgrd8O",
-  "snackId": "914225ee-ae5f-4779-a579-a43485b3985f",
-  "editorUrl": "https://snack.expo.dev/07sY5RieweUGjAOhgrd8O",
-  "publishedAt": "2026-10-25T20:31:50.694Z",
+  "version": 29,
+  "name": "Verifed V29",
+  "id": "3VrwugCB__8sCwQhRftI9",
+  "url": "exp://u.expo.dev/933fd9c0-1666-11e7-afca-d980795c5824?runtime-version=exposdk%3A54.0.0&channel-name=production&snack=3VrwugCB__8sCwQhRftI9",
+  "hashId": "3VrwugCB__8sCwQhRftI9",
+  "snackId": "876e042d-0ede-4680-8958-0eb17d546ab3",
+  "editorUrl": "https://snack.expo.dev/3VrwugCB__8sCwQhRftI9",
+  "publishedAt": "2026-10-25T21:45:08.725Z",
   "sdkVersion": "54.0.0",
   "files": [
     "App.js",
@@ -66,6 +66,7 @@
     "src/typography.js",
     "src/use-app-fonts.js",
     "src/verified-dish-photos.js",
+    "src/warm-forest.js",
     "src/write-sync.js",
     "assets/brands/taco-bell-logo.png",
     "assets/fonts/Anton-Regular.ttf",
@@ -843,5 +844,5 @@
     "fonts": 14,
     "allSourceHashesMatch": true
   },
-  "sourceHash": "5dd274fbf2cd7068765aaff700c9cd4b9b7c5004e946bb3f71e59e3e09ac60a5"
+  "sourceHash": "8c681038c18da0e50787d32728262a13c05cc70888fa6c759d8db6947f90c155"
 }
