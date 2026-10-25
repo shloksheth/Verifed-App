@@ -1,5 +1,7 @@
 # Verifed mobile frontend
 
+V23 adds the photo-carousel welcome screen. [WELCOME_SCREEN.md](WELCOME_SCREEN.md) explains its layout, navigation, image sources and controls.
+
 V22.1 uses Clash Grotesk throughout the active interface. [TYPOGRAPHY.md](TYPOGRAPHY.md) explains the four bundled faces, their official source/license, loading aliases and verification.
 
 V22 updates SDK 54 patch dependencies and adds Android Expo Go verification. [RUNTIME_VERIFICATION.md](RUNTIME_VERIFICATION.md) explains the related manifest, verifier and device-test files.

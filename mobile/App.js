@@ -263,8 +263,14 @@ function AppContent() {
 
   return (
     <TypographyProvider fontsReady={homeFontsReady}>
-      <SafeAreaView edges={["top", "bottom"]} style={s.root}>
-        <StatusBar barStyle="dark-content" backgroundColor={colors.cream} />
+      <SafeAreaView
+        edges={["top", "bottom"]}
+        style={[s.root, showWelcome && { backgroundColor: "#17281F" }]}
+      >
+        <StatusBar
+          barStyle={showWelcome ? "light-content" : "dark-content"}
+          backgroundColor={showWelcome ? "#17281F" : colors.cream}
+        />
         {route.page === "home" && !showWelcome ? (
           <HomeHeader
             fontsReady={homeFontsReady}
@@ -272,71 +278,73 @@ function AppContent() {
             onInfo={() => setSheet({ type: "info" })}
           />
         ) : (
-          <View style={s.header}>
-            {stack.length > 1 ? (
-              <Pressable
-                accessibilityRole="button"
-                accessibilityLabel="Go back"
-                onPress={goBack}
-                style={s.iconButton}
-              >
-                <Icon name="arrow-back" />
-              </Pressable>
-            ) : (
-              <Image
-                source={require("./assets/verifed-mark.png")}
-                style={s.mark}
-                accessibilityLabel="Verifed carrot checkmark"
-              />
-            )}
-            <Pressable
-              accessibilityRole="button"
-              accessibilityLabel="Verifed home"
-              onPress={() => navigate("home")}
-              style={{ flexShrink: 1, minWidth: 0 }}
-            >
-              <Text style={s.brand} numberOfLines={1}>
-                verifed<Text style={s.brandDot}>.</Text>
-              </Text>
-            </Pressable>
-            <View style={s.headerRight}>
-              {!showWelcome && (
+          !showWelcome && (
+            <View style={s.header}>
+              {stack.length > 1 ? (
                 <Pressable
                   accessibilityRole="button"
-                  accessibilityLabel="Change location"
-                  onPress={() => navigate("explore?location=1")}
-                  style={{
-                    flexShrink: 1,
-                    minWidth: 0,
-                    minHeight: 44,
-                    justifyContent: "center",
-                  }}
-                >
-                  <Text style={[s.mode, { maxWidth: 80 }]} numberOfLines={1}>
-                    {searchArea?.label || "ORLANDO"}
-                  </Text>
-                </Pressable>
-              )}
-              {route.page === "home" && !showWelcome && (
-                <Pressable
-                  accessibilityRole="button"
-                  accessibilityLabel="About Verifed"
-                  onPress={() => setSheet({ type: "info" })}
+                  accessibilityLabel="Go back"
+                  onPress={goBack}
                   style={s.iconButton}
                 >
-                  <Icon name="information-circle-outline" />
+                  <Icon name="arrow-back" />
                 </Pressable>
+              ) : (
+                <Image
+                  source={require("./assets/verifed-mark.png")}
+                  style={s.mark}
+                  accessibilityLabel="Verifed carrot checkmark"
+                />
               )}
               <Pressable
                 accessibilityRole="button"
-                accessibilityLabel="Open saved dishes"
-                onPress={() => navigate("favorites")}
-                style={s.iconButton}
+                accessibilityLabel="Verifed home"
+                onPress={() => navigate("home")}
+                style={{ flexShrink: 1, minWidth: 0 }}
               >
-                <Icon name="heart-outline" />
+                <Text style={s.brand} numberOfLines={1}>
+                  verifed<Text style={s.brandDot}>.</Text>
+                </Text>
               </Pressable>
+              <View style={s.headerRight}>
+                {!showWelcome && (
+                  <Pressable
+                    accessibilityRole="button"
+                    accessibilityLabel="Change location"
+                    onPress={() => navigate("explore?location=1")}
+                    style={{
+                      flexShrink: 1,
+                      minWidth: 0,
+                      minHeight: 44,
+                      justifyContent: "center",
+                    }}
+                  >
+                    <Text style={[s.mode, { maxWidth: 80 }]} numberOfLines={1}>
+                      {searchArea?.label || "ORLANDO"}
+                    </Text>
+                  </Pressable>
+                )}
+                {route.page === "home" && !showWelcome && (
+                  <Pressable
+                    accessibilityRole="button"
+                    accessibilityLabel="About Verifed"
+                    onPress={() => setSheet({ type: "info" })}
+                    style={s.iconButton}
+                  >
+                    <Icon name="information-circle-outline" />
+                  </Pressable>
+                )}
+                <Pressable
+                  accessibilityRole="button"
+                  accessibilityLabel="Open saved dishes"
+                  onPress={() => navigate("favorites")}
+                  style={s.iconButton}
+                >
+                  <Icon name="heart-outline" />
+                </Pressable>
+              </View>
             </View>
-          </View>
+          )
         )}
         {!state.ready ? (
           <View
@@ -365,11 +373,19 @@ function AppContent() {
               <ScrollView
                 ref={scroll}
                 keyboardShouldPersistTaps="handled"
-                contentContainerStyle={s.scroll}
+                contentContainerStyle={[
+                  s.scroll,
+                  showWelcome && {
+                    flexGrow: 1,
+                    padding: 0,
+                    paddingBottom: 0,
+                    maxWidth: 480,
+                  },
+                ]}
               >
                 <View
                   key={`${state.mode}:${state.user?.id || "guest"}:${path}`}
-                  style={s.section}
+                  style={[s.section, showWelcome && { flex: 1, gap: 0 }]}
                 >
                   {!!state.error && <Notice conflict>{state.error}</Notice>}
                   {!!initError && <ErrorText error={initError} />}

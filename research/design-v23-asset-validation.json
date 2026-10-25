@@ -1,0 +1,10 @@
+{
+  "version": 23,
+  "expectedAssets": 6,
+  "missingByPlatform": {
+    "android": [],
+    "ios": [],
+    "web": []
+  },
+  "passed": true
+}

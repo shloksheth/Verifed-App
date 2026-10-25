@@ -1,0 +1,37 @@
+{
+  "number": 23,
+  "name": "Verifed V23",
+  "description": "Redesigns the welcome screen with a dark green frame, warm food cards, four real local food photos, swipe and button carousel controls, Clash Grotesk, and direct account creation, sign-in and guest actions.",
+  "verification": [
+    "169 automated tests passed. iOS, Android and web exports succeeded.",
+    "Four food-card images were visually reviewed in the browser. Indicator buttons and next arrows changed the active photo. Welcome was reviewed at 390x700 and 320x568.",
+    "Get started opened account creation, Sign in opened the existing login form, and Explore as guest restored Home and its normal navigation.",
+    "All active fonts, Home photos, 356 food images and the Spanish menu image matched source bytes in every platform export. Snack verified all 374 uploaded asset hashes.",
+    "Native swipe gestures, physical iPhone safe-area rendering and remote Snack runtime were not re-tested for this update. Snack ZIP comparison remains unavailable: SNACK_DOWNLOAD_TOO_LARGE."
+  ],
+  "snack": "https://snack.expo.dev/OmFOmre-jxtahkdOqv3pl",
+  "snackId": "OmFOmre-jxtahkdOqv3pl",
+  "snackSourceHash": "1691ae72cec140a479e0c06dcefff011706cc5f4b7114856342cf47d198a5b05",
+  "snackPublishedAt": "2026-10-25T18:15:59.312Z",
+  "status": "welcome-carousel-browser-and-platform-export-verified",
+  "uploadVerification": {
+    "assets": 374,
+    "images": 360,
+    "fonts": 14,
+    "allSourceHashesMatch": true
+  },
+  "downloadedSourceVerification": {
+    "checkedAt": "2026-10-25T18:16:43.943759+00:00",
+    "name": "Verifed V23",
+    "snackId": "OmFOmre-jxtahkdOqv3pl",
+    "expectedFiles": 434,
+    "foodImages": 356,
+    "errors": [
+      {
+        "reason": "Snack download unavailable: HTTP 503 (SNACK_DOWNLOAD_TOO_LARGE)"
+      }
+    ],
+    "passed": false
+  },
+  "branch": "codex/local-menu-photography"
+}
