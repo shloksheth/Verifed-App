@@ -405,7 +405,7 @@ function AppContent() {
             </FormScrollContext.Provider>
           </KeyboardAvoidingView>
         )}
-        {!showWelcome && !keyboardVisible && state.ready && (
+        {!showWelcome && !inAccount && !keyboardVisible && state.ready && (
           bottomNavigationMode(route.page) === "primary" ? (
             <FloatingNavigation
               activeRoute={tabForPage(route.page)}
@@ -414,7 +414,7 @@ function AppContent() {
               onHomeAgain={() => scroll.current?.scrollTo({ y: 0, animated: true })}
             />
           ) : bottomNavigationMode(route.page) === "contextual" ? (
-            <ContextualNavigation page={route.page} goBack={goBack} navigate={navigate} />
+            <ContextualNavigation page={route.page} goBack={goBack} navigate={navigate} accentColor={chainMenu ? chainAccent : colors.green} />
           ) : null
         )}
         {sheet?.type === "info" && <HomeInfo onClose={() => setSheet(null)} />}

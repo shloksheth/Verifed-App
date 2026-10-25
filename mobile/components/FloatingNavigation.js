@@ -167,7 +167,7 @@ export default function FloatingNavigation({ activeRoute, navigate, openSheet, o
   );
 }
 
-export function ContextualNavigation({ page, goBack, navigate }) {
+export function ContextualNavigation({ page, goBack, navigate, accentColor = colors.green }) {
   const item = contextualPages[page] || {
     title: "Details", icon: "document-text-outline",
     action: "Home", actionIcon: "home-outline", target: "home",
@@ -182,12 +182,12 @@ export function ContextualNavigation({ page, goBack, navigate }) {
           accessibilityRole="button"
           accessibilityLabel="Go back"
           onPress={back}
-          style={({ pressed }) => [styles.contextBack, pressed && styles.pressed]}
+          style={({ pressed }) => [styles.contextBack, { backgroundColor: accentColor }, pressed && styles.pressed]}
         >
           <Icon name="arrow-back" size={23} color={colors.paper} />
         </Pressable>
         <View style={styles.contextTitle}>
-          <Icon name={item.icon} color={colors.green} size={20} />
+          <Icon name={item.icon} color={accentColor} size={20} />
           <Text style={styles.contextText} numberOfLines={1}>{item.title}</Text>
         </View>
         <Pressable
@@ -196,8 +196,8 @@ export function ContextualNavigation({ page, goBack, navigate }) {
           onPress={() => navigate(item.target)}
           style={({ pressed }) => [styles.contextAction, pressed && styles.pressed]}
         >
-          <Icon name={item.actionIcon} size={20} color={colors.green} />
-          <Text style={styles.contextActionText} numberOfLines={1}>{item.action}</Text>
+          <Icon name={item.actionIcon} size={20} color={accentColor} />
+          <Text style={[styles.contextActionText, { color: accentColor }]} numberOfLines={1}>{item.action}</Text>
         </Pressable>
       </View>
     </View>
