@@ -27,6 +27,36 @@ const food = (restaurantId, extra = {}) => ({
 });
 const milkProfile = { allergies: ["Milk"], restrictions: [] };
 
+test("ingredient search finds published ingredients even when absent from names and descriptions", () => {
+  const restaurants = [place("noodles"), place("other")];
+  const dishes = [
+    food("noodles", {
+      name: "Sweet Potato Noodles",
+      ingredients: ["Cilantro", "Sweet potato"],
+    }),
+    food("other"),
+  ];
+  const results = discoverRestaurants({
+    restaurants,
+    dishes,
+    query: "CILANTRO",
+    center: null,
+  });
+  assert.deepEqual(
+    results.map((result) => result.restaurant.id),
+    ["noodles"],
+  );
+  assert.deepEqual(
+    discoverRestaurants({
+      restaurants,
+      dishes,
+      query: "not-on-any-menu",
+      center: null,
+    }),
+    [],
+  );
+});
+
 test("haversine distance is bounded, handles zero and rejects invalid coordinates", () => {
   assert.equal(
     distanceMilesBetween(

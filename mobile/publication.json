@@ -1,12 +1,12 @@
 {
-  "version": 20,
-  "name": "Verifed V20",
-  "id": "fV9F3OzxomF3d3Ph02TIp",
-  "url": "exp://u.expo.dev/933fd9c0-1666-11e7-afca-d980795c5824?runtime-version=exposdk%3A54.0.0&channel-name=production&snack=fV9F3OzxomF3d3Ph02TIp",
-  "hashId": "fV9F3OzxomF3d3Ph02TIp",
-  "snackId": "01d39159-feb6-4fec-bed7-bcd7aa32e6e6",
-  "editorUrl": "https://snack.expo.dev/fV9F3OzxomF3d3Ph02TIp",
-  "publishedAt": "2026-10-25T05:38:24.302Z",
+  "version": 21,
+  "name": "Verifed V21",
+  "id": "wrhRCvyfEy1dYeocQ_YWL",
+  "url": "exp://u.expo.dev/933fd9c0-1666-11e7-afca-d980795c5824?runtime-version=exposdk%3A54.0.0&channel-name=production&snack=wrhRCvyfEy1dYeocQ_YWL",
+  "hashId": "wrhRCvyfEy1dYeocQ_YWL",
+  "snackId": "4f6aa0c0-5941-4902-a661-de04c644c750",
+  "editorUrl": "https://snack.expo.dev/wrhRCvyfEy1dYeocQ_YWL",
+  "publishedAt": "2026-10-25T06:07:38.596Z",
   "sdkVersion": "54.0.0",
   "files": [
     "App.js",
@@ -33,6 +33,7 @@
     "src/chipotle-draft.js",
     "src/config.js",
     "src/data.js",
+    "src/design-tokens.js",
     "src/device-scans.js",
     "src/discovery.js",
     "src/domain.js",
@@ -56,6 +57,7 @@
     "src/scan-library.js",
     "src/storage-queue.js",
     "src/typography.js",
+    "src/use-app-fonts.js",
     "src/verified-dish-photos.js",
     "src/write-sync.js",
     "assets/brands/taco-bell-logo.png",
@@ -63,7 +65,12 @@
     "assets/fonts/BarlowCondensed-SemiBold.ttf",
     "assets/fonts/DMSans-Medium.ttf",
     "assets/fonts/DMSans-Regular.ttf",
+    "assets/fonts/PublicSans-Bold.ttf",
+    "assets/fonts/PublicSans-Regular.ttf",
+    "assets/fonts/PublicSans-SemiBold.ttf",
     "assets/fonts/Sora-SemiBold.ttf",
+    "assets/fonts/SourceSerif4-Bold.ttf",
+    "assets/fonts/SourceSerif4-SemiBold.ttf",
     "assets/food/black-rooster-mills/achiote-pork.webp",
     "assets/food/black-rooster-mills/carne-asada.webp",
     "assets/food/black-rooster-mills/crispy-fish.webp",
@@ -422,7 +429,14 @@
     "assets/food/winter-park-biscuit/the-og.webp",
     "assets/home/chipotle-vegetarian-bowl.webp",
     "assets/scan/2cero7-spanish-menu.webp",
-    "assets/verifed-mark.png"
+    "assets/verifed-mark.png",
+    "assets/fonts/DMSans-OFL.txt",
+    "assets/fonts/PublicSans-OFL.txt",
+    "assets/fonts/Sora-OFL.txt",
+    "assets/fonts/SourceSerif4-OFL.txt",
+    "assets/fonts/anton-OFL.txt",
+    "assets/fonts/barlowcondensed-OFL.txt",
+    "assets/fonts/editorial-font-sources.json"
   ],
   "assetHashes": {
     "assets/brands/taco-bell-logo.png": "286803d645aba9dda176a5dd8334573e496e272d167c21e4e3efe5881f7450f8",
@@ -430,7 +444,12 @@
     "assets/fonts/BarlowCondensed-SemiBold.ttf": "7b619d14bc2327509a9ef32b0890f709626f7ecc9ff61191c2a4314c5499d2d9",
     "assets/fonts/DMSans-Medium.ttf": "c14b9f3dc191eb92089473b412e5a25ef6cfe8a8c620a884f9f49d351af43bc0",
     "assets/fonts/DMSans-Regular.ttf": "e94ce4f86d0122b7a1d6d458de133978b559252811c85760b8a331c43e336b53",
+    "assets/fonts/PublicSans-Bold.ttf": "200019456af3f8886a0284fc48825bc1f6230dfb9f9610f979b074071329a133",
+    "assets/fonts/PublicSans-Regular.ttf": "ef137859117c2516cb5f42936c357f6dc943b06cf7d17194e5427b322e7981a5",
+    "assets/fonts/PublicSans-SemiBold.ttf": "1e5f3c1f3828ad6506be5e7d7ec6ad3a3172bd09904c68f0a44ccf80370d1d53",
     "assets/fonts/Sora-SemiBold.ttf": "8aacd3526893aeb283b8a2ff0ff63e7c4a63106c9ab07f70875bef42900339eb",
+    "assets/fonts/SourceSerif4-Bold.ttf": "acaf110a124653c0e3b2a30397fa67984b23664a06c332c8d3a1c91d0b2b2ef8",
+    "assets/fonts/SourceSerif4-SemiBold.ttf": "33a3c9a3df582c779cf2c77c8c91e3efa4ac162da5b6021217a19770df7b6bc9",
     "assets/food/black-rooster-mills/achiote-pork.webp": "87fb4efd46d3b48c27c389b93f00480a6eadbac58f7dfde21caee36b085fb068",
     "assets/food/black-rooster-mills/carne-asada.webp": "6d859d9fd74afe094c4e4b9d776114183199a9c9eee41207d9501ee049e4cac6",
     "assets/food/black-rooster-mills/crispy-fish.webp": "a1296079ea64d7f94f08ed9cb9b2583278bb1e97a14ce3123b08234aea924770",
@@ -792,10 +811,10 @@
     "assets/verifed-mark.png": "666a1adcb3940ee008ccb5e9544b853fe3fec4ad6d43f5dca5c8697f230b3219"
   },
   "uploadVerification": {
-    "assets": 365,
+    "assets": 370,
     "images": 360,
-    "fonts": 5,
+    "fonts": 10,
     "allSourceHashesMatch": true
   },
-  "sourceHash": "51603345f7782d1c36ad1075aa9797a35838758dade9c5856d3ba34a432d1298"
+  "sourceHash": "5e9cd72ca9a86aace145aac31949f0ab3be8ba07f9dd873d4c3923aabdc150b8"
 }

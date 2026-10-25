@@ -119,6 +119,7 @@ function AppContent() {
     setStack((current) => current.slice(0, -1));
     return true;
   }, [sheet, stack.length]);
+  const clearExploreIntent = useCallback(() => navigate("explore"), [navigate]);
 
   useEffect(() => {
     api
@@ -216,6 +217,8 @@ function AppContent() {
             openLocation={route.params.get("location") === "1"}
             onLocationChange={setSearchArea}
             initialCuisine={route.params.get("cuisine")}
+            initialQuery={route.params.get("q")}
+            onInitialFiltersApplied={clearExploreIntent}
           />
         );
         break;
@@ -251,7 +254,7 @@ function AppContent() {
       default:
         screen = (
           <Empty
-            title="This table isn't set yet"
+            title="Page not found"
             action="Back home"
             onPress={() => navigate("home")}
           />
@@ -290,8 +293,9 @@ function AppContent() {
               accessibilityRole="button"
               accessibilityLabel="Verifed home"
               onPress={() => navigate("home")}
+              style={{ flexShrink: 1, minWidth: 0 }}
             >
-              <Text style={s.brand}>
+              <Text style={s.brand} numberOfLines={1}>
                 verifed<Text style={s.brandDot}>.</Text>
               </Text>
             </Pressable>
@@ -301,6 +305,12 @@ function AppContent() {
                   accessibilityRole="button"
                   accessibilityLabel="Change location"
                   onPress={() => navigate("explore?location=1")}
+                  style={{
+                    flexShrink: 1,
+                    minWidth: 0,
+                    minHeight: 44,
+                    justifyContent: "center",
+                  }}
                 >
                   <Text style={[s.mode, { maxWidth: 80 }]} numberOfLines={1}>
                     {searchArea?.label || "ORLANDO"}
@@ -333,7 +343,7 @@ function AppContent() {
             style={[s.flex, s.empty, { justifyContent: "center", padding: 22 }]}
           >
             <ActivityIndicator color={colors.orange} size="large" />
-            <Text style={s.h2}>Setting your table…</Text>
+            <Text style={s.h2}>Loading menus…</Text>
             <ErrorText error={initError} />
             {!!initError && (
               <Button
@@ -392,7 +402,7 @@ function AppContent() {
                   ) : (
                     <Icon
                       name={selected ? item.active : item.icon}
-                      color={selected ? colors.orangeDark : colors.muted}
+                      color={selected ? colors.green : colors.muted}
                       size={23}
                     />
                   )}
@@ -427,7 +437,7 @@ class AppBoundary extends Component {
           style={[s.root, s.empty, { justifyContent: "center", padding: 24 }]}
         >
           <Icon name="leaf-outline" color={colors.green} size={40} />
-          <Text style={s.h2}>Let's set the table again.</Text>
+          <Text style={s.h2}>Verifed needs to restart.</Text>
           <ErrorText
             error={this.state.error.message || "This screen could not open."}
           />

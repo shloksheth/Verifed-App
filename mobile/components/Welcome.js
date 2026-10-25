@@ -1,42 +1,42 @@
-import { Text } from "./Typography";
 import React from "react";
-import { Image, View } from "react-native";
-import { s, colors } from "../styles";
-import { Button, Icon, Sheet } from "./UI";
+import { StyleSheet, View } from "react-native";
+import { Text } from "./Typography";
+import { Image } from "./MenuImage";
+import { colors, s } from "../styles";
+import { Button, Sheet } from "./UI";
 
 export default function Welcome({ onSignIn, onCreateAccount, onContinue }) {
   return (
-    <View style={s.welcome}>
-      <View style={s.welcomeMark}>
+    <View style={w.page}>
+      <View style={w.photoFrame}>
         <Image
-          source={require("../assets/verifed-mark.png")}
-          style={{ width: 90, height: 110, resizeMode: "contain" }}
-          accessibilityLabel="Verifed carrot checkmark"
+          source={require("../assets/home/chipotle-vegetarian-bowl.webp")}
+          contentFit="cover"
+          style={w.photo}
+          accessibilityLabel="Chipotle bowl with vegetables, beans and guacamole"
         />
+        <View style={w.photoLabel}>
+          <Text style={w.photoLabelText}>Chipotle · Orlando</Text>
+        </View>
       </View>
-      <Text style={s.eyebrow}>A SEAT FOR EVERY APPETITE</Text>
-      <Text
-        accessibilityRole="header"
-        style={[s.homeHeadline, { textAlign: "center" }]}
-      >
-        Welcome to your table.
+      <Text accessibilityRole="header" style={w.title}>
+        Check the menu before you order.
       </Text>
-      <Text style={[s.subtitle, { textAlign: "center" }]}>
-        Discover Orlando menus around you. Find your kind of food, save a
-        favorite, and remember the meals you love.
+      <Text style={w.description}>
+        Explore Orlando restaurants, compare ingredients with your dietary
+        needs, and save meals for next time.
       </Text>
-      <View style={{ alignSelf: "stretch", gap: 12, marginTop: 15 }}>
+      <View style={w.actions}>
         <Button onPress={onCreateAccount}>Create an account</Button>
         <Button variant="secondary" onPress={onSignIn}>
-          Log in
+          Sign in
         </Button>
         <Button variant="quiet" onPress={onContinue}>
-          Explore without an account
+          Continue as guest
         </Button>
       </View>
-      <Text style={[s.small, { textAlign: "center" }]}>
-        Create an account with a username, email, and password. Guest
-        preferences, saved dishes, and journal entries stay on this device.
+      <Text style={w.privacy}>
+        Guest profiles, saved dishes and meal notes stay on this device.
       </Text>
     </View>
   );
@@ -44,35 +44,69 @@ export default function Welcome({ onSignIn, onCreateAccount, onContinue }) {
 
 export function HomeInfo({ onClose }) {
   return (
-    <Sheet title="A little more about Verifed" onClose={onClose}>
-      <Icon name="leaf-outline" size={34} color={colors.green} />
-      <Text style={s.h2}>Good food should include you.</Text>
+    <Sheet title="About Verifed" onClose={onClose}>
       <Text style={s.body}>
-        Verifed helps Orlando-area diners explore published restaurant menus
-        with their allergies and dietary needs in mind.
+        Verifed compares Orlando-area restaurant menus with your allergies and
+        dietary restrictions.
       </Text>
-      <Text style={s.h3}>Make the menu yours</Text>
+      <Text style={s.h3}>Browse menus</Text>
       <Text style={s.body}>
-        Choose your needs in You. Open any restaurant for its Full menu or For
-        my diet view. Source-reported matches and possible options have separate
-        labels.
+        Search Explore by restaurant, dish or cuisine. Set an area to see nearby
+        locations and map pins.
       </Text>
-      <Text style={s.h3}>Find your next table</Text>
+      <Text style={s.h3}>Compare ingredients</Text>
       <Text style={s.body}>
-        Explore lets you choose an area, view a map, and filter by cuisine or
-        dietary evidence. Recommended results consider your selected needs,
-        preferences, and meals you rated.
+        Add your needs in You, then switch a menu to For my diet. Published
+        allergen declarations and ingredient clues are labeled separately. Ask
+        the restaurant about unlisted ingredients and cross-contact.
       </Text>
-      <Text style={s.h3}>Know what the labels mean</Text>
+      <Text style={s.h3}>Keep meal notes</Text>
       <Text style={s.body}>
-        Restaurant declarations and ingredient clues have separate labels. Open
-        Source details for coverage, review dates and original menus.
+        Save dishes with the heart button. Rate meals in Journal to help sort
+        future suggestions.
       </Text>
       <Text style={s.small}>
-        Built as a Congressional App Challenge community project. Restaurant
-        locations and source links are listed in each menu.
+        Built for the Congressional App Challenge. Each restaurant menu includes
+        its original sources and review details.
       </Text>
-      <Button onPress={onClose}>Back to my table</Button>
+      <Button onPress={onClose}>Close</Button>
     </Sheet>
   );
 }
+
+const w = StyleSheet.create({
+  page: { gap: 20, paddingBottom: 8 },
+  photoFrame: {
+    width: "100%",
+    aspectRatio: 1.55,
+    borderRadius: 24,
+    overflow: "hidden",
+    backgroundColor: colors.peach,
+  },
+  photo: { ...StyleSheet.absoluteFillObject, width: "100%", height: "100%" },
+  photoLabel: {
+    position: "absolute",
+    left: 12,
+    bottom: 12,
+    borderRadius: 16,
+    paddingHorizontal: 10,
+    paddingVertical: 7,
+    backgroundColor: colors.paper,
+  },
+  photoLabelText: { color: colors.ink, fontSize: 11, fontWeight: "600" },
+  title: {
+    color: colors.ink,
+    fontFamily: "HomeHeadingStrong",
+    fontSize: 38,
+    lineHeight: 42,
+    letterSpacing: -0.8,
+  },
+  description: { color: colors.muted, fontSize: 15, lineHeight: 23 },
+  actions: { gap: 10 },
+  privacy: {
+    color: colors.muted,
+    fontSize: 12,
+    lineHeight: 18,
+    textAlign: "center",
+  },
+});

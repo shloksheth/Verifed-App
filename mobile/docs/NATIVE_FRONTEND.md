@@ -2,6 +2,10 @@
 
 The active CAC app has five labeled tabs: Explore, Scan, Home, Journal and You. Home is the central action. The app is written in React Native, using real native views and Expo; its web preview uses React Native Web.
 
+V21 updates the active interface with Source Serif 4/Public Sans, one shared palette, photo-led Home, real Home ingredient search, a clearer Journal and a shorter copy system. [DESIGN_SYSTEM.md](DESIGN_SYSTEM.md) explains every related file and research source; [COPY_REWORK.md](COPY_REWORK.md), [JOURNAL_DESIGN.md](JOURNAL_DESIGN.md) and [TYPOGRAPHY.md](TYPOGRAPHY.md) cover the detailed changes. The V20 fixed-menu scan behavior remains a scripted presentation, with updated styling.
+
+The following V18/V19 notes describe earlier checkpoints; V21's design guide supersedes their visual system.
+
 V18 moves Home into `components/Home.js`, with its scoped Sora/DM Sans typography, local real Hawkers/Chipotle cover photographs and solid green selected Home tab. [HOME_SCREEN.md](HOME_SCREEN.md) explains every related file, navigation change, image/font source and the explicitly planned scanning entry. Other screen designs remain unchanged.
 
 The scanning update extends the approved Sora/DM Sans typography to every active

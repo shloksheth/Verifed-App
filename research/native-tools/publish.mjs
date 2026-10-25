@@ -42,6 +42,9 @@ for (const directory of ["components", "src"]) {
     if (name.endsWith(".js") && !(directory === "components" && ["Scanner.js", "Workspace.js", "Requests.js"].includes(name))) await addFile(`${directory}/${name}`);
 }
 for (const relative of await imageAssetPaths(root)) await addFile(relative);
+// Font licenses and pinned source details must travel with the Snack's fonts.
+for (const name of (await fs.readdir(path.join(root, "assets/fonts"))).sort())
+  if (/\.(txt|json)$/.test(name)) await addFile(`assets/fonts/${name}`);
 const dependencies = Object.fromEntries(
   Object.entries(manifest.dependencies)
     .filter(

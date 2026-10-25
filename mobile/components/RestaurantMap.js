@@ -111,7 +111,7 @@ export default function RestaurantMap({ results = [], center, onSelect }) {
   return (
     <View style={styles.section}>
       <View style={styles.topline}>
-        <Text style={styles.title}>Your tables, on the map</Text>
+        <Text style={styles.title}>Restaurant locations</Text>
         <Text style={styles.small}>
           {markers.length} {markers.length === 1 ? "place" : "places"}
         </Text>

@@ -225,6 +225,7 @@ export function discoverRestaurants({
       ...menu.flatMap((dish) => [
         dish.name,
         dish.description,
+        ...list(dish.ingredients),
         ...list(dish.tags),
       ]),
     ]

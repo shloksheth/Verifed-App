@@ -1,0 +1,23 @@
+{
+  "version": 21,
+  "automatedTests": { "passed": 168, "failed": 0 },
+  "exports": ["ios", "android", "web"],
+  "browserChecks": [
+    "Home, onboarding and empty Journal visually reviewed at 390px and 320px",
+    "Home taco search produces five matching menus, rather than the full catalog",
+    "Changing Explore query to chipotle survives opening a restaurant and returning",
+    "Local QA-only meal saved with four stars and appeared in Journal count/detail; Loved action exercised",
+    "Printed Spanish menu upload opens the fixed fifteen-dish transcript",
+    "English/Spanish toggle, structured offer prices and Save menu work",
+    "Computed scan heading and input faces are HomeHeadingStrong and HomeBody",
+    "No direct-app browser error logs recorded"
+  ],
+  "assetVerification": ["design-v21-asset-validation.json", "fixed-menu-asset-validation.json", "local-photo-export-validation.json"],
+  "independentReview": [
+    "Typography and contrast review",
+    "Copy and navigation review",
+    "Journal implementation review and applicable API/session checks"
+  ],
+  "notVerified": ["Physical iPhone camera and permissions", "Expo Go", "Native enlarged text", "Remote Snack runtime"],
+  "scope": "Visual and content redesign; fixed scan presentation remains fixed, with no live AI provider or backend deployment"
+}

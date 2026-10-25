@@ -90,9 +90,9 @@ export default function ChipotleMenu({ restaurant, dishes, profile, navigate, dr
         </View>
         <View style={[look.hero, bodyWidth < 500 && look.compactHero]}>
           <View style={{ flex: 1 }}>
-            <Text style={look.overline}>BUILD YOUR</Text>
-            <BrandHeading accessibilityRole="header" style={look.headline}>KIND OF MEAL.</BrandHeading>
-            <Text style={look.heroCopy}>Compare ingredients and dietary flags. Build your own selection.</Text>
+            <Text style={look.overline}>CHIPOTLE</Text>
+            <BrandHeading accessibilityRole="header" style={look.headline}>CHOOSE YOUR INGREDIENTS</BrandHeading>
+            <Text style={look.heroCopy}>Check dietary information and save an ingredient selection.</Text>
           </View>
           {!!guacamole && bodyWidth >= 500 && <IngredientPhoto dish={guacamole} style={look.heroPhoto} hero />}
         </View>

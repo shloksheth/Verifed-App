@@ -1,17 +1,19 @@
-// Keep the two visible font families consistent, including branded menus.
+// Editorial headings use Source Serif 4; reading and controls use Public Sans.
 export function textFont(style = {}, { heading = false, input = false } = {}) {
   const requested = style.fontFamily;
+  const strong = style.fontWeight === "bold" || Number(style.fontWeight) >= 700;
+  // Size alone never turns a dish name, number or large control into a serif.
   if (
-    heading ||
-    requested === "HomeHeading" ||
-    (!input && Number(style.fontSize) >= 22)
+    !input &&
+    (heading ||
+      requested === "HomeHeading" ||
+      requested === "HomeHeadingStrong")
   )
-    return "HomeHeading";
-  if (
-    requested === "HomeMedium" ||
-    style.fontWeight === "bold" ||
-    Number(style.fontWeight) >= 500
-  )
+    return strong || requested === "HomeHeadingStrong"
+      ? "HomeHeadingStrong"
+      : "HomeHeading";
+  if (requested === "HomeStrong" || strong) return "HomeStrong";
+  if (requested === "HomeMedium" || Number(style.fontWeight) >= 500)
     return "HomeMedium";
   return "HomeBody";
 }

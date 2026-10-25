@@ -1,0 +1,64 @@
+{
+  "repository": "https://github.com/google/fonts",
+  "commit": "e7db6ca603fd4862010383ff17ffd6cc4ffac1c0",
+  "retrievedAt": "2026-10-25T05:43:35.520009+00:00",
+  "files": [
+    {
+      "file": "SourceSerif4-SemiBold.ttf",
+      "url": "https://raw.githubusercontent.com/google/fonts/e7db6ca603fd4862010383ff17ffd6cc4ffac1c0/ofl/sourceserif4/SourceSerif4%5Bopsz%2Cwght%5D.ttf",
+      "sourceSha256": "97b2d4da6e3cb494b5a1e66ae176914d852ccabef49e0c02c0df25f3e39aca0b",
+      "sha256": "33a3c9a3df582c779cf2c77c8c91e3efa4ac162da5b6021217a19770df7b6bc9",
+      "axes": {
+        "opsz": 28,
+        "wght": 600
+      },
+      "license": "SourceSerif4-OFL.txt",
+      "conversion": "fontTools.varLib.instancer.instantiateVariableFont(updateFontNames=True, static=True)"
+    },
+    {
+      "file": "SourceSerif4-Bold.ttf",
+      "url": "https://raw.githubusercontent.com/google/fonts/e7db6ca603fd4862010383ff17ffd6cc4ffac1c0/ofl/sourceserif4/SourceSerif4%5Bopsz%2Cwght%5D.ttf",
+      "sourceSha256": "97b2d4da6e3cb494b5a1e66ae176914d852ccabef49e0c02c0df25f3e39aca0b",
+      "sha256": "acaf110a124653c0e3b2a30397fa67984b23664a06c332c8d3a1c91d0b2b2ef8",
+      "axes": {
+        "opsz": 28,
+        "wght": 700
+      },
+      "license": "SourceSerif4-OFL.txt",
+      "conversion": "fontTools.varLib.instancer.instantiateVariableFont(updateFontNames=True, static=True)"
+    },
+    {
+      "file": "PublicSans-Regular.ttf",
+      "url": "https://raw.githubusercontent.com/google/fonts/e7db6ca603fd4862010383ff17ffd6cc4ffac1c0/ofl/publicsans/PublicSans%5Bwght%5D.ttf",
+      "sourceSha256": "d75a7dc1a27eb9e336d5b33f55489d2ecb5621bf694d5c43b2415bce2ca830a8",
+      "sha256": "ef137859117c2516cb5f42936c357f6dc943b06cf7d17194e5427b322e7981a5",
+      "axes": {
+        "wght": 400
+      },
+      "license": "PublicSans-OFL.txt",
+      "conversion": "fontTools.varLib.instancer.instantiateVariableFont(updateFontNames=True, static=True)"
+    },
+    {
+      "file": "PublicSans-SemiBold.ttf",
+      "url": "https://raw.githubusercontent.com/google/fonts/e7db6ca603fd4862010383ff17ffd6cc4ffac1c0/ofl/publicsans/PublicSans%5Bwght%5D.ttf",
+      "sourceSha256": "d75a7dc1a27eb9e336d5b33f55489d2ecb5621bf694d5c43b2415bce2ca830a8",
+      "sha256": "1e5f3c1f3828ad6506be5e7d7ec6ad3a3172bd09904c68f0a44ccf80370d1d53",
+      "axes": {
+        "wght": 600
+      },
+      "license": "PublicSans-OFL.txt",
+      "conversion": "fontTools.varLib.instancer.instantiateVariableFont(updateFontNames=True, static=True)"
+    },
+    {
+      "file": "PublicSans-Bold.ttf",
+      "url": "https://raw.githubusercontent.com/google/fonts/e7db6ca603fd4862010383ff17ffd6cc4ffac1c0/ofl/publicsans/PublicSans%5Bwght%5D.ttf",
+      "sourceSha256": "d75a7dc1a27eb9e336d5b33f55489d2ecb5621bf694d5c43b2415bce2ca830a8",
+      "sha256": "200019456af3f8886a0284fc48825bc1f6230dfb9f9610f979b074071329a133",
+      "axes": {
+        "wght": 700
+      },
+      "license": "PublicSans-OFL.txt",
+      "conversion": "fontTools.varLib.instancer.instantiateVariableFont(updateFontNames=True, static=True)"
+    }
+  ]
+}

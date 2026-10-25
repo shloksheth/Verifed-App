@@ -91,7 +91,7 @@ function RestaurantSources({
   const [expanded, setExpanded] = useState(false);
   if (!isLocal(restaurant))
     return (
-      <Notice>Fictional sample kitchen. Requests here are for practice.</Notice>
+      <Notice>Fictional demo restaurant. Requests here are for practice.</Notice>
     );
   return (
     <View style={editorial ? s.menuSource : s.card}>
@@ -124,7 +124,7 @@ function RestaurantSources({
           inline={editorial}
           accent={accent}
         >
-          Call
+          Call restaurant
         </SourceLink>
         {editorial && (
           <Pressable
@@ -209,16 +209,16 @@ export function Assessment({ dish, state, detailed = false }) {
     );
   const message =
     result.level === "conflict"
-      ? `${inferredFlag ? "Check your dietary flags" : "Known profile conflict"}${detailed ? ": " + result.conflicts.join(", ") : ""}`
+      ? `${inferredFlag ? "Ingredient flags for your needs" : "Conflicts with your dietary needs"}${detailed ? ": " + result.conflicts.join(", ") : ""}`
       : result.level === "unknown"
-        ? "Ingredient details"
+        ? "Check ingredient details"
         : "Menu information";
   return (
     <View style={s.stack}>
       <Notice conflict={result.level === "conflict"}>{message}</Notice>
       {detailed && result.level === "conflict" && !!result.reasons?.length && (
         <View style={s.card}>
-          <Text style={s.h3}>Why this result</Text>
+          <Text style={s.h3}>Dietary flags</Text>
           {result.reasons
             .filter((reason) =>
               /^(Listed allergen:|Ingredient clue to check:|Named ingredients may conflict)/.test(
@@ -236,7 +236,7 @@ export function Assessment({ dish, state, detailed = false }) {
         result.level === "unknown" &&
         !!dietaryMenuStatus(dish, state.profile).missing.length && (
           <Text style={s.small}>
-            Not listed:{" "}
+            Not confirmed for your needs:{" "}
             {dietaryMenuStatus(dish, state.profile).missing.join(", ")}
           </Text>
         )}
@@ -337,7 +337,7 @@ export function DishCard({ dish, state, navigate }) {
       <Assessment dish={dish} state={state} />
       <AllergenIcons dish={dish} />
       {saveUnavailable && (
-        <Text style={s.small}>Refresh the catalog to save this item.</Text>
+        <Text style={s.small}>Refresh menu data to save this item.</Text>
       )}
       {isLocal(restaurant) && (
         <Text style={s.sourceText}>
@@ -409,7 +409,7 @@ function RestaurantPhoto({ restaurant, style, credit = false }) {
         <View style={s.photoFallback}>
           <Icon name="restaurant-outline" size={34} color={colors.green} />
           <Text style={s.photoFallbackText}>
-            {restaurant.cuisine || "Local dining"}
+            {restaurant.cuisine || "Restaurant"}
           </Text>
         </View>
       )}
@@ -464,7 +464,7 @@ export function RestaurantRow({
       />
       <View style={[s.restaurantCopy, featured && { padding: 14 }]}>
         <Text style={s.restaurantCuisine}>
-          {restaurant.cuisine || "Orlando dining"}
+          {restaurant.cuisine || "Restaurant"}
         </Text>
         <Text style={s.restaurantName} numberOfLines={2}>
           {restaurant.name}
@@ -478,7 +478,7 @@ export function RestaurantRow({
         </View>
         {!!supported && (
           <Text style={s.restaurantMatch}>
-            {supported} reported matches for you
+            {supported} reported dietary matches
           </Text>
         )}
       </View>
@@ -506,7 +506,7 @@ export function RequestRow({ request, navigate, staff = false }) {
       <Text style={s.small}>
         Meal version {request.revision} ·{" "}
         {request.status === "review_required"
-          ? "The meal changed. A fresh response is needed."
+          ? "Meal details changed. A new response is needed."
           : "View the conversation"}
       </Text>
     </Pressable>
@@ -528,7 +528,7 @@ export function DemoButton({ navigate }) {
           )
         }
       >
-        Try the local demo
+        Open demo
       </Button>
       <ErrorText error={task.error} />
     </>
@@ -614,7 +614,7 @@ function MenuSections({
           ? ` Allergen flags: ${declarations.join(", ")}.`
           : supported
             ? ""
-            : " No allergens declared; check details.";
+            : " Allergens not listed; check details.";
         return (
           <Pressable
             key={dish.id}
@@ -712,7 +712,7 @@ export function Restaurant({ id, state, navigate }) {
         <View style={s.between}>
           <Text style={[s.menuOverline, { color: theme.accent }]}>
             {chainBrand(restaurant) ? "FOOD CHAINS / U.S. MENU" : isLocal(restaurant)
-              ? "ORLANDO / RESTAURANT MENU"
+              ? "RESTAURANT MENU"
               : "FICTIONAL SAMPLE MENU"}
           </Text>
           <Text style={[s.menuEdition, { color: theme.accent }]}>
@@ -784,16 +784,14 @@ export function Restaurant({ id, state, navigate }) {
       </View>
       <AllergenLegend accent={theme.accent} />
       <Text style={s.menuCaption}>
-        Menu cards include photographs and labeled illustrations; some dishes
-        have no photo yet. Menu banners show a restaurant menu example.
-        Images do not establish ingredient or allergen safety.
+        Photos and labeled illustrations are for reference. Banners show one menu example; some items have no photo. Images do not confirm ingredients or allergen safety.
       </Text>
       {mode === "full" ? (
         <>
           <View style={s.menuListIntro}>
             <View style={s.between}>
               <Text style={[s.menuListTitle, { color: theme.accent }]}>
-                The menu
+                Menu items
               </Text>
               <Pressable
                 accessibilityRole="button"
@@ -803,7 +801,7 @@ export function Restaurant({ id, state, navigate }) {
                 style={s.menuInlineLink}
               >
                 <Text style={[s.menuInlineLinkText, { color: theme.accent }]}>
-                  What this menu covers
+                  Menu coverage
                 </Text>
                 <Icon
                   name={showCoverage ? "chevron-up" : "chevron-down"}
@@ -816,7 +814,7 @@ export function Restaurant({ id, state, navigate }) {
             {showCoverage && (
               <Text style={s.menuCaption}>
                 {restaurant.menuCoverage ||
-                  "Food items currently cataloged from the linked public sources. This is not a verified inventory for this branch."}
+                  "Items from the linked public sources. Current availability at this location is not confirmed."}
               </Text>
             )}
           </View>
@@ -826,10 +824,9 @@ export function Restaurant({ id, state, navigate }) {
         </>
       ) : !needs.length ? (
         <View style={s.menuEmptyState}>
-          <Text style={s.menuListTitle}>Make this menu yours</Text>
+          <Text style={s.menuListTitle}>Add your dietary needs</Text>
           <Text style={s.body}>
-            Choose your allergies and dietary restrictions to compare this menu
-            and explore options for your needs.
+            Choose allergies and dietary restrictions to compare the available menu information.
           </Text>
           <Button variant="secondary" onPress={editNeeds}>
             Choose dietary needs
@@ -844,7 +841,7 @@ export function Restaurant({ id, state, navigate }) {
               </Text>
               <Text style={s.menuCaption}>
                 {matches.length} {matches.length === 1 ? "item" : "items"}{" "}
-                explicitly support every selected need.
+                with source support for all your selected needs. Confirm preparation and cross-contact with the restaurant.
               </Text>
             </View>
           )}
@@ -861,11 +858,11 @@ export function Restaurant({ id, state, navigate }) {
             </View>
           ) : !unknown.length ? (
             <View style={s.menuEmptyState}>
-              <Text style={s.h3}>No matching options found</Text>
+              <Text style={s.h3}>No reported matches</Text>
               <Text style={s.body}>
                 {conflicts.length
-                  ? "The cataloged items have reported or ingredient-based flags for your needs. Open the full menu to review them."
-                  : "No food items are available in this catalog yet."}
+                  ? "These items have reported allergens or ingredient flags for your needs. Open the full menu to review them."
+                  : "No menu items are available yet."}
               </Text>
             </View>
           ) : null}
@@ -879,9 +876,9 @@ export function Restaurant({ id, state, navigate }) {
                 style={s.menuUnknownToggle}
               >
                 <View style={s.flex}>
-                  <Text style={s.h3}>Possible options ({unknown.length})</Text>
+                  <Text style={s.h3}>Needs confirmation ({unknown.length})</Text>
                   <Text style={s.menuCaption}>
-                    No known conflict in the available information
+                    No known conflict, but details are missing for your needs
                   </Text>
                 </View>
                 <Icon
@@ -906,8 +903,7 @@ export function Restaurant({ id, state, navigate }) {
           )}
           {!!conflicts.length && (
             <Text style={s.menuCaption}>
-              {conflicts.length} items with dietary flags are excluded from this
-              view.
+              {conflicts.length} items with dietary flags are hidden. Open the full menu to review them.
             </Text>
           )}
           <Pressable
@@ -959,14 +955,14 @@ export function DishDetail({ id, state, navigate, openSheet }) {
       {dish.provenance?.kind === "component" && <Notice>Menu component</Notice>}
       <Assessment dish={dish} state={state} detailed />
       {!!dish.ingredientHints?.clues?.length && (
-        <Section title="Clues in the published menu">
+        <Section title="Ingredient clues">
           <View style={s.card}>
             {dish.ingredientHints.clues.map((clue) => (
               <Text key={clue} style={s.body}>
                 {clue}
               </Text>
             ))}
-            <Text style={s.small}>Ingredient clues use menu wording.</Text>
+            <Text style={s.small}>Based on published menu wording, not a complete ingredient list.</Text>
           </View>
         </Section>
       )}
@@ -975,10 +971,10 @@ export function DishDetail({ id, state, navigate, openSheet }) {
           <Text style={s.h3}>Reported ingredients</Text>
           <Tags
             values={dish.ingredients}
-            fallback="Full ingredients not supplied"
+            fallback="Complete ingredient list not provided"
           />
           <Text style={s.h3}>Declared allergens</Text>
-          <Tags values={dish.allergens} fallback="Not listed" />
+          <Tags values={dish.allergens} fallback="Not listed; ask the restaurant" />
           {!!dish.otherDeclaredAllergens?.length && (
             <>
               <Text style={s.h3}>Other declared allergens</Text>
@@ -1008,10 +1004,10 @@ export function DishDetail({ id, state, navigate, openSheet }) {
               {!!dish.provenance?.evidenceNote && (
                 <Text style={s.body}>{dish.provenance.evidenceNote}</Text>
               )}
-              <Text style={s.h3}>Allergens covered by this source</Text>
+              <Text style={s.h3}>Allergens this source covers</Text>
               <Tags
                 values={dish.provenance?.coverage || []}
-                fallback="Coverage not established"
+                fallback="Allergen coverage not confirmed"
               />
               <Text style={s.h3}>Source's free-from claims</Text>
               <Tags
@@ -1037,7 +1033,7 @@ export function DishDetail({ id, state, navigate, openSheet }) {
         </Section>
       )}
       {!!dish.tags?.length && (
-        <Section title="Flavor notes">
+        <Section title="Flavors and dietary tags">
           <Tags values={dish.tags} />
           {!!assessment.tasteReasons?.length && (
             <Text style={s.small}>
@@ -1084,7 +1080,7 @@ export function DishDetail({ id, state, navigate, openSheet }) {
       {saveUnavailable && (
         <>
           <Text style={s.small}>
-            Refresh the catalog before saving this item to your account.
+            Refresh menu data before saving this item to your account.
           </Text>
           <Button
             variant="secondary"
@@ -1102,7 +1098,7 @@ export function DishDetail({ id, state, navigate, openSheet }) {
           variant="quiet"
           onPress={() => navigate(`restaurant/${restaurant.id}`)}
         >
-          View restaurant and full source links
+          View restaurant and sources
         </Button>
       )}
     </>
@@ -1119,10 +1115,10 @@ export function Favorites({ state, navigate }) {
   );
   return (
     <>
-      <Title eyebrow="Your collection" title="Your next good meal.">
+      <Title eyebrow="Menus" title="Saved items">
         {state.mode === "guest"
           ? "Saved on this device. No account needed."
-          : "Your saved menu items, ready for next time."}
+          : "Your saved menu items."}
       </Title>
       {dishes.length ? (
         dishes.map((dish) => (
@@ -1135,7 +1131,7 @@ export function Favorites({ state, navigate }) {
           action="Explore menus"
           onPress={() => navigate("explore")}
         >
-          Save the menu items you want to ask about or try next.
+          Open a menu item and select Save to find it here.
         </Empty>
       )}
     </>

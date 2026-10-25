@@ -73,20 +73,25 @@ export function Auth({
     });
   }
   const labels = {
-    signin: "Welcome to your table.",
-    signup: "Your seat is waiting.",
-    reset: "A fresh start.",
-    recover: "Choose a new password.",
+    signin: "Sign in",
+    signup: "Create an account",
+    reset: "Reset your password",
+    recover: "Choose a new password",
   };
   return (
     <>
-      <Title eyebrow="Your dining companion" title={labels[mode]}>
-        Keep your dietary needs, saved menu items, and meal notes together.
+      <Title eyebrow="Account" title={labels[mode]}>
+        {{
+          signin: "Access your saved items, dietary profile, and meal notes.",
+          signup: "Save your dietary profile, menu items, and meal notes to an account.",
+          reset: "Enter your account email to request a reset link.",
+          recover: "Use at least 8 characters.",
+        }[mode]}
       </Title>
       {["signin", "signup"].includes(mode) && (
         <Tabs
           options={[
-            { value: "signin", label: "Log in" },
+            { value: "signin", label: "Sign in" },
             { value: "signup", label: "Create account" },
           ]}
           value={mode}
@@ -97,8 +102,7 @@ export function Auth({
         {mode === "signup" && (
           <>
             <Text style={s.small}>
-              Choose a username and add your email for password recovery. You
-              can start using your account right away.
+              Choose a username. Use an email address you can access for password recovery.
             </Text>
             <Field
               label="Username"
@@ -214,13 +218,13 @@ export function ProfileEditor({ state, navigate, returnTo }) {
     <>
       <Title
         eyebrow={
-          state.mode === "guest" ? "Browsing preview" : "Your preferences"
+          state.mode === "guest" ? "On this device" : "Preferences"
         }
-        title="Your dining profile"
+        title="Edit profile"
       >
         {state.mode === "guest"
-          ? "Use dietary needs to compare menus. Saved only on this device, not to an account."
-          : "Keep dietary needs separate from flavor preferences."}
+          ? "Use these preferences to compare menus. Saved on this device only."
+          : "Choose dietary needs and flavor preferences for menu comparisons."}
       </Title>
       <Field
         label="Your name"
@@ -235,7 +239,7 @@ export function ProfileEditor({ state, navigate, returnTo }) {
           value={draft.allergies}
           onChange={(value) => update("allergies", value)}
         />
-        <Text style={s.small}>Nine major allergens, plus Honey.</Text>
+        <Text style={s.small}>Includes the 9 major allergens and honey.</Text>
         <Chips
           label="Dietary restrictions"
           options={RESTRICTIONS}
@@ -249,7 +253,7 @@ export function ProfileEditor({ state, navigate, returnTo }) {
       </View>
       <View style={s.card}>
         <Chips
-          label="Flavors you love"
+          label="Flavors you like"
           options={TASTE_TAGS}
           value={draft.likes}
           onChange={(value) => update("likes", value)}
@@ -263,8 +267,8 @@ export function ProfileEditor({ state, navigate, returnTo }) {
       </View>
       <Notice>
         {state.mode === "guest"
-          ? "This preview changes menu comparisons only. It sends no information to a restaurant."
-          : "Your profile helps organize menus. Confirm current ingredients and preparation directly with the restaurant."}
+          ? "These preferences change menu comparisons only. They are not sent to restaurants."
+          : "Confirm current ingredients and preparation with the restaurant before ordering."}
       </Notice>
       <ErrorText error={task.error} />
       <Button
@@ -286,7 +290,7 @@ export function ProfileEditor({ state, navigate, returnTo }) {
           )
         }
       >
-        {state.mode === "guest" ? "Apply browsing preview" : "Save my profile"}
+        {state.mode === "guest" ? "Save on this device" : "Save profile"}
       </Button>
     </>
   );
@@ -297,10 +301,10 @@ export function Profile({ state, navigate }) {
   const task = useTask();
   return (
     <>
-      <Title eyebrow="Dietary needs and preferences" title="Your profile">
+      <Title eyebrow="Preferences" title="Your profile">
         {state.mode === "guest"
-          ? "Your browsing profile is saved only on this device, not to an account."
-          : "Manage the preferences used to compare menus."}
+          ? "Saved on this device only. Your preferences are not sent to restaurants."
+          : "These preferences help compare menus with your dietary needs."}
       </Title>
       <View style={[s.card, s.row]}>
         <View style={s.avatar}>
@@ -309,10 +313,10 @@ export function Profile({ state, navigate }) {
           </Text>
         </View>
         <View style={s.flex}>
-          <Text style={s.h3}>{profile.name || "Your dining profile"}</Text>
+          <Text style={s.h3}>{profile.name || "Dietary profile"}</Text>
           <Text style={s.small}>
             {state.mode === "demo"
-              ? "Local demo · on this device"
+              ? "Demo · on this device"
               : state.user?.email || "Browsing as a guest"}
           </Text>
         </View>
@@ -323,14 +327,14 @@ export function Profile({ state, navigate }) {
             icon="create-outline"
             onPress={() => navigate("edit-profile")}
           >
-            Choose allergies and preferences
+            Edit allergies and preferences
           </Button>
           <Button
             variant="secondary"
             busy={task.busy}
             onPress={() => task.run(() => api.previewProfile(defaultProfile))}
           >
-            Clear browsing profile
+            Clear preferences
           </Button>
           <ErrorText error={task.error} />
         </>
@@ -350,40 +354,40 @@ export function Profile({ state, navigate }) {
         <Tags values={profile.restrictions} />
         <Text style={s.small}>
           {state.mode === "guest"
-            ? "Saved only on this device. These preferences are not shared with a restaurant."
+            ? "Edit your profile to update these preferences."
             : "Your saved profile is not automatically shared with a restaurant."}
         </Text>
       </View>
       <View style={[s.card, { backgroundColor: colors.paleGreen }]}>
         <View style={s.row}>
-          <Icon name="sparkles-outline" color={colors.green} />
-          <Text style={s.h3}>Your flavor notes</Text>
+          <Icon name="restaurant-outline" color={colors.green} />
+          <Text style={s.h3}>Flavor preferences</Text>
         </View>
-        <Tags values={profile.likes} fallback="Add the flavors you love." />
+        <Tags values={profile.likes} fallback="No favorite flavors selected" />
         <Text style={s.small}>
           {profile.dislikes.length
             ? `Usually skip: ${profile.dislikes.join(", ")}`
-            : "A few preferences help personalize discovery."}
+            : "No flavors to skip selected"}
         </Text>
       </View>
       {[
         {
           page: "favorites",
           icon: "heart-outline",
-          title: "Saved dishes",
-          subtitle: "A little collection for next time",
+          title: "Saved items",
+          subtitle: "View the menu items you saved",
         },
         {
           page: "settings",
           icon: "settings-outline",
           title: "Account & settings",
-          subtitle: "Your data, your account, your choices",
+          subtitle: "Sign in, export data, or delete app data",
         },
         {
           page: "help",
           icon: "help-circle-outline",
           title: "How Verifed works",
-          subtitle: "A little clarity about this app",
+          subtitle: "Menu sources, dietary matches, and privacy",
         },
       ].map((item) => (
         <Pressable
@@ -415,20 +419,20 @@ export function Settings({ state, navigate }) {
   }
   return (
     <>
-      <Title eyebrow="Your account" title="Settings" />
+      <Title eyebrow="Account and data" title="Settings" />
       <View style={s.card}>
         <Text style={s.h3}>Your account</Text>
         <Text style={s.body}>
           {state.mode === "demo"
-            ? "Local demo on this device"
+            ? "Demo on this device"
             : state.user?.email || "Browsing as a guest"}
         </Text>
         <Text style={s.small}>
           {state.mode === "demo"
-            ? "Demo activity is saved locally, alongside public Orlando menu records. A signed-in account keeps separate cloud data."
+            ? "Demo changes stay on this device, separate from account data."
             : state.mode === "guest"
-              ? "Your dietary profile, saved menu items, and meal notes stay on this device. Sign-in is optional."
-              : "Your profile and meal history belong to your account."}
+              ? "Your profile, saved items, meal notes, and scanned menus stay on this device. An account is optional."
+              : "Your profile and meal history are saved to your account. Scanned menus stay on this device."}
         </Text>
         {state.mode !== "cloud" && (
           <Button onPress={() => navigate("auth")}>
@@ -455,8 +459,8 @@ export function Settings({ state, navigate }) {
         <View style={s.card}>
           <Text style={s.body}>
             {state.mode === "guest"
-              ? "Export your dietary profile, saved items, and meal notes from this device."
-              : "Export the personal information Verifed stores for your account."}
+              ? "Export your profile, saved items, meal notes, and scanned menus from this device."
+              : "Export your profile, activity, saved items, and scanned menus."}
           </Text>
           <Button
             variant="secondary"
@@ -475,14 +479,14 @@ export function Settings({ state, navigate }) {
               ? "Clear data on this device"
               : state.mode === "demo"
                 ? "Reset local demo"
-                : "Delete my personal app data"}
+                : "Delete personal app data"}
           </Button>
           <Text style={s.small}>
             {state.mode === "guest"
-              ? "Clearing removes your dietary profile, saved items, and meal notes from this device. Public menus stay available."
+              ? "Clearing removes your profile, saved items, meal notes, and scanned menus from this device. Public menus remain available."
               : state.mode === "demo"
-                ? "Reset restores the original demo activity and current public menu catalog."
-                : "Deleting personal app data removes your profile, meals, saved items, and any older activity. Your login remains."}
+                ? "Reset restores the sample activity and public menus, and removes your scanned menus."
+                : "Deletes your account profile, meals, saved items, and older activity, plus scanned menus saved on this device. Your login remains."}
           </Text>
         </View>
       </Section>
@@ -493,7 +497,7 @@ export function Settings({ state, navigate }) {
         onPress={() =>
           task.run(
             () => api.refresh(),
-            () => setNotice("Your data is up to date."),
+            () => setNotice("Data refreshed."),
           )
         }
       >
@@ -507,17 +511,17 @@ export function Settings({ state, navigate }) {
             state.mode === "guest"
               ? "Clear this device's data?"
               : state.mode === "demo"
-                ? "Reset your demo?"
+                ? "Reset demo data?"
                 : "Delete personal app data?"
           }
           onClose={() => setConfirm(false)}
         >
           <Text style={s.body}>
             {state.mode === "guest"
-              ? "Your dietary profile, saved menu items, and meal notes on this device will be removed. Export them first to keep a copy."
+              ? "This removes your profile, saved items, meal notes, and scanned menus from this device. Export first to keep a copy."
               : state.mode === "demo"
-                ? "Your local changes will be replaced with the original sample data."
-                : "Your personal app data will be removed. Export it first if you want to keep a copy. Your login remains."}
+                ? "This replaces your demo changes with the original sample data and removes your scanned menus."
+                : "This deletes your account profile, activity, and saved items, plus scanned menus saved on this device. Export first to keep a copy. Your login remains."}
           </Text>
           <ErrorText error={task.error} />
           <Button variant="secondary" onPress={() => setConfirm(false)}>
@@ -532,7 +536,7 @@ export function Settings({ state, navigate }) {
                   state.mode === "demo" ? api.resetDemo() : api.deleteMyData(),
                 () => {
                   setConfirm(false);
-                  setNotice("Your personal data has been reset.");
+                  setNotice(state.mode === "demo" ? "Demo data reset." : state.mode === "guest" ? "Device data cleared." : "Personal app data deleted.");
                 },
               )
             }
@@ -549,7 +553,7 @@ export function Settings({ state, navigate }) {
       {exported !== null && (
         <Sheet title="Your data export" onClose={() => setExported(null)}>
           <Text style={s.small}>
-            Share this JSON export, or select the text to copy it.
+            Share this export, or select the text below to copy it.
           </Text>
           <Button
             variant="secondary"
@@ -580,21 +584,16 @@ export function Help({ navigate }) {
   return (
     <>
       <Title
-        eyebrow="A local idea with a real purpose"
-        title="More clarity. More choice."
+        eyebrow="Help"
+        title="How Verifed works"
       >
-        Eating out can mean searching several websites just to understand one
-        menu. Verifed brings published Orlando menus and your dietary needs into
-        one place.
+        Compare published menus with your dietary needs, then check details with the restaurant.
       </Title>
       <View style={s.howPanel}>
-        <Text style={s.eyebrow}>THE COMMUNITY CHALLENGE</Text>
-        <Text style={s.h2}>Everyone deserves a place at the table.</Text>
+        <Text style={s.eyebrow}>ABOUT THE PROJECT</Text>
+        <Text style={s.h2}>Built for menu comparisons</Text>
         <Text style={s.body}>
-          Built for the Congressional App Challenge, this app helps people with
-          food allergies and dietary restrictions ask informed questions at
-          local restaurants. Restaurants do not need to buy software or join
-          Verifed to appear.
+          Created for the Congressional App Challenge. Verifed uses public menus to help people with allergies and dietary restrictions ask informed questions. Restaurants do not need to join or pay to appear.
         </Text>
       </View>
       {[
@@ -605,13 +604,13 @@ export function Help({ navigate }) {
         ],
         [
           "02",
-          "Read both menus",
-          "Full menu shows published food entries and declared allergens. For my diet separates restaurant-reported matches from possible options with no known conflict in the available ingredient information.",
+          "Compare the menu",
+          "Full menu shows published items and declared allergens. For my diet highlights reported matches and items that need confirmation. A match is not a guarantee of safety.",
         ],
         [
           "03",
-          "Know what is missing",
-          "Possible options may have incomplete information. Check the ingredient clues and ask the restaurant; a blank allergen field does not count as allergen-free.",
+          "Check missing details",
+          "Some sources have incomplete ingredients or allergen information. An empty allergen list does not mean allergen-free.",
         ],
         [
           "04",
@@ -627,11 +626,11 @@ export function Help({ navigate }) {
           </View>
         </View>
       ))}
-      <Section title="A few useful answers">
+      <Section title="Common questions">
         {[
           {
             title: "Are these real menus?",
-            text: "Yes. Each restaurant includes links to official public menu sources and a review date. Chain sources and menu exclusions are labeled. Verifed is not partnered with these restaurants; current local availability can differ.",
+            text: "Restaurant menus link to public sources and include a review date. Chain menu scope and exclusions are labeled. Verifed is independent of these restaurants. Local availability may differ. Demo menus are fictional and labeled.",
           },
           {
             title: "Does a match mean safe?",
@@ -639,15 +638,15 @@ export function Help({ navigate }) {
           },
           {
             title: "Why do some menus have no matches?",
-            text: "Some restaurants publish food names and ingredients without a complete allergen guide. Verifed separates explicit source-supported matches from possible options that still need a conversation with the restaurant.",
+            text: "A reported match needs explicit source support for every selected dietary need. When that information is missing, ask the restaurant to confirm. Ingredient clues are not a complete allergen guide.",
           },
           {
             title: "Where does my information go?",
-            text: "Guest dietary preferences, saved items, and meal notes stay on this device. Signed-in accounts use the connected backend with account-specific access. Preferences are not sent to restaurants. Export and deletion are in Settings.",
+            text: "Guest profiles, saved items, meal notes, and scanned menus stay on this device. Signed-in profiles and activity are saved to your account; scanned menus stay on this device. Preferences are not sent to restaurants. Export or delete app data in Settings.",
           },
           {
             title: "Can I order here?",
-            text: "Verifed is a menu and dietary-information companion. Use the restaurant's own website or telephone for orders.",
+            text: "No. Order through the restaurant's website or by phone. Verifed does not send orders.",
           },
         ].map((item) => (
           <View key={item.title} style={s.card}>

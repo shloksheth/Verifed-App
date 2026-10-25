@@ -9,8 +9,21 @@ export function BrandProvider({ children }) {
   return children;
 }
 
-export function BrandHeading({ style, ...props }) {
-  return <Text {...props} style={[style, { fontFamily: "HomeHeading" }]} />;
+export function BrandHeading({ style, accessibilityRole, ...props }) {
+  // The wrapper also renders tabs and product names: only true headings use serif.
+  return (
+    <Text
+      {...props}
+      accessibilityRole={accessibilityRole}
+      style={[
+        style,
+        {
+          fontFamily:
+            accessibilityRole === "header" ? "HomeHeadingStrong" : "HomeStrong",
+        },
+      ]}
+    />
+  );
 }
 
 export function BrandLogo({ brand, size = 58 }) {

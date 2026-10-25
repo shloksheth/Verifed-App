@@ -21,6 +21,8 @@ for directory in ('src', 'components'):
                     if not (directory == 'components' and p.name in {'Scanner.js', 'Workspace.js', 'Requests.js'}))
 expected.update(p.relative_to(mobile).as_posix() for p in (mobile / 'assets').rglob('*')
                 if p.is_file() and p.suffix.lower() in {'.png', '.jpg', '.jpeg', '.webp', '.ttf'})
+expected.update(p.relative_to(mobile).as_posix() for p in (mobile / 'assets/fonts').iterdir()
+                if p.is_file() and p.suffix.lower() in {'.txt', '.json'})
 assert set(publication['files']) == expected, 'Published inventory does not match local source'
 try:
     with urlopen(f'https://exp.host/--/api/v2/snack/download/{identifier}', timeout=45) as response:

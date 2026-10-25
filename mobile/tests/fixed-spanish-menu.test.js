@@ -38,6 +38,8 @@ test("Any successful photo opens the same fresh fixed transcript and keeps its r
 test("Prices keep the set-menu offer separate from individual dishes and translate only the supplement label", () => {
   const menu = fixedSpanishMenu();
   assert.match(menu.priceSummaryEn, /25€ → 20€.*18€/);
+  for (const value of Object.values(menu.offer))
+    assert.ok(readFileSync(new URL("../../research/menu-sources/2cero7-spanish-page.txt", import.meta.url), "utf8").includes(value));
   assert.equal(menu.items.filter((item) => item.price).length, 1);
   const english = scannedItems(menu, { language: "en" });
   const spanish = scannedItems(menu, { language: "es" });

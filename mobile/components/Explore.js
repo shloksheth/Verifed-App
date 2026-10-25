@@ -25,7 +25,7 @@ const modes = [
   { value: "options", label: "Possible options" },
   { value: "reported", label: "Reported matches" },
   { value: "selected-free", label: "Selected allergens free" },
-  { value: "all-nine", label: "All 9 source-free" },
+  { value: "all-nine", label: "Source excludes all 9" },
 ];
 const notes = {
   all: "Compare published menus. Open a restaurant to see its full menu or your dietary options.",
@@ -62,6 +62,8 @@ export default function Explore({
   openLocation = false,
   onLocationChange,
   initialCuisine,
+  initialQuery,
+  onInitialFiltersApplied,
 }) {
   const [filters, setFilters] = useState(remembered);
   const [locationText, setLocationText] = useState("");
@@ -76,6 +78,21 @@ export default function Explore({
   useEffect(() => {
     remembered = filters;
   }, [filters]);
+  useEffect(() => {
+    // Home submits a real search; an empty submission clears earlier filters.
+    if (initialQuery !== null && initialQuery !== undefined) {
+      const next = {
+        ...remembered,
+        query: initialQuery,
+        cuisine: "All",
+        collection: "all",
+      };
+      // Clearing the route remounts this screen. Persist the intent first.
+      remembered = next;
+      setFilters(next);
+      onInitialFiltersApplied?.();
+    }
+  }, [initialQuery, onInitialFiltersApplied]);
   useEffect(
     () => () => {
       // Clear ownership before aborting: the rejected request must not update
@@ -107,14 +124,18 @@ export default function Explore({
       ],
       initialCuisine,
     );
-    if (cuisine)
-      setFilters((current) => ({
-        ...current,
+    if (cuisine) {
+      const next = {
+        ...remembered,
         cuisine,
         query: "",
         collection: "all",
-      }));
-  }, [initialCuisine, state.restaurants]);
+      };
+      remembered = next;
+      setFilters(next);
+      onInitialFiltersApplied?.();
+    }
+  }, [initialCuisine, state.restaurants, onInitialFiltersApplied]);
   const results = useMemo(
     () =>
       discoverRestaurants({
@@ -180,8 +201,8 @@ export default function Explore({
   }
   return (
     <>
-      <Title eyebrow="Around your table" title="Good food. Your way.">
-        Find local menus that fit your appetite, your area, and your needs.
+      <Title title="Explore">
+        Search restaurant menus and compare dietary options.
       </Title>
       <Pressable
         accessibilityRole="button"
@@ -191,7 +212,7 @@ export default function Explore({
       >
         <Icon name="location" color={colors.green} />
         <View style={{ flex: 1 }}>
-          <Text style={s.discoveryAreaLabel}>LOOKING AROUND</Text>
+          <Text style={s.discoveryAreaLabel}>SEARCH AREA</Text>
           <Text style={s.h3}>
             {filters.center?.label || "All Orlando-area locations"}
           </Text>
@@ -270,8 +291,7 @@ export default function Explore({
             Show entire catalog
           </Button>
           <Text style={s.small}>
-            City search: GeoNames / Open-Meteo. Catalog ZIPs and neighborhoods
-            use the approximate center of our address points. No GPS access.
+            Search uses an approximate area. Your GPS location is not accessed.
           </Text>
           <Button
             variant="secondary"
@@ -300,7 +320,7 @@ export default function Explore({
         label="Search restaurants & menus"
         value={filters.query}
         onChangeText={(query) => update({ query })}
-        placeholder="Woodlands, tacos, or a favorite dish…"
+        placeholder="Restaurant, dish or ingredient"
         clearButtonMode="while-editing"
       />
       <Tabs
@@ -330,7 +350,7 @@ export default function Explore({
       </View>
       <View style={s.discoverySummary}>
         <Text style={s.h2}>
-          {groups.size} places · {results.length} locations
+          {groups.size} menus · {results.length} locations
         </Text>
         <Text style={s.small}>
           {modes.find((mode) => mode.value === filters.dietMode)?.label} ·{" "}
@@ -346,7 +366,7 @@ export default function Explore({
         </Text>
         <Text style={s.small}>
           {filters.sort === "recommended"
-            ? "Featured menus first. Your dietary fit, rated meals and preferences help order the other results."
+            ? "Featured menus first, then suggestions based on your needs and meal ratings."
             : "Distance is straight-line from your selected area, not a driving route."}
         </Text>
         {filters.dietMode !== "all" && (
@@ -362,7 +382,7 @@ export default function Explore({
       )}
       {!results.length && (
         <Empty
-          title="No matching tables yet"
+          title="No restaurants found"
           action="Reset filters"
           onPress={() =>
             setFilters({
@@ -415,10 +435,7 @@ export default function Explore({
         </View>
       ))}
       {showFilters && (
-        <Sheet
-          title="Make it your kind of meal"
-          onClose={() => setShowFilters(false)}
-        >
+        <Sheet title="Filters" onClose={() => setShowFilters(false)}>
           <Text style={s.h3}>Distance from your search area</Text>
           <Tabs
             options={[5, 10, 25, 50].map((value) => ({
@@ -481,10 +498,7 @@ export default function Explore({
         </Sheet>
       )}
       {!!branches && (
-        <Sheet
-          title="Choose a Taco Bell location"
-          onClose={() => setBranches(null)}
-        >
+        <Sheet title="Choose a location" onClose={() => setBranches(null)}>
           <Text style={s.small}>Choose a branch to open its menu.</Text>
           {branches.map((result) => (
             <Pressable

@@ -17,10 +17,7 @@ import {
   useTask,
 } from "./UI";
 import { colors, s } from "../styles";
-import {
-  scannedItems,
-  updateScannedItem,
-} from "../src/menu-scan";
+import { scannedItems, updateScannedItem } from "../src/menu-scan";
 import { scanLibrary as library } from "../src/device-scans";
 import { menuAfterPhoto } from "../src/fixed-spanish-menu";
 
@@ -150,26 +147,23 @@ export default function MenuScanner({
 
   return (
     <>
-      <Title
-        eyebrow="At your table"
-        title={menu ? menu.title : "Every menu, a little clearer."}
-      >
+      <Title title={menu ? menu.title : "Scan a menu"}>
         {menu
           ? menu.sourceLabel
-          : "Take a photo, then explore the menu in English."}
+          : "Take a photo or choose a menu from your library."}
       </Title>
 
       {!menu && !photo && (
         <>
           <View style={look.capture}>
             <View style={look.viewfinder}>
-              <Icon name="scan-outline" size={80} color={colors.green} />
-              <Icon name="restaurant-outline" size={28} color={colors.green} />
+              <View style={look.capturePaper}>
+                <OriginalMenuPage />
+              </View>
             </View>
-            <Text style={s.h2}>Start with one clear page</Text>
+            <Text style={s.h3}>One page at a time</Text>
             <Text style={[s.body, look.center]}>
-              Keep the whole menu in the frame.{"\n"}Good lighting makes small
-              print easier to read.
+              Keep all four corners visible and avoid glare.
             </Text>
           </View>
           <Button
@@ -275,15 +269,42 @@ export default function MenuScanner({
               <Text style={s.eyebrow}>
                 {language === "es" ? menu.headingEs : menu.headingEn}
               </Text>
-              <Text style={s.h3}>
-                {language === "es" ? menu.priceSummaryEs : menu.priceSummaryEn}
-              </Text>
+              {menu.offer ? (
+                <>
+                  <View style={s.row}>
+                    <Text style={look.oldPrice}>{menu.offer.previous}</Text>
+                    <Text style={look.offerPrice}>{menu.offer.current}</Text>
+                    <Text style={[s.small, s.flex]}>
+                      {language === "es"
+                        ? "Con la promoción"
+                        : "With the promotion"}
+                    </Text>
+                  </View>
+                  <Text style={s.small}>
+                    {menu.offer.single}{" "}
+                    {language === "es"
+                      ? "escogiendo plato único · IVA incluido"
+                      : "for a single dish · VAT included"}
+                  </Text>
+                </>
+              ) : (
+                <Text style={s.h3}>
+                  {language === "es"
+                    ? menu.priceSummaryEs
+                    : menu.priceSummaryEn}
+                </Text>
+              )}
             </View>
           )}
           {!!photo && (
-            <Button variant="secondary" icon="image-outline" onPress={() => setShowPhoto(true)}>
-              View your photo
-            </Button>
+            <Pressable
+              accessibilityRole="button"
+              onPress={() => setShowPhoto(true)}
+              style={look.photoAction}
+            >
+              <Icon name="image-outline" size={18} color={colors.orangeDark} />
+              <Text style={s.link}>View your photo</Text>
+            </Pressable>
           )}
           <Tabs
             options={[
@@ -317,8 +338,8 @@ export default function MenuScanner({
             clearButtonMode="while-editing"
           />
           <Text style={s.small}>
-            Diet view removes conflicts found in the written text. Hidden
-            ingredients and cross-contact still need a restaurant answer.
+            Filters use the menu text. Confirm unlisted ingredients and
+            cross-contact with the restaurant.
           </Text>
           {view === "diet" && !needs.length ? (
             <Empty
@@ -346,11 +367,17 @@ export default function MenuScanner({
                   accessibilityLabel={`Read ${item.name} ingredients and dietary notes`}
                   style={look.dish}
                 >
-                  <View style={s.between}>
+                  <View style={[s.between, { alignItems: "flex-start" }]}>
                     <Text style={[s.h3, s.flex]}>{item.name}</Text>
-                    <Text style={s.body}>{item.price}</Text>
+                    {!!item.price && (
+                      <Text style={[s.small, { maxWidth: 90 }]}>
+                        {item.price}
+                      </Text>
+                    )}
                   </View>
-                  {!!item.description && <Text style={s.body}>{item.description}</Text>}
+                  {!!item.description && (
+                    <Text style={s.body}>{item.description}</Text>
+                  )}
                   {item.needsTranslationReview ? (
                     <Text style={look.conflict}>Translation needs review</Text>
                   ) : item.assessment.conflicts.length ? (
@@ -377,18 +404,30 @@ export default function MenuScanner({
           </Button>
           {!!menu.notesEn && (
             <View style={look.paper}>
-              <Text style={s.h3}>{language === "es" ? "Incluye" : "Included"}</Text>
+              <Text style={s.h3}>
+                {language === "es" ? "Incluye" : "Included"}
+              </Text>
               {(language === "es" ? menu.notesEs : menu.notesEn).map((note) => (
-                <Text key={note} style={s.body}>{note}</Text>
+                <Text key={note} style={s.body}>
+                  {note}
+                </Text>
               ))}
               <Text style={s.small}>{menu.contact}</Text>
               <Text style={s.small}>{menu.venue}</Text>
-              <Text style={s.h3}>{language === "es" ? "Leyenda de símbolos del menú" : "Menu symbol key"}</Text>
-              <Text style={s.small}>{language === "es" ? menu.legendEs : menu.legendEn}</Text>
+              <Text style={s.h3}>
+                {language === "es"
+                  ? "Leyenda de símbolos del menú"
+                  : "Menu symbol key"}
+              </Text>
+              <Text style={s.small}>
+                {language === "es" ? menu.legendEs : menu.legendEn}
+              </Text>
             </View>
           )}
           {menu.id === "2cero7-spanish-fixed" && (
-            <Button variant="secondary" onPress={() => setShowOriginal(true)}>View original menu page</Button>
+            <Button variant="secondary" onPress={() => setShowOriginal(true)}>
+              View original menu page
+            </Button>
           )}
         </>
       )}
@@ -430,14 +469,17 @@ export default function MenuScanner({
           ))
         ) : (
           <Text style={s.small}>
-            Menus you save will appear here. Saved dishes are still in the heart
-            button above.
+            Saved menus will appear here. Find saved dishes with the heart
+            button.
           </Text>
         )}
       </View>
 
       {showOriginal && (
-        <Sheet title="Original · Español" onClose={() => setShowOriginal(false)}>
+        <Sheet
+          title="Original · Español"
+          onClose={() => setShowOriginal(false)}
+        >
           <OriginalMenuPage />
         </Sheet>
       )}
@@ -458,10 +500,12 @@ export default function MenuScanner({
           </Text>
           <Button
             variant="secondary"
-            onPress={() => setEditing({
-              ...selected,
-              price: menu.items.find((item) => item.id === selected.id).price,
-            })}
+            onPress={() =>
+              setEditing({
+                ...selected,
+                price: menu.items.find((item) => item.id === selected.id).price,
+              })
+            }
           >
             Correct this item
           </Button>
@@ -527,16 +571,23 @@ export default function MenuScanner({
 
 const look = StyleSheet.create({
   capture: {
-    backgroundColor: colors.paleGreen,
-    borderRadius: 20,
+    backgroundColor: colors.paper,
+    borderRadius: 24,
     padding: 24,
     alignItems: "center",
     gap: 14,
   },
   viewfinder: {
-    minHeight: 116,
+    width: "100%",
+    minHeight: 190,
     alignItems: "center",
     justifyContent: "center",
+  },
+  capturePaper: {
+    width: 112,
+    borderWidth: 1,
+    borderColor: colors.line,
+    transform: [{ rotate: "-6deg" }],
   },
   center: { textAlign: "center", color: colors.muted },
   sampleRow: {
@@ -577,11 +628,9 @@ const look = StyleSheet.create({
   category: { marginTop: 6, marginBottom: 12 },
   dish: {
     gap: 8,
-    padding: 16,
-    borderWidth: 1,
-    borderColor: colors.line,
-    backgroundColor: "#FFFFFF",
-    borderRadius: 14,
+    paddingVertical: 18,
+    borderBottomWidth: 1,
+    borderBottomColor: colors.line,
   },
   conflict: { color: colors.red, fontSize: 13, lineHeight: 20 },
   flag: { color: colors.green, fontSize: 13, lineHeight: 20 },
@@ -608,6 +657,33 @@ const look = StyleSheet.create({
     gap: 10,
     marginTop: 10,
   },
-  originalPage: { width: "100%", aspectRatio: 1190 / 1685, backgroundColor: "white" },
-  priceSummary: { padding: 16, gap: 8, borderRadius: 14, backgroundColor: colors.paleGreen },
+  originalPage: {
+    width: "100%",
+    aspectRatio: 1190 / 1685,
+    backgroundColor: "white",
+  },
+  priceSummary: {
+    padding: 18,
+    gap: 6,
+    borderRadius: 18,
+    backgroundColor: colors.paper,
+  },
+  oldPrice: {
+    color: colors.muted,
+    fontSize: 17,
+    textDecorationLine: "line-through",
+  },
+  offerPrice: {
+    color: colors.ink,
+    fontSize: 32,
+    lineHeight: 40,
+    fontWeight: "700",
+  },
+  photoAction: {
+    minHeight: 44,
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 8,
+    alignSelf: "flex-start",
+  },
 });

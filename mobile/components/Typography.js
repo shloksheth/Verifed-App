@@ -19,7 +19,16 @@ export function TypographyProvider({ fontsReady, children }) {
 
 function useFontReadiness() {
   const ready = useContext(FontReadiness);
-  return ready ?? ["HomeHeading", "HomeBody", "HomeMedium"].every(isLoaded);
+  return (
+    ready ??
+    [
+      "HomeHeading",
+      "HomeHeadingStrong",
+      "HomeBody",
+      "HomeMedium",
+      "HomeStrong",
+    ].every(isLoaded)
+  );
 }
 
 export const Text = forwardRef(function Text(

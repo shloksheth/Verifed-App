@@ -33,6 +33,7 @@ export function fixedSpanishMenu() {
     source: { ...fixedMenuSource },
     headingEs: "MENÚ DEL DÍA",
     headingEn: "SET MENU",
+    offer: { previous: "25€", current: "20€", single: "18€" },
     priceSummaryEs: "25€ → 20€ con la promoción · 18€ escogiendo plato único · IVA INCL",
     priceSummaryEn: "25€ → 20€ with the promotion · 18€ when choosing a single dish · VAT included",
     notesEs: [
