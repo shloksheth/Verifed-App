@@ -1,0 +1,45 @@
+{
+  "passed": true,
+  "images": [
+    {
+      "itemId": "sayola-3",
+      "asset": "mobile/assets/scan/sayola/garlic-shrimp.webp",
+      "provenanceMatches": true,
+      "platforms": {
+        "android": true,
+        "ios": true,
+        "web": true
+      }
+    },
+    {
+      "itemId": "sayola-2",
+      "asset": "mobile/assets/scan/sayola/patatas-bravas.webp",
+      "provenanceMatches": true,
+      "platforms": {
+        "android": true,
+        "ios": true,
+        "web": true
+      }
+    },
+    {
+      "itemId": "sayola-7",
+      "asset": "mobile/assets/scan/sayola/ham-croquettes.webp",
+      "provenanceMatches": true,
+      "platforms": {
+        "android": true,
+        "ios": true,
+        "web": true
+      }
+    },
+    {
+      "itemId": "sayola-17",
+      "asset": "mobile/assets/scan/sayola/spanish-omelet.webp",
+      "provenanceMatches": true,
+      "platforms": {
+        "android": true,
+        "ios": true,
+        "web": true
+      }
+    }
+  ]
+}

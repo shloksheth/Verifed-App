@@ -1,3 +1,41 @@
+# Menu scanning — V24
+
+The Scan tab now has a brown capture panel, gold camera action, neutral paper/camera geometry, cream menu paper, burgundy restaurant title, green dietary panel and a tan photo rail. It uses the existing Clash Grotesk faces and five-tab navigation. There is no restaurant menu image, source-page link or known menu result before a photo is selected. Saved menus are real owner-scoped records, never example rows.
+
+## What the app actually does
+
+A successful camera capture or photo selection opens an authored 23-dish Sayola dinner menu. This remains a deliberately fixed presentation: **there is no OCR, AI image analysis or live translation**. Any valid photo produces the same result. The selected photo is genuinely resized to at most 2000 pixels, normalized to JPEG and retained in memory for review/rotation; it is not sent to a provider. Canceling leaves the current draft intact. No artificial scanning delay was added. The UI has no demo badge, as requested; implementation scope is documented here.
+
+The user's supplied image is preserved at `research/menu-sources/sayola-dinner-upload.png`. `research/fixed-menu-source.json` records its hash and the optimized `assets/scan/sayola-menu.webp`. The source already contains English descriptions and Spanish/English dish names. Only the Spanish names are translated. The Original menu tab preserves the source names and English descriptions; it does not invent a Spanish original. All 23 prices and the printed GF/V/VG marks are retained. Printed symbols are not converted into complete allergen declarations.
+
+## How the related files work
+
+- `src/sayola-menu-data.js`: readable authored records for 19 hot tapas and four cold tapas. Each has a stable ID, original/English names, descriptions, price, category and printed labels. `research/menu-sources/sayola-transcript.json` is the reviewed data used by the transcript regression test.
+- `src/fixed-spanish-menu.js`: creates a fresh Sayola object on every capture. It clones item labels and tags so correcting one draft cannot mutate another. `menuAfterPhoto(photo)` pairs that fixed object with the actual prepared photo. `src/legacy-spanish-menu.js` retains the earlier 2cero7 transcript and its historical tests; saved old menus still open with their own source page.
+- `components/MenuScanner.js`: owns the picker, errors, selected language, category, search and dietary view. It loads/saves/deletes menus through the existing owner-scoped library, opens original-page and actual-photo sheets, and edits item text. Reset/new scan clears transient filters and sheets. A source link renders only when a supported menu exists. The original page has an explicit aspect ratio and 100% image dimensions to prevent native/web intrinsic-image overflow.
+- `components/ScanDesign.js`: presentation-only capture panel, labeled tabs, four dish-illustration cards and readable dish rows. `scanColors` contains the scoped brown/cream/gold palette. It uses Ionicons and the existing text wrapper; no extra fonts or animation dependency.
+- `src/scan-view.js`: pure helpers for stable category keys, filtering and supported original-page IDs. Category keys stay English internally so changing display language preserves the selection.
+- `src/scan-dish-assets.js`: exact local image mappings for four dishes. No generic fallback or image for a different dish. The rail filters with the current results and disappears after manual menu edits, avoiding mismatched artwork after a recipe/name correction.
+- `App.js`: tints only the Scan route's root/status/header surfaces. The owner-tagged draft remains above screen remounts so editing dietary settings does not discard the menu.
+- `components/Home.js`: replaces the earlier Spanish-menu thumbnail with a neutral scan icon, centered in the existing paper thumbnail. Home does not expose the fixed source before capture either.
+- `src/ingredient-hints.js`: adds conservative wheat-recipe clues for croquettes/empanadas. They remain possible flags, not restaurant-confirmed ingredient lists. Existing explicit egg, milk, shellfish and garlic/onion checks continue to work despite printed GF/V labels.
+
+`For my diet` removes identified ingredient conflicts and translations awaiting review. It does not establish unlisted ingredients or cross-contact. The empty profile state directs people to settings. Written menu notes and a single filtering explanation remain near the bottom.
+
+## The four pictures
+
+The rail uses four **generated recipe illustrations**, not actual restaurant photos: patatas bravas, garlic shrimp, ham croquettes and Spanish omelet. `docs/SAYOLA_GENERATED_IMAGES.txt` lists them for the owner. Full prompts, original/optimized hashes, portion assumptions and visual-review notes are in `research/sayola-illustration-provenance.json`. The UI calls this rail “Dish illustrations.” All four are local optimized WebP files in `assets/scan/sayola/`; other dishes keep their full menu text without unrelated photo fallbacks.
+
+## Checks and limits
+
+`tests/sayola-menu.test.js` checks the 23-record transcript, independent copies, category/language/search behavior, named ingredient exclusions, corrected prices and the four distinct WebP/provenance hashes. Existing library/correction tests remain. `research/verify-fixed-menu-assets.py` verifies the supplied menu's exact bytes in all exports; `research/verify-scan-illustrations.py` does the same for the four illustrations. Existing food/font/Home asset validators are retained.
+
+Browser testing and iOS/Android exports do not prove camera permissions, native gestures or physical iPhone rendering. No iOS simulator is available on this Windows host. The existing Medium_Phone_API_36.1 Android emulator was booted with Expo Go and the local checkout: the capture page, supplied-photo picker, 23-dish result, card rendering, category/original-name switching and save to My menus passed. Details: `research/runtime-v24-qa.json`. Physical iPhone camera/permissions, enlarged type and remote Snack runtime remain separate checks.
+
+---
+
+## Historical implementation notes (through V20)
+
 # Menu scanning screen — V20
 
 ## Current fixed-menu presentation

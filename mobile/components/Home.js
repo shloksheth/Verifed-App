@@ -285,12 +285,7 @@ export default function Home({ state, navigate, searchArea }) {
           </View>
         </View>
         <View style={h.menuThumbnail}>
-          <Image
-            source={require("../assets/scan/2cero7-spanish-menu.webp")}
-            contentFit="contain"
-            accessibilityLabel="Spanish restaurant menu"
-            style={h.foodPhoto}
-          />
+          <Icon name="scan-outline" size={42} color={colors.green} />
         </View>
       </Pressable>
     </View>
@@ -512,6 +507,8 @@ const h = StyleSheet.create({
     minHeight: 44,
   },
   menuThumbnail: {
+    alignItems: "center",
+    justifyContent: "center",
     width: 75,
     height: 108,
     backgroundColor: colors.paper,

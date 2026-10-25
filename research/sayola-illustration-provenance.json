@@ -1,0 +1,88 @@
+{
+  "images": [
+    {
+      "itemId": "sayola-3",
+      "asset": "mobile/assets/scan/sayola/garlic-shrimp.webp",
+      "originalFile": "exec-bbac2fba-d449-4703-9e94-14217e6be133.png",
+      "originalSha256": "f83c4948a6a81992bf605a96ec16b0b9b5ec9eda3fc5ccc72fd34bf3dee790c4",
+      "sha256": "86a3183799dfad9ff9e4bfb00fa7a31830fdce2347ff21d31a1f2dca1c5c65ca",
+      "originalDimensions": [
+        1374,
+        1145
+      ],
+      "dimensions": [
+        900,
+        750
+      ],
+      "generated": true,
+      "tool": "image_gen",
+      "prompt": "Photorealistic natural food photograph for an illustrative menu card: Spanish camarones al ajillo, sautéed peeled shrimp in olive oil and visibly sliced garlic with a small touch of red hot pepper sauce. A modest tapas portion, rustic shallow cream ceramic dish, entire dish within frame, subtle parsley only, natural warm window light, realistic matte food texture, slight overhead angle, warm oak tabletop, no text, no logo, no hands, no extra sides, no bread. This is a recipe illustration rather than a photograph of a named restaurant's actual serving.",
+      "actualRestaurantPhoto": false,
+      "portion": "Illustrative tapas portion. The printed descriptions give no serving weight for these four dishes.",
+      "visualReview": "Reviewed full food framing, realistic textures, and described ingredients. Croquette count is illustrative; menu gives no count."
+    },
+    {
+      "itemId": "sayola-2",
+      "asset": "mobile/assets/scan/sayola/patatas-bravas.webp",
+      "originalFile": "exec-ee1909df-bd77-4cf4-be2f-10cbab12a5ac.png",
+      "originalSha256": "598353641179eb5cfdfa0667236f4380c84f85bf57f40d880a086dd89066b7fa",
+      "sha256": "b0708f30e3b6c4d72d55fa6c2e6aa3dccd939ed6e13856f88a1a2743fbfa309a",
+      "originalDimensions": [
+        1312,
+        1199
+      ],
+      "dimensions": [
+        900,
+        822
+      ],
+      "generated": true,
+      "tool": "image_gen",
+      "prompt": "Photorealistic natural food photograph for an illustrative menu card. Spanish patatas bravas: a modest tapas portion of Spanish roasted potato cubes covered lightly with a red spicy tomato chef sauce. No mayonnaise, cheese, aioli or eggs. Rustic shallow cream ceramic plate fully within frame, slight overhead view, natural warm window light, realistic matte food textures and imperfect handmade shapes, warm oak tabletop. Entire food portion in view, no text, logo, hands or extra sides. This is an illustration of the published dish description, not a named restaurant's actual serving.",
+      "actualRestaurantPhoto": false,
+      "portion": "Illustrative tapas portion. The printed descriptions give no serving weight for these four dishes.",
+      "visualReview": "Reviewed full food framing, realistic textures, and described ingredients. Croquette count is illustrative; menu gives no count."
+    },
+    {
+      "itemId": "sayola-7",
+      "asset": "mobile/assets/scan/sayola/ham-croquettes.webp",
+      "originalFile": "exec-0d5a35ee-4e6f-49d3-b1d6-6361c02b9098.png",
+      "originalSha256": "c86c33ac5b19677ff76401b3a267a25b035b04328001369592e01b81a39e4ba9",
+      "sha256": "bff39701436c6265fc4362706379403edecfe36ac13d0cfa839af85af1657d9e",
+      "originalDimensions": [
+        1374,
+        1145
+      ],
+      "dimensions": [
+        900,
+        750
+      ],
+      "generated": true,
+      "tool": "image_gen",
+      "prompt": "Photorealistic natural food photograph for an illustrative menu card. Spanish croquetas de jamón: a modest tapas portion of five golden crisp homemade ham croquettes, one cut to show a creamy ham center, no sauces, no cheese garnish. Rustic shallow cream ceramic plate fully within frame, slight overhead view, natural warm window light, realistic matte food textures and imperfect handmade shapes, warm oak tabletop. Entire food portion in view, no text, logo, hands or extra sides. This is an illustration of the published dish description, not a named restaurant's actual serving.",
+      "actualRestaurantPhoto": false,
+      "portion": "Illustrative tapas portion. The printed descriptions give no serving weight for these four dishes.",
+      "visualReview": "Reviewed full food framing, realistic textures, and described ingredients. Croquette count is illustrative; menu gives no count."
+    },
+    {
+      "itemId": "sayola-17",
+      "asset": "mobile/assets/scan/sayola/spanish-omelet.webp",
+      "originalFile": "exec-cc6b27fc-a613-4296-af6a-cad5117579a9.png",
+      "originalSha256": "47ea0009a2cd7293df9c5c2f9ae6325fcf25cf443a91c13754b56871baa5b2f1",
+      "sha256": "53b697e4883934d40b730fa8be6743ee3dba05aadb27c46c74372e9bb76c7927",
+      "originalDimensions": [
+        1536,
+        1024
+      ],
+      "dimensions": [
+        900,
+        600
+      ],
+      "generated": true,
+      "tool": "image_gen",
+      "prompt": "Photorealistic natural food photograph for an illustrative menu card. Spanish tortilla española: a thick slice of Spanish omelet made with eggs, potatoes and onions only. Visible soft potato layers. No meat, ham or cheese. Rustic shallow cream ceramic plate fully within frame, slight overhead view, natural warm window light, realistic matte food textures and imperfect handmade shapes, warm oak tabletop. Entire food portion in view, no text, logo, hands or extra sides. This is an illustration of the published dish description, not a named restaurant's actual serving.",
+      "actualRestaurantPhoto": false,
+      "portion": "Illustrative tapas portion. The printed descriptions give no serving weight for these four dishes.",
+      "visualReview": "Reviewed full food framing, realistic textures, and described ingredients. Croquette count is illustrative; menu gives no count."
+    }
+  ]
+}

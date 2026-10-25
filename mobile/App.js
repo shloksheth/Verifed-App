@@ -265,11 +265,11 @@ function AppContent() {
     <TypographyProvider fontsReady={homeFontsReady}>
       <SafeAreaView
         edges={["top", "bottom"]}
-        style={[s.root, showWelcome && { backgroundColor: "#17281F" }]}
+        style={[s.root, route.page === "scan" && { backgroundColor: "#EDE1CE" }, showWelcome && { backgroundColor: "#17281F" }]}
       >
         <StatusBar
           barStyle={showWelcome ? "light-content" : "dark-content"}
-          backgroundColor={showWelcome ? "#17281F" : colors.cream}
+          backgroundColor={showWelcome ? "#17281F" : route.page === "scan" ? "#EDE1CE" : colors.cream}
         />
         {route.page === "home" && !showWelcome ? (
           <HomeHeader
@@ -279,7 +279,7 @@ function AppContent() {
           />
         ) : (
           !showWelcome && (
-            <View style={s.header}>
+            <View style={[s.header, route.page === "scan" && { backgroundColor: "#EDE1CE" }]}>
               {stack.length > 1 ? (
                 <Pressable
                   accessibilityRole="button"

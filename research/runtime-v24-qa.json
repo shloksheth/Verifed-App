@@ -1,0 +1,72 @@
+{
+  "version": 24,
+  "automatedTests": {
+    "passed": 174,
+    "failed": 0
+  },
+  "exports": [
+    "ios",
+    "android",
+    "web"
+  ],
+  "browser": {
+    "viewports": [
+      "390x700",
+      "320x568"
+    ],
+    "passed": [
+      "No source menu or source link before capture",
+      "Real photo chooser opens supplied 23-dish Sayola result",
+      "English/original names and stable hot/cold category selection",
+      "Save, reset and reopen menu",
+      "Correct Sayola original-page sheet",
+      "No-profile dietary empty state",
+      "Bounded illustration cards and small-phone capture actions"
+    ]
+  },
+  "designReview": {
+    "disposition": "ship",
+    "scope": "Three listed corrections scored resolved at browser evidence scope",
+    "verdict": ".impeccable/scan-finish-verdict.md"
+  },
+  "native": {
+    "platform": "Android",
+    "avd": "Medium_Phone_API_36.1",
+    "client": "Expo Go",
+    "source": "Authoritative mobile checkout through local Metro port 8124, not remote Snack",
+    "passed": [
+      "Guest welcome to Home and Scan",
+      "Capture-first page renders without source link or source menu image",
+      "Android photo picker selects supplied Sayola PNG",
+      "Fixed 23-dish Sayola result renders",
+      "Bounded food illustrations and prices render",
+      "Cold tapas filters to four dishes",
+      "Original menu changes names and category to Spanish while keeping selection",
+      "Save creates Sayola entry in My menus",
+      "Saved Sayola reopens in English with original-page access and reset filters"
+    ]
+  },
+  "assetChecks": [
+    "local-photo-export-validation.json",
+    "fixed-menu-asset-validation.json",
+    "sayola-illustration-validation.json",
+    "design-v24-asset-validation.json"
+  ],
+  "notVerified": [
+    "Physical iPhone and iOS camera/permissions",
+    "Live OCR, image recognition and live translation (not implemented)",
+    "Native enlarged type/dark mode and camera capture",
+    "Remote Snack runtime",
+    "Downloaded Snack ZIP; Expo returns SNACK_DOWNLOAD_TOO_LARGE"
+  ],
+  "scope": "Scripted Sayola menu presentation and scoped scan redesign; no backend/provider changes",
+  "snack": {
+    "url": "https://snack.expo.dev/zhvlVy09K5S3oE7aZUkmM",
+    "httpStatus": 200,
+    "title": "Verifed V24 - Snack",
+    "assets": 379,
+    "allSourceHashesMatch": true,
+    "runtime": "Not verified; browser editor navigation timed out",
+    "downloadedSourceComparison": "Unavailable: SNACK_DOWNLOAD_TOO_LARGE"
+  }
+}

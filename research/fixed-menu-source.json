@@ -1,10 +1,15 @@
 {
-  "sourceUrl": "https://www.2cero7restaurant.com/wp-content/uploads/cartas/carta-menu-2cero7-restaurant.pdf",
+  "sourceKind": "user-provided-image",
+  "sourceImage": "research/menu-sources/sayola-dinner-upload.png",
+  "originalImageSha256": "787075d92e262910ec21dc254e9f2df745aab87f347fc66301693e1f4c8339ea",
+  "appAsset": "assets/scan/sayola-menu.webp",
+  "appAssetSha256": "41cf5407696cf2f050d3df9f61362902b66e30de6422de06a4cf49ef941e78ed",
   "sourcePage": 1,
-  "originalPdfSha256": "8ad93a5504db8823e68dbd1444a8b030e2fb0765e5347aebcd21188e24ede3ca",
-  "render": "216 dpi grayscale source render, threshold 205 for black-and-white print; no text changes or generative editing",
-  "appAsset": "assets/scan/2cero7-spanish-menu.webp",
-  "appAssetSha256": "4a2cb9f3e714632ca5c4856708083b6a6829f92925eb70cb7f089a17a073699a",
+  "width": 640,
+  "height": 1042,
   "mode": "fixed-menu-demo",
-  "translation": "Reviewed fixed English translation, not live OCR/AI"
+  "transcription": "Manually reviewed from supplied image; English descriptions preserved, Spanish dish names translated. Printed prices retained, USD format based on the Sayola US restaurant identity.",
+  "restaurantWebsite": "https://www.sayolarestaurantnj.com/",
+  "currency": "USD",
+  "printedLabels": "GF, V and VG copied as printed. They are not complete ingredient declarations."
 }

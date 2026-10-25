@@ -1,0 +1,39 @@
+{
+  "number": 24,
+  "name": "Verifed V24",
+  "description": "Redesigns Scan in brown, cream and gold; removes the source menu before capture; uses the supplied 23-dish Sayola menu with English/original names, hot/cold category filters, dietary views and four local dish illustrations.",
+  "verification": [
+    "174 automated tests passed. iOS, Android and web exports succeeded.",
+    "Browser checks at 390x700 and 320x568 verified capture-first disclosure, supplied photo selection, 23-dish result, original names, category filtering, save/reopen/reset and the original-page sheet.",
+    "The design reviewer scored all three requested fixes resolved: bounded food cards, compact capture layout and persisted product context. Verdict scope is the supplied browser evidence.",
+    "Android Expo Go on Medium_Phone_API_36.1 loaded the authoritative local checkout: capture page, supplied-photo selection, 23-dish result, bounded food cards, cold-tapas filtering, original-name switching and save to My menus passed. This is not physical iPhone evidence.",
+    "356 catalog food images, the Sayola source page and four distinct generated dish illustrations match source/provenance hashes in every platform export. Clash Grotesk and Home assets are separately checked.",
+    "Camera capture/permissions on a physical iPhone remain unverified. The scan response is an authored fixed presentation, not live OCR or AI translation.",
+    "Snack verified all 379 uploaded asset hashes; editor HTTP 200/title verified. Downloaded ZIP comparison remains unavailable: SNACK_DOWNLOAD_TOO_LARGE. Remote Snack runtime was not verified."
+  ],
+  "snack": "https://snack.expo.dev/zhvlVy09K5S3oE7aZUkmM",
+  "snackId": "zhvlVy09K5S3oE7aZUkmM",
+  "snackSourceHash": "f5e666eab650d5714f3e326e5e4fccfffaa02de6fdfac73e0f70b326d5a69ef5",
+  "snackPublishedAt": "2026-10-25T19:00:11.637Z",
+  "status": "scan-redesign-browser-and-android-smoke-verified",
+  "uploadVerification": {
+    "assets": 379,
+    "images": 365,
+    "fonts": 14,
+    "allSourceHashesMatch": true
+  },
+  "downloadedSourceVerification": {
+    "checkedAt": "2026-10-25T19:01:31.285078+00:00",
+    "name": "Verifed V24",
+    "snackId": "zhvlVy09K5S3oE7aZUkmM",
+    "expectedFiles": 444,
+    "foodImages": 356,
+    "errors": [
+      {
+        "reason": "Snack download unavailable: HTTP 503 (SNACK_DOWNLOAD_TOO_LARGE)"
+      }
+    ],
+    "passed": false
+  },
+  "branch": "codex/local-menu-photography"
+}

@@ -1,0 +1,7 @@
+Four generated dish illustrations used in the Sayola scan result:
+- Garlic shrimp (sayola-3)
+- Patatas bravas (sayola-2)
+- Ham croquettes (sayola-7)
+- Spanish omelet (sayola-17)
+
+These illustrate the printed descriptions and reasonable tapas portions. They are not actual Sayola photographs. The dish-illustration rail is hidden after manual menu edits. Full prompts and image hashes: research/sayola-illustration-provenance.json.

@@ -33,7 +33,7 @@ const uncertain = [
   ],
   [
     "Wheat",
-    /\b(?:bread|breadcrumbs|chapati|roti|paratha|poori|bun|buns|brioche|pasta|cannelloni|pizza|biscuit|biscuits|flour tortilla|flour tortillas|panko|battered|breaded|focaccia|croissant|naan|pita|dumplings?|wontons?|ramen|udon|tempura|flour|cake|cookies?|crackers?|croutons?|tortellini|rigatoni|spaghetti|pappardelle|bucatini|paccheri|gnocchi|fettuccine|macaroni|calzone|pastry|brownie|blondie|pretzel|toast|rye|lavash)\b/i,
+    /\b(?:croquettes?|empanadas?|bread|breadcrumbs|chapati|roti|paratha|poori|bun|buns|brioche|pasta|cannelloni|pizza|biscuit|biscuits|flour tortilla|flour tortillas|panko|battered|breaded|focaccia|croissant|naan|pita|dumplings?|wontons?|ramen|udon|tempura|flour|cake|cookies?|crackers?|croutons?|tortellini|rigatoni|spaghetti|pappardelle|bucatini|paccheri|gnocchi|fettuccine|macaroni|calzone|pastry|brownie|blondie|pretzel|toast|rye|lavash)\b/i,
   ],
 ];
 const meatOrFish =

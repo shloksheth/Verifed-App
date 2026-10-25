@@ -1,5 +1,7 @@
 # Verifed mobile frontend
 
+V24 redesigns Scan with the supplied Sayola menu, a capture-first screen and a brown/cream/gold result layout. [MENU_SCANNING.md](MENU_SCANNING.md) explains every related file, the fixed presentation behavior and four generated dish illustrations.
+
 V23 adds the photo-carousel welcome screen. [WELCOME_SCREEN.md](WELCOME_SCREEN.md) explains its layout, navigation, image sources and controls.
 
 V22.1 uses Clash Grotesk throughout the active interface. [TYPOGRAPHY.md](TYPOGRAPHY.md) explains the four bundled faces, their official source/license, loading aliases and verification.

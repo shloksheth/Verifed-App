@@ -39,6 +39,8 @@ The import commits were created when the history was recovered. Original saved d
 | [Verifed V22.1](https://github.com/shloksheth/Verifed-App/releases/tag/v22.1) | Clash Grotesk throughout the interface, four original static weights, licensed local assets, 169 passing tests and verified iOS/Android/web exports. | [Verifed V22.1](https://snack.expo.dev/0RM7DW8olXkCnhCRHkiJ_) |
 | [Verifed V23](https://github.com/shloksheth/Verifed-App/releases/tag/v23) | Dark green welcome screen, four real-food carousel cards, Clash Grotesk and account/guest actions. 169 tests and all platform exports passed; 320px/390px browser checks completed. | [Verifed V23](https://snack.expo.dev/OmFOmre-jxtahkdOqv3pl) |
 
+| [Verifed V24](https://github.com/shloksheth/Verifed-App/releases/tag/v24) | Brown/cream/gold Scan redesign, supplied 23-dish Sayola menu, delayed source disclosure, category filters and four local dish illustrations. 174 tests, all platform exports, browser checks and Android Expo Go smoke checks passed. Scripted presentation; physical iPhone and remote Snack runtime unverified. | [Verifed V24](https://snack.expo.dev/zhvlVy09K5S3oE7aZUkmM) |
+
 Application directories appear as they are introduced: `prototype/` (original JavaScript web prototype), `web/` (React companion), and `mobile/` (React Native/Expo). Every release preserves the other applications already introduced.
 
 Native V6–V9 are new version-named copies of recovered immutable Snack snapshots. Their original snapshot IDs remain in release notes. Downloaded V6–V8 contain Expo-generated project scaffolding rather than original local lockfiles and tests. V9 also restores the archived local code, tests and documentation.

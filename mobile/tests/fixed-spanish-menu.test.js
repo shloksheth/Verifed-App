@@ -1,7 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
-import { fixedSpanishMenu, menuAfterPhoto } from "../src/fixed-spanish-menu.js";
+import { fixedSpanishMenu, menuAfterPhoto } from "../src/legacy-spanish-menu.js";
 import { scannedItems, updateScannedItem } from "../src/menu-scan.js";
 
 test("Fixed Spanish transcript matches all 15 dishes on the actual source page", () => {
