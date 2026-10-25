@@ -1,0 +1,21 @@
+{
+  "number": 28.1,
+  "name": "Verifed V28.1",
+  "description": "Replaces the redundant 'Log a meal' quick-action label with 'Save a meal' and keeps it wired to the existing meal composer and save operation. Improves Journal numeric typography with larger Clash Grotesk Medium summary figures and tabular numerals for counts and ratings.",
+  "snack": "https://snack.expo.dev/07sY5RieweUGjAOhgrd8O",
+  "snackId": "07sY5RieweUGjAOhgrd8O",
+  "snackPublishedAt": "2026-10-25T20:31:50.694Z",
+  "sourceCommit": "cbb610ff07a98ef5b1b4388deb5d63e63a771063",
+  "uploadVerification": {
+    "assets": 379,
+    "images": 365,
+    "fonts": 14,
+    "allSourceHashesMatch": true
+  },
+  "notes": [
+    "Plus action Save a meal routes to existing composer, not a duplicate feature.",
+    "Journal counts and ratings use medium-weight tabular numeric type.",
+    "The GitHub Actions publisher tested and saved the versioned Expo Snack snapshot.",
+    "Physical iPhone/Android visual QA not yet performed."
+  ]
+}
