@@ -1,13 +1,12 @@
 {
-  "number": 29,
-  "name": "Verifed V29",
-  "description": "Implements the approved Warm Forest CAC mobile redesign across Home, Explore, Journal and the separated floating navigation: darker forest content sections, muted cream background, orange standalone plus action, a problem-solution hero, properly branded carrot-check Verifed header, complete-photo restaurant menus and real Journal summary metrics.",
+  "number": 29.1,
+  "name": "Verifed V29.1",
+  "description": "Fixes Home's Warm Forest hero where the heading and dietary guidance overflowed the green panel into the food image. Uses separate flexible text/photo columns, a smaller responsive title and a compact CTA so copy wraps entirely over a dark background at phone sizes.",
   "verification": [
-    "Restored distinct Taco Bell purple and Chipotle brown/red restaurant styling without changing restaurant product menus.",
-    "Only the five complete-photo demonstration menus are prioritized, with Taco Bell, Loving Hut Orlando and Hawkers Orlando first; filters and branch selection remain in effect.",
-    "Home's hero describes dietary communication as an aid, not a claim of certified allergen safety; featured cards use real bundled food images.",
-    "Journal average, place count and meal count are computed from the actual saved entries. Empty accounts display no fabricated ratings.",
-    "Added V29 tests for brand isolation, real-data labels, featured ordering and the separated floating plus control.",
-    "GitHub Actions must validate the mobile tests and platform bundles before saving the Expo Snack snapshot. Physical-device screen testing is still required."
+    "The Home hero now lays out text and imagery in non-overlapping columns rather than overlaying 71%-width text on a 54%-width dark mask.",
+    "The headline, guidance and Explore menus CTA retain their intended wording and working Explore route.",
+    "The hero content grows vertically with text; no fixed-height clipping or opaque image overlay is needed.",
+    "All five featured menus, V29 navigation, Journal, welcome, Taco Bell and Chipotle styling remain unchanged.",
+    "Node regression tests run during GitHub Actions Snack publishing. A live native visual capture is not asserted."
   ]
 }

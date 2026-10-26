@@ -1,4 +1,4 @@
 {
-  "version": 29,
-  "reason": "Approved Warm Forest CAC Home/Explore/Journal redesign, real featured restaurant imagery and metrics, detached orange quick-actions button; restaurant-branded menus unchanged."
+  "version": 29.1,
+  "reason": "Fix observed V29 Home hero text overlapping photo: independent responsive text/photo columns and readable button."
 }

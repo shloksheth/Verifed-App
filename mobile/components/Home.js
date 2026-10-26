@@ -106,10 +106,8 @@ export default function Home({ state, navigate, searchArea }) {
       </View>
 
       <View style={h.hero}>
-        <Image source={require("../assets/home/chipotle-vegetarian-bowl.webp")}
-          contentFit="cover" style={h.heroFood}
-          accessibilityLabel="Vegetarian bowl with rice, beans, vegetables and guacamole" />
-        <View style={h.heroMask} />
+        {/* The copy and image are separate columns so words cannot bleed onto
+            the photo at compact phone widths or with enlarged text. */}
         <View style={h.heroText}>
           <Text accessibilityRole="header" style={h.heroTitle}>
             Reduce dietary mix-ups before you order.
@@ -123,6 +121,11 @@ export default function Home({ state, navigate, searchArea }) {
             <Text style={h.heroButtonLabel}>Explore menus</Text>
             <Icon name="arrow-forward" size={18} color={forest.ink} />
           </Pressable>
+        </View>
+        <View style={h.heroVisual}>
+          <Image source={require("../assets/home/chipotle-vegetarian-bowl.webp")}
+            contentFit="cover" style={h.heroFood}
+            accessibilityLabel="Vegetarian bowl with rice, beans, vegetables and guacamole" />
         </View>
       </View>
 
@@ -207,20 +210,40 @@ const h = StyleSheet.create({
     backgroundColor:forest.surface, flexDirection:"row", gap:9, alignItems:"center" },
   searchInput: { flex:1, minWidth:0, fontSize:13, minHeight:47, color:forest.ink },
   searchTap: { width:44, height:44, alignItems:"center", justifyContent:"center" },
-  hero: { minHeight:275, borderRadius:23, backgroundColor:forest.green, overflow:"hidden",
-    position:"relative", justifyContent:"center" },
-  heroFood: { position:"absolute", right:-39, top:0, bottom:0, height:"100%", width:"64%" },
-  heroMask: { position:"absolute", top:0, bottom:0, left:0, width:"54%",
-    backgroundColor:forest.green },
-  heroText: { maxWidth:"71%", minHeight:268, paddingVertical:20, paddingLeft:19,
-    paddingRight:6, justifyContent:"space-between", gap:11 },
-  heroTitle: { fontFamily:"HomeHeadingStrong", fontSize:29, lineHeight:32,
-    letterSpacing:-0.9, color:forest.lightText },
-  heroSub: { fontSize:12, lineHeight:17, maxWidth:235, color:"#E4EBE2" },
-  heroButton: { flexDirection:"row", gap:9, alignItems:"center", justifyContent:"center",
-    borderRadius:24, minHeight:45, paddingHorizontal:13,
-    backgroundColor:forest.lightText, alignSelf:"flex-start" },
-  heroButtonLabel: { fontSize:13, fontWeight:"700", color:forest.ink },
+  // Distinct, non-overlapping columns fix the V29 copy-on-photo bug.
+  // Flexible height lets larger accessibility fonts wrap without clipping.
+  hero: {
+    minHeight: 320, borderRadius: 23, overflow: "hidden",
+    flexDirection: "row", backgroundColor: forest.green,
+    alignItems: "stretch",
+  },
+  heroText: {
+    width: "62%", minWidth: 0, minHeight: 320,
+    paddingVertical: 21, paddingLeft: 16, paddingRight: 10,
+    justifyContent: "space-between", gap: 14,
+    backgroundColor: forest.green,
+  },
+  heroVisual: {
+    flex: 1, minWidth: 0, alignSelf: "stretch",
+    backgroundColor: forest.cardMuted, overflow: "hidden",
+    position: "relative",
+  },
+  heroFood: { ...StyleSheet.absoluteFillObject, width: "100%", height: "100%" },
+  heroTitle: {
+    fontFamily: "HomeHeadingStrong", fontSize: 25, lineHeight: 29,
+    letterSpacing: -0.65, color: forest.lightText, flexShrink: 1,
+  },
+  heroSub: {
+    fontSize: 12, lineHeight: 18, color: "#E4EBE2",
+    flexShrink: 1,
+  },
+  heroButton: {
+    flexDirection: "row", gap: 6, alignItems: "center", justifyContent: "center",
+    borderRadius: 24, minHeight: 45, paddingHorizontal: 10,
+    backgroundColor: forest.lightText, alignSelf: "flex-start",
+    flexShrink: 0,
+  },
+  heroButtonLabel: { fontSize: 12, fontWeight: "700", color: forest.ink },
   section: { gap:10 },
   sectionHeading: { flexDirection:"row", alignItems:"center",
     justifyContent:"space-between", gap:12 },
