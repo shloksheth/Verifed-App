@@ -6,6 +6,7 @@ on:
       - main
     paths:
       - '.github/workflows/qa-snack-v29.yml'
+      - 'research/qa/v29/capture-snack.mjs'
   workflow_dispatch:
 
 permissions:

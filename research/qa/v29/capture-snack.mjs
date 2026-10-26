@@ -30,7 +30,12 @@ async function visibleFrames() {
   return frames;
 }
 async function capture(name) {
-  await page.screenshot({ path: path.join(output, name + ".png"), fullPage: false });
+  // DevTools capture avoids Playwright's indefinite document.fonts.ready wait in Expo Snack.
+  const client = await page.context().newCDPSession(page);
+  const image = await client.send("Page.captureScreenshot",
+    { format: "png", captureBeyondViewport: false, fromSurface: true });
+  await fs.writeFile(path.join(output, name + ".png"), Buffer.from(image.data, "base64"));
+  await client.detach();
   const frames = await visibleFrames();
   report.screens[name] = {
     frameText: frames.map(({ url, text }) => ({ url: url.slice(0, 250), text: text.slice(0, 3500) })),
@@ -64,7 +69,7 @@ try {
   const url = "https://snack.expo.dev/embedded/3VrwugCB__8sCwQhRftI9?platform=web&preview=true&theme=light";
   try { await page.goto(url, { waitUntil: "domcontentloaded", timeout: 65000 }); }
   catch (err) { errors.push("Navigate: " + String(err)); }
-  await page.waitForTimeout(30000);
+  await page.waitForTimeout(22000);
   await capture("initial");
   const initial = (await visibleFrames()).map(f => f.text).join(" ");
   if (initial.includes("Explore as guest")) await clickOnPreview("Explore as guest");
