@@ -36,6 +36,7 @@ import FloatingNavigation, { ContextualNavigation } from "./components/FloatingN
 import { bottomNavigationMode, primaryRoutes, tabForPage } from "./src/navigation-model";
 import { Text, TypographyProvider } from "./components/Typography";
 import MenuScanner from "./components/MenuScanner";
+import MenuChat, { ChatTab } from "./components/MenuChat";
 import { scanOwner } from "./src/menu-scan";
 import Explore from "./components/Explore";
 import Welcome, { HomeInfo } from "./components/Welcome";
@@ -65,12 +66,14 @@ function AppContent() {
   const [welcomeDone, setWelcomeDone] = useState(false);
   const [searchArea, setSearchArea] = useState(null);
   const [scanDraft, setScanDraft] = useState(null);
+  const [chatOpen, setChatOpen] = useState(false);
   useEffect(() => {
     const show = Keyboard.addListener("keyboardDidShow", () => setKeyboardVisible(true));
     const hide = Keyboard.addListener("keyboardDidHide", () => setKeyboardVisible(false));
     return () => { show.remove(); hide.remove(); };
   }, []);
   const owner = scanOwner(state);
+  useEffect(() => setChatOpen(false), [owner]);
   useEffect(() => setScanDraft(null), [state.scanResetVersion]);
   const scroll = useRef(null);
   const path = stack[stack.length - 1];
@@ -144,7 +147,8 @@ function AppContent() {
     return () => handler.remove();
   }, [goBack]);
 
-  const shared = { state, navigate, openSheet: setSheet };
+  const openChat = () => { setSheet(null); setChatOpen(true); };
+  const shared = { state, navigate, openSheet: setSheet, openChat };
   const showWelcome =
     state.ready && !state.user && !welcomeDone && !state.passwordRecovery;
   useEffect(() => {
@@ -295,6 +299,7 @@ function AppContent() {
             navigate={navigate}
             onInfo={() => setSheet({ type: "info" })}
             onProfile={() => navigate("profile")}
+            onChat={openChat}
           />
         ) : (
           !showWelcome && (
@@ -421,6 +426,7 @@ function AppContent() {
               activeRoute={tabForPage(route.page)}
               navigate={navigate}
               openSheet={setSheet}
+              onChat={openChat}
               onHomeAgain={() => scroll.current?.scrollTo({ y: 0, animated: true })}
             />
           ) : bottomNavigationMode(route.page) === "contextual" ? (
@@ -428,6 +434,12 @@ function AppContent() {
           ) : null
         )}
         {sheet?.type === "info" && <HomeInfo onClose={() => setSheet(null)} />}
+        {!showWelcome && !inAccount && route.page !== "guest-preferences" && state.ready && (
+          <>
+            {!keyboardVisible && !sheet && <ChatTab onPress={openChat} />}
+            <MenuChat key={owner} visible={chatOpen} onClose={() => setChatOpen(false)} />
+          </>
+        )}
         {sheet?.type === "meal" && (
           <MealComposer {...shared} {...sheet} onClose={() => setSheet(null)} />
         )}

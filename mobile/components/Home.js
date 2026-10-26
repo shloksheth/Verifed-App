@@ -15,7 +15,7 @@ import { localFoodAssets } from "../src/local-food-assets";
 import { homeNeeds } from "../src/home-content";
 export { useAppFonts as useHomeFonts } from "../src/use-app-fonts";
 
-export function HomeHeader({ navigate, onInfo, onProfile }) {
+export function HomeHeader({ navigate, onInfo, onProfile, onChat }) {
   return (
     <View style={h.header}>
       <Pressable onPress={() => navigate("home")} accessibilityRole="button"
@@ -25,6 +25,9 @@ export function HomeHeader({ navigate, onInfo, onProfile }) {
         <Text style={h.wordmark}>Verifed</Text>
       </Pressable>
       <View style={h.headerActions}>
+        <Pressable onPress={onChat} accessibilityRole="button" accessibilityLabel="Open menu chat from Home" style={h.iconButton}>
+          <Icon name="chatbubble-ellipses-outline" size={23} color={forest.ink} />
+        </Pressable>
         <Pressable onPress={onInfo} accessibilityRole="button" accessibilityLabel="How Verifed works" style={h.iconButton}>
           <Icon name="information-circle-outline" size={23} color={forest.ink} />
         </Pressable>

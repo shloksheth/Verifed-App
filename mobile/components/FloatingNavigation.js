@@ -16,6 +16,7 @@ import { Icon } from "./UI";
 const quickActions = [
   { label: "Scan a menu", icon: "scan-outline", action: "scan" },
   { label: "Save a meal", icon: "create-outline", action: "meal" },
+  { label: "Menu chat", icon: "chatbubble-ellipses-outline", action: "chat" },
   { label: "Dietary profile", icon: "person-outline", action: "profile" },
 ];
 
@@ -32,7 +33,7 @@ function useReducedMotion() {
   return reduced;
 }
 
-export default function FloatingNavigation({ activeRoute, navigate, openSheet, onHomeAgain }) {
+export default function FloatingNavigation({ activeRoute, navigate, openSheet, onHomeAgain, onChat }) {
   const [railWidth, setRailWidth] = useState(0);
   const [quickOpen, setQuickOpen] = useState(false);
   const reducedMotion = useReducedMotion();
@@ -79,7 +80,9 @@ export default function FloatingNavigation({ activeRoute, navigate, openSheet, o
 
   function activateQuick(action) {
     setQuickOpen(false);
-    if (action === "meal") {
+    if (action === "chat") {
+      onChat();
+    } else if (action === "meal") {
       openSheet({ type: "meal" });
     } else {
       navigate(action);

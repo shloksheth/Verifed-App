@@ -1,0 +1,11 @@
+{
+  "method": "Local Expo React Native Web in headless Chrome; not native device testing",
+  "checks": [
+    "Home and smile-tab entry, arbitrary typed inputs, keyboard send and retained transcript",
+    "Restart and suggested example prompt",
+    "Plus menu opens the same panel",
+    "Scan entry and language information; closing preserves Scan route",
+    "320 × 640 panel composer remains in viewport"
+  ],
+  "errors": []
+}

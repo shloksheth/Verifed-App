@@ -41,3 +41,7 @@ Ionicons keep their original artwork and symbol fonts.
 `styles.js` contains the shared warm cream, green and carrot palette; typography; photo crops; menu paper and dividers; selected chips; sheets; and safe-area-friendly bottom navigation. `assets/verifed-mark.png` is the carrot-check brand asset. Real restaurant imagery remains credited in the source metadata.
 
 Older Scanner, Requests and Workspace modules remain in source history for explanation of the earlier business prototype, but the CAC app does not import them from its entry point. They are excluded from the new public Snack upload. Their earlier documentation is preserved separately. The current interface chapter, catalog chapter and device-library chapter describe this release.
+
+## V30 menu chat
+
+The shared menu-chat overlay, salmon smile tab, Home/Scan/plus entry points and prepared conversation are explained in `MENU_CHAT.md`. The panel stays above the current route. No live model is connected.

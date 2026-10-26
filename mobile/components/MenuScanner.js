@@ -61,6 +61,7 @@ function OriginalMenuPage({ menu }) {
 export default function MenuScanner({
   state,
   navigate,
+  openChat,
   owner,
   draft,
   setDraft,
@@ -188,6 +189,11 @@ export default function MenuScanner({
 
   return (
     <>
+      <Pressable accessibilityRole="button" accessibilityLabel="Open menu chat from Scan"
+        onPress={openChat} style={{ flexDirection: "row", alignItems: "center", alignSelf: "flex-end", gap: 8, minHeight: 44, paddingHorizontal: 12, borderRadius: 14, backgroundColor: colors.peach }}>
+        <Icon name="chatbubble-ellipses-outline" size={21} color={colors.green} />
+        <Text style={{ color: colors.green, fontSize: 14, fontWeight: "600" }}>Menu chat</Text>
+      </Pressable>
       {!menu && (
         <>
           <Text accessibilityRole="header" style={look.pageTitle}>
@@ -201,10 +207,11 @@ export default function MenuScanner({
           <View style={look.howItWorks}>
             <Icon name="language-outline" color={colors.orangeDark} size={25} />
             <View style={s.flex}>
-              <Text style={look.subheading}>Read and save menus</Text>
+              <Text style={look.subheading}>Menus across languages</Text>
               <Text style={look.body}>
-                Switch languages, check ingredients, then save the menu for
-                later.
+                Designed to help read menus in English or Spanish and explain
+                unfamiliar dishes. This prototype uses a prepared menu example.
+                Check ingredient clues, then save the menu for later.
               </Text>
             </View>
           </View>

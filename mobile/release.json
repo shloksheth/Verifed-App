@@ -1,13 +1,13 @@
 {
-  "number": 29.2,
-  "name": "Verifed V29.2",
-  "description": "Replaces the generic sign-in headline with the CAC-focused dietary communication message and adds a guest dietary-preference step before exploring. Guests can choose allergies, dietary restrictions and optional taste preferences, save them locally using the existing guest profile API, or dismiss the step using a plain top-left X without any border or background.",
+  "number": 30,
+  "name": "Verifed V30",
+  "description": "Adds a salmon smile tab and in-place Menu chat panel, with Home, Scan and plus-menu entry points. A prepared four-turn English/Spanish Sayola conversation advances with any typed message, supports suggested prompts and restart, and is labeled Scripted demo. Scanner information now describes the intended English/Spanish reading experience and prepared-menu scope.",
   "verification": [
-    "Guest entry on the welcome carousel and Continue without an account from authentication now open guest dietary preferences.",
-    "Onboarding has a plain, borderless, transparent top-left X with a 48-point hit area. Closing goes to Explore without saving unsaved preferences.",
-    "Saving uses the existing api.previewProfile local persistence, with ineligible choices filtered by the existing API, then opens Explore.",
-    "The guest onboarding screen excludes the main app header and floating bottom navigation. Normal profile editing remains unchanged.",
-    "Sign-in retains its existing username/email and password submission and only changes the purpose-oriented headline and supporting description.",
-    "The mobile regression suite and Expo Snack publishing workflow must pass before release is considered verified."
+    "199 Node regression tests passed, including input-independent script sequencing, blank input, reply exhaustion and immutable message append.",
+    "Expo exports passed for iOS, Android and web.",
+    "Local React Native Web in headless Chrome verified Home, smile tab, plus menu and Scan entry points; typed and suggested messages; keyboard Enter; retained conversation; restart; and preserved underlying Scan route.",
+    "Browser screenshots reviewed at 390x844, 320x640 and 1280x900. The compact composer remains inside the viewport. No browser page errors were observed.",
+    "Impeccable mechanical detector returned no findings for changed UI components.",
+    "No new physical iPhone or Android runtime test was performed. Native keyboard and safe-area behavior need device verification. Chat has no live model, request interpretation, database writes or simulated network delay."
   ]
 }
