@@ -1,0 +1,41 @@
+name: Verify V29 Expo Snack web preview
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/workflows/qa-snack-v29.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  visual-preview:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install browser automation
+        run: |
+          mkdir -p research/qa/v29/browser
+          npm install --no-save --no-package-lock --prefix research/qa/v29/browser playwright-core@1.56.1
+          which google-chrome
+      - name: Capture V29 rendered Expo Snack web preview
+        run: node research/qa/v29/capture-snack.mjs
+        env:
+          CHROME_BIN: /usr/bin/google-chrome
+      - name: Save preview screenshots and inspection report
+        if: always()
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add research/qa/v29/captures/
+          git diff --cached --quiet || git commit -m 'Record V29 Expo Snack browser preview visual QA'
+          git push origin HEAD:main
