@@ -1,12 +1,12 @@
 {
-  "version": 29.2,
-  "name": "Verifed V29.2",
-  "id": "JghuQwYWXvoLbna0leD5A",
-  "url": "exp://u.expo.dev/933fd9c0-1666-11e7-afca-d980795c5824?runtime-version=exposdk%3A54.0.0&channel-name=production&snack=JghuQwYWXvoLbna0leD5A",
-  "hashId": "JghuQwYWXvoLbna0leD5A",
-  "snackId": "76e9c43a-a84f-4317-ab03-bf6ddae07db0",
-  "editorUrl": "https://snack.expo.dev/JghuQwYWXvoLbna0leD5A",
-  "publishedAt": "2026-10-26T02:49:07.742Z",
+  "version": 30,
+  "name": "Verifed V30",
+  "id": "dUPWdxVVOTQh_1jlGNeCk",
+  "url": "exp://u.expo.dev/933fd9c0-1666-11e7-afca-d980795c5824?runtime-version=exposdk%3A54.0.0&channel-name=production&snack=dUPWdxVVOTQh_1jlGNeCk",
+  "hashId": "dUPWdxVVOTQh_1jlGNeCk",
+  "snackId": "aacc7f20-4b48-477a-b99b-79e07e14370d",
+  "editorUrl": "https://snack.expo.dev/dUPWdxVVOTQh_1jlGNeCk",
+  "publishedAt": "2026-10-26T21:42:18.083Z",
   "sdkVersion": "54.0.0",
   "files": [
     "App.js",
@@ -20,6 +20,7 @@
     "components/FloatingNavigation.js",
     "components/Home.js",
     "components/Journal.js",
+    "components/MenuChat.js",
     "components/MenuImage.js",
     "components/MenuScanner.js",
     "components/RestaurantMap.js",
@@ -32,6 +33,7 @@
     "src/api.js",
     "src/brand-assets.js",
     "src/chain-brand.js",
+    "src/chat-demo.js",
     "src/chipotle-draft.js",
     "src/config.js",
     "src/data.js",
@@ -844,5 +846,5 @@
     "fonts": 14,
     "allSourceHashesMatch": true
   },
-  "sourceHash": "c58e976361fc9f250abf27923a753a5fb4e0581b00b39ae314ca40411d42420b"
+  "sourceHash": "6288d70ac0a49eb1da0b48e3009d0dab0cac61a2deeed060412572c7d4a80f74"
 }
