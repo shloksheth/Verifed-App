@@ -1,13 +1,9 @@
 {
-  "number": 30,
-  "name": "Verifed V30",
-  "description": "Adds a salmon smile tab and in-place Menu chat panel, with Home, Scan and plus-menu entry points. A prepared four-turn English/Spanish Sayola conversation advances with any typed message, supports suggested prompts and restart, and is labeled Scripted demo. Scanner information now describes the intended English/Spanish reading experience and prepared-menu scope.",
+  "number": 30.1,
+  "name": "Verifed V30.1",
+  "description": "Shortens the scanner photo hint to Whole page with no glare.",
   "verification": [
-    "199 Node regression tests passed, including input-independent script sequencing, blank input, reply exhaustion and immutable message append.",
-    "Expo exports passed for iOS, Android and web.",
-    "Local React Native Web in headless Chrome verified Home, smile tab, plus menu and Scan entry points; typed and suggested messages; keyboard Enter; retained conversation; restart; and preserved underlying Scan route.",
-    "Browser screenshots reviewed at 390x844, 320x640 and 1280x900. The compact composer remains inside the viewport. No browser page errors were observed.",
-    "Impeccable mechanical detector returned no findings for changed UI components.",
-    "No new physical iPhone or Android runtime test was performed. Native keyboard and safe-area behavior need device verification. Chat has no live model, request interpretation, database writes or simulated network delay."
+    "Verified the capture hint source contains the exact requested text and the removed wording is absent.",
+    "Copy-only change to the existing capture hint. No new physical-device testing or platform exports performed for this patch."
   ]
 }

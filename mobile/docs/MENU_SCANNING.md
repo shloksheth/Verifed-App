@@ -1,5 +1,7 @@
 # Menu scanning — V24
 
+V30.1 changes only the capture hint in `components/ScanDesign.js` to “Whole page with no glare.”
+
 The Scan tab now has a brown capture panel, gold camera action, neutral paper/camera geometry, cream menu paper, burgundy restaurant title, green dietary panel and a tan photo rail. It uses the existing Clash Grotesk faces and five-tab navigation. There is no restaurant menu image, source-page link or known menu result before a photo is selected. Saved menus are real owner-scoped records, never example rows.
 
 ## What the app actually does

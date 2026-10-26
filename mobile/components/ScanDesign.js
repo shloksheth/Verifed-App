@@ -86,7 +86,7 @@ export function CaptureMenu({ busy, onCamera, onLibrary }) {
       </Pressable>
       <View style={a.captureTip}>
         <Icon name="sunny-outline" color={colors.onGreen} size={19} />
-        <Text style={a.captureTipText}>Whole page. Even light. No glare.</Text>
+        <Text style={a.captureTipText}>Whole page with no glare.</Text>
       </View>
     </View>
   );
