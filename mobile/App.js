@@ -84,7 +84,7 @@ function AppContent() {
     : restaurantSlug.startsWith("chipotle-") ? "chipotle" : null;
   const inAccount = route.page === "auth" || !!state.passwordRecovery;
   const darkAccount = "#17281F";
-  const warmScreen = ["home", "explore", "history"].includes(route.page) && !inAccount;
+  const warmScreen = ["home", "explore", "history", "guest-preferences"].includes(route.page) && !inAccount;
   
   const chainAccent = chainMenu === "taco-bell" ? "#501098" : "#451400";
 
@@ -156,7 +156,10 @@ function AppContent() {
   if (showWelcome)
     screen = (
       <Welcome
-        onContinue={() => setWelcomeDone(true)}
+        onContinue={() => {
+          setWelcomeDone(true);
+          navigate("guest-preferences");
+        }}
         onSignIn={() => {
           setWelcomeDone(true);
           navigate("auth");
@@ -235,6 +238,9 @@ function AppContent() {
           <ProfileEditor {...shared} returnTo={route.params.get("returnTo")} />
         );
         break;
+      case "guest-preferences":
+        screen = <ProfileEditor {...shared} onboarding returnTo="explore" />;
+        break;
       case "settings":
         screen = <Settings {...shared} />;
         break;
@@ -283,7 +289,7 @@ function AppContent() {
               <Icon name="heart-outline" color={chainAccent} size={22} />
             </Pressable>
           </View>
-        ) : inAccount || showWelcome || route.page === "explore" || route.page === "history" ? null : route.page === "home" ? (
+        ) : inAccount || showWelcome || route.page === "explore" || route.page === "history" || route.page === "guest-preferences" ? null : route.page === "home" ? (
           <HomeHeader
             fontsReady={homeFontsReady}
             navigate={navigate}

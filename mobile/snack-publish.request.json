@@ -1,4 +1,4 @@
 {
-  "version": 29.1,
-  "reason": "Fix observed V29 Home hero text overlapping photo: independent responsive text/photo columns and readable button."
+  "version": 29.2,
+  "reason": "CAC-focused sign-in purpose headline plus new guest dietary-preferences onboarding with plain top-left X, local saved preferences and Explore continuation."
 }

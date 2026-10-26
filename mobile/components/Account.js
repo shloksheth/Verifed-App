@@ -10,6 +10,7 @@ import {
   defaultProfile,
 } from "../src/data";
 import { colors, s } from "../styles";
+import { forest } from "../src/warm-forest";
 import {
   Button,
   Chips,
@@ -73,7 +74,7 @@ export function Auth({
     });
   }
   const labels = {
-    signin: "Sign in",
+    signin: "Make your dietary needs clear before you order",
     signup: "Create an account",
     reset: "Reset your password",
     recover: "Choose a new password",
@@ -94,10 +95,10 @@ export function Auth({
         <Text style={authStyles.brandText}>verifed</Text>
       </View>
       <Text style={authStyles.eyebrow}>YOUR ACCOUNT</Text>
-      <Text accessibilityRole="header" style={authStyles.headline}>{labels[mode]}</Text>
+      <Text accessibilityRole="header" style={[authStyles.headline, mode === "signin" && authStyles.signinHeadline]}>{labels[mode]}</Text>
       <Text style={authStyles.intro}>
         {{
-          signin: "Access your saved items, dietary profile, and meal notes.",
+          signin: "Sign in to save your allergies and dietary preferences, explore restaurant menus, and communicate your needs more clearly with restaurant staff.",
           signup: "Save your dietary profile, menu items, and meal notes to an account.",
           reset: "Enter your account email to request a reset link.",
           recover: "Use at least 8 characters.",
@@ -216,7 +217,7 @@ export function Auth({
       {mode !== "recover" && (
         <Pressable
           accessibilityRole="button"
-          onPress={() => navigate("home")}
+          onPress={() => navigate("guest-preferences")}
           style={authStyles.skip}
         >
           <Text style={authStyles.skipText}>Continue without an account</Text>
@@ -226,7 +227,7 @@ export function Auth({
   );
 }
 
-export function ProfileEditor({ state, navigate, returnTo }) {
+export function ProfileEditor({ state, navigate, returnTo, onboarding = false }) {
   const [draft, setDraft] = useState({ ...state.profile });
   const task = useTask();
   const update = (key, value) =>
@@ -242,24 +243,44 @@ export function ProfileEditor({ state, navigate, returnTo }) {
       return next;
     });
   return (
-    <>
-      <Title
-        eyebrow={
-          state.mode === "guest" ? "On this device" : "Preferences"
-        }
-        title="Edit profile"
-      >
-        {state.mode === "guest"
-          ? "Use these preferences to compare menus. Saved on this device only."
-          : "Choose dietary needs and flavor preferences for menu comparisons."}
-      </Title>
-      <Field
-        label="Your name"
-        value={draft.name}
-        onChangeText={(value) => update("name", value)}
-        maxLength={80}
-      />
-      <View style={s.card}>
+    <View style={onboarding ? guestPrefs.page : undefined}>
+      {onboarding ? (
+        <>
+          <Pressable
+            accessibilityRole="button"
+            accessibilityLabel="Close dietary preferences and explore as a guest"
+            onPress={() => navigate("explore")}
+            style={({ pressed }) => [guestPrefs.close, pressed && guestPrefs.pressed]}
+          >
+            <Icon name="close" size={26} color={forest.ink} />
+          </Pressable>
+          <Text style={guestPrefs.eyebrow}>GUEST DIETARY PREFERENCES</Text>
+          <Text accessibilityRole="header" style={guestPrefs.heading}>
+            Set your dietary preferences
+          </Text>
+          <Text style={guestPrefs.description}>
+            Choose any allergies or dietary restrictions that apply to you, then explore restaurant menus with those needs in mind.
+          </Text>
+        </>
+      ) : (
+        <>
+          <Title
+            eyebrow={state.mode === "guest" ? "On this device" : "Preferences"}
+            title="Edit profile"
+          >
+            {state.mode === "guest"
+              ? "Use these preferences to compare menus. Saved on this device only."
+              : "Choose dietary needs and flavor preferences for menu comparisons."}
+          </Title>
+          <Field
+            label="Your name"
+            value={draft.name}
+            onChangeText={(value) => update("name", value)}
+            maxLength={80}
+          />
+        </>
+      )}
+      <View style={[s.card, onboarding && guestPrefs.card]}>
         <Chips
           label="Allergies"
           options={ALLERGENS}
@@ -278,7 +299,7 @@ export function ProfileEditor({ state, navigate, returnTo }) {
           from vegan and vegetarian labels.
         </Text>
       </View>
-      <View style={s.card}>
+      <View style={[s.card, onboarding && guestPrefs.card]}>
         <Chips
           label="Flavors you like"
           options={TASTE_TAGS}
@@ -294,7 +315,7 @@ export function ProfileEditor({ state, navigate, returnTo }) {
       </View>
       <Notice>
         {state.mode === "guest"
-          ? "These preferences change menu comparisons only. They are not sent to restaurants."
+          ? "Preferences stay on this device and are not sent to restaurants. Always confirm ingredients and cross-contact directly with staff."
           : "Confirm current ingredients and preparation with the restaurant before ordering."}
       </Notice>
       <ErrorText error={task.error} />
@@ -308,18 +329,27 @@ export function ProfileEditor({ state, navigate, returnTo }) {
                 : api.saveProfile(draft),
             () =>
               navigate(
-                ["home", "scan"].includes(returnTo) ||
-                  /^restaurant\/[a-zA-Z0-9-]+$/.test(returnTo || "")
-                  ? returnTo
-                  : "profile",
+                onboarding
+                  ? "explore"
+                  : ["home", "scan"].includes(returnTo) ||
+                      /^restaurant\/[a-zA-Z0-9-]+$/.test(returnTo || "")
+                    ? returnTo
+                    : "profile",
                 { unwind: true },
               ),
           )
         }
       >
-        {state.mode === "guest" ? "Save on this device" : "Save profile"}
+        {onboarding
+          ? "Save preferences and explore"
+          : state.mode === "guest" ? "Save on this device" : "Save profile"}
       </Button>
-    </>
+      {onboarding && (
+        <Text style={guestPrefs.help}>
+          You can update these preferences at any time from your profile.
+        </Text>
+      )}
+    </View>
   );
 }
 
@@ -699,6 +729,7 @@ const authStyles = StyleSheet.create({
   brandText: { color: "#FFFFFF", fontSize: 24, fontWeight: "400", letterSpacing: -0.7 },
   eyebrow: { color: "#C3E6AE", fontSize: 11, letterSpacing: 1.5, fontWeight: "600", marginTop: 12 },
   headline: { color: "#FFFFFF", fontFamily: "HomeHeadingStrong", fontSize: 37, lineHeight: 42, letterSpacing: -0.8 },
+  signinHeadline: { fontSize: 32, lineHeight: 38, letterSpacing: -0.65 },
   intro: { color: "#CAD9CD", fontSize: 15, lineHeight: 23 },
   switcher: { flexDirection: "row", borderRadius: 25, padding: 4, backgroundColor: "#243D30", gap: 5 },
   switchButton: { flex: 1, minHeight: 44, borderRadius: 22, alignItems: "center", justifyContent: "center", paddingHorizontal: 7 },
@@ -709,4 +740,20 @@ const authStyles = StyleSheet.create({
   submit: { backgroundColor: "#17281F", borderColor: "#17281F" },
   skip: { minHeight: 48, justifyContent: "center", alignItems: "center", paddingHorizontal: 10 },
   skipText: { color: "#C3E6AE", fontSize: 15, fontWeight: "500", textAlign: "center" },
+});
+
+const guestPrefs = StyleSheet.create({
+  page: { gap: 16, paddingBottom: 28 },
+  // The exit control is intentionally bare: no fill, border, or outlined circle.
+  close: { width: 48, height: 48, alignItems: "flex-start", justifyContent: "center",
+    borderWidth: 0, backgroundColor: "transparent", alignSelf: "flex-start" },
+  pressed: { opacity: 0.6 },
+  eyebrow: { color: forest.greenRaised, fontSize: 11, fontWeight: "700",
+    letterSpacing: 1.3 },
+  heading: { color: forest.ink, fontFamily: "HomeHeadingStrong",
+    fontSize: 34, lineHeight: 39, letterSpacing: -0.8 },
+  description: { color: forest.muted, fontSize: 14, lineHeight: 22, marginBottom: 2 },
+  card: { backgroundColor: forest.card, borderRadius: 21,
+    borderWidth: 1, borderColor: forest.line, padding: 16 },
+  help: { color: forest.muted, textAlign: "center", fontSize: 12, lineHeight: 18 },
 });

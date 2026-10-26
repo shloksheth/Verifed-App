@@ -21,7 +21,7 @@ export function tabForPage(page) {
 
 export function bottomNavigationMode(page) {
   if (primaryRoutes.includes(page)) return "primary";
-  if (page === "auth") return "hidden";
+  if (page === "auth" || page === "guest-preferences") return "hidden";
   return "contextual";
 }
 
