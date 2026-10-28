@@ -58,7 +58,7 @@ jobs:
           const published = JSON.parse(fs.readFileSync('mobile/publication.json', 'utf8'));
           if (String(release.number) !== String(published.version)) throw Error('Snack version mismatch');
           if (!/^https:\/\/snack\.expo\.dev\//.test(published.editorUrl || '')) throw Error('Missing valid Snack URL');
-          const p = 'README.md';
+          const p = 'details.md';
           let readme = fs.readFileSync(p, 'utf8');
           const marker = '\n\nApplication directories appear';
           const link = `[Verifed V${release.number}](https://github.com/shloksheth/Verifed-App/releases/tag/v${release.number})`;
@@ -73,7 +73,7 @@ jobs:
           NODE
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add mobile/publication.json README.md
+          git add mobile/publication.json details.md
           git diff --cached --quiet || git commit -m 'Record verified Expo Snack publication'
           git push origin HEAD:main
           VERSION=$(node -p "JSON.parse(require('fs').readFileSync('mobile/release.json')).number")
