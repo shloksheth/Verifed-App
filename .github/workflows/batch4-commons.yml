@@ -1,0 +1,28 @@
+name: Batch 4 licensed food photo candidates
+on:
+  pull_request:
+    paths:
+      - 'research/batch4-commons-sourcing.mjs'
+      - '.github/workflows/batch4-commons.yml'
+permissions:
+  contents: write
+jobs:
+  research:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Scan licensed food sources for each dish
+        run: node research/batch4-commons-sourcing.mjs
+      - name: Save research findings to this isolated branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add research/batch4-commons-candidates.json
+          git diff --cached --quiet || git commit -m "Audit Batch 4 Wikimedia food image candidates"
+          git push origin HEAD:${{ github.head_ref }}

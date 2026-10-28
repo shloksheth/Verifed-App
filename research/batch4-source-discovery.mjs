@@ -1,0 +1,43 @@
+const urls={
+osteria:"https://www.osteriaester.com/menu",
+osteriaToast:"https://toast.app/r/osteria-ester-629-east-central-boulevard/order?diningOption=delivery",
+seito:"https://www.seitosushibp.com/menu",
+yellow:"https://yellowdogeats.com/",
+bombay:"https://bombaykitchenorlando.com/menu/",
+woodlands:"https://www.woodlandsusa.com/"
+};
+const names={osteria:["Focaccia","Gnocchi Sardo","Pappardelle Bolognese"],osteriaToast:["Focaccia","Gnocchi Sardo","Pappardelle Bolognese"],seito:["Pacific Oysters","Tuna Crispy Rice","Edamame"],yellow:["Bleu Suede Shoes","Club Elvis","What the Fig"],bombay:["Mini Papad Bhel","Vegetable Samosa","Kale Chaat"],woodlands:["Iddly","Masala Dosai","Vegetable Samosa"]};
+for(const [key,url] of Object.entries(urls)) {
+ try{
+ const r=await fetch(url,{headers:{"User-Agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/131.0.0.0 Safari/537.36","Accept":"text/html"},signal:AbortSignal.timeout(16000)});
+ const html=await r.text();console.log("SITE",key,r.status,html.length,r.url);
+ const imgs=[...html.matchAll(/<img\b[^>]*>/gi)].map(x=>x[0]);console.log("IMGCOUNTS",key,imgs.length);
+ console.log("IMGEXAMPLES",key,JSON.stringify(imgs.slice(0,10).map(x=>x.slice(0,400))));
+ for(const n of names[key]){
+  const positions=[];let start=0;while(positions.length<3){const i=html.toLowerCase().indexOf(n.toLowerCase(),start);if(i<0)break;positions.push(i);start=i+n.length}
+  console.log("NAME",key,n,JSON.stringify(positions));
+  for(const i of positions.slice(0,2))console.log("SNIP",key,n,JSON.stringify(html.slice(Math.max(0,i-800),Math.min(html.length,i+800))));
+ }
+ console.log("SRCSET",key,JSON.stringify([...new Set([...html.matchAll(/https?:[^"'\s<>\\]+?\.(?:webp|jpg|jpeg|png)(?:\?[^"'\s<>\\]{0,120})?/gi)].map(x=>x[0]))].slice(0,35)));
+ }catch(e){console.log("ERROR",key,String(e))}
+}
+const queries=["vegetable samosa","masala dosa","tuna crispy rice sushi","pappardelle bolognese","pulled pork sandwich"];
+for (const q of queries){
+ const urls=[
+  "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch="+encodeURIComponent(q)+"&gsrnamespace=6&gsrlimit=5&prop=imageinfo&iiprop=url%7Cextmetadata&iiurlwidth=800&format=json",
+  "https://www.google.com/search?tbm=isch&q="+encodeURIComponent(q)+"&num=5",
+  "https://www.bing.com/images/search?q="+encodeURIComponent(q)+"&first=1"
+ ];
+ for(const [idx,url] of urls.entries()){
+ try{let r=await fetch(url,{headers:{"User-Agent":"VerifedStudentResearch/1.0 (images sourced with attribution; contact via Github)","Accept":"application/json,text/html,*/*"},signal:AbortSignal.timeout(10000)});let t=await r.text();if(idx===0){const j=JSON.parse(t);console.log("MEDIAWIKI",q,r.status,JSON.stringify(Object.values(j.query?.pages||{}).map(z=>({title:z.title,src:z.imageinfo?.[0]?.thumburl,description:z.imageinfo?.[0]?.extmetadata?.ImageDescription?.value?.slice(0,80),license:z.imageinfo?.[0]?.extmetadata?.LicenseShortName?.value}))))}else{console.log("SEARCHENGINE",idx,q,r.status,t.length,t.slice(0,140));}
+ }catch(e){console.log("ERR_EXTERNAL",idx,q,String(e))}
+ }
+}
+
+for(const q of ['"Yellow Dog Eats" "The Rufus" sandwich','"Bombay Street Kitchen" "Kale Chaat" Orlando','"Seito Sushi Baldwin Park" "tuna crispy rice"']){
+ let r=await fetch("https://www.bing.com/images/search?q="+encodeURIComponent(q)+"&first=1",{headers:{"User-Agent":"Mozilla/5.0 Chrome/131.0.0.0"},signal:AbortSignal.timeout(18000)});
+ let t=await r.text();
+ console.log("BINGQUERY",q,r.status,t.length,JSON.stringify([...t.matchAll(/murl&quot;:&quot;(.*?)&quot;/g)].map(m=>m[1]).slice(0,10)));
+ console.log("BINGALT",q,JSON.stringify([...t.matchAll(/class="iusc"[^>]*m="([^"]{0,4000})"/g)].slice(0,3).map(m=>m[1].slice(0,600))));
+ console.log("BINGMURL",q,t.indexOf("murl"),JSON.stringify(t.slice(t.indexOf("murl")-300,t.indexOf("murl")+1000)));
+}
