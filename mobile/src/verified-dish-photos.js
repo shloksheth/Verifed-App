@@ -3137,6 +3137,46 @@ export const verifiedDishPhotos = {
     }
   },
   "mamak-colonial": {
+    "crispy-roast-pork": {
+      "url": "https://scottjosephorlando.com/wp-content/uploads/Mamakucf_pork.jpeg",
+      "alt": "Historical Mamak UCF Crispy Roast Pork photograph showing pork belly and hoisin dip, not confirmed as current Colonial Drive plating",
+      "credit": "Scott Joseph's Food & Travel · Mamak UCF restaurant review",
+      "sourceUrl": "https://scottjosephorlando.com/mamak-asian-street-food-ucf/",
+      "kind": "editorial-context",
+      "matchMethod": "Exact dish in dated independent review of same-brand other location; visual/source-rights QA pending",
+      "needsPermissionReview": true,
+      "reviewedAt": "2026-10-24"
+    },
+    "ginger-scallion-fish": {
+      "url": "https://tastychomps.com/wp-content/uploads/2020/11/mamak-east-orlando-ucf-university-new-49.jpg",
+      "alt": "Historical Mamak Ginger and Scallion Fish photograph featured in a 2020 article about Mamak's UCF location; not confirmed as current Colonial Drive presentation",
+      "credit": "Tasty Chomps · Mamak Orlando food photography (2020)",
+      "sourceUrl": "https://tastychomps.com/2020/11/first-look-mamak-asian-street-food-opens-new-2nd-location-in-ucf-east-orlando-area-for-take-out-delivery-dine-in-to-come-plus-7-must-try-dishes-at-mamak.html",
+      "kind": "editorial-context",
+      "matchMethod": "Image appears directly beneath a matching named dish heading in a dated Mamak location review; image pixels, live URL, current recipe and reuse rights require separate validation",
+      "needsPermissionReview": true,
+      "reviewedAt": "2026-10-24"
+    },
+    "ageta-shokushu-3": {
+      "url": "https://tastychomps.com/wp-content/uploads/2020/11/mamak-east-orlando-ucf-university-new-46.jpg",
+      "alt": "Historical Mamak Ageta Shokushu photograph featured in a 2020 article about Mamak's UCF location; not confirmed as current Colonial Drive presentation",
+      "credit": "Tasty Chomps · Mamak Orlando food photography (2020)",
+      "sourceUrl": "https://tastychomps.com/2020/11/first-look-mamak-asian-street-food-opens-new-2nd-location-in-ucf-east-orlando-area-for-take-out-delivery-dine-in-to-come-plus-7-must-try-dishes-at-mamak.html",
+      "kind": "editorial-context",
+      "matchMethod": "Image appears directly beneath a matching named dish heading in a dated Mamak location review; image pixels, live URL, current recipe and reuse rights require separate validation",
+      "needsPermissionReview": true,
+      "reviewedAt": "2026-10-24"
+    },
+    "pot-stickers-5": {
+      "url": "https://tastychomps.com/wp-content/uploads/2020/11/PB202008-800x533.jpg",
+      "alt": "Historical Mamak House-Made Potstickers photograph featured in a 2020 article about Mamak's UCF location; not confirmed as current Colonial Drive presentation",
+      "credit": "Tasty Chomps · Mamak Orlando food photography (2020)",
+      "sourceUrl": "https://tastychomps.com/2020/11/first-look-mamak-asian-street-food-opens-new-2nd-location-in-ucf-east-orlando-area-for-take-out-delivery-dine-in-to-come-plus-7-must-try-dishes-at-mamak.html",
+      "kind": "editorial-context",
+      "matchMethod": "Image appears directly beneath a matching named dish heading in a dated Mamak location review; image pixels, live URL, current recipe and reuse rights require separate validation",
+      "needsPermissionReview": true,
+      "reviewedAt": "2026-10-24"
+    },
     "roti-canai": {
       "url": "https://static.spotapps.co/spots/ac/85155c065644d3b364b025c61c1ff2/full",
       "alt": "Roti Canai flatbread with curry at Mamak Asian Street Food",
@@ -3881,6 +3921,76 @@ export const verifiedDishPhotos = {
     }
   },
   "lazy-moon-mills": {
+    "large-caesar-salad": {
+      "url": "https://www.theorlandoreal.com/uploads/agent-1/Life%20In%20Orlando/Lazy%20Moon/IMG_3283.jpg",
+      "alt": "Caesar salad photographed at Lazy Moon Mills/50 with romaine lettuce, Parmesan and croutons; current menu includes focaccia breadcrumbs and plating may differ",
+      "credit": "The Orlando Real · Lazy Moon Mills/50 editorial coverage",
+      "sourceUrl": "https://www.theorlandoreal.com/lazy-moon-in-mills-50/",
+      "kind": "editorial-context",
+      "matchMethod": "Same restaurant Caesar salad explicitly photographed in independent restaurant coverage; crouton/breadcrumb details not exact, rights pending",
+      "needsPermissionReview": true,
+      "reviewedAt": "2026-10-24"
+    },
+    "gluten-free-pizza-contains-egg-dairy": {
+      "url": "https://d1w7312wesee68.cloudfront.net/Y5HI6dsdYsS8AsbbbhsLTUHr9x3EJjHwMxzIbhmd3fQ/resize%3Afit%3A720%3A720/plain/s3%3A/toasttab/restaurants/restaurant-136153000000000000/menu/items/4/item-800000004396409724_1726792022.jpg",
+      "alt": "Lazy Moon 12-inch gluten-free tomato sauce and shredded mozzarella pizza pictured at UCF, with no claim of cross-contact safety; Mills/50 may differ",
+      "credit": "Lazy Moon UCF · official ordering menu",
+      "sourceUrl": "https://order.lazymoonpizza.com/order/lazy-moon-ucf-11551-university-blvd/item-gluten-free-pizza-contains-egg-dairy_7bc5cbb0-c0da-4fbc-bd82-eb808915cfa6",
+      "kind": "official-product",
+      "matchMethod": "Same branded named menu product; photo cannot verify ingredient or cross-contact safety, different branch, reuse rights pending",
+      "needsPermissionReview": true,
+      "reviewedAt": "2026-10-24"
+    },
+    "tomato-bisque-soup": {
+      "url": "https://d1w7312wesee68.cloudfront.net/vs-s1jmhlgL8Xw2Ub6tZjrnDiJn47bKabDqh5gMxB34/resize%3Afit%3A720%3A720/plain/s3%3A/toasttab/restaurants/restaurant-194032000000000000/menu/items/2/item-800000005972071082_1722462678.jpg",
+      "alt": "Lazy Moon Tomato Bisque Soup in a white handled bowl with parmesan and crackers, pictured at the UCF location; Mills/50 may differ",
+      "credit": "Lazy Moon UCF · official ordering menu",
+      "sourceUrl": "https://order.toasttab.com/online/lazy-moon-ucf-11551-university-blvd/item-tomato-bisque-soup_75217d33-d9c2-4c9c-8e4d-9b1f3337aab7",
+      "kind": "official-product",
+      "matchMethod": "Named item on same-brand official ordering page, product picture and ingredients align; location and reuse rights require review",
+      "needsPermissionReview": true,
+      "reviewedAt": "2026-10-24"
+    },
+    "slice-the-vegetarian-chili-slice": {
+      "url": "https://d1w7312wesee68.cloudfront.net/Hjc-M97ljFfZ8_WDXc-YfR5VXnMpVD0UDMiyfeo26iE/resize%3Afit%3A720%3A720/plain/s3%3A/toasttab/restaurants/restaurant-194032000000000000/menu/items/3/item-800000006277168883_1722461587.jpg",
+      "alt": "Vegetarian chili pizza slice on metal plate photographed at Lazy Moon UCF; the Mills/50 serving can vary",
+      "credit": "Lazy Moon · official UCF ordering menu",
+      "sourceUrl": "https://order.toasttab.com/online/lazy-moon-ucf-11551-university-blvd/item-slice-the-vegetarian-chili-slice_9cd975dd-7b0f-4c65-b1da-ef9ccb23c52f",
+      "kind": "official-product",
+      "matchMethod": "Exact title and vegetarian chili ingredient list from same brand ordering menu, other location; visual/source-rights QA pending",
+      "needsPermissionReview": true,
+      "reviewedAt": "2026-10-24"
+    },
+    "birria-calzone": {
+      "url": "https://d1w7312wesee68.cloudfront.net/zvIeqM2pyVefusfti1TGs0Ueju1ASg2Fiayzn4ltnp4/resize%3Afit%3A720%3A720/plain/s3%3A/toasttab/restaurants/restaurant-194032000000000000/menu/items/5/item-800000004396410575_1720005059.jpg",
+      "alt": "Lazy Moon Mills/50 Birria Calzone with pickled red onion and separate birria dipping jus, official named menu photo",
+      "credit": "Lazy Moon Mills/50 · official ordering menu",
+      "sourceUrl": "https://order.lazymoonpizza.com/menu/lazy-moon-mills-50-1011-east-colonial-drive/group_0cdb05bb-80d7-4b73-b54a-dbe1c1f27d5e/item-birria-calzone_d1704796-93e8-4889-818b-3d4eedf250a0",
+      "kind": "official-product",
+      "matchMethod": "Exact title, current Mills/50 item page and product image; visual/source-rights QA pending",
+      "needsPermissionReview": true,
+      "reviewedAt": "2026-10-24"
+    },
+    "20-chili-pizza": {
+      "url": "https://d1w7312wesee68.cloudfront.net/vDGDZZ5kP34fsRUb_g5Qj1fA_aHPp2pLVXkvJXOoFOA/resize%3Afit%3A720%3A720/plain/s3%3A/toasttab/restaurants/restaurant-194032000000000000/menu/items/4/item-800000006277776214_1767111975.jpg",
+      "alt": "20\" Chili Pizza with beef and bean chili, cheddar and mozzarella photographed for Lazy Moon; menu image from Maitland",
+      "credit": "Lazy Moon · official Maitland ordering menu",
+      "sourceUrl": "https://order.lazymoonpizza.com/menu/lazy-moon-pizza-maitland/group_3c23f81b-daa0-4c95-a0dc-1f39562a1c18/item-20-chili-pizza_c3edf2c3-5fe0-49c0-853c-b1717e8d6fda",
+      "kind": "official-product",
+      "matchMethod": "Exact named item and ingredients on Lazy Moon menu, image shown by product page; other restaurant location, visual/source-rights QA pending",
+      "needsPermissionReview": true,
+      "reviewedAt": "2026-10-24"
+    },
+    "20-cuban-pizza": {
+      "url": "https://d1w7312wesee68.cloudfront.net/EkdlgeV-kEevWDouysx8iKZxC4H-kX2VRtqhhOJIS-Q/resize%3Afit%3A720%3A720/plain/s3%3A/toasttab/restaurants/restaurant-136153000000000000/menu/items/0/item-800000004396409730_1731992004.jpg",
+      "alt": "20\" Cuban Pizza photographed on Lazy Moon official Maitland menu, with ham, pork, pickles and cheese; Mills/50 plating may differ",
+      "credit": "Lazy Moon · official Maitland ordering menu",
+      "sourceUrl": "https://order.lazymoonpizza.com/menu/lazy-moon-pizza-maitland/group_3c23f81b-daa0-4c95-a0dc-1f39562a1c18/item-20-cuban-pizza_a750cda9-7a93-44fe-8a6d-af3a59f24b7a",
+      "kind": "official-product",
+      "matchMethod": "Exact named item and ingredient list on official Lazy Moon ordering page; other restaurant location, visual/source-rights QA pending",
+      "needsPermissionReview": true,
+      "reviewedAt": "2026-10-24"
+    },
     "20-tomato-base-includes-mozzarella": {
       "url": "https://d1w7312wesee68.cloudfront.net/liUChHsNuldhJh3-_RDbhvXQxjw4Sr93PiZgnD8FSp0/resize%3Afit%3A1080%3A1080/plain/s3%3A/toasttab/restaurants/restaurant-194032000000000000/menu/items/6/item-800000004396409086_1722462316.jpg",
       "alt": "Twenty-inch tomato-base pizza with mozzarella at Lazy Moon; photo from Maitland menu, branch preparation may vary",
@@ -3935,6 +4045,26 @@ export const verifiedDishPhotos = {
     }
   },
   "pig-floyds-mills": {
+    "spicy-sausage-rigatoni": {
+      "url": "https://www.theorlandoreal.com/uploads/agent-1/Life%20In%20Orlando/Piggza/IMG_8716.jpg",
+      "alt": "Spicy sausage rigatoni at Pigzza with vodka tomato cream sauce, parmesan and basil in a shallow white bowl; editorial photograph",
+      "credit": "The Orlando Real · Pigzza Mills/50 editorial coverage",
+      "sourceUrl": "https://www.theorlandoreal.com/piggza-serves-up-modern-italianish-dishes-in-mills-50/",
+      "kind": "editorial-context",
+      "matchMethod": "Named Pigzza pasta food photo matched to item and restaurant in independent dining coverage; review recipe details and rights before reuse",
+      "needsPermissionReview": true,
+      "reviewedAt": "2026-10-24"
+    },
+    "pepperoni": {
+      "url": "https://media.timeout.com/images/106362611/image.jpg",
+      "alt": "Pepperoni pizza photographed at Pigzza in January 2026 with sourdough crust, pepperoni and herbs; editorial image, reproduction permissions pending",
+      "credit": "Time Out · Megan duBois (Jan 2026)",
+      "sourceUrl": "https://www.timeout.com/orlando/restaurants/pigzza",
+      "kind": "editorial-context",
+      "matchMethod": "Direct Pigzza review image explicitly titled pepperoni pizza; restaurant match, exact recipe/plating verification and publication permission pending",
+      "needsPermissionReview": true,
+      "reviewedAt": "2026-10-24"
+    },
     "the-big-floyd": {
       "url": "https://scottjosephorlando.com/wp-content/uploads/Pig_Floyd_sandwich.jpg",
       "alt": "The Big Floyd brisket, pulled pork and sausage sandwich, photographed at Pig Floyd's in Orlando in 2014; plating and location may have changed",

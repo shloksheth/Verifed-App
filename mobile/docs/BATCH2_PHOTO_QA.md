@@ -1,22 +1,27 @@
-# Batch 2 food photography — V14.8
+# Batch 2 restaurant food photography: updated QA status
 
-Batch 2 covers Tin & Taco (119 items), Mamak Asian Street Food (70), The Stubborn Mule (84), Pig Floyd's & Pigzza (43), and Lazy Moon (97): **413 menu records**.
+This note tracks the five Batch 2 restaurant menus. **It is not a claim of complete or approved imagery.** Existing V14.8 mappings are preserved and this follow-up branch adds individually sourced, credited photos without changing other restaurant batches.
 
-## What is in this release
+| Restaurant | Menu items | Image references | Missing |
+| --- | ---: | ---: | ---: |
+| /T/i/n/ /&/ /T/a/c/o/ /·/ /D/o/w/n/t/o/w/n/ | 119 | 1 | 118 |
+| /M/a/m/a/k/ /A/s/i/a/n/ /S/t/r/e/e/t/ /F/o/o/d/ | 70 | 49 | 21 |
+| /T/h/e/ /S/t/u/b/b/o/r/n/ /M/u/l/e/ | 84 | 3 | 81 |
+| /P/i/g/ /F/l/o/y/d/’/s/ /&/ /P/i/g/z/z/a/ | 43 | 8 | 35 |
+| /L/a/z/y/ /M/o/o/n/ /·/ /M/i/l/l/s///5/0/ | 97 | 13 | 84 |
+| **Total** | **413** | **74** | **339** |
 
-The mobile source registry includes **61 item-associated photo references**: Tin & Taco 1, Mamak 45, Stubborn Mule 3, Pig Floyd's 6 and Lazy Moon 6. Mamak accounts for most of the additions because its official online menu attaches different photographs to named dishes. Other pictures are from official order pages, historical restaurant coverage or delivery listings. Some photos depict a customisable dish or a different location; these are marked as contextual and are **not claimed to be exact product photos**.
+## New Batch 2 follow-up sources
 
-All 413 records have an individual entry in [the audit](../../research/batch2-photo-audit.json), containing the current menu item name and description, original photo URL where found, photo type, source/credit, missing or contextual status, four **suggested** image searches, full-image `contain` fit, required rights verification and remaining quality-control task.
+- **Mamak Asian Street Food**: historic editorial images for fried octopus skewers, ginger/scallion fish, potstickers and crispy roast pork. Those historical photos are **not** verified as the current Colonial Drive preparation. Their hosts and copyright permissions require separate checks.
+- **Lazy Moon**: official same-brand online-menu images of 20-inch Cuban pizza, 20-inch chili pizza, birria calzone, vegetarian chili slice, tomato bisque soup and gluten-free pizza; the image metadata states which photos come from Mills/50 versus another Lazy Moon branch. Also sourced an independently published Lazy Moon Caesar salad photograph, marked as contextual because presentation/toppings differ.
+- **Pig Floyd's / Pigzza**: individually identified editorial photos of Pigzza's pepperoni pizza and spicy sausage rigatoni, marked contextual until exact ingredient/plating QA and permission review.
+- **Tin & Taco and The Stubborn Mule**: no new photos added in this follow-up; earlier imagery remains intact.
 
-The GitHub Actions photo check probes live image URLs and reports failures. The app displays food inside padded, no-crop image canvases, and handles remote errors without replacing a dish with a misleading restaurant cover photograph.
+## What the automated checks do and do not prove
 
-## Do not confuse URL coverage with approval
+The audit covers all 413 named records. Each includes four **research query suggestions**, which must not be mistaken for four inspected photographic candidates. Existing tests reject a single generic restaurant hero being duplicated across dishes, require sources and credit for registered photos, and check full-food contain framing. These are structural controls, **not** manual image or commercial rights approval.
 
-- **352 items are still missing individually matched pictures.** The app does not invent images for them.
-- Live URL health is not evidence that the photograph depicts the exact dish, or that reproduction is permitted.
-- Manual review should check restaurant identity, ingredient/plating match, food fully visible, sharpness, suitable background, credit, and licensing. If the original is cropped or dark, correct it **only with permission to modify the image**.
-- Where no photo exists, a photorealistic illustrative reconstruction may be considered, but must accurately represent all menu ingredients, be independently checked for defects, and be explicitly labeled **AI illustration**, not an official restaurant image.
-- The connected image-generation service was disabled for this work, so no AI-generated images or retouches are represented as complete.
-- Menu photography is independent of ingredient/allergen assessment. Never infer dietary safety from the picture.
+Before publishing, the missing **339** dishes still require exact, source-supported product imagery or clearly differentiated photorealistic illustration where permitted. For customizable bundles, a fixed photo cannot assert a single exact ingredient combination. If generating an image, retain truthful provenance in both source metadata and presentation rather than passing it off as a restaurant photograph. Reproduction and modification permissions for editorial and official images need review.
 
-**Release status:** Interim GitHub-only V14.8 update. The five-restaurant Batch 2 image task is **not complete or submission-ready**.
+All changes here were isolated on the Batch 2 branch. GitHub-only updates; no Expo Snack publication.

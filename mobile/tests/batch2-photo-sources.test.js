@@ -56,3 +56,112 @@ test("photo audits do not mislabel contextual pictures as exact menu products", 
     }
   }
 });
+
+// Regression: new sourced images must remain keyed to their matching real dishes,
+// never to a generic restaurant hero or a different plate.
+test("new Batch 2 sourced item photos have individual credits and proper identity flags", () => {
+  const cases = [
+  {
+    "slug": "lazy-moon-mills",
+    "key": "20-cuban-pizza",
+    "kind": "official-product"
+  },
+  {
+    "slug": "lazy-moon-mills",
+    "key": "20-chili-pizza",
+    "kind": "official-product"
+  },
+  {
+    "slug": "lazy-moon-mills",
+    "key": "birria-calzone",
+    "kind": "official-product"
+  },
+  {
+    "slug": "lazy-moon-mills",
+    "key": "slice-the-vegetarian-chili-slice",
+    "kind": "official-product"
+  },
+  {
+    "slug": "mamak-colonial",
+    "key": "crispy-roast-pork",
+    "kind": "editorial-context"
+  }
+];
+  for (const { slug, key, kind } of cases) {
+    const entry = verifiedDishPhotos[slug]?.[key];
+    assert.ok(entry?.url?.startsWith("https://"), slug + "/" + key);
+    assert.ok(entry?.sourceUrl?.startsWith("https://"), slug + "/" + key);
+    assert.equal(entry.kind, kind, slug + "/" + key);
+    assert.equal(entry.needsPermissionReview, true, slug + "/" + key);
+    const dish = localDishes.find(d => d.restaurantId === slug && d.catalogKey === slug + "-" + key);
+    const restaurant = localRestaurants.find(r => r.slug === slug);
+    assert.ok(dish && restaurant, slug + "/" + key);
+    assert.equal(menuPhotoFor(dish, restaurant)?.url, entry.url);
+    if (kind === "editorial-context") assert.equal(menuPhotoFor(dish, restaurant)?.exact, false);
+  }
+});
+
+test("new Lazy Moon soups, pizza and salad photo sources remain item-specific", () => {
+  const expected = [
+  {
+    "slug": "lazy-moon-mills",
+    "key": "tomato-bisque-soup",
+    "kind": "official-product"
+  },
+  {
+    "slug": "lazy-moon-mills",
+    "key": "gluten-free-pizza-contains-egg-dairy",
+    "kind": "official-product"
+  },
+  {
+    "slug": "lazy-moon-mills",
+    "key": "large-caesar-salad",
+    "kind": "editorial-context"
+  }
+];
+  for (const item of expected) {
+    const image = verifiedDishPhotos[item.slug]?.[item.key];
+    assert.ok(image?.url && image?.sourceUrl, item.key);
+    assert.equal(image.kind, item.kind);
+    assert.equal(image.needsPermissionReview, true);
+    const dish = localDishes.find(x => x.catalogKey === item.slug + "-" + item.key);
+    assert.ok(dish, item.key);
+    const restaurant = localRestaurants.find(x => x.slug === item.slug);
+    assert.equal(menuPhotoFor(dish, restaurant)?.url, image.url);
+    if (item.kind === "editorial-context") assert.equal(menuPhotoFor(dish, restaurant)?.exact, false);
+  }
+});
+
+test("Pigzza editorial photos remain correctly contextual", () => {
+  for (const key of ["pepperoni","spicy-sausage-rigatoni"]) {
+    const entry = verifiedDishPhotos["pig-floyds-mills"]?.[key];
+    assert.equal(entry?.kind, "editorial-context", key);
+    assert.ok(entry?.sourceUrl?.startsWith("https://"));
+    assert.equal(entry.needsPermissionReview, true);
+    const dish = localDishes.find(d => d.catalogKey === "pig-floyds-mills-" + key);
+    assert.ok(dish);
+    assert.equal(menuPhotoFor(dish, localRestaurants.find(r => r.slug === "pig-floyds-mills"))?.exact, false);
+  }
+});
+
+test("Batch 2 audit totals agree with 413 actual item photo records", () => {
+  const audit = JSON.parse(readFileSync(new URL("../../research/batch2-photo-audit.json", import.meta.url), "utf8"));
+  assert.equal(audit.entries.length, 413);
+  for (const restaurant of audit.restaurants) {
+    const rows = audit.entries.filter(row => row.restaurantSlug === restaurant.slug);
+    const mapped = verifiedDishPhotos[restaurant.slug] || {};
+    assert.equal(rows.length, restaurant.total, restaurant.slug);
+    const withPhotos = rows.filter(row => Boolean(row.photo?.url));
+    assert.equal(restaurant.total - restaurant.missing, withPhotos.length, restaurant.slug);
+    assert.equal(Object.keys(mapped).length, withPhotos.length, restaurant.slug);
+    for (const row of rows) {
+      const key = row.catalogKey.slice(restaurant.slug.length + 1);
+      if (row.photo?.url) {
+        assert.equal(mapped[key]?.url, row.photo.url, row.catalogKey);
+        assert.ok(mapped[key]?.credit && mapped[key]?.sourceUrl, row.catalogKey);
+      } else {
+        assert.equal(mapped[key], undefined, row.catalogKey);
+      }
+    }
+  }
+});
