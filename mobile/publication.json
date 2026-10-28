@@ -1,12 +1,12 @@
 {
   "version": 30.1,
   "name": "Verifed V30.1",
-  "id": "lbikEuqXAmomjXjU2ZfkP",
-  "url": "exp://u.expo.dev/933fd9c0-1666-11e7-afca-d980795c5824?runtime-version=exposdk%3A54.0.0&channel-name=production&snack=lbikEuqXAmomjXjU2ZfkP",
-  "hashId": "lbikEuqXAmomjXjU2ZfkP",
-  "snackId": "48eaa972-3e77-4e1e-a343-ef4282425d9b",
-  "editorUrl": "https://snack.expo.dev/lbikEuqXAmomjXjU2ZfkP",
-  "publishedAt": "2026-10-26T23:08:42.048Z",
+  "id": "lvA74ThJ2QDmfsClCUTpS",
+  "url": "exp://u.expo.dev/933fd9c0-1666-11e7-afca-d980795c5824?runtime-version=exposdk%3A54.0.0&channel-name=production&snack=lvA74ThJ2QDmfsClCUTpS",
+  "hashId": "lvA74ThJ2QDmfsClCUTpS",
+  "snackId": "ea85ca7f-8bda-45e2-aa96-f0625b53e89b",
+  "editorUrl": "https://snack.expo.dev/lvA74ThJ2QDmfsClCUTpS",
+  "publishedAt": "2026-10-28T02:27:49.676Z",
   "sdkVersion": "54.0.0",
   "files": [
     "App.js",
